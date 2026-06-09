@@ -494,7 +494,11 @@ footer a{color:var(--teal);text-decoration:none}
         </div>
       </li>
       <li class="nav-item"><button class="nav-link" onclick="showPage('docproc')">Document Processing</button></li>
-      <li class="nav-item"><button class="nav-link" onclick="showPage('automation')">Automation</button></li>
+      <li class="nav-item"><button class="nav-link" onclick="showPage('automation')">Automation ▾</button>
+      <div class="dropdown-menu" id="autoDropdown" style="display:none;position:absolute;top:52px;left:0;background:var(--blue-mid,#1e3f7a);min-width:220px;border-radius:0 0 8px 8px;box-shadow:0 8px 24px rgba(0,0,0,.3);z-index:300;">
+        <button class="dd-item" onclick="showPage('automation');document.getElementById('autoDropdown').style.display='none'"><span class="dd-dot"></span>Automation Framework</button>
+        <button class="dd-item" onclick="showPage('migration');document.getElementById('autoDropdown').style.display='none'"><span class="dd-dot"></span>Tool Migration Trap</button>
+      </div></li>
       <li class="nav-item"><button class="nav-link" onclick="showPage('ea')">Enterprise Architecture</button></li>
       <li class="nav-item"><button class="nav-link" onclick="showPage('resources')">Resources</button></li>
       <li class="nav-item"><button class="nav-link" onclick="showPage('about')">About Me</button></li>
@@ -1156,10 +1160,11 @@ var pageMap = {
   'home':'pg-home','gov':'pg-gov','agentic':'pg-agentic',
   'ops':'pg-ops','data':'pg-data','vendor':'pg-vendor',
   'review':'pg-review','automation':'pg-automation',
-  'docproc':'pg-docproc','ea':'pg-ea',
+  'docproc':'pg-docproc','migration':'pg-migration','ea':'pg-ea',
   'resources':'pg-resources','about':'pg-about','contact':'pg-contact'
 };
 var govPages = ['gov','agentic','ops','data','vendor','review'];
+var autoPages = ['automation','migration'];
 
 function showPage(key) {
   // Hide all pages
@@ -1188,6 +1193,10 @@ function showPage(key) {
   if (key === 'resources')  { var n = document.querySelector('.nav-link[onclick*="resources"]'); if(n) n.classList.add('active'); }
   if (key === 'about')      { var n = document.querySelector('.nav-link[onclick*="about"]');     if(n) n.classList.add('active'); }
   if (key === 'contact')    { var n = document.querySelector('.nav-link[onclick*="contact"]');   if(n) n.classList.add('active'); }
+  if (autoPages && autoPages.includes(key)) {
+    var autoLink = document.querySelector('.nav-link[onclick*=\"automation\"]');
+    if (autoLink) autoLink.classList.add('active');
+  }
   if (govPages.includes(key)) {
     var govLink = document.getElementById('govLink');
     if (govLink) govLink.classList.add('active');
@@ -1254,6 +1263,16 @@ function toggleNav() {
   var nav = document.getElementById('navItems');
   if (nav) nav.classList.toggle('open');
 }
+
+// Automation dropdown hover
+(function() {
+  var autoNav = document.querySelector('.nav-link[onclick*="automation"]');
+  var autoMenu = document.getElementById('autoDropdown');
+  if (autoNav && autoMenu) {
+    autoNav.parentElement.addEventListener('mouseenter', function() { autoMenu.style.display='block'; });
+    autoNav.parentElement.addEventListener('mouseleave', function() { autoMenu.style.display='none'; });
+  }
+})();
 </script>
 
 <!-- ═══ PAGE: AGENTIC AI GOVERNANCE FRAMEWORK ═══ -->
@@ -2164,5 +2183,450 @@ id="pg-docproc">
 
 <!-- ═══════════════ FOOTER ═══════════════ -->
 </div>
+
+<!-- ═══ PAGE: TOOL MIGRATION TRAP ═══ -->
+<div class="page" id="pg-migration">
+id="pg-migration">
+<div class="container-narrow">
+
+  <div class="pg-header">
+    <div class="pg-tag pg-tag-teal">Automation &amp; Platform Strategy &nbsp;·&nbsp; Enterprise Architecture</div>
+    <h1 class="pg-title">The Enterprise Tool Migration Trap</h1>
+    <p class="pg-intro">Why organisations spend millions replacing platforms — and end up with the same problems. Eight strategic traps, a six-phase risk mitigation framework, scored readiness assessment, and hard-stop governance criteria, drawn from real-world RPA, BPM, ERP, CRM, IAM, Document Processing, and AI platform migrations at scale.</p>
+  </div>
+
+  <!-- ── QUICK STATS ──────────────────────────────── -->
+  <div class="g4" style="margin-bottom:32px">
+    <div class="gcard" style="text-align:center;border-top:3px solid var(--teal)">
+      <div style="font-family:'Fraunces',serif;font-size:30px;font-weight:700;color:var(--teal)">8</div>
+      <div style="font-size:12px;color:var(--ink3);margin-top:4px">Strategic Traps</div>
+    </div>
+    <div class="gcard" style="text-align:center;border-top:3px solid var(--blue)">
+      <div style="font-family:'Fraunces',serif;font-size:30px;font-weight:700;color:var(--blue)">6</div>
+      <div style="font-size:12px;color:var(--ink3);margin-top:4px">Mitigation Phases</div>
+    </div>
+    <div class="gcard" style="text-align:center;border-top:3px solid var(--amb)">
+      <div style="font-family:'Fraunces',serif;font-size:30px;font-weight:700;color:var(--amb)">10</div>
+      <div style="font-size:12px;color:var(--ink3);margin-top:4px">Readiness Domains</div>
+    </div>
+    <div class="gcard" style="text-align:center;border-top:3px solid var(--red)">
+      <div style="font-family:'Fraunces',serif;font-size:30px;font-weight:700;color:var(--red)">7</div>
+      <div style="font-size:12px;color:var(--ink3);margin-top:4px">Hard-Stop Criteria</div>
+    </div>
+  </div>
+
+  <!-- ── THE MIGRATION PARADOX ──────────────────── -->
+  <div class="concept">
+    <button class="c-trigger" onclick="toggleC(this)" aria-expanded="false">
+      <span class="c-num" style="background:var(--teal)">INTRO</span>
+      <div class="c-hd"><div class="c-title">The Migration Paradox: Why the Equation Always Fails</div><div class="c-preview">Most vendors position migration as a technology upgrade. The reality is profoundly more complex — and the maths never work out the way the business case assumes.</div></div>
+      <span class="c-arrow">▼</span>
+    </button>
+    <div class="c-body">
+      <div class="prose"><p>Enterprise technology portfolios are under constant pressure. Across industries, organisations are investing millions — and years — to replace RPA, BPM, ERP, CRM, IAM, Document Processing, Data, and AI platforms. The justifications are familiar: enhanced features, reduced licensing costs, superior architecture, advanced AI integration, improved user experiences, and better strategic vendor alignment.</p><p>Yet the evidence is consistent and sobering: despite these investments, organisations regularly realise far less business value than originally anticipated. Timelines slip. Adoption stalls. Governance gaps widen. And the enterprise finds itself carrying the full weight of a migration that the vendor positioned as routine.</p><p>The root cause is a fundamental misclassification: <strong>migration is treated as a technology project, when it is in fact a business transformation initiative.</strong> Most migration programmes obsess over platform capabilities while systematically neglecting organisational readiness. The platform selected matters far less than the governance, security protocols, operating model maturity, adoption readiness, and business ownership surrounding it.</p></div>
+      <div style="margin:16px 0">
+        <div style="background:#f0f9f4;border-left:3px solid var(--grn);border-radius:0 7px 7px 0;padding:14px 18px;margin-bottom:8px">
+          <div style="font-family:'DM Mono',monospace;font-size:10px;font-weight:600;color:var(--grn);margin-bottom:5px;letter-spacing:.08em">ASSUMED EQUATION</div>
+          <div style="font-size:14px;font-weight:600;color:var(--grn)">Current Tool + New Platform Features = Better Outcomes</div>
+        </div>
+        <div style="background:var(--red-lt);border-left:3px solid var(--red);border-radius:0 7px 7px 0;padding:14px 18px">
+          <div style="font-family:'DM Mono',monospace;font-size:10px;font-weight:600;color:var(--red);margin-bottom:5px;letter-spacing:.08em">OPERATIONAL REALITY</div>
+          <div style="font-size:14px;font-weight:600;color:var(--red)">Current Tool + Migration Risk + Learning Curve + Governance Gaps + Operational Disruption = Uncertain Outcomes</div>
+        </div>
+      </div>
+      <div class="callout co-tel"><div class="co-lbl">Key Insight</div><div class="co-txt">Technology maturity can be purchased. Organisational maturity cannot. No software platform migration can compensate for its absence.</div></div>
+    </div>
+  </div>
+
+  <!-- ── THE EIGHT TRAPS ────────────────────────── -->
+  <div style="margin:32px 0 12px">
+    <div class="pg-tag pg-tag-teal" style="margin-bottom:8px">The Eight Traps</div>
+    <div style="font-family:'Fraunces',serif;font-size:22px;font-weight:600;color:var(--ink);margin-bottom:4px">Strategic Failure Patterns</div>
+    <div style="font-size:14px;color:var(--ink3)">These are not theoretical. They are recurring failure patterns observed across platform migrations at scale.</div>
+  </div>
+
+  <!-- Trap 1 -->
+  <div class="concept">
+    <button class="c-trigger" onclick="toggleC(this)" aria-expanded="false">
+      <span class="c-num" style="background:var(--red)">T-01</span>
+      <div class="c-hd"><div class="c-title">The Feature Trap</div><div class="c-preview">Every migration begins with a vendor demo. AI Agents, GenAI, Autonomous Workflows. Executives ask "why don't we have this?" The critical question — "do we actually need this?" — is rarely asked.</div></div>
+      <span class="c-arrow">▼</span>
+    </button>
+    <div class="c-body">
+      <div class="prose"><p>Technology capabilities do not automatically generate business value. Value is only realised when capabilities are adopted, governed, secured, operationalised, and measured. Migrating an entire platform to unlock features that benefit 5–10% of workloads is not a strategic investment — it is an expensive experiment.</p></div>
+      <div class="g2">
+        <div class="gcard"><span class="gtag t-red">The Risk</span><div class="gc-title">Capability without adoption</div><div class="gc-body">The new platform ships with Agentic AI, Process Mining, and Intelligent Document Processing. The organisation has standardised none of the processes these capabilities require. The features sit unused while the migration cost accumulates.</div></div>
+        <div class="gcard"><span class="gtag t-tel">The Fix</span><div class="gc-title">Business case before platform</div><div class="gc-body">Require a documented business case that quantifies the value gap between current and target capabilities — tied to specific workloads and measurable outcomes, not general platform comparisons or demo impressions.</div></div>
+      </div>
+      <div class="callout co-blu"><div class="co-lbl">Mitigation</div><div class="co-txt">Before any migration discussion proceeds, require a documented business case that quantifies the value gap between current and target capabilities — tied to specific workloads, not general platform comparisons.</div></div>
+    </div>
+  </div>
+
+  <!-- Trap 2 -->
+  <div class="concept">
+    <button class="c-trigger" onclick="toggleC(this)" aria-expanded="false">
+      <span class="c-num" style="background:var(--red)">T-02</span>
+      <div class="c-hd"><div class="c-title">The Free Migration Illusion</div><div class="c-preview">Vendors offer free licences, accelerators, and professional services. This creates a dangerous perception that migration costs have been substantially reduced. They have not.</div></div>
+      <span class="c-arrow">▼</span>
+    </button>
+    <div class="c-body">
+      <div class="prose"><p>The vendor is funding software acquisition. The vendor is not assuming responsibility for business disruption, user adoption, productivity loss, production stability, regulatory compliance, or operational continuity. The hidden costs of migration frequently dwarf the visible costs.</p></div>
+      <div class="drill"><button class="drill-btn" onclick="toggleDrill(this)">Full Total Cost of Ownership breakdown <span>expand ▾</span></button>
+      <div class="drill-content">
+        <div class="tw"><table><thead><tr><th>Cost Category</th><th>Typical Line Items</th><th>Visibility</th></tr></thead><tbody>
+          <tr><td>Visible Costs (Vendor Quoted)</td><td>Platform licensing, infrastructure, vendor professional services, migration tooling</td><td><span style="color:var(--grn);font-weight:600">High</span></td></tr>
+          <tr><td>Hidden People Costs</td><td>Training, knowledge transfer, productivity loss during learning curve, backfill resources</td><td><span style="color:var(--amb);font-weight:600">Low</span></td></tr>
+          <tr><td>Hidden Governance Costs</td><td>Recreating audit evidence, re-validating controls, compliance re-certification, policy updates</td><td><span style="color:var(--amb);font-weight:600">Low</span></td></tr>
+          <tr><td>Hidden Operational Costs</td><td>Parallel run overhead, hypercare staffing, incident resolution during stabilisation</td><td><span style="color:var(--amb);font-weight:600">Low</span></td></tr>
+          <tr><td>Hidden Risk Costs</td><td>Production instability, regulatory exposure, customer impact, executive credibility</td><td><span style="color:var(--red);font-weight:600">Very Low</span></td></tr>
+        </tbody></table></div>
+      </div></div>
+      <div class="callout co-blu"><div class="co-lbl">Mitigation</div><div class="co-txt">Require a full TCO analysis before approving migration. If hidden costs exceed 50% of the visible budget, treat the business case as unapproved until recalculated.</div></div>
+    </div>
+  </div>
+
+  <!-- Trap 3 -->
+  <div class="concept">
+    <button class="c-trigger" onclick="toggleC(this)" aria-expanded="false">
+      <span class="c-num" style="background:var(--red)">T-03</span>
+      <div class="c-hd"><div class="c-title">The Vendor Ownership Gap</div><div class="c-preview">The vendor owns the software. The customer owns the delivery, adoption, testing, compliance, and business continuity. The result: ~90% of migration risk sits with the customer.</div></div>
+      <span class="c-arrow">▼</span>
+    </button>
+    <div class="c-body">
+      <div class="prose"><p>Migration accountability must be contractually shared. The vendor relationship should be structured as a partnership with mutual skin in the game. Before migration begins, a contractual RACI model must govern all activities.</p></div>
+      <div class="drill"><button class="drill-btn" onclick="toggleDrill(this)">RACI Model: Who owns what in a migration programme <span>expand ▾</span></button>
+      <div class="drill-content">
+        <div class="tw"><table><thead><tr><th>Migration Activity</th><th>Customer</th><th>Vendor</th><th>SI / Partner</th></tr></thead><tbody>
+          <tr><td>Define migration business case</td><td><strong>A/R</strong></td><td>C</td><td>C</td></tr>
+          <tr><td>Establish governance framework</td><td><strong>A/R</strong></td><td>I</td><td>C</td></tr>
+          <tr><td>Platform configuration &amp; deployment</td><td><strong>A</strong></td><td>R/C</td><td>R</td></tr>
+          <tr><td>Data migration &amp; validation</td><td><strong>A/R</strong></td><td>C</td><td>R</td></tr>
+          <tr><td>Security architecture review</td><td><strong>A/R</strong></td><td>C</td><td>R</td></tr>
+          <tr><td>User training &amp; change management</td><td><strong>A/R</strong></td><td>I</td><td>R</td></tr>
+          <tr><td>UAT and production sign-off</td><td><strong>A/R</strong></td><td>I</td><td>R</td></tr>
+          <tr><td>Rollback plan ownership</td><td><strong>A/R</strong></td><td>C</td><td>R</td></tr>
+          <tr><td>Hypercare &amp; post-launch support</td><td><strong>A</strong></td><td>R</td><td>R</td></tr>
+        </tbody></table></div>
+        <div style="font-size:12px;color:var(--ink4);font-family:'DM Mono',monospace;margin-top:8px">R = Responsible &nbsp;·&nbsp; A = Accountable &nbsp;·&nbsp; C = Consulted &nbsp;·&nbsp; I = Informed</div>
+      </div></div>
+      <div class="callout co-blu"><div class="co-lbl">Mitigation</div><div class="co-txt">Do not sign a migration SOW without a contractual RACI model and commercial protections for migration failure. If the vendor declines to formalise accountability, treat this as a material risk signal.</div></div>
+    </div>
+  </div>
+
+  <!-- Trap 4 -->
+  <div class="concept">
+    <button class="c-trigger" onclick="toggleC(this)" aria-expanded="false">
+      <span class="c-num" style="background:var(--amb)">T-04</span>
+      <div class="c-hd"><div class="c-title">The Maturity Gap</div><div class="c-preview">Organisations rigorously evaluate vendor platform maturity. They rarely apply the same rigour to evaluating their own. Advanced technology requires an advanced receiving organisation.</div></div>
+      <span class="c-arrow">▼</span>
+    </button>
+    <div class="c-body">
+      <div class="prose"><p>Advanced capabilities — Intelligent Document Processing, Agentic AI, Process Mining, Autonomous Operations — are not inherently valuable. They become valuable only when deployed into environments with standardised processes, defined governance, established security controls, assigned ownership, and documented audit requirements.</p></div>
+      <div class="g3">
+        <div class="gcard"><span class="gtag t-tel">Process</span><div class="gc-title">Is the process standardised?</div><div class="gc-body">Advanced capabilities amplify process quality. They also amplify process chaos. Deploying AI into an unstandardised process creates faster, more scalable inconsistency.</div></div>
+        <div class="gcard"><span class="gtag t-blu">Governance</span><div class="gc-title">Is ownership assigned?</div><div class="gc-body">A capability without a named business owner is a capability that will never be governed. Ownership must be assigned before deployment — not after adoption fails.</div></div>
+        <div class="gcard"><span class="gtag t-amb">Audit</span><div class="gc-title">Can you demonstrate compliance?</div><div class="gc-body">Regulators do not accept "we are still setting up governance." Audit requirements must be defined and tested in the new environment before regulated workloads migrate.</div></div>
+      </div>
+      <div class="callout co-blu"><div class="co-lbl">Mitigation</div><div class="co-txt">Complete the Migration Readiness Assessment (see below) before evaluating any vendor platform. Organisational maturity must be assessed first.</div></div>
+    </div>
+  </div>
+
+  <!-- Trap 5 -->
+  <div class="concept">
+    <button class="c-trigger" onclick="toggleC(this)" aria-expanded="false">
+      <span class="c-num" style="background:var(--amb)">T-05</span>
+      <div class="c-hd"><div class="c-title">Rebuilding What Already Works</div><div class="c-preview">Migration consumes architects, developers, SMEs, and test teams for 12–36 months — rebuilding existing functionality rather than delivering new value. This is not transformation. It is expensive duplication.</div></div>
+      <span class="c-arrow">▼</span>
+    </button>
+    <div class="c-body">
+      <div class="prose"><p>Enterprise migrations do not start from a blank slate. They start from a portfolio of production assets — automations, integrations, workflows, controls, reports, and governance frameworks built and refined over years. Migration requires rebuilding all of it. Before approving migration scope, organisations should conduct a formal asset inventory and rebuild cost analysis.</p></div>
+      <ul class="clist">
+        <li><strong>Inventory all production assets</strong> and estimate rebuild effort with contingency before approving migration scope.</li>
+        <li><strong>Calculate the opportunity cost</strong> of diverting key personnel for 12–36 months away from value-creating initiatives.</li>
+        <li><strong>Assess the dual-tool alternative</strong> — can existing assets be preserved while new capabilities are introduced selectively?</li>
+        <li><strong>Require a build-vs-migrate analysis</strong> for each asset category before approving scope.</li>
+      </ul>
+      <div class="callout co-blu"><div class="co-lbl">Mitigation</div><div class="co-txt">If rebuilding existing functionality exceeds 60% of migration effort, the business case must be re-evaluated against a dual-tool or incremental enhancement strategy.</div></div>
+    </div>
+  </div>
+
+  <!-- Trap 6 -->
+  <div class="concept">
+    <button class="c-trigger" onclick="toggleC(this)" aria-expanded="false">
+      <span class="c-num" style="background:var(--amb)">T-06</span>
+      <div class="c-hd"><div class="c-title">The Learning Curve Trap</div><div class="c-preview">The largest hidden cost in any migration is people. Most business cases model licensing and infrastructure. Almost none model the productivity dip that consistently follows platform change.</div></div>
+      <span class="c-arrow">▼</span>
+    </button>
+    <div class="c-body">
+      <div class="g3">
+        <div class="gcard"><span class="gtag t-red">Developers</span><div class="gc-title">New architecture, new skills</div><div class="gc-body">New architecture patterns, debugging techniques, and deployment models. Senior developers become junior again. Production incidents spike during the learning period.</div></div>
+        <div class="gcard"><span class="gtag t-amb">Business Users</span><div class="gc-title">New interfaces, new habits</div><div class="gc-body">New interfaces, workflows, and approval processes. Every familiar shortcut disappears. Adoption resistance and workarounds are common when change management is under-resourced.</div></div>
+        <div class="gcard"><span class="gtag t-blu">Support Teams</span><div class="gc-title">New monitoring, new models</div><div class="gc-body">New monitoring tools, operational procedures, and escalation models. Incident resolution times increase significantly during the stabilisation period.</div></div>
+      </div>
+      <div class="callout co-amb"><div class="co-lbl">Reality Check</div><div class="co-txt">Productivity consistently decreases before it recovers. In complex migrations, positive ROI may not be realised until 18–36 months after go-live — a reality rarely reflected in the original business case.</div></div>
+      <div class="callout co-blu"><div class="co-lbl">Mitigation</div><div class="co-txt">Model the productivity dip explicitly. Include a learning curve adjustment factor in all ROI calculations. If the break-even point exceeds 24 months, the business case requires executive review.</div></div>
+    </div>
+  </div>
+
+  <!-- Trap 7 -->
+  <div class="concept">
+    <button class="c-trigger" onclick="toggleC(this)" aria-expanded="false">
+      <span class="c-num" style="background:var(--red)">T-07</span>
+      <div class="c-hd"><div class="c-title">The Governance Reset</div><div class="c-preview">Over years of operation, enterprises build robust security controls, audit evidence repositories, and governance standards. Technology-focused migrations discard this knowledge. In regulated industries, this is not a gap — it is an exposure.</div></div>
+      <span class="c-arrow">▼</span>
+    </button>
+    <div class="c-body">
+      <div class="prose"><p>Migration programmes focused narrowly on technology frequently discard institutional governance knowledge entirely. The new platform is implemented. The governance framework is not migrated with it. The result is a governance reset — an organisation that is technically current but operationally exposed. This risk is acute in regulated industries.</p></div>
+      <div class="g2">
+        <div class="gcard"><span class="gtag t-red">High-Risk Industries</span><div class="gc-title">Where governance resets are critical</div><div class="gc-body">Banking, Financial Services &amp; Insurance (BFSI) · Healthcare and Life Sciences · Government and Public Sector · Energy and Utilities · Telecommunications. In these sectors, a governance gap is a regulatory liability — not a technical debt item.</div></div>
+        <div class="gcard"><span class="gtag t-tel">The Principle</span><div class="gc-title">Governance before technology</div><div class="gc-body">Governance migration must be treated as a prerequisite, not a follow-on activity. Governance artifacts must be validated in the new environment before production workloads are migrated.</div></div>
+      </div>
+      <div class="callout co-red"><div class="co-lbl">⚠ Warning</div><div class="co-txt">Governance should be migrated before technology. Treat governance continuity as a hard dependency, not a post-migration cleanup task.</div></div>
+    </div>
+  </div>
+
+  <!-- Trap 8 -->
+  <div class="concept">
+    <button class="c-trigger" onclick="toggleC(this)" aria-expanded="false">
+      <span class="c-num" style="background:var(--blue)">T-08</span>
+      <div class="c-hd"><div class="c-title">The Single Platform Myth</div><div class="c-preview">One platform equals simplicity, reduced vendor management, lower costs — the assumption is pervasive. It is frequently wrong. A dual-tool strategy often delivers better outcomes than forced consolidation.</div></div>
+      <span class="c-arrow">▼</span>
+    </button>
+    <div class="c-body">
+      <div class="prose"><p>Platform purity is not a business objective. Business value is. A dual-tool strategy — maintaining proven production capabilities on the existing platform while introducing new capabilities on the target platform — often delivers reduced migration risk, faster innovation, and better vendor leverage.</p></div>
+      <ul class="clist">
+        <li><strong>Reduced migration risk</strong> by preserving production stability on the proven platform.</li>
+        <li><strong>Faster innovation</strong> by deploying new capabilities selectively without full platform commitment.</li>
+        <li><strong>Better vendor leverage</strong> through competitive positioning between two active platforms.</li>
+        <li><strong>Natural asset retirement</strong> as legacy workloads reach end-of-life — no forced rebuild timeline.</li>
+        <li><strong>Organisational learning</strong> before full commitment to the new platform and its operating model.</li>
+      </ul>
+      <div class="callout co-blu"><div class="co-lbl">Mitigation</div><div class="co-txt">Default to a dual-tool evaluation. Require affirmative evidence that full consolidation delivers measurably better outcomes before approving single-platform migration.</div></div>
+    </div>
+  </div>
+
+  <!-- ── RISK MITIGATION FRAMEWORK ──────────────── -->
+  <div style="margin:40px 0 12px">
+    <div class="pg-tag pg-tag-teal" style="margin-bottom:8px">Six-Phase Framework</div>
+    <div style="font-family:'Fraunces',serif;font-size:22px;font-weight:600;color:var(--ink);margin-bottom:4px">Enterprise Migration Risk Mitigation</div>
+    <div style="font-size:14px;color:var(--ink3)">Each phase is a gate. No phase should be bypassed or compressed under schedule pressure.</div>
+  </div>
+
+  <div class="concept">
+    <button class="c-trigger" onclick="toggleC(this)" aria-expanded="false">
+      <span class="c-num" style="background:var(--teal)">PH-1</span>
+      <div class="c-hd"><div class="c-title">Business Validation</div><div class="c-preview">If the only justification for migration is "the new platform has better capabilities," the migration should not proceed.</div></div>
+      <span class="c-arrow">▼</span>
+    </button>
+    <div class="c-body">
+      <ul class="clist">
+        <li>Define the <strong>specific business problem</strong> the migration is intended to solve — not features desired.</li>
+        <li>Establish <strong>quantified, time-bound success metrics</strong> tied to business outcomes.</li>
+        <li>Assign a named <strong>Executive Sponsor</strong> with formal accountability and the authority to stop the programme.</li>
+        <li>Assign a named <strong>Business Owner</strong> with day-to-day operational ownership post-migration.</li>
+        <li>Validate that the identified problem <strong>cannot be solved</strong> on the current platform at acceptable cost.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="concept">
+    <button class="c-trigger" onclick="toggleC(this)" aria-expanded="false">
+      <span class="c-num" style="background:var(--teal)">PH-2</span>
+      <div class="c-hd"><div class="c-title">Vendor Accountability</div><div class="c-preview">Migration accountability must be contractually shared. The vendor relationship must be structured as a partnership with mutual skin in the game.</div></div>
+      <span class="c-arrow">▼</span>
+    </button>
+    <div class="c-body">
+      <ul class="clist">
+        <li>Formalise a <strong>RACI model</strong> covering all migration activities and deliverables — signed by the vendor.</li>
+        <li>Establish <strong>shared milestones</strong> with contractual performance commitments.</li>
+        <li>Define <strong>escalation procedures</strong> with named executive counterparts on both sides.</li>
+        <li>Secure <strong>commercial protections</strong> that activate in the event of migration failure or material delay.</li>
+        <li>Require vendor <strong>confirmation of go-live readiness</strong> before production cutover proceeds.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="concept">
+    <button class="c-trigger" onclick="toggleC(this)" aria-expanded="false">
+      <span class="c-num" style="background:var(--teal)">PH-3</span>
+      <div class="c-hd"><div class="c-title">Organisational Readiness</div><div class="c-preview">Organisations consistently underestimate this phase. It is not a checkbox. It is the most important determinant of migration success.</div></div>
+      <span class="c-arrow">▼</span>
+    </button>
+    <div class="c-body">
+      <ul class="clist">
+        <li><strong>Business readiness:</strong> Are process owners informed, aligned, and prepared to operate under new workflows?</li>
+        <li><strong>Technical readiness:</strong> Are all integration dependencies mapped, tested, and signed off?</li>
+        <li><strong>Support readiness:</strong> Are Tier 1/2/3 procedures documented and teams trained before go-live?</li>
+        <li><strong>Adoption readiness:</strong> Is a change management strategy in place with named owners and a funded plan?</li>
+        <li><strong>Communication readiness:</strong> Is a stakeholder communication plan active and tested?</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="concept">
+    <button class="c-trigger" onclick="toggleC(this)" aria-expanded="false">
+      <span class="c-num" style="background:var(--teal)">PH-4</span>
+      <div class="c-hd"><div class="c-title">Governance &amp; Security</div><div class="c-preview">Governance must precede implementation. Security architecture must be validated before any production data touches the new environment.</div></div>
+      <span class="c-arrow">▼</span>
+    </button>
+    <div class="c-body">
+      <ul class="clist">
+        <li>Validate the <strong>governance framework</strong>, including change management and approval workflows.</li>
+        <li>Review and approve the <strong>security architecture</strong> for the target platform.</li>
+        <li>Confirm <strong>data protection controls</strong>, encryption standards, and classification protocols.</li>
+        <li>Validate <strong>AI-specific risk controls</strong> where Agentic AI or GenAI capabilities are in scope.</li>
+        <li>Confirm <strong>audit evidence continuity plans</strong> — governance artifacts migrate before technology.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="concept">
+    <button class="c-trigger" onclick="toggleC(this)" aria-expanded="false">
+      <span class="c-num" style="background:var(--teal)">PH-5</span>
+      <div class="c-hd"><div class="c-title">Capability Readiness</div><div class="c-preview">Advanced capabilities should only be deployed when the organisation has the maturity to consume them responsibly. Capability deployment without readiness is a governance liability.</div></div>
+      <span class="c-arrow">▼</span>
+    </button>
+    <div class="c-body">
+      <ul class="clist">
+        <li>Confirm each advanced capability has a <strong>defined business use case</strong> — not a demo aspiration.</li>
+        <li>Validate that <strong>security and governance controls</strong> are in place for each capability domain.</li>
+        <li>Assign <strong>operational owners</strong> with named accountability before production activation.</li>
+        <li>Require a <strong>capability-specific readiness review</strong> before enabling in production.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="concept">
+    <button class="c-trigger" onclick="toggleC(this)" aria-expanded="false">
+      <span class="c-num" style="background:var(--teal)">PH-6</span>
+      <div class="c-hd"><div class="c-title">Business Continuity Protection</div><div class="c-preview">Migration without a rollback plan is not a strategy — it is a risk acceptance exercise. Business continuity requirements are non-negotiable.</div></div>
+      <span class="c-arrow">▼</span>
+    </button>
+    <div class="c-body">
+      <ul class="clist">
+        <li>Document a formalized <strong>rollback plan</strong> with decision criteria and activation thresholds.</li>
+        <li>Define a <strong>parallel run strategy</strong> with acceptance criteria for production cutover.</li>
+        <li>Validate <strong>disaster recovery procedures</strong> in the new environment before go-live — not assumed.</li>
+        <li>Activate a <strong>hypercare support model</strong> for the stabilisation period post-launch.</li>
+        <li>Establish a rigorous <strong>production cutover plan</strong> with named accountability for every step.</li>
+      </ul>
+      <div class="callout co-red"><div class="co-lbl">Non-Negotiable</div><div class="co-txt">Migration without a tested rollback plan is not a strategy. It is a risk acceptance exercise dressed as a project plan.</div></div>
+    </div>
+  </div>
+
+  <!-- ── DECISION MATRIX ─────────────────────────── -->
+  <div style="margin:40px 0 12px">
+    <div class="pg-tag pg-tag-teal" style="margin-bottom:8px">Decision Framework</div>
+    <div style="font-family:'Fraunces',serif;font-size:22px;font-weight:600;color:var(--ink);margin-bottom:4px">Migration Decision Matrix</div>
+    <div style="font-size:14px;color:var(--ink3)">Aggregate scores from the Readiness Assessment below to determine the recommended migration path. Scores must be validated by a cross-functional review panel — not self-certified by the migration team.</div>
+  </div>
+
+  <div class="thr">
+    <div class="thr-pct tl1">0–50%</div>
+    <div class="thr-body"><div class="thr-title">DO NOT MIGRATE</div><div class="thr-desc">Prioritise fundamental governance, security, and business readiness. No migration programme should be initiated until scores improve.</div><div class="thr-note">Hard stop — no exceptions</div></div>
+  </div>
+  <div class="thr">
+    <div class="thr-pct tl2">51–70%</div>
+    <div class="thr-body"><div class="thr-title">PILOT ONLY</div><div class="thr-desc">Validate core assumptions within a tightly scoped, isolated proof-of-concept. Do not expand scope until the pilot evidence supports it.</div><div class="thr-note">Isolated scope with strict exit criteria</div></div>
+  </div>
+  <div class="thr">
+    <div class="thr-pct tl3">71–85%</div>
+    <div class="thr-body"><div class="thr-title">DUAL-TOOL STRATEGY</div><div class="thr-desc">Maintain production stability on the existing platform. Introduce new capabilities selectively. Retire legacy assets naturally as workloads reach end-of-life.</div><div class="thr-note">Recommended default path for most organisations</div></div>
+  </div>
+  <div class="thr">
+    <div class="thr-pct tl4">86–95%</div>
+    <div class="thr-body"><div class="thr-title">PHASED MIGRATION</div><div class="thr-desc">Execute migration incrementally, gated by documented milestone reviews and formal sign-off at each stage.</div><div class="thr-note">Milestone-gated with rollback at each phase</div></div>
+  </div>
+  <div class="thr">
+    <div class="thr-pct tl5">95%+</div>
+    <div class="thr-body"><div class="thr-title">FULL MIGRATION ELIGIBLE</div><div class="thr-desc">Organisation demonstrates robust maturity across all evaluated domains. Proceed with full governance oversight and a tested rollback plan.</div><div class="thr-note">Full governance oversight still required</div></div>
+  </div>
+
+  <!-- ── READINESS ASSESSMENT ────────────────────── -->
+  <div style="margin:40px 0 12px">
+    <div class="pg-tag pg-tag-teal" style="margin-bottom:8px">Evaluation Template</div>
+    <div style="font-family:'Fraunces',serif;font-size:22px;font-weight:600;color:var(--ink);margin-bottom:4px">Migration Readiness Assessment</div>
+    <div style="font-size:14px;color:var(--ink3)">Score each domain 0 (Non-Existent) to 10 (Fully Mature &amp; Documented). Scores must be evidence-based and validated by a cross-functional review panel.</div>
+  </div>
+
+  <div class="tw">
+    <table>
+      <thead><tr><th>#</th><th>Domain</th><th>Evaluation Criteria (Have we…)</th><th>Score (0–10)</th><th>Gaps / Owner</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td><strong>Business Justification</strong></td><td>Defined measurable business outcomes beyond feature comparison? Assigned an executive sponsor and business owner with formal accountability?</td><td style="text-align:center;color:var(--ink4)">—</td><td></td></tr>
+        <tr><td>2</td><td><strong>Financial Readiness</strong></td><td>Fully calculated hidden costs including training, knowledge transfer, productivity loss, parallel run overhead, and legacy decommissioning?</td><td style="text-align:center;color:var(--ink4)">—</td><td></td></tr>
+        <tr><td>3</td><td><strong>Vendor Accountability</strong></td><td>Established a RACI model with the vendor? Secured shared success criteria and commercial protections for migration failure?</td><td style="text-align:center;color:var(--ink4)">—</td><td></td></tr>
+        <tr><td>4</td><td><strong>Governance Readiness</strong></td><td>Documented compliance requirements, audit trail continuity, change management protocols, and process standardisation to prevent a governance reset?</td><td style="text-align:center;color:var(--ink4)">—</td><td></td></tr>
+        <tr><td>5</td><td><strong>Security Readiness</strong></td><td>Validated the security architecture, IAM integration, data protection controls, encryption standards, and AI-specific risk protocols for the new platform?</td><td style="text-align:center;color:var(--ink4)">—</td><td></td></tr>
+        <tr><td>6</td><td><strong>Organisational Readiness</strong></td><td>Developed a comprehensive change management and adoption strategy covering end-users, developers, support teams, and executive communications?</td><td style="text-align:center;color:var(--ink4)">—</td><td></td></tr>
+        <tr><td>7</td><td><strong>Technical Readiness</strong></td><td>Assessed all API dependencies, legacy integrations, data schemas, and infrastructural prerequisites required for the target platform?</td><td style="text-align:center;color:var(--ink4)">—</td><td></td></tr>
+        <tr><td>8</td><td><strong>Operational Readiness</strong></td><td>Defined Tier 1/2/3 support procedures, monitoring dashboards, alerting thresholds, and incident escalation models for the new environment?</td><td style="text-align:center;color:var(--ink4)">—</td><td></td></tr>
+        <tr><td>9</td><td><strong>Capability Readiness</strong></td><td>Confirmed that advanced features (e.g., Agentic Workflows, Process Mining, GenAI) have defined use cases, governance controls, and assigned operational owners?</td><td style="text-align:center;color:var(--ink4)">—</td><td></td></tr>
+        <tr><td>10</td><td><strong>Business Continuity</strong></td><td>Created a formalised rollback plan, parallel run strategy, disaster recovery validation, hypercare support plan, and a rigorous production cutover procedure?</td><td style="text-align:center;color:var(--ink4)">—</td><td></td></tr>
+        <tr style="background:linear-gradient(135deg,var(--blue) 0%,var(--teal) 100%)"><td colspan="3" style="text-align:right;color:#fff;font-weight:600;padding:12px 14px">Total Readiness Score →</td><td style="text-align:center;color:#fff;font-weight:700;font-size:16px">/ 100</td><td style="background:rgba(255,255,255,.08)"></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ── HARD STOPS ──────────────────────────────── -->
+  <div style="margin:32px 0 12px">
+    <div class="pg-tag" style="color:var(--red);margin-bottom:8px"><span style="display:inline-block;width:18px;height:2px;background:var(--red);margin-right:8px;vertical-align:middle"></span>Hard-Stop Criteria</div>
+    <div style="font-family:'Fraunces',serif;font-size:22px;font-weight:600;color:var(--ink);margin-bottom:4px">Automatic Rejection Conditions</div>
+    <div style="font-size:14px;color:var(--ink3)">If any of the following conditions are met, the migration must be automatically rejected until formally remediated and re-validated. Hard-stop conditions cannot be waived by project teams.</div>
+  </div>
+
+  <div class="score-grid" style="grid-template-columns:1fr 1fr">
+    <div class="sc" style="background:var(--red-lt);border-color:rgba(185,48,48,.3)">
+      <div class="sc-lbl" style="color:var(--red)">⛔ Hard Stop</div>
+      <div class="sc-txt"><strong>Governance Score &lt; 6/10</strong> — Governance maturity is below the minimum threshold for a safe migration. Deployment cannot proceed.</div>
+    </div>
+    <div class="sc" style="background:var(--red-lt);border-color:rgba(185,48,48,.3)">
+      <div class="sc-lbl" style="color:var(--red)">⛔ Hard Stop</div>
+      <div class="sc-txt"><strong>Security Score &lt; 6/10</strong> — Security architecture has not been validated to the minimum standard required for production migration.</div>
+    </div>
+    <div class="sc" style="background:var(--red-lt);border-color:rgba(185,48,48,.3)">
+      <div class="sc-lbl" style="color:var(--red)">⛔ Hard Stop</div>
+      <div class="sc-txt"><strong>No Rollback Strategy</strong> — A formalised, documented rollback plan with activation criteria must exist before any production cutover.</div>
+    </div>
+    <div class="sc" style="background:var(--red-lt);border-color:rgba(185,48,48,.3)">
+      <div class="sc-lbl" style="color:var(--red)">⛔ Hard Stop</div>
+      <div class="sc-txt"><strong>No Executive Sponsor</strong> — A named executive sponsor with formal accountability and programme authority must be assigned.</div>
+    </div>
+    <div class="sc" style="background:var(--red-lt);border-color:rgba(185,48,48,.3)">
+      <div class="sc-lbl" style="color:var(--red)">⛔ Hard Stop</div>
+      <div class="sc-txt"><strong>No Business Owner</strong> — A named business owner with operational accountability post-migration must be assigned before migration begins.</div>
+    </div>
+    <div class="sc" style="background:var(--red-lt);border-color:rgba(185,48,48,.3)">
+      <div class="sc-lbl" style="color:var(--red)">⛔ Hard Stop</div>
+      <div class="sc-txt"><strong>No Change Management Strategy</strong> — A funded adoption and change management plan with named owners must exist before production cutover.</div>
+    </div>
+    <div class="sc" style="background:var(--red-lt);border-color:rgba(185,48,48,.3);grid-column:1/-1">
+      <div class="sc-lbl" style="color:var(--red)">⛔ Hard Stop</div>
+      <div class="sc-txt"><strong>No Vendor RACI / Accountability Framework</strong> — A contractual RACI model with commercial protections must be executed before migration activities commence.</div>
+    </div>
+  </div>
+
+  <div class="callout co-red" style="margin-top:20px">
+    <div class="co-lbl">⛔ Non-Waivable</div>
+    <div class="co-txt">Any single Hard-Stop condition is sufficient grounds for rejection. Hard-Stop conditions <strong>cannot be waived by project teams</strong> — they require formal executive review and documented remediation evidence before migration can proceed.</div>
+  </div>
+
+  <!-- ── STRATEGIC CONCLUSION ────────────────────── -->
+  <div style="margin:40px 0 0;background:linear-gradient(135deg,var(--blue) 0%,var(--teal) 100%);border-radius:10px;padding:32px 36px;color:#fff">
+    <div style="font-family:'DM Mono',monospace;font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#7ab8c4;margin-bottom:12px">Strategic Conclusion</div>
+    <div style="font-family:'Fraunces',serif;font-size:22px;font-weight:600;margin-bottom:14px;line-height:1.35">Migration is not a technology decision.<br/>It is an organisational commitment.</div>
+    <p style="font-size:14px;color:#aabcc8;line-height:1.85;margin-bottom:12px">The decision to migrate enterprise platforms should never be triggered by vendor demonstrations, licensing discounts, or feature comparisons. It must be anchored entirely in measurable business outcomes — specific, quantified, and time-bound.</p>
+    <p style="font-size:14px;color:#aabcc8;line-height:1.85;margin-bottom:0">The most successful organisations do not ask: <em>"Does the new platform have better features?"</em> They ask: <em>"Are we organisationally prepared to realise the value of those features?"</em> Technology maturity can be purchased. Organisational maturity cannot.</p>
+  </div>
+
+</div>
+</div>
+
+<!-- ════════════════════════════════════════════════
+     PAGE: ENTERPRISE ARCHITECTURE
+════════════════════════════════════════════════ -->
+<div class="page"
+</div>
+
 </body>
 </html>
