@@ -1,7 +1,7 @@
 name = "architecting-ai"
 compatibility_date = "2026-06-09"
-compatibility_flags = ["nodejs_compat"]
 
 [assets]
 directory = "."
 not_found_handling = "single-page-application"
+exclude = [".git/**", ".gitignore", "wrangler.toml", "*.map", ".wrangler/**"]
