@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Enterprise Architecture — Architecting Intelligence</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;600&display=swap');
+:root{--ink:#0d0f14;--ink2:#2a2d3a;--ink3:#5c6070;--rule:#e2e6f0;--bg:#f4f7fb;--white:#fff;--teal:#0b6b6b;--teal-lt:#e8f4f4;--blue:#1a4480;--blue-lt:#e8eef7;--red:#b93030;--red-lt:#fdf0f0;--amb:#a85d00;--amb-lt:#fdf5ec;--grn:#155e3e;--grn-lt:#edf7f2;--pur:#3d2b8a;--pur-lt:#f0edfb}
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);line-height:1.72}.nav{background:#fff;border-bottom:2px solid var(--teal);position:sticky;top:0;z-index:10;box-shadow:0 2px 16px rgba(0,0,0,.08)}.nav-inner{max-width:1180px;margin:0 auto;padding:13px 28px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-family:'DM Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);font-weight:700}.nav a{font-size:13px;color:var(--ink3);text-decoration:none;margin-left:16px}.nav a:hover{color:var(--teal)}.wrap{max-width:1180px;margin:0 auto;padding:44px 28px 76px}.hero{background:linear-gradient(135deg,#0a1628,#0f2a4a 55%,#0b4040);color:#fff;border-radius:18px;padding:42px 44px;margin-bottom:26px;box-shadow:0 16px 42px rgba(13,15,20,.18)}.eyebrow{font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.14em;color:#7ab8c4;font-size:11px;font-weight:600;margin-bottom:10px}.hero h1{font-family:'Fraunces',serif;font-size:40px;line-height:1.12;margin-bottom:12px}.hero p{max-width:830px;color:#c7d5df;font-size:16px}.panel{background:#fff;border:1px solid var(--rule);border-radius:16px;padding:26px;margin-bottom:22px}.panel h2{font-family:'Fraunces',serif;font-size:26px;margin-bottom:10px}.panel p{color:var(--ink2);font-size:15px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:18px}.card{background:#fff;border:1px solid var(--rule);border-radius:14px;padding:22px;transition:all .16s;text-decoration:none;color:inherit;display:block}.card:hover{border-color:var(--teal);box-shadow:0 8px 24px rgba(0,0,0,.08);transform:translateY(-1px)}.icon{font-size:28px;margin-bottom:8px}.tag{display:inline-block;font-family:'DM Mono',monospace;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:3px 8px;border-radius:5px;margin-bottom:9px;background:var(--teal-lt);color:var(--teal)}.card h3{font-family:'Fraunces',serif;font-size:21px;margin-bottom:8px;color:var(--ink)}.card p{font-size:14px;color:var(--ink3);line-height:1.65;margin-bottom:12px}.arrow{font-family:'DM Mono',monospace;font-size:12px;color:var(--teal);font-weight:700}.principle{border-left:4px solid var(--teal);background:var(--teal-lt);padding:16px 18px;border-radius:10px;margin-top:16px;color:var(--ink2)}.mini{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:16px}.mini div{background:var(--bg);border:1px solid var(--rule);border-radius:10px;padding:14px}.mini strong{display:block;color:var(--ink);font-size:13px;margin-bottom:4px}.mini span{font-size:12px;color:var(--ink3)}@media(max-width:820px){.grid,.mini{grid-template-columns:1fr}.hero h1{font-size:30px}.wrap{padding:28px 16px}.hero{padding:28px}.nav-inner{padding:12px 16px;align-items:flex-start;flex-direction:column}.nav a{margin-left:0;margin-right:14px}}
+</style>
+</head>
+<body id="ea">
+<nav class="nav"><div class="nav-inner"><div class="brand">Enterprise Architecture</div><div><a href="/">Home</a><a href="/enterprise-architecture/#ea">Enterprise Architecture</a><a href="/enterprise-architecture/ai-architecture.html">AI Architecture</a></div></div></nav>
+<main class="wrap">
+  <section class="hero">
+    <div class="eyebrow">Architecting Intelligence · Enterprise Architecture</div>
+    <h1>Enterprise Architecture</h1>
+    <p>Architecture patterns, implementation frameworks, and operating models for translating business strategy, governance, security, data, automation, and AI into executable enterprise platforms.</p>
+  </section>
+
+  <section class="panel">
+    <h2>Architecture Domains</h2>
+    <p>This section groups practical enterprise architecture content. The first added domain is AI Architecture, focused on the implementation framework required to govern and operate AI safely in real enterprise environments.</p>
+    <div class="grid">
+      <a class="card" href="/enterprise-architecture/ai-architecture.html">
+        <div class="icon">🧠</div>
+        <span class="tag">AI Architecture</span>
+        <h3>AI Architecture Implementation Framework</h3>
+        <p>A concise visual and explanation for the Enterprise AI Control Plane: business intent, prompt normalization, scenario registry, document control, PII controls, vendor/model routing, evidence gates, re-embedding, validation, human review, and immutable audit.</p>
+        <div class="arrow">Open Framework →</div>
+      </a>
+      <div class="card">
+        <div class="icon">🏗️</div>
+        <span class="tag">Coming Next</span>
+        <h3>Enterprise Reference Architecture</h3>
+        <p>Target-state architecture patterns, platform capability maps, integration boundaries, operating model alignment, and architecture decision records.</p>
+        <div class="arrow">Planned →</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>How AI Architecture fits with the Governance Framework</h2>
+    <p>The Agentic AI Governance Framework defines what must be controlled. The AI Architecture Implementation Framework explains how those controls are technically enforced through the runtime architecture.</p>
+    <div class="principle"><strong>Core principle:</strong> Governance defines the rule. Architecture makes the rule executable. Runtime control proves the rule was enforced.</div>
+    <div class="mini">
+      <div><strong>Governance</strong><span>Risk tiers, policies, review boards, approvals, evidence requirements.</span></div>
+      <div><strong>Architecture</strong><span>Control plane, gateways, registries, adapters, routing, validation layers.</span></div>
+      <div><strong>Implementation</strong><span>Prompt compiler, document controls, PII masking, vendor route enforcement.</span></div>
+      <div><strong>Operations</strong><span>Monitoring, drift detection, incident response, kill switch, audit vault.</span></div>
+    </div>
+  </section>
+</main>
+</body>
+</html>
