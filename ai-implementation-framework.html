@@ -3,112 +3,24 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>AI Implementation Framework — Architecting Intelligence</title>
+<meta http-equiv="refresh" content="0; url=/enterprise-architecture/ai-architecture.html" />
+<title>Redirecting — AI Architecture & Implementation Framework</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;600&display=swap');
-:root{--ink:#0d0f14;--ink2:#2a2d3a;--ink3:#5c6070;--rule:#e2e6f0;--bg:#f4f7fb;--white:#fff;--teal:#0b6b6b;--teal-lt:#e8f4f4;--blue:#1a4480;--blue-lt:#e8eef7;--red:#b93030;--red-lt:#fdf0f0;--amb:#a85d00;--amb-lt:#fdf5ec;--grn:#155e3e;--grn-lt:#edf7f2;--pur:#3d2b8a;--pur-lt:#f0edfb;}
-*{box-sizing:border-box;margin:0;padding:0}body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);line-height:1.7}.wrap{max-width:1180px;margin:0 auto;padding:44px 28px 72px}.hero{background:linear-gradient(135deg,#0a1628,#0f2a4a 55%,#0b4040);color:#fff;border-radius:18px;padding:42px 44px;margin-bottom:26px;box-shadow:0 16px 42px rgba(13,15,20,.18)}.eyebrow{font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.14em;color:#7ab8c4;font-size:11px;font-weight:600;margin-bottom:10px}.hero h1{font-family:'Fraunces',serif;font-size:40px;line-height:1.12;margin-bottom:12px}.hero p{max-width:820px;color:#c7d5df;font-size:16px}.back{display:inline-block;margin-bottom:18px;color:var(--teal);text-decoration:none;font-family:'DM Mono',monospace;font-size:12px;font-weight:600}.panel{background:var(--white);border:1px solid var(--rule);border-radius:16px;padding:26px;margin-bottom:22px}.panel h2{font-family:'Fraunces',serif;font-size:26px;margin-bottom:10px}.panel p{color:var(--ink2);font-size:15px}.principle{border-left:4px solid var(--teal);background:var(--teal-lt);padding:16px 18px;border-radius:10px;margin:18px 0;color:var(--ink2)}.principle strong{color:var(--teal)}.visual{background:#fff;border:1px solid var(--rule);border-radius:16px;padding:18px;margin:20px 0}.svg-title{font-family:'DM Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--blue);text-transform:uppercase;margin:0 0 12px 4px}.flow-svg{width:100%;height:auto;display:block}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:#fff;border:1px solid var(--rule);border-radius:12px;padding:18px}.tag{display:inline-block;font-family:'DM Mono',monospace;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:3px 8px;border-radius:5px;margin-bottom:8px}.t-blue{background:var(--blue-lt);color:var(--blue)}.t-teal{background:var(--teal-lt);color:var(--teal)}.t-green{background:var(--grn-lt);color:var(--grn)}.t-amber{background:var(--amb-lt);color:var(--amb)}.t-red{background:var(--red-lt);color:var(--red)}.t-purple{background:var(--pur-lt);color:var(--pur)}.card h3{font-size:16px;margin-bottom:6px;color:var(--ink)}.card p{font-size:13px;color:var(--ink3);line-height:1.65}.matrix{overflow-x:auto;border:1px solid var(--rule);border-radius:12px;background:#fff;margin-top:14px}table{width:100%;border-collapse:collapse;font-size:13px}th{background:linear-gradient(135deg,var(--blue),var(--teal));color:#fff;text-align:left;padding:12px;font-size:11px;text-transform:uppercase;letter-spacing:.06em}td{padding:12px;border-bottom:1px solid var(--rule);vertical-align:top;color:var(--ink2)}tr:last-child td{border-bottom:none}.footer-note{font-size:12px;color:var(--ink3);font-family:'DM Mono',monospace;text-align:center;margin-top:28px}@media(max-width:860px){.grid{grid-template-columns:1fr}.hero h1{font-size:30px}.wrap{padding:24px 16px}.hero{padding:28px}}
+:root{--ink:#0d0f14;--ink2:#2a2d3a;--ink3:#5c6070;--rule:#e2e6f0;--bg:#f4f7fb;--white:#fff;--teal:#0b6b6b;--teal-lt:#e8f4f4;--blue:#1a4480;--blue-lt:#e8eef7}
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);line-height:1.7}.wrap{max-width:900px;margin:0 auto;padding:56px 28px}.hero{background:linear-gradient(135deg,#0a1628,#0f2a4a 55%,#0b4040);color:#fff;border-radius:18px;padding:38px 42px;box-shadow:0 16px 42px rgba(13,15,20,.18)}.eyebrow{font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.14em;color:#7ab8c4;font-size:11px;font-weight:600;margin-bottom:10px}.hero h1{font-family:'Fraunces',serif;font-size:34px;line-height:1.15;margin-bottom:12px}.hero p{color:#c7d5df;font-size:15px;margin-bottom:16px}.btn{display:inline-block;background:var(--teal);color:#fff;text-decoration:none;font-family:'DM Mono',monospace;font-size:12px;font-weight:700;padding:10px 14px;border-radius:7px}.note{background:#fff;border:1px solid var(--rule);border-radius:14px;padding:18px 20px;margin-top:18px;color:var(--ink2);font-size:14px}
 </style>
 </head>
 <body>
-<div class="wrap">
-<a class="back" href="/">← Back to Architecting Intelligence</a>
-<section class="hero">
-  <div class="eyebrow">AI Governance · Runtime Implementation</div>
-  <h1>AI Implementation Framework</h1>
-  <p>A practical implementation model for converting AI governance principles into runtime controls across users, applications, agents, documents, models, vendors, and production environments.</p>
-</section>
-
-<section class="panel">
-  <h2>Why this framework exists</h2>
-  <p>The Agentic AI Governance Framework defines how autonomous AI should be governed. The AI Implementation Framework explains how those governance controls are enforced in real systems: from user intent and prompt normalization to document control, vendor routing, evidence gates, validation, human approval, and immutable audit.</p>
-  <div class="principle"><strong>Core principle:</strong> Production AI execution is denied by default and allowed only when the business scenario, evidence pack, prompt version, policy version, model/vendor route, document controls, and runtime safeguards are approved.</div>
-</section>
-
-<section class="visual">
-  <div class="svg-title">Enterprise AI Control Plane — High-Level Implementation Flow</div>
-  <svg class="flow-svg" viewBox="0 0 1280 610" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AI Implementation Framework flow">
-    <defs>
-      <style>
-        .box{fill:#fff;stroke:#cfd7e6;stroke-width:1.5}.head{fill:#0f2a4a}.txt{font:600 18px 'DM Sans',Arial;fill:#0d0f14}.sub{font:400 13px 'DM Sans',Arial;fill:#5c6070}.small{font:600 12px 'DM Mono',monospace;fill:#1a4480}.arrow{stroke:#52657a;stroke-width:2;fill:none;marker-end:url(#m)}.deny{fill:#fdf0f0;stroke:#b93030}.allow{fill:#edf7f2;stroke:#155e3e}.warn{fill:#fdf5ec;stroke:#a85d00}.blue{fill:#e8eef7;stroke:#1a4480}.teal{fill:#e8f4f4;stroke:#0b6b6b}.purple{fill:#f0edfb;stroke:#3d2b8a}
-      </style>
-      <marker id="m" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52657a"/></marker>
-    </defs>
-    <rect x="20" y="20" width="1240" height="570" rx="18" fill="#f8fafc" stroke="#d9e0ec"/>
-    <rect x="60" y="55" width="1160" height="54" rx="10" class="blue"/><text x="640" y="88" text-anchor="middle" class="txt">Users · Applications · APIs · Autonomous Agents</text>
-    <path d="M640 110 V135" class="arrow"/>
-    <rect x="60" y="135" width="250" height="72" rx="10" class="box"/><text x="185" y="164" text-anchor="middle" class="txt">Identity &amp; Environment</text><text x="185" y="185" text-anchor="middle" class="sub">IAM · roles · tenant · Dev/Test/Prod</text>
-    <rect x="330" y="135" width="250" height="72" rx="10" class="teal"/><text x="455" y="164" text-anchor="middle" class="txt">Intent &amp; Prompt Compiler</text><text x="455" y="185" text-anchor="middle" class="sub">Interpret · normalize · enrich · structure</text>
-    <rect x="600" y="135" width="250" height="72" rx="10" class="box"/><text x="725" y="164" text-anchor="middle" class="txt">Business Scenario Registry</text><text x="725" y="185" text-anchor="middle" class="sub">Owner · risk · data class · approval</text>
-    <rect x="870" y="135" width="250" height="72" rx="10" class="purple"/><text x="995" y="164" text-anchor="middle" class="txt">Document Control Layer</text><text x="995" y="185" text-anchor="middle" class="sub">Classify · mask · chunk · govern</text>
-    <path d="M310 171 H330" class="arrow"/><path d="M580 171 H600" class="arrow"/><path d="M850 171 H870" class="arrow"/>
-    <path d="M995 208 V235" class="arrow"/><path d="M185 208 V235" class="arrow"/><path d="M455 208 V235" class="arrow"/><path d="M725 208 V235" class="arrow"/>
-    <rect x="60" y="235" width="520" height="68" rx="10" class="warn"/><text x="320" y="263" text-anchor="middle" class="txt">Policy Decision Engine</text><text x="320" y="284" text-anchor="middle" class="sub">Allow · allow with controls · require approval · block</text>
-    <rect x="600" y="235" width="520" height="68" rx="10" class="blue"/><text x="860" y="263" text-anchor="middle" class="txt">Filter · Mask · Classify</text><text x="860" y="284" text-anchor="middle" class="sub">PII/PHI/PCI · prompt injection · data classification · content safety</text>
-    <path d="M580 270 H600" class="arrow"/>
-    <path d="M590 304 V330" class="arrow"/>
-    <rect x="60" y="330" width="1060" height="96" rx="10" class="box"/><text x="590" y="360" text-anchor="middle" class="txt">Scenario Control Adapters</text><text x="590" y="382" text-anchor="middle" class="sub">Communication · Knowledge/RAG · Documents · Decisions · Calculation · Workflow · Risk/Compliance · Developer Tools · Agentic Actions</text><text x="590" y="405" text-anchor="middle" class="small">Each adapter applies the right controls, tests, evidence, approvals, and runtime boundaries for that scenario type.</text>
-    <path d="M590 426 V452" class="arrow"/>
-    <rect x="60" y="452" width="330" height="72" rx="10" class="deny"/><text x="225" y="480" text-anchor="middle" class="txt">Evidence / Release Gate</text><text x="225" y="502" text-anchor="middle" class="sub">No evidence = no production execution</text>
-    <rect x="475" y="452" width="330" height="72" rx="10" class="allow"/><text x="640" y="480" text-anchor="middle" class="txt">Approved AI Routing</text><text x="640" y="502" text-anchor="middle" class="sub">External · self-hosted · private pipeline · third-party</text>
-    <rect x="890" y="452" width="330" height="72" rx="10" class="teal"/><text x="1055" y="480" text-anchor="middle" class="txt">Validate · HITL · Audit</text><text x="1055" y="502" text-anchor="middle" class="sub">Rehydrate · validate · approve · evidence vault</text>
-    <path d="M390 488 H475" class="arrow"/><path d="M805 488 H890" class="arrow"/>
-    <rect x="60" y="545" width="1160" height="28" rx="8" class="head"/><text x="640" y="564" text-anchor="middle" fill="#fff" font-family="DM Mono,monospace" font-size="12" font-weight="700">Production is deny-by-default. Governance is enforced before, during, and after every AI interaction.</text>
-  </svg>
-</section>
-
-<section class="panel">
-  <h2>Implementation aspects</h2>
-  <div class="grid">
-    <div class="card"><span class="tag t-blue">1 · Entry</span><h3>Identity &amp; Environment Resolver</h3><p>Every user, application, API, or agent is authenticated first. The gateway resolves environment policy: development, testing/UAT, or production.</p></div>
-    <div class="card"><span class="tag t-teal">2 · Prompt</span><h3>Business Intent &amp; Prompt Compiler</h3><p>Users can ask in natural language. The platform interprets intent, detects task type, enriches the prompt, and creates a structured AI request.</p></div>
-    <div class="card"><span class="tag t-green">3 · Scenario</span><h3>Business Scenario Registry</h3><p>Every AI request must map to an approved business scenario with owner, risk level, data classification, allowed actions, required tests, and status.</p></div>
-    <div class="card"><span class="tag t-purple">4 · Documents</span><h3>Document Control Layer</h3><p>Documents are treated as governed assets. PDFs, Office files, images, emails, and spreadsheets are classified, permission-checked, masked, chunked, and tracked.</p></div>
-    <div class="card"><span class="tag t-amber">5 · Policy</span><h3>Policy Decision Engine</h3><p>The engine decides whether to allow, allow with controls, require approval, or block based on scenario, data, user, model, vendor, and environment.</p></div>
-    <div class="card"><span class="tag t-red">6 · Security</span><h3>Filter · Mask · Classify</h3><p>PII, PHI, PCI, secrets, prompt injection, content safety, data sensitivity, and output leakage checks are applied before and after AI execution.</p></div>
-    <div class="card"><span class="tag t-blue">7 · Control Packs</span><h3>Scenario Control Adapters</h3><p>Communication, knowledge, document, decision, calculation, workflow, compliance, developer, and agentic use cases get different controls and tests.</p></div>
-    <div class="card"><span class="tag t-amber">8 · Gate</span><h3>Evidence &amp; Release Gate</h3><p>Production is blocked unless the scenario, prompt, model/vendor route, policy version, security review, test reports, and approvals are complete.</p></div>
-    <div class="card"><span class="tag t-green">9 · Routing</span><h3>Approved AI Routing</h3><p>Requests route only to approved external providers, managed enterprise platforms, self-hosted models, private pipelines, or third-party AI platforms.</p></div>
-    <div class="card"><span class="tag t-teal">10 · Output</span><h3>Validation &amp; Rehydration</h3><p>Responses are schema-checked, confidence-scored, source-validated, scanned for leakage, and rehydrated only when approved.</p></div>
-    <div class="card"><span class="tag t-purple">11 · Oversight</span><h3>Human-in-the-Loop</h3><p>High-risk outputs, business decisions, customer-impacting communication, and agentic actions are routed to human review before final delivery.</p></div>
-    <div class="card"><span class="tag t-blue">12 · Evidence</span><h3>Immutable Audit Vault</h3><p>The platform stores request, response, scenario, data class, document ID, prompt version, model route, approvals, cost, and final business action.</p></div>
-  </div>
-</section>
-
-<section class="panel">
-  <h2>Content re-embedding for RAG and knowledge scenarios</h2>
-  <p>When documents are used for knowledge retrieval, re-embedding is controlled as a governed data movement event. The goal is to keep retrieval accurate, permission-aware, and auditable.</p>
-  <div class="matrix"><table><thead><tr><th>Step</th><th>Purpose</th><th>Control</th></tr></thead><tbody>
-    <tr><td>Source document</td><td>Upload, connect, or reference the approved source.</td><td>Document ID, hash, owner, source system, environment.</td></tr>
-    <tr><td>Extract &amp; clean</td><td>Extract text using direct parsing or OCR and remove noise.</td><td>File validation, malware scan, OCR confidence, metadata capture.</td></tr>
-    <tr><td>Classify &amp; mask</td><td>Detect PII/PHI/PCI, secrets, and restricted content.</td><td>Redaction, tokenization, exclusion, or private-route requirement.</td></tr>
-    <tr><td>Chunk</td><td>Split content into semantic chunks for retrieval.</td><td>Chunking policy, page references, sensitivity and ACL inheritance.</td></tr>
-    <tr><td>Create embeddings</td><td>Convert approved chunks into vector representations.</td><td>Approved embedding model, embedding version, tenant isolation.</td></tr>
-    <tr><td>Store index</td><td>Store only approved chunks in the vector database.</td><td>Encrypted vector index, retention policy, deletion path.</td></tr>
-    <tr><td>Retrieve with guardrails</td><td>Retrieve only what the user and scenario are allowed to access.</td><td>Permission filtering, source citation, similarity thresholds.</td></tr>
-    <tr><td>Rehydrate if approved</td><td>Restore masked tokens only for authorized users and outputs.</td><td>Output scan, HITL if required, audit trail.</td></tr>
-  </tbody></table></div>
-</section>
-
-<section class="panel">
-  <h2>How this ties to the Agentic AI Governance Framework</h2>
-  <p>The Agentic AI Governance Framework defines how autonomous systems must be contained. This implementation framework shows where those controls live in the architecture.</p>
-  <div class="matrix"><table><thead><tr><th>Agentic governance concept</th><th>Implementation control</th></tr></thead><tbody>
-    <tr><td>Blast radius</td><td>Transaction caps, rate limits, bounded actions, automatic suspension, kill switch.</td></tr>
-    <tr><td>Boundaries</td><td>Sandboxed execution, data route enforcement, approved tool/API allowlists.</td></tr>
-    <tr><td>Permissions</td><td>Least-privilege service accounts, role-based access, tool-level authorization.</td></tr>
-    <tr><td>Segregation of duties</td><td>Agent can prepare or initiate, but cannot approve its own final action.</td></tr>
-    <tr><td>Human review</td><td>Risk-based HITL routing before customer-impacting or system-changing actions.</td></tr>
-    <tr><td>Immutable logs</td><td>Full session trace, tool calls, approvals, outputs, costs, and evidence retained.</td></tr>
-  </tbody></table></div>
-</section>
-
-<section class="panel">
-  <h2>Vendor and model assurance</h2>
-  <p>Third-party AI routes are not approved only because a vendor says data is not stored or used for training. The route must carry evidence: contract terms, retention and deletion commitments, backup expiry, no-training assurance, sub-processor review, audit reports, and customer-specific model isolation where training or fine-tuning is allowed.</p>
-</section>
-
-<div class="footer-note">Architecting Intelligence · Ratheesh Ramadasan · Enterprise AI Governance &amp; Architecture</div>
-</div>
+<main class="wrap">
+  <section class="hero">
+    <div class="eyebrow">Enterprise Architecture · AI Architecture</div>
+    <h1>Redirecting to AI Architecture &amp; Implementation Framework</h1>
+    <p>This page has moved under the Enterprise Architecture section to keep the portal structure clean and consistent.</p>
+    <a class="btn" href="/enterprise-architecture/ai-architecture.html">Open Framework →</a>
+  </section>
+  <div class="note">New location: <strong>Enterprise Architecture → AI Architecture &amp; Implementation Framework</strong></div>
+</main>
+<script>window.location.replace('/enterprise-architecture/ai-architecture.html');</script>
 </body>
 </html>
