@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI Architecture — Enterprise Architecture</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;600&display=swap');
+:root{--ink:#0d0f14;--ink2:#2a2d3a;--ink3:#5c6070;--rule:#e2e6f0;--bg:#f4f7fb;--white:#fff;--teal:#0b6b6b;--teal-lt:#e8f4f4;--blue:#1a4480;--blue-lt:#e8eef7;--red:#b93030;--red-lt:#fdf0f0;--amb:#a85d00;--amb-lt:#fdf5ec;--grn:#155e3e;--grn-lt:#edf7f2;--pur:#3d2b8a;--pur-lt:#f0edfb;}
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);line-height:1.72}.wrap{max-width:1180px;margin:0 auto;padding:44px 28px 72px}.back{display:inline-block;margin-bottom:18px;color:var(--teal);text-decoration:none;font-family:'DM Mono',monospace;font-size:12px;font-weight:600}.hero{background:linear-gradient(135deg,#0a1628,#0f2a4a 55%,#0b4040);color:#fff;border-radius:18px;padding:42px 44px;margin-bottom:26px;box-shadow:0 16px 42px rgba(13,15,20,.18)}.eyebrow{font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.14em;color:#7ab8c4;font-size:11px;font-weight:600;margin-bottom:10px}.hero h1{font-family:'Fraunces',serif;font-size:42px;line-height:1.12;margin-bottom:12px}.hero p{max-width:840px;color:#c7d5df;font-size:16px}.panel{background:var(--white);border:1px solid var(--rule);border-radius:16px;padding:26px;margin-bottom:22px}.panel h2{font-family:'Fraunces',serif;font-size:26px;margin-bottom:10px}.panel p{color:var(--ink2);font-size:15px}.principle{border-left:4px solid var(--teal);background:var(--teal-lt);padding:16px 18px;border-radius:10px;margin:18px 0;color:var(--ink2)}.principle strong{color:var(--teal)}.visual{background:#fff;border:1px solid var(--rule);border-radius:16px;padding:18px;margin:20px 0}.svg-title{font-family:'DM Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--blue);text-transform:uppercase;margin:0 0 12px 4px}.flow-svg{width:100%;height:auto;display:block}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:#fff;border:1px solid var(--rule);border-radius:12px;padding:18px}.tag{display:inline-block;font-family:'DM Mono',monospace;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:3px 8px;border-radius:5px;margin-bottom:8px}.t-blue{background:var(--blue-lt);color:var(--blue)}.t-teal{background:var(--teal-lt);color:var(--teal)}.t-green{background:var(--grn-lt);color:var(--grn)}.t-amber{background:var(--amb-lt);color:var(--amb)}.t-red{background:var(--red-lt);color:var(--red)}.t-purple{background:var(--pur-lt);color:var(--pur)}.card h3{font-size:16px;margin-bottom:6px;color:var(--ink)}.card p{font-size:13px;color:var(--ink3);line-height:1.65}.matrix{overflow-x:auto;border:1px solid var(--rule);border-radius:12px;background:#fff;margin-top:14px}table{width:100%;border-collapse:collapse;font-size:13px}th{background:linear-gradient(135deg,var(--blue),var(--teal));color:#fff;text-align:left;padding:12px;font-size:11px;text-transform:uppercase;letter-spacing:.06em}td{padding:12px;border-bottom:1px solid var(--rule);vertical-align:top;color:var(--ink2)}tr:last-child td{border-bottom:none}.footer-note{font-size:12px;color:var(--ink3);font-family:'DM Mono',monospace;text-align:center;margin-top:28px}@media(max-width:860px){.grid{grid-template-columns:1fr}.hero h1{font-size:30px}.wrap{padding:24px 16px}.hero{padding:28px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<a class="back" href="/">← Back to Architecting Intelligence</a>
+<section class="hero">
+  <div class="eyebrow">Enterprise Architecture · AI Architecture</div>
+  <h1>AI Architecture Implementation Framework</h1>
+  <p>A practical enterprise architecture view of how AI capabilities should be designed, governed, routed, validated, monitored, and safely operated across business applications, documents, vendors, models, and production environments.</p>
+</section>
+
+<section class="panel">
+  <h2>Architecture intent</h2>
+  <p>This framework sits under Enterprise Architecture because it explains how AI is implemented as part of the enterprise technology landscape, not only as a governance policy. It connects business intent, application design, document controls, prompt management, model routing, vendor assurance, runtime safeguards, and operational audit into one controlled architecture.</p>
+  <div class="principle"><strong>Core principle:</strong> AI execution should be denied by default and allowed only when identity, environment, business scenario, prompt version, document policy, model route, evidence gate, and runtime controls are approved.</div>
+</section>
+
+<section class="visual">
+  <div class="svg-title">Enterprise AI Architecture — Runtime Control Flow</div>
+  <svg class="flow-svg" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Enterprise AI Architecture runtime control flow">
+    <defs>
+      <style>
+        .box{fill:#fff;stroke:#cfd7e6;stroke-width:1.5}.txt{font:600 18px 'DM Sans',Arial;fill:#0d0f14}.sub{font:400 13px 'DM Sans',Arial;fill:#5c6070}.small{font:700 12px 'DM Mono',monospace;fill:#1a4480}.arrow{stroke:#52657a;stroke-width:2;fill:none;marker-end:url(#m)}.deny{fill:#fdf0f0;stroke:#b93030}.allow{fill:#edf7f2;stroke:#155e3e}.warn{fill:#fdf5ec;stroke:#a85d00}.blue{fill:#e8eef7;stroke:#1a4480}.teal{fill:#e8f4f4;stroke:#0b6b6b}.purple{fill:#f0edfb;stroke:#3d2b8a}
+      </style>
+      <marker id="m" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52657a"/></marker>
+    </defs>
+    <rect x="20" y="20" width="1240" height="680" rx="18" fill="#f8fafc" stroke="#d9e0ec"/>
+    <rect x="60" y="55" width="1160" height="54" rx="10" class="blue"/><text x="640" y="88" text-anchor="middle" class="txt">Business Users · Enterprise Applications · APIs · Autonomous Agents</text>
+    <path d="M640 110 V135" class="arrow"/>
+
+    <rect x="60" y="135" width="250" height="78" rx="10" class="box"/><text x="185" y="164" text-anchor="middle" class="txt">Identity &amp; Environment</text><text x="185" y="186" text-anchor="middle" class="sub">IAM · roles · tenant · Dev/Test/Prod</text>
+    <rect x="365" y="135" width="250" height="78" rx="10" class="box"/><text x="490" y="164" text-anchor="middle" class="txt">Intent &amp; Prompt Compiler</text><text x="490" y="186" text-anchor="middle" class="sub">Normalize user ask · version prompt</text>
+    <rect x="670" y="135" width="250" height="78" rx="10" class="box"/><text x="795" y="164" text-anchor="middle" class="txt">Scenario Registry</text><text x="795" y="186" text-anchor="middle" class="sub">Use case · risk tier · owner</text>
+    <rect x="975" y="135" width="245" height="78" rx="10" class="box"/><text x="1098" y="164" text-anchor="middle" class="txt">Document Control</text><text x="1098" y="186" text-anchor="middle" class="sub">PII · classification · access policy</text>
+    <path d="M310 174 H365" class="arrow"/><path d="M615 174 H670" class="arrow"/><path d="M920 174 H975" class="arrow"/>
+
+    <path d="M640 214 V250" class="arrow"/>
+    <rect x="100" y="250" width="1080" height="72" rx="12" class="teal"/><text x="640" y="282" text-anchor="middle" class="txt">Policy Decision Engine</text><text x="640" y="304" text-anchor="middle" class="sub">Checks role, environment, scenario approval, document sensitivity, prompt version, vendor route, and allowed action boundary</text>
+
+    <path d="M640 322 V360" class="arrow"/>
+    <rect x="80" y="360" width="270" height="86" rx="10" class="warn"/><text x="215" y="390" text-anchor="middle" class="txt">Filter · Mask · Classify</text><text x="215" y="414" text-anchor="middle" class="sub">PII redaction · data minimization</text>
+    <rect x="375" y="360" width="250" height="86" rx="10" class="purple"/><text x="500" y="390" text-anchor="middle" class="txt">AI Control Adapter</text><text x="500" y="414" text-anchor="middle" class="sub">Scenario-specific rules</text>
+    <rect x="650" y="360" width="250" height="86" rx="10" class="blue"/><text x="775" y="390" text-anchor="middle" class="txt">Evidence Gate</text><text x="775" y="414" text-anchor="middle" class="sub">Testing · approvals · release sign-off</text>
+    <rect x="925" y="360" width="275" height="86" rx="10" class="allow"/><text x="1062" y="390" text-anchor="middle" class="txt">Approved AI Routing</text><text x="1062" y="414" text-anchor="middle" class="sub">Model · RAG · vendor · fallback route</text>
+    <path d="M350 403 H375" class="arrow"/><path d="M625 403 H650" class="arrow"/><path d="M900 403 H925" class="arrow"/>
+
+    <path d="M1062 446 V485" class="arrow"/>
+    <rect x="90" y="485" width="250" height="88" rx="10" class="box"/><text x="215" y="514" text-anchor="middle" class="txt">Model Gateway</text><text x="215" y="538" text-anchor="middle" class="sub">Policy-bound calls · version pinning</text>
+    <rect x="375" y="485" width="250" height="88" rx="10" class="box"/><text x="500" y="514" text-anchor="middle" class="txt">Validation Layer</text><text x="500" y="538" text-anchor="middle" class="sub">Schema · hallucination · safety checks</text>
+    <rect x="660" y="485" width="250" height="88" rx="10" class="box"/><text x="785" y="514" text-anchor="middle" class="txt">HITL / Approval</text><text x="785" y="538" text-anchor="middle" class="sub">Confidence routing · exception queue</text>
+    <rect x="945" y="485" width="250" height="88" rx="10" class="box"/><text x="1070" y="514" text-anchor="middle" class="txt">Audit &amp; Monitoring</text><text x="1070" y="538" text-anchor="middle" class="sub">Immutable log · drift · cost · incidents</text>
+    <path d="M340 529 H375" class="arrow"/><path d="M625 529 H660" class="arrow"/><path d="M910 529 H945" class="arrow"/>
+
+    <rect x="90" y="610" width="340" height="48" rx="9" class="deny"/><text x="260" y="640" text-anchor="middle" class="small">DENY / ESCALATE when control evidence is missing</text>
+    <rect x="470" y="610" width="340" height="48" rx="9" class="allow"/><text x="640" y="640" text-anchor="middle" class="small">ALLOW only with approved scenario and route</text>
+    <rect x="850" y="610" width="345" height="48" rx="9" class="warn"/><text x="1022" y="640" text-anchor="middle" class="small">REVIEW when confidence, drift, or policy changes</text>
+  </svg>
+</section>
+
+<section class="panel">
+  <h2>Architecture building blocks</h2>
+  <div class="grid">
+    <div class="card"><span class="tag t-blue">01</span><h3>Identity &amp; Environment</h3><p>Every request is resolved against the user, role, tenant, application, and environment. Dev/Test may allow experimentation; Production requires stricter approval and audit.</p></div>
+    <div class="card"><span class="tag t-teal">02</span><h3>Prompt Compiler</h3><p>Users should not need perfect prompts. The platform converts generic business intent into approved prompt templates with version control and guardrails.</p></div>
+    <div class="card"><span class="tag t-purple">03</span><h3>Scenario Registry</h3><p>Each AI use case is registered with owner, risk tier, allowed data, model route, approval requirement, fallback option, and monitoring threshold.</p></div>
+    <div class="card"><span class="tag t-amber">04</span><h3>Document Control</h3><p>Documents are classified before AI use. Sensitive data is masked, minimized, access-checked, and only then passed to an approved model or retrieval pipeline.</p></div>
+    <div class="card"><span class="tag t-green">05</span><h3>Model &amp; Vendor Gateway</h3><p>AI calls are routed through a controlled gateway. The gateway enforces approved vendors, pinned model versions, retention rules, regional routing, and fallback behavior.</p></div>
+    <div class="card"><span class="tag t-red">06</span><h3>Validation &amp; HITL</h3><p>Outputs are validated before action. Low confidence, high-risk decisions, drift, or policy conflict are routed to human review instead of automatic execution.</p></div>
+  </div>
+</section>
+
+<section class="panel">
+  <h2>How each AI pattern is controlled</h2>
+  <div class="matrix"><table><thead><tr><th>AI Pattern</th><th>Architecture Control</th><th>Why it Matters</th></tr></thead><tbody>
+    <tr><td>Chat / General Query</td><td>Prompt compiler, policy check, response filter, audit log</td><td>Prevents uncontrolled answers from becoming unaudited business decisions.</td></tr>
+    <tr><td>Email / Message Processing</td><td>Sender context, classification, routing rules, approval for outbound actions</td><td>Stops AI from taking customer or employee-facing action without evidence and controls.</td></tr>
+    <tr><td>Document Processing</td><td>Document classification, OCR lineage, PII masking, field-level confidence</td><td>Allows documents to be processed safely without exposing sensitive data unnecessarily.</td></tr>
+    <tr><td>Knowledge / RAG</td><td>Approved source library, chunk version, embedding version, re-index evidence</td><td>Controls what knowledge the model can retrieve and proves when content was refreshed.</td></tr>
+    <tr><td>Business Logic / Calculation</td><td>Rules engine first, AI only for interpretation or exception support</td><td>Prevents use of probabilistic AI where deterministic rules are safer and cheaper.</td></tr>
+    <tr><td>Autonomous Agent</td><td>Tool allow-list, transaction caps, kill switch, HITL, immutable audit</td><td>Limits blast radius when an agent can execute actions across systems.</td></tr>
+  </tbody></table></div>
+</section>
+
+<section class="panel">
+  <h2>Content re-embedding and knowledge refresh</h2>
+  <p>When source documents change, the architecture must treat the knowledge base as a controlled runtime asset. New or updated documents are classified, approved, chunked, embedded using a tracked embedding model version, indexed, tested for retrieval quality, and promoted only after validation. Old embeddings are retained for audit until the retention policy permits deletion.</p>
+</section>
+
+<section class="panel">
+  <h2>Vendor and model assurance</h2>
+  <p>The architecture should not rely only on a vendor statement that data is not stored or used for training. The control design should include contractual clauses, tenant isolation evidence, retention configuration, audit reports, regional processing confirmation, logging review, model-version change notification, and periodic control testing.</p>
+</section>
+
+<div class="footer-note">Architecting Intelligence · Enterprise Architecture · AI Architecture</div>
+</div>
+</body>
+</html>
