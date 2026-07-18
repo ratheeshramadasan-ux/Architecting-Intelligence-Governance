@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI Architecture & Implementation Framework — Architecting Intelligence</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500;600&display=swap');
+:root{--ink:#0d0f14;--ink2:#2a2d3a;--ink3:#5c6070;--ink4:#9499b0;--rule:#e2e6f0;--bg:#f4f7fb;--white:#fff;--teal:#0b6b6b;--teal-lt:#e8f4f4;--teal-mid:#147070;--blue:#1a4480;--blue-lt:#e8eef7;--red:#b93030;--red-lt:#fdf0f0;--amb:#a85d00;--amb-lt:#fdf5ec;--grn:#155e3e;--grn-lt:#edf7f2;--pur:#3d2b8a;--pur-lt:#f0edfb;--hero-grad:linear-gradient(135deg,#0a1628 0%,#0f2a4a 50%,#0b4040 100%)}
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.75}.nav-wrap{background:var(--white);border-bottom:2px solid var(--teal);position:sticky;top:0;z-index:50;box-shadow:0 2px 16px rgba(0,0,0,.08)}.nav{max-width:1100px;margin:0 auto;display:flex;align-items:center;height:52px;padding:0 20px}.nav-brand{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);margin-right:24px;font-weight:600}.nav-links{display:flex;gap:0;align-items:stretch;height:100%;flex-wrap:wrap}.nav-link{display:flex;align-items:center;padding:0 14px;font-size:13px;font-weight:500;color:var(--ink3);text-decoration:none;border-bottom:2px solid transparent}.nav-link:hover,.nav-link.active{color:var(--teal);border-bottom-color:var(--teal)}.hero{background:var(--hero-grad);color:var(--white);padding:56px 40px 48px;position:relative;overflow:hidden}.hero::before{content:'';position:absolute;top:-100px;right:-60px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(11,107,107,.35) 0%,transparent 65%)}.hero-inner{max-width:1100px;margin:0 auto;position:relative}.hero-eyebrow{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#7ab8c4;margin-bottom:12px;display:flex;align-items:center;gap:10px}.hero-eyebrow::before{content:'';display:inline-block;width:24px;height:1px;background:#7ab8c4}.hero h1{font-family:'Fraunces',serif;font-size:42px;font-weight:700;line-height:1.1;margin-bottom:10px}.hero p{font-size:15px;color:#aabcc8;line-height:1.85;max-width:860px}.container{max-width:1180px;margin:0 auto;padding:48px 32px 80px}.panel{background:var(--white);border:1px solid var(--rule);border-radius:12px;padding:24px;margin-bottom:20px}.panel h2{font-family:'Fraunces',serif;font-size:26px;font-weight:600;margin-bottom:8px;color:var(--ink)}.panel p{font-size:14px;color:var(--ink2);line-height:1.8}.principle{border-left:3px solid var(--teal);background:var(--teal-lt);border-radius:7px;padding:15px 18px;margin:16px 0}.principle strong{color:var(--teal)}.visual{background:#fff;border:1px solid var(--rule);border-radius:14px;padding:18px;margin:22px 0;box-shadow:0 6px 22px rgba(13,15,20,.05)}.visual-title{font-family:'DM Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin-bottom:12px}.visual img{width:100%;height:auto;display:block;border-radius:8px;border:1px solid var(--rule)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}.card{background:#fff;border:1px solid var(--rule);border-radius:12px;padding:18px}.tag{font-family:'DM Mono',monospace;font-size:10px;font-weight:600;padding:2px 8px;border-radius:4px;display:inline-block;margin-bottom:8px;letter-spacing:.06em;text-transform:uppercase}.t-blue{background:var(--blue-lt);color:var(--blue)}.t-teal{background:var(--teal-lt);color:var(--teal)}.t-green{background:var(--grn-lt);color:var(--grn)}.t-amber{background:var(--amb-lt);color:var(--amb)}.t-red{background:var(--red-lt);color:var(--red)}.t-purple{background:var(--pur-lt);color:var(--pur)}.card h3{font-size:16px;margin-bottom:6px;color:var(--ink)}.card p{font-size:13px;color:var(--ink3);line-height:1.65}.matrix{overflow-x:auto;border:1px solid var(--rule);border-radius:12px;background:#fff;margin-top:14px}table{width:100%;border-collapse:collapse;font-size:13px}th{background:linear-gradient(135deg,var(--blue),var(--teal));color:#fff;text-align:left;padding:12px;font-size:11px;text-transform:uppercase;letter-spacing:.06em}td{padding:12px;border-bottom:1px solid var(--rule);vertical-align:top;color:var(--ink2)}tr:last-child td{border-bottom:none}.cta{background:linear-gradient(135deg,var(--blue),var(--teal-mid));border-radius:10px;padding:24px 28px;color:#fff;margin-top:24px}.cta h2{font-family:'Fraunces',serif;font-size:23px;margin-bottom:8px}.cta p{font-size:14px;color:#aabcc8;line-height:1.75}footer{background:var(--ink);color:#5c6070;padding:24px 40px;text-align:center;font-size:12px;font-family:'DM Mono',monospace;letter-spacing:.04em}@media(max-width:900px){.grid{grid-template-columns:1fr 1fr}}@media(max-width:650px){.nav{height:auto;align-items:flex-start;padding:12px 16px;flex-direction:column}.nav-links{height:auto}.nav-link{padding:7px 10px}.hero{padding:40px 22px}.hero h1{font-size:30px}.container{padding:32px 16px 60px}.grid{grid-template-columns:1fr}.visual{padding:10px;overflow-x:auto}.visual img{min-width:960px}}
+</style>
+</head>
+<body>
+<div class="nav-wrap"><nav class="nav"><span class="nav-brand">AI</span><div class="nav-links"><a class="nav-link" href="../index.html">Home</a><a class="nav-link" href="../index.html#gov">AI Governance</a><a class="nav-link" href="../index.html#docproc">Document Processing</a><a class="nav-link" href="../index.html#automation">Automation</a><div style="position:relative;display:flex;align-items:stretch" class="nav-dd-wrap"><a class="nav-link active" href="ea-Implementation.html">Enterprise Architecture ▾</a><div style="position:absolute;top:100%;left:0;background:#fff;border:1px solid #e2e6f0;border-radius:0 8px 8px 8px;box-shadow:0 8px 32px rgba(0,0,0,.12);min-width:230px;padding:6px 0;display:none;z-index:400" class="nav-sub-drop"><a style="display:flex;align-items:center;gap:10px;padding:9px 18px;font-size:13px;color:#2a2d3a;text-decoration:none;white-space:nowrap" href="ea-Implementation.html" onmouseover="this.style.background='#e8f4f4';this.style.color='#0b6b6b'" onmouseout="this.style.background='';this.style.color='#2a2d3a'"><span style="width:6px;height:6px;border-radius:50%;background:#0b6b6b;opacity:.4;flex-shrink:0;display:inline-block"></span>EA &amp; Implementation</a><a style="display:flex;align-items:center;gap:10px;padding:9px 18px;font-size:13px;color:#0b6b6b;font-weight:600;text-decoration:none;white-space:nowrap;background:#e8f4f4" href="ai-architecture.html"><span style="width:6px;height:6px;border-radius:50%;background:#0b6b6b;flex-shrink:0;display:inline-block"></span>AI Architecture Framework</a></div></div><a class="nav-link" href="../index.html#resources">Resources</a><a class="nav-link" href="../index.html#about">About Me</a><a class="nav-link" href="../index.html#contact">Contact</a></div></nav></div>
+<script>
+(function(){
+  var wrap = document.querySelector('.nav-dd-wrap');
+  var drop = wrap.querySelector('.nav-sub-drop');
+  wrap.addEventListener('mouseenter', function(){ drop.style.display='block'; });
+  wrap.addEventListener('mouseleave', function(){ drop.style.display='none'; });
+})();
+</script>
+<header class="hero"><div class="hero-inner"><div class="hero-eyebrow">Enterprise Architecture · AI Architecture</div><h1>AI Architecture &amp; Implementation Framework</h1><p>A runtime implementation framework for governing AI across prompts, documents, models, vendors, agents, evidence gates, validation, human approval, monitoring, and production controls.</p></div></header>
+<main class="container">
+
+<section class="visual">
+  <div class="visual-title">
+    Enterprise AI Control Plane — Deny-by-Default Governance Architecture
+  </div>
+
+  <img
+    src="../public/assets/enterprise-ai-control-plane.png"
+    alt="Enterprise AI Control Plane Deny-by-Default Governance Architecture diagram covering requesters, identity resolver, prompt compiler, scenario registry, document control, policy engine, filter-mask-classify layer, scenario adapters, evidence gate, approved routing, response validation, human approval, audit vault, vendor control and re-embedding."
+    style="display: block; width: 100%; height: auto; margin-top: 20px;"
+  />
+
+  <div style="margin-top: 24px; line-height: 1.7;">
+    <h3>How the Enterprise AI Control Plane Works</h3>
+
+    <p>
+      The Enterprise AI Control Plane applies deny-by-default governance to
+      every AI request before it reaches an internal or third-party model.
+      It validates the requester, identity, role, business purpose, approved
+      scenario, data classification, document permissions, model eligibility,
+      and required approval level.
+    </p>
+
+    <p>
+      The prompt compiler interprets generic user requests and converts them
+      into structured, policy-compliant prompts. This allows users to interact
+      naturally while the platform applies approved instructions, business
+      context, security controls, and scenario-specific requirements.
+    </p>
+
+    <p>
+      Uploaded PDFs, Office documents, images, emails, and other files are
+      inspected for personally identifiable information, confidential data,
+      malware, prompt injection, access restrictions, retention requirements,
+      and regulatory obligations. Sensitive information can be masked,
+      tokenized, encrypted, removed, or blocked before model processing.
+    </p>
+
+    <p>
+      Approved requests are routed only to authorized models, tools, deployment
+      regions, and third-party service providers. Responses are validated for
+      hallucination, grounding, sensitive-data leakage, prohibited content,
+      policy violations, confidence thresholds, and human-approval requirements
+      before being returned to the requester.
+    </p>
+
+    <p>
+      Every prompt transformation, policy decision, document action, model call,
+      response, approval, and vendor interaction is captured in the audit and
+      evidence vault. When a controlled source document changes, obsolete
+      vectors are removed and the approved content is reclassified, re-chunked,
+      and re-embedded with full version and access-control traceability.
+    </p>
+  </div>
+</section>
+
+<section class="panel"><h2>What this architecture enforces</h2><div class="grid"><div class="card"><span class="tag t-blue">01 Request Control</span><h3>All AI traffic enters the control plane</h3><p>Users, applications, APIs, services, and autonomous agents do not call models directly. Every request is resolved through identity, environment, session, device posture, tenant, and policy context.</p></div><div class="card"><span class="tag t-teal">02 Prompt Governance</span><h3>Business Intent &amp; Prompt Compiler</h3><p>Users can ask naturally. The platform interprets intent, classifies the task/action type, maps to a business domain, enriches with approved instructions, detects prompt injection, and generates a structured AI request.</p></div><div class="card"><span class="tag t-green">03 Scenario Governance</span><h3>Business Scenario Registry</h3><p>No approved scenario means no production AI execution. Each scenario stores owner, risk level, data classification, allowed/blocked actions, required tests, approval status, and versioned scenario/policy/prompt.</p></div><div class="card"><span class="tag t-amber">04 Document Governance</span><h3>Document Control Layer</h3><p>Documents are governed assets. Intake, classification, permission checks, content inspection, redaction, masking, tokenization, chunking, embedding, and metadata evidence are controlled before AI use.</p></div><div class="card"><span class="tag t-red">05 Deny-by-Default</span><h3>Policy Decision Engine</h3><p>The engine can allow, allow with controls, require approval, or block. Production requires approved scenarios, evidence, model/vendor routes, monitoring, and runtime safeguards.</p></div><div class="card"><span class="tag t-purple">06 Vendor Assurance</span><h3>Vendor AI Control Layer</h3><p>Third-party AI calls require vendor registry approval, no-training clauses, retention/deletion assurance, fine-tuned model isolation, audit evidence, continuous monitoring, and risk review.</p></div></div></section>
+  <section class="panel"><h2>Runtime layers from the visual</h2><div class="matrix"><table><thead><tr><th>Layer</th><th>Purpose</th><th>Enterprise control</th></tr></thead><tbody><tr><td>Identity &amp; Environment Resolver</td><td>Determines who is asking, from where, and under which environment.</td><td>IAM, RBAC, tenant, session, device, Dev/Test/Prod controls.</td></tr><tr><td>Business Intent &amp; Prompt Compiler</td><td>Turns generic chat into a governed, structured AI request.</td><td>Intent classification, prompt template selection, action-level risk, prompt injection detection.</td></tr><tr><td>Business Scenario Registry</td><td>Registers why AI is being used and what it is allowed to do.</td><td>Scenario owner, risk tier, data class, allowed actions, required tests, approvals, versions.</td></tr><tr><td>Document Control Layer</td><td>Controls which documents AI may touch and how content is transformed.</td><td>PII/PHI/PCI detection, ACL checks, redaction, masking, tokenization, document governance vault.</td></tr><tr><td>Policy Decision Engine</td><td>Decides whether a request is allowed, controlled, escalated, or blocked.</td><td>Allow, allow-with-controls, require-approval, block.</td></tr><tr><td>Filter · Mask · Classify</td><td>Applies global controls before AI processing.</td><td>Data minimization, tokenization, content filtering, safety checks, prompt injection detection.</td></tr><tr><td>Scenario Control Adapters</td><td>Applies scenario-specific controls.</td><td>Communication, knowledge/RAG, document intelligence, decisions, calculations, workflows, risk, developer tools, agentic actions.</td></tr><tr><td>Evidence Gate / Release Gate</td><td>Prevents production execution without evidence.</td><td>Scenario version, prompt version, model/vendor route, policy version, test reports, security evidence, approvals, risk acceptance.</td></tr><tr><td>Approved AI Routing</td><td>Sends requests only to approved AI paths.</td><td>External providers, enterprise managed platforms, self-hosted models, private/internal GPU routes.</td></tr><tr><td>Response Validation &amp; Rehydration</td><td>Checks output before delivery.</td><td>Schema validation, confidence scoring, business rule validation, PII leakage scan, rehydration controls, citation validation.</td></tr><tr><td>HITL / Final Delivery</td><td>Routes high-risk or low-confidence outputs to people.</td><td>Human review, approval workflow, final delivery through secure channels.</td></tr><tr><td>Immutable Audit &amp; Evidence Vault</td><td>Records every decision and artifact.</td><td>Request, user, scenario, document, policies, model route, embeddings, filters, validation, approvals, cost, logs.</td></tr></tbody></table></div></section>
+  <section class="panel"><h2>How content is re-embedded</h2><p>Embedding is treated as a controlled data movement event. Source documents are extracted, cleaned, classified, tagged, redacted or masked, chunked, embedded using an approved model, stored in a tenant-isolated vector index, retrieved with guardrails, rehydrated only when approved, and traced back to the scenario, user, and audit record.</p></section>
+  <section class="cta"><h2>How this connects to the Agentic AI Governance Framework</h2><p>The Agentic AI Governance Framework defines what autonomous systems must control. This AI Architecture &amp; Implementation Framework explains how those controls become executable runtime architecture across prompts, documents, models, vendors, agents, evidence gates, validation, human approval, monitoring, and immutable audit.</p></section>
+</main>
+<footer>Architecting Intelligence · Ratheesh Ramadasan · architecting-ai.rrlabs.ca</footer>
+</body>
+</html>
