@@ -26,6 +26,15 @@ jobs:
         run: pip install -r requirements.txt
       - name: Compile Python
         run: python -m compileall -q .
+      - name: Import FastAPI, ADK and MCP runtime
+        run: |
+          python - <<'PY'
+          import main
+          from agent_runtime import available_models
+          models = available_models()
+          assert any(m["id"] == "google:gemini-2.5-flash" and m["enabled"] for m in models)
+          print("FastAPI + Google ADK + MCP imports passed")
+          PY
       - name: Smoke test database and authorization
         run: |
           python - <<'PY'
