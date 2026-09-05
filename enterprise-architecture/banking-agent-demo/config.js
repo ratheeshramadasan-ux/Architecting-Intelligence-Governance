@@ -1,0 +1,1 @@
+window.RR_BANK_CONFIG = { apiBase: "" };
