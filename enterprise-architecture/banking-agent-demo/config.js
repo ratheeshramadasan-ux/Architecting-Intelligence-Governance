@@ -5,7 +5,10 @@
   document.head.appendChild(link);
 
   window.RR_BANK_CONFIG = {
+    // Set apiBase to the deployed RR Bank runtime URL after Railway creates the service domain.
+    // Example: https://rr-bank-runtime-production.up.railway.app
     apiBase: '',
-    chatPath: '/api/chat'
+    chatStreamPath: '/api/chat/stream',
+    modelsPath: '/api/models'
   };
 })();
