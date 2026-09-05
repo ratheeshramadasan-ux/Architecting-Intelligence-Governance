@@ -159,16 +159,40 @@
         if (evt.stage === 'IDENTITY_CONTEXT') { complete('edge'); active('agent'); wirePulse(1); flowCaption.textContent='Trusted identity resolved server-side; prompt cannot override Customer_ID'; }
         if (evt.stage === 'MODEL_CALL' && evt.status === 'active') { complete('agent'); active('llm'); wirePulse(2); trace.llm_model=evt.model; flowCaption.textContent=`${evt.model || 'Approved LLM'} is reasoning over approved capabilities`; }
         if (evt.stage === 'MODEL_CALL' && evt.status === 'complete') { complete('llm'); }
-        if (evt.stage === 'RESPONSE_VALIDATION') { complete('api'); complete('data'); flowCaption.textContent='Response validation and governance evidence capture'; }
+        if (evt.stage === 'RESPONSE_VALIDATION' && trace.result === 'RUNNING') { complete('api'); complete('data'); flowCaption.textContent='Response validation and governance evidence capture'; }
         break;
       case 'tool_call':
-        complete('llm'); active('mcp'); wirePulse(3); if(evt.tool && !trace.tools.includes(evt.tool)) trace.tools.push(evt.tool); flowCaption.textContent=`MCP tool invoked: ${evt.tool}`;
+        complete('llm'); active('mcp'); wirePulse(3);
+        if(evt.tool && !trace.tools.includes(evt.tool)) trace.tools.push(evt.tool);
+        flowCaption.textContent=`MCP tool invoked: ${evt.tool}`;
         break;
-      case 'tool_result':
-        complete('mcp'); active('api'); wirePulse(4); active('data'); wirePulse(5); flowCaption.textContent=`Business API completed governed tool: ${evt.tool}`;
+      case 'tool_result': {
+        const outcome = String(evt.outcome || 'SUCCESS');
+        if (evt.policy_id) trace.policy = evt.policy_id;
+        if (outcome === 'RESOURCE_NOT_ACCESSIBLE') {
+          complete('mcp'); blocked('api'); blocked('data');
+          trace.authorization = 'RESOURCE_NOT_ACCESSIBLE · resource existence not disclosed';
+          trace.result = 'BLOCKED';
+          flowCaption.textContent = 'Authorization stopped the request; no account existence or data was disclosed';
+        } else if (outcome === 'PENDING_APPROVAL') {
+          complete('mcp'); complete('api'); complete('data');
+          trace.authorization = 'Authenticated request accepted; execution withheld';
+          trace.result = 'PENDING_APPROVAL';
+          flowCaption.textContent = 'Request persisted for human approval; the LLM cannot self-approve';
+        } else if (outcome === 'ERROR') {
+          complete('mcp'); blocked('api');
+          trace.result = 'ERROR';
+          flowCaption.textContent = 'Business service returned an error; execution stopped safely';
+        } else {
+          complete('mcp'); active('api'); wirePulse(4); active('data'); wirePulse(5);
+          flowCaption.textContent=`Business API completed governed tool: ${evt.tool}`;
+        }
         break;
+      }
       case 'error':
-        blocked('api'); trace.result='SERVICE_UNAVAILABLE'; flowCaption.textContent='Execution stopped safely; no synthetic banking result generated';
+        blocked('api');
+        trace.result='SERVICE_UNAVAILABLE';
+        flowCaption.textContent='Execution stopped safely; no synthetic banking result generated';
         break;
     }
     setTrace(trace);
@@ -237,13 +261,26 @@
       if (errorEvent) throw new Error(errorEvent.message || 'Governed runtime error');
       if (!finalEvent?.response) throw new Error('Agent runtime returned no final response');
 
-      liveStages.forEach(n => { n.classList.remove('active','blocked'); n.classList.add('complete'); });
-      trace.result = 'SUCCESS';
+      trace.result = finalEvent.result || trace.result || 'SUCCESS';
       trace.llm_model = finalEvent.model || trace.llm_model;
       if (Array.isArray(finalEvent.tools)) trace.tools = [...new Set(finalEvent.tools)];
+      if (Array.isArray(finalEvent.policy_ids) && finalEvent.policy_ids.length) trace.policy = finalEvent.policy_ids.join(', ');
+
+      if (trace.result === 'BLOCKED') {
+        blocked('api'); blocked('data');
+        trace.authorization = 'RESOURCE_NOT_ACCESSIBLE · resource existence not disclosed';
+        flowCaption.textContent = 'Request blocked by backend authorization; no protected data disclosed';
+      } else if (trace.result === 'PENDING_APPROVAL') {
+        liveStages.forEach(n => { n.classList.remove('active','blocked'); n.classList.add('complete'); });
+        trace.authorization = 'Request accepted; protected action pending human approval';
+        flowCaption.textContent = 'Request completed to PENDING_APPROVAL; no autonomous credit execution occurred';
+      } else if (trace.result === 'SUCCESS') {
+        liveStages.forEach(n => { n.classList.remove('active','blocked'); n.classList.add('complete'); });
+        flowCaption.textContent = 'Live request completed; governance trace captured';
+      }
+
       setTrace(trace);
       setApiState('live', `Live response from ${trace.llm_model}`);
-      flowCaption.textContent = 'Live request completed; governance trace captured';
       addMessage('assistant', finalEvent.response, `RR Bank Assistant · ${trace.llm_model}`);
     } catch (e) {
       blocked('api');
