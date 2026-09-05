@@ -11,4 +11,11 @@
     chatStreamPath: '/api/chat/stream',
     modelsPath: '/api/models'
   };
+
+  const presentationLink = document.querySelector('#presentation a.download');
+  if (presentationLink) {
+    presentationLink.href = 'presentation.html';
+    presentationLink.removeAttribute('download');
+    presentationLink.textContent = 'Open Presentation';
+  }
 })();
