@@ -1,0 +1,42 @@
+name: RR Bank Runtime CI
+
+on:
+  push:
+    branches: ["rr-bank-runtime-e2e", "main"]
+    paths:
+      - "runtime/rr-bank/**"
+      - ".github/workflows/rr-bank-runtime-ci.yml"
+  pull_request:
+    paths:
+      - "runtime/rr-bank/**"
+      - "enterprise-architecture/banking-agent-demo/**"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: runtime/rr-bank
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install runtime dependencies
+        run: pip install -r requirements.txt
+      - name: Compile Python
+        run: python -m compileall -q .
+      - name: Smoke test database and authorization
+        run: |
+          python - <<'PY'
+          from database import init_db, fetch_one
+          from security_context import get_demo_security_context
+          init_db()
+          ctx = get_demo_security_context()
+          assert ctx.customer_id == "CUST100001"
+          own = fetch_one("SELECT * FROM accounts WHERE account_id=?", ("ACC200001",))
+          other = fetch_one("SELECT * FROM accounts WHERE account_id=?", ("ACC200008",))
+          assert own and own["customer_id"] == ctx.customer_id
+          assert other and other["customer_id"] != ctx.customer_id
+          print("RR Bank database/security smoke test passed")
+          PY
