@@ -136,22 +136,25 @@ def _function_calls(event):
     return [x for x in calls if x]
 
 
-def _function_responses(event):
-    names = []
+def _function_response_items(event):
+    items = []
     getter = getattr(event, "get_function_responses", None)
     if callable(getter):
         try:
             for r in getter() or []:
-                names.append(getattr(r, "name", None) or "tool")
-            return [x for x in names if x]
+                response = getattr(r, "response", None)
+                items.append((getattr(r, "name", None) or "tool", response if isinstance(response, dict) else {}))
+            if items:
+                return items
         except Exception:
             pass
     content = getattr(event, "content", None)
     for part in getattr(content, "parts", []) or []:
         fr = getattr(part, "function_response", None)
         if fr:
-            names.append(getattr(fr, "name", None) or "tool")
-    return [x for x in names if x]
+            response = getattr(fr, "response", None)
+            items.append((getattr(fr, "name", None) or "tool", response if isinstance(response, dict) else {}))
+    return items
 
 
 def _final_text(event):
@@ -180,11 +183,7 @@ async def run_agent_stream(message: str, session_id: str, model_key: str) -> Asy
     runner = get_runner(model_key)
     session_key = (model_key, session_id)
     if session_key not in _created_sessions:
-        await _session_service.create_session(
-            app_name=APP_NAME,
-            user_id=USER_ID,
-            session_id=session_id,
-        )
+        await _session_service.create_session(app_name=APP_NAME, user_id=USER_ID, session_id=session_id)
         _created_sessions.add(session_key)
 
     yield {"type":"stage","stage":"REQUEST_RECEIVED","status":"complete"}
@@ -193,21 +192,42 @@ async def run_agent_stream(message: str, session_id: str, model_key: str) -> Asy
 
     new_message = types.Content(role="user", parts=[types.Part(text=message)])
     tool_names = []
+    tool_statuses = []
+    policy_ids = []
     final_answer = None
 
-    async for event in runner.run_async(
-        user_id=USER_ID,
-        session_id=session_id,
-        new_message=new_message,
-    ):
+    async for event in runner.run_async(user_id=USER_ID, session_id=session_id, new_message=new_message):
         for name in _function_calls(event):
             tool_names.append(name)
             yield {"type":"tool_call","stage":"MCP_TOOL","status":"active","tool":name}
-        for name in _function_responses(event):
-            yield {"type":"tool_result","stage":"BUSINESS_API","status":"complete","tool":name}
+
+        for name, response in _function_response_items(event):
+            outcome = str(response.get("status", "SUCCESS"))
+            policy_id = response.get("policy_id")
+            if policy_id:
+                policy_ids.append(str(policy_id))
+            tool_statuses.append(outcome)
+            yield {
+                "type":"tool_result",
+                "stage":"BUSINESS_API",
+                "status":"complete",
+                "tool":name,
+                "outcome":outcome,
+                "policy_id":policy_id,
+            }
+
         maybe = _final_text(event)
         if maybe:
             final_answer = maybe
+
+    if any(x == "RESOURCE_NOT_ACCESSIBLE" for x in tool_statuses):
+        overall = "BLOCKED"
+    elif any(x == "PENDING_APPROVAL" for x in tool_statuses):
+        overall = "PENDING_APPROVAL"
+    elif any(x == "ERROR" for x in tool_statuses):
+        overall = "ERROR"
+    else:
+        overall = "SUCCESS"
 
     yield {"type":"stage","stage":"MODEL_CALL","status":"complete","model":cfg["label"]}
     yield {"type":"stage","stage":"RESPONSE_VALIDATION","status":"complete"}
@@ -216,4 +236,6 @@ async def run_agent_stream(message: str, session_id: str, model_key: str) -> Asy
         "response": final_answer or "The banking service completed the request but did not return a customer-facing response.",
         "model": cfg["label"],
         "tools": tool_names,
+        "result": overall,
+        "policy_ids": sorted(set(policy_ids)),
     }
