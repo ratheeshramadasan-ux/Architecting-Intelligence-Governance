@@ -1,1 +1,329 @@
-PLACEHOLDER
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>RR Bank Ltd. — Governed AI Banking Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="bank-header">
+    <div class="bank-header-inner">
+      <div class="brand retail-brand">
+        <div class="logo">RR</div>
+        <div>
+          <strong>RR Bank Ltd.</strong>
+          <span>Personal Banking</span>
+        </div>
+      </div>
+
+      <nav class="primary-nav" aria-label="Primary banking navigation">
+        <button class="top-nav-link active" type="button">My Accounts</button>
+        <button class="top-nav-link" type="button">Products <span class="chev">⌄</span></button>
+        <button class="top-nav-link" type="button">Ways to Bank <span class="chev">⌄</span></button>
+        <button class="top-nav-link" type="button">Learn <span class="chev">⌄</span></button>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" type="button" aria-label="Search">⌕</button>
+        <span class="header-sep"></span>
+        <button class="icon-btn has-dot" type="button" aria-label="Profile">👤</button>
+        <button class="icon-btn" type="button" aria-label="Security">🔒</button>
+        <button class="logout-btn" type="button">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="welcome-band">
+    <div class="welcome-inner">
+      <h1>Good afternoon Ratheesh</h1>
+      <div class="quick-actions-bar">
+        <button type="button">Pay Bills</button>
+        <button type="button">Make a Transfer</button>
+        <button type="button">Interac e-Transfer®</button>
+        <button type="button">Statements & Documents</button>
+        <button type="button" class="round-plus" aria-label="More actions">+</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="demo-subnav">
+    <div class="demo-subnav-inner">
+      <button class="nav active" data-view="demo">Banking Demo</button>
+      <button class="nav" data-view="flow">Demo Flow</button>
+      <button class="nav" data-view="architecture">Architecture</button>
+      <button class="nav" data-view="security">Security & PII</button>
+      <button class="nav" data-view="presentation">Presentation</button>
+    </div>
+  </div>
+
+  <main>
+    <section id="demo" class="view active">
+      <div class="bank-page-shell">
+        <aside class="bank-side-menu">
+          <button class="side-link active" type="button">My Accounts</button>
+          <button class="side-link" type="button">Pay Bills</button>
+          <button class="side-link" type="button">Transfers</button>
+          <button class="side-link" type="button">Interac e-Transfer®</button>
+          <button class="side-link" type="button">RR Global Transfer</button>
+          <button class="side-link" type="button">Rewards</button>
+          <button class="side-link" type="button">Investments</button>
+          <button class="side-link" type="button">Profile & Settings</button>
+        </aside>
+
+        <section class="bank-main-column">
+          <div class="bank-section-heading">
+            <h2>My Accounts</h2>
+            <div class="account-view-actions">
+              <div class="segmented">
+                <button type="button" class="active">Personal</button>
+                <button type="button">Business</button>
+              </div>
+              <button type="button" class="plain-icon" aria-label="Download">⇩</button>
+              <button type="button" class="plain-icon" aria-label="Print">⎙</button>
+              <button type="button" class="help-link">Help ›</button>
+            </div>
+          </div>
+
+          <div class="account-ledger panel bank-ledger">
+            <div class="ledger-group">
+              <div class="ledger-group-head">
+                <strong>Banking</strong>
+                <strong>$40,274.50</strong>
+              </div>
+              <div class="ledger-row">
+                <div><button class="account-name scenario" data-prompt="What is my chequing balance and show my last five transactions?">Chequing ····4821</button><span class="account-id">ACC200001</span></div>
+                <div class="ledger-amount">$8,420.32</div>
+                <button type="button" class="kebab">⋮</button>
+              </div>
+              <div class="ledger-row">
+                <div><button class="account-name scenario" data-prompt="Show me my savings balance">Savings ····7714</button><span class="account-id">ACC200002</span></div>
+                <div class="ledger-amount">$31,854.18</div>
+                <button type="button" class="kebab">⋮</button>
+              </div>
+            </div>
+
+            <div class="ledger-group">
+              <div class="ledger-group-head">
+                <strong>Credit Cards</strong>
+                <strong>$4,250.00</strong>
+              </div>
+              <div class="ledger-row">
+                <div><button class="account-name scenario" data-prompt="Increase my credit limit to $30,000">RR VISA INFINITE ····9912</button><span class="account-id">Credit services</span></div>
+                <div class="ledger-amount">$4,250.00</div>
+                <button type="button" class="kebab">⋮</button>
+              </div>
+            </div>
+
+            <div class="ledger-group">
+              <div class="ledger-group-head">
+                <strong>Services & Requests</strong>
+                <strong></strong>
+              </div>
+              <div class="ledger-row service-row">
+                <div><span class="service-title">Try a governed security scenario</span><span class="account-id">Cross-customer access should never confirm account existence.</span></div>
+                <button class="service-action scenario" data-prompt="What is the balance of account ACC200008?">Test Unauthorized Account</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="assistant-dock panel">
+            <div class="assistant-dock-head">
+              <div class="assistant-brand">
+                <div class="assistant-avatar">RR</div>
+                <div>
+                  <h3>RR Bank AI Assistant</h3>
+                  <span>Secure, governed banking support</span>
+                </div>
+              </div>
+              <div class="assistant-actions">
+                <label class="model-picker">
+                  <span>LLM</span>
+                  <select id="modelSelect" aria-label="Select language model">
+                    <option value="google:gemini-2.5-flash">Google · Gemini 2.5 Flash</option>
+                    <option value="anthropic:claude-sonnet">Anthropic · Claude Sonnet</option>
+                    <option value="openai:gpt">OpenAI · GPT</option>
+                    <option value="selfhosted:custom">Self-hosted · Custom</option>
+                  </select>
+                </label>
+                <span id="apiStatus" class="badge neutral">Checking API</span>
+                <button id="toggleTrace" type="button" class="trace-toggle">Show Governance Trace</button>
+              </div>
+            </div>
+
+            <div class="live-flow-wrap">
+              <div class="live-flow-head">
+                <div>
+                  <strong>Live request path</strong>
+                  <span id="flowCaption">Waiting for a customer request</span>
+                </div>
+                <span id="modelBadge" class="model-badge">Gemini 2.5 Flash</span>
+              </div>
+              <div id="liveFlow" class="live-flow" aria-live="polite">
+                <div class="live-stage" data-live-step="ui"><span class="stage-dot"></span><b>Chat UI</b><small>Customer request</small></div>
+                <div class="flow-wire"><span class="spark"></span></div>
+                <div class="live-stage" data-live-step="edge"><span class="stage-dot"></span><b>Edge</b><small>WAF / API</small></div>
+                <div class="flow-wire"><span class="spark"></span></div>
+                <div class="live-stage" data-live-step="agent"><span class="stage-dot"></span><b>Agent</b><small id="liveAgentLabel">Coordinator</small></div>
+                <div class="flow-wire"><span class="spark"></span></div>
+                <div class="live-stage" data-live-step="llm"><span class="stage-dot"></span><b>LLM</b><small id="liveModelLabel">Gemini 2.5 Flash</small></div>
+                <div class="flow-wire"><span class="spark"></span></div>
+                <div class="live-stage" data-live-step="mcp"><span class="stage-dot"></span><b>MCP</b><small>Approved tools</small></div>
+                <div class="flow-wire"><span class="spark"></span></div>
+                <div class="live-stage" data-live-step="api"><span class="stage-dot"></span><b>Business API</b><small>AuthZ / policy</small></div>
+                <div class="flow-wire"><span class="spark"></span></div>
+                <div class="live-stage" data-live-step="data"><span class="stage-dot"></span><b>System of Record</b><small>Banking data</small></div>
+              </div>
+            </div>
+
+            <div class="assistant-body">
+              <div class="chat-area">
+                <div id="messages" class="messages bank-messages" aria-live="polite">
+                  <div class="msg assistant">
+                    <div class="msg-meta">RR Bank Assistant · Secure session</div>
+                    Hello Ratheesh. How can I help with your banking today?
+                  </div>
+                </div>
+                <div id="typingState" class="typing-state" hidden><span></span><span></span><span></span><em>Processing securely</em></div>
+                <form id="chatForm" class="composer bank-composer">
+                  <input id="chatInput" autocomplete="off" placeholder="Ask about your accounts, transactions, or credit limit..." aria-label="Message">
+                  <button id="sendButton">Send</button>
+                </form>
+                <div class="suggested-prompts">
+                  <button class="scenario" data-prompt="What is my chequing balance and show my last five transactions?">Chequing + recent transactions</button>
+                  <button class="scenario" data-prompt="What is the balance of account ACC200008?">Security test</button>
+                  <button class="scenario" data-prompt="Increase my credit limit to $30,000">Credit limit request</button>
+                </div>
+              </div>
+
+              <aside id="tracePanel" class="trace-panel">
+                <div class="trace-header">
+                  <h3>AI Governance Trace</h3>
+                  <span id="traceStatus" class="badge neutral">Ready</span>
+                </div>
+                <dl id="traceList">
+                  <dt>Trace ID</dt><dd>—</dd>
+                  <dt>Intent</dt><dd>Waiting for request</dd>
+                  <dt>Agent</dt><dd>—</dd>
+                  <dt>LLM</dt><dd id="traceModel">Gemini 2.5 Flash</dd>
+                  <dt>Tools</dt><dd>—</dd>
+                  <dt>Authorization</dt><dd>—</dd>
+                  <dt>Policy</dt><dd>—</dd>
+                  <dt>Result</dt><dd>—</dd>
+                </dl>
+              </aside>
+            </div>
+
+            <div class="connection">
+              <span><b>Live integration:</b> <code id="endpointLabel">/api/chat</code></span>
+              <span id="connectionState">Connecting to governed agent runtime…</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section id="flow" class="view">
+      <div class="hero-copy">
+        <p class="eyebrow">DEMO EXPLAINER</p>
+        <h1>How one RR Bank AI request travels through the platform</h1>
+        <p>Click any stage to explain what happens, what is trusted, and which control is applied. This replaces the single static infographic with an interactive demo-flow page.</p>
+      </div>
+
+      <div class="flow-layout">
+        <div class="flow-canvas panel">
+          <div class="flow-node" data-step="1"><b>1</b><span>User Interface</span><small>RR Bank chat</small></div>
+          <div class="arrow">↓</div>
+          <div class="flow-row">
+            <div class="flow-node" data-step="2"><b>2</b><span>Edge Security</span><small>WAF · DDoS · rate limits</small></div>
+            <div class="side-link">↔</div>
+            <div class="flow-node green" data-step="3"><b>3</b><span>Authentication</span><small>Bank IdP · SSO/MFA</small></div>
+          </div>
+          <div class="arrow">↓</div>
+          <div class="flow-row">
+            <div class="flow-node" data-step="4"><b>4</b><span>Business API Gateway</span><small>Validated request boundary</small></div>
+            <div class="side-link">↔</div>
+            <div class="flow-node red" data-step="5"><b>5</b><span>PII Protection</span><small>Detect · tokenize · policy</small></div>
+          </div>
+          <div class="arrow">↓</div>
+          <div class="agent-zone">
+            <div class="flow-node green wide" data-step="6"><b>6</b><span>Coordinator Agent</span><small>Intent decomposition & routing</small></div>
+            <div class="agent-row">
+              <div class="flow-node green" data-step="7"><span>Accounts Agent</span><small>Balance & accounts</small></div>
+              <div class="flow-node green" data-step="8"><span>Transaction Agent</span><small>History & statements</small></div>
+              <div class="flow-node green" data-step="9"><span>Service Agent</span><small>Address · cheque · KYC</small></div>
+            </div>
+          </div>
+          <div class="arrow">↓</div>
+          <div class="flow-node wide" data-step="10"><b>10</b><span>MCP Capability Layer</span><small>Approved tools only — no generic SQL/admin tool</small></div>
+          <div class="arrow">↓</div>
+          <div class="flow-row">
+            <div class="flow-node wide" data-step="11"><b>11</b><span>FastAPI Business Services</span><small>Deterministic validation & orchestration</small></div>
+            <div class="side-link">↔</div>
+            <div class="flow-node orange" data-step="12"><b>12</b><span>Authorization</span><small>Resource ownership & policy</small></div>
+          </div>
+          <div class="arrow">↓</div>
+          <div class="flow-node wide" data-step="13"><b>13</b><span>System of Record</span><small>Accounts · transactions · requests · approvals</small></div>
+          <div class="telemetry-row">
+            <div class="flow-node muted" data-step="14"><b>14</b><span>Observability & Audit</span><small>Trace · tool · policy · decision</small></div>
+            <div class="flow-node muted" data-step="15"><b>15</b><span>Evaluation & Cost</span><small>Quality · safety · usage</small></div>
+            <div class="flow-node muted" data-step="16"><b>16</b><span>Session Store</span><small>Conversation context only</small></div>
+          </div>
+        </div>
+
+        <aside class="explain panel">
+          <p class="eyebrow">SELECTED STEP</p>
+          <h2 id="stepTitle">1 — User Interface</h2>
+          <p id="stepText">The customer starts in the branded RR Bank chat. The UI never supplies a trusted Customer_ID; identity is resolved from the authenticated session.</p>
+          <h3>Control principle</h3>
+          <p id="stepControl">Customer input is treated as untrusted data.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="architecture" class="view">
+      <div class="hero-copy"><p class="eyebrow">REFERENCE ARCHITECTURE</p><h1>Separation of reasoning, capability, control and system-of-record layers</h1></div>
+      <div class="architecture-stack">
+        <div class="arch-layer"><b>Experience</b><span>RR Bank Web / Chat UI</span></div>
+        <div class="arch-arrow">↓</div>
+        <div class="arch-layer"><b>Agent</b><span>Google ADK · Gemini · Coordinator / Specialist Agents</span></div>
+        <div class="arch-arrow">↓</div>
+        <div class="arch-layer"><b>Capability</b><span>MCP servers · get_my_accounts · get_account_balance · get_transaction_history · governed action tools</span></div>
+        <div class="arch-arrow">↓</div>
+        <div class="arch-layer"><b>Business Services</b><span>FastAPI · validation · workflow · policy evaluation</span></div>
+        <div class="arch-arrow">↓</div>
+        <div class="arch-layer security-layer"><b>Security & Governance</b><span>Trusted identity · RBAC/ABAC · non-enumeration · PII controls · HITL · audit</span></div>
+        <div class="arch-arrow">↓</div>
+        <div class="arch-layer"><b>System of Record</b><span>SQLite prototype → PostgreSQL production target</span></div>
+      </div>
+      <div class="principle">The LLM can propose an action. It does not determine whether the action is authorized to execute.</div>
+    </section>
+
+    <section id="security" class="view">
+      <div class="hero-copy"><p class="eyebrow">SECURITY & PRIVACY</p><h1>PII protection and non-enumeration are platform controls</h1></div>
+      <div class="security-grid">
+        <article class="panel"><h2>PII pipeline</h2><ol class="vertical-steps">
+          <li>Detect & classify PII in text/documents</li><li>Apply policy: allow, redact, tokenize or review</li><li>Store token ↔ original value in encrypted client-controlled vault</li><li>Bind mapping to trace/session with short TTL</li><li>Send minimized/masked data to AI</li><li>Validate model response</li><li>Deterministically rehydrate authorized placeholders</li><li>DLP/output validation before customer response</li>
+        </ol></article>
+        <article class="panel"><h2>Non-enumeration</h2><div class="compare"><div><strong>Account does not exist</strong></div><div><strong>Account belongs to another customer</strong></div></div>
+          <div class="same-result">Both externally return<br><b>RESOURCE_NOT_ACCESSIBLE</b></div>
+          <p>No confirmation of account existence, ownership, balance, account type or customer identity is exposed to the LLM or customer.</p>
+        </article>
+        <article class="panel"><h2>High-risk actions</h2><p>A $30,000 credit-limit request above the demo auto-approval threshold enters a durable <b>PENDING_APPROVAL</b> workflow. The conversational agent cannot approve or execute it by itself.</p></article>
+      </div>
+    </section>
+
+    <section id="presentation" class="view">
+      <div class="hero-copy"><p class="eyebrow">CLIENT MATERIAL</p><h1>Architecture presentation</h1><p>The presentation supports the live demo rather than replacing it.</p></div>
+      <div class="presentation-card panel">
+        <div><h2>RR Bank Agentic AI Architecture Deck</h2><p>Architecture, security model, PII controls, MCP design, HITL, deployment target and client-demo scenarios.</p></div>
+        <a class="download" href="assets/RR_Bank_Agentic_AI_Architecture_Deck.pptx" download>Download PowerPoint</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>RR Bank Ltd. demo · Intended for architecture demonstration using synthetic banking data.</footer>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
