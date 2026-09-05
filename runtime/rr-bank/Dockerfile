@@ -6,10 +6,10 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 WORKDIR /app
 
-COPY requirements.txt ./requirements.txt
+COPY runtime/rr-bank/requirements.txt ./requirements.txt
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
-COPY . .
+COPY runtime/rr-bank/ ./
 
 ENV PORT=8000
 EXPOSE 8000
