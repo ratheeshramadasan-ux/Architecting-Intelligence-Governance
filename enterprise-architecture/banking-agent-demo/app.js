@@ -2,7 +2,6 @@
   const root = document;
   const navs = [...root.querySelectorAll('.nav')];
   const views = [...root.querySelectorAll('.view')];
-
   navs.forEach(btn => btn.addEventListener('click', () => {
     navs.forEach(n => n.classList.toggle('active', n === btn));
     views.forEach(v => v.classList.toggle('active', v.id === btn.dataset.view));
@@ -29,30 +28,13 @@
 
   const cfg = window.RR_BANK_CONFIG || {};
   const apiBase = (cfg.apiBase || '').replace(/\/$/, '');
-  const chatPath = cfg.chatPath || '/api/chat';
-  const apiUrl = apiBase + chatPath;
+  const streamPath = cfg.chatStreamPath || '/api/chat/stream';
+  const modelsPath = cfg.modelsPath || '/api/models';
+  const apiUrl = apiBase + streamPath;
   endpointLabel.textContent = apiUrl;
 
-  const modelMap = {
-    'google:gemini-2.5-flash': { provider:'google', model:'gemini-2.5-flash', label:'Gemini 2.5 Flash' },
-    'anthropic:claude-sonnet': { provider:'anthropic', model:'claude-sonnet', label:'Claude Sonnet' },
-    'openai:gpt': { provider:'openai', model:'gpt', label:'OpenAI GPT' },
-    'selfhosted:custom': { provider:'selfhosted', model:'custom', label:'Self-hosted Custom' }
-  };
-
-  function selectedModel() {
-    return modelMap[modelSelect.value] || modelMap['google:gemini-2.5-flash'];
-  }
-
-  function updateModelDisplay() {
-    const m = selectedModel();
-    modelBadge.textContent = m.label;
-    liveModelLabel.textContent = m.label;
-    const traceModel = root.getElementById('traceModel');
-    if (traceModel) traceModel.textContent = m.label;
-  }
-  modelSelect.addEventListener('change', updateModelDisplay);
-  updateModelDisplay();
+  let sessionId = null;
+  let modelRegistry = {};
 
   if (toggleTrace && tracePanel && assistantBody) {
     toggleTrace.addEventListener('click', () => {
@@ -64,7 +46,7 @@
 
   const escapeHtml = value => String(value).replace(/[<>&]/g, s => ({'<':'&lt;','>':'&gt;','&':'&amp;'}[s]));
 
-  const addMessage = (role, text, meta) => {
+  function addMessage(role, text, meta) {
     const div = document.createElement('div');
     div.className = `msg ${role}`;
     if (meta) {
@@ -78,154 +60,204 @@
     div.appendChild(body);
     messages.appendChild(div);
     messages.scrollTop = messages.scrollHeight;
-  };
+  }
 
-  const setApiState = (state, detail) => {
+  function setApiState(state, detail) {
+    if (!apiStatus) return;
     apiStatus.className = 'badge ' + (state === 'live' ? 'live' : state === 'offline' ? 'offline' : 'neutral');
     apiStatus.textContent = state === 'live' ? 'LIVE' : state === 'offline' ? 'OFFLINE' : 'READY';
-    connectionState.textContent = detail;
-  };
+    if (connectionState) connectionState.textContent = detail;
+  }
 
-  const setTrace = t => {
-    const current = selectedModel();
-    const llmLabel = t.llm_model || t.model || current.label;
+  function selectedModelKey() {
+    return modelSelect?.value || 'google:gemini-2.5-flash';
+  }
+
+  function selectedModelLabel() {
+    return modelRegistry[selectedModelKey()]?.label || modelSelect?.selectedOptions?.[0]?.textContent || 'Approved LLM';
+  }
+
+  function updateModelDisplay() {
+    const label = selectedModelLabel();
+    if (modelBadge) modelBadge.textContent = label;
+    if (liveModelLabel) liveModelLabel.textContent = label;
+  }
+  modelSelect?.addEventListener('change', updateModelDisplay);
+
+  async function loadModels() {
+    try {
+      const r = await fetch(apiBase + modelsPath, {headers:{'Accept':'application/json'}});
+      if (!r.ok) throw new Error('Model registry unavailable');
+      const data = await r.json();
+      modelRegistry = Object.fromEntries((data.models || []).map(m => [m.id, m]));
+      if (modelSelect) {
+        modelSelect.innerHTML = '';
+        (data.models || []).forEach(m => {
+          const o = document.createElement('option');
+          o.value = m.id;
+          o.textContent = m.enabled ? m.label : `${m.label} — not configured`;
+          o.disabled = !m.enabled;
+          if (m.id === data.default) o.selected = true;
+          modelSelect.appendChild(o);
+        });
+      }
+      updateModelDisplay();
+      setApiState('live', 'Governed agent runtime connected. Model registry loaded.');
+    } catch (e) {
+      updateModelDisplay();
+      setApiState('offline', 'Agent runtime is not connected yet. Banking requests will fail closed.');
+    }
+  }
+
+  function setTrace(t) {
     const rows = [
       ['Trace ID', t.trace_id || '—'],
-      ['Intent', t.intent || '—'],
-      ['Agent', t.agent || '—'],
-      ['LLM', llmLabel],
+      ['Intent', t.intent || 'Live banking request'],
+      ['Agent', t.agent || 'RR Bank Coordinator'],
+      ['LLM', t.llm_model || selectedModelLabel()],
       ['Tools', (t.tools || []).join(' → ') || '—'],
-      ['Authorization', t.authorization || '—'],
-      ['Policy', t.policy || '—'],
-      ['Result', t.result || '—']
+      ['Authorization', t.authorization || 'Backend enforced'],
+      ['Policy', t.policy || 'RR Bank governed execution'],
+      ['Result', t.result || 'RUNNING']
     ];
-    traceList.innerHTML = rows.map(([k,v]) => `<dt>${k}</dt><dd>${escapeHtml(v)}</dd>`).join('');
-    traceStatus.textContent = t.result || 'Complete';
-    traceStatus.className = 'badge ' + ((t.result || '').includes('SUCCESS') ? 'success' : 'neutral');
-    if (t.agent) liveAgentLabel.textContent = t.agent;
-    if (llmLabel) {
-      modelBadge.textContent = llmLabel;
-      liveModelLabel.textContent = llmLabel;
+    if (traceList) traceList.innerHTML = rows.map(([k,v]) => `<dt>${k}</dt><dd>${escapeHtml(v)}</dd>`).join('');
+    if (traceStatus) {
+      traceStatus.textContent = t.result || 'Running';
+      traceStatus.className = 'badge ' + ((t.result || '').includes('SUCCESS') ? 'success' : 'neutral');
     }
-  };
+  }
 
   const liveStages = [...root.querySelectorAll('.live-stage')];
   const liveWires = [...root.querySelectorAll('.flow-wire')];
-  let animationToken = 0;
 
   function resetLiveFlow() {
     liveStages.forEach(n => n.classList.remove('active','complete','blocked'));
     liveWires.forEach(w => w.classList.remove('active'));
   }
 
-  function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
-
-  async function animateRequestFlow(token) {
-    resetLiveFlow();
-    const stages = ['ui','edge','agent','llm','mcp','api','data'];
-    for (let i=0; i<stages.length; i++) {
-      if (token !== animationToken) return;
-      liveStages.forEach(n => n.classList.remove('active'));
-      const node = root.querySelector(`[data-live-step="${stages[i]}"]`);
-      if (node) node.classList.add('active');
-      if (i > 0) {
-        const prev = root.querySelector(`[data-live-step="${stages[i-1]}"]`);
-        if (prev) prev.classList.add('complete');
-      }
-      if (i < liveWires.length) liveWires[i].classList.add('active');
-      flowCaption.textContent =
-        i < 2 ? 'Securing and validating request' :
-        i < 4 ? 'Agent routing and model reasoning' :
-        i < 6 ? 'Invoking governed tools and business APIs' :
-        'Accessing authorized system-of-record data';
-      await sleep(520);
-      if (i < liveWires.length) liveWires[i].classList.remove('active');
-    }
+  function node(step) { return root.querySelector(`[data-live-step="${step}"]`); }
+  function complete(step) { const n=node(step); if(n){n.classList.remove('active');n.classList.add('complete');} }
+  function active(step) { const n=node(step); if(n){n.classList.remove('complete','blocked');n.classList.add('active');} }
+  function blocked(step) { const n=node(step); if(n){n.classList.remove('active','complete');n.classList.add('blocked');} }
+  function wirePulse(index) {
+    const w = liveWires[index];
+    if (!w) return;
+    w.classList.add('active');
+    setTimeout(() => w.classList.remove('active'), 700);
   }
 
-  function finishFlow(result) {
-    animationToken++;
-    liveStages.forEach(n => n.classList.remove('active'));
-    liveWires.forEach(w => w.classList.remove('active'));
-    if ((result || '').toUpperCase().includes('BLOCK') || (result || '').toUpperCase().includes('DENIED') || (result || '').toUpperCase().includes('NOT_ACCESSIBLE')) {
-      const apiNode = root.querySelector('[data-live-step="api"]');
-      if (apiNode) apiNode.classList.add('blocked');
-      flowCaption.textContent = 'Request stopped by authorization or policy control';
-    } else {
-      liveStages.forEach(n => n.classList.add('complete'));
-      flowCaption.textContent = 'Request completed with governance trace captured';
+  function applyLiveEvent(evt, trace) {
+    switch (evt.type) {
+      case 'trace':
+        trace.trace_id = evt.trace_id;
+        sessionId = evt.session_id || sessionId;
+        active('ui');
+        flowCaption.textContent = 'Request received from authenticated RR Bank chat';
+        break;
+      case 'stage':
+        if (evt.stage === 'REQUEST_RECEIVED') { complete('ui'); active('edge'); wirePulse(0); flowCaption.textContent='Request accepted at the governed service boundary'; }
+        if (evt.stage === 'IDENTITY_CONTEXT') { complete('edge'); active('agent'); wirePulse(1); flowCaption.textContent='Trusted identity resolved server-side; prompt cannot override Customer_ID'; }
+        if (evt.stage === 'MODEL_CALL' && evt.status === 'active') { complete('agent'); active('llm'); wirePulse(2); trace.llm_model=evt.model; flowCaption.textContent=`${evt.model || 'Approved LLM'} is reasoning over approved capabilities`; }
+        if (evt.stage === 'MODEL_CALL' && evt.status === 'complete') { complete('llm'); }
+        if (evt.stage === 'RESPONSE_VALIDATION') { complete('api'); complete('data'); flowCaption.textContent='Response validation and governance evidence capture'; }
+        break;
+      case 'tool_call':
+        complete('llm'); active('mcp'); wirePulse(3); if(evt.tool && !trace.tools.includes(evt.tool)) trace.tools.push(evt.tool); flowCaption.textContent=`MCP tool invoked: ${evt.tool}`;
+        break;
+      case 'tool_result':
+        complete('mcp'); active('api'); wirePulse(4); active('data'); wirePulse(5); flowCaption.textContent=`Business API completed governed tool: ${evt.tool}`;
+        break;
+      case 'error':
+        blocked('api'); trace.result='SERVICE_UNAVAILABLE'; flowCaption.textContent='Execution stopped safely; no synthetic banking result generated';
+        break;
+    }
+    setTrace(trace);
+  }
+
+  async function readSse(response, onEvent) {
+    if (!response.body) throw new Error('Streaming response body unavailable');
+    const reader = response.body.getReader();
+    const decoder = new TextDecoder();
+    let buffer = '';
+    while (true) {
+      const {value, done} = await reader.read();
+      buffer += decoder.decode(value || new Uint8Array(), {stream:!done});
+      const blocks = buffer.split(/\n\n/);
+      buffer = blocks.pop() || '';
+      for (const block of blocks) {
+        for (const line of block.split(/\n/)) {
+          if (!line.startsWith('data:')) continue;
+          const raw = line.slice(5).trim();
+          if (!raw) continue;
+          onEvent(JSON.parse(raw));
+        }
+      }
+      if (done) break;
     }
   }
 
   async function send(prompt) {
     prompt = (prompt || '').trim();
-    if (!prompt || sendButton.disabled) return;
+    if (!prompt || sendButton?.disabled) return;
 
-    const m = selectedModel();
-    addMessage('user', prompt, 'You · Authenticated RR Bank session');
+    addMessage('user', prompt, 'You · Authenticated RR Bank demo session');
     input.value = '';
-    sendButton.disabled = true;
-    modelSelect.disabled = true;
-    typingState.hidden = false;
-    traceStatus.textContent = 'Running';
-    traceStatus.className = 'badge neutral';
-    setApiState('ready', `Calling ${m.label} through the governed agent runtime…`);
+    if (sendButton) sendButton.disabled = true;
+    if (modelSelect) modelSelect.disabled = true;
+    if (typingState) typingState.hidden = false;
+    resetLiveFlow();
 
-    const token = ++animationToken;
-    animateRequestFlow(token);
+    const trace = {trace_id:'—',agent:'RR Bank Coordinator',llm_model:selectedModelLabel(),tools:[],authorization:'Backend enforced',policy:'Governed execution',result:'RUNNING'};
+    setTrace(trace);
+    setApiState('ready', `Executing with ${selectedModelLabel()}…`);
+
+    let finalEvent = null;
+    let errorEvent = null;
 
     try {
       const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), 30000);
-
+      const timeout = setTimeout(() => controller.abort(), 60000);
       const r = await fetch(apiUrl, {
         method:'POST',
-        headers:{'Content-Type':'application/json'},
-        body:JSON.stringify({
-          message:prompt,
-          llm:{provider:m.provider, model:m.model},
-          client_context:{channel:'rr-bank-web-demo'}
-        }),
+        headers:{'Content-Type':'application/json','Accept':'text/event-stream'},
+        body:JSON.stringify({message:prompt, model:selectedModelKey(), session_id:sessionId}),
         signal:controller.signal
       });
       clearTimeout(timeout);
+      if (!r.ok) throw new Error(`Agent runtime returned HTTP ${r.status}`);
 
-      if (!r.ok) {
-        const text = await r.text().catch(() => '');
-        throw new Error(`Agent runtime returned HTTP ${r.status}${text ? ': ' + text.slice(0,120) : ''}`);
-      }
-
-      const data = await r.json();
-      const responseText = data.response || data.message;
-      if (!responseText) throw new Error('Agent runtime returned no customer response.');
-
-      setApiState('live', `Live response received from ${data.trace?.llm_model || m.label}`);
-      addMessage('assistant', responseText, `RR Bank Assistant · ${data.trace?.llm_model || m.label}`);
-      setTrace(data.trace || {llm_model:m.label,result:'SUCCESS'});
-      finishFlow(data.trace?.result || 'SUCCESS');
-    } catch (e) {
-      finishFlow('BLOCKED');
-      setApiState('offline', 'Live agent runtime is not available. No synthetic banking answer was generated.');
-      addMessage(
-        'assistant',
-        'The live AI banking service is temporarily unavailable. Please try again after the governed agent runtime is connected.',
-        'RR Bank Assistant · Service status'
-      );
-      setTrace({
-        trace_id:'—',
-        intent:'Request not executed',
-        agent:'—',
-        llm_model:m.label,
-        tools:[],
-        authorization:'No banking data accessed',
-        policy:'Fail closed',
-        result:'SERVICE_UNAVAILABLE'
+      await readSse(r, evt => {
+        if (evt.session_id) sessionId = evt.session_id;
+        if (evt.trace_id) trace.trace_id = evt.trace_id;
+        if (evt.type === 'final') finalEvent = evt;
+        if (evt.type === 'error') errorEvent = evt;
+        applyLiveEvent(evt, trace);
       });
-      console.warn('RR Bank live demo request failed:', e);
+
+      if (errorEvent) throw new Error(errorEvent.message || 'Governed runtime error');
+      if (!finalEvent?.response) throw new Error('Agent runtime returned no final response');
+
+      liveStages.forEach(n => { n.classList.remove('active','blocked'); n.classList.add('complete'); });
+      trace.result = 'SUCCESS';
+      trace.llm_model = finalEvent.model || trace.llm_model;
+      if (Array.isArray(finalEvent.tools)) trace.tools = [...new Set(finalEvent.tools)];
+      setTrace(trace);
+      setApiState('live', `Live response from ${trace.llm_model}`);
+      flowCaption.textContent = 'Live request completed; governance trace captured';
+      addMessage('assistant', finalEvent.response, `RR Bank Assistant · ${trace.llm_model}`);
+    } catch (e) {
+      blocked('api');
+      trace.result = 'SERVICE_UNAVAILABLE';
+      trace.authorization = 'No synthetic banking result returned';
+      setTrace(trace);
+      setApiState('offline', 'Live governed runtime unavailable. Request failed closed.');
+      flowCaption.textContent = 'Request stopped safely; no dummy banking answer was generated';
+      addMessage('assistant', 'The live AI banking service is temporarily unavailable. No banking result was generated.', 'RR Bank Assistant · Service status');
+      console.warn('RR Bank request failed:', e);
     } finally {
-      typingState.hidden = true;
-      sendButton.disabled = false;
-      modelSelect.disabled = false;
+      if (typingState) typingState.hidden = true;
+      if (sendButton) sendButton.disabled = false;
+      if (modelSelect) modelSelect.disabled = false;
       input.focus();
     }
   }
@@ -242,22 +274,19 @@
     3:['Authentication','The bank identity provider establishes the customer session and authentication strength.','Identity comes from SSO/OIDC/JWT or equivalent — never from the prompt.'],
     4:['Business API Gateway','The request enters a validated API boundary that enforces protocol, schema and route controls.','Reject malformed and disallowed requests early.'],
     5:['PII Protection','Sensitive fields can be detected, classified, minimized, redacted or tokenized before model processing.','PII policy is external to the LLM.'],
-    6:['Coordinator Agent','The coordinator understands the intent and delegates to the minimum specialist capability needed.','Routing is not authorization.'],
+    6:['Coordinator Agent','The coordinator understands intent and delegates only to approved capabilities.','Routing is not authorization.'],
     7:['Accounts Agent','Handles read-only account discovery and balance operations through approved MCP tools.','Least-privilege tool set.'],
     8:['Transaction Agent','Handles transaction history and statement capabilities through controlled tools.','No direct database access.'],
-    9:['Service Agent','Handles address, cheque-book and KYC service journeys, with step-up controls where required.','High-risk updates require deterministic checks.'],
+    9:['Service Agent','Handles controlled banking-service journeys and step-up controls.','High-risk updates require deterministic checks.'],
     10:['MCP Capability Layer','MCP exposes business-semantic tools rather than generic SQL or arbitrary API execution.','MCP is the controlled AI-facing interface, not the system of record.'],
-    11:['FastAPI Business Services','Tools call business APIs, which perform validation, authorization, workflow and system-of-record access.','Business rules are deterministic services.'],
-    12:['Authorization','The backend verifies that the authenticated customer may access the requested resource.','Unauthorized and nonexistent resources are normalized externally.'],
+    11:['FastAPI Business Services','Tools call business APIs that perform validation, authorization, workflow and system-of-record access.','Business rules are deterministic services.'],
+    12:['Authorization','The backend independently verifies that the authenticated customer may access the requested resource.','Unauthorized and nonexistent resources are normalized externally.'],
     13:['System of Record','Authoritative account, transaction and workflow state lives in the database, independent from conversation memory.','Database/workflow state wins over LLM memory.'],
-    14:['Observability & Audit','Each event captures trace, agent, tool, model, policy and security decision metadata.','Create evidence without unnecessarily logging sensitive payloads.'],
-    15:['Evaluation & Cost','Agent quality, safety, tool trajectory, latency, model selection and usage are measured continuously.','Governance includes performance and cost.'],
+    14:['Observability & Audit','Each event captures trace, agent, tool, model, policy and security-decision metadata.','Create evidence without unnecessarily logging sensitive payloads.'],
+    15:['Evaluation & Cost','Agent quality, safety, tool trajectory, latency, model selection and usage are measured.','Governance includes performance and cost.'],
     16:['Session Store','Conversation context supports multi-turn interaction but does not replace business workflow or system-of-record state.','Separate conversation memory from authoritative state.']
   };
-
-  const title = root.getElementById('stepTitle');
-  const text = root.getElementById('stepText');
-  const control = root.getElementById('stepControl');
+  const title = root.getElementById('stepTitle'), text = root.getElementById('stepText'), control = root.getElementById('stepControl');
   root.querySelectorAll('.flow-node[data-step]').forEach(n => n.addEventListener('click', () => {
     root.querySelectorAll('.flow-node').forEach(x => x.classList.remove('selected'));
     n.classList.add('selected');
@@ -267,5 +296,5 @@
     control.textContent = s[2];
   }));
 
-  setApiState('ready', 'Ready for live governed-agent connection. No silent mock-response mode.');
+  loadModels();
 })();
