@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+requests
+sqlalchemy
+google-adk
+mcp>=1.24,<2
