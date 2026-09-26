@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-07-27T15:36:27.268Z",
+  "production_root": "C:\\Users\\rathe\\Documents\\Projects\\Architecting-Intelligence-Governance-main\\greenfield-portal",
+  "pages": 28,
+  "content_pages": 24,
+  "routes": 28,
+  "downloads": 8,
+  "visual_assets": 8,
+  "actions": {
+    "retain": 7,
+    "move": 8,
+    "rename": 0,
+    "merge": 5,
+    "split": 7,
+    "archive": 1,
+    "retire": 0
+  }
+}

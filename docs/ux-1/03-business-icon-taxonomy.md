@@ -1,0 +1,14 @@
+# Business Icon Taxonomy
+
+Primary library: Lucide. Icons support a label; they do not replace one. Decorative instances are hidden from assistive technology, while the visible label supplies the accessible name.
+
+| Domain | Meaning → Lucide icon |
+|---|---|
+| Organisation | Enterprise → `building-2`; Executive → `briefcase-business`; CIO/CTO → `landmark`; Programme Manager → `route`; Architect → `network`; Developer → `code-2`; Security Officer → `shield-check`; Data Owner → `database`; Risk Officer → `triangle-alert`; Auditor → `notebook-tabs`; Human Reviewer → `user-check`; Customer → `users`; Employee → `contact` |
+| Business | Value → `gem`; Strategy → `compass`; Investment → `banknote`; Cost → `circle-dollar-sign`; Benefit → `badge-check`; Growth → `chart-no-axes-combined`; Efficiency → `gauge`; Innovation → `lightbulb`; Capability → `blocks`; Operating Model → `workflow`; Process → `git-branch`; Decision → `gavel`; Priority → `list-ordered`; Roadmap → `route`; Outcome → `trophy` |
+| Governance | Governance → `scale`; Policy → `file-lock`; Standard → `ruler`; Control → `sliders-horizontal`; Risk → `triangle-alert`; Compliance → `badge-check`; Regulation → `landmark`; Audit → `notebook-tabs`; Accountability → `circle-user-round`; Approval → `circle-check`; Evidence → `files`; Escalation → `arrow-up-right`; Exception → `shield-alert`; Monitoring → `activity` |
+| Architecture | Enterprise Architecture → `network`; Application → `app-window`; Integration → `waypoints`; API → `plug`; Cloud → `cloud`; On-premises → `server`; Hybrid → `cloud-cog`; Network → `network`; Infrastructure → `server-cog`; Platform → `layers-3`; Database → `database`; Data Lake → `waves`; Vector DB → `scatter-chart`; AI Gateway → `route`; Model/LLM → `brain-circuit`; Agent → `bot`; MCP Server → `server-cog`; Tool → `wrench`; Memory → `database`; Prompt → `message-square-code`; Guardrail → `shield-check` |
+| Operations | Workflow → `workflow`; Automation → `zap`; Orchestration → `waypoints`; Monitoring → `activity`; Incident → `siren`; Support → `life-buoy`; Reliability → `badge-check`; Performance → `gauge`; Availability → `clock-3`; Disaster Recovery → `refresh-ccw`; Backup → `archive-restore`; Logging → `scroll-text`; Observability → `radar` |
+| Knowledge | Knowledge → `book-open`; Search → `search`; Document → `file-text`; Template → `copy`; Framework → `blocks`; Assessment → `clipboard-check`; Workshop → `presentation`; Evidence → `files`; Report → `file-chart-column`; Dashboard → `layout-dashboard`; Reference Architecture → `network`; Learning → `book-open-check` |
+
+Approved use: navigation cues, diagram nodes, role and control identification. Prohibited use: decoration, replacing precise labels, mixing filled icon families, using a risk icon for routine information. Alternative: use the visible text label alone whenever an icon is ambiguous.

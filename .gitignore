@@ -1,5 +1,25 @@
 .git/
 node_modules/
-.gitignore
-wrangler.toml
+.wrangler/
+.dev.vars
+.dev.vars.*
 *.log
+*.pid
+~$*
+.DS_Store
+Thumbs.db
+
+# Local audit and browser-validation output.
+tmp/
+
+# Preserved recovery and generated material that is not production source.
+greenfield-portal - backup/
+greenfield-portal/index_files/
+greenfield-portal/work/deploy-package-*/
+greenfield-portal/*.bak
+greenfield-portal/pages/*.bak
+greenfield-portal/temp_body.html
+greenfield-portal/withHero.html
+greenfield-portal/withStyle.html
+greenfield-portal/pages/solutions_test.html
+greenfield-portal/downloads/~$*

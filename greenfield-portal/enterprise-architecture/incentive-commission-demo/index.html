@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="RR Bank governed AI incentive and commission processing demonstration.">
+  <title>RR Bank | Incentive Control Centre</title>
+  <link rel="stylesheet" href="./frontend/styles.css">
+  <script src="./frontend/app.js" defer></script>
+  <link rel="stylesheet" href="../demo-guide.css">
+  <script src="../demo-guide.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to workspace</a>
+  <header class="topbar">
+    <a class="brand" href="#dashboard" aria-label="RR Bank Incentive Control Centre">
+      <span class="brand-mark">RR</span><span><strong>RR Bank</strong><small>Incentive Control Centre</small></span>
+    </a>
+    <div class="environment"><span></span>Synthetic data · Development</div>
+    <div class="user"><span class="avatar">AM</span><span><strong>Alex Morgan</strong><small>Operations Analyst</small></span></div>
+  </header>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Application navigation">
+      <nav id="primaryNav">
+        <button class="nav-item active" data-view="dashboard"><span>⌂</span>Dashboard</button>
+        <details open><summary>Operations</summary>
+          <button class="nav-item" data-view="processing"><span>▶</span>Processing</button>
+          <button class="nav-item" data-view="dealers"><span>◇</span>Dealers</button>
+          <button class="nav-item" data-view="transactions"><span>↔</span>Transactions</button>
+          <button class="nav-item" data-view="exceptions"><span>!</span>Exceptions <em>7</em></button>
+          <button class="nav-item" data-view="approvals"><span>✓</span>Approvals <em>3</em></button>
+        </details>
+        <details open><summary>Knowledge & controls</summary>
+          <button class="nav-item" data-view="rag"><span>▤</span>SOP / RAG</button>
+          <button class="nav-item" data-view="governance"><span>⬡</span>Governance</button>
+          <button class="nav-item" data-view="security"><span>⌾</span>Security</button>
+          <button class="nav-item" data-view="audit"><span>≡</span>Audit evidence</button>
+        </details>
+      </nav>
+      <div class="trust-card"><span class="pulse"></span><div><strong>Control plane healthy</strong><small>All 14 mandatory controls active</small></div></div>
+    </aside>
+    <main id="main" tabindex="-1">
+      <section class="page-header">
+        <div><p class="eyebrow" id="breadcrumb">OPERATIONS / OVERVIEW</p><h1 id="pageTitle">Commission operations</h1><p id="pageSubtitle">Monitor governed processing, exceptions, and approvals across the incentive lifecycle.</p></div>
+        <div class="header-actions"><button class="secondary" id="evidenceBtn">Export evidence</button><button class="primary" data-view="processing">Run new request</button></div>
+      </section>
+
+      <section id="dashboard" class="view active-view">
+        <div class="metrics">
+          <article><span>Today's commission</span><strong>$284,760</strong><small class="positive">↑ 8.4% from prior run</small></article>
+          <article><span>Transactions processed</span><strong>1,248</strong><small>1,226 straight-through</small></article>
+          <article><span>Needs review</span><strong>22</strong><small class="warning">7 exceptions · 15 approvals</small></article>
+          <article><span>Control pass rate</span><strong>98.7%</strong><small class="positive">14 controls active</small></article>
+        </div>
+        <div class="dashboard-grid">
+          <article class="card operations-card">
+            <div class="card-head"><div><p class="eyebrow">LIVE OPERATIONS</p><h2>Processing activity</h2></div><span class="live-pill"><i></i>Live</span></div>
+            <div class="chart-wrap"><div class="chart-label"><span>06:00</span><span>09:00</span><span>12:00</span><span>15:00</span><span>18:00</span></div><svg viewBox="0 0 720 210" role="img" aria-label="Commission processing volume and review activity"><defs><linearGradient id="fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#11684f" stop-opacity=".28"/><stop offset="1" stop-color="#11684f" stop-opacity="0"/></linearGradient></defs><g class="gridlines"><path d="M10 30H710M10 85H710M10 140H710M10 195H710"/></g><path class="area" d="M10 178 C80 170 90 130 145 145 S225 105 275 115 S350 55 410 83 S495 45 548 67 S635 35 710 46 L710 195 L10 195Z"/><path class="line" d="M10 178 C80 170 90 130 145 145 S225 105 275 115 S350 55 410 83 S495 45 548 67 S635 35 710 46"/></svg></div>
+            <div class="run-summary"><div><strong>BATCH-2026-0909-03</strong><span>Completed 14:42 MDT</span></div><div><strong>426</strong><span>records</span></div><div><strong>$91,840</strong><span>calculated</span></div><div><strong>6</strong><span>routed to review</span></div><button class="link-btn" data-view="processing">View trace →</button></div>
+          </article>
+          <article class="card attention-card">
+            <div class="card-head"><div><p class="eyebrow">ACTION QUEUE</p><h2>Needs attention</h2></div><button class="icon-btn" aria-label="More actions">•••</button></div>
+            <button class="queue-row" data-view="approvals"><span class="queue-icon amber">✓</span><span><strong>Commission approvals</strong><small>3 requests · $42,180 exposure</small></span><b>3</b></button>
+            <button class="queue-row" data-view="exceptions"><span class="queue-icon red">!</span><span><strong>Calculation mismatches</strong><small>Deterministic variance detected</small></span><b>2</b></button>
+            <button class="queue-row" data-view="rag"><span class="queue-icon blue">▤</span><span><strong>SOP privacy review</strong><small>1 high-severity finding</small></span><b>1</b></button>
+            <button class="queue-row" data-view="exceptions"><span class="queue-icon purple">◇</span><span><strong>Potential duplicates</strong><small>Awaiting process owner</small></span><b>4</b></button>
+          </article>
+        </div>
+        <div class="lower-grid">
+          <article class="card"><div class="card-head"><div><p class="eyebrow">GOVERNED EXECUTION</p><h2>Current processing trace</h2></div><span class="trace-id">TRACE-7F4A92</span></div><div id="pipeline" class="pipeline"></div><div class="policy-note"><span>◆</span><div><strong>Decision boundary enforced</strong><small>Gemini interpreted SOP sections 4.2, 7.1 and 11.3. The deterministic engine independently validated $2,847.60. No payment authority was granted to the model.</small></div><button id="inspectTrace">Inspect</button></div></article>
+          <article class="card"><div class="card-head"><div><p class="eyebrow">CONTROL POSTURE</p><h2>Governance status</h2></div></div><div class="donut-row"><div class="donut"><span>98.7<small>%</small></span></div><div class="legend"><span><i class="green"></i>Passed <b>1,231</b></span><span><i class="amber-dot"></i>Review <b>15</b></span><span><i class="red-dot"></i>Blocked <b>2</b></span></div></div><div class="governance-strip"><span><small>DATA CONTRACT</small><strong>ADC-INC-04 v3</strong></span><span><small>ACTIVE SOP</small><strong>INC-001 v2</strong></span><span><small>MODEL</small><strong>Gemini 2.5 Flash</strong></span></div></article>
+        </div>
+      </section>
+
+      <section id="processing" class="view"></section><section id="dealers" class="view"></section><section id="transactions" class="view"></section><section id="exceptions" class="view"></section><section id="approvals" class="view"></section><section id="rag" class="view"></section><section id="governance" class="view"></section><section id="security" class="view"></section><section id="audit" class="view"></section>
+    </main>
+  </div>
+  <dialog id="traceDialog"><form method="dialog"><div class="modal-head"><div><p class="eyebrow">IMMUTABLE EXECUTION EVIDENCE</p><h2>TRACE-7F4A92</h2></div><button class="icon-btn" aria-label="Close">×</button></div><div id="traceDetail"></div></form></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "architecting-ai",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-07-23",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": "./greenfield-portal",
+    "binding": "ASSETS",
+    "not_found_handling": "404-page",
+    "run_worker_first": ["/api/*", "/downloads/*", "/admin*", "/login*", "/register*", "/pages/*", "/case-studies/*", "/"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "architecting-ai-portal",
+      "database_id": "d37aa380-aaea-4919-aa20-86bc87384d06"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "RESOURCE_FILES",
+      "bucket_name": "architecting-ai-resources"
+    }
+  ],
+  "vars": {
+    "ADMIN_EMAIL": "ratheesh.ramadasan@gmail.com",
+    "ADMIN_EMAILS": "ratheesh.ramadasan@gmail.com,lachureshmi6@gmail.com"
+  },
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  },
+  "env": {
+    "staging": {
+      "name": "architecting-ai-staging",
+      "workers_dev": true,
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "architecting-ai-portal-staging",
+          "database_id": "681efd66-d141-4ee0-a3c0-d991c1b8a0fa"
+        }
+      ],
+      "r2_buckets": [
+        {
+          "binding": "RESOURCE_FILES",
+          "bucket_name": "architecting-ai-resources-staging"
+        }
+      ],
+      "vars": {
+        "ENVIRONMENT": "staging",
+        "ADMIN_EMAIL": "ratheesh.ramadasan@gmail.com",
+        "ADMIN_EMAILS": "ratheesh.ramadasan@gmail.com,lachureshmi6@gmail.com"
+      }
+    }
+  }
+}

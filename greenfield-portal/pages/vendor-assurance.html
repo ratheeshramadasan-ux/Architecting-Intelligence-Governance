@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Vendor, Infrastructure &amp; Lifecycle Dependencies — Architecting Intelligence"><title>Vendor, Infrastructure &amp; Lifecycle Dependencies | Ratheesh Technology Ltd.</title>
+<link rel="stylesheet" href="../assets/css/legacy-visuals.css?v=20260726-4"><link rel="stylesheet" href="../assets/css/navigation.css?v=20260726-4"><script src="../assets/js/navigation.js?v=20260727-1" defer></script></head>
+<body><a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+  <div class="utility-bar"><div class="utility-inner"><span>AI implementation &amp; governance advisory</span><a href="../pages/contact.html">Speak with an advisor <span aria-hidden="true">&#8594;</span></a></div></div>
+  <div class="header-container">
+    <a class="brand" href="../index.html" aria-label="Ratheesh Technology Ltd. home"><img class="company-logo" src="../assets/images/ratheesh-technology-logo-transparent.png?v=20260719-63" alt="Ratheesh Technology Ltd. — AI Implementation and Governance" width="1906" height="825"></a>
+    <button class="mobile-menu-button" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+    <nav id="primary-navigation" class="primary-navigation" aria-label="Primary navigation"></nav>
+  </div>
+</header><main id="main-content" class="inner-page"><div class="legacy-content"><section class="article-hero platform-page-hero"><div class="hero-inner"><div class="pg-tag pg-tag-teal">AI Governance</div>
+    <h1 class="pg-title">Vendor, Infrastructure &amp; Lifecycle Dependencies</h1>
+    <p class="pg-intro">How to assess AI suppliers, infrastructure dependencies, service commitments, data location, portability, and exit options before they become operational constraints.</p></div></section><div class="container-narrow">
+<section class="decision-summary" aria-labelledby="vendor-decision-title"><h2 id="vendor-decision-title">Executive decision summary</h2><p class="decision-lead">A capable product can still be an unacceptable enterprise dependency. Assess the full operating relationship, not only model quality or purchase price.</p><div class="decision-summary-grid"><div><h3>Business outcome</h3><p>Avoid lock-in, unmanaged concentration risk, surprise cost, data-sovereignty issues, and unsupported critical services.</p></div><div><h3>How it works</h3><p>Evaluate service levels, subcontractors, data use, change rights, resilience, portability, deletion, and exit evidence.</p></div><div><h3>Decision rule</h3><p>Do not approve a critical dependency without a costed transition plan and tested access to required data and artefacts.</p></div></div><p class="decision-links">Related terms: <a href="ai-technology-glossary.html#service-level-agreement">Service-Level Agreement (SLA)</a>, <a href="ai-technology-glossary.html#total-cost-of-ownership">Total Cost of Ownership (TCO)</a>, and <a href="ai-technology-glossary.html#model-runtime">model runtime</a>.</p></section>
+  
+
+  <div class="concept">
+    <button class="c-trigger" aria-expanded="false"><span class="c-num">C-13</span><div class="c-hd"><div class="c-title">Vendor Lock-In: The Four Layers Most Enterprises Miss</div><div class="c-preview">Lock-in in generative AI operates at the model layer, the embedding layer, the fine-tuning investment layer, and the commercial terms layer simultaneously. Most enterprises are locked in at one without knowing it.</div></div><span class="c-arrow">▼</span></button>
+    <div class="c-body">
+      <div class="tw"><table><thead><tr><th>Layer</th><th>The Risk</th><th>Why It Is Hard to Escape</th></tr></thead><tbody>
+        <tr><td>Model Dependency</td><td>GPT-4 responds to specific instruction styles. Claude favours XML-structured prompts. Different safety thresholds and refusal behaviours per provider.</td><td>Swapping models is not changing an API key. It is rewriting and re-testing every prompt against new behaviour characteristics.</td></tr>
+        <tr><td>The Embedding Trap</td><td>Different providers produce incompatible vector dimensions. You cannot query a Provider A vector database using Provider B.</td><td>10 million embedded enterprise documents must be entirely regenerated and re-indexed to migrate. A multi-month data engineering effort at full cost.</td></tr>
+        <tr><td>Fine-Tuning Investment</td><td>Fine-tuning investment on proprietary model weights is non-portable. Leaving the vendor means the training work stays with them.</td><td>The enterprise starts the training process over from scratch with a new provider.</td></tr>
+        <tr><td>Commercial Opacity</td><td>Token-based pricing shifts to opaque bundled SKUs. Middle-vendor markups on raw token costs invisible without gateway logging.</td><td>Without granular consumption data, TCO forecasting is guesswork and vendor billing challenges cannot be evidenced.</td></tr>
+      </tbody></table></div>
+      <div class="drill"><button class="drill-btn">Governance controls: AI gateway and portability testing <span>expand ▾</span></button>
+      <div class="drill-content"><ul class="clist">
+        <li><strong>AI Gateway as abstraction layer.</strong> Route all traffic through a centralised gateway. The application calls the gateway; the gateway calls whichever model is designated. Switching providers requires a configuration change — not an application rebuild.</li>
+        <li><strong>Multi-provider strategy.</strong> Mix proprietary and open-weights models by task. No single provider should be a single point of failure for critical workloads.</li>
+        <li><strong>Token consumption auditing.</strong> Every token logged at the gateway level. Provides the baseline needed to challenge opaque billing and audit downstream markups.</li>
+        <li><strong>Annual portability testing.</strong> Run critical workloads against alternative models. Measure quality degradation. Document the exact engineering effort required to migrate. The AI equivalent of a disaster recovery drill.</li>
+      </ul></div></div>
+    </div>
+  </div>
+
+  <div class="concept">
+    <button class="c-trigger" aria-expanded="false"><span class="c-num">C-14</span><div class="c-hd"><div class="c-title">Nth-Party Dependencies, Soft Downtime &amp; Data Sovereignty</div><div class="c-preview">The CRM's AI copilot is powered by a model the SaaS vendor chose, routing your data through a third party you have never reviewed. And when that model has a soft outage — still online, quietly returning garbage — your standard SLA offers no protection.</div></div><span class="c-arrow">▼</span></button>
+    <div class="c-body">
+      <div class="callout co-red"><div class="co-lbl">The three Nth-party risks nobody contracted for</div><div class="co-txt"><strong>Outage without SLA:</strong> The foundation model fails. The SaaS AI features fail. The enterprise has no SLA with the root cause.<br/><strong>Compound lock-in:</strong> Locked into the SaaS vendor and constrained by whichever AI provider they chose.<br/><strong>Data sovereignty gap:</strong> Unclear how data moves across each hop. Privacy, residency, and training risk at every junction — none of it visible to the enterprise.</div></div>
+      <div class="drill"><button class="drill-btn">Soft downtime, workload tiering, and what to monitor beyond uptime <span>expand ▾</span></button>
+      <div class="drill-content">
+        <div class="tw"><table><thead><tr><th>Tier</th><th>Definition</th><th>Resilience Required</th></tr></thead><tbody>
+          <tr><td>Tier 1 — Mission Critical</td><td>Business stops without it. Real-time customer processes. Regulatory decision pipelines.</td><td>Multi-model redundancy. Automated failover sub-60 seconds. Human fallback documented and tested.</td></tr>
+          <tr><td>Tier 2 — Business Important</td><td>Degraded operations without it. Internal analytics. Document processing pipelines.</td><td>Single failover configured. Rate limit monitoring. Manual fallback documented. 4-hour tolerance.</td></tr>
+          <tr><td>Tier 3 — Non-Critical</td><td>Inconvenient without it. Experimental tools. Brainstorming assistants.</td><td>Basic uptime monitoring. No redundancy requirement.</td></tr>
+        </tbody></table></div>
+        <div class="callout co-amb"><div class="co-lbl">What must be monitored beyond uptime</div><div class="co-txt"><strong>Response quality:</strong> Canary prompts with known correct answers running every few minutes, evaluated for format adherence, factual accuracy, and refusal rates.<br/><strong>Latency at p99:</strong> Average latency hides the worst-case experience. For real-time applications, p99 is the operationally relevant metric.<br/><strong>Refusal rate tracking:</strong> Provider safety filter updates can spike legitimate query refusal rates without any uptime impact.</div></div>
+      </div></div>
+      <div class="drill"><button class="drill-btn">Data sovereignty, BYOM, and the zero-retention myth <span>expand ▾</span></button>
+      <div class="drill-content"><div class="prose"><p>AI providers dynamically route queries across geographic availability zones. This invisible movement can create compliance risk under GDPR, contractual location commitments, Canadian public-sector or sector-specific residency rules, and privacy requirements governing cross-border processing. Canada does not have one blanket private-sector data-residency rule; the applicable law, regulator, contract, data category, and jurisdiction must be assessed. Processing in another jurisdiction can still affect access, safeguards, transparency, and transfer-risk obligations even when data is not stored there permanently.</p><p>The zero-retention myth: most providers maintain metadata, telemetry, and system logs even when they have committed to zero training data retention. These are different categories of data handling. The contract may cover training data; the telemetry continues regardless.</p></div>
+        <ul class="clist">
+          <li><strong>Geographic routing locked in contract and gateway configuration.</strong> Primary, secondary, and failover endpoints all confirmed against the approved jurisdiction list.</li>
+          <li><strong>Metadata retention explicitly addressed.</strong> Scope, duration, access controls, and notification obligations all specified and agreed — not assumed.</li>
+          <li><strong>BYOM for SaaS platforms.</strong> Bring-Your-Own-Model lets the enterprise plug its own governed gateway into the SaaS vendor's platform. SaaS vendors offering BYOM should be architecturally preferred for sensitive or regulated use cases.</li>
+        </ul>
+      </div></div>
+    </div>
+  </div>
+</div></div></main><footer><div><img src="../assets/images/ratheesh-technology-logo-transparent.png?v=20260719-63" alt="Ratheesh Technology Ltd." width="1906" height="825"><p>Architecting Intelligence</p></div><p>&copy; 2026 Ratheesh Technology Ltd.</p></footer></body></html>

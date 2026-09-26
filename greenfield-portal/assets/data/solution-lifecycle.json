@@ -1,0 +1,148 @@
+{
+  "version": "1.0.0",
+  "title": "AI Solution Lifecycle",
+  "description": "Explains how an individual AI use case, model, agent, application, or product moves from intake through retirement across 14 solution steps.",
+  "totalSteps": 14,
+  "steps": [
+    {
+      "step": 1,
+      "slug": "intake-registration",
+      "title": "Intake and Registration",
+      "purpose": "Log, catalogue, and assign ownership for new AI use case proposals.",
+      "output": "AI Asset & Proposal Registration Record",
+      "gate": "Intake Accepted",
+      "keyRoles": ["Business Owner", "AI Governance Lead"],
+      "transformationStageRef": 5
+    },
+    {
+      "step": 2,
+      "slug": "risk-classification",
+      "title": "Risk Classification",
+      "purpose": "Evaluate risk tier, impact level, regulatory exposure, and human oversight requirements.",
+      "output": "AI Risk Tiering & Impact Assessment",
+      "gate": "Risk Tier Approved",
+      "keyRoles": ["Risk Executive", "Privacy & Legal Leads"],
+      "transformationStageRef": 5
+    },
+    {
+      "step": 3,
+      "slug": "feasibility-business-case",
+      "title": "Feasibility and Business Case",
+      "purpose": "Validate economic ROI, technical feasibility, operational readiness, and funding.",
+      "output": "Solution Business Case & Feasibility Brief",
+      "gate": "Solution Funding Approved",
+      "keyRoles": ["Business Owner", "Finance Lead"],
+      "transformationStageRef": 6
+    },
+    {
+      "step": 4,
+      "slug": "data-readiness",
+      "title": "Data Readiness",
+      "purpose": "Verify data quality, lineage, consent, licensing, privacy, and pipeline infrastructure.",
+      "output": "Data Hygiene & Lineage Sign-off",
+      "gate": "Data Baseline Accepted",
+      "keyRoles": ["Data Lead", "Privacy Lead"],
+      "transformationStageRef": 7
+    },
+    {
+      "step": 5,
+      "slug": "solution-design",
+      "title": "Solution Design",
+      "purpose": "Specify functional, technical, security, RAG, agentic, and integration architecture.",
+      "output": "Solution Architecture Specification",
+      "gate": "Architecture Review Approved",
+      "keyRoles": ["Enterprise Architect", "AI Solution Architect"],
+      "transformationStageRef": 7
+    },
+    {
+      "step": 6,
+      "slug": "model-agent-selection",
+      "title": "Model or Agent Selection",
+      "purpose": "Select foundation models, prompt strategies, agent frameworks, or commercial tools.",
+      "output": "Model/Agent Selection Decision Record",
+      "gate": "Model Choice Benchmark Accepted",
+      "keyRoles": ["AI Solution Architect", "Security Lead"],
+      "transformationStageRef": 7
+    },
+    {
+      "step": 7,
+      "slug": "build-configuration",
+      "title": "Build and Configuration",
+      "purpose": "Develop code, configure prompts/RAG, integrate APIs, and establish security controls.",
+      "output": "Build & Configuration Repository Release",
+      "gate": "Build Gate Passed",
+      "keyRoles": ["Technical Lead", "Security Lead"],
+      "transformationStageRef": 9
+    },
+    {
+      "step": 8,
+      "slug": "testing-evaluation",
+      "title": "Testing and Evaluation",
+      "purpose": "Execute red-teaming, safety evaluations, bias checks, performance tests, and user acceptance.",
+      "output": "AI Evaluation & Safety Test Report",
+      "gate": "Testing & Safety Accepted",
+      "keyRoles": ["Testing & Validation Lead", "Risk Executive"],
+      "transformationStageRef": 10
+    },
+    {
+      "step": 9,
+      "slug": "approval-release",
+      "title": "Approval and Release",
+      "purpose": "Formal review by governance board for deployment authorization.",
+      "output": "Release Authorization Certificate",
+      "gate": "Release Gate Approved",
+      "keyRoles": ["AI Governance Board", "Platform Owner"],
+      "transformationStageRef": 10
+    },
+    {
+      "step": 10,
+      "slug": "deployment",
+      "title": "Deployment",
+      "purpose": "Promote solution to production runtime environment with cutover guardrails.",
+      "output": "Production Cutover Record",
+      "gate": "Deployment Confirmed",
+      "keyRoles": ["Operations Lead", "Platform Owner"],
+      "transformationStageRef": 11
+    },
+    {
+      "step": 11,
+      "slug": "monitoring-assurance",
+      "title": "Monitoring and Assurance",
+      "purpose": "Track model drift, latency, cost, prompt misuse, guardrail triggers, and user feedback.",
+      "output": "Continuous Runtime Monitoring Log",
+      "gate": "Operational Stability Maintained",
+      "keyRoles": ["Operations Lead", "AI Governance Lead"],
+      "transformationStageRef": 12
+    },
+    {
+      "step": 12,
+      "slug": "change-management",
+      "title": "Change Management",
+      "purpose": "Govern model updates, prompt tuning, dataset updates, and scope expansions.",
+      "output": "Change Impact & Re-evaluation Pack",
+      "gate": "Change Authorized",
+      "keyRoles": ["Change Lead", "AI Solution Architect"],
+      "transformationStageRef": 12
+    },
+    {
+      "step": 13,
+      "slug": "incident-management",
+      "title": "Incident Management",
+      "purpose": "Detect, respond to, mitigate, and record AI safety, security, or output failures.",
+      "output": "AI Incident Post-Mortem & Remediation Plan",
+      "gate": "Incident Resolved & Lessons Logged",
+      "keyRoles": ["Operations Lead", "Security Lead", "Risk Executive"],
+      "transformationStageRef": 12
+    },
+    {
+      "step": 14,
+      "slug": "retirement",
+      "title": "Retirement",
+      "purpose": "Decommission AI use cases, archive data/prompts, update asset register, and transfer users.",
+      "output": "AI Asset Retirement Certificate",
+      "gate": "Decommissioning Completed",
+      "keyRoles": ["Platform Owner", "AI Governance Lead"],
+      "transformationStageRef": 13
+    }
+  ]
+}

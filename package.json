@@ -1,0 +1,31 @@
+﻿{
+    "name":  "architecting-intelligence-portal",
+    "private":  true,
+    "type":  "module",
+    "scripts":  {
+                    "dev":  "wrangler dev",
+                    "dev:worker":  "wrangler dev --local",
+                    "dev:local":  "node scripts/serve-local.mjs",
+                    "db:local:migrate":  "wrangler d1 migrations apply architecting-ai-portal --local",
+                    "typegen":  "wrangler types",
+                    "check":  "wrangler deploy --dry-run",
+                    "validate":  "node scripts/validate-portal-links.mjs \u0026\u0026 node scripts/validate-methodology.mjs \u0026\u0026 node scripts/validate-assessment-platform.mjs \u0026\u0026 node scripts/validate-readiness-platform.mjs",
+                    "validate:shell":  "node scripts/validate-shared-shell.mjs",
+                    "audit:links":  "node scripts/audit-internal-links.mjs",
+                    "validate:syntax":  "node scripts/validate-js-syntax.mjs",
+                    "validate:lifecycle":  "node scripts/validate-lifecycle-drafts.mjs",
+                    "validate:encoding":  "node scripts/validate-encoding.mjs",
+                    "validate:worker":  "node scripts/validate-worker-local.mjs",
+                    "test:phase1":  "node scripts/test-admin-phase1.mjs",
+                    "test:phase2":  "node scripts/test-admin-phase2.mjs",
+                    "validate:local":  "npm run validate:syntax \u0026\u0026 npm run validate:encoding \u0026\u0026 npm run validate \u0026\u0026 npm run validate:lifecycle \u0026\u0026 npm run validate:shell \u0026\u0026 npm run audit:links",
+                    "validate:public":  "npm run validate:syntax \u0026\u0026 npm run validate:encoding \u0026\u0026 npm run validate \u0026\u0026 npm run validate:lifecycle \u0026\u0026 npm run audit:links",
+                    "deploy":  "wrangler deploy"
+                },
+    "dependencies":  {
+                         "sanitize-html":  "^2.17.0"
+                     },
+    "devDependencies":  {
+                            "wrangler":  "^4.0.0"
+                        }
+}

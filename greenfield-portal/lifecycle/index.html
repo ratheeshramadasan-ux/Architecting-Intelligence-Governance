@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="The AI Solution Lifecycle details how individual AI use cases, models, agents, and applications move from intake through retirement across 14 solution steps.">
+  <title>AI Solution Lifecycle | Architecting Intelligence</title>
+  <link rel="stylesheet" href="/assets/css/methodology-v10.css?v=20260728-25">
+  <link rel="stylesheet" href="/assets/css/platform-sections.css?v=20260727-9">
+  <script src="/assets/js/methodology-v10.js?v=20260728-26" defer></script>
+</head>
+<body data-methodology-page="solution-lifecycle">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header id="methodology-header"></header>
+  <main id="main-content">
+    <section class="detail-hero">
+      <div class="methodology-wrap">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="/">Home</a><span>/</span>
+          <span>AI Solution Lifecycle</span>
+        </nav>
+        <span class="eyebrow">Use Case & Product Lifecycle · 14 Solution Steps</span>
+        <h1>AI Solution Lifecycle</h1>
+        <p class="hero-lead">Explains how an individual AI use case, model, agent, application, or product moves from initial intake and risk tiering through engineering, evaluation, deployment, production monitoring, and eventual retirement.</p>
+      </div>
+    </section>
+
+    <section class="methodology-wrap platform-section-shell">
+      <div class="section-intro-grid">
+        <div>
+          <span class="content-kicker">Conceptual Distinction</span>
+          <h2>Solution Lifecycle vs. Enterprise Transformation</h2>
+          <p>While <strong>Enterprise AI Transformation</strong> establishes organizational capability, governance, and infrastructure, the <strong>AI Solution Lifecycle</strong> governs individual use cases and products through their specific engineering and operational lifecycle.</p>
+        </div>
+        <aside class="platform-trust">
+          <span>Solution Control</span>
+          <h2>14 Governed Steps</h2>
+          <p>Every AI use case must pass through risk classification, architecture approval, safety evaluation, and runtime monitoring before release.</p>
+        </aside>
+      </div>
+
+      <div class="section-heading" style="margin-top: 2rem;">
+        <span>Sequential Progression</span>
+        <h2>Fourteen Solution Lifecycle Steps</h2>
+      </div>
+
+      <div id="solution-lifecycle-grid" class="method-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.25rem;">
+        <!-- Hydrated dynamically from solution-lifecycle.json or fallback static list -->
+        <article class="lifecycle-card" id="intake">
+          <span class="stage-number">Step 1</span>
+          <h3>Intake and Registration</h3>
+          <p>Log, catalogue, and assign ownership for new AI use case proposals.</p>
+          <dl><div><dt>What happens</dt><dd>Capture the business problem, intended users, proposed AI capability, data involved, expected value, known constraints, and dependencies.</dd></div><div><dt>Accountable roles</dt><dd>Business Owner and AI Governance Lead</dd></div><div><dt>Primary output</dt><dd>AI Asset &amp; Proposal Registration Record<span class="output-format">Format: Markdown (.md)</span><a class="output-download" href="/downloads/lifecycle/01-ai-asset-proposal-registration.md" download>Download template ↓</a></dd></div><div><dt>Exit decision</dt><dd>Intake Accepted — the proposal has an owner, a clear purpose, sufficient initial evidence, and approval to proceed to risk classification.</dd></div></dl>
+        </article>
+        <article class="lifecycle-card" id="risk-classification">
+          <span class="stage-number">Step 2</span>
+          <h3>Risk Classification</h3>
+          <p>Evaluate risk tier, impact level, regulatory exposure, and human oversight expectations.</p>
+          <dl><div><dt>Primary output</dt><dd>AI Risk Tiering &amp; Impact Assessment<span class="output-format">Format: Markdown (.md)</span><a class="output-download" href="/downloads/lifecycle/02-ai-risk-impact-assessment.md" download>Download template ↓</a></dd></div><div><dt>Exit decision</dt><dd>Risk Tier Approved</dd></div></dl>
+        </article>
+        <article class="lifecycle-card" id="feasibility">
+          <span class="stage-number">Step 3</span>
+          <h3>Feasibility and Business Case</h3>
+          <p>Validate economic ROI, technical feasibility, operational readiness, and funding.</p>
+          <dl><div><dt>Primary output</dt><dd>Solution Business Case Brief<span class="output-format">Format: Markdown (.md)</span><a class="output-download" href="/downloads/lifecycle/03-solution-business-case.md" download>Download template ↓</a></dd></div><div><dt>Exit decision</dt><dd>Solution Funding Approved</dd></div></dl>
+        </article>
+        <article class="lifecycle-card" id="data-readiness">
+          <span class="stage-number">Step 4</span>
+          <h3>Data Readiness</h3>
+          <p>Verify data quality, lineage, consent, licensing, privacy, and pipeline infrastructure.</p>
+          <dl><div><dt>Primary output</dt><dd>Data Hygiene &amp; Lineage Sign-off<span class="output-format">Format: Markdown (.md)</span><a class="output-download" href="/downloads/lifecycle/04-data-readiness-signoff.md" download>Download template ↓</a></dd></div><div><dt>Exit decision</dt><dd>Data Baseline Accepted</dd></div></dl>
+        </article>
+        <article class="lifecycle-card" id="solution-design">
+          <span class="stage-number">Step 5</span>
+          <h3>Solution Design</h3>
+          <p>Specify functional, technical, security, RAG, agentic, and integration architecture.</p>
+          <dl><div><dt>Primary output</dt><dd>Solution Architecture Specification<span class="output-format">Format: Markdown (.md)</span><a class="output-download" href="/downloads/lifecycle/05-solution-architecture-specification.md" download>Download template ↓</a></dd></div><div><dt>Exit decision</dt><dd>Architecture Review Approved</dd></div></dl>
+        </article>
+        <article class="lifecycle-card" id="selection">
+          <span class="stage-number">Step 6</span>
+          <h3>Model or Agent Selection</h3>
+          <p>Select foundation models, prompt strategies, agent frameworks, or commercial tools.</p>
+          <dl><div><dt>Primary output</dt><dd>Model/Agent Selection Decision Record<span class="output-format">Format: Markdown (.md)</span><a class="output-download" href="/downloads/lifecycle/06-model-agent-selection.md" download>Download template ↓</a></dd></div><div><dt>Exit decision</dt><dd>Model Choice Accepted</dd></div></dl>
+        </article>
+        <article class="lifecycle-card" id="build-config">
+          <span class="stage-number">Step 7</span>
+          <h3>Build and Configuration</h3>
+          <p>Develop code, configure prompts/RAG, integrate APIs, and establish security controls.</p>
+          <dl><div><dt>Primary output</dt><dd>Build &amp; Configuration Evidence Pack<span class="output-format">Format: Markdown (.md)</span><a class="output-download" href="/downloads/lifecycle/07-build-configuration-evidence.md" download>Download template ↓</a></dd></div><div><dt>Exit decision</dt><dd>Build Gate Passed</dd></div></dl>
+        </article>
+        <article class="lifecycle-card" id="testing-evaluation">
+          <span class="stage-number">Step 8</span>
+          <h3>Testing and Evaluation</h3>
+          <p>Execute red-teaming, safety evaluations, bias checks, performance tests, and user acceptance.</p>
+          <dl><div><dt>Primary output</dt><dd>AI Evaluation &amp; Safety Test Report<span class="output-format">Format: Markdown (.md)</span><a class="output-download" href="/downloads/lifecycle/08-ai-evaluation-safety-report.md" download>Download template ↓</a></dd></div><div><dt>Exit decision</dt><dd>Testing &amp; Safety Accepted</dd></div></dl>
+        </article>
+        <article class="lifecycle-card" id="approval-release">
+          <span class="stage-number">Step 9</span>
+          <h3>Approval and Release</h3>
+          <p>Formal review by governance board for deployment authorization.</p>
+          <dl><div><dt>Primary output</dt><dd>Release Authorization Certificate<span class="output-format">Format: Markdown (.md)</span><a class="output-download" href="/downloads/lifecycle/09-release-authorization.md" download>Download template ↓</a></dd></div><div><dt>Exit decision</dt><dd>Release Gate Approved</dd></div></dl>
+        </article>
+        <article class="lifecycle-card" id="deployment">
+          <span class="stage-number">Step 10</span>
+          <h3>Deployment</h3>
+          <p>Promote solution to production runtime environment with cutover guardrails.</p>
+          <dl><div><dt>Primary output</dt><dd>Production Cutover Record<span class="output-format">Format: Markdown (.md)</span><a class="output-download" href="/downloads/lifecycle/10-production-cutover-record.md" download>Download template ↓</a></dd></div><div><dt>Exit decision</dt><dd>Deployment Confirmed</dd></div></dl>
+        </article>
+        <article class="lifecycle-card" id="monitoring-assurance">
+          <span class="stage-number">Step 11</span>
+          <h3>Monitoring and Assurance</h3>
+          <p>Track model drift, latency, cost, prompt misuse, guardrail triggers, and user feedback.</p>
+          <dl><div><dt>Primary output</dt><dd>Continuous Runtime Monitoring Log<span class="output-format">Format: Markdown (.md)</span><a class="output-download" href="/downloads/lifecycle/11-runtime-monitoring-log.md" download>Download template ↓</a></dd></div><div><dt>Exit decision</dt><dd>Operational Stability Maintained</dd></div></dl>
+        </article>
+        <article class="lifecycle-card" id="change-management">
+          <span class="stage-number">Step 12</span>
+          <h3>Change Management</h3>
+          <p>Govern model updates, prompt tuning, dataset updates, and scope expansions.</p>
+          <dl><div><dt>Primary output</dt><dd>Change Impact Pack<span class="output-format">Format: Markdown (.md)</span><a class="output-download" href="/downloads/lifecycle/12-change-impact-pack.md" download>Download template ↓</a></dd></div><div><dt>Exit decision</dt><dd>Change Authorized</dd></div></dl>
+        </article>
+        <article class="lifecycle-card" id="incident-management">
+          <span class="stage-number">Step 13</span>
+          <h3>Incident Management</h3>
+          <p>Detect, respond to, mitigate, and record AI safety, security, or output failures.</p>
+          <dl><div><dt>Primary output</dt><dd>AI Incident Post-Mortem Record<span class="output-format">Format: Markdown (.md)</span><a class="output-download" href="/downloads/lifecycle/13-ai-incident-postmortem.md" download>Download template ↓</a></dd></div><div><dt>Exit decision</dt><dd>Incident Resolved</dd></div></dl>
+        </article>
+        <article class="lifecycle-card" id="retirement">
+          <span class="stage-number">Step 14</span>
+          <h3>Retirement</h3>
+          <p>Decommission AI use cases, archive data/prompts, update asset register, and transfer users.</p>
+          <dl><div><dt>Primary output</dt><dd>AI Asset Retirement Certificate<span class="output-format">Format: Markdown (.md)</span><a class="output-download" href="/downloads/lifecycle/14-ai-asset-retirement.md" download>Download template ↓</a></dd></div><div><dt>Exit decision</dt><dd>Decommissioning Completed</dd></div></dl>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer id="methodology-footer"></footer>
+</body>
+</html>

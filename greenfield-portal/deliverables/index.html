@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Browse enterprise AI transformation deliverables, decision records, reports, registers, plans and templates.">
+  <title>Deliverables | Architecting Intelligence</title>
+  <link rel="stylesheet" href="/assets/css/methodology-v10.css?v=20260728-25">
+  <link rel="stylesheet" href="/assets/css/platform-sections.css?v=20260727-6">
+  <script src="/assets/js/methodology-v10.js?v=20260728-26" defer></script>
+  <script src="/assets/js/platform-sections.js?v=20260727-6" defer></script>
+</head>
+<body data-methodology-page="deliverables">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header id="methodology-header"></header>
+  <main id="main-content">
+    <section class="detail-hero">
+      <div class="methodology-wrap">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><span>Deliverables</span></nav>
+        <span class="eyebrow">Governed Artefacts, Evidence & Templates</span>
+        <h1>Deliverables</h1>
+        <p class="hero-lead">Artefacts, decision records, reports, registers, plans, scorecards, roadmaps, and reusable template starters produced across transformation stages and solution lifecycle gates.</p>
+      </div>
+    </section>
+
+    <section class="methodology-wrap platform-section-shell">
+      <div class="section-intro-grid">
+        <div>
+          <span class="content-kicker">Deliverable Library</span>
+          <h2>Outputs grouped by executive purpose.</h2>
+        </div>
+        <aside class="platform-trust">
+          <span>Distinct from Tools</span>
+          <p>Deliverables are governed evidence products produced by the methodology. Tools are interactive aids used to generate or analyze them.</p>
+        </aside>
+      </div>
+
+      <div class="lifecycle-three-grid" style="grid-template-columns: repeat(3, 1fr); margin-top: 1.5rem;" id="purpose-categories">
+        <div style="background: var(--surface2, #f8fafc); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--rule, #e2e8f0);" id="executive-records">
+          <h3>Executive Decision Records</h3>
+          <p style="font-size:0.85rem;">Mandates, Charters, Investment Cases, Governance Decision Packs. (Stages 1, 4, 7)</p>
+        </div>
+        <div style="background: var(--surface2, #f8fafc); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--rule, #e2e8f0);" id="governance-artefacts">
+          <h3>Governance & Policy Artefacts</h3>
+          <p style="font-size:0.85rem;">Governance Frameworks, Enterprise RACI, AI Risk Appetite, Principles. (Stages 5, 6)</p>
+        </div>
+        <div style="background: var(--surface2, #f8fafc); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--rule, #e2e8f0);" id="architecture-artefacts">
+          <h3>Architecture & Blueprint Artefacts</h3>
+          <p style="font-size:0.85rem;">Target Architecture Packs, Security Reviews, Data Hygiene Sign-offs. (Stages 8, 9)</p>
+        </div>
+        <div style="background: var(--surface2, #f8fafc); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--rule, #e2e8f0);" id="delivery-plans">
+          <h3>Delivery & Transition Plans</h3>
+          <p style="font-size:0.85rem;">Integrated Implementation Plans, Change Plans, Transition Records. (Stages 9, 12)</p>
+        </div>
+        <div style="background: var(--surface2, #f8fafc); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--rule, #e2e8f0);" id="operational-reports">
+          <h3>Operational & Assurance Reports</h3>
+          <p style="font-size:0.85rem;">Production Assurance Reports, Incident Logs, Scale Decision Packs. (Stages 13, 14)</p>
+        </div>
+        <div style="background: var(--surface2, #f8fafc); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--rule, #e2e8f0);" id="evidence-packs">
+          <h3>Evidence & Audit Packs</h3>
+          <p style="font-size:0.85rem;">Discovery Baselines, Readiness Evidence Packs, Compliance Crosswalks. (Stages 2, 3, 11)</p>
+        </div>
+      </div>
+
+      <form id="deliverable-filter" class="standard-search" role="search" style="margin-top: 2rem;">
+        <label for="deliverable-query">Search deliverables</label>
+        <div>
+          <input id="deliverable-query" type="search" placeholder="Report, roadmap, register, security…">
+          <button class="button primary">Search</button>
+        </div>
+        <label for="deliverable-stage">Transformation Stage 
+          <select id="deliverable-stage">
+            <option value="">All Transformation Stages</option>
+            <option>Stage 1 — Mobilise</option>
+            <option>Stage 2 — Discover</option>
+            <option>Stage 3 — Assess Readiness</option>
+            <option>Stage 4 — Define Strategy</option>
+            <option>Stage 5 — Establish Governance</option>
+            <option>Stage 6 — Prioritise Opportunities</option>
+            <option>Stage 7 — Build Business Case</option>
+            <option>Stage 8 — Target Architecture</option>
+            <option>Stage 9 — Plan Implementation</option>
+            <option>Stage 10 — Build & Integrate</option>
+            <option>Stage 11 — Test & Validate</option>
+            <option>Stage 12 — Deploy & Transition</option>
+            <option>Stage 13 — Operate & Govern</option>
+            <option>Stage 14 — Improve & Scale</option>
+          </select>
+        </label>
+      </form>
+      <p id="deliverable-status" role="status"></p>
+      <div id="deliverable-library" class="deliverable-library"></div>
+    </section>
+  </main>
+  <footer id="methodology-footer"></footer>
+</body>
+</html>

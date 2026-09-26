@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" role="img" aria-labelledby="title desc">
+  <title id="title">Enterprise Dashboard Wireframes</title><desc id="desc">Six views over one canonical status and evidence model.</desc>
+  <defs><filter id="s"><feDropShadow dx="0" dy="4" stdDeviation="7" flood-opacity=".12"/></filter>
+  <style>.bg{fill:#f4f7fa}.title{font:700 34px Arial;fill:#08264a}.sub{font:16px Arial;fill:#506779}.box{fill:#fff;stroke:#cfd9e2;stroke-width:2;filter:url(#s)}.navy{fill:#08264a}.gold{fill:#c3912f}.teal{fill:#2b6f72}.h{font:700 17px Arial;fill:#08264a}.w{font:700 16px Arial;fill:#fff}.p{font:14px Arial;fill:#506779}.line{stroke:#8fa4b5;stroke-width:3;fill:none;marker-end:url(#a)}.thin{stroke:#b9c7d2;stroke-width:2;fill:none}</style>
+  <marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8fa4b5"/></marker></defs>
+  <rect class="bg" width="1400" height="760"/><text class="title" x="60" y="58">Enterprise Dashboard Wireframes</text><text class="sub" x="60" y="88">Six views over one canonical status and evidence model.</text><rect class="box" x="55" y="130" width="405" height="250" rx="12"/><rect class="navy" x="55" y="130" width="405" height="46" rx="12"/><text class="w" x="73" y="160">Executive Dashboard</text>
+  <rect fill="#eaf4f3" x="73" y="196" width="112" height="72" rx="8"/><rect fill="#f8f0df" x="201" y="196" width="112" height="72" rx="8"/><rect fill="#eef3f7" x="329" y="196" width="112" height="72" rx="8"/>
+  <text class="h" x="85" y="225">KPI</text><text class="h" x="215" y="225">Gate</text><text class="h" x="341" y="225">Risk</text>
+  <path class="thin" d="M75 310 C155 255,235 345,310 290 S415 275,440 325"/><rect class="box" x="500" y="130" width="405" height="250" rx="12"/><rect class="navy" x="500" y="130" width="405" height="46" rx="12"/><text class="w" x="518" y="160">Programme Dashboard</text>
+  <rect fill="#eaf4f3" x="518" y="196" width="112" height="72" rx="8"/><rect fill="#f8f0df" x="646" y="196" width="112" height="72" rx="8"/><rect fill="#eef3f7" x="774" y="196" width="112" height="72" rx="8"/>
+  <text class="h" x="530" y="225">KPI</text><text class="h" x="660" y="225">Gate</text><text class="h" x="786" y="225">Risk</text>
+  <path class="thin" d="M520 310 C600 255,680 345,755 290 S860 275,885 325"/><rect class="box" x="945" y="130" width="405" height="250" rx="12"/><rect class="navy" x="945" y="130" width="405" height="46" rx="12"/><text class="w" x="963" y="160">Architecture Dashboard</text>
+  <rect fill="#eaf4f3" x="963" y="196" width="112" height="72" rx="8"/><rect fill="#f8f0df" x="1091" y="196" width="112" height="72" rx="8"/><rect fill="#eef3f7" x="1219" y="196" width="112" height="72" rx="8"/>
+  <text class="h" x="975" y="225">KPI</text><text class="h" x="1105" y="225">Gate</text><text class="h" x="1231" y="225">Risk</text>
+  <path class="thin" d="M965 310 C1045 255,1125 345,1200 290 S1305 275,1330 325"/><rect class="box" x="55" y="430" width="405" height="250" rx="12"/><rect class="navy" x="55" y="430" width="405" height="46" rx="12"/><text class="w" x="73" y="460">Governance Dashboard</text>
+  <rect fill="#eaf4f3" x="73" y="496" width="112" height="72" rx="8"/><rect fill="#f8f0df" x="201" y="496" width="112" height="72" rx="8"/><rect fill="#eef3f7" x="329" y="496" width="112" height="72" rx="8"/>
+  <text class="h" x="85" y="525">KPI</text><text class="h" x="215" y="525">Gate</text><text class="h" x="341" y="525">Risk</text>
+  <path class="thin" d="M75 610 C155 555,235 645,310 590 S415 575,440 625"/><rect class="box" x="500" y="430" width="405" height="250" rx="12"/><rect class="navy" x="500" y="430" width="405" height="46" rx="12"/><text class="w" x="518" y="460">Operations Dashboard</text>
+  <rect fill="#eaf4f3" x="518" y="496" width="112" height="72" rx="8"/><rect fill="#f8f0df" x="646" y="496" width="112" height="72" rx="8"/><rect fill="#eef3f7" x="774" y="496" width="112" height="72" rx="8"/>
+  <text class="h" x="530" y="525">KPI</text><text class="h" x="660" y="525">Gate</text><text class="h" x="786" y="525">Risk</text>
+  <path class="thin" d="M520 610 C600 555,680 645,755 590 S860 575,885 625"/><rect class="box" x="945" y="430" width="405" height="250" rx="12"/><rect class="navy" x="945" y="430" width="405" height="46" rx="12"/><text class="w" x="963" y="460">Benefits Dashboard</text>
+  <rect fill="#eaf4f3" x="963" y="496" width="112" height="72" rx="8"/><rect fill="#f8f0df" x="1091" y="496" width="112" height="72" rx="8"/><rect fill="#eef3f7" x="1219" y="496" width="112" height="72" rx="8"/>
+  <text class="h" x="975" y="525">KPI</text><text class="h" x="1105" y="525">Gate</text><text class="h" x="1231" y="525">Risk</text>
+  <path class="thin" d="M965 610 C1045 555,1125 645,1200 590 S1305 575,1330 625"/></svg>

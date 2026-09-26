@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A plain-language framework for choosing and governing automation from fixed rules to autonomous multi-agent systems.">
+<title>Enterprise AI Automation Spectrum | Ratheesh Technology Ltd.</title>
+<link rel="stylesheet" href="../assets/css/legacy-visuals.css?v=20260726-4">
+<link rel="stylesheet" href="../assets/css/navigation.css?v=20260727-5">
+<link rel="stylesheet" href="/assets/css/methodology-v10.css?v=20260728-25">
+<script src="/assets/js/methodology-v10.js?v=20260728-26" defer></script>
+<style>
+  :root{
+    --bg:#F3F5F7;
+    --surface:#FFFFFF;
+    --ink:#102B48;
+    --ink-soft:#5C6C7B;
+    --ink-faint:#7A8895;
+    --navy:#08264A;
+    --navy-soft:#174671;
+    --accent:#BD8B2E;
+    --accent-ink:#7C5B1D;
+    --accent-soft:#F7F5EF;
+    --line:#DFE4E8;
+    --risk-low:#2F7A52;
+    --risk-med:#A97A1E;
+    --risk-high:#A8402B;
+  }
+  body > .navband{display:none;}
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'DM Sans',Arial,sans-serif;
+    font-size:16px;
+    line-height:1.55;
+  }
+  h1,h2,h3,h4{
+    font-family:'Manrope','DM Sans',Arial,sans-serif;
+    color:var(--navy);
+    margin:0;
+  }
+  a{color:var(--accent-ink);}
+  ul{margin:0;padding-left:1.1em;}
+  li{margin-bottom:6px;}
+  li:last-child{margin-bottom:0;}
+
+  .wordmark{
+    display:flex;align-items:center;justify-content:space-between;
+    max-width:1180px;margin:0 auto;padding:20px 32px;
+  }
+  .wordmark .brand{font-family:'Manrope','DM Sans',Arial,sans-serif;font-weight:600;color:#fff;font-size:15px;letter-spacing:.02em;}
+  .wordmark .tagline{font-size:12.5px;color:#AFC2D1;letter-spacing:.03em;}
+  .navband{background:var(--navy);}
+
+  .hero{
+    background:linear-gradient(180deg,var(--navy) 0%, var(--navy-soft) 100%);
+    color:#fff;padding:64px 32px 76px;
+  }
+  .hero-inner{max-width:1180px;margin:0 auto;}
+  .eyebrow{
+    font-family:'DM Sans',Arial,sans-serif;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--gold-light);margin-bottom:18px;display:block;
+  }
+  .hero h1{font-size:clamp(30px,4vw,46px);font-weight:700;line-height:1.12;max-width:820px;color:#fff;}
+  .hero p.lede{max-width:700px;color:#C4D0DB;font-size:17.5px;margin-top:20px;line-height:1.6;}
+  .hero .thesis{
+    margin-top:28px;padding:18px 22px;border-left:3px solid var(--accent);
+    background:rgba(255,255,255,.05);max-width:760px;font-size:15px;color:#DCE5EC;
+  }
+  .hero .thesis b{color:#fff;}
+
+  section{max-width:1180px;margin:0 auto;padding:56px 32px;}
+  .section-head{margin-bottom:32px;max-width:760px;}
+  .section-head .eyebrow{color:var(--accent-ink);}
+  .section-head h2{font-size:27px;font-weight:600;}
+  .section-head p{color:var(--ink-soft);margin-top:10px;font-size:15.5px;}
+
+  /* --- Overview strip --- */
+  .overview-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:16px;
+  }
+  .ov-card{
+    background:var(--surface);border:1px solid var(--line);border-radius:10px;
+    padding:20px 20px 18px;
+  }
+  .ov-num{
+    font-family:'DM Sans',Arial,sans-serif;font-size:12px;color:var(--accent-ink);
+    font-weight:600;letter-spacing:.04em;
+  }
+  .ov-card h3{font-size:16.5px;margin-top:6px;font-weight:600;}
+  .ov-card .risk{
+    margin-top:10px;font-size:13px;color:var(--ink-soft);
+    padding-top:10px;border-top:1px dashed var(--line);
+  }
+  .ov-card .risk b{color:var(--risk-high);font-weight:600;}
+  .gauge{display:flex;gap:3px;margin:10px 0 4px;}
+  .gauge i{flex:1;height:5px;border-radius:2px;background:var(--line);}
+  .gauge i.on{background:var(--accent);}
+  .gauge-label{font-size:11.5px;color:var(--ink-faint);letter-spacing:.02em;}
+
+  /* --- Tier detail cards --- */
+  .tier{
+    background:var(--surface);border:1px solid var(--line);border-radius:14px;
+    padding:32px;margin-bottom:24px;
+  }
+  .tier-head{display:flex;align-items:flex-start;gap:20px;flex-wrap:wrap;justify-content:space-between;margin-bottom:22px;padding-bottom:22px;border-bottom:1px solid var(--line);}
+  .tier-head-left{flex:1;min-width:260px;}
+  .tier-num-badge{
+    font-family:'DM Sans',Arial,sans-serif;font-weight:600;font-size:13px;color:var(--accent-ink);
+    background:var(--accent-soft);display:inline-block;padding:3px 9px;border-radius:5px;margin-bottom:10px;
+  }
+  .tier-head h3{font-size:22px;font-weight:700;}
+  .tier-mech{color:var(--ink-soft);font-size:14.5px;margin-top:6px;max-width:640px;}
+  .tier-mech b{color:var(--ink);font-weight:600;}
+  .autonomy-box{min-width:200px;text-align:right;}
+  .autonomy-box .gauge{justify-content:flex-end;}
+  .autonomy-box .gauge i{flex:0 0 26px;}
+  .autonomy-tag{font-family:'DM Sans',Arial,sans-serif;font-size:12.5px;color:var(--accent-ink);font-weight:600;}
+
+  .tier-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px 32px;}
+  .tier-col h4{
+    font-family:'DM Sans',Arial,sans-serif;font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;
+    color:var(--ink-faint);font-weight:600;margin-bottom:10px;
+  }
+  .tier-col{font-size:14.5px;color:var(--ink);}
+  .tier-col-wide{grid-column:1/-1;}
+  .regulatory-note{margin:0 0 8px;color:var(--ink-soft);font-size:14px;}
+  .primary-risk{
+    grid-column:1 / -1;background:#FBF4EC;border:1px solid #EEDDC2;border-radius:8px;
+    padding:14px 18px;font-size:14px;color:#5B4321;
+  }
+  .primary-risk b{color:var(--risk-high);}
+
+  /* --- Principles band --- */
+  .principles{background:var(--navy);color:#DCE5EC;}
+  .principles .section-head h2{color:#fff;}
+  .principles .section-head p{color:#AFC2D1;}
+  .p-list{display:flex;flex-direction:column;gap:18px;}
+  .p-item{
+    display:grid;grid-template-columns:44px 1fr;gap:18px;
+    padding:20px 0;border-bottom:1px solid rgba(255,255,255,.09);
+  }
+  .p-item:last-child{border-bottom:none;}
+  .p-num{font-family:'DM Sans',Arial,sans-serif;font-size:20px;font-weight:600;color:var(--gold-light);}
+  .p-item h4{color:#fff;font-size:16px;font-weight:600;margin-bottom:6px;}
+  .p-item p{color:#C4D0DB;font-size:14.5px;margin:0;}
+
+  table{width:100%;border-collapse:collapse;font-size:14px;background:var(--surface);}
+  th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top;}
+  th{
+    font-family:'DM Sans',Arial,sans-serif;font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;
+    color:var(--ink-faint);font-weight:600;background:#FAFBFC;
+  }
+  .table-wrap{border:1px solid var(--line);border-radius:10px;overflow:hidden;}
+  .table-wrap-spaced{margin-top:14px;}
+  .exposure-low{color:var(--risk-low);font-weight:600;}
+  .exposure-high{color:var(--risk-high);font-weight:600;}
+
+  .dims-table td:first-child{font-weight:600;color:var(--navy);width:200px;}
+
+  .worked-example{
+    margin-top:24px;background:var(--accent-soft);border:1px solid #C9E2E0;border-radius:10px;
+    padding:22px 24px;
+  }
+  .worked-example h4{font-family:'DM Sans',Arial,sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--accent-ink);margin-bottom:10px;}
+  .worked-example p{font-size:14.5px;color:var(--ink);margin:0 0 8px;}
+  .worked-example p:last-child{margin-bottom:0;}
+
+  .note{
+    font-size:13px;color:var(--ink-faint);border-left:3px solid var(--line);
+    padding:10px 16px;margin-top:18px;max-width:820px;
+  }
+
+  .bridge{
+    background:var(--surface);border:1px solid var(--line);border-radius:14px;
+    padding:36px;text-align:left;
+  }
+  .bridge h2{font-size:20px;font-weight:600;margin-bottom:12px;}
+  .bridge p{color:var(--ink-soft);font-size:15px;max-width:820px;}
+  .bridge .links{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap;}
+  .bridge .links a{
+    font-size:13.5px;font-weight:600;color:var(--accent-ink);background:var(--accent-soft);
+    padding:8px 14px;border-radius:20px;text-decoration:none;
+  }
+
+  @media (max-width:860px){
+    .overview-grid{grid-template-columns:1fr 1fr;}
+    .tier-grid{grid-template-columns:1fr;}
+    .p-item{grid-template-columns:32px 1fr;}
+  }
+  @media (max-width:560px){
+    .overview-grid{grid-template-columns:1fr;}
+    section{padding:44px 20px;}
+    .hero{padding:48px 20px 60px;}
+    .tier{padding:22px;}
+  }
+
+  /* Platform design-system integration */
+  body.page-automation-spectrum{background:#fff;color:var(--text);font-family:var(--font-sans)}
+  .page-automation-spectrum h1,.page-automation-spectrum h2,.page-automation-spectrum h3,.page-automation-spectrum h4{font-family:var(--font-display)}
+  .page-automation-spectrum .eyebrow,.page-automation-spectrum .ov-num,.page-automation-spectrum .tier-num-badge,.page-automation-spectrum .autonomy-tag,.page-automation-spectrum .tier-col h4,.page-automation-spectrum .p-num,.page-automation-spectrum th,.page-automation-spectrum .worked-example h4{font-family:var(--font-sans)}
+  .page-automation-spectrum .legacy-content{width:min(1280px,calc(100% - 64px));padding-top:68px;padding-bottom:84px}
+  .page-automation-spectrum .legacy-content>.platform-page-hero{max-width:none}
+  .page-automation-spectrum .automation-spectrum-body{padding-top:34px}
+  .page-automation-spectrum .automation-spectrum-body section{max-width:none;margin:0;padding:42px 0;border-bottom:1px solid var(--line)}
+  .page-automation-spectrum .automation-spectrum-body section:first-child{padding-top:0}
+  .page-automation-spectrum .section-head{max-width:820px;margin-bottom:28px}
+  .page-automation-spectrum .section-head .eyebrow{margin-bottom:10px;color:var(--gold);font-family:"DM Sans",Arial,sans-serif;font-size:.68rem;font-weight:750;letter-spacing:.1em}
+  .page-automation-spectrum .section-head h2{color:var(--navy);font-size:clamp(1.75rem,2.7vw,2.35rem);font-weight:600;letter-spacing:-.035em;line-height:1.15}
+  .page-automation-spectrum .section-head p{max-width:760px;margin-top:12px;color:var(--muted);font-size:.9rem;line-height:1.68}
+  .page-automation-spectrum .thesis{max-width:850px;margin:0 0 36px;padding:20px 24px;border-left:3px solid var(--gold);background:var(--cream);color:#435465;font-size:.9rem;line-height:1.7}
+  .page-automation-spectrum .thesis b{color:var(--navy)}
+  .page-automation-spectrum .ov-card,.page-automation-spectrum .tier,.page-automation-spectrum .worked-example,.page-automation-spectrum .bridge{border-radius:0;box-shadow:none}
+  .page-automation-spectrum .ov-card{border-top:2px solid var(--navy);padding:22px}
+  .page-automation-spectrum .tier{border:1px solid var(--line);border-top:2px solid var(--navy);padding:28px}
+  .page-automation-spectrum .tier-num-badge,.page-automation-spectrum .bridge .links a{border-radius:0;background:var(--cream);color:var(--navy)}
+  .page-automation-spectrum .gauge i.on{background:var(--gold)}
+  .page-automation-spectrum .principles{margin-right:0;margin-left:0;padding:42px 30px!important;background:var(--navy-deep)}
+  .page-automation-spectrum .table-wrap{border-radius:0;overflow-x:auto}
+  .page-automation-spectrum th{background:var(--navy);color:#fff}
+  .page-automation-spectrum .bridge{padding:30px;border-top:2px solid var(--navy)}
+  .page-automation-spectrum .section-nav-content{min-width:0}
+  .page-automation-spectrum .decision-guide{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:2px solid var(--navy);border-bottom:1px solid var(--line)}
+  .page-automation-spectrum .decision-step{position:relative;padding:24px 22px 26px 0}
+  .page-automation-spectrum .decision-step+.decision-step{padding-left:22px;border-left:1px solid var(--line)}
+  .page-automation-spectrum .decision-step span{display:block;margin-bottom:9px;color:var(--gold);font-size:.62rem;font-weight:750;letter-spacing:.1em;text-transform:uppercase}
+  .page-automation-spectrum .decision-step h3{margin:0 0 8px;color:var(--navy);font-size:1rem;font-weight:650;line-height:1.3}
+  .page-automation-spectrum .decision-step p{margin:0;color:var(--muted);font-size:.78rem;line-height:1.58}
+  .page-automation-spectrum .authority-ladder{display:flex;flex-wrap:wrap;gap:8px;margin-top:25px;padding:18px 20px;background:var(--cream);border-left:3px solid var(--gold)}
+  .page-automation-spectrum .authority-ladder strong{flex:0 0 100%;margin-bottom:3px;color:var(--navy);font-size:.72rem;letter-spacing:.07em;text-transform:uppercase}
+  .page-automation-spectrum .authority-ladder span{display:inline-flex;align-items:center;gap:8px;color:#435465;font-size:.78rem;font-weight:650}
+  .page-automation-spectrum .authority-ladder span:not(:last-child):after{content:"→";color:var(--gold)}
+  .page-automation-spectrum .ov-card{display:flex;flex-direction:column;min-height:230px}
+  .page-automation-spectrum .ov-card .ov-fit{margin:12px 0 0;color:var(--muted);font-size:.78rem;line-height:1.55}
+  .page-automation-spectrum .ov-card .risk{margin-top:auto}
+  .page-automation-spectrum .tier-section-intro{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(240px,.7fr);gap:32px;align-items:end}
+  .page-automation-spectrum .tier-section-intro .section-head{margin-bottom:0}
+  .page-automation-spectrum .selection-rule{padding:18px 20px;border-top:2px solid var(--gold);background:var(--cream);color:#435465;font-size:.82rem;line-height:1.62}
+  .page-automation-spectrum .selection-rule strong{display:block;margin-bottom:5px;color:var(--navy)}
+  .page-automation-spectrum .tier-jump{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+  .page-automation-spectrum .tier-jump a{display:inline-block;padding:5px 8px;border:1px solid #ddd5c4;background:#fff;color:var(--navy);font-size:.67rem;font-weight:700;text-decoration:none}
+  .page-automation-spectrum .tier-jump a:hover,.page-automation-spectrum .tier-jump a:focus-visible{border-color:var(--gold);color:var(--gold)}
+  .page-automation-spectrum .tier[id]{scroll-margin-top:24px}
+
+  @media(max-width:980px){
+    .page-automation-spectrum .legacy-content{width:calc(100% - 36px);padding-top:50px}
+    .page-automation-spectrum .automation-spectrum-body{padding-top:26px}
+    .page-automation-spectrum .automation-spectrum-body.has-section-nav>.section-nav{width:100%!important}
+    .page-automation-spectrum .decision-guide{grid-template-columns:1fr 1fr}
+    .page-automation-spectrum .decision-step:nth-child(3){padding-left:0;border-left:0;border-top:1px solid var(--line)}
+    .page-automation-spectrum .decision-step:nth-child(4){border-top:1px solid var(--line)}
+  }
+  @media(max-width:680px){
+    .page-automation-spectrum .legacy-content{width:calc(100% - 32px);padding-bottom:58px}
+    .page-automation-spectrum .automation-spectrum-body section{padding:34px 0}
+    .page-automation-spectrum .overview-grid{grid-template-columns:1fr}
+    .page-automation-spectrum .tier{padding:22px 18px}
+    .page-automation-spectrum .tier-head{gap:14px}
+    .page-automation-spectrum .autonomy-box{min-width:0;text-align:left}
+    .page-automation-spectrum .autonomy-box .gauge{justify-content:flex-start}
+    .page-automation-spectrum .principles{padding:32px 18px!important}
+    .page-automation-spectrum .thesis{padding:18px}
+    .page-automation-spectrum .decision-guide,.page-automation-spectrum .tier-section-intro{grid-template-columns:1fr}
+    .page-automation-spectrum .decision-step,.page-automation-spectrum .decision-step+.decision-step{padding:20px 0;border-left:0;border-top:1px solid var(--line)}
+    .page-automation-spectrum .decision-step:first-child{border-top:0}
+    .page-automation-spectrum .authority-ladder{display:grid;gap:7px}
+    .page-automation-spectrum .authority-ladder span:not(:last-child):after{content:""}
+    .page-automation-spectrum .ov-card{min-height:0}
+  }
+</style>
+<style>body.page-automation-spectrum.knowledge-theme-page{background:var(--cream)}</style>
+</head>
+<body class="page-automation-spectrum knowledge-theme-page" data-methodology-page="automation-spectrum">
+<header id="methodology-header"></header>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+  <div class="utility-bar"><div class="utility-inner"><span>AI implementation &amp; governance advisory</span><a href="/pages/contact.html">Speak with an advisor →</a></div></div>
+  <div class="header-container">
+    <a class="brand" href="/" aria-label="Ratheesh Technology Ltd. home"><img class="company-logo" src="/assets/images/ratheesh-technology-logo-transparent.png" alt="Ratheesh Technology Ltd."></a>
+    <button class="mobile-menu-button" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+    <nav id="primary-navigation" class="primary-navigation" aria-label="Primary navigation"></nav>
+  </div>
+</header>
+<main id="main-content" class="inner-page">
+<div class="legacy-content">
+<section class="article-hero platform-page-hero">
+  <div class="hero-inner">
+    <span class="hero-eyebrow">Enterprise Architecture · AI Governance</span>
+    <h1>Enterprise AI Automation Spectrum</h1>
+    <p class="lede">Classify enterprise automation from deterministic workflows to autonomous multi-agent systems—and match each design to the right controls, operating model, and risk review.</p>
+  </div>
+</section>
+<div class="article-body automation-spectrum-body">
+
+<section class="decision-summary" aria-labelledby="automation-decision-title"><h2 id="automation-decision-title">Executive decision summary</h2><p class="decision-lead">Choose the least autonomous approach that can reliably deliver the required outcome. Match governance to action authority, data sensitivity, decision impact, and operating context.</p><div class="decision-summary-grid"><div><h3>Business outcome</h3><p>Select the right pattern without paying for unnecessary complexity or accepting avoidable risk.</p></div><div><h3>How it works</h3><p>Compare rules-based automation, assistants, tool-using agents, and multi-agent systems by what each can decide and change.</p></div><div><h3>Decision rule</h3><p>Use deterministic automation for stable rules; add AI or autonomy only where interpretation or adaptation creates measurable value.</p></div></div><p class="decision-links">Related terms: <a href="ai-technology-glossary.html#robotic-process-automation">Robotic Process Automation (RPA)</a>, <a href="ai-technology-glossary.html#agentic-ai">agentic AI</a>, and <a href="ai-technology-glossary.html#human-in-the-loop">Human-in-the-Loop (HITL)</a>.</p></section>
+
+<div class="thesis">
+  <b>Decision rule:</b> choose the lowest tier that can reliably achieve the business outcome, then scale governance to the system's <b>action authority</b>, data sensitivity, decision impact, and operating context. Technical sophistication alone does not determine regulatory or enterprise risk.
+</div>
+
+<section id="overview">
+  <div class="section-head">
+    <span class="eyebrow">01 — Orient</span>
+    <h2>The spectrum at a glance</h2>
+    <p>The tiers describe how work is executed and where control over interpretation, planning, tools, and actions sits. Moving upward increases technical autonomy, but not automatically business or regulatory risk.</p>
+  </div>
+  <div class="overview-grid">
+
+    <div class="ov-card">
+      <span class="ov-num">01</span>
+      <h3>Deterministic Process Automation</h3>
+      <div class="gauge"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
+      <span class="gauge-label">Autonomy: None</span>
+      <p class="ov-fit">Best when inputs, rules, and expected outputs are stable and fully specified.</p>
+      <div class="risk">Primary risk: <b>an incorrect instruction executed consistently, at scale.</b></div>
+    </div>
+
+    <div class="ov-card">
+      <span class="ov-num">02</span>
+      <h3>Generative AI Assistance</h3>
+      <div class="gauge"><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i></div>
+      <span class="gauge-label">Autonomy: Low</span>
+      <p class="ov-fit">Best for drafting, summarizing, and exploration where a person remains accountable.</p>
+      <div class="risk">Primary risk: <b>a plausible but unsupported output accepted as authoritative.</b></div>
+    </div>
+
+    <div class="ov-card">
+      <span class="ov-num">03</span>
+      <h3>Bounded AI Skills</h3>
+      <div class="gauge"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div>
+      <span class="gauge-label">Autonomy: Low–Medium</span>
+      <p class="ov-fit">Best for narrow AI tasks with enforceable input, output, and validation contracts.</p>
+      <div class="risk">Primary risk: <b>a schema-valid output that is materially incomplete or wrong.</b></div>
+    </div>
+
+    <div class="ov-card">
+      <span class="ov-num">04</span>
+      <h3>AI-Augmented Workflow &amp; Pipeline Automation</h3>
+      <div class="gauge"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div>
+      <span class="gauge-label">Autonomy: Medium</span>
+      <p class="ov-fit">Best for multi-stage processes with fixed orchestration and probabilistic steps.</p>
+      <div class="risk">Primary risk: <b>an upstream probabilistic error, systematically propagated downstream.</b></div>
+    </div>
+
+    <div class="ov-card">
+      <span class="ov-num">05</span>
+      <h3>Tool-Using AI Agents</h3>
+      <div class="gauge"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div>
+      <span class="gauge-label">Autonomy: Medium–High</span>
+      <p class="ov-fit">Best when the system must choose local steps or tools inside a controlled boundary.</p>
+      <div class="risk">Primary risk: <b>an incorrect interpretation converted into an external action.</b></div>
+    </div>
+
+    <div class="ov-card">
+      <span class="ov-num">06</span>
+      <h3>Agentic &amp; Multi-Agent Systems</h3>
+      <div class="gauge"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div>
+      <span class="gauge-label">Autonomy: High</span>
+      <p class="ov-fit">Best for complex, changing work that genuinely requires planning and delegation.</p>
+      <div class="risk">Primary risk: <b>a wrong objective or assumption, amplified across cycles and systems.</b></div>
+    </div>
+
+  </div>
+</section>
+
+<section id="classify">
+  <div class="section-head">
+    <span class="eyebrow">02 — Classify</span>
+    <h2>How to place a use case</h2>
+    <p>Classify the architecture by the highest level of authority the system can exercise in normal operation—not by its model name, vendor label, or marketing category.</p>
+  </div>
+  <div class="decision-guide">
+    <div class="decision-step"><span>Step 1</span><h3>Define the outcome</h3><p>State the business result, affected users, source data, and accountable owner before selecting a technology pattern.</p></div>
+    <div class="decision-step"><span>Step 2</span><h3>Locate decision authority</h3><p>Identify whether rules, a workflow engine, a human, or an AI planner chooses the next step.</p></div>
+    <div class="decision-step"><span>Step 3</span><h3>Identify action authority</h3><p>Record the most consequential action the system can take and whether that action is reversible.</p></div>
+    <div class="decision-step"><span>Step 4</span><h3>Set the control boundary</h3><p>Define permissions, approval gates, runtime limits, monitoring, and the conditions that stop execution.</p></div>
+  </div>
+  <div class="authority-ladder" aria-label="Increasing action authority">
+    <strong>Action authority escalates control requirements</strong>
+    <span>Read</span><span>Generate</span><span>Recommend</span><span>Draft</span><span>Modify</span><span>Approve</span><span>Transact</span>
+  </div>
+</section>
+
+<section id="tiers">
+  <div class="tier-section-intro">
+    <div class="section-head">
+      <span class="eyebrow">03 — Compare</span>
+      <h2>Tier reference</h2>
+      <p>Compare the mechanism, best-fit use cases, trade-offs, failure modes, controls, and legal considerations for each execution pattern.</p>
+    </div>
+    <div class="selection-rule">
+      <strong>Architecture selection principle</strong>
+      Do not adopt a higher tier simply because it is available. Increase autonomy only when the added adaptability creates measurable value that cannot be achieved safely at a lower tier.
+      <nav class="tier-jump" aria-label="Jump to a tier">
+        <a href="#tier-1">Tier 1</a><a href="#tier-2">Tier 2</a><a href="#tier-3">Tier 3</a><a href="#tier-4">Tier 4</a><a href="#tier-5">Tier 5</a><a href="#tier-6">Tier 6</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- TIER 1 -->
+  <div class="tier" id="tier-1">
+    <div class="tier-head">
+      <div class="tier-head-left">
+        <span class="tier-num-badge">TIER 01</span>
+        <h3>Deterministic Process Automation</h3>
+        <p class="tier-mech"><b>Mechanism:</b> RPA, scripts, macros, rules engines, conventional API automation. <b>Orchestration authority:</b> application code, rules engine, or workflow scheduler.</p>
+      </div>
+      <div class="autonomy-box">
+        <div class="gauge"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
+        <span class="autonomy-tag">None — no model-based interpretation</span>
+      </div>
+    </div>
+    <div class="tier-grid">
+      <div class="tier-col">
+        <h4>Best-fit use cases</h4>
+        <ul><li>High-volume structured data entry</li><li>Reconciliation and transaction processing</li><li>Legacy-system screen automation</li><li>Scheduled file and report processing</li><li>Rules-based validation</li></ul>
+      </div>
+      <div class="tier-col">
+        <h4>Operational trade-offs</h4>
+        <ul><li>Cost: very low after implementation</li><li>Latency: low and predictable</li><li>Scalability: high when queue-based</li><li>Explainability: high; maintenance cost rises as rules change</li></ul>
+      </div>
+      <div class="tier-col">
+        <h4>Failure modes</h4>
+        <ul><li>Brittleness following UI, selector, or rule changes</li><li>Credential exposure or excessive service-account privileges</li><li>Silent failures and weak exception handling</li></ul>
+      </div>
+      <div class="tier-col">
+        <h4>Required controls</h4>
+        <ul><li>Formal SDLC, source control, release approvals</li><li>Credential-vault integration, least-privilege accounts</li><li>Segregation of duties; bot and API activity logging</li></ul>
+      </div>
+      <div class="primary-risk">Primary risk: <b>deterministic execution of an incorrect instruction, or against an unexpected system state.</b></div>
+      <div class="tier-col tier-col-wide">
+        <h4>Legal, privacy &amp; regulatory exposure</h4>
+        <p class="regulatory-note">Obligations here depend on the process and data, not on the absence of AI.</p>
+        <ul><li>Privacy-law compliance (GDPR/CCPA/PIPEDA) where personal data is processed</li><li>Lawful basis, purpose limitation, data minimization</li><li>Retention, deletion, and cross-border transfer controls</li><li>Automated-decision safeguards where rules drive legally significant outcomes</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- TIER 2 -->
+  <div class="tier" id="tier-2">
+    <div class="tier-head">
+      <div class="tier-head-left">
+        <span class="tier-num-badge">TIER 02</span>
+        <h3>Generative AI Assistance</h3>
+        <p class="tier-mech"><b>Mechanism:</b> foundation-model inference, conversational assistants, content generation. <b>Orchestration authority:</b> human user or calling application.</p>
+      </div>
+      <div class="autonomy-box">
+        <div class="gauge"><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i></div>
+        <span class="autonomy-tag">Low — a person decides next steps</span>
+      </div>
+    </div>
+    <div class="tier-grid">
+      <div class="tier-col">
+        <h4>Best-fit use cases</h4>
+        <ul><li>Drafting, rewriting, summarization, translation</li><li>Brainstorming and baseline code generation</li><li>Meeting and document synthesis</li><li>Knowledge-assistant responses</li></ul>
+      </div>
+      <div class="tier-col">
+        <h4>Operational trade-offs</h4>
+        <ul><li>Cost: low–medium; latency: low–moderate, variable</li><li>Scalability: high, subject to provider quotas</li><li>Predictability and explainability: moderate to low</li></ul>
+      </div>
+      <div class="tier-col">
+        <h4>Failure modes</h4>
+        <ul><li>Hallucinated facts, calculations, or citations</li><li>Prompt sensitivity, bias, confidential-data leakage</li><li>Copyright/attribution uncertainty; over-reliance</li></ul>
+      </div>
+      <div class="tier-col">
+        <h4>Required controls</h4>
+        <ul><li>Approved-model catalogue and acceptable-use policy</li><li>Prompt/output filtering; retrieval grounding and citation</li><li>Human review for material outputs; zero-retention terms where required</li></ul>
+      </div>
+      <div class="primary-risk">Primary risk: <b>a plausible but inaccurate or unsupported output is accepted as authoritative.</b></div>
+      <div class="tier-col tier-col-wide">
+        <h4>Legal, privacy &amp; regulatory exposure</h4>
+        <ul><li>Privacy notices and lawful processing; provider/subprocessor agreements</li><li>Confidentiality and professional-secrecy duties; IP review</li><li>Consumer-protection and misleading-content restrictions</li><li>EU AI Act transparency duties where applicable — high-risk obligations only where the intended use independently qualifies</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- TIER 3 -->
+  <div class="tier" id="tier-3">
+    <div class="tier-head">
+      <div class="tier-head-left">
+        <span class="tier-num-badge">TIER 03</span>
+        <h3>Bounded AI Skills</h3>
+        <p class="tier-mech"><b>Mechanism:</b> schema-constrained AI functions, specialized models, task-specific AI services. <b>Orchestration authority:</b> calling application or workflow.</p>
+      </div>
+      <div class="autonomy-box">
+        <div class="gauge"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div>
+        <span class="autonomy-tag">Low–Medium — bounded task interpretation</span>
+      </div>
+    </div>
+    <div class="tier-grid">
+      <div class="tier-col">
+        <h4>Best-fit use cases</h4>
+        <ul><li>Document classification and structured data extraction</li><li>Email intent classification, entity recognition</li><li>Contract-clause identification</li><li>Bounded code or query generation</li></ul>
+      </div>
+      <div class="tier-col">
+        <h4>Operational trade-offs</h4>
+        <ul><li>Cost: low–medium; latency: usually seconds</li><li>Predictability higher than open-ended generation</li><li>Implementation effort higher — schemas and validation logic to maintain</li></ul>
+      </div>
+      <div class="tier-col">
+        <h4>Failure modes</h4>
+        <ul><li>Prompt injection via documents or retrieved content</li><li>Schema-compliant but semantically wrong output</li><li>Silent degradation after prompt/schema drift</li></ul>
+      </div>
+      <div class="tier-col">
+        <h4>Required controls</h4>
+        <ul><li>Strict input/output schema and semantic validation</li><li>Confidence thresholds, golden regression datasets</li><li>Sandboxed execution; prompt-injection detection; drift monitoring</li></ul>
+      </div>
+      <div class="primary-risk">Primary risk: <b>a bounded output looks technically valid while being materially incomplete or incorrect.</b></div>
+      <div class="tier-col tier-col-wide">
+        <h4>Legal, privacy &amp; regulatory exposure</h4>
+        <ul><li>Privacy controls and accuracy obligations for extracted personal data</li><li>DPIA / privacy-impact assessment for higher-impact tasks</li><li>Non-discrimination obligations where classifications affect individuals</li><li>EU AI Act requirements where intended purpose falls within a regulated category</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- TIER 4 -->
+  <div class="tier" id="tier-4">
+    <div class="tier-head">
+      <div class="tier-head-left">
+        <span class="tier-num-badge">TIER 04</span>
+        <h3>AI-Augmented Workflow &amp; Pipeline Automation</h3>
+        <p class="tier-mech"><b>Mechanism:</b> state machines, DAGs, business-process workflows, orchestrated AI pipelines. <b>Orchestration authority:</b> workflow engine.</p>
+      </div>
+      <div class="autonomy-box">
+        <div class="gauge"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div>
+        <span class="autonomy-tag">Medium — node-level interpretation, fixed path</span>
+      </div>
+    </div>
+    <div class="tier-grid">
+      <div class="tier-col">
+        <h4>Best-fit use cases</h4>
+        <ul><li>Intelligent document-processing pipelines</li><li>Claims or case intake; multi-source data enrichment</li><li>Compliance-review pipelines; AI-assisted software delivery</li></ul>
+      </div>
+      <div class="tier-col">
+        <h4>Operational trade-offs</h4>
+        <ul><li>Cost: medium; latency: seconds–minutes</li><li>Scalability high when asynchronous</li><li>Complexity higher — deterministic and probabilistic parts must be coordinated</li></ul>
+      </div>
+      <div class="tier-col">
+        <h4>Failure modes</h4>
+        <ul><li>Error propagation across downstream nodes</li><li>State inconsistency and duplication on retries</li><li>Cross-system data-lineage gaps; review bottlenecks</li></ul>
+      </div>
+      <div class="tier-col">
+        <h4>Required controls</h4>
+        <ul><li>Node-level input/output contracts, end-to-end lineage</li><li>Stage gates, idempotency, replay controls</li><li>Compliance-as-code validation; retention synchronization</li></ul>
+      </div>
+      <div class="primary-risk">Primary risk: <b>an upstream probabilistic error is systematically propagated and operationalized by a deterministic pipeline.</b></div>
+      <div class="tier-col tier-col-wide">
+        <h4>Legal, privacy &amp; regulatory exposure</h4>
+        <ul><li>Full processing-record and data-lineage requirements; cross-border transfer restrictions</li><li>Algorithmic-impact assessments; automated-decision safeguards</li><li>Evidence that human review is meaningful, not ceremonial</li><li>Contractual allocation of responsibility across workflow, model, and data providers</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- TIER 5 -->
+  <div class="tier" id="tier-5">
+    <div class="tier-head">
+      <div class="tier-head-left">
+        <span class="tier-num-badge">TIER 05</span>
+        <h3>Tool-Using AI Agents</h3>
+        <p class="tier-mech"><b>Mechanism:</b> bounded agents with memory, reasoning, and authorized tool access. <b>Orchestration authority:</b> the AI model, within an externally enforced control boundary.</p>
+      </div>
+      <div class="autonomy-box">
+        <div class="gauge"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div>
+        <span class="autonomy-tag">Medium–High — chooses local steps &amp; tools</span>
+      </div>
+    </div>
+    <div class="tier-grid">
+      <div class="tier-col">
+        <h4>Best-fit use cases</h4>
+        <ul><li>Dynamic database investigation; technical troubleshooting</li><li>Enterprise assistants; service-desk resolution</li><li>Controlled account or case updates; security investigation support</li></ul>
+      </div>
+      <div class="tier-col">
+        <h4>Operational trade-offs</h4>
+        <ul><li>Cost: medium–high; latency: sub-minute</li><li>Scalability moderate — tool calls are resource-intensive</li><li>Explainability limited unless traces are captured</li></ul>
+      </div>
+      <div class="tier-col">
+        <h4>Failure modes</h4>
+        <ul><li>Incorrect tool selection; unauthorized API calls</li><li>Privilege drift and confused-deputy vulnerabilities</li><li>Prompt injection from external tools or documents</li><li>Irreversible actions based on faulty reasoning</li></ul>
+      </div>
+      <div class="tier-col">
+        <h4>Required controls</h4>
+        <ul><li>Central agent registry; agent identity separate from user identity</li><li>Least-privilege, just-in-time authorization; tool allowlists</li><li>Read / recommend / draft / modify / approve / transact permission tiers</li><li>Immutable action logs; kill switch and session termination</li></ul>
+      </div>
+      <div class="primary-risk">Primary risk: <b>the model converts an incorrect interpretation into an external action using valid enterprise permissions.</b></div>
+      <div class="tier-col tier-col-wide">
+        <h4>Legal, privacy &amp; regulatory exposure</h4>
+        <ul><li>Consent or another valid basis for actions touching personal data; clear attribution of agent actions</li><li>Identity, authentication, and electronic-transaction requirements</li><li>Contractual liability allocation for erroneous actions</li><li>EU AI Act provider/deployer obligations where applicable; cybersecurity and operational-resilience requirements</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- TIER 6 -->
+  <div class="tier" id="tier-6">
+    <div class="tier-head">
+      <div class="tier-head-left">
+        <span class="tier-num-badge">TIER 06</span>
+        <h3>Agentic &amp; Multi-Agent Systems</h3>
+        <p class="tier-mech"><b>Mechanism:</b> planner-executor agents, supervisor-worker patterns, peer agents, ReAct loops. <b>Orchestration authority:</b> agent planner, supervisor, or coordination layer, under external policy controls.</p>
+      </div>
+      <div class="autonomy-box">
+        <div class="gauge"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div>
+        <span class="autonomy-tag">High — self-directed planning &amp; delegation</span>
+      </div>
+    </div>
+    <div class="tier-grid">
+      <div class="tier-col">
+        <h4>Best-fit use cases</h4>
+        <ul><li>Complex IT incident resolution; adaptive software engineering</li><li>Multi-stage cyber-investigation; enterprise research and due diligence</li><li>Automated control testing and audit preparation</li></ul>
+      </div>
+      <div class="tier-col">
+        <h4>Operational trade-offs</h4>
+        <ul><li>Cost: high to very high; latency: minutes–hours</li><li>Predictability and explainability: low</li><li>High value for complex, ambiguous, changing environments</li></ul>
+      </div>
+      <div class="tier-col">
+        <h4>Failure modes</h4>
+        <ul><li>Runaway loops and goal drift</li><li>Cumulative hallucination and error amplification</li><li>Groupthink or conflicting multi-agent plans</li><li>Dynamic privilege expansion; loss of traceability</li></ul>
+      </div>
+      <div class="tier-col">
+        <h4>Required controls</h4>
+        <ul><li>Continuous runtime policy enforcement; mandatory control plane</li><li>Agentic IAM; per-agent identities</li><li>Maximum recursion, iteration, time, and spending limits</li><li>Circuit breakers, automatic termination; independent assurance before scale</li></ul>
+      </div>
+      <div class="primary-risk">Primary risk: <b>a self-directed system amplifies an incorrect objective, assumption, or intermediate result across multiple execution cycles and systems.</b></div>
+      <div class="tier-col tier-col-wide">
+        <h4>Legal, privacy &amp; regulatory exposure</h4>
+        <p class="regulatory-note">Agentic architecture does not automatically make a system legally high-risk — classification depends on intended purpose, affected persons, decision impact, jurisdiction, and sector.</p>
+        <ul><li>Where the intended use qualifies as high-risk: risk-management systems, technical documentation, automated logging, human-oversight controls, robustness and cybersecurity conformity</li><li>Fundamental-rights or algorithmic-impact assessment; sector-specific requirements for employment, credit, insurance, healthcare, or critical infrastructure</li><li>Provider, deployer, importer, and distributor responsibilities under applicable AI-specific regulation</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="note">Legal and regulatory references above (GDPR, CCPA, EU AI Act, DORA, PIPEDA) are illustrative, not jurisdiction-complete, and are not legal advice — applicability depends on where the system is deployed, who it affects, and sector-specific rules. Confirm scope with qualified counsel before relying on any tier's obligations list.</div>
+</section>
+
+<section class="principles" id="principles">
+  <div class="section-head">
+    <span class="eyebrow">04 — Interpret</span>
+    <h2>Principles that prevent misclassification</h2>
+    <p>Use these six rules to avoid treating autonomy as a proxy for legal exposure, business impact, or control effectiveness.</p>
+  </div>
+  <div class="p-list">
+    <div class="p-item">
+      <span class="p-num">1</span>
+      <div><h4>Technical tier does not equal regulatory risk</h4><p>A higher-autonomy architecture is harder to control, but legal classification must be assessed independently. A Tier 2 résumé-screening or credit-scoring tool may carry substantially greater fundamental-rights exposure than a Tier 6 system operating entirely against synthetic test data. The EU AI Act assesses risk primarily by intended purpose and use context — not by whether agents are involved.</p></div>
+    </div>
+    <div class="p-item">
+      <span class="p-num">2</span>
+      <div><h4>Privacy obligations can apply to every tier</h4><p>RPA, rules engines, generative models, workflows, and agents may all process personal data. Lawful basis, purpose limitation, data minimization, retention, security, and cross-border transfer controls apply based on the data type — not the sophistication of the tier.</p></div>
+    </div>
+    <div class="p-item">
+      <span class="p-num">3</span>
+      <div><h4>Voluntary frameworks can become operationally mandatory</h4><p>NIST's AI Risk Management Framework is voluntary and use-case-agnostic — but it can become mandatory in practice through internal policy, procurement terms, contracts, or sector expectations.</p></div>
+    </div>
+    <div class="p-item">
+      <span class="p-num">4</span>
+      <div><h4>Governance should scale with action authority</h4><p>The most important control transition happens as a system moves from generating or recommending to modifying, approving, or transacting. A system that only drafts content needs materially different controls than an agent that can transfer funds, modify records, or alter production infrastructure.</p></div>
+    </div>
+    <div class="p-item">
+      <span class="p-num">5</span>
+      <div><h4>Human oversight must be operationally meaningful</h4><p>An approval step is not an effective control when the reviewer lacks context, cannot understand the recommendation, faces excessive volume, cannot override the system, has insufficient review time, or is evaluated on agreement with the AI rather than judgment.</p></div>
+    </div>
+    <div class="p-item">
+      <span class="p-num">6</span>
+      <div>
+        <h4>Autonomy is five separate dimensions, not one dial</h4>
+        <p>Assess each independently — a system can be high on one axis and low on another.</p>
+        <div class="table-wrap table-wrap-spaced">
+          <table class="dims-table">
+            <tr><th>Dimension</th><th>Key question</th><th>Where it typically first appears</th></tr>
+            <tr><td>Interpretive</td><td>How much ambiguity may the system resolve without human input?</td><td>Tier 2</td></tr>
+            <tr><td>Planning</td><td>Can the system determine or revise the steps to reach an objective?</td><td>Tier 4–5</td></tr>
+            <tr><td>Tool</td><td>Can it choose which data sources, APIs, or applications to access?</td><td>Tier 5</td></tr>
+            <tr><td>Action</td><td>Can it modify records, communicate externally, approve, or transact?</td><td>Tier 5–6</td></tr>
+            <tr><td>Temporal</td><td>Can it keep operating across multiple sessions or extended periods?</td><td>Tier 6</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="risk-overlay">
+  <div class="section-head">
+    <span class="eyebrow">05 — Assess</span>
+    <h2>Enterprise risk overlay</h2>
+    <p>Assess every use case across these ten dimensions before production, independently of its technical tier. The result determines the depth of review and strength of controls.</p>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <tr><th>Risk dimension</th><th>Lower exposure</th><th>Higher exposure</th></tr>
+      <tr><td>Decision impact</td><td class="exposure-low">Informational or advisory</td><td class="exposure-high">Legal, financial, employment, safety, or rights-impacting</td></tr>
+      <tr><td>Data sensitivity</td><td class="exposure-low">Public or synthetic data</td><td class="exposure-high">Personal, confidential, health, biometric, or financial data</td></tr>
+      <tr><td>Action authority</td><td class="exposure-low">Read or recommend</td><td class="exposure-high">Modify, approve, transact, or delete</td></tr>
+      <tr><td>Reversibility</td><td class="exposure-low">Easily reversible</td><td class="exposure-high">Irreversible or difficult to remediate</td></tr>
+      <tr><td>Human oversight</td><td class="exposure-low">Effective human-in-the-loop</td><td class="exposure-high">Human-out-of-the-loop</td></tr>
+      <tr><td>External reach</td><td class="exposure-low">Internal sandbox</td><td class="exposure-high">Customers, citizens, regulators, or public channels</td></tr>
+      <tr><td>Permission scope</td><td class="exposure-low">Fixed least privilege</td><td class="exposure-high">Broad or dynamically delegated access</td></tr>
+      <tr><td>Execution duration</td><td class="exposure-low">Single bounded request</td><td class="exposure-high">Persistent or long-running operation</td></tr>
+      <tr><td>Propagation potential</td><td class="exposure-low">Isolated record</td><td class="exposure-high">Enterprise-wide or systemic impact</td></tr>
+      <tr><td>Regulatory context</td><td class="exposure-low">Low-impact internal use</td><td class="exposure-high">Regulated sector or protected decision domain</td></tr>
+    </table>
+  </div>
+
+  <div class="worked-example">
+    <h4>Worked example — tier and risk are separate decisions</h4>
+    <p><b>Case:</b> a Tier 5 tool-using agent performs insurance-claims investigation, pulling policy data and flagging suspected fraud for a human adjuster.</p>
+    <p><b>Tier alone would suggest:</b> medium–high governance burden, because Tier 5 sits high on the autonomy gauge.</p>
+    <p><b>The overlay refines that:</b> Decision impact is high (claims outcomes affect real people) and data sensitivity is high (personal and financial data) — but action authority stays at <i>recommend</i>, reversibility is easy (a human adjuster still decides), and oversight is genuinely in-the-loop. Net posture: the controls that matter most here are data-handling and human-review quality, not the runaway-loop or kill-switch controls that would dominate a Tier 6 transact-capable system. Two systems at the same tier can carry very different real-world risk depending on where they land on these ten vectors.</p>
+  </div>
+</section>
+
+<section id="bridge">
+  <div class="bridge">
+    <span class="eyebrow">06 — Apply</span>
+    <h2>Move from classification to governance</h2>
+    <p>The spectrum identifies the execution pattern and its technical authority. The Governance Pillars determine the controls required for the specific use case. For Tier 5 and Tier 6 systems, extend the assessment with the Agentic AI Governance Framework to cover runtime policy enforcement, agent identity, tool permissions, delegation, and termination controls.</p>
+    <div class="links">
+      <a href="https://architecting-ai.rrlabs.ca/pages/agentic-ai.html">Agentic AI Governance Framework →</a>
+      <a href="https://architecting-ai.rrlabs.ca/pages/ai-governance.html">Pillar 1 — Governance &amp; Compliance →</a>
+      <a href="https://architecting-ai.rrlabs.ca/pages/ai-architecture.html">AI Architecture &amp; Implementation Framework →</a>
+    </div>
+  </div>
+</section>
+
+</div></div></main><footer><div><img src="../assets/images/ratheesh-technology-logo-transparent.png?v=20260719-63" alt="Ratheesh Technology Ltd." width="1906" height="825"><p>Architecting Intelligence</p></div><p>&copy; 2026 Ratheesh Technology Ltd.</p></footer>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+[
+ {"category":"PERSON_NAME","classification":"PII","severity":"HIGH","default_handling":"TOKENIZE","detection":"NER","approval_required":true,"effective_date":"2026-07-01","version":3,"status":"ACTIVE"},
+ {"category":"SIN","classification":"RESTRICTED","severity":"CRITICAL","default_handling":"BLOCK","detection":"REGEX+LUHN","approval_required":true,"effective_date":"2026-07-01","version":3,"status":"ACTIVE"},
+ {"category":"BANK_ACCOUNT","classification":"RESTRICTED","severity":"CRITICAL","default_handling":"BLOCK","detection":"REGEX","approval_required":true,"effective_date":"2026-07-01","version":3,"status":"ACTIVE"},
+ {"category":"FINANCIAL_AMOUNT","classification":"CONFIDENTIAL","severity":"MEDIUM","default_handling":"ALLOW","detection":"SCHEMA","approval_required":false,"effective_date":"2026-07-01","version":3,"status":"ACTIVE"},
+ {"category":"DEALER_ID","classification":"INTERNAL","severity":"LOW","default_handling":"ALLOW","detection":"SCHEMA","approval_required":false,"effective_date":"2026-07-01","version":3,"status":"ACTIVE"},
+ {"category":"AUTH_SECRET","classification":"RESTRICTED","severity":"CRITICAL","default_handling":"BLOCK","detection":"ENTROPY+PATTERN","approval_required":true,"effective_date":"2026-07-01","version":3,"status":"ACTIVE"}
+]

@@ -1,0 +1,1096 @@
+{
+  "version": "1.0.0",
+  "status": "approved-baseline",
+  "approvedDate": "2026-07-27",
+  "identity": {
+    "name": "Enterprise AI Transformation Methodology",
+    "statement": "Move from AI ambition to governed, secure, scalable and measurable production adoption.",
+    "changeRule": "Lifecycle, navigation and core methodology changes require an approved change request."
+  },
+  "navigation": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Get Started",
+      "href": "/transformation/",
+      "submenu": [
+        ["Get Started Overview", "/transformation/"],
+        ["Where Should We Begin?", "/transformation/#where-to-begin"],
+        ["Transformation Steps", "/transformation/#phases"],
+        ["14-Step Journey", "/journey/"],
+        ["Approval Checkpoints", "/transformation/#gates"],
+        ["Roadmap", "/transformation/#roadmap"],
+        ["Progress Scorecard", "/transformation/#scorecard"],
+        ["Choose the Best Opportunities", "/pages/ai-rpa-prioritization.html"]
+      ]
+    },
+    {
+      "label": "Build AI Solutions",
+      "href": "/lifecycle/",
+      "submenu": [
+        ["Build Process Overview", "/lifecycle/"],
+        ["Submit Idea & Check Risk", "/lifecycle/#intake"],
+        ["Check Value & Feasibility", "/lifecycle/#feasibility"],
+        ["Prepare Data & Design", "/lifecycle/#data-readiness"],
+        ["Build the Solution", "/lifecycle/#build-config"],
+        ["Test & Approve", "/lifecycle/#testing-evaluation"],
+        ["Launch & Monitor", "/lifecycle/#deployment"],
+        ["Manage Changes & Issues", "/lifecycle/#change-management"]
+      ]
+    },
+    {
+      "label": "Rules & Standards",
+      "href": "/standards/",
+      "submenu": [
+        ["Rules & Standards Overview", "/standards/"],
+        ["International Standards", "/standards/#international"],
+        ["Risk & Governance Guides", "/standards/#frameworks"],
+        ["Laws & Regulations", "/standards/#legislation"],
+        ["Match Rules to Controls", "/standards/#crosswalks"],
+        ["Proof of Compliance", "/standards/#evidence"],
+        ["Rule Changes", "/standards/#change-management"]
+      ]
+    },
+    {
+      "label": "Learn",
+      "href": "/pages/knowledge-discovery.html",
+      "submenu": [
+        ["Browse & Search", "/pages/knowledge-discovery.html"],
+        ["Strategy and Business Value", "/pages/knowledge-discovery.html?cat=strategy-business-value"],
+        ["Governance & Ownership", "/pages/ai-governance.html"],
+        ["How Solutions Are Designed", "/pages/architecture.html"],
+        ["Data & Knowledge", "/pages/data-security.html"],
+        ["AI Agents & Automation", "/pages/agentic-ai.html"],
+        ["Security, Risk & Privacy", "/pages/security-review.html"],
+        ["Testing & Quality", "/pages/assurance.html"],
+        ["Operations & Adoption", "/pages/ai-adoption.html"],
+        ["Good & Bad Practices", "/pages/greenfield-implementation.html"],
+        ["Glossary", "/pages/ai-technology-glossary.html"]
+      ]
+    },
+    {
+      "label": "Case Studies & Demos",
+      "href": "/case-studies/",
+      "submenu": [
+        ["View All Case Studies & Demos", "/case-studies/"],
+        ["Dental Claims Case Study", "/case-studies/#dental-claims"],
+        ["Employee Access Case Study", "/case-studies/#user-onboarding"],
+        ["Banking AI Case Study", "/case-studies/#banking-agentic-ai"],
+        ["Customer Banking Demo", "/enterprise-architecture/banking-agent-demo/"],
+        ["AI Operations Demo", "/enterprise-architecture/ai-operations/"],
+        ["Sales Commission Demo", "/enterprise-architecture/incentive-commission-demo/"]
+      ]
+    },
+    {
+      "label": "Templates & Reports",
+      "href": "/deliverables/",
+      "submenu": [
+        ["View All Templates & Reports", "/deliverables/"],
+        ["Decision Records", "/deliverables/#executive-records"],
+        ["Policies & Governance", "/deliverables/#governance-artefacts"],
+        ["Architecture Blueprints", "/deliverables/#architecture-artefacts"],
+        ["Delivery Plans", "/deliverables/#delivery-plans"],
+        ["Operations & Quality Reports", "/deliverables/#operational-reports"],
+        ["Audit Evidence", "/deliverables/#evidence-packs"],
+        ["Downloads", "/pages/resources.html"]
+      ]
+    },
+    {
+      "label": "Tools",
+      "href": "/tools/",
+      "submenu": [
+        ["View All Tools", "/tools/"],
+        ["Assessments", "/assessments/library/"],
+        ["Screening Tools", "/tools/#classification"],
+        ["Priority Calculators", "/tools/#prioritisation"],
+        ["Design Decision Tools", "/tools/#architecture"],
+        ["Governance Checklists", "/tools/#checklists"],
+        ["Testing Tools", "/tools/#evaluation"],
+        ["My Assessment Results", "/assessments/dashboard/"]
+      ]
+    },
+    {
+      "label": "About",
+      "href": "/pages/about.html",
+      "submenu": [
+        ["About the Platform", "/pages/about.html"],
+        ["Executive Career Portfolio", "/pages/executive-career-portfolio.html"],
+        ["Contact", "/pages/contact.html"]
+      ]
+    }
+  ],
+  "stages": [
+    {
+      "id": 0,
+      "displayNumber": 1,
+      "number": 0,
+      "slug": "stage-0-mobilise",
+      "name": "Mobilise",
+      "phase": "Foundation & Baseline",
+      "purpose": "Create the mandate, scope, sponsorship and programme controls.",
+      "output": "Programme Charter",
+      "gate": "Mobilisation approved",
+      "status": "available",
+      "href": "/transformation/stage-0-mobilise/",
+      "ordinal": 1,
+      "feedbackPaths": [
+        {"target": "/transformation/#where-to-begin", "label": "Mandate Rework Path"}
+      ]
+    },
+    {
+      "id": 1,
+      "displayNumber": 2,
+      "number": 1,
+      "slug": "stage-1-discover",
+      "name": "Discover",
+      "phase": "Foundation & Baseline",
+      "purpose": "Establish an evidence-based current-state baseline.",
+      "output": "Current-State Discovery Baseline",
+      "gate": "Discovery accepted",
+      "status": "available",
+      "href": "/transformation/stage-1-discover/",
+      "ordinal": 2,
+      "feedbackPaths": [
+        {"target": "/transformation/stage-0-mobilise/", "label": "Scope Gap Re-entry"}
+      ]
+    },
+    {
+      "id": 2,
+      "displayNumber": 3,
+      "number": 2,
+      "slug": "stage-2-assess-readiness",
+      "name": "Assess Readiness",
+      "phase": "Foundation & Baseline",
+      "purpose": "Measure capability, evidence gaps and remediation priorities.",
+      "output": "Enterprise AI Readiness Assessment",
+      "gate": "Readiness disposition approved",
+      "status": "available",
+      "href": "/transformation/stage-2-assess-readiness/",
+      "ordinal": 3,
+      "feedbackPaths": [
+        {"target": "/transformation/stage-1-discover/", "label": "Evidence Remediation Path"}
+      ]
+    },
+    {
+      "id": 3,
+      "displayNumber": 4,
+      "number": 3,
+      "slug": "stage-3-define-strategy",
+      "name": "Define Strategy",
+      "phase": "Strategy & Governance",
+      "purpose": "Agree ambition, outcomes, operating model and roadmap.",
+      "output": "Enterprise AI Strategy Decision Pack",
+      "gate": "Strategy approved",
+      "status": "available",
+      "href": "/transformation/stage-3-define-strategy/",
+      "ordinal": 4,
+      "feedbackPaths": [
+        {"target": "/transformation/stage-2-assess-readiness/", "label": "Ambition Adjustment Path"}
+      ]
+    },
+    {
+      "id": 4,
+      "displayNumber": 5,
+      "number": 4,
+      "slug": "stage-4-establish-governance",
+      "name": "Establish Governance",
+      "phase": "Strategy & Governance",
+      "purpose": "Put decision rights, policies, controls and assurance in place.",
+      "output": "Governance and Control Framework",
+      "gate": "Governance approved",
+      "status": "available",
+      "href": "/transformation/stage-4-establish-governance/",
+      "ordinal": 5,
+      "feedbackPaths": [
+        {"target": "/transformation/stage-3-define-strategy/", "label": "Policy Tradeoff Feedback"}
+      ]
+    },
+    {
+      "id": 5,
+      "displayNumber": 6,
+      "number": 5,
+      "slug": "stage-5-prioritise-opportunities",
+      "name": "Identify and Prioritise Opportunities",
+      "phase": "Strategy & Governance",
+      "purpose": "Create and balance a governed opportunity portfolio.",
+      "output": "Prioritised Opportunity Portfolio",
+      "gate": "Portfolio approved",
+      "status": "available",
+      "href": "/transformation/stage-5-prioritise-opportunities/",
+      "ordinal": 6,
+      "feedbackPaths": [
+        {"target": "/transformation/stage-4-establish-governance/", "label": "Risk Classification Re-entry"}
+      ]
+    },
+    {
+      "id": 6,
+      "displayNumber": 7,
+      "number": 6,
+      "slug": "stage-6-build-business-case",
+      "name": "Build the Business Case",
+      "phase": "Architecture & Delivery Planning",
+      "purpose": "Make benefits, costs, assumptions and funding transparent.",
+      "output": "Enterprise AI Business Case",
+      "gate": "Investment approved",
+      "status": "available",
+      "href": "/transformation/stage-6-build-business-case/",
+      "ordinal": 7,
+      "feedbackPaths": [
+        {"target": "/transformation/stage-5-prioritise-opportunities/", "label": "Value Realisation Feedback"}
+      ]
+    },
+    {
+      "id": 7,
+      "displayNumber": 8,
+      "number": 7,
+      "slug": "stage-7-design-target-architecture",
+      "name": "Design the Target Architecture",
+      "phase": "Architecture & Delivery Planning",
+      "purpose": "Turn strategy and controls into an implementable target state.",
+      "output": "Target Architecture Decision Pack",
+      "gate": "Architecture approved",
+      "status": "available",
+      "href": "/transformation/stage-7-design-target-architecture/",
+      "ordinal": 8,
+      "feedbackPaths": [
+        {"target": "/transformation/stage-6-build-business-case/", "label": "Cost/Pattern Adjustment Path"}
+      ]
+    },
+    {
+      "id": 8,
+      "displayNumber": 9,
+      "number": 8,
+      "slug": "stage-8-plan-implementation",
+      "name": "Plan Implementation",
+      "phase": "Architecture & Delivery Planning",
+      "purpose": "Create the integrated delivery, change, test and transition plan.",
+      "output": "Integrated Implementation Plan",
+      "gate": "Plan approved",
+      "status": "available",
+      "href": "/transformation/stage-8-plan-implementation/",
+      "ordinal": 9,
+      "feedbackPaths": [
+        {"target": "/transformation/stage-7-design-target-architecture/", "label": "Feasibility Constraint Loop"}
+      ]
+    },
+    {
+      "id": 9,
+      "displayNumber": 10,
+      "number": 9,
+      "slug": "stage-9-build-integrate",
+      "name": "Build and Integrate",
+      "phase": "Execution, Assurance & Scaling",
+      "purpose": "Configure, integrate and document the governed solution.",
+      "output": "Build and Configuration Evidence",
+      "gate": "Build completion approved",
+      "status": "available",
+      "href": "/transformation/stage-9-build-integrate/",
+      "ordinal": 10,
+      "feedbackPaths": [
+        {"target": "/transformation/stage-8-plan-implementation/", "label": "Sprint/Release Defect Path"}
+      ]
+    },
+    {
+      "id": 10,
+      "displayNumber": 11,
+      "number": 10,
+      "slug": "stage-10-test-validate",
+      "name": "Test and Validate",
+      "phase": "Execution, Assurance & Scaling",
+      "purpose": "Prove functional, AI, security, control and operational quality.",
+      "output": "Production Readiness Evidence Pack",
+      "gate": "Release candidate accepted",
+      "status": "available",
+      "href": "/transformation/stage-10-test-validate/",
+      "ordinal": 11,
+      "feedbackPaths": [
+        {"target": "/transformation/stage-9-build-integrate/", "label": "Quality Defect Remediation"}
+      ]
+    },
+    {
+      "id": 11,
+      "displayNumber": 12,
+      "number": 11,
+      "slug": "stage-11-deploy-transition",
+      "name": "Deploy and Transition",
+      "phase": "Execution, Assurance & Scaling",
+      "purpose": "Cut over safely and transfer accountable ownership.",
+      "output": "Transition and Ownership Record",
+      "gate": "Production release approved",
+      "status": "available",
+      "href": "/transformation/stage-11-deploy-transition/",
+      "ordinal": 12,
+      "feedbackPaths": [
+        {"target": "/transformation/stage-10-test-validate/", "label": "Rollback / Safety Containment"}
+      ]
+    },
+    {
+      "id": 12,
+      "displayNumber": 13,
+      "number": 12,
+      "slug": "stage-12-operate-govern-production",
+      "name": "Operate and Govern Production",
+      "phase": "Execution, Assurance & Scaling",
+      "purpose": "Run, monitor, assure and respond throughout service life.",
+      "output": "Production Assurance Report",
+      "gate": "Continued operation approved",
+      "status": "available",
+      "href": "/transformation/stage-12-operate-govern-production/",
+      "ordinal": 13,
+      "feedbackPaths": [
+        {"target": "/transformation/stage-11-deploy-transition/", "label": "Incident & Drift Escalation"}
+      ]
+    },
+    {
+      "id": 13,
+      "displayNumber": 14,
+      "number": 13,
+      "slug": "stage-13-improve-scale",
+      "name": "Improve and Scale",
+      "phase": "Execution, Assurance & Scaling",
+      "purpose": "Measure value, improve performance and scale reusable capability.",
+      "output": "Benefits and Scale Decision Pack",
+      "gate": "Scale decision approved",
+      "status": "available",
+      "href": "/transformation/stage-13-improve-scale/",
+      "ordinal": 14,
+      "feedbackPaths": [
+        {"target": "/transformation/stage-3-define-strategy/", "label": "Scale Ambition Refresh Loop"}
+      ]
+    }
+  ],
+  "mobilise": {
+    "entryCriteria": [
+      "A documented business need or enterprise AI ambition exists.",
+      "An executive sponsor is willing to own the transformation mandate.",
+      "The organisation can identify an initial programme lead and core decision-makers."
+    ],
+    "outcomes": [
+      "A clear mandate and bounded transformation scope.",
+      "Named sponsors, accountable owners, forums and decision rights.",
+      "Approved principles, risk appetite, funding approach and success measures.",
+      "A controlled transition into enterprise discovery."
+    ],
+    "questions": [
+      "Why is enterprise AI important now?",
+      "Which outcomes matter, and how will success be measured?",
+      "What is in scope, out of scope and explicitly prohibited?",
+      "Who owns business outcomes, risk decisions, funding and delivery?",
+      "Which evidence must exist before discovery begins?"
+    ],
+    "workstreams": [
+      {
+        "id": "mandate",
+        "name": "Executive Mandate",
+        "purpose": "Turn ambition into an authorised transformation.",
+        "collect": [
+          "Business need",
+          "External and internal drivers",
+          "Desired outcomes",
+          "Known constraints"
+        ],
+        "owner": "Executive Sponsor",
+        "validator": "Enterprise AI Methodology Lead",
+        "produces": [
+          "Executive Mandate",
+          "Business Drivers",
+          "Strategic Objectives"
+        ]
+      },
+      {
+        "id": "charter",
+        "name": "Programme Charter and Scope",
+        "purpose": "Define boundaries, authority and delivery expectations.",
+        "collect": [
+          "Scope and exclusions",
+          "Programme assumptions",
+          "Dependencies",
+          "Initial timeline"
+        ],
+        "owner": "Programme Director",
+        "validator": "Executive Sponsor",
+        "produces": [
+          "Programme Charter",
+          "Scope and Boundaries",
+          "Initial RAID Register"
+        ]
+      },
+      {
+        "id": "stakeholders",
+        "name": "Stakeholders and Engagement",
+        "purpose": "Identify affected groups and establish meaningful participation.",
+        "collect": [
+          "Stakeholders",
+          "Influence and impact",
+          "Communication needs",
+          "Consultation obligations"
+        ],
+        "owner": "Programme Director",
+        "validator": "Business Owner",
+        "produces": [
+          "Stakeholder Register",
+          "Stakeholder Engagement Plan"
+        ]
+      },
+      {
+        "id": "governance",
+        "name": "Programme Governance",
+        "purpose": "Create forums, decision rights and escalation paths.",
+        "collect": [
+          "Decision types",
+          "Authority thresholds",
+          "Required reviewers",
+          "Meeting cadence"
+        ],
+        "owner": "Platform Owner",
+        "validator": "Risk and Compliance Lead",
+        "produces": [
+          "Governance Forum Map",
+          "Decision Rights",
+          "Enterprise RACI"
+        ]
+      },
+      {
+        "id": "delivery-model",
+        "name": "Delivery and Operating Model",
+        "purpose": "Define how the programme will organise work and transition ownership.",
+        "collect": [
+          "Delivery approach",
+          "Core roles",
+          "Sourcing assumptions",
+          "Initial service ownership"
+        ],
+        "owner": "Programme Director",
+        "validator": "Platform Owner",
+        "produces": [
+          "Programme Delivery Model",
+          "Initial Operating Model"
+        ]
+      },
+      {
+        "id": "investment",
+        "name": "Funding and Investment",
+        "purpose": "Set the funding path without creating false precision.",
+        "collect": [
+          "Funding source",
+          "Approval thresholds",
+          "Cost categories",
+          "Investment assumptions"
+        ],
+        "owner": "Executive Sponsor",
+        "validator": "Finance Lead",
+        "produces": [
+          "Funding and Investment Approach"
+        ]
+      },
+      {
+        "id": "risk-principles",
+        "name": "Risk Appetite and AI Principles",
+        "purpose": "Set the boundaries that later governance and architecture must enforce.",
+        "collect": [
+          "Risk appetite",
+          "Prohibited uses",
+          "Human oversight expectations",
+          "Data and autonomy boundaries"
+        ],
+        "owner": "Risk Executive",
+        "validator": "Security, Privacy and Legal Leads",
+        "produces": [
+          "AI Risk Appetite",
+          "Enterprise AI Principles"
+        ]
+      },
+      {
+        "id": "success",
+        "name": "Success Measures and RAID",
+        "purpose": "Make outcomes measurable and expose early uncertainty.",
+        "collect": [
+          "Outcome measures",
+          "Baselines available",
+          "Risks",
+          "Assumptions",
+          "Issues",
+          "Dependencies"
+        ],
+        "owner": "Business Owner",
+        "validator": "Finance and Programme Leads",
+        "produces": [
+          "Success Measures",
+          "Initial RAID Register"
+        ]
+      }
+    ],
+    "deliverables": [
+      {
+        "id": "MOB-001",
+        "name": "Executive Mandate",
+        "type": "Decision record",
+        "criticality": "mandatory",
+        "owner": "Executive Sponsor",
+        "approver": "Executive Sponsor",
+        "purpose": "Authorise the transformation and state why it matters.",
+        "acceptance": [
+          "Business need is explicit",
+          "Sponsor and authority are named",
+          "Mandate is dated and versioned"
+        ],
+        "template": [
+          "Business need",
+          "Drivers",
+          "Intended outcomes",
+          "Authority",
+          "Constraints",
+          "Approval"
+        ]
+      },
+      {
+        "id": "MOB-002",
+        "name": "Programme Charter",
+        "type": "Decision pack",
+        "criticality": "mandatory",
+        "owner": "Programme Director",
+        "approver": "Executive Sponsor",
+        "purpose": "Define scope, outcomes, governance and delivery boundaries.",
+        "acceptance": [
+          "Scope and exclusions are explicit",
+          "Objectives are measurable",
+          "Governance and delivery ownership are assigned"
+        ],
+        "template": [
+          "Purpose",
+          "Objectives",
+          "Scope",
+          "Out of scope",
+          "Roles",
+          "Governance",
+          "Milestones",
+          "Assumptions",
+          "Approval"
+        ]
+      },
+      {
+        "id": "MOB-003",
+        "name": "Stakeholder Register",
+        "type": "Register",
+        "criticality": "mandatory",
+        "owner": "Programme Director",
+        "approver": "Business Owner",
+        "purpose": "Identify people affected by or accountable for the transformation.",
+        "acceptance": [
+          "Business and control functions are represented",
+          "Influence and impact are assessed",
+          "Engagement owners are named"
+        ],
+        "template": [
+          "Stakeholder",
+          "Role",
+          "Impact",
+          "Influence",
+          "Interest",
+          "Engagement owner",
+          "Cadence"
+        ]
+      },
+      {
+        "id": "MOB-004",
+        "name": "Stakeholder Engagement Plan",
+        "type": "Plan",
+        "criticality": "mandatory",
+        "owner": "Change Lead",
+        "approver": "Programme Director",
+        "purpose": "Plan transparent participation and communication.",
+        "acceptance": [
+          "Messages and channels are defined",
+          "Consultation obligations are included",
+          "Feedback handling is assigned"
+        ],
+        "template": [
+          "Audience",
+          "Objective",
+          "Message",
+          "Channel",
+          "Timing",
+          "Owner",
+          "Feedback route"
+        ]
+      },
+      {
+        "id": "MOB-005",
+        "name": "Governance and Decision Model",
+        "type": "Operating model",
+        "criticality": "mandatory",
+        "owner": "Platform Owner",
+        "approver": "Executive Sponsor",
+        "purpose": "Define forums, authority, escalation and evidence expectations.",
+        "acceptance": [
+          "Each decision has one accountable authority",
+          "Escalation paths are documented",
+          "Gate forum and quorum are defined"
+        ],
+        "template": [
+          "Forum",
+          "Purpose",
+          "Decisions",
+          "Chair",
+          "Members",
+          "Cadence",
+          "Quorum",
+          "Evidence"
+        ]
+      },
+      {
+        "id": "MOB-006",
+        "name": "Enterprise RACI",
+        "type": "Responsibility model",
+        "criticality": "mandatory",
+        "owner": "Programme Director",
+        "approver": "Platform Owner",
+        "purpose": "Assign responsibility, accountability, support, consultation and information.",
+        "acceptance": [
+          "Exactly one accountable role per activity",
+          "Control functions are consulted before decisions",
+          "Operational ownership is visible"
+        ],
+        "template": [
+          "Activity",
+          "Accountable",
+          "Responsible",
+          "Supporting",
+          "Consulted",
+          "Informed"
+        ]
+      },
+      {
+        "id": "MOB-007",
+        "name": "Funding and Investment Approach",
+        "type": "Decision record",
+        "criticality": "mandatory",
+        "owner": "Finance Lead",
+        "approver": "Executive Sponsor",
+        "purpose": "Define funding sources, thresholds and investment controls.",
+        "acceptance": [
+          "Funding owner is named",
+          "Approval thresholds are clear",
+          "Assumptions and uncertainty are recorded"
+        ],
+        "template": [
+          "Funding source",
+          "Cost categories",
+          "Thresholds",
+          "Approval path",
+          "Assumptions",
+          "Review date"
+        ]
+      },
+      {
+        "id": "MOB-008",
+        "name": "AI Risk Appetite",
+        "type": "Policy direction",
+        "criticality": "mandatory",
+        "owner": "Risk Executive",
+        "approver": "Risk Executive",
+        "purpose": "Set boundaries for impact, autonomy, data and uncertainty.",
+        "acceptance": [
+          "Prohibited uses are explicit",
+          "Approval thresholds are stated",
+          "Exception authority is assigned"
+        ],
+        "template": [
+          "Risk domain",
+          "Appetite",
+          "Boundary",
+          "Required control",
+          "Approval authority",
+          "Exception route"
+        ]
+      },
+      {
+        "id": "MOB-009",
+        "name": "Enterprise AI Principles",
+        "type": "Principles",
+        "criticality": "mandatory",
+        "owner": "Platform Owner",
+        "approver": "Executive Sponsor",
+        "purpose": "Guide later strategy, architecture and governance decisions.",
+        "acceptance": [
+          "Principles are actionable",
+          "Trade-offs are explained",
+          "Each principle has an owner"
+        ],
+        "template": [
+          "Principle",
+          "Why it matters",
+          "Required behaviour",
+          "Decision test",
+          "Owner"
+        ]
+      },
+      {
+        "id": "MOB-010",
+        "name": "Success Measures",
+        "type": "Measurement plan",
+        "criticality": "mandatory",
+        "owner": "Business Owner",
+        "approver": "Executive Sponsor",
+        "purpose": "Define outcomes, baselines, owners and measurement methods.",
+        "acceptance": [
+          "Measures link to objectives",
+          "Baseline status is stated",
+          "Target ranges avoid false precision"
+        ],
+        "template": [
+          "Objective",
+          "Measure",
+          "Baseline",
+          "Target range",
+          "Source",
+          "Owner",
+          "Cadence"
+        ]
+      },
+      {
+        "id": "MOB-011",
+        "name": "Initial RAID Register",
+        "type": "Register",
+        "criticality": "mandatory",
+        "owner": "Programme Director",
+        "approver": "Platform Owner",
+        "purpose": "Expose risks, assumptions, issues and dependencies before discovery.",
+        "acceptance": [
+          "Every item has an owner",
+          "Impact and response are recorded",
+          "Review cadence is defined"
+        ],
+        "template": [
+          "Type",
+          "Description",
+          "Impact",
+          "Owner",
+          "Response",
+          "Due date",
+          "Status"
+        ]
+      }
+    ],
+    "raci": {
+      "roles": [
+        "Executive Sponsor",
+        "Platform Owner",
+        "Methodology Lead",
+        "Programme Director",
+        "Business Owner",
+        "Enterprise Architect",
+        "Risk and Compliance",
+        "Security",
+        "Privacy and Legal",
+        "Finance",
+        "Change Lead",
+        "Operations",
+        "Audit and Assurance"
+      ],
+      "activities": [
+        {
+          "activity": "Approve mandate",
+          "assignments": [
+            "A/R",
+            "C",
+            "C",
+            "S",
+            "C",
+            "I",
+            "C",
+            "I",
+            "I",
+            "I",
+            "I",
+            "I",
+            "I"
+          ]
+        },
+        {
+          "activity": "Create programme charter",
+          "assignments": [
+            "A",
+            "C",
+            "C",
+            "R",
+            "S",
+            "C",
+            "C",
+            "I",
+            "I",
+            "C",
+            "I",
+            "I",
+            "I"
+          ]
+        },
+        {
+          "activity": "Define stakeholders and engagement",
+          "assignments": [
+            "I",
+            "C",
+            "S",
+            "A/R",
+            "S",
+            "I",
+            "C",
+            "C",
+            "C",
+            "I",
+            "R",
+            "I",
+            "I"
+          ]
+        },
+        {
+          "activity": "Define governance and decision rights",
+          "assignments": [
+            "A",
+            "R",
+            "S",
+            "S",
+            "C",
+            "C",
+            "R",
+            "C",
+            "C",
+            "I",
+            "I",
+            "C",
+            "C"
+          ]
+        },
+        {
+          "activity": "Define delivery and operating model",
+          "assignments": [
+            "I",
+            "A",
+            "C",
+            "R",
+            "C",
+            "S",
+            "C",
+            "I",
+            "I",
+            "C",
+            "C",
+            "S",
+            "I"
+          ]
+        },
+        {
+          "activity": "Define funding approach",
+          "assignments": [
+            "A",
+            "C",
+            "I",
+            "C",
+            "C",
+            "I",
+            "C",
+            "I",
+            "I",
+            "R",
+            "I",
+            "I",
+            "I"
+          ]
+        },
+        {
+          "activity": "Approve risk appetite and AI principles",
+          "assignments": [
+            "A",
+            "R",
+            "C",
+            "I",
+            "C",
+            "C",
+            "R",
+            "C",
+            "C",
+            "I",
+            "I",
+            "C",
+            "C"
+          ]
+        },
+        {
+          "activity": "Define success measures and RAID",
+          "assignments": [
+            "A",
+            "C",
+            "S",
+            "R",
+            "R",
+            "C",
+            "C",
+            "C",
+            "C",
+            "S",
+            "C",
+            "C",
+            "I"
+          ]
+        },
+        {
+          "activity": "Validate Mobilise evidence",
+          "assignments": [
+            "I",
+            "A",
+            "R",
+            "S",
+            "C",
+            "C",
+            "C",
+            "C",
+            "C",
+            "C",
+            "I",
+            "C",
+            "R"
+          ]
+        },
+        {
+          "activity": "Make mobilisation gate decision",
+          "assignments": [
+            "A",
+            "R",
+            "C",
+            "C",
+            "C",
+            "I",
+            "C",
+            "I",
+            "I",
+            "C",
+            "I",
+            "I",
+            "C"
+          ]
+        }
+      ]
+    },
+    "gate": {
+      "id": "GATE-0",
+      "name": "Mobilisation Approval",
+      "question": "Is the organisation authorised, bounded and accountable enough to begin enterprise discovery?",
+      "decisionOwner": "Executive Sponsor",
+      "forum": "Enterprise AI Programme Board",
+      "decisions": [
+        "Approved to proceed",
+        "Approved with conditions",
+        "Rework required",
+        "Deferred",
+        "Rejected"
+      ],
+      "mandatoryEvidence": [
+        "MOB-001",
+        "MOB-002",
+        "MOB-003",
+        "MOB-004",
+        "MOB-005",
+        "MOB-006",
+        "MOB-007",
+        "MOB-008",
+        "MOB-009",
+        "MOB-010",
+        "MOB-011"
+      ]
+    },
+    "exitChecklist": [
+      {
+        "id": "M0-01",
+        "requirement": "Executive mandate is signed and versioned.",
+        "criticality": "mandatory",
+        "evidence": "MOB-001"
+      },
+      {
+        "id": "M0-02",
+        "requirement": "Programme scope, exclusions and objectives are approved.",
+        "criticality": "mandatory",
+        "evidence": "MOB-002"
+      },
+      {
+        "id": "M0-03",
+        "requirement": "Executive Sponsor, Platform Owner and Programme Director are named.",
+        "criticality": "mandatory",
+        "evidence": "MOB-001, MOB-002"
+      },
+      {
+        "id": "M0-04",
+        "requirement": "Stakeholders and engagement obligations are documented.",
+        "criticality": "mandatory",
+        "evidence": "MOB-003, MOB-004"
+      },
+      {
+        "id": "M0-05",
+        "requirement": "Forums, decision rights, quorum and escalation paths are approved.",
+        "criticality": "mandatory",
+        "evidence": "MOB-005"
+      },
+      {
+        "id": "M0-06",
+        "requirement": "Every Mobilise activity has exactly one accountable role.",
+        "criticality": "mandatory",
+        "evidence": "MOB-006"
+      },
+      {
+        "id": "M0-07",
+        "requirement": "Delivery and initial operating ownership are understood.",
+        "criticality": "mandatory",
+        "evidence": "MOB-002, MOB-006"
+      },
+      {
+        "id": "M0-08",
+        "requirement": "Funding source and investment approval path are documented.",
+        "criticality": "mandatory",
+        "evidence": "MOB-007"
+      },
+      {
+        "id": "M0-09",
+        "requirement": "Risk appetite, prohibited uses and exception authority are approved.",
+        "criticality": "mandatory",
+        "evidence": "MOB-008"
+      },
+      {
+        "id": "M0-10",
+        "requirement": "Enterprise AI principles are actionable and owned.",
+        "criticality": "mandatory",
+        "evidence": "MOB-009"
+      },
+      {
+        "id": "M0-11",
+        "requirement": "Success measures have owners, sources and baseline status.",
+        "criticality": "mandatory",
+        "evidence": "MOB-010"
+      },
+      {
+        "id": "M0-12",
+        "requirement": "Initial risks, assumptions, issues and dependencies have owners.",
+        "criticality": "mandatory",
+        "evidence": "MOB-011"
+      },
+      {
+        "id": "M0-13",
+        "requirement": "Discovery-stage leadership and evidence providers are available.",
+        "criticality": "mandatory",
+        "evidence": "MOB-003, MOB-006"
+      },
+      {
+        "id": "M0-14",
+        "requirement": "Unresolved conditions and exceptions have owners and dates.",
+        "criticality": "conditional",
+        "evidence": "Gate decision record"
+      },
+      {
+        "id": "M0-15",
+        "requirement": "Programme communication has been issued to affected stakeholders.",
+        "criticality": "recommended",
+        "evidence": "MOB-004"
+      }
+    ]
+  }
+}

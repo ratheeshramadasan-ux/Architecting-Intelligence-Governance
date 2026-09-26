@@ -1,0 +1,14 @@
+const alEscape=value=>String(value??"").replace(/[&<>"']/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
+document.addEventListener("DOMContentLoaded",async()=>{
+  const root=document.querySelector("#assessment-library-root");
+  try{
+    const data=await fetch("/assets/data/assessment-framework.json").then(r=>r.json());
+    root.className="";
+    root.innerHTML=`<section class="detail-hero"><div class="methodology-wrap"><nav class="breadcrumbs"><a href="/assessments/">Assessments</a><span>/</span><span>Library</span></nav><span class="eyebrow">24 reusable assessments</span><h1>Assessment Library</h1><p class="hero-lead">Find assessment guidance by capability, lifecycle stage, industry, role, technology, business function, type or risk domain.</p></div></section>
+    <section class="methodology-wrap methodology-section"><form id="assessment-filters" class="assessment-filters" role="search"><label>Search assessments<input name="query" type="search" placeholder="AI readiness, security, data…"></label>${filter("capability","Capability",data.assessments.map(x=>x.topic))}${filter("stage","Lifecycle stage",data.assessments.map(x=>x.primaryStage))}${filter("role","Role",data.assessments.map(x=>x.owner))}${filter("type","Assessment type",data.assessments.map(x=>x.type))}<button class="button secondary" type="reset">Clear</button></form><p id="assessment-count" role="status"></p><div id="assessment-results" class="assessment-card-grid"></div></section>`;
+    const form=root.querySelector("form"),results=root.querySelector("#assessment-results"),count=root.querySelector("#assessment-count");
+    const render=()=>{const values=Object.fromEntries(new FormData(form));const records=data.assessments.filter(x=>(!values.query||JSON.stringify(x).toLowerCase().includes(values.query.toLowerCase()))&&(!values.capability||x.topic===values.capability)&&(!values.stage||x.primaryStage===values.stage)&&(!values.role||x.owner===values.role)&&(!values.type||x.type===values.type));count.textContent=`${records.length} assessment${records.length===1?"":"s"}`;results.innerHTML=records.map(x=>`<a href="/assessments/${x.slug}/"><span>${x.id} · ${alEscape(x.type)}</span><h2>${alEscape(x.name)}</h2><p>${alEscape(x.purpose)}</p><small>${alEscape(x.topic)} · ${alEscape(x.primaryStage)} · ${alEscape(x.owner)}</small></a>`).join("")||'<p class="empty-state">No assessments match these filters.</p>'};
+    form.addEventListener("input",render);form.addEventListener("reset",()=>setTimeout(render));render();
+  }catch(error){root.innerHTML=`<div class="methodology-error">${alEscape(error.message)}</div>`}
+});
+function filter(name,label,values){return `<label>${label}<select name="${name}"><option value="">All</option>${[...new Set(values)].sort().map(x=>`<option>${alEscape(x)}</option>`).join("")}</select></label>`}

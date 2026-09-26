@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Professional profile placeholder</title>
+  <desc id="desc">Neutral navy and gold silhouette used until an approved profile photograph is uploaded.</desc>
+  <rect width="320" height="320" rx="24" fill="#071726"/>
+  <circle cx="160" cy="116" r="54" fill="#9fb1c2"/>
+  <path d="M58 286c8-72 48-108 102-108s94 36 102 108" fill="#173b61" stroke="#e8c36a" stroke-width="5"/>
+  <path d="M26 26h58M26 26v58M294 26h-58M294 26v58M26 294h58M26 294v-58M294 294h-58M294 294v-58" fill="none" stroke="#e8c36a" stroke-width="3"/>
+</svg>

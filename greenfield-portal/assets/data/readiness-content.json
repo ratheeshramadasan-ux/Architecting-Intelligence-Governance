@@ -1,0 +1,1856 @@
+{
+  "version": "1.0.0",
+  "stage": 2,
+  "executiveQuestion": "Based on the evidence collected so far, should our organisation proceed with Enterprise AI transformation, and if so, what is the recommended path forward?",
+  "workspaces": [
+    {
+      "id": "RDW-01",
+      "slug": "enterprise-readiness",
+      "name": "Enterprise Readiness",
+      "owner": "Executive Sponsor",
+      "summary": "Synthesise enterprise capability, risk, investment and change evidence into an overall readiness disposition.",
+      "executiveSummary": "Enterprise Readiness converts validated discovery evidence and assessment results into a decision view covering readiness, gaps, risks, dependencies, priorities and conditions to proceed.",
+      "objectives": [
+        "Determine evidence-supported enterprise readiness",
+        "Identify and classify gaps by impact, urgency and effort",
+        "Separate critical conditions from deferrable improvements",
+        "Recommend an accountable path into strategy"
+      ],
+      "readinessCriteria": [
+        "Evidence completeness meets the agreed threshold",
+        "Material gaps have named owners and business impact",
+        "Critical risks are within appetite or have approved containment",
+        "Dependencies and resolution stages are explicit",
+        "Investment ranges and timing assumptions are transparent",
+        "The executive decision and conditions are recorded"
+      ],
+      "evidenceConsumed": [
+        "Business Strategy & Objectives",
+        "Financial Baseline",
+        "Existing Governance"
+      ],
+      "assessmentResults": [
+        "Record maturity and score separately",
+        "Display evidence confidence and freshness",
+        "Show category strengths, gaps and unresolved conflicts",
+        "Do not aggregate unverified results"
+      ],
+      "gapAnalysis": [
+        "Compare evidence-supported current state with the approved target state",
+        "Record business impact, risk, priority, effort and dependencies",
+        "Assign an owner and target resolution stage",
+        "Trace every recommendation to its originating gap"
+      ],
+      "risks": [
+        "False confidence from incomplete evidence",
+        "Average scores hiding critical control failures",
+        "Unfunded or ownerless remediation",
+        "Dependencies omitted from roadmap timing"
+      ],
+      "dependencies": [
+        "Approved Discover baseline",
+        "Completed related assessments",
+        "Named evidence and action owners",
+        "Executive risk and investment decisions"
+      ],
+      "recommendations": [
+        "Contain critical exposure before progression",
+        "Fund enabling dependencies before downstream delivery",
+        "Sequence quick wins without displacing structural improvement",
+        "Carry approved conditions into strategy governance"
+      ],
+      "relatedAssessments": [
+        "Enterprise AI Readiness",
+        "Financial Readiness",
+        "Change Management Readiness"
+      ],
+      "relatedDeliverables": [
+        "Enterprise Readiness Report",
+        "Gap Analysis Register",
+        "Prioritised Improvement Plan",
+        "Executive Approval Pack"
+      ],
+      "relatedTemplates": [
+        "Readiness workspace evidence sheet",
+        "Gap record template",
+        "Recommendation traceability record",
+        "Executive decision record"
+      ],
+      "aiGuidance": "Generate evidence-grounded readiness findings. Separate verified facts, gaps, assumptions and conflicts. Never invent scores, cost, duration or approval."
+    },
+    {
+      "id": "RDW-02",
+      "slug": "business-readiness",
+      "name": "Business Readiness",
+      "owner": "Business Owner",
+      "summary": "Determine whether business outcomes, ownership, processes and value measures can support transformation.",
+      "executiveSummary": "Business Readiness converts validated discovery evidence and assessment results into a decision view covering readiness, gaps, risks, dependencies, priorities and conditions to proceed.",
+      "objectives": [
+        "Determine evidence-supported business readiness",
+        "Identify and classify gaps by impact, urgency and effort",
+        "Separate critical conditions from deferrable improvements",
+        "Recommend an accountable path into strategy"
+      ],
+      "readinessCriteria": [
+        "Evidence completeness meets the agreed threshold",
+        "Material gaps have named owners and business impact",
+        "Critical risks are within appetite or have approved containment",
+        "Dependencies and resolution stages are explicit",
+        "Investment ranges and timing assumptions are transparent",
+        "The executive decision and conditions are recorded"
+      ],
+      "evidenceConsumed": [
+        "Business Capabilities",
+        "Business Processes",
+        "Organisational Structure"
+      ],
+      "assessmentResults": [
+        "Record maturity and score separately",
+        "Display evidence confidence and freshness",
+        "Show category strengths, gaps and unresolved conflicts",
+        "Do not aggregate unverified results"
+      ],
+      "gapAnalysis": [
+        "Compare evidence-supported current state with the approved target state",
+        "Record business impact, risk, priority, effort and dependencies",
+        "Assign an owner and target resolution stage",
+        "Trace every recommendation to its originating gap"
+      ],
+      "risks": [
+        "False confidence from incomplete evidence",
+        "Average scores hiding critical control failures",
+        "Unfunded or ownerless remediation",
+        "Dependencies omitted from roadmap timing"
+      ],
+      "dependencies": [
+        "Approved Discover baseline",
+        "Completed related assessments",
+        "Named evidence and action owners",
+        "Executive risk and investment decisions"
+      ],
+      "recommendations": [
+        "Contain critical exposure before progression",
+        "Fund enabling dependencies before downstream delivery",
+        "Sequence quick wins without displacing structural improvement",
+        "Carry approved conditions into strategy governance"
+      ],
+      "relatedAssessments": [
+        "Business Capability Assessment",
+        "Business Process Assessment",
+        "Financial Readiness"
+      ],
+      "relatedDeliverables": [
+        "Enterprise Readiness Report",
+        "Gap Analysis Register",
+        "Prioritised Improvement Plan",
+        "Executive Approval Pack"
+      ],
+      "relatedTemplates": [
+        "Readiness workspace evidence sheet",
+        "Gap record template",
+        "Recommendation traceability record",
+        "Executive decision record"
+      ],
+      "aiGuidance": "Generate evidence-grounded readiness findings. Separate verified facts, gaps, assumptions and conflicts. Never invent scores, cost, duration or approval."
+    },
+    {
+      "id": "RDW-03",
+      "slug": "governance-readiness",
+      "name": "Governance Readiness",
+      "owner": "AI Governance Lead",
+      "summary": "Determine whether decision rights, policy, risk appetite, controls and assurance are sufficient to proceed.",
+      "executiveSummary": "Governance Readiness converts validated discovery evidence and assessment results into a decision view covering readiness, gaps, risks, dependencies, priorities and conditions to proceed.",
+      "objectives": [
+        "Determine evidence-supported governance readiness",
+        "Identify and classify gaps by impact, urgency and effort",
+        "Separate critical conditions from deferrable improvements",
+        "Recommend an accountable path into strategy"
+      ],
+      "readinessCriteria": [
+        "Evidence completeness meets the agreed threshold",
+        "Material gaps have named owners and business impact",
+        "Critical risks are within appetite or have approved containment",
+        "Dependencies and resolution stages are explicit",
+        "Investment ranges and timing assumptions are transparent",
+        "The executive decision and conditions are recorded"
+      ],
+      "evidenceConsumed": [
+        "Existing Governance",
+        "Regulatory & Compliance",
+        "Shadow AI & Unapproved Technology"
+      ],
+      "assessmentResults": [
+        "Record maturity and score separately",
+        "Display evidence confidence and freshness",
+        "Show category strengths, gaps and unresolved conflicts",
+        "Do not aggregate unverified results"
+      ],
+      "gapAnalysis": [
+        "Compare evidence-supported current state with the approved target state",
+        "Record business impact, risk, priority, effort and dependencies",
+        "Assign an owner and target resolution stage",
+        "Trace every recommendation to its originating gap"
+      ],
+      "risks": [
+        "False confidence from incomplete evidence",
+        "Average scores hiding critical control failures",
+        "Unfunded or ownerless remediation",
+        "Dependencies omitted from roadmap timing"
+      ],
+      "dependencies": [
+        "Approved Discover baseline",
+        "Completed related assessments",
+        "Named evidence and action owners",
+        "Executive risk and investment decisions"
+      ],
+      "recommendations": [
+        "Contain critical exposure before progression",
+        "Fund enabling dependencies before downstream delivery",
+        "Sequence quick wins without displacing structural improvement",
+        "Carry approved conditions into strategy governance"
+      ],
+      "relatedAssessments": [
+        "AI Governance Maturity",
+        "AI Risk Assessment",
+        "Regulatory Compliance Assessment"
+      ],
+      "relatedDeliverables": [
+        "Enterprise Readiness Report",
+        "Gap Analysis Register",
+        "Prioritised Improvement Plan",
+        "Executive Approval Pack"
+      ],
+      "relatedTemplates": [
+        "Readiness workspace evidence sheet",
+        "Gap record template",
+        "Recommendation traceability record",
+        "Executive decision record"
+      ],
+      "aiGuidance": "Generate evidence-grounded readiness findings. Separate verified facts, gaps, assumptions and conflicts. Never invent scores, cost, duration or approval."
+    },
+    {
+      "id": "RDW-04",
+      "slug": "technology-readiness",
+      "name": "Technology Readiness",
+      "owner": "Enterprise Architect",
+      "summary": "Determine whether the technology estate can support secure, scalable and governable enterprise AI.",
+      "executiveSummary": "Technology Readiness converts validated discovery evidence and assessment results into a decision view covering readiness, gaps, risks, dependencies, priorities and conditions to proceed.",
+      "objectives": [
+        "Determine evidence-supported technology readiness",
+        "Identify and classify gaps by impact, urgency and effort",
+        "Separate critical conditions from deferrable improvements",
+        "Recommend an accountable path into strategy"
+      ],
+      "readinessCriteria": [
+        "Evidence completeness meets the agreed threshold",
+        "Material gaps have named owners and business impact",
+        "Critical risks are within appetite or have approved containment",
+        "Dependencies and resolution stages are explicit",
+        "Investment ranges and timing assumptions are transparent",
+        "The executive decision and conditions are recorded"
+      ],
+      "evidenceConsumed": [
+        "Applications & Systems",
+        "Integration & APIs",
+        "Infrastructure & Hosting",
+        "Cloud Platforms"
+      ],
+      "assessmentResults": [
+        "Record maturity and score separately",
+        "Display evidence confidence and freshness",
+        "Show category strengths, gaps and unresolved conflicts",
+        "Do not aggregate unverified results"
+      ],
+      "gapAnalysis": [
+        "Compare evidence-supported current state with the approved target state",
+        "Record business impact, risk, priority, effort and dependencies",
+        "Assign an owner and target resolution stage",
+        "Trace every recommendation to its originating gap"
+      ],
+      "risks": [
+        "False confidence from incomplete evidence",
+        "Average scores hiding critical control failures",
+        "Unfunded or ownerless remediation",
+        "Dependencies omitted from roadmap timing"
+      ],
+      "dependencies": [
+        "Approved Discover baseline",
+        "Completed related assessments",
+        "Named evidence and action owners",
+        "Executive risk and investment decisions"
+      ],
+      "recommendations": [
+        "Contain critical exposure before progression",
+        "Fund enabling dependencies before downstream delivery",
+        "Sequence quick wins without displacing structural improvement",
+        "Carry approved conditions into strategy governance"
+      ],
+      "relatedAssessments": [
+        "Enterprise Architecture Assessment",
+        "Application Portfolio Assessment",
+        "Integration Assessment",
+        "Infrastructure Assessment",
+        "Cloud Readiness"
+      ],
+      "relatedDeliverables": [
+        "Enterprise Readiness Report",
+        "Gap Analysis Register",
+        "Prioritised Improvement Plan",
+        "Executive Approval Pack"
+      ],
+      "relatedTemplates": [
+        "Readiness workspace evidence sheet",
+        "Gap record template",
+        "Recommendation traceability record",
+        "Executive decision record"
+      ],
+      "aiGuidance": "Generate evidence-grounded readiness findings. Separate verified facts, gaps, assumptions and conflicts. Never invent scores, cost, duration or approval."
+    },
+    {
+      "id": "RDW-05",
+      "slug": "data-readiness",
+      "name": "Data Readiness",
+      "owner": "Chief Data Officer",
+      "summary": "Determine whether priority data is usable, governed, representative, lawful and operationally sustainable.",
+      "executiveSummary": "Data Readiness converts validated discovery evidence and assessment results into a decision view covering readiness, gaps, risks, dependencies, priorities and conditions to proceed.",
+      "objectives": [
+        "Determine evidence-supported data readiness",
+        "Identify and classify gaps by impact, urgency and effort",
+        "Separate critical conditions from deferrable improvements",
+        "Recommend an accountable path into strategy"
+      ],
+      "readinessCriteria": [
+        "Evidence completeness meets the agreed threshold",
+        "Material gaps have named owners and business impact",
+        "Critical risks are within appetite or have approved containment",
+        "Dependencies and resolution stages are explicit",
+        "Investment ranges and timing assumptions are transparent",
+        "The executive decision and conditions are recorded"
+      ],
+      "evidenceConsumed": [
+        "Data & Information",
+        "Regulatory & Compliance"
+      ],
+      "assessmentResults": [
+        "Record maturity and score separately",
+        "Display evidence confidence and freshness",
+        "Show category strengths, gaps and unresolved conflicts",
+        "Do not aggregate unverified results"
+      ],
+      "gapAnalysis": [
+        "Compare evidence-supported current state with the approved target state",
+        "Record business impact, risk, priority, effort and dependencies",
+        "Assign an owner and target resolution stage",
+        "Trace every recommendation to its originating gap"
+      ],
+      "risks": [
+        "False confidence from incomplete evidence",
+        "Average scores hiding critical control failures",
+        "Unfunded or ownerless remediation",
+        "Dependencies omitted from roadmap timing"
+      ],
+      "dependencies": [
+        "Approved Discover baseline",
+        "Completed related assessments",
+        "Named evidence and action owners",
+        "Executive risk and investment decisions"
+      ],
+      "recommendations": [
+        "Contain critical exposure before progression",
+        "Fund enabling dependencies before downstream delivery",
+        "Sequence quick wins without displacing structural improvement",
+        "Carry approved conditions into strategy governance"
+      ],
+      "relatedAssessments": [
+        "Data Readiness",
+        "Data Governance"
+      ],
+      "relatedDeliverables": [
+        "Enterprise Readiness Report",
+        "Gap Analysis Register",
+        "Prioritised Improvement Plan",
+        "Executive Approval Pack"
+      ],
+      "relatedTemplates": [
+        "Readiness workspace evidence sheet",
+        "Gap record template",
+        "Recommendation traceability record",
+        "Executive decision record"
+      ],
+      "aiGuidance": "Generate evidence-grounded readiness findings. Separate verified facts, gaps, assumptions and conflicts. Never invent scores, cost, duration or approval."
+    },
+    {
+      "id": "RDW-06",
+      "slug": "security-readiness",
+      "name": "Security Readiness",
+      "owner": "CISO",
+      "summary": "Determine whether material threats, access risks and third-party exposures are controlled within appetite.",
+      "executiveSummary": "Security Readiness converts validated discovery evidence and assessment results into a decision view covering readiness, gaps, risks, dependencies, priorities and conditions to proceed.",
+      "objectives": [
+        "Determine evidence-supported security readiness",
+        "Identify and classify gaps by impact, urgency and effort",
+        "Separate critical conditions from deferrable improvements",
+        "Recommend an accountable path into strategy"
+      ],
+      "readinessCriteria": [
+        "Evidence completeness meets the agreed threshold",
+        "Material gaps have named owners and business impact",
+        "Critical risks are within appetite or have approved containment",
+        "Dependencies and resolution stages are explicit",
+        "Investment ranges and timing assumptions are transparent",
+        "The executive decision and conditions are recorded"
+      ],
+      "evidenceConsumed": [
+        "Cybersecurity",
+        "Identity & Access Management",
+        "Vendors & Third Parties"
+      ],
+      "assessmentResults": [
+        "Record maturity and score separately",
+        "Display evidence confidence and freshness",
+        "Show category strengths, gaps and unresolved conflicts",
+        "Do not aggregate unverified results"
+      ],
+      "gapAnalysis": [
+        "Compare evidence-supported current state with the approved target state",
+        "Record business impact, risk, priority, effort and dependencies",
+        "Assign an owner and target resolution stage",
+        "Trace every recommendation to its originating gap"
+      ],
+      "risks": [
+        "False confidence from incomplete evidence",
+        "Average scores hiding critical control failures",
+        "Unfunded or ownerless remediation",
+        "Dependencies omitted from roadmap timing"
+      ],
+      "dependencies": [
+        "Approved Discover baseline",
+        "Completed related assessments",
+        "Named evidence and action owners",
+        "Executive risk and investment decisions"
+      ],
+      "recommendations": [
+        "Contain critical exposure before progression",
+        "Fund enabling dependencies before downstream delivery",
+        "Sequence quick wins without displacing structural improvement",
+        "Carry approved conditions into strategy governance"
+      ],
+      "relatedAssessments": [
+        "AI Security Assessment",
+        "Identity & Access Assessment",
+        "Vendor Assessment"
+      ],
+      "relatedDeliverables": [
+        "Enterprise Readiness Report",
+        "Gap Analysis Register",
+        "Prioritised Improvement Plan",
+        "Executive Approval Pack"
+      ],
+      "relatedTemplates": [
+        "Readiness workspace evidence sheet",
+        "Gap record template",
+        "Recommendation traceability record",
+        "Executive decision record"
+      ],
+      "aiGuidance": "Generate evidence-grounded readiness findings. Separate verified facts, gaps, assumptions and conflicts. Never invent scores, cost, duration or approval."
+    },
+    {
+      "id": "RDW-07",
+      "slug": "ai-readiness",
+      "name": "AI Readiness",
+      "owner": "AI Platform Owner",
+      "summary": "Determine whether AI platform, evaluation, model, agent and responsible-AI capabilities can support delivery.",
+      "executiveSummary": "AI Readiness converts validated discovery evidence and assessment results into a decision view covering readiness, gaps, risks, dependencies, priorities and conditions to proceed.",
+      "objectives": [
+        "Determine evidence-supported ai readiness",
+        "Identify and classify gaps by impact, urgency and effort",
+        "Separate critical conditions from deferrable improvements",
+        "Recommend an accountable path into strategy"
+      ],
+      "readinessCriteria": [
+        "Evidence completeness meets the agreed threshold",
+        "Material gaps have named owners and business impact",
+        "Critical risks are within appetite or have approved containment",
+        "Dependencies and resolution stages are explicit",
+        "Investment ranges and timing assumptions are transparent",
+        "The executive decision and conditions are recorded"
+      ],
+      "evidenceConsumed": [
+        "AI Landscape",
+        "Data & Information",
+        "Shadow AI & Unapproved Technology"
+      ],
+      "assessmentResults": [
+        "Record maturity and score separately",
+        "Display evidence confidence and freshness",
+        "Show category strengths, gaps and unresolved conflicts",
+        "Do not aggregate unverified results"
+      ],
+      "gapAnalysis": [
+        "Compare evidence-supported current state with the approved target state",
+        "Record business impact, risk, priority, effort and dependencies",
+        "Assign an owner and target resolution stage",
+        "Trace every recommendation to its originating gap"
+      ],
+      "risks": [
+        "False confidence from incomplete evidence",
+        "Average scores hiding critical control failures",
+        "Unfunded or ownerless remediation",
+        "Dependencies omitted from roadmap timing"
+      ],
+      "dependencies": [
+        "Approved Discover baseline",
+        "Completed related assessments",
+        "Named evidence and action owners",
+        "Executive risk and investment decisions"
+      ],
+      "recommendations": [
+        "Contain critical exposure before progression",
+        "Fund enabling dependencies before downstream delivery",
+        "Sequence quick wins without displacing structural improvement",
+        "Carry approved conditions into strategy governance"
+      ],
+      "relatedAssessments": [
+        "Enterprise AI Readiness",
+        "AI Platform Assessment",
+        "AI Governance Maturity"
+      ],
+      "relatedDeliverables": [
+        "Enterprise Readiness Report",
+        "Gap Analysis Register",
+        "Prioritised Improvement Plan",
+        "Executive Approval Pack"
+      ],
+      "relatedTemplates": [
+        "Readiness workspace evidence sheet",
+        "Gap record template",
+        "Recommendation traceability record",
+        "Executive decision record"
+      ],
+      "aiGuidance": "Generate evidence-grounded readiness findings. Separate verified facts, gaps, assumptions and conflicts. Never invent scores, cost, duration or approval."
+    },
+    {
+      "id": "RDW-08",
+      "slug": "automation-readiness",
+      "name": "Automation Readiness",
+      "owner": "Automation Lead",
+      "summary": "Determine whether automation demand, delivery, controls, reuse and operations can support scaled change.",
+      "executiveSummary": "Automation Readiness converts validated discovery evidence and assessment results into a decision view covering readiness, gaps, risks, dependencies, priorities and conditions to proceed.",
+      "objectives": [
+        "Determine evidence-supported automation readiness",
+        "Identify and classify gaps by impact, urgency and effort",
+        "Separate critical conditions from deferrable improvements",
+        "Recommend an accountable path into strategy"
+      ],
+      "readinessCriteria": [
+        "Evidence completeness meets the agreed threshold",
+        "Material gaps have named owners and business impact",
+        "Critical risks are within appetite or have approved containment",
+        "Dependencies and resolution stages are explicit",
+        "Investment ranges and timing assumptions are transparent",
+        "The executive decision and conditions are recorded"
+      ],
+      "evidenceConsumed": [
+        "Automation Landscape",
+        "Business Processes"
+      ],
+      "assessmentResults": [
+        "Record maturity and score separately",
+        "Display evidence confidence and freshness",
+        "Show category strengths, gaps and unresolved conflicts",
+        "Do not aggregate unverified results"
+      ],
+      "gapAnalysis": [
+        "Compare evidence-supported current state with the approved target state",
+        "Record business impact, risk, priority, effort and dependencies",
+        "Assign an owner and target resolution stage",
+        "Trace every recommendation to its originating gap"
+      ],
+      "risks": [
+        "False confidence from incomplete evidence",
+        "Average scores hiding critical control failures",
+        "Unfunded or ownerless remediation",
+        "Dependencies omitted from roadmap timing"
+      ],
+      "dependencies": [
+        "Approved Discover baseline",
+        "Completed related assessments",
+        "Named evidence and action owners",
+        "Executive risk and investment decisions"
+      ],
+      "recommendations": [
+        "Contain critical exposure before progression",
+        "Fund enabling dependencies before downstream delivery",
+        "Sequence quick wins without displacing structural improvement",
+        "Carry approved conditions into strategy governance"
+      ],
+      "relatedAssessments": [
+        "Automation Maturity",
+        "Business Process Assessment"
+      ],
+      "relatedDeliverables": [
+        "Enterprise Readiness Report",
+        "Gap Analysis Register",
+        "Prioritised Improvement Plan",
+        "Executive Approval Pack"
+      ],
+      "relatedTemplates": [
+        "Readiness workspace evidence sheet",
+        "Gap record template",
+        "Recommendation traceability record",
+        "Executive decision record"
+      ],
+      "aiGuidance": "Generate evidence-grounded readiness findings. Separate verified facts, gaps, assumptions and conflicts. Never invent scores, cost, duration or approval."
+    },
+    {
+      "id": "RDW-09",
+      "slug": "operational-readiness",
+      "name": "Operational Readiness",
+      "owner": "Operations Lead",
+      "summary": "Determine whether accountable service ownership, support, monitoring, incidents and continuity can sustain AI.",
+      "executiveSummary": "Operational Readiness converts validated discovery evidence and assessment results into a decision view covering readiness, gaps, risks, dependencies, priorities and conditions to proceed.",
+      "objectives": [
+        "Determine evidence-supported operational readiness",
+        "Identify and classify gaps by impact, urgency and effort",
+        "Separate critical conditions from deferrable improvements",
+        "Recommend an accountable path into strategy"
+      ],
+      "readinessCriteria": [
+        "Evidence completeness meets the agreed threshold",
+        "Material gaps have named owners and business impact",
+        "Critical risks are within appetite or have approved containment",
+        "Dependencies and resolution stages are explicit",
+        "Investment ranges and timing assumptions are transparent",
+        "The executive decision and conditions are recorded"
+      ],
+      "evidenceConsumed": [
+        "Operations & Service Management",
+        "Infrastructure & Hosting",
+        "Skills & Workforce"
+      ],
+      "assessmentResults": [
+        "Record maturity and score separately",
+        "Display evidence confidence and freshness",
+        "Show category strengths, gaps and unresolved conflicts",
+        "Do not aggregate unverified results"
+      ],
+      "gapAnalysis": [
+        "Compare evidence-supported current state with the approved target state",
+        "Record business impact, risk, priority, effort and dependencies",
+        "Assign an owner and target resolution stage",
+        "Trace every recommendation to its originating gap"
+      ],
+      "risks": [
+        "False confidence from incomplete evidence",
+        "Average scores hiding critical control failures",
+        "Unfunded or ownerless remediation",
+        "Dependencies omitted from roadmap timing"
+      ],
+      "dependencies": [
+        "Approved Discover baseline",
+        "Completed related assessments",
+        "Named evidence and action owners",
+        "Executive risk and investment decisions"
+      ],
+      "recommendations": [
+        "Contain critical exposure before progression",
+        "Fund enabling dependencies before downstream delivery",
+        "Sequence quick wins without displacing structural improvement",
+        "Carry approved conditions into strategy governance"
+      ],
+      "relatedAssessments": [
+        "Operational Readiness",
+        "Production Readiness Assessment"
+      ],
+      "relatedDeliverables": [
+        "Enterprise Readiness Report",
+        "Gap Analysis Register",
+        "Prioritised Improvement Plan",
+        "Executive Approval Pack"
+      ],
+      "relatedTemplates": [
+        "Readiness workspace evidence sheet",
+        "Gap record template",
+        "Recommendation traceability record",
+        "Executive decision record"
+      ],
+      "aiGuidance": "Generate evidence-grounded readiness findings. Separate verified facts, gaps, assumptions and conflicts. Never invent scores, cost, duration or approval."
+    },
+    {
+      "id": "RDW-10",
+      "slug": "change-readiness",
+      "name": "Change Readiness",
+      "owner": "Change Lead",
+      "summary": "Determine whether stakeholders, skills, capacity, communications and adoption mechanisms can absorb change.",
+      "executiveSummary": "Change Readiness converts validated discovery evidence and assessment results into a decision view covering readiness, gaps, risks, dependencies, priorities and conditions to proceed.",
+      "objectives": [
+        "Determine evidence-supported change readiness",
+        "Identify and classify gaps by impact, urgency and effort",
+        "Separate critical conditions from deferrable improvements",
+        "Recommend an accountable path into strategy"
+      ],
+      "readinessCriteria": [
+        "Evidence completeness meets the agreed threshold",
+        "Material gaps have named owners and business impact",
+        "Critical risks are within appetite or have approved containment",
+        "Dependencies and resolution stages are explicit",
+        "Investment ranges and timing assumptions are transparent",
+        "The executive decision and conditions are recorded"
+      ],
+      "evidenceConsumed": [
+        "Skills & Workforce",
+        "Organisational Structure",
+        "Business Strategy & Objectives"
+      ],
+      "assessmentResults": [
+        "Record maturity and score separately",
+        "Display evidence confidence and freshness",
+        "Show category strengths, gaps and unresolved conflicts",
+        "Do not aggregate unverified results"
+      ],
+      "gapAnalysis": [
+        "Compare evidence-supported current state with the approved target state",
+        "Record business impact, risk, priority, effort and dependencies",
+        "Assign an owner and target resolution stage",
+        "Trace every recommendation to its originating gap"
+      ],
+      "risks": [
+        "False confidence from incomplete evidence",
+        "Average scores hiding critical control failures",
+        "Unfunded or ownerless remediation",
+        "Dependencies omitted from roadmap timing"
+      ],
+      "dependencies": [
+        "Approved Discover baseline",
+        "Completed related assessments",
+        "Named evidence and action owners",
+        "Executive risk and investment decisions"
+      ],
+      "recommendations": [
+        "Contain critical exposure before progression",
+        "Fund enabling dependencies before downstream delivery",
+        "Sequence quick wins without displacing structural improvement",
+        "Carry approved conditions into strategy governance"
+      ],
+      "relatedAssessments": [
+        "Change Management Readiness",
+        "Skills & Workforce Assessment"
+      ],
+      "relatedDeliverables": [
+        "Enterprise Readiness Report",
+        "Gap Analysis Register",
+        "Prioritised Improvement Plan",
+        "Executive Approval Pack"
+      ],
+      "relatedTemplates": [
+        "Readiness workspace evidence sheet",
+        "Gap record template",
+        "Recommendation traceability record",
+        "Executive decision record"
+      ],
+      "aiGuidance": "Generate evidence-grounded readiness findings. Separate verified facts, gaps, assumptions and conflicts. Never invent scores, cost, duration or approval."
+    }
+  ],
+  "deliverables": [
+    {
+      "id": "RDY-001",
+      "slug": "enterprise-readiness-report",
+      "name": "Enterprise Readiness Report",
+      "type": "Report",
+      "owner": "Methodology Lead",
+      "approval": "Executive Sponsor",
+      "purpose": "Provide a governed enterprise readiness report that supports the Executive Readiness Decision.",
+      "value": "Turns evidence, assessment findings, gaps and priorities into transparent executive action and investment choices.",
+      "inputs": [
+        "Validated Discover evidence",
+        "Approved assessment results and confidence",
+        "Gap and risk records",
+        "Dependencies, constraints and investment assumptions"
+      ],
+      "outputs": [
+        "Enterprise Readiness Report",
+        "Traceability references",
+        "Named actions and owners",
+        "Decision or approval record"
+      ],
+      "relatedAssessments": [
+        "Enterprise AI Readiness",
+        "Data Readiness",
+        "Enterprise Architecture Assessment",
+        "Cloud Readiness",
+        "Automation Maturity",
+        "Skills & Workforce Assessment"
+      ],
+      "relatedEvidence": [
+        "Business Strategy & Objectives",
+        "Business Capabilities",
+        "Business Processes",
+        "Organisational Structure"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Assess Readiness",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case"
+      ],
+      "structure": [
+        "Executive purpose and decision required",
+        "Evidence and confidence summary",
+        "Assessment results",
+        "Gaps, risks and dependencies",
+        "Recommendations and prioritisation",
+        "Roadmap and investment considerations",
+        "Decision, conditions and approvals"
+      ],
+      "template": "/downloads/readiness/enterprise-readiness-report.md"
+    },
+    {
+      "id": "RDY-002",
+      "slug": "executive-readiness-summary",
+      "name": "Executive Readiness Summary",
+      "type": "Executive brief",
+      "owner": "Programme Director",
+      "approval": "Executive Sponsor",
+      "purpose": "Provide a governed executive readiness summary that supports the Executive Readiness Decision.",
+      "value": "Turns evidence, assessment findings, gaps and priorities into transparent executive action and investment choices.",
+      "inputs": [
+        "Validated Discover evidence",
+        "Approved assessment results and confidence",
+        "Gap and risk records",
+        "Dependencies, constraints and investment assumptions"
+      ],
+      "outputs": [
+        "Executive Readiness Summary",
+        "Traceability references",
+        "Named actions and owners",
+        "Decision or approval record"
+      ],
+      "relatedAssessments": [
+        "Enterprise AI Readiness",
+        "Data Readiness",
+        "Enterprise Architecture Assessment",
+        "Cloud Readiness",
+        "Automation Maturity",
+        "Skills & Workforce Assessment"
+      ],
+      "relatedEvidence": [
+        "Business Capabilities",
+        "Business Processes",
+        "Organisational Structure",
+        "Applications & Systems"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Assess Readiness",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case"
+      ],
+      "structure": [
+        "Executive purpose and decision required",
+        "Evidence and confidence summary",
+        "Assessment results",
+        "Gaps, risks and dependencies",
+        "Recommendations and prioritisation",
+        "Roadmap and investment considerations",
+        "Decision, conditions and approvals"
+      ],
+      "template": "/downloads/readiness/executive-readiness-summary.md"
+    },
+    {
+      "id": "RDY-003",
+      "slug": "gap-analysis-register",
+      "name": "Gap Analysis Register",
+      "type": "Register",
+      "owner": "Methodology Lead",
+      "approval": "Programme Director",
+      "purpose": "Provide a governed gap analysis register that supports the Executive Readiness Decision.",
+      "value": "Turns evidence, assessment findings, gaps and priorities into transparent executive action and investment choices.",
+      "inputs": [
+        "Validated Discover evidence",
+        "Approved assessment results and confidence",
+        "Gap and risk records",
+        "Dependencies, constraints and investment assumptions"
+      ],
+      "outputs": [
+        "Gap Analysis Register",
+        "Traceability references",
+        "Named actions and owners",
+        "Decision or approval record"
+      ],
+      "relatedAssessments": [
+        "Enterprise AI Readiness",
+        "Data Readiness",
+        "Enterprise Architecture Assessment",
+        "Cloud Readiness",
+        "Automation Maturity",
+        "Skills & Workforce Assessment"
+      ],
+      "relatedEvidence": [
+        "Business Processes",
+        "Organisational Structure",
+        "Applications & Systems",
+        "Data & Information"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Assess Readiness",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case"
+      ],
+      "structure": [
+        "Executive purpose and decision required",
+        "Evidence and confidence summary",
+        "Assessment results",
+        "Gaps, risks and dependencies",
+        "Recommendations and prioritisation",
+        "Roadmap and investment considerations",
+        "Decision, conditions and approvals"
+      ],
+      "template": "/downloads/readiness/gap-analysis-register.md"
+    },
+    {
+      "id": "RDY-004",
+      "slug": "critical-gap-register",
+      "name": "Critical Gap Register",
+      "type": "Register",
+      "owner": "Risk Executive",
+      "approval": "Executive Sponsor",
+      "purpose": "Provide a governed critical gap register that supports the Executive Readiness Decision.",
+      "value": "Turns evidence, assessment findings, gaps and priorities into transparent executive action and investment choices.",
+      "inputs": [
+        "Validated Discover evidence",
+        "Approved assessment results and confidence",
+        "Gap and risk records",
+        "Dependencies, constraints and investment assumptions"
+      ],
+      "outputs": [
+        "Critical Gap Register",
+        "Traceability references",
+        "Named actions and owners",
+        "Decision or approval record"
+      ],
+      "relatedAssessments": [
+        "Enterprise AI Readiness",
+        "Data Readiness",
+        "Enterprise Architecture Assessment",
+        "Cloud Readiness",
+        "Automation Maturity",
+        "Skills & Workforce Assessment"
+      ],
+      "relatedEvidence": [
+        "Organisational Structure",
+        "Applications & Systems",
+        "Data & Information",
+        "AI Landscape"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Assess Readiness",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case"
+      ],
+      "structure": [
+        "Executive purpose and decision required",
+        "Evidence and confidence summary",
+        "Assessment results",
+        "Gaps, risks and dependencies",
+        "Recommendations and prioritisation",
+        "Roadmap and investment considerations",
+        "Decision, conditions and approvals"
+      ],
+      "template": "/downloads/readiness/critical-gap-register.md"
+    },
+    {
+      "id": "RDY-005",
+      "slug": "capability-heat-map",
+      "name": "Capability Heat Map",
+      "type": "Visual analysis",
+      "owner": "Enterprise Architect",
+      "approval": "CIO / CTO",
+      "purpose": "Provide a governed capability heat map that supports the Executive Readiness Decision.",
+      "value": "Turns evidence, assessment findings, gaps and priorities into transparent executive action and investment choices.",
+      "inputs": [
+        "Validated Discover evidence",
+        "Approved assessment results and confidence",
+        "Gap and risk records",
+        "Dependencies, constraints and investment assumptions"
+      ],
+      "outputs": [
+        "Capability Heat Map",
+        "Traceability references",
+        "Named actions and owners",
+        "Decision or approval record"
+      ],
+      "relatedAssessments": [
+        "Enterprise AI Readiness",
+        "Data Readiness",
+        "Enterprise Architecture Assessment",
+        "Cloud Readiness",
+        "Automation Maturity",
+        "Skills & Workforce Assessment"
+      ],
+      "relatedEvidence": [
+        "Applications & Systems",
+        "Data & Information",
+        "AI Landscape",
+        "Automation Landscape"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Assess Readiness",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case"
+      ],
+      "structure": [
+        "Executive purpose and decision required",
+        "Evidence and confidence summary",
+        "Assessment results",
+        "Gaps, risks and dependencies",
+        "Recommendations and prioritisation",
+        "Roadmap and investment considerations",
+        "Decision, conditions and approvals"
+      ],
+      "template": "/downloads/readiness/capability-heat-map.md"
+    },
+    {
+      "id": "RDY-006",
+      "slug": "readiness-dashboard",
+      "name": "Readiness Dashboard",
+      "type": "Dashboard",
+      "owner": "Programme Director",
+      "approval": "Executive Sponsor",
+      "purpose": "Provide a governed readiness dashboard that supports the Executive Readiness Decision.",
+      "value": "Turns evidence, assessment findings, gaps and priorities into transparent executive action and investment choices.",
+      "inputs": [
+        "Validated Discover evidence",
+        "Approved assessment results and confidence",
+        "Gap and risk records",
+        "Dependencies, constraints and investment assumptions"
+      ],
+      "outputs": [
+        "Readiness Dashboard",
+        "Traceability references",
+        "Named actions and owners",
+        "Decision or approval record"
+      ],
+      "relatedAssessments": [
+        "Enterprise AI Readiness",
+        "Data Readiness",
+        "Enterprise Architecture Assessment",
+        "Cloud Readiness",
+        "Automation Maturity",
+        "Skills & Workforce Assessment"
+      ],
+      "relatedEvidence": [
+        "Data & Information",
+        "AI Landscape",
+        "Automation Landscape",
+        "Infrastructure & Hosting"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Assess Readiness",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case"
+      ],
+      "structure": [
+        "Executive purpose and decision required",
+        "Evidence and confidence summary",
+        "Assessment results",
+        "Gaps, risks and dependencies",
+        "Recommendations and prioritisation",
+        "Roadmap and investment considerations",
+        "Decision, conditions and approvals"
+      ],
+      "template": "/downloads/readiness/readiness-dashboard.md"
+    },
+    {
+      "id": "RDY-007",
+      "slug": "prioritised-improvement-plan",
+      "name": "Prioritised Improvement Plan",
+      "type": "Plan",
+      "owner": "Programme Director",
+      "approval": "Executive Sponsor",
+      "purpose": "Provide a governed prioritised improvement plan that supports the Executive Readiness Decision.",
+      "value": "Turns evidence, assessment findings, gaps and priorities into transparent executive action and investment choices.",
+      "inputs": [
+        "Validated Discover evidence",
+        "Approved assessment results and confidence",
+        "Gap and risk records",
+        "Dependencies, constraints and investment assumptions"
+      ],
+      "outputs": [
+        "Prioritised Improvement Plan",
+        "Traceability references",
+        "Named actions and owners",
+        "Decision or approval record"
+      ],
+      "relatedAssessments": [
+        "Enterprise AI Readiness",
+        "Data Readiness",
+        "Enterprise Architecture Assessment",
+        "Cloud Readiness",
+        "Automation Maturity",
+        "Skills & Workforce Assessment"
+      ],
+      "relatedEvidence": [
+        "AI Landscape",
+        "Automation Landscape",
+        "Infrastructure & Hosting",
+        "Cloud Platforms"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Assess Readiness",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case"
+      ],
+      "structure": [
+        "Executive purpose and decision required",
+        "Evidence and confidence summary",
+        "Assessment results",
+        "Gaps, risks and dependencies",
+        "Recommendations and prioritisation",
+        "Roadmap and investment considerations",
+        "Decision, conditions and approvals"
+      ],
+      "template": "/downloads/readiness/prioritised-improvement-plan.md"
+    },
+    {
+      "id": "RDY-008",
+      "slug": "executive-recommendations",
+      "name": "Executive Recommendations",
+      "type": "Decision advice",
+      "owner": "Methodology Lead",
+      "approval": "Executive Sponsor",
+      "purpose": "Provide a governed executive recommendations that supports the Executive Readiness Decision.",
+      "value": "Turns evidence, assessment findings, gaps and priorities into transparent executive action and investment choices.",
+      "inputs": [
+        "Validated Discover evidence",
+        "Approved assessment results and confidence",
+        "Gap and risk records",
+        "Dependencies, constraints and investment assumptions"
+      ],
+      "outputs": [
+        "Executive Recommendations",
+        "Traceability references",
+        "Named actions and owners",
+        "Decision or approval record"
+      ],
+      "relatedAssessments": [
+        "Enterprise AI Readiness",
+        "Data Readiness",
+        "Enterprise Architecture Assessment",
+        "Cloud Readiness",
+        "Automation Maturity",
+        "Skills & Workforce Assessment"
+      ],
+      "relatedEvidence": [
+        "Automation Landscape",
+        "Infrastructure & Hosting",
+        "Cloud Platforms",
+        "Identity & Access Management"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Assess Readiness",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case"
+      ],
+      "structure": [
+        "Executive purpose and decision required",
+        "Evidence and confidence summary",
+        "Assessment results",
+        "Gaps, risks and dependencies",
+        "Recommendations and prioritisation",
+        "Roadmap and investment considerations",
+        "Decision, conditions and approvals"
+      ],
+      "template": "/downloads/readiness/executive-recommendations.md"
+    },
+    {
+      "id": "RDY-009",
+      "slug": "90-day-roadmap",
+      "name": "90 Day Roadmap",
+      "type": "Roadmap",
+      "owner": "Programme Director",
+      "approval": "CIO / CTO",
+      "purpose": "Provide a governed 90 day roadmap that supports the Executive Readiness Decision.",
+      "value": "Turns evidence, assessment findings, gaps and priorities into transparent executive action and investment choices.",
+      "inputs": [
+        "Validated Discover evidence",
+        "Approved assessment results and confidence",
+        "Gap and risk records",
+        "Dependencies, constraints and investment assumptions"
+      ],
+      "outputs": [
+        "90 Day Roadmap",
+        "Traceability references",
+        "Named actions and owners",
+        "Decision or approval record"
+      ],
+      "relatedAssessments": [
+        "Enterprise AI Readiness",
+        "Data Readiness",
+        "Enterprise Architecture Assessment",
+        "Cloud Readiness",
+        "Automation Maturity",
+        "Skills & Workforce Assessment"
+      ],
+      "relatedEvidence": [
+        "Infrastructure & Hosting",
+        "Cloud Platforms",
+        "Identity & Access Management",
+        "Cybersecurity"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Assess Readiness",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case"
+      ],
+      "structure": [
+        "Executive purpose and decision required",
+        "Evidence and confidence summary",
+        "Assessment results",
+        "Gaps, risks and dependencies",
+        "Recommendations and prioritisation",
+        "Roadmap and investment considerations",
+        "Decision, conditions and approvals"
+      ],
+      "template": "/downloads/readiness/90-day-roadmap.md"
+    },
+    {
+      "id": "RDY-010",
+      "slug": "6-month-roadmap",
+      "name": "6 Month Roadmap",
+      "type": "Roadmap",
+      "owner": "Programme Director",
+      "approval": "CIO / CTO",
+      "purpose": "Provide a governed 6 month roadmap that supports the Executive Readiness Decision.",
+      "value": "Turns evidence, assessment findings, gaps and priorities into transparent executive action and investment choices.",
+      "inputs": [
+        "Validated Discover evidence",
+        "Approved assessment results and confidence",
+        "Gap and risk records",
+        "Dependencies, constraints and investment assumptions"
+      ],
+      "outputs": [
+        "6 Month Roadmap",
+        "Traceability references",
+        "Named actions and owners",
+        "Decision or approval record"
+      ],
+      "relatedAssessments": [
+        "Enterprise AI Readiness",
+        "Data Readiness",
+        "Enterprise Architecture Assessment",
+        "Cloud Readiness",
+        "Automation Maturity",
+        "Skills & Workforce Assessment"
+      ],
+      "relatedEvidence": [
+        "Cloud Platforms",
+        "Identity & Access Management",
+        "Cybersecurity",
+        "Integration & APIs"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Assess Readiness",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case"
+      ],
+      "structure": [
+        "Executive purpose and decision required",
+        "Evidence and confidence summary",
+        "Assessment results",
+        "Gaps, risks and dependencies",
+        "Recommendations and prioritisation",
+        "Roadmap and investment considerations",
+        "Decision, conditions and approvals"
+      ],
+      "template": "/downloads/readiness/6-month-roadmap.md"
+    },
+    {
+      "id": "RDY-011",
+      "slug": "12-month-roadmap",
+      "name": "12 Month Roadmap",
+      "type": "Roadmap",
+      "owner": "Programme Director",
+      "approval": "Executive Sponsor",
+      "purpose": "Provide a governed 12 month roadmap that supports the Executive Readiness Decision.",
+      "value": "Turns evidence, assessment findings, gaps and priorities into transparent executive action and investment choices.",
+      "inputs": [
+        "Validated Discover evidence",
+        "Approved assessment results and confidence",
+        "Gap and risk records",
+        "Dependencies, constraints and investment assumptions"
+      ],
+      "outputs": [
+        "12 Month Roadmap",
+        "Traceability references",
+        "Named actions and owners",
+        "Decision or approval record"
+      ],
+      "relatedAssessments": [
+        "Enterprise AI Readiness",
+        "Data Readiness",
+        "Enterprise Architecture Assessment",
+        "Cloud Readiness",
+        "Automation Maturity",
+        "Skills & Workforce Assessment"
+      ],
+      "relatedEvidence": [
+        "Business Strategy & Objectives",
+        "Business Capabilities",
+        "Business Processes",
+        "Organisational Structure"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Assess Readiness",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case"
+      ],
+      "structure": [
+        "Executive purpose and decision required",
+        "Evidence and confidence summary",
+        "Assessment results",
+        "Gaps, risks and dependencies",
+        "Recommendations and prioritisation",
+        "Roadmap and investment considerations",
+        "Decision, conditions and approvals"
+      ],
+      "template": "/downloads/readiness/12-month-roadmap.md"
+    },
+    {
+      "id": "RDY-012",
+      "slug": "24-month-roadmap",
+      "name": "24 Month Roadmap",
+      "type": "Roadmap",
+      "owner": "Programme Director",
+      "approval": "Executive Sponsor",
+      "purpose": "Provide a governed 24 month roadmap that supports the Executive Readiness Decision.",
+      "value": "Turns evidence, assessment findings, gaps and priorities into transparent executive action and investment choices.",
+      "inputs": [
+        "Validated Discover evidence",
+        "Approved assessment results and confidence",
+        "Gap and risk records",
+        "Dependencies, constraints and investment assumptions"
+      ],
+      "outputs": [
+        "24 Month Roadmap",
+        "Traceability references",
+        "Named actions and owners",
+        "Decision or approval record"
+      ],
+      "relatedAssessments": [
+        "Enterprise AI Readiness",
+        "Data Readiness",
+        "Enterprise Architecture Assessment",
+        "Cloud Readiness",
+        "Automation Maturity",
+        "Skills & Workforce Assessment"
+      ],
+      "relatedEvidence": [
+        "Business Capabilities",
+        "Business Processes",
+        "Organisational Structure",
+        "Applications & Systems"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Assess Readiness",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case"
+      ],
+      "structure": [
+        "Executive purpose and decision required",
+        "Evidence and confidence summary",
+        "Assessment results",
+        "Gaps, risks and dependencies",
+        "Recommendations and prioritisation",
+        "Roadmap and investment considerations",
+        "Decision, conditions and approvals"
+      ],
+      "template": "/downloads/readiness/24-month-roadmap.md"
+    },
+    {
+      "id": "RDY-013",
+      "slug": "investment-considerations",
+      "name": "Investment Considerations",
+      "type": "Investment analysis",
+      "owner": "Finance Lead",
+      "approval": "Executive Sponsor",
+      "purpose": "Provide a governed investment considerations that supports the Executive Readiness Decision.",
+      "value": "Turns evidence, assessment findings, gaps and priorities into transparent executive action and investment choices.",
+      "inputs": [
+        "Validated Discover evidence",
+        "Approved assessment results and confidence",
+        "Gap and risk records",
+        "Dependencies, constraints and investment assumptions"
+      ],
+      "outputs": [
+        "Investment Considerations",
+        "Traceability references",
+        "Named actions and owners",
+        "Decision or approval record"
+      ],
+      "relatedAssessments": [
+        "Enterprise AI Readiness",
+        "Data Readiness",
+        "Enterprise Architecture Assessment",
+        "Cloud Readiness",
+        "Automation Maturity",
+        "Skills & Workforce Assessment"
+      ],
+      "relatedEvidence": [
+        "Business Processes",
+        "Organisational Structure",
+        "Applications & Systems",
+        "Data & Information"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Assess Readiness",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case"
+      ],
+      "structure": [
+        "Executive purpose and decision required",
+        "Evidence and confidence summary",
+        "Assessment results",
+        "Gaps, risks and dependencies",
+        "Recommendations and prioritisation",
+        "Roadmap and investment considerations",
+        "Decision, conditions and approvals"
+      ],
+      "template": "/downloads/readiness/investment-considerations.md"
+    },
+    {
+      "id": "RDY-014",
+      "slug": "transformation-readiness-scorecard",
+      "name": "Transformation Readiness Scorecard",
+      "type": "Scorecard",
+      "owner": "Methodology Lead",
+      "approval": "CIO / CTO",
+      "purpose": "Provide a governed transformation readiness scorecard that supports the Executive Readiness Decision.",
+      "value": "Turns evidence, assessment findings, gaps and priorities into transparent executive action and investment choices.",
+      "inputs": [
+        "Validated Discover evidence",
+        "Approved assessment results and confidence",
+        "Gap and risk records",
+        "Dependencies, constraints and investment assumptions"
+      ],
+      "outputs": [
+        "Transformation Readiness Scorecard",
+        "Traceability references",
+        "Named actions and owners",
+        "Decision or approval record"
+      ],
+      "relatedAssessments": [
+        "Enterprise AI Readiness",
+        "Data Readiness",
+        "Enterprise Architecture Assessment",
+        "Cloud Readiness",
+        "Automation Maturity",
+        "Skills & Workforce Assessment"
+      ],
+      "relatedEvidence": [
+        "Organisational Structure",
+        "Applications & Systems",
+        "Data & Information",
+        "AI Landscape"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Assess Readiness",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case"
+      ],
+      "structure": [
+        "Executive purpose and decision required",
+        "Evidence and confidence summary",
+        "Assessment results",
+        "Gaps, risks and dependencies",
+        "Recommendations and prioritisation",
+        "Roadmap and investment considerations",
+        "Decision, conditions and approvals"
+      ],
+      "template": "/downloads/readiness/transformation-readiness-scorecard.md"
+    },
+    {
+      "id": "RDY-015",
+      "slug": "executive-approval-pack",
+      "name": "Executive Approval Pack",
+      "type": "Approval pack",
+      "owner": "Programme Director",
+      "approval": "Executive Sponsor",
+      "purpose": "Provide a governed executive approval pack that supports the Executive Readiness Decision.",
+      "value": "Turns evidence, assessment findings, gaps and priorities into transparent executive action and investment choices.",
+      "inputs": [
+        "Validated Discover evidence",
+        "Approved assessment results and confidence",
+        "Gap and risk records",
+        "Dependencies, constraints and investment assumptions"
+      ],
+      "outputs": [
+        "Executive Approval Pack",
+        "Traceability references",
+        "Named actions and owners",
+        "Decision or approval record"
+      ],
+      "relatedAssessments": [
+        "Enterprise AI Readiness",
+        "Data Readiness",
+        "Enterprise Architecture Assessment",
+        "Cloud Readiness",
+        "Automation Maturity",
+        "Skills & Workforce Assessment"
+      ],
+      "relatedEvidence": [
+        "Applications & Systems",
+        "Data & Information",
+        "AI Landscape",
+        "Automation Landscape"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Assess Readiness",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case"
+      ],
+      "structure": [
+        "Executive purpose and decision required",
+        "Evidence and confidence summary",
+        "Assessment results",
+        "Gaps, risks and dependencies",
+        "Recommendations and prioritisation",
+        "Roadmap and investment considerations",
+        "Decision, conditions and approvals"
+      ],
+      "template": "/downloads/readiness/executive-approval-pack.md"
+    },
+    {
+      "id": "RDY-016",
+      "slug": "decision-pack",
+      "name": "Decision Pack",
+      "type": "Decision pack",
+      "owner": "Programme Director",
+      "approval": "Executive Steering Committee",
+      "purpose": "Provide a governed decision pack that supports the Executive Readiness Decision.",
+      "value": "Turns evidence, assessment findings, gaps and priorities into transparent executive action and investment choices.",
+      "inputs": [
+        "Validated Discover evidence",
+        "Approved assessment results and confidence",
+        "Gap and risk records",
+        "Dependencies, constraints and investment assumptions"
+      ],
+      "outputs": [
+        "Decision Pack",
+        "Traceability references",
+        "Named actions and owners",
+        "Decision or approval record"
+      ],
+      "relatedAssessments": [
+        "Enterprise AI Readiness",
+        "Data Readiness",
+        "Enterprise Architecture Assessment",
+        "Cloud Readiness",
+        "Automation Maturity",
+        "Skills & Workforce Assessment"
+      ],
+      "relatedEvidence": [
+        "Data & Information",
+        "AI Landscape",
+        "Automation Landscape",
+        "Infrastructure & Hosting"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Assess Readiness",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case"
+      ],
+      "structure": [
+        "Executive purpose and decision required",
+        "Evidence and confidence summary",
+        "Assessment results",
+        "Gaps, risks and dependencies",
+        "Recommendations and prioritisation",
+        "Roadmap and investment considerations",
+        "Decision, conditions and approvals"
+      ],
+      "template": "/downloads/readiness/decision-pack.md"
+    },
+    {
+      "id": "RDY-017",
+      "slug": "programme-recommendation",
+      "name": "Programme Recommendation",
+      "type": "Recommendation",
+      "owner": "Programme Director",
+      "approval": "Executive Sponsor",
+      "purpose": "Provide a governed programme recommendation that supports the Executive Readiness Decision.",
+      "value": "Turns evidence, assessment findings, gaps and priorities into transparent executive action and investment choices.",
+      "inputs": [
+        "Validated Discover evidence",
+        "Approved assessment results and confidence",
+        "Gap and risk records",
+        "Dependencies, constraints and investment assumptions"
+      ],
+      "outputs": [
+        "Programme Recommendation",
+        "Traceability references",
+        "Named actions and owners",
+        "Decision or approval record"
+      ],
+      "relatedAssessments": [
+        "Enterprise AI Readiness",
+        "Data Readiness",
+        "Enterprise Architecture Assessment",
+        "Cloud Readiness",
+        "Automation Maturity",
+        "Skills & Workforce Assessment"
+      ],
+      "relatedEvidence": [
+        "AI Landscape",
+        "Automation Landscape",
+        "Infrastructure & Hosting",
+        "Cloud Platforms"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Assess Readiness",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case"
+      ],
+      "structure": [
+        "Executive purpose and decision required",
+        "Evidence and confidence summary",
+        "Assessment results",
+        "Gaps, risks and dependencies",
+        "Recommendations and prioritisation",
+        "Roadmap and investment considerations",
+        "Decision, conditions and approvals"
+      ],
+      "template": "/downloads/readiness/programme-recommendation.md"
+    }
+  ],
+  "gapModel": {
+    "fields": [
+      "Current State",
+      "Target State",
+      "Business Impact",
+      "Risk",
+      "Priority",
+      "Estimated Effort",
+      "Dependencies",
+      "Owner",
+      "Target Resolution Stage",
+      "Related Capability",
+      "Related Deliverables",
+      "Recommendation"
+    ],
+    "statuses": [
+      "Identified",
+      "Validated",
+      "Approved",
+      "In progress",
+      "Blocked",
+      "Resolved",
+      "Accepted"
+    ],
+    "rules": [
+      "Every gap requires traceable evidence and assessment context",
+      "Priority cannot override a critical regulatory or safety constraint",
+      "Effort is a range until delivery planning validates it",
+      "Closure requires new evidence and accountable approval"
+    ]
+  },
+  "prioritisation": {
+    "dimensions": [
+      "Business Value",
+      "Risk Reduction",
+      "Regulatory Impact",
+      "Implementation Complexity",
+      "Dependencies",
+      "Cost",
+      "Time",
+      "Strategic Importance",
+      "Executive Visibility",
+      "Quick Wins",
+      "Long Term Investment"
+    ],
+    "scale": "1–5 directional rating per dimension; confidence recorded separately",
+    "method": "Use facilitated judgement and documented rationale. Do not calculate false precision from incomparable dimensions.",
+    "outcomes": [
+      "Immediate containment",
+      "90-day enabling action",
+      "6-month capability improvement",
+      "12-month structural investment",
+      "24-month enterprise optimisation"
+    ]
+  },
+  "decisions": [
+    {
+      "name": "Proceed",
+      "meaning": "Evidence supports progression without material readiness conditions.",
+      "nextStage": "Define Strategy",
+      "required": [
+        "Business Justification",
+        "Risk",
+        "Required Actions",
+        "Executive Recommendation",
+        "Next Stage"
+      ]
+    },
+    {
+      "name": "Proceed with Conditions",
+      "meaning": "Progression is justified if named conditions, owners and deadlines remain under executive oversight.",
+      "nextStage": "Define Strategy with controlled conditions",
+      "required": [
+        "Business Justification",
+        "Risk",
+        "Required Actions",
+        "Executive Recommendation",
+        "Next Stage"
+      ]
+    },
+    {
+      "name": "Delay",
+      "meaning": "Critical gaps must be resolved before strategy work can proceed reliably.",
+      "nextStage": "Remain in Assess Readiness",
+      "required": [
+        "Business Justification",
+        "Risk",
+        "Required Actions",
+        "Executive Recommendation",
+        "Next Stage"
+      ]
+    },
+    {
+      "name": "Do Not Proceed",
+      "meaning": "Risk, value, feasibility or strategic alignment does not justify continued transformation.",
+      "nextStage": "Close or reframe the programme",
+      "required": [
+        "Business Justification",
+        "Risk",
+        "Required Actions",
+        "Executive Recommendation",
+        "Next Stage"
+      ]
+    }
+  ],
+  "prompts": [
+    {
+      "id": "RAP-01",
+      "name": "Generate Gap Analysis",
+      "instruction": "Generate Gap Analysis from verified discovery evidence, assessment results, gaps and confidence. Mark assumptions and require human approval."
+    },
+    {
+      "id": "RAP-02",
+      "name": "Generate Executive Summary",
+      "instruction": "Generate Executive Summary from verified discovery evidence, assessment results, gaps and confidence. Mark assumptions and require human approval."
+    },
+    {
+      "id": "RAP-03",
+      "name": "Generate Recommendations",
+      "instruction": "Generate Recommendations from verified discovery evidence, assessment results, gaps and confidence. Mark assumptions and require human approval."
+    },
+    {
+      "id": "RAP-04",
+      "name": "Generate Improvement Roadmap",
+      "instruction": "Generate Improvement Roadmap from verified discovery evidence, assessment results, gaps and confidence. Mark assumptions and require human approval."
+    },
+    {
+      "id": "RAP-05",
+      "name": "Generate Executive Decision Paper",
+      "instruction": "Generate Executive Decision Paper from verified discovery evidence, assessment results, gaps and confidence. Mark assumptions and require human approval."
+    },
+    {
+      "id": "RAP-06",
+      "name": "Generate Investment Justification",
+      "instruction": "Generate Investment Justification from verified discovery evidence, assessment results, gaps and confidence. Mark assumptions and require human approval."
+    },
+    {
+      "id": "RAP-07",
+      "name": "Generate Readiness Report",
+      "instruction": "Generate Readiness Report from verified discovery evidence, assessment results, gaps and confidence. Mark assumptions and require human approval."
+    },
+    {
+      "id": "RAP-08",
+      "name": "Generate Executive Presentation",
+      "instruction": "Generate Executive Presentation from verified discovery evidence, assessment results, gaps and confidence. Mark assumptions and require human approval."
+    }
+  ],
+  "traceability": [
+    "Discovery Evidence",
+    "Assessment",
+    "Gap",
+    "Recommendation",
+    "Roadmap",
+    "Strategy"
+  ],
+  "visualisations": [
+    {
+      "id": "VIS-1",
+      "slug": "capability-heat-map",
+      "name": "Capability Heat Map",
+      "purpose": "Compare capability readiness and evidence confidence."
+    },
+    {
+      "id": "VIS-2",
+      "slug": "risk-heat-map",
+      "name": "Risk Heat Map",
+      "purpose": "Plot likelihood and impact while retaining named risk ownership."
+    },
+    {
+      "id": "VIS-3",
+      "slug": "readiness-heat-map",
+      "name": "Readiness Heat Map",
+      "purpose": "Compare workstream status without hiding critical blockers."
+    },
+    {
+      "id": "VIS-4",
+      "slug": "business-impact-matrix",
+      "name": "Business Impact Matrix",
+      "purpose": "Compare business impact and urgency."
+    },
+    {
+      "id": "VIS-5",
+      "slug": "effort-vs-value-matrix",
+      "name": "Effort vs Value Matrix",
+      "purpose": "Separate quick wins, enabling work and long-term investment."
+    },
+    {
+      "id": "VIS-6",
+      "slug": "dependency-matrix",
+      "name": "Dependency Matrix",
+      "purpose": "Expose sequencing and cross-workstream dependencies."
+    },
+    {
+      "id": "VIS-7",
+      "slug": "roadmap-timeline",
+      "name": "Roadmap Timeline",
+      "purpose": "Sequence 90-day, 6-month, 12-month and 24-month horizons."
+    }
+  ]
+}

@@ -1,0 +1,1050 @@
+{
+  "version": "first-draft-2026-07-29",
+  "stages": [
+    {
+      "number": 3,
+      "ordinal": 4,
+      "slug": "stage-3-define-strategy",
+      "name": "Define Strategy",
+      "category": "Direction and value",
+      "intro": "Convert readiness evidence into an enterprise ambition, operating model and sequenced roadmap.",
+      "executiveQuestion": "What will AI change for the enterprise, how much ambition is justified, and which outcomes will leadership own?",
+      "output": "Enterprise AI Strategy Decision Pack",
+      "gate": "Strategy approved",
+      "workspaces": [
+        "Ambition and measurable outcomes",
+        "Operating model and capabilities",
+        "Technology, data and sourcing direction",
+        "Investment horizons and roadmap"
+      ],
+      "inputs": [
+        "Readiness disposition and remediation priorities",
+        "Current-state baseline and enterprise strategy",
+        "AI principles, risk appetite and funding parameters"
+      ],
+      "deliverables": [
+        "Enterprise AI strategy",
+        "Target operating model outline",
+        "Strategic capability roadmap",
+        "Strategy assumptions and decision log"
+      ],
+      "risks": [
+        "Technology-led strategy disconnected from outcomes",
+        "Aspirational targets unsupported by readiness evidence",
+        "Unclear build, buy and partner boundaries"
+      ],
+      "measures": [
+        "Percentage of outcomes with baselines and owners",
+        "Readiness conditions reflected in milestones",
+        "Material trade-offs explicitly approved"
+      ],
+      "questions": [
+        "What will AI change for the enterprise, how much ambition is justified, and which outcomes will leadership own?",
+        "What evidence is sufficient to approve Enterprise AI Strategy Decision Pack?",
+        "Which trade-offs and residual risks must be made explicit?",
+        "What conditions would require this stage to pause or return to earlier work?"
+      ],
+      "roles": [
+        "Executive Sponsor — owns ambition",
+        "Strategy Lead — integrates direction",
+        "Enterprise Architect — tests feasibility",
+        "Finance and Risk — challenge value"
+      ],
+      "links": [
+        [
+          "Knowledge Centre",
+          "/pages/knowledge-discovery.html"
+        ],
+        [
+          "Deliverable Library",
+          "/deliverables/"
+        ]
+      ],
+      "why": "Readiness identifies what the enterprise can support; strategy decides what it will pursue and deliberately decline.",
+      "separation": "Unlike Assess Readiness, this stage makes forward-looking choices about ambition, operating model and investment horizons.",
+      "prevents": "Prevents disconnected pilots, technology-first commitments and targets that cannot be supported by evidence.",
+      "activities": [
+        "Translate readiness gaps into explicit strategic choices",
+        "Set outcome owners, baseline needs and strategic measures",
+        "Choose build, buy and partner boundaries",
+        "Sequence capability, governance and investment horizons"
+      ],
+      "governance": [
+        "Record strategic assumptions with review dates",
+        "Require one accountable executive for each outcome",
+        "Escalate choices outside approved risk appetite"
+      ],
+      "dependencies": [
+        "Readiness conditions constrain the roadmap",
+        "Governance converts principles into enforceable controls",
+        "Opportunity selection applies the approved outcomes"
+      ],
+      "entry": [
+        "Readiness disposition is approved",
+        "Material evidence gaps have resolution owners",
+        "Enterprise priorities and constraints are current"
+      ],
+      "exit": [
+        "Strategic choices and rejected alternatives are recorded",
+        "Outcome ownership and measurement approach are approved",
+        "Roadmap horizons are authorised for portfolio planning"
+      ],
+      "guidance": "Use AI to compare documented strategic options and expose contradictory assumptions. Do not use generated market forecasts as enterprise evidence.",
+      "configuration": [
+        "Accountable executive — organisation to confirm",
+        "Target outcomes — define with business owners",
+        "Strategic review cadence — configure through enterprise planning"
+      ]
+    },
+    {
+      "number": 4,
+      "ordinal": 5,
+      "slug": "stage-4-establish-governance",
+      "name": "Establish Governance",
+      "category": "Control and accountability",
+      "intro": "Turn principles and risk appetite into usable decision rights, policies, controls and assurance.",
+      "executiveQuestion": "Can every material AI decision be made by the right authority using sufficient evidence and enforceable controls?",
+      "output": "Governance and Control Framework",
+      "gate": "Governance approved",
+      "workspaces": [
+        "Decision rights and forums",
+        "Policy, standards and controls",
+        "AI inventory, classification and intake",
+        "Assurance, exceptions and regulatory traceability"
+      ],
+      "inputs": [
+        "Approved strategy and AI principles",
+        "Risk appetite and regulatory assessment",
+        "Existing policies and assurance model"
+      ],
+      "deliverables": [
+        "AI governance charter",
+        "AI policy and control framework",
+        "Classification and intake standard",
+        "Assurance and exception plan"
+      ],
+      "risks": [
+        "Governance isolated from delivery workflows",
+        "Controls applied uniformly regardless of impact",
+        "Advisory forums without decision authority"
+      ],
+      "measures": [
+        "Initiatives classified before investment",
+        "Control obligations with named owners",
+        "Overdue exceptions and assurance actions"
+      ],
+      "questions": [
+        "Can every material AI decision be made by the right authority using sufficient evidence and enforceable controls?",
+        "What evidence is sufficient to approve Governance and Control Framework?",
+        "Which trade-offs and residual risks must be made explicit?",
+        "What conditions would require this stage to pause or return to earlier work?"
+      ],
+      "roles": [
+        "Risk Executive — owns framework",
+        "Governance Lead — operates the model",
+        "Legal, Privacy and Security — own controls",
+        "Business and Technology Owners — accept decisions"
+      ],
+      "links": [
+        [
+          "Knowledge Centre",
+          "/pages/knowledge-discovery.html"
+        ],
+        [
+          "Deliverable Library",
+          "/deliverables/"
+        ]
+      ],
+      "why": "A strategy cannot be delivered responsibly until decision rights and control evidence are embedded in normal work.",
+      "separation": "Unlike Define Strategy, this stage turns direction and risk appetite into operating rules, authorities and assurance paths.",
+      "prevents": "Prevents unowned AI decisions, inconsistent controls and exceptions that remain invisible until release.",
+      "activities": [
+        "Map AI decisions to accountable authorities",
+        "Define proportionate controls by impact classification",
+        "Establish intake, inventory and exception workflows",
+        "Map obligations to evidence and assurance owners"
+      ],
+      "governance": [
+        "Maintain one authoritative AI inventory",
+        "Require independent challenge for high-impact uses",
+        "Time-limit exceptions and document compensating controls"
+      ],
+      "dependencies": [
+        "Strategy defines boundaries and desired outcomes",
+        "Architecture must implement control requirements",
+        "Operations supplies continuous assurance evidence"
+      ],
+      "entry": [
+        "Strategy and risk appetite are approved",
+        "Existing policy and assurance forums are mapped",
+        "Potentially applicable obligations are identified"
+      ],
+      "exit": [
+        "Decision rights and escalation paths are approved",
+        "Control owners and evidence requirements are assigned",
+        "Classification, intake and exception workflows are usable"
+      ],
+      "guidance": "AI may assist with mapping documented obligations to controls. Qualified owners must confirm applicability and legal meaning.",
+      "configuration": [
+        "Accountable governance authority — organisation to confirm",
+        "Applicable regulation — select by jurisdiction and industry",
+        "Approval thresholds — configure to delegated authority"
+      ]
+    },
+    {
+      "number": 5,
+      "ordinal": 6,
+      "slug": "stage-5-prioritise-opportunities",
+      "name": "Identify and Prioritise Opportunities",
+      "category": "Portfolio choices",
+      "intro": "Build a governed portfolio balancing strategic value, feasibility, adoption effort, risk and learning.",
+      "executiveQuestion": "Which opportunities deserve scarce investment now, which should be explored, and which should be stopped?",
+      "output": "Prioritised Opportunity Portfolio",
+      "gate": "Portfolio approved",
+      "workspaces": [
+        "Problem and opportunity discovery",
+        "Value, feasibility and risk scoring",
+        "Portfolio balance and sequencing",
+        "Experiment, defer and stop decisions"
+      ],
+      "inputs": [
+        "Approved strategy outcomes",
+        "Readiness findings and governance rules",
+        "Discovery opportunity and process evidence"
+      ],
+      "deliverables": [
+        "Opportunity briefs",
+        "Prioritisation model and scored backlog",
+        "Portfolio dependency map",
+        "Portfolio decision record"
+      ],
+      "risks": [
+        "Sponsorship overriding comparative evidence",
+        "Duplicate use cases fragmenting capability",
+        "Adoption cost or affected people ignored"
+      ],
+      "measures": [
+        "Coverage of strategic outcomes",
+        "Opportunities with evidenced baselines",
+        "Duplication removed or consolidated"
+      ],
+      "questions": [
+        "Which opportunities deserve scarce investment now, which should be explored, and which should be stopped?",
+        "What evidence is sufficient to approve Prioritised Opportunity Portfolio?",
+        "Which trade-offs and residual risks must be made explicit?",
+        "What conditions would require this stage to pause or return to earlier work?"
+      ],
+      "roles": [
+        "Business Owners — own problems",
+        "Portfolio Lead — maintains comparison",
+        "Architecture and Data — assess feasibility",
+        "Risk, Finance and Change — challenge"
+      ],
+      "links": [
+        [
+          "Knowledge Centre",
+          "/pages/knowledge-discovery.html"
+        ],
+        [
+          "Deliverable Library",
+          "/deliverables/"
+        ]
+      ],
+      "why": "Enterprise value depends on choosing a coherent portfolio, not approving every plausible use case independently.",
+      "separation": "Unlike Establish Governance, this stage applies controls and strategy to compare business opportunities and allocate attention.",
+      "prevents": "Prevents duplicated use cases, sponsor-driven prioritisation and portfolios that ignore adoption or shared dependencies.",
+      "activities": [
+        "Frame business problems without prescribing a model or vendor",
+        "Assess value, feasibility, data, risk and workforce impact",
+        "Consolidate overlapping opportunities around shared capability",
+        "Record select, explore, defer and stop decisions"
+      ],
+      "governance": [
+        "Use the same published criteria across candidates",
+        "Separate evidence confidence from scoring preference",
+        "Re-score when scope, dependency or risk changes"
+      ],
+      "dependencies": [
+        "Strategy supplies outcomes and portfolio principles",
+        "Governance supplies classification and review thresholds",
+        "Business cases validate shortlisted investments"
+      ],
+      "entry": [
+        "Opportunity owners and affected groups are identified",
+        "Prioritisation criteria are approved",
+        "Evidence confidence can be recorded"
+      ],
+      "exit": [
+        "Portfolio choices and rationale are approved",
+        "Shortlisted opportunities have accountable sponsors",
+        "Deferred and rejected opportunities remain traceable"
+      ],
+      "guidance": "Use AI to cluster similar opportunity statements and test scoring consistency; business owners retain responsibility for value and impact.",
+      "configuration": [
+        "Portfolio authority — organisation to confirm",
+        "Scoring weights — configure to strategic priorities",
+        "Capacity envelope — confirm through portfolio planning"
+      ]
+    },
+    {
+      "number": 6,
+      "ordinal": 7,
+      "slug": "stage-6-build-business-case",
+      "name": "Build the Business Case",
+      "category": "Investment decision",
+      "intro": "Make value, lifecycle cost, risk, uncertainty and delivery commitment transparent.",
+      "executiveQuestion": "Is the expected value worth the total enterprise commitment and residual risk?",
+      "output": "Enterprise AI Business Case",
+      "gate": "Investment approved",
+      "workspaces": [
+        "Benefits and baseline",
+        "Lifecycle cost and funding",
+        "Options, uncertainty and sensitivity",
+        "Investment governance and value realisation"
+      ],
+      "inputs": [
+        "Prioritised opportunity brief",
+        "Architecture options and vendor evidence",
+        "Risk classification and cost baseline"
+      ],
+      "deliverables": [
+        "Enterprise AI business case",
+        "Benefits realisation plan",
+        "Cost and sensitivity model",
+        "Investment decision record"
+      ],
+      "risks": [
+        "Benefits without operational baselines",
+        "Run, assurance and change costs omitted",
+        "Optimistic adoption or performance assumptions"
+      ],
+      "measures": [
+        "Benefits with validated baselines",
+        "Cost confidence by category",
+        "Conditions attached to funding"
+      ],
+      "questions": [
+        "Is the expected value worth the total enterprise commitment and residual risk?",
+        "What evidence is sufficient to approve Enterprise AI Business Case?",
+        "Which trade-offs and residual risks must be made explicit?",
+        "What conditions would require this stage to pause or return to earlier work?"
+      ],
+      "roles": [
+        "Business Sponsor — owns benefits",
+        "Finance Lead — validates economics",
+        "Delivery and Architecture — own estimates",
+        "Risk Executive — confirms exposure"
+      ],
+      "links": [
+        [
+          "Knowledge Centre",
+          "/pages/knowledge-discovery.html"
+        ],
+        [
+          "Deliverable Library",
+          "/deliverables/"
+        ]
+      ],
+      "why": "A prioritised opportunity is not yet an investable commitment; leadership needs transparent economics and uncertainty.",
+      "separation": "Unlike opportunity prioritisation, this stage validates the full lifecycle commitment for a specific investment decision.",
+      "prevents": "Prevents unfunded operating obligations, double-counted benefits and optimistic cases built from vendor claims.",
+      "activities": [
+        "Confirm benefit baselines, owners and attribution",
+        "Estimate build, run, data, assurance and change costs",
+        "Compare viable options and the do-nothing consequence",
+        "Define funding tranches and evidence-based continuation triggers"
+      ],
+      "governance": [
+        "Use ranges and confidence rather than false precision",
+        "Validate benefits independently from suppliers",
+        "Tie subsequent funding to evidence and decision triggers"
+      ],
+      "dependencies": [
+        "Prioritised briefs define the business problem",
+        "Architecture options refine feasibility and cost",
+        "Operations later reports realised benefits and unit cost"
+      ],
+      "entry": [
+        "Opportunity priority and sponsor are confirmed",
+        "A credible baseline and viable options exist",
+        "Material constraints and control obligations are known"
+      ],
+      "exit": [
+        "Benefits, costs and sensitivities are reviewable",
+        "Funding, benefit and residual-risk owners are named",
+        "Investment decision and release conditions are recorded"
+      ],
+      "guidance": "AI can identify missing cost categories and compare documented scenarios. Finance must validate source figures, attribution and sensitivity assumptions.",
+      "configuration": [
+        "Approval threshold — configure to delegated authority",
+        "Target benefit — define during business-case approval",
+        "Funding release conditions — organisation to confirm"
+      ]
+    },
+    {
+      "number": 7,
+      "ordinal": 8,
+      "slug": "stage-7-design-target-architecture",
+      "name": "Design the Target Architecture",
+      "category": "Solution and enterprise design",
+      "intro": "Translate strategy, investment and controls into an implementable, secure and operable target state.",
+      "executiveQuestion": "Will the design deliver the outcome, integrate with the enterprise and remain operable over its full life?",
+      "output": "Target Architecture Decision Pack",
+      "gate": "Architecture approved",
+      "workspaces": [
+        "Business and information architecture",
+        "Application, integration and AI platform design",
+        "Security, privacy and control architecture",
+        "Operations, resilience and vendor exit"
+      ],
+      "inputs": [
+        "Approved business case and strategy",
+        "Governance controls and classification",
+        "Current-state architecture and standards"
+      ],
+      "deliverables": [
+        "Target architecture",
+        "Architecture decision records",
+        "Data and integration design",
+        "Control, resilience and transition design"
+      ],
+      "risks": [
+        "Prototype patterns becoming production design",
+        "Operational or human workflow omitted",
+        "Vendor coupling without exit provisions"
+      ],
+      "measures": [
+        "Controls traced to components",
+        "Critical decisions recorded",
+        "Unresolved architecture risks"
+      ],
+      "questions": [
+        "Will the design deliver the outcome, integrate with the enterprise and remain operable over its full life?",
+        "What evidence is sufficient to approve Target Architecture Decision Pack?",
+        "Which trade-offs and residual risks must be made explicit?",
+        "What conditions would require this stage to pause or return to earlier work?"
+      ],
+      "roles": [
+        "Enterprise Architect — owns coherence",
+        "Solution Architect — owns design",
+        "Security, Data and Privacy — own domains",
+        "Service Owner — validates operability"
+      ],
+      "links": [
+        [
+          "Knowledge Centre",
+          "/pages/knowledge-discovery.html"
+        ],
+        [
+          "Deliverable Library",
+          "/deliverables/"
+        ]
+      ],
+      "why": "Approved value and controls must be translated into a coherent design before delivery teams make irreversible choices.",
+      "separation": "Unlike the Business Case, this stage decides how capabilities, data, systems, models, controls and people fit together.",
+      "prevents": "Prevents prototypes becoming production architecture, hidden vendor lock-in and controls that cannot be tested.",
+      "activities": [
+        "Define target capabilities, boundaries and transition states",
+        "Select data, model, integration and human-oversight patterns",
+        "Threat-model the complete service and operating context",
+        "Record decisions, alternatives, exceptions and exit provisions"
+      ],
+      "governance": [
+        "Trace each mandatory control to a design component",
+        "Record vendor concentration and portability decisions",
+        "Route deviations through architecture authority"
+      ],
+      "dependencies": [
+        "Business case fixes the approved scope and value case",
+        "Governance defines mandatory controls",
+        "Implementation planning consumes approved decisions"
+      ],
+      "entry": [
+        "Investment scope and design authority are approved",
+        "Current-state dependencies are owned",
+        "Architecture principles and controls are available"
+      ],
+      "exit": [
+        "Target and transition architectures are approved",
+        "Material decisions and exceptions are recorded",
+        "The design is estimable, testable and operable"
+      ],
+      "guidance": "AI may compare approved patterns and check design completeness. Architects remain accountable for integration effects and threat assumptions.",
+      "configuration": [
+        "Architecture authority — organisation to confirm",
+        "Approved technology standards — select from enterprise catalogue",
+        "Resilience targets — define by service criticality"
+      ]
+    },
+    {
+      "number": 8,
+      "ordinal": 9,
+      "slug": "stage-8-plan-implementation",
+      "name": "Plan Implementation",
+      "category": "Integrated delivery planning",
+      "intro": "Create one realistic plan spanning technology, data, controls, testing, workforce change and transition.",
+      "executiveQuestion": "Is the organisation ready to commit people, funding and accountable ownership to a controlled delivery plan?",
+      "output": "Integrated Implementation Plan",
+      "gate": "Plan approved",
+      "workspaces": [
+        "Delivery scope and work breakdown",
+        "Resources, sourcing and environments",
+        "Test, assurance and release planning",
+        "Change, training and transition"
+      ],
+      "inputs": [
+        "Approved architecture and business case",
+        "Governance evidence requirements",
+        "Resource, procurement and change constraints"
+      ],
+      "deliverables": [
+        "Integrated implementation plan",
+        "Resource and sourcing plan",
+        "Test and assurance strategy",
+        "Change and transition plan"
+      ],
+      "risks": [
+        "Technical plan detached from adoption",
+        "Dependencies assumed rather than committed",
+        "Assurance compressed at the end"
+      ],
+      "measures": [
+        "Dependencies with committed owners",
+        "Evidence aligned to gate dates",
+        "Resource coverage for priority work"
+      ],
+      "questions": [
+        "Is the organisation ready to commit people, funding and accountable ownership to a controlled delivery plan?",
+        "What evidence is sufficient to approve Integrated Implementation Plan?",
+        "Which trade-offs and residual risks must be made explicit?",
+        "What conditions would require this stage to pause or return to earlier work?"
+      ],
+      "roles": [
+        "Programme Director — owns the plan",
+        "Delivery Leads — own increments",
+        "Change Lead — owns adoption",
+        "Service Owner — owns readiness"
+      ],
+      "links": [
+        [
+          "Knowledge Centre",
+          "/pages/knowledge-discovery.html"
+        ],
+        [
+          "Deliverable Library",
+          "/deliverables/"
+        ]
+      ],
+      "why": "An approved design still fails when technology, data, controls, change and transition are planned separately.",
+      "separation": "Unlike Target Architecture, this stage converts design decisions into an integrated, resourced and controlled delivery baseline.",
+      "prevents": "Prevents late assurance, uncommitted dependencies and technical delivery without adoption or service readiness.",
+      "activities": [
+        "Decompose the design into owned increments and milestones",
+        "Integrate data, control, test, change and transition work",
+        "Commit environments, procurement and specialist capacity",
+        "Define evidence gates, contingencies and change control"
+      ],
+      "governance": [
+        "Baseline scope, cost, schedule and benefits together",
+        "Include assurance work in the critical path",
+        "Escalate material variance through change authority"
+      ],
+      "dependencies": [
+        "Architecture provides approved components and constraints",
+        "Business case provides funding conditions",
+        "Build teams require committed access, data and environments"
+      ],
+      "entry": [
+        "Architecture and funding decisions are approved",
+        "Delivery and service owners accept accountability",
+        "Critical dependencies can be scheduled"
+      ],
+      "exit": [
+        "Integrated baseline is approved and resourced",
+        "Test, adoption and transition work is funded",
+        "Contingencies and decision points are explicit"
+      ],
+      "guidance": "AI can challenge plan completeness and summarise dependencies, but it must not invent estimates, commitments or resource availability.",
+      "configuration": [
+        "Programme authority — organisation to confirm",
+        "Schedule tolerance — configure through programme controls",
+        "Resource commitments — confirm with accountable functions"
+      ]
+    },
+    {
+      "number": 9,
+      "ordinal": 10,
+      "slug": "stage-9-build-integrate",
+      "name": "Build and Integrate",
+      "category": "Controlled delivery",
+      "intro": "Build and integrate the solution while preserving traceability from requirements and controls to evidence.",
+      "executiveQuestion": "Is delivery producing the approved solution with controlled change, secure engineering and evidence fit for validation?",
+      "output": "Build and Configuration Evidence",
+      "gate": "Build completion approved",
+      "workspaces": [
+        "Application and AI component build",
+        "Data and integration engineering",
+        "Security and control implementation",
+        "Configuration, documentation and release"
+      ],
+      "inputs": [
+        "Approved design and delivery plan",
+        "Controlled environments and access",
+        "Requirements and acceptance criteria"
+      ],
+      "deliverables": [
+        "Integrated release candidate",
+        "Build and configuration record",
+        "Technical and operational documentation",
+        "Defect and change records"
+      ],
+      "risks": [
+        "Uncontrolled prompt or configuration changes",
+        "Sensitive data entering development tools",
+        "Documentation and observability deferred"
+      ],
+      "measures": [
+        "Requirements traced to evidence",
+        "High-severity defects open",
+        "Components with provenance and owners"
+      ],
+      "questions": [
+        "Is delivery producing the approved solution with controlled change, secure engineering and evidence fit for validation?",
+        "What evidence is sufficient to approve Build and Configuration Evidence?",
+        "Which trade-offs and residual risks must be made explicit?",
+        "What conditions would require this stage to pause or return to earlier work?"
+      ],
+      "roles": [
+        "Delivery Lead — owns build",
+        "Engineering Leads — own components",
+        "Security and Data — validate controls",
+        "Service Owner — accepts documentation"
+      ],
+      "links": [
+        [
+          "Knowledge Centre",
+          "/pages/knowledge-discovery.html"
+        ],
+        [
+          "Deliverable Library",
+          "/deliverables/"
+        ]
+      ],
+      "why": "Controlled engineering is needed to preserve the approved design and create evidence that validation can trust.",
+      "separation": "Unlike Plan Implementation, this stage produces and integrates the actual release candidate under configuration control.",
+      "prevents": "Prevents undocumented prompt changes, sensitive data leakage and technical debt hidden until production.",
+      "activities": [
+        "Build components in reviewable, traceable increments",
+        "Implement security, oversight and observability with the service",
+        "Version models, prompts, data and configuration",
+        "Maintain runbooks, limitations, defects and provenance"
+      ],
+      "governance": [
+        "Protect source, artefacts, secrets and development data",
+        "Approve material design changes before implementation",
+        "Maintain provenance for models and third-party components"
+      ],
+      "dependencies": [
+        "Implementation plan supplies acceptance criteria",
+        "Architecture decisions constrain component choices",
+        "Testing consumes stable, versioned artefacts"
+      ],
+      "entry": [
+        "Design, environments and access are approved",
+        "Engineering and data-handling standards operate",
+        "Requirements and controls are traceable"
+      ],
+      "exit": [
+        "Integrated release candidate is versioned",
+        "Known defects and deviations are assessed",
+        "Build evidence and operational documentation are complete"
+      ],
+      "guidance": "Use only approved AI engineering tools. Review generated code, protect enterprise data and record material model or library dependencies.",
+      "configuration": [
+        "Engineering owner — organisation to confirm",
+        "Approved development tools — select through security review",
+        "Defect tolerance — define in the test strategy"
+      ]
+    },
+    {
+      "number": 10,
+      "ordinal": 11,
+      "slug": "stage-10-test-validate",
+      "name": "Test and Validate",
+      "category": "Evidence and release confidence",
+      "intro": "Prove the service is functional, safe, secure, usable, resilient and supportable under realistic conditions.",
+      "executiveQuestion": "Does independent evidence justify exposing people, operations and enterprise data to this release?",
+      "output": "Production Readiness Evidence Pack",
+      "gate": "Release candidate accepted",
+      "workspaces": [
+        "Functional and integration testing",
+        "AI quality, safety and human factors",
+        "Security, privacy, resilience and controls",
+        "Operational acceptance and release assurance"
+      ],
+      "inputs": [
+        "Versioned release candidate",
+        "Test strategy and acceptance thresholds",
+        "Requirements, controls and representative data"
+      ],
+      "deliverables": [
+        "Test and validation report",
+        "AI system evaluation record",
+        "Security and control evidence",
+        "Production readiness recommendation"
+      ],
+      "risks": [
+        "Average metrics hiding critical failures",
+        "Test data unlike production",
+        "Human and operational controls omitted"
+      ],
+      "measures": [
+        "Critical requirements covered",
+        "Defects by severity and exception",
+        "Performance across material scenarios"
+      ],
+      "questions": [
+        "Does independent evidence justify exposing people, operations and enterprise data to this release?",
+        "What evidence is sufficient to approve Production Readiness Evidence Pack?",
+        "Which trade-offs and residual risks must be made explicit?",
+        "What conditions would require this stage to pause or return to earlier work?"
+      ],
+      "roles": [
+        "Test Lead — owns evidence",
+        "Business Owner — accepts fitness",
+        "Independent Assurance — challenges claims",
+        "Risk and Service Owners — accept exposure"
+      ],
+      "links": [
+        [
+          "Knowledge Centre",
+          "/pages/knowledge-discovery.html"
+        ],
+        [
+          "Deliverable Library",
+          "/deliverables/"
+        ]
+      ],
+      "why": "A working build is not evidence that an AI-enabled service is safe, fair, resilient or fit for real operating conditions.",
+      "separation": "Unlike Build and Integrate, this stage independently challenges claims and determines whether a release candidate is acceptable.",
+      "prevents": "Prevents average metrics hiding critical failures, unrealistic test data and untested human escalation.",
+      "activities": [
+        "Execute risk-based functional and integration tests",
+        "Evaluate AI quality across representative and adverse scenarios",
+        "Test security, privacy, recovery and human intervention",
+        "Reconcile defects, limitations and residual risk"
+      ],
+      "governance": [
+        "Preserve testing independence proportionate to impact",
+        "Document representativeness and known limitations",
+        "Require authorised exceptions for unresolved critical defects"
+      ],
+      "dependencies": [
+        "Build supplies a stable release candidate",
+        "Governance supplies control acceptance requirements",
+        "Deployment planning must address accepted limitations"
+      ],
+      "entry": [
+        "Release candidate and test environments are controlled",
+        "Acceptance criteria and test data are approved",
+        "Independent reviewers are available where required"
+      ],
+      "exit": [
+        "Required tests pass or exceptions are authorised",
+        "Residual risks and limitations are communicated",
+        "Evidence supports an accountable release decision"
+      ],
+      "guidance": "AI can propose test cases and help analyse results. Test owners must validate coverage, expected outcomes and conclusions.",
+      "configuration": [
+        "Release acceptance authority — organisation to confirm",
+        "Performance thresholds — define by use-case risk",
+        "Representative groups and scenarios — confirm with affected owners"
+      ]
+    },
+    {
+      "number": 11,
+      "ordinal": 12,
+      "slug": "stage-11-deploy-transition",
+      "name": "Deploy and Transition",
+      "category": "Release and ownership",
+      "intro": "Release safely and transfer accountable ownership, knowledge and control evidence into operations.",
+      "executiveQuestion": "Can the organisation release without losing control, continuity or clear accountability?",
+      "output": "Transition and Ownership Record",
+      "gate": "Production release approved",
+      "workspaces": [
+        "Release and cutover control",
+        "Service acceptance and knowledge transfer",
+        "User readiness and communications",
+        "Early-life support and benefit baseline"
+      ],
+      "inputs": [
+        "Accepted readiness evidence",
+        "Release, rollback and communication plans",
+        "Trained operational and business owners"
+      ],
+      "deliverables": [
+        "Release and cutover record",
+        "Service acceptance record",
+        "Runbooks and support model",
+        "Early-life support report"
+      ],
+      "risks": [
+        "Ownership gaps after hand-off",
+        "Rollback not viable",
+        "Users unaware of limitations"
+      ],
+      "measures": [
+        "Cutover verification passed",
+        "Knowledge and support accepted",
+        "Early-life incidents and adoption"
+      ],
+      "questions": [
+        "Can the organisation release without losing control, continuity or clear accountability?",
+        "What evidence is sufficient to approve Transition and Ownership Record?",
+        "Which trade-offs and residual risks must be made explicit?",
+        "What conditions would require this stage to pause or return to earlier work?"
+      ],
+      "roles": [
+        "Release Authority — owns go-live",
+        "Service Owner — accepts operation",
+        "Business Owner — owns adoption",
+        "Control Owners — sustain controls"
+      ],
+      "links": [
+        [
+          "Knowledge Centre",
+          "/pages/knowledge-discovery.html"
+        ],
+        [
+          "Deliverable Library",
+          "/deliverables/"
+        ]
+      ],
+      "why": "Release changes real work, accountability and exposure; a technically accepted system still requires controlled cutover and ownership.",
+      "separation": "Unlike Test and Validate, this stage moves the accepted release into production and transfers responsibility from delivery to service operation.",
+      "prevents": "Prevents orphaned services, unusable rollback plans and users operating without limits or escalation routes.",
+      "activities": [
+        "Complete go-live readiness and authority checks",
+        "Execute cutover, verification and rollback controls",
+        "Transfer access, records, runbooks and ownership",
+        "Operate heightened monitoring and early-life support"
+      ],
+      "governance": [
+        "Do not release without named service and risk owners",
+        "Record the actual production configuration and approvals",
+        "Retain rollback authority during early-life support"
+      ],
+      "dependencies": [
+        "Validation provides accepted evidence and limitations",
+        "Operations requires access, monitoring and runbooks",
+        "Change teams prepare users and affected processes"
+      ],
+      "entry": [
+        "Release candidate and residual risk are accepted",
+        "Cutover and rollback are rehearsed",
+        "Business, service and control owners accept their roles"
+      ],
+      "exit": [
+        "Production state and release decision are recorded",
+        "Support, monitoring and ownership are active",
+        "Early-life issues and adoption signals are controlled"
+      ],
+      "guidance": "AI may assist with approved communications and runbook checks; it must not make autonomous release or rollback decisions.",
+      "configuration": [
+        "Release authority — organisation to confirm",
+        "Early-life support period — define by service risk",
+        "Rollback trigger — configure in the release plan"
+      ]
+    },
+    {
+      "number": 12,
+      "ordinal": 13,
+      "slug": "stage-12-operate-govern-production",
+      "name": "Operate and Govern Production",
+      "category": "Continuous service assurance",
+      "intro": "Run the service with monitoring, accountable decisions, incident response, control evidence and value tracking.",
+      "executiveQuestion": "Does continued operation remain safe, compliant, reliable and valuable as conditions change?",
+      "output": "Production Assurance Report",
+      "gate": "Continued operation approved",
+      "workspaces": [
+        "Service and AI performance monitoring",
+        "Security, privacy and control assurance",
+        "Incident, change and model lifecycle",
+        "Adoption, cost and benefit tracking"
+      ],
+      "inputs": [
+        "Transition and ownership record",
+        "Production baselines and thresholds",
+        "Runbooks, limitations and benefits plan"
+      ],
+      "deliverables": [
+        "Production assurance report",
+        "AI service and model record",
+        "Incident and material change records",
+        "Benefits, cost and control dashboards"
+      ],
+      "risks": [
+        "Silent performance or data drift",
+        "Control evidence not acted upon",
+        "Vendor and enterprise responsibility fragmented"
+      ],
+      "measures": [
+        "Indicators within thresholds",
+        "Time to resolve material incidents",
+        "Benefits, unit cost and control effectiveness"
+      ],
+      "questions": [
+        "Does continued operation remain safe, compliant, reliable and valuable as conditions change?",
+        "What evidence is sufficient to approve Production Assurance Report?",
+        "Which trade-offs and residual risks must be made explicit?",
+        "What conditions would require this stage to pause or return to earlier work?"
+      ],
+      "roles": [
+        "Service Owner — owns operation",
+        "Business Owner — owns outcomes",
+        "Model and Data Owners — manage quality",
+        "Risk and Assurance — oversee controls"
+      ],
+      "links": [
+        [
+          "Knowledge Centre",
+          "/pages/knowledge-discovery.html"
+        ],
+        [
+          "Deliverable Library",
+          "/deliverables/"
+        ]
+      ],
+      "why": "AI performance, data, usage and threats change after release, so approval must be sustained through evidence and response.",
+      "separation": "Unlike Deploy and Transition, this stage owns continuing service health, control effectiveness, cost and business outcomes.",
+      "prevents": "Prevents silent drift, unattended control failures and fragmented accountability across enterprise and suppliers.",
+      "activities": [
+        "Monitor technical, AI, business and control indicators",
+        "Investigate drift, harmful outcomes, complaints and incidents",
+        "Govern model, prompt, data and configuration changes",
+        "Review residual risk, cost, benefit and continued operation"
+      ],
+      "governance": [
+        "Treat material model, data or use changes as governed changes",
+        "Tie monitoring signals to owners and response thresholds",
+        "Reassess classification when scope or impact changes"
+      ],
+      "dependencies": [
+        "Transition establishes ownership and baselines",
+        "Benefits plan defines value measures",
+        "Improvement decisions require trustworthy operating evidence"
+      ],
+      "entry": [
+        "Ownership, monitoring and support are active",
+        "Response playbooks and thresholds are approved",
+        "Benefit and control reporting has a cadence"
+      ],
+      "exit": [
+        "Current assurance supports continued operation",
+        "Material issues have controlled responses",
+        "Evidence supports improve, scale, restrict or retire decisions"
+      ],
+      "guidance": "AI can summarise telemetry and assist triage. Accountable owners must validate alerts, causes and material operating decisions.",
+      "configuration": [
+        "Service-level targets — organisation to confirm",
+        "Monitoring thresholds — define from validation evidence",
+        "Assurance cadence — configure by impact classification"
+      ]
+    },
+    {
+      "number": 13,
+      "ordinal": 14,
+      "slug": "stage-13-improve-scale",
+      "name": "Improve and Scale",
+      "category": "Value, learning and renewal",
+      "intro": "Use production evidence to improve, reuse capability, scale responsibly and retire services that no longer justify operation.",
+      "executiveQuestion": "Where should the enterprise improve, scale, standardise, contain or retire based on realised evidence?",
+      "output": "Benefits and Scale Decision Pack",
+      "gate": "Scale decision approved",
+      "workspaces": [
+        "Benefits and performance review",
+        "Improvement and technical-debt backlog",
+        "Reusable capability and scale assessment",
+        "Renewal, containment and retirement"
+      ],
+      "inputs": [
+        "Production assurance and benefit evidence",
+        "Incident, feedback, cost and performance trends",
+        "Portfolio strategy and governance thresholds"
+      ],
+      "deliverables": [
+        "Benefits and scale decision pack",
+        "Improvement roadmap",
+        "Reusable capability record",
+        "Retirement or renewal plan"
+      ],
+      "risks": [
+        "Scaling before controls are proven",
+        "Success measured through activity",
+        "Legacy access retained after retirement"
+      ],
+      "measures": [
+        "Benefit against approved range",
+        "Reuse and marginal cost of scale",
+        "Risk and control trend after change"
+      ],
+      "questions": [
+        "Where should the enterprise improve, scale, standardise, contain or retire based on realised evidence?",
+        "What evidence is sufficient to approve Benefits and Scale Decision Pack?",
+        "Which trade-offs and residual risks must be made explicit?",
+        "What conditions would require this stage to pause or return to earlier work?"
+      ],
+      "roles": [
+        "Executive Sponsor — owns scale",
+        "Business and Service Owners — own outcomes",
+        "Portfolio and Architecture — govern reuse",
+        "Risk and Finance — challenge"
+      ],
+      "links": [
+        [
+          "Knowledge Centre",
+          "/pages/knowledge-discovery.html"
+        ],
+        [
+          "Deliverable Library",
+          "/deliverables/"
+        ]
+      ],
+      "why": "Operating evidence creates value only when it changes investment, design, reuse or retirement decisions.",
+      "separation": "Unlike Operate and Govern Production, this stage decides how learning changes the service and the wider enterprise portfolio.",
+      "prevents": "Prevents premature scaling, activity-based success claims and abandoned models, data or access remaining after retirement.",
+      "activities": [
+        "Compare realised outcomes with approved baselines",
+        "Prioritise improvements using incidents, feedback and cost",
+        "Assess repeatability, shared capability and marginal cost",
+        "Approve scale, redesign, containment, renewal or retirement"
+      ],
+      "governance": [
+        "Re-enter earlier lifecycle gates for material changes",
+        "Do not inherit approval when scope, impact or data changes",
+        "Plan safe model, data, access and vendor retirement"
+      ],
+      "dependencies": [
+        "Operations supplies verified performance and benefit evidence",
+        "Portfolio planning consumes reusable learning",
+        "Material redesign loops through governance and architecture"
+      ],
+      "entry": [
+        "Sufficient operating evidence is available",
+        "Benefits and costs can be compared with baselines",
+        "Material incidents and limitations are understood"
+      ],
+      "exit": [
+        "Improvement or scale decision and rationale are approved",
+        "Work has accountable owners and control conditions",
+        "Retirement obligations are planned where applicable"
+      ],
+      "guidance": "AI can surface patterns across approved evidence. Leadership must challenge attribution, survivor bias and whether local results are repeatable.",
+      "configuration": [
+        "Scale authority — organisation to confirm",
+        "Target benefit — validate against realised baseline",
+        "Retirement retention obligations — confirm with records, legal and privacy owners"
+      ]
+    }
+  ]
+}

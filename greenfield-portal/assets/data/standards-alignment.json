@@ -1,0 +1,197 @@
+{
+  "version": "1.0.0",
+  "title": "Standards and Regulatory Alignment",
+  "description": "External standards, risk governance frameworks, legislation, government directives, and internal control crosswalks.",
+  "disclaimer": "Regulatory and legal compliance requirements are subject to jurisdictional changes and require legal verification.",
+  "verificationDisclaimerFlag": true,
+  "lastVerifiedDate": "2026-07-27",
+  "categories": [
+    {
+      "id": "international-standards",
+      "title": "International Standards",
+      "summary": "Voluntary consensus standards published by international standards bodies (ISO, IEC).",
+      "items": [
+        {
+          "id": "ISO-42001",
+          "name": "ISO/IEC 42001:2023",
+          "title": "Artificial Intelligence Management System (AIMS)",
+          "type": "International Standard",
+          "issuingBody": "ISO/IEC",
+          "jurisdiction": "Global",
+          "applicability": "Certifiable benchmark for establishing, implementing, maintaining, and improving an AI management system.",
+          "bindingStatus": "Voluntary Benchmark",
+          "certificationStatus": "Certifiable",
+          "relatedTransformationStages": [5, 8, 11, 13],
+          "relatedLifecycleGates": ["Risk Classification", "Approval and Release", "Monitoring and Assurance"],
+          "unverifiedClaimsFlag": false,
+          "href": "/pages/governance-integration.html#iso42001"
+        },
+        {
+          "id": "ISO-31000",
+          "name": "ISO 31000:2018",
+          "title": "Risk Management Guidelines",
+          "type": "International Standard",
+          "issuingBody": "ISO",
+          "jurisdiction": "Global",
+          "applicability": "Generic guidelines for managing risk faced by organisations, applied to AI risk governance.",
+          "bindingStatus": "Voluntary Benchmark",
+          "certificationStatus": "Non-Certifiable",
+          "relatedTransformationStages": [1, 5, 13],
+          "relatedLifecycleGates": ["Risk Classification"],
+          "unverifiedClaimsFlag": false,
+          "href": "/pages/operational-risk.html#risk-decision-title"
+        },
+        {
+          "id": "ISO-27001",
+          "name": "ISO/IEC 27001:2022",
+          "title": "Information Security Management Systems",
+          "type": "International Standard",
+          "issuingBody": "ISO/IEC",
+          "jurisdiction": "Global",
+          "applicability": "Information security management foundation extended to protect AI data and model weights.",
+          "bindingStatus": "Voluntary Benchmark",
+          "certificationStatus": "Certifiable",
+          "relatedTransformationStages": [5, 8, 10],
+          "relatedLifecycleGates": ["Solution Design", "Build and Configuration", "Testing and Evaluation"],
+          "unverifiedClaimsFlag": false,
+          "href": "/pages/governance-integration.html#iso27001"
+        }
+      ]
+    },
+    {
+      "id": "risk-governance-frameworks",
+      "title": "AI Risk & Governance Frameworks",
+      "summary": "Practical guidance, taxonomy, and controls for managing AI risks.",
+      "items": [
+        {
+          "id": "NIST-AI-RMF",
+          "name": "NIST AI RMF 1.0",
+          "title": "NIST Artificial Intelligence Risk Management Framework",
+          "type": "Governance Framework",
+          "issuingBody": "NIST (US Dept of Commerce)",
+          "jurisdiction": "United States / Global Adoption",
+          "applicability": "Functions across Govern, Map, Measure, and Manage to improve AI trustworthiness.",
+          "bindingStatus": "Regulatory Expectation",
+          "certificationStatus": "Self-Assessment",
+          "relatedTransformationStages": [2, 5, 8, 11, 13],
+          "relatedLifecycleGates": ["Risk Classification", "Testing and Evaluation", "Monitoring and Assurance"],
+          "unverifiedClaimsFlag": false,
+          "href": "/pages/governance-integration.html#nist-rmf"
+        },
+        {
+          "id": "IEEE-7000",
+          "name": "IEEE 7000-2021",
+          "title": "Standard Model Process for Addressing Ethical Concerns During System Design",
+          "type": "Governance Framework",
+          "issuingBody": "IEEE",
+          "jurisdiction": "Global",
+          "applicability": "Methodology for identifying and mitigating ethical values conflicts in AI systems design.",
+          "bindingStatus": "Voluntary Benchmark",
+          "certificationStatus": "Non-Certifiable",
+          "relatedTransformationStages": [4, 8],
+          "relatedLifecycleGates": ["Solution Design", "Testing and Evaluation"],
+          "unverifiedClaimsFlag": false,
+          "href": "/pages/greenfield-implementation.html#control-framework"
+        }
+      ]
+    },
+    {
+      "id": "legislation-regulation",
+      "title": "Legislation and Regulation",
+      "summary": "Binding legal requirements, statutes, and regulatory enforcement expectations.",
+      "items": [
+        {
+          "id": "EU-AI-ACT",
+          "name": "EU AI Act (Regulation 2024/1689)",
+          "title": "European Union Artificial Intelligence Act",
+          "type": "Legislation",
+          "issuingBody": "European Parliament / Council of EU",
+          "jurisdiction": "European Union (Extra-territorial scope)",
+          "applicability": "Binding risk-classified obligations for providers, deployers, and importers of AI systems in the EU market.",
+          "bindingStatus": "Legally Binding",
+          "certificationStatus": "Certifiable",
+          "relatedTransformationStages": [5, 6, 8, 11, 13],
+          "relatedLifecycleGates": ["Risk Classification", "Approval and Release", "Monitoring and Assurance"],
+          "unverifiedClaimsFlag": true,
+          "verificationNote": "Specific enforcement deadlines (e.g. GPAI rules, High-Risk System rules) require legal verification per release date.",
+          "href": "/pages/governance-integration.html#eu-ai-act"
+        },
+        {
+          "id": "UK-GDPR",
+          "name": "UK GDPR & DPA 2018",
+          "title": "Data Protection Act 2018 & General Data Protection Regulation",
+          "type": "Legislation",
+          "issuingBody": "UK Parliament / ICO",
+          "jurisdiction": "United Kingdom",
+          "applicability": "Lawful basis, automated decision-making (Art 22), data protection impact assessments (DPIA), and rights of data subjects.",
+          "bindingStatus": "Legally Binding",
+          "certificationStatus": "Non-Certifiable",
+          "relatedTransformationStages": [5, 8],
+          "relatedLifecycleGates": ["Intake and Registration", "Data Readiness", "Solution Design"],
+          "unverifiedClaimsFlag": false,
+          "href": "/pages/data-security.html#data-decision-title"
+        }
+      ]
+    },
+    {
+      "id": "government-directives",
+      "title": "Government Directives & Policy Principles",
+      "summary": "Mandates and guidance issued by government executive offices for public sector and regulated domain AI adoption.",
+      "items": [
+        {
+          "id": "OMB-M24-10",
+          "name": "US OMB Memorandum M-24-10",
+          "title": "Advancing Governance, Innovation, and Risk Management for Agency Use of Artificial Intelligence",
+          "type": "Government Directive",
+          "issuingBody": "US Office of Management and Budget",
+          "jurisdiction": "United States Federal Government",
+          "applicability": "Mandates Chief AI Officers, AI asset inventories, impact assessments, and minimum risk safeguards for federal agencies.",
+          "bindingStatus": "Regulatory Expectation",
+          "certificationStatus": "Self-Assessment",
+          "relatedTransformationStages": [1, 5, 6, 11],
+          "relatedLifecycleGates": ["Intake and Registration", "Risk Classification", "Approval and Release"],
+          "unverifiedClaimsFlag": false,
+          "href": "/pages/ai-governance.html#omb-m2410"
+        },
+        {
+          "id": "UK-AI-REG",
+          "name": "UK AI Regulation Principles",
+          "title": "Pro-innovation Approach to AI Regulation",
+          "type": "Government Directive",
+          "issuingBody": "UK DSIT",
+          "jurisdiction": "United Kingdom",
+          "applicability": "Five principles (Safety/Security, Transparency/Explainability, Fairness, Accountability, Redress) interpreted by sectoral regulators (FCA, ICO, CMA, MHRA).",
+          "bindingStatus": "Regulatory Expectation",
+          "certificationStatus": "Non-Certifiable",
+          "relatedTransformationStages": [5, 11],
+          "relatedLifecycleGates": ["Risk Classification", "Testing and Evaluation"],
+          "unverifiedClaimsFlag": true,
+          "verificationNote": "Sectoral regulator guidance updates (e.g. FCA, ICO) must be verified against current regulator publications.",
+          "href": "/pages/governance-integration.html#uk-dsit"
+        }
+      ]
+    },
+    {
+      "id": "control-crosswalks",
+      "title": "Control Crosswalks & Evidence",
+      "summary": "Internal control mappings aligning technical evidence to external standards and legislative expectations.",
+      "items": [
+        {
+          "id": "AIMS-CROSSWALK",
+          "name": "Enterprise AI Control Crosswalk",
+          "title": "Multi-Framework Mapping Matrix (ISO 42001, NIST RMF, EU AI Act)",
+          "type": "Internal Control Mapping",
+          "issuingBody": "Ratheesh Technology Governance Baseline",
+          "jurisdiction": "Internal Enterprise",
+          "applicability": "Maps single deliverable outputs to multiple external standards requirements to prevent duplicate evidence generation.",
+          "bindingStatus": "Internal Policy",
+          "certificationStatus": "Self-Assessment",
+          "relatedTransformationStages": [5, 8, 11, 13],
+          "relatedLifecycleGates": ["Testing and Evaluation", "Approval and Release", "Monitoring and Assurance"],
+          "unverifiedClaimsFlag": false,
+          "href": "/pages/governance-integration.html#crosswalk"
+        }
+      ]
+    }
+  ]
+}

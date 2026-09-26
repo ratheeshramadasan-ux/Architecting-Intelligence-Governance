@@ -1,0 +1,2967 @@
+{
+  "version": "1.0.0",
+  "records": [
+    {
+      "id": "EVD-01-01",
+      "domain": "business-strategy",
+      "information": "Approved strategy",
+      "purpose": "Establish the current-state baseline for Business Strategy & Objectives.",
+      "source": "Strategy documents",
+      "systemOfRecord": "Strategy documents",
+      "businessOwner": "Executive Sponsor",
+      "technicalOwner": "t",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "At stage start and material change",
+      "usedBy": [
+        "Current-State Assessment Report",
+        "Discovery Findings Report"
+      ]
+    },
+    {
+      "id": "EVD-01-02",
+      "domain": "business-strategy",
+      "information": "Objectives and measures",
+      "purpose": "Establish the current-state baseline for Business Strategy & Objectives.",
+      "source": "Executive decisions",
+      "systemOfRecord": "Strategy documents",
+      "businessOwner": "Executive Sponsor",
+      "technicalOwner": "t",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Current-State Assessment Report",
+        "Discovery Findings Report"
+      ]
+    },
+    {
+      "id": "EVD-01-03",
+      "domain": "business-strategy",
+      "information": "Investment priorities",
+      "purpose": "Establish the current-state baseline for Business Strategy & Objectives.",
+      "source": "Performance reports",
+      "systemOfRecord": "Strategy documents",
+      "businessOwner": "Executive Sponsor",
+      "technicalOwner": "t",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Current-State Assessment Report",
+        "Discovery Findings Report"
+      ]
+    },
+    {
+      "id": "EVD-01-04",
+      "domain": "business-strategy",
+      "information": "Known constraints",
+      "purpose": "Establish the current-state baseline for Business Strategy & Objectives.",
+      "source": "Strategy documents",
+      "systemOfRecord": "Strategy documents",
+      "businessOwner": "Executive Sponsor",
+      "technicalOwner": "t",
+      "validationMethod": "Record gaps, assumptions and confidence",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Current-State Assessment Report",
+        "Discovery Findings Report"
+      ]
+    },
+    {
+      "id": "EVD-02-01",
+      "domain": "business-capabilities",
+      "information": "Capability name and definition",
+      "purpose": "Establish the current-state baseline for Business Capabilities.",
+      "source": "Capability maps",
+      "systemOfRecord": "Capability maps",
+      "businessOwner": "Business Owner",
+      "technicalOwner": "n",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "At stage start and material change",
+      "usedBy": [
+        "Business Capability Catalogue",
+        "Opportunity Register"
+      ]
+    },
+    {
+      "id": "EVD-02-02",
+      "domain": "business-capabilities",
+      "information": "Owner",
+      "purpose": "Establish the current-state baseline for Business Capabilities.",
+      "source": "Operating-model records",
+      "systemOfRecord": "Capability maps",
+      "businessOwner": "Business Owner",
+      "technicalOwner": "n",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Business Capability Catalogue",
+        "Opportunity Register"
+      ]
+    },
+    {
+      "id": "EVD-02-03",
+      "domain": "business-capabilities",
+      "information": "Maturity",
+      "purpose": "Establish the current-state baseline for Business Capabilities.",
+      "source": "Performance evidence",
+      "systemOfRecord": "Capability maps",
+      "businessOwner": "Business Owner",
+      "technicalOwner": "n",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Business Capability Catalogue",
+        "Opportunity Register"
+      ]
+    },
+    {
+      "id": "EVD-02-04",
+      "domain": "business-capabilities",
+      "information": "Pain points",
+      "purpose": "Establish the current-state baseline for Business Capabilities.",
+      "source": "Capability maps",
+      "systemOfRecord": "Capability maps",
+      "businessOwner": "Business Owner",
+      "technicalOwner": "n",
+      "validationMethod": "Record gaps, assumptions and confidence",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Business Capability Catalogue",
+        "Opportunity Register"
+      ]
+    },
+    {
+      "id": "EVD-02-05",
+      "domain": "business-capabilities",
+      "information": "Measures",
+      "purpose": "Establish the current-state baseline for Business Capabilities.",
+      "source": "Operating-model records",
+      "systemOfRecord": "Capability maps",
+      "businessOwner": "Business Owner",
+      "technicalOwner": "n",
+      "validationMethod": "Obtain independent validation for high-risk findings",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Business Capability Catalogue",
+        "Opportunity Register"
+      ]
+    },
+    {
+      "id": "EVD-02-06",
+      "domain": "business-capabilities",
+      "information": "Dependencies",
+      "purpose": "Establish the current-state baseline for Business Capabilities.",
+      "source": "Performance evidence",
+      "systemOfRecord": "Capability maps",
+      "businessOwner": "Business Owner",
+      "technicalOwner": "n",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Business Capability Catalogue",
+        "Opportunity Register"
+      ]
+    },
+    {
+      "id": "EVD-03-01",
+      "domain": "business-processes",
+      "information": "Process purpose",
+      "purpose": "Establish the current-state baseline for Business Processes.",
+      "source": "Process repository",
+      "systemOfRecord": "Process repository",
+      "businessOwner": "Process Owner",
+      "technicalOwner": "u",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "At stage start and material change",
+      "usedBy": [
+        "Process Inventory",
+        "Opportunity Register"
+      ]
+    },
+    {
+      "id": "EVD-03-02",
+      "domain": "business-processes",
+      "information": "Steps",
+      "purpose": "Establish the current-state baseline for Business Processes.",
+      "source": "Procedures",
+      "systemOfRecord": "Process repository",
+      "businessOwner": "Process Owner",
+      "technicalOwner": "u",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Process Inventory",
+        "Opportunity Register"
+      ]
+    },
+    {
+      "id": "EVD-03-03",
+      "domain": "business-processes",
+      "information": "Volumes",
+      "purpose": "Establish the current-state baseline for Business Processes.",
+      "source": "Operational measures",
+      "systemOfRecord": "Process repository",
+      "businessOwner": "Process Owner",
+      "technicalOwner": "u",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Process Inventory",
+        "Opportunity Register"
+      ]
+    },
+    {
+      "id": "EVD-03-04",
+      "domain": "business-processes",
+      "information": "Cycle time",
+      "purpose": "Establish the current-state baseline for Business Processes.",
+      "source": "Process repository",
+      "systemOfRecord": "Process repository",
+      "businessOwner": "Process Owner",
+      "technicalOwner": "u",
+      "validationMethod": "Record gaps, assumptions and confidence",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Process Inventory",
+        "Opportunity Register"
+      ]
+    },
+    {
+      "id": "EVD-03-05",
+      "domain": "business-processes",
+      "information": "Systems",
+      "purpose": "Establish the current-state baseline for Business Processes.",
+      "source": "Procedures",
+      "systemOfRecord": "Process repository",
+      "businessOwner": "Process Owner",
+      "technicalOwner": "u",
+      "validationMethod": "Obtain independent validation for high-risk findings",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Process Inventory",
+        "Opportunity Register"
+      ]
+    },
+    {
+      "id": "EVD-03-06",
+      "domain": "business-processes",
+      "information": "Data",
+      "purpose": "Establish the current-state baseline for Business Processes.",
+      "source": "Operational measures",
+      "systemOfRecord": "Process repository",
+      "businessOwner": "Process Owner",
+      "technicalOwner": "u",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Process Inventory",
+        "Opportunity Register"
+      ]
+    },
+    {
+      "id": "EVD-03-07",
+      "domain": "business-processes",
+      "information": "Controls",
+      "purpose": "Establish the current-state baseline for Business Processes.",
+      "source": "Process repository",
+      "systemOfRecord": "Process repository",
+      "businessOwner": "Process Owner",
+      "technicalOwner": "u",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Process Inventory",
+        "Opportunity Register"
+      ]
+    },
+    {
+      "id": "EVD-03-08",
+      "domain": "business-processes",
+      "information": "Pain points",
+      "purpose": "Establish the current-state baseline for Business Processes.",
+      "source": "Procedures",
+      "systemOfRecord": "Process repository",
+      "businessOwner": "Process Owner",
+      "technicalOwner": "u",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Process Inventory",
+        "Opportunity Register"
+      ]
+    },
+    {
+      "id": "EVD-04-01",
+      "domain": "organisational-structure",
+      "information": "Functions",
+      "purpose": "Establish the current-state baseline for Organisational Structure.",
+      "source": "Organisation charts",
+      "systemOfRecord": "Organisation charts",
+      "businessOwner": "HR Executive",
+      "technicalOwner": "R",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "At stage start and material change",
+      "usedBy": [
+        "Current-State Assessment Report",
+        "Skills Assessment"
+      ]
+    },
+    {
+      "id": "EVD-04-02",
+      "domain": "organisational-structure",
+      "information": "Roles",
+      "purpose": "Establish the current-state baseline for Organisational Structure.",
+      "source": "Role profiles",
+      "systemOfRecord": "Organisation charts",
+      "businessOwner": "HR Executive",
+      "technicalOwner": "R",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Current-State Assessment Report",
+        "Skills Assessment"
+      ]
+    },
+    {
+      "id": "EVD-04-03",
+      "domain": "organisational-structure",
+      "information": "Reporting lines",
+      "purpose": "Establish the current-state baseline for Organisational Structure.",
+      "source": "Workforce plans",
+      "systemOfRecord": "Organisation charts",
+      "businessOwner": "HR Executive",
+      "technicalOwner": "R",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Current-State Assessment Report",
+        "Skills Assessment"
+      ]
+    },
+    {
+      "id": "EVD-04-04",
+      "domain": "organisational-structure",
+      "information": "Decision rights",
+      "purpose": "Establish the current-state baseline for Organisational Structure.",
+      "source": "Organisation charts",
+      "systemOfRecord": "Organisation charts",
+      "businessOwner": "HR Executive",
+      "technicalOwner": "R",
+      "validationMethod": "Record gaps, assumptions and confidence",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Current-State Assessment Report",
+        "Skills Assessment"
+      ]
+    },
+    {
+      "id": "EVD-04-05",
+      "domain": "organisational-structure",
+      "information": "Capacity",
+      "purpose": "Establish the current-state baseline for Organisational Structure.",
+      "source": "Role profiles",
+      "systemOfRecord": "Organisation charts",
+      "businessOwner": "HR Executive",
+      "technicalOwner": "R",
+      "validationMethod": "Obtain independent validation for high-risk findings",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Current-State Assessment Report",
+        "Skills Assessment"
+      ]
+    },
+    {
+      "id": "EVD-04-06",
+      "domain": "organisational-structure",
+      "information": "Locations",
+      "purpose": "Establish the current-state baseline for Organisational Structure.",
+      "source": "Workforce plans",
+      "systemOfRecord": "Organisation charts",
+      "businessOwner": "HR Executive",
+      "technicalOwner": "R",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Current-State Assessment Report",
+        "Skills Assessment"
+      ]
+    },
+    {
+      "id": "EVD-05-01",
+      "domain": "applications-systems",
+      "information": "Application",
+      "purpose": "Establish the current-state baseline for Applications & Systems.",
+      "source": "CMDB",
+      "systemOfRecord": "CMDB",
+      "businessOwner": "CIO/CTO",
+      "technicalOwner": "p",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "At stage start and material change",
+      "usedBy": [
+        "Application Portfolio",
+        "Technology Landscape",
+        "Technical Debt Register"
+      ]
+    },
+    {
+      "id": "EVD-05-02",
+      "domain": "applications-systems",
+      "information": "Owner",
+      "purpose": "Establish the current-state baseline for Applications & Systems.",
+      "source": "Application portfolio",
+      "systemOfRecord": "CMDB",
+      "businessOwner": "CIO/CTO",
+      "technicalOwner": "p",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Application Portfolio",
+        "Technology Landscape",
+        "Technical Debt Register"
+      ]
+    },
+    {
+      "id": "EVD-05-03",
+      "domain": "applications-systems",
+      "information": "Purpose",
+      "purpose": "Establish the current-state baseline for Applications & Systems.",
+      "source": "Architecture repository",
+      "systemOfRecord": "CMDB",
+      "businessOwner": "CIO/CTO",
+      "technicalOwner": "p",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Application Portfolio",
+        "Technology Landscape",
+        "Technical Debt Register"
+      ]
+    },
+    {
+      "id": "EVD-05-04",
+      "domain": "applications-systems",
+      "information": "Users",
+      "purpose": "Establish the current-state baseline for Applications & Systems.",
+      "source": "Contracts",
+      "systemOfRecord": "CMDB",
+      "businessOwner": "CIO/CTO",
+      "technicalOwner": "p",
+      "validationMethod": "Record gaps, assumptions and confidence",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Application Portfolio",
+        "Technology Landscape",
+        "Technical Debt Register"
+      ]
+    },
+    {
+      "id": "EVD-05-05",
+      "domain": "applications-systems",
+      "information": "Capabilities",
+      "purpose": "Establish the current-state baseline for Applications & Systems.",
+      "source": "CMDB",
+      "systemOfRecord": "CMDB",
+      "businessOwner": "CIO/CTO",
+      "technicalOwner": "p",
+      "validationMethod": "Obtain independent validation for high-risk findings",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Application Portfolio",
+        "Technology Landscape",
+        "Technical Debt Register"
+      ]
+    },
+    {
+      "id": "EVD-05-06",
+      "domain": "applications-systems",
+      "information": "Interfaces",
+      "purpose": "Establish the current-state baseline for Applications & Systems.",
+      "source": "Application portfolio",
+      "systemOfRecord": "CMDB",
+      "businessOwner": "CIO/CTO",
+      "technicalOwner": "p",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Application Portfolio",
+        "Technology Landscape",
+        "Technical Debt Register"
+      ]
+    },
+    {
+      "id": "EVD-05-07",
+      "domain": "applications-systems",
+      "information": "Data",
+      "purpose": "Establish the current-state baseline for Applications & Systems.",
+      "source": "Architecture repository",
+      "systemOfRecord": "CMDB",
+      "businessOwner": "CIO/CTO",
+      "technicalOwner": "p",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Application Portfolio",
+        "Technology Landscape",
+        "Technical Debt Register"
+      ]
+    },
+    {
+      "id": "EVD-05-08",
+      "domain": "applications-systems",
+      "information": "Lifecycle",
+      "purpose": "Establish the current-state baseline for Applications & Systems.",
+      "source": "Contracts",
+      "systemOfRecord": "CMDB",
+      "businessOwner": "CIO/CTO",
+      "technicalOwner": "p",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Application Portfolio",
+        "Technology Landscape",
+        "Technical Debt Register"
+      ]
+    },
+    {
+      "id": "EVD-05-09",
+      "domain": "applications-systems",
+      "information": "Cost",
+      "purpose": "Establish the current-state baseline for Applications & Systems.",
+      "source": "CMDB",
+      "systemOfRecord": "CMDB",
+      "businessOwner": "CIO/CTO",
+      "technicalOwner": "p",
+      "validationMethod": "Record gaps, assumptions and confidence",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Application Portfolio",
+        "Technology Landscape",
+        "Technical Debt Register"
+      ]
+    },
+    {
+      "id": "EVD-05-10",
+      "domain": "applications-systems",
+      "information": "Risk",
+      "purpose": "Establish the current-state baseline for Applications & Systems.",
+      "source": "Application portfolio",
+      "systemOfRecord": "CMDB",
+      "businessOwner": "CIO/CTO",
+      "technicalOwner": "p",
+      "validationMethod": "Obtain independent validation for high-risk findings",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Application Portfolio",
+        "Technology Landscape",
+        "Technical Debt Register"
+      ]
+    },
+    {
+      "id": "EVD-06-01",
+      "domain": "data-information",
+      "information": "Data asset",
+      "purpose": "Establish the current-state baseline for Data & Information.",
+      "source": "Data catalogue",
+      "systemOfRecord": "Data catalogue",
+      "businessOwner": "Chief Data Officer",
+      "technicalOwner": "a",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "At stage start and material change",
+      "usedBy": [
+        "Data Inventory",
+        "Discovery Findings Report"
+      ]
+    },
+    {
+      "id": "EVD-06-02",
+      "domain": "data-information",
+      "information": "Owner",
+      "purpose": "Establish the current-state baseline for Data & Information.",
+      "source": "Quality reports",
+      "systemOfRecord": "Data catalogue",
+      "businessOwner": "Chief Data Officer",
+      "technicalOwner": "a",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Data Inventory",
+        "Discovery Findings Report"
+      ]
+    },
+    {
+      "id": "EVD-06-03",
+      "domain": "data-information",
+      "information": "Purpose",
+      "purpose": "Establish the current-state baseline for Data & Information.",
+      "source": "Privacy records",
+      "systemOfRecord": "Data catalogue",
+      "businessOwner": "Chief Data Officer",
+      "technicalOwner": "a",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Data Inventory",
+        "Discovery Findings Report"
+      ]
+    },
+    {
+      "id": "EVD-06-04",
+      "domain": "data-information",
+      "information": "Classification",
+      "purpose": "Establish the current-state baseline for Data & Information.",
+      "source": "Schemas",
+      "systemOfRecord": "Data catalogue",
+      "businessOwner": "Chief Data Officer",
+      "technicalOwner": "a",
+      "validationMethod": "Record gaps, assumptions and confidence",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Data Inventory",
+        "Discovery Findings Report"
+      ]
+    },
+    {
+      "id": "EVD-06-05",
+      "domain": "data-information",
+      "information": "Quality",
+      "purpose": "Establish the current-state baseline for Data & Information.",
+      "source": "Data catalogue",
+      "systemOfRecord": "Data catalogue",
+      "businessOwner": "Chief Data Officer",
+      "technicalOwner": "a",
+      "validationMethod": "Obtain independent validation for high-risk findings",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Data Inventory",
+        "Discovery Findings Report"
+      ]
+    },
+    {
+      "id": "EVD-06-06",
+      "domain": "data-information",
+      "information": "Lineage",
+      "purpose": "Establish the current-state baseline for Data & Information.",
+      "source": "Quality reports",
+      "systemOfRecord": "Data catalogue",
+      "businessOwner": "Chief Data Officer",
+      "technicalOwner": "a",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Data Inventory",
+        "Discovery Findings Report"
+      ]
+    },
+    {
+      "id": "EVD-06-07",
+      "domain": "data-information",
+      "information": "Residency",
+      "purpose": "Establish the current-state baseline for Data & Information.",
+      "source": "Privacy records",
+      "systemOfRecord": "Data catalogue",
+      "businessOwner": "Chief Data Officer",
+      "technicalOwner": "a",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Data Inventory",
+        "Discovery Findings Report"
+      ]
+    },
+    {
+      "id": "EVD-06-08",
+      "domain": "data-information",
+      "information": "Retention",
+      "purpose": "Establish the current-state baseline for Data & Information.",
+      "source": "Schemas",
+      "systemOfRecord": "Data catalogue",
+      "businessOwner": "Chief Data Officer",
+      "technicalOwner": "a",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Data Inventory",
+        "Discovery Findings Report"
+      ]
+    },
+    {
+      "id": "EVD-06-09",
+      "domain": "data-information",
+      "information": "Access",
+      "purpose": "Establish the current-state baseline for Data & Information.",
+      "source": "Data catalogue",
+      "systemOfRecord": "Data catalogue",
+      "businessOwner": "Chief Data Officer",
+      "technicalOwner": "a",
+      "validationMethod": "Record gaps, assumptions and confidence",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Data Inventory",
+        "Discovery Findings Report"
+      ]
+    },
+    {
+      "id": "EVD-07-01",
+      "domain": "ai-landscape",
+      "information": "Use case",
+      "purpose": "Establish the current-state baseline for AI Landscape.",
+      "source": "AI inventory",
+      "systemOfRecord": "AI inventory",
+      "businessOwner": "Platform Owner",
+      "technicalOwner": "I",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "At stage start and material change",
+      "usedBy": [
+        "AI Capability Inventory",
+        "Shadow AI Register"
+      ]
+    },
+    {
+      "id": "EVD-07-02",
+      "domain": "ai-landscape",
+      "information": "Owner",
+      "purpose": "Establish the current-state baseline for AI Landscape.",
+      "source": "Model registry",
+      "systemOfRecord": "AI inventory",
+      "businessOwner": "Platform Owner",
+      "technicalOwner": "I",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "AI Capability Inventory",
+        "Shadow AI Register"
+      ]
+    },
+    {
+      "id": "EVD-07-03",
+      "domain": "ai-landscape",
+      "information": "Model/provider",
+      "purpose": "Establish the current-state baseline for AI Landscape.",
+      "source": "Vendor records",
+      "systemOfRecord": "AI inventory",
+      "businessOwner": "Platform Owner",
+      "technicalOwner": "I",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "AI Capability Inventory",
+        "Shadow AI Register"
+      ]
+    },
+    {
+      "id": "EVD-07-04",
+      "domain": "ai-landscape",
+      "information": "Data",
+      "purpose": "Establish the current-state baseline for AI Landscape.",
+      "source": "Usage telemetry",
+      "systemOfRecord": "AI inventory",
+      "businessOwner": "Platform Owner",
+      "technicalOwner": "I",
+      "validationMethod": "Record gaps, assumptions and confidence",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "AI Capability Inventory",
+        "Shadow AI Register"
+      ]
+    },
+    {
+      "id": "EVD-07-05",
+      "domain": "ai-landscape",
+      "information": "Users",
+      "purpose": "Establish the current-state baseline for AI Landscape.",
+      "source": "AI inventory",
+      "systemOfRecord": "AI inventory",
+      "businessOwner": "Platform Owner",
+      "technicalOwner": "I",
+      "validationMethod": "Obtain independent validation for high-risk findings",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "AI Capability Inventory",
+        "Shadow AI Register"
+      ]
+    },
+    {
+      "id": "EVD-07-06",
+      "domain": "ai-landscape",
+      "information": "Environment",
+      "purpose": "Establish the current-state baseline for AI Landscape.",
+      "source": "Model registry",
+      "systemOfRecord": "AI inventory",
+      "businessOwner": "Platform Owner",
+      "technicalOwner": "I",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "AI Capability Inventory",
+        "Shadow AI Register"
+      ]
+    },
+    {
+      "id": "EVD-07-07",
+      "domain": "ai-landscape",
+      "information": "Risk tier",
+      "purpose": "Establish the current-state baseline for AI Landscape.",
+      "source": "Vendor records",
+      "systemOfRecord": "AI inventory",
+      "businessOwner": "Platform Owner",
+      "technicalOwner": "I",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "AI Capability Inventory",
+        "Shadow AI Register"
+      ]
+    },
+    {
+      "id": "EVD-07-08",
+      "domain": "ai-landscape",
+      "information": "Controls",
+      "purpose": "Establish the current-state baseline for AI Landscape.",
+      "source": "Usage telemetry",
+      "systemOfRecord": "AI inventory",
+      "businessOwner": "Platform Owner",
+      "technicalOwner": "I",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "AI Capability Inventory",
+        "Shadow AI Register"
+      ]
+    },
+    {
+      "id": "EVD-07-09",
+      "domain": "ai-landscape",
+      "information": "Cost",
+      "purpose": "Establish the current-state baseline for AI Landscape.",
+      "source": "AI inventory",
+      "systemOfRecord": "AI inventory",
+      "businessOwner": "Platform Owner",
+      "technicalOwner": "I",
+      "validationMethod": "Record gaps, assumptions and confidence",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "AI Capability Inventory",
+        "Shadow AI Register"
+      ]
+    },
+    {
+      "id": "EVD-07-10",
+      "domain": "ai-landscape",
+      "information": "Status",
+      "purpose": "Establish the current-state baseline for AI Landscape.",
+      "source": "Model registry",
+      "systemOfRecord": "AI inventory",
+      "businessOwner": "Platform Owner",
+      "technicalOwner": "I",
+      "validationMethod": "Obtain independent validation for high-risk findings",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "AI Capability Inventory",
+        "Shadow AI Register"
+      ]
+    },
+    {
+      "id": "EVD-08-01",
+      "domain": "automation-landscape",
+      "information": "Automation",
+      "purpose": "Establish the current-state baseline for Automation Landscape.",
+      "source": "Automation repository",
+      "systemOfRecord": "Automation repository",
+      "businessOwner": "Automation Lead",
+      "technicalOwner": "r",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "At stage start and material change",
+      "usedBy": [
+        "Automation Inventory",
+        "Opportunity Register"
+      ]
+    },
+    {
+      "id": "EVD-08-02",
+      "domain": "automation-landscape",
+      "information": "Owner",
+      "purpose": "Establish the current-state baseline for Automation Landscape.",
+      "source": "Orchestrator logs",
+      "systemOfRecord": "Automation repository",
+      "businessOwner": "Automation Lead",
+      "technicalOwner": "r",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Automation Inventory",
+        "Opportunity Register"
+      ]
+    },
+    {
+      "id": "EVD-08-03",
+      "domain": "automation-landscape",
+      "information": "Process",
+      "purpose": "Establish the current-state baseline for Automation Landscape.",
+      "source": "Process maps",
+      "systemOfRecord": "Automation repository",
+      "businessOwner": "Automation Lead",
+      "technicalOwner": "r",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Automation Inventory",
+        "Opportunity Register"
+      ]
+    },
+    {
+      "id": "EVD-08-04",
+      "domain": "automation-landscape",
+      "information": "Platform",
+      "purpose": "Establish the current-state baseline for Automation Landscape.",
+      "source": "Automation repository",
+      "systemOfRecord": "Automation repository",
+      "businessOwner": "Automation Lead",
+      "technicalOwner": "r",
+      "validationMethod": "Record gaps, assumptions and confidence",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Automation Inventory",
+        "Opportunity Register"
+      ]
+    },
+    {
+      "id": "EVD-08-05",
+      "domain": "automation-landscape",
+      "information": "Volume",
+      "purpose": "Establish the current-state baseline for Automation Landscape.",
+      "source": "Orchestrator logs",
+      "systemOfRecord": "Automation repository",
+      "businessOwner": "Automation Lead",
+      "technicalOwner": "r",
+      "validationMethod": "Obtain independent validation for high-risk findings",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Automation Inventory",
+        "Opportunity Register"
+      ]
+    },
+    {
+      "id": "EVD-08-06",
+      "domain": "automation-landscape",
+      "information": "Failure rate",
+      "purpose": "Establish the current-state baseline for Automation Landscape.",
+      "source": "Process maps",
+      "systemOfRecord": "Automation repository",
+      "businessOwner": "Automation Lead",
+      "technicalOwner": "r",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Automation Inventory",
+        "Opportunity Register"
+      ]
+    },
+    {
+      "id": "EVD-08-07",
+      "domain": "automation-landscape",
+      "information": "Controls",
+      "purpose": "Establish the current-state baseline for Automation Landscape.",
+      "source": "Automation repository",
+      "systemOfRecord": "Automation repository",
+      "businessOwner": "Automation Lead",
+      "technicalOwner": "r",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Automation Inventory",
+        "Opportunity Register"
+      ]
+    },
+    {
+      "id": "EVD-08-08",
+      "domain": "automation-landscape",
+      "information": "Dependencies",
+      "purpose": "Establish the current-state baseline for Automation Landscape.",
+      "source": "Orchestrator logs",
+      "systemOfRecord": "Automation repository",
+      "businessOwner": "Automation Lead",
+      "technicalOwner": "r",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Automation Inventory",
+        "Opportunity Register"
+      ]
+    },
+    {
+      "id": "EVD-08-09",
+      "domain": "automation-landscape",
+      "information": "Support",
+      "purpose": "Establish the current-state baseline for Automation Landscape.",
+      "source": "Process maps",
+      "systemOfRecord": "Automation repository",
+      "businessOwner": "Automation Lead",
+      "technicalOwner": "r",
+      "validationMethod": "Record gaps, assumptions and confidence",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Automation Inventory",
+        "Opportunity Register"
+      ]
+    },
+    {
+      "id": "EVD-09-01",
+      "domain": "infrastructure-hosting",
+      "information": "Platform",
+      "purpose": "Establish the current-state baseline for Infrastructure & Hosting.",
+      "source": "CMDB",
+      "systemOfRecord": "CMDB",
+      "businessOwner": "Infrastructure Lead",
+      "technicalOwner": "l",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "At stage start and material change",
+      "usedBy": [
+        "Infrastructure Assessment",
+        "Technology Landscape"
+      ]
+    },
+    {
+      "id": "EVD-09-02",
+      "domain": "infrastructure-hosting",
+      "information": "Location",
+      "purpose": "Establish the current-state baseline for Infrastructure & Hosting.",
+      "source": "Monitoring",
+      "systemOfRecord": "CMDB",
+      "businessOwner": "Infrastructure Lead",
+      "technicalOwner": "l",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Infrastructure Assessment",
+        "Technology Landscape"
+      ]
+    },
+    {
+      "id": "EVD-09-03",
+      "domain": "infrastructure-hosting",
+      "information": "Capacity",
+      "purpose": "Establish the current-state baseline for Infrastructure & Hosting.",
+      "source": "Capacity reports",
+      "systemOfRecord": "CMDB",
+      "businessOwner": "Infrastructure Lead",
+      "technicalOwner": "l",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Infrastructure Assessment",
+        "Technology Landscape"
+      ]
+    },
+    {
+      "id": "EVD-09-04",
+      "domain": "infrastructure-hosting",
+      "information": "Utilisation",
+      "purpose": "Establish the current-state baseline for Infrastructure & Hosting.",
+      "source": "DR tests",
+      "systemOfRecord": "CMDB",
+      "businessOwner": "Infrastructure Lead",
+      "technicalOwner": "l",
+      "validationMethod": "Record gaps, assumptions and confidence",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Infrastructure Assessment",
+        "Technology Landscape"
+      ]
+    },
+    {
+      "id": "EVD-09-05",
+      "domain": "infrastructure-hosting",
+      "information": "Availability",
+      "purpose": "Establish the current-state baseline for Infrastructure & Hosting.",
+      "source": "CMDB",
+      "systemOfRecord": "CMDB",
+      "businessOwner": "Infrastructure Lead",
+      "technicalOwner": "l",
+      "validationMethod": "Obtain independent validation for high-risk findings",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Infrastructure Assessment",
+        "Technology Landscape"
+      ]
+    },
+    {
+      "id": "EVD-09-06",
+      "domain": "infrastructure-hosting",
+      "information": "Network",
+      "purpose": "Establish the current-state baseline for Infrastructure & Hosting.",
+      "source": "Monitoring",
+      "systemOfRecord": "CMDB",
+      "businessOwner": "Infrastructure Lead",
+      "technicalOwner": "l",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Infrastructure Assessment",
+        "Technology Landscape"
+      ]
+    },
+    {
+      "id": "EVD-09-07",
+      "domain": "infrastructure-hosting",
+      "information": "Backup",
+      "purpose": "Establish the current-state baseline for Infrastructure & Hosting.",
+      "source": "Capacity reports",
+      "systemOfRecord": "CMDB",
+      "businessOwner": "Infrastructure Lead",
+      "technicalOwner": "l",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Infrastructure Assessment",
+        "Technology Landscape"
+      ]
+    },
+    {
+      "id": "EVD-09-08",
+      "domain": "infrastructure-hosting",
+      "information": "Recovery",
+      "purpose": "Establish the current-state baseline for Infrastructure & Hosting.",
+      "source": "DR tests",
+      "systemOfRecord": "CMDB",
+      "businessOwner": "Infrastructure Lead",
+      "technicalOwner": "l",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Infrastructure Assessment",
+        "Technology Landscape"
+      ]
+    },
+    {
+      "id": "EVD-09-09",
+      "domain": "infrastructure-hosting",
+      "information": "Cost",
+      "purpose": "Establish the current-state baseline for Infrastructure & Hosting.",
+      "source": "CMDB",
+      "systemOfRecord": "CMDB",
+      "businessOwner": "Infrastructure Lead",
+      "technicalOwner": "l",
+      "validationMethod": "Record gaps, assumptions and confidence",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Infrastructure Assessment",
+        "Technology Landscape"
+      ]
+    },
+    {
+      "id": "EVD-10-01",
+      "domain": "cloud-platforms",
+      "information": "Provider",
+      "purpose": "Establish the current-state baseline for Cloud Platforms.",
+      "source": "Cloud inventory",
+      "systemOfRecord": "Cloud inventory",
+      "businessOwner": "Cloud Platform Owner",
+      "technicalOwner": "l",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "At stage start and material change",
+      "usedBy": [
+        "Cloud Assessment",
+        "Cost Baseline"
+      ]
+    },
+    {
+      "id": "EVD-10-02",
+      "domain": "cloud-platforms",
+      "information": "Account/subscription",
+      "purpose": "Establish the current-state baseline for Cloud Platforms.",
+      "source": "Billing",
+      "systemOfRecord": "Cloud inventory",
+      "businessOwner": "Cloud Platform Owner",
+      "technicalOwner": "l",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Cloud Assessment",
+        "Cost Baseline"
+      ]
+    },
+    {
+      "id": "EVD-10-03",
+      "domain": "cloud-platforms",
+      "information": "Region",
+      "purpose": "Establish the current-state baseline for Cloud Platforms.",
+      "source": "Policy",
+      "systemOfRecord": "Cloud inventory",
+      "businessOwner": "Cloud Platform Owner",
+      "technicalOwner": "l",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Cloud Assessment",
+        "Cost Baseline"
+      ]
+    },
+    {
+      "id": "EVD-10-04",
+      "domain": "cloud-platforms",
+      "information": "Services",
+      "purpose": "Establish the current-state baseline for Cloud Platforms.",
+      "source": "Architecture records",
+      "systemOfRecord": "Cloud inventory",
+      "businessOwner": "Cloud Platform Owner",
+      "technicalOwner": "l",
+      "validationMethod": "Record gaps, assumptions and confidence",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Cloud Assessment",
+        "Cost Baseline"
+      ]
+    },
+    {
+      "id": "EVD-10-05",
+      "domain": "cloud-platforms",
+      "information": "Landing zone",
+      "purpose": "Establish the current-state baseline for Cloud Platforms.",
+      "source": "Cloud inventory",
+      "systemOfRecord": "Cloud inventory",
+      "businessOwner": "Cloud Platform Owner",
+      "technicalOwner": "l",
+      "validationMethod": "Obtain independent validation for high-risk findings",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Cloud Assessment",
+        "Cost Baseline"
+      ]
+    },
+    {
+      "id": "EVD-10-06",
+      "domain": "cloud-platforms",
+      "information": "Controls",
+      "purpose": "Establish the current-state baseline for Cloud Platforms.",
+      "source": "Billing",
+      "systemOfRecord": "Cloud inventory",
+      "businessOwner": "Cloud Platform Owner",
+      "technicalOwner": "l",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Cloud Assessment",
+        "Cost Baseline"
+      ]
+    },
+    {
+      "id": "EVD-10-07",
+      "domain": "cloud-platforms",
+      "information": "Cost",
+      "purpose": "Establish the current-state baseline for Cloud Platforms.",
+      "source": "Policy",
+      "systemOfRecord": "Cloud inventory",
+      "businessOwner": "Cloud Platform Owner",
+      "technicalOwner": "l",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Cloud Assessment",
+        "Cost Baseline"
+      ]
+    },
+    {
+      "id": "EVD-10-08",
+      "domain": "cloud-platforms",
+      "information": "Owner",
+      "purpose": "Establish the current-state baseline for Cloud Platforms.",
+      "source": "Architecture records",
+      "systemOfRecord": "Cloud inventory",
+      "businessOwner": "Cloud Platform Owner",
+      "technicalOwner": "l",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Cloud Assessment",
+        "Cost Baseline"
+      ]
+    },
+    {
+      "id": "EVD-10-09",
+      "domain": "cloud-platforms",
+      "information": "Commitments",
+      "purpose": "Establish the current-state baseline for Cloud Platforms.",
+      "source": "Cloud inventory",
+      "systemOfRecord": "Cloud inventory",
+      "businessOwner": "Cloud Platform Owner",
+      "technicalOwner": "l",
+      "validationMethod": "Record gaps, assumptions and confidence",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Cloud Assessment",
+        "Cost Baseline"
+      ]
+    },
+    {
+      "id": "EVD-11-01",
+      "domain": "identity-access",
+      "information": "Identity type",
+      "purpose": "Establish the current-state baseline for Identity & Access Management.",
+      "source": "Identity provider",
+      "systemOfRecord": "Identity provider",
+      "businessOwner": "Identity Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "At stage start and material change",
+      "usedBy": [
+        "IAM Assessment",
+        "Security Assessment"
+      ]
+    },
+    {
+      "id": "EVD-11-02",
+      "domain": "identity-access",
+      "information": "Source",
+      "purpose": "Establish the current-state baseline for Identity & Access Management.",
+      "source": "PAM",
+      "systemOfRecord": "Identity provider",
+      "businessOwner": "Identity Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "IAM Assessment",
+        "Security Assessment"
+      ]
+    },
+    {
+      "id": "EVD-11-03",
+      "domain": "identity-access",
+      "information": "Authentication",
+      "purpose": "Establish the current-state baseline for Identity & Access Management.",
+      "source": "Access reviews",
+      "systemOfRecord": "Identity provider",
+      "businessOwner": "Identity Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "IAM Assessment",
+        "Security Assessment"
+      ]
+    },
+    {
+      "id": "EVD-11-04",
+      "domain": "identity-access",
+      "information": "Authorisation",
+      "purpose": "Establish the current-state baseline for Identity & Access Management.",
+      "source": "Application roles",
+      "systemOfRecord": "Identity provider",
+      "businessOwner": "Identity Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Record gaps, assumptions and confidence",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "IAM Assessment",
+        "Security Assessment"
+      ]
+    },
+    {
+      "id": "EVD-11-05",
+      "domain": "identity-access",
+      "information": "Privileged access",
+      "purpose": "Establish the current-state baseline for Identity & Access Management.",
+      "source": "Identity provider",
+      "systemOfRecord": "Identity provider",
+      "businessOwner": "Identity Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Obtain independent validation for high-risk findings",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "IAM Assessment",
+        "Security Assessment"
+      ]
+    },
+    {
+      "id": "EVD-11-06",
+      "domain": "identity-access",
+      "information": "Lifecycle",
+      "purpose": "Establish the current-state baseline for Identity & Access Management.",
+      "source": "PAM",
+      "systemOfRecord": "Identity provider",
+      "businessOwner": "Identity Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "IAM Assessment",
+        "Security Assessment"
+      ]
+    },
+    {
+      "id": "EVD-11-07",
+      "domain": "identity-access",
+      "information": "Review",
+      "purpose": "Establish the current-state baseline for Identity & Access Management.",
+      "source": "Access reviews",
+      "systemOfRecord": "Identity provider",
+      "businessOwner": "Identity Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "IAM Assessment",
+        "Security Assessment"
+      ]
+    },
+    {
+      "id": "EVD-11-08",
+      "domain": "identity-access",
+      "information": "Logging",
+      "purpose": "Establish the current-state baseline for Identity & Access Management.",
+      "source": "Application roles",
+      "systemOfRecord": "Identity provider",
+      "businessOwner": "Identity Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "IAM Assessment",
+        "Security Assessment"
+      ]
+    },
+    {
+      "id": "EVD-12-01",
+      "domain": "cybersecurity",
+      "information": "Assets",
+      "purpose": "Establish the current-state baseline for Cybersecurity.",
+      "source": "Security tools",
+      "systemOfRecord": "Security tools",
+      "businessOwner": "CISO",
+      "technicalOwner": "e",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "At stage start and material change",
+      "usedBy": [
+        "Security Assessment",
+        "Technical Debt Register"
+      ]
+    },
+    {
+      "id": "EVD-12-02",
+      "domain": "cybersecurity",
+      "information": "Threats",
+      "purpose": "Establish the current-state baseline for Cybersecurity.",
+      "source": "Risk register",
+      "systemOfRecord": "Security tools",
+      "businessOwner": "CISO",
+      "technicalOwner": "e",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Security Assessment",
+        "Technical Debt Register"
+      ]
+    },
+    {
+      "id": "EVD-12-03",
+      "domain": "cybersecurity",
+      "information": "Controls",
+      "purpose": "Establish the current-state baseline for Cybersecurity.",
+      "source": "Incident records",
+      "systemOfRecord": "Security tools",
+      "businessOwner": "CISO",
+      "technicalOwner": "e",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Security Assessment",
+        "Technical Debt Register"
+      ]
+    },
+    {
+      "id": "EVD-12-04",
+      "domain": "cybersecurity",
+      "information": "Vulnerabilities",
+      "purpose": "Establish the current-state baseline for Cybersecurity.",
+      "source": "Audit reports",
+      "systemOfRecord": "Security tools",
+      "businessOwner": "CISO",
+      "technicalOwner": "e",
+      "validationMethod": "Record gaps, assumptions and confidence",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Security Assessment",
+        "Technical Debt Register"
+      ]
+    },
+    {
+      "id": "EVD-12-05",
+      "domain": "cybersecurity",
+      "information": "Incidents",
+      "purpose": "Establish the current-state baseline for Cybersecurity.",
+      "source": "Security tools",
+      "systemOfRecord": "Security tools",
+      "businessOwner": "CISO",
+      "technicalOwner": "e",
+      "validationMethod": "Obtain independent validation for high-risk findings",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Security Assessment",
+        "Technical Debt Register"
+      ]
+    },
+    {
+      "id": "EVD-12-06",
+      "domain": "cybersecurity",
+      "information": "Monitoring",
+      "purpose": "Establish the current-state baseline for Cybersecurity.",
+      "source": "Risk register",
+      "systemOfRecord": "Security tools",
+      "businessOwner": "CISO",
+      "technicalOwner": "e",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Security Assessment",
+        "Technical Debt Register"
+      ]
+    },
+    {
+      "id": "EVD-12-07",
+      "domain": "cybersecurity",
+      "information": "Testing",
+      "purpose": "Establish the current-state baseline for Cybersecurity.",
+      "source": "Incident records",
+      "systemOfRecord": "Security tools",
+      "businessOwner": "CISO",
+      "technicalOwner": "e",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Security Assessment",
+        "Technical Debt Register"
+      ]
+    },
+    {
+      "id": "EVD-12-08",
+      "domain": "cybersecurity",
+      "information": "Exceptions",
+      "purpose": "Establish the current-state baseline for Cybersecurity.",
+      "source": "Audit reports",
+      "systemOfRecord": "Security tools",
+      "businessOwner": "CISO",
+      "technicalOwner": "e",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Security Assessment",
+        "Technical Debt Register"
+      ]
+    },
+    {
+      "id": "EVD-13-01",
+      "domain": "integration-apis",
+      "information": "Interface",
+      "purpose": "Establish the current-state baseline for Integration & APIs.",
+      "source": "API gateway",
+      "systemOfRecord": "API gateway",
+      "businessOwner": "Integration Owner",
+      "technicalOwner": "p",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "At stage start and material change",
+      "usedBy": [
+        "Integration Catalogue",
+        "Technology Landscape"
+      ]
+    },
+    {
+      "id": "EVD-13-02",
+      "domain": "integration-apis",
+      "information": "Source",
+      "purpose": "Establish the current-state baseline for Integration & APIs.",
+      "source": "Integration platform",
+      "systemOfRecord": "API gateway",
+      "businessOwner": "Integration Owner",
+      "technicalOwner": "p",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Integration Catalogue",
+        "Technology Landscape"
+      ]
+    },
+    {
+      "id": "EVD-13-03",
+      "domain": "integration-apis",
+      "information": "Target",
+      "purpose": "Establish the current-state baseline for Integration & APIs.",
+      "source": "Architecture diagrams",
+      "systemOfRecord": "API gateway",
+      "businessOwner": "Integration Owner",
+      "technicalOwner": "p",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Integration Catalogue",
+        "Technology Landscape"
+      ]
+    },
+    {
+      "id": "EVD-13-04",
+      "domain": "integration-apis",
+      "information": "Owner",
+      "purpose": "Establish the current-state baseline for Integration & APIs.",
+      "source": "Logs",
+      "systemOfRecord": "API gateway",
+      "businessOwner": "Integration Owner",
+      "technicalOwner": "p",
+      "validationMethod": "Record gaps, assumptions and confidence",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Integration Catalogue",
+        "Technology Landscape"
+      ]
+    },
+    {
+      "id": "EVD-13-05",
+      "domain": "integration-apis",
+      "information": "Protocol",
+      "purpose": "Establish the current-state baseline for Integration & APIs.",
+      "source": "API gateway",
+      "systemOfRecord": "API gateway",
+      "businessOwner": "Integration Owner",
+      "technicalOwner": "p",
+      "validationMethod": "Obtain independent validation for high-risk findings",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Integration Catalogue",
+        "Technology Landscape"
+      ]
+    },
+    {
+      "id": "EVD-13-06",
+      "domain": "integration-apis",
+      "information": "Data",
+      "purpose": "Establish the current-state baseline for Integration & APIs.",
+      "source": "Integration platform",
+      "systemOfRecord": "API gateway",
+      "businessOwner": "Integration Owner",
+      "technicalOwner": "p",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Integration Catalogue",
+        "Technology Landscape"
+      ]
+    },
+    {
+      "id": "EVD-13-07",
+      "domain": "integration-apis",
+      "information": "Authentication",
+      "purpose": "Establish the current-state baseline for Integration & APIs.",
+      "source": "Architecture diagrams",
+      "systemOfRecord": "API gateway",
+      "businessOwner": "Integration Owner",
+      "technicalOwner": "p",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Integration Catalogue",
+        "Technology Landscape"
+      ]
+    },
+    {
+      "id": "EVD-13-08",
+      "domain": "integration-apis",
+      "information": "SLA",
+      "purpose": "Establish the current-state baseline for Integration & APIs.",
+      "source": "Logs",
+      "systemOfRecord": "API gateway",
+      "businessOwner": "Integration Owner",
+      "technicalOwner": "p",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Integration Catalogue",
+        "Technology Landscape"
+      ]
+    },
+    {
+      "id": "EVD-13-09",
+      "domain": "integration-apis",
+      "information": "Failure handling",
+      "purpose": "Establish the current-state baseline for Integration & APIs.",
+      "source": "API gateway",
+      "systemOfRecord": "API gateway",
+      "businessOwner": "Integration Owner",
+      "technicalOwner": "p",
+      "validationMethod": "Record gaps, assumptions and confidence",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Integration Catalogue",
+        "Technology Landscape"
+      ]
+    },
+    {
+      "id": "EVD-14-01",
+      "domain": "vendors-third-parties",
+      "information": "Vendor",
+      "purpose": "Establish the current-state baseline for Vendors & Third Parties.",
+      "source": "Contracts",
+      "systemOfRecord": "Contracts",
+      "businessOwner": "Procurement Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "At stage start and material change",
+      "usedBy": [
+        "Vendor Landscape",
+        "Regulatory Assessment"
+      ]
+    },
+    {
+      "id": "EVD-14-02",
+      "domain": "vendors-third-parties",
+      "information": "Service",
+      "purpose": "Establish the current-state baseline for Vendors & Third Parties.",
+      "source": "Vendor register",
+      "systemOfRecord": "Contracts",
+      "businessOwner": "Procurement Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Vendor Landscape",
+        "Regulatory Assessment"
+      ]
+    },
+    {
+      "id": "EVD-14-03",
+      "domain": "vendors-third-parties",
+      "information": "Owner",
+      "purpose": "Establish the current-state baseline for Vendors & Third Parties.",
+      "source": "Assessments",
+      "systemOfRecord": "Contracts",
+      "businessOwner": "Procurement Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Vendor Landscape",
+        "Regulatory Assessment"
+      ]
+    },
+    {
+      "id": "EVD-14-04",
+      "domain": "vendors-third-parties",
+      "information": "Contract",
+      "purpose": "Establish the current-state baseline for Vendors & Third Parties.",
+      "source": "Invoices",
+      "systemOfRecord": "Contracts",
+      "businessOwner": "Procurement Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Record gaps, assumptions and confidence",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Vendor Landscape",
+        "Regulatory Assessment"
+      ]
+    },
+    {
+      "id": "EVD-14-05",
+      "domain": "vendors-third-parties",
+      "information": "Data access",
+      "purpose": "Establish the current-state baseline for Vendors & Third Parties.",
+      "source": "Contracts",
+      "systemOfRecord": "Contracts",
+      "businessOwner": "Procurement Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Obtain independent validation for high-risk findings",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Vendor Landscape",
+        "Regulatory Assessment"
+      ]
+    },
+    {
+      "id": "EVD-14-06",
+      "domain": "vendors-third-parties",
+      "information": "Subprocessors",
+      "purpose": "Establish the current-state baseline for Vendors & Third Parties.",
+      "source": "Vendor register",
+      "systemOfRecord": "Contracts",
+      "businessOwner": "Procurement Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Vendor Landscape",
+        "Regulatory Assessment"
+      ]
+    },
+    {
+      "id": "EVD-14-07",
+      "domain": "vendors-third-parties",
+      "information": "SLA",
+      "purpose": "Establish the current-state baseline for Vendors & Third Parties.",
+      "source": "Assessments",
+      "systemOfRecord": "Contracts",
+      "businessOwner": "Procurement Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Vendor Landscape",
+        "Regulatory Assessment"
+      ]
+    },
+    {
+      "id": "EVD-14-08",
+      "domain": "vendors-third-parties",
+      "information": "Assurance",
+      "purpose": "Establish the current-state baseline for Vendors & Third Parties.",
+      "source": "Invoices",
+      "systemOfRecord": "Contracts",
+      "businessOwner": "Procurement Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Vendor Landscape",
+        "Regulatory Assessment"
+      ]
+    },
+    {
+      "id": "EVD-14-09",
+      "domain": "vendors-third-parties",
+      "information": "Exit plan",
+      "purpose": "Establish the current-state baseline for Vendors & Third Parties.",
+      "source": "Contracts",
+      "systemOfRecord": "Contracts",
+      "businessOwner": "Procurement Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Record gaps, assumptions and confidence",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Vendor Landscape",
+        "Regulatory Assessment"
+      ]
+    },
+    {
+      "id": "EVD-14-10",
+      "domain": "vendors-third-parties",
+      "information": "Cost",
+      "purpose": "Establish the current-state baseline for Vendors & Third Parties.",
+      "source": "Vendor register",
+      "systemOfRecord": "Contracts",
+      "businessOwner": "Procurement Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Obtain independent validation for high-risk findings",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Vendor Landscape",
+        "Regulatory Assessment"
+      ]
+    },
+    {
+      "id": "EVD-15-01",
+      "domain": "operations-service-management",
+      "information": "Service",
+      "purpose": "Establish the current-state baseline for Operations & Service Management.",
+      "source": "Service catalogue",
+      "systemOfRecord": "Service catalogue",
+      "businessOwner": "Operations Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "At stage start and material change",
+      "usedBy": [
+        "Current-State Assessment Report",
+        "Technical Debt Register"
+      ]
+    },
+    {
+      "id": "EVD-15-02",
+      "domain": "operations-service-management",
+      "information": "Owner",
+      "purpose": "Establish the current-state baseline for Operations & Service Management.",
+      "source": "ITSM",
+      "systemOfRecord": "Service catalogue",
+      "businessOwner": "Operations Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Current-State Assessment Report",
+        "Technical Debt Register"
+      ]
+    },
+    {
+      "id": "EVD-15-03",
+      "domain": "operations-service-management",
+      "information": "SLO/SLA",
+      "purpose": "Establish the current-state baseline for Operations & Service Management.",
+      "source": "Monitoring",
+      "systemOfRecord": "Service catalogue",
+      "businessOwner": "Operations Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Current-State Assessment Report",
+        "Technical Debt Register"
+      ]
+    },
+    {
+      "id": "EVD-15-04",
+      "domain": "operations-service-management",
+      "information": "Support",
+      "purpose": "Establish the current-state baseline for Operations & Service Management.",
+      "source": "Runbooks",
+      "systemOfRecord": "Service catalogue",
+      "businessOwner": "Operations Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Record gaps, assumptions and confidence",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Current-State Assessment Report",
+        "Technical Debt Register"
+      ]
+    },
+    {
+      "id": "EVD-15-05",
+      "domain": "operations-service-management",
+      "information": "Monitoring",
+      "purpose": "Establish the current-state baseline for Operations & Service Management.",
+      "source": "Service catalogue",
+      "systemOfRecord": "Service catalogue",
+      "businessOwner": "Operations Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Obtain independent validation for high-risk findings",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Current-State Assessment Report",
+        "Technical Debt Register"
+      ]
+    },
+    {
+      "id": "EVD-15-06",
+      "domain": "operations-service-management",
+      "information": "Incidents",
+      "purpose": "Establish the current-state baseline for Operations & Service Management.",
+      "source": "ITSM",
+      "systemOfRecord": "Service catalogue",
+      "businessOwner": "Operations Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Current-State Assessment Report",
+        "Technical Debt Register"
+      ]
+    },
+    {
+      "id": "EVD-15-07",
+      "domain": "operations-service-management",
+      "information": "Changes",
+      "purpose": "Establish the current-state baseline for Operations & Service Management.",
+      "source": "Monitoring",
+      "systemOfRecord": "Service catalogue",
+      "businessOwner": "Operations Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Current-State Assessment Report",
+        "Technical Debt Register"
+      ]
+    },
+    {
+      "id": "EVD-15-08",
+      "domain": "operations-service-management",
+      "information": "Capacity",
+      "purpose": "Establish the current-state baseline for Operations & Service Management.",
+      "source": "Runbooks",
+      "systemOfRecord": "Service catalogue",
+      "businessOwner": "Operations Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Current-State Assessment Report",
+        "Technical Debt Register"
+      ]
+    },
+    {
+      "id": "EVD-15-09",
+      "domain": "operations-service-management",
+      "information": "Continuity",
+      "purpose": "Establish the current-state baseline for Operations & Service Management.",
+      "source": "Service catalogue",
+      "systemOfRecord": "Service catalogue",
+      "businessOwner": "Operations Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Record gaps, assumptions and confidence",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Current-State Assessment Report",
+        "Technical Debt Register"
+      ]
+    },
+    {
+      "id": "EVD-16-01",
+      "domain": "regulatory-compliance",
+      "information": "Obligation",
+      "purpose": "Establish the current-state baseline for Regulatory & Compliance.",
+      "source": "Obligation register",
+      "systemOfRecord": "Obligation register",
+      "businessOwner": "Risk and Compliance Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "At stage start and material change",
+      "usedBy": [
+        "Regulatory Assessment",
+        "Governance Assessment"
+      ]
+    },
+    {
+      "id": "EVD-16-02",
+      "domain": "regulatory-compliance",
+      "information": "Applicability",
+      "purpose": "Establish the current-state baseline for Regulatory & Compliance.",
+      "source": "Policies",
+      "systemOfRecord": "Obligation register",
+      "businessOwner": "Risk and Compliance Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Regulatory Assessment",
+        "Governance Assessment"
+      ]
+    },
+    {
+      "id": "EVD-16-03",
+      "domain": "regulatory-compliance",
+      "information": "Owner",
+      "purpose": "Establish the current-state baseline for Regulatory & Compliance.",
+      "source": "Audit reports",
+      "systemOfRecord": "Obligation register",
+      "businessOwner": "Risk and Compliance Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Regulatory Assessment",
+        "Governance Assessment"
+      ]
+    },
+    {
+      "id": "EVD-16-04",
+      "domain": "regulatory-compliance",
+      "information": "Control",
+      "purpose": "Establish the current-state baseline for Regulatory & Compliance.",
+      "source": "Legal advice",
+      "systemOfRecord": "Obligation register",
+      "businessOwner": "Risk and Compliance Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Record gaps, assumptions and confidence",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Regulatory Assessment",
+        "Governance Assessment"
+      ]
+    },
+    {
+      "id": "EVD-16-05",
+      "domain": "regulatory-compliance",
+      "information": "Evidence",
+      "purpose": "Establish the current-state baseline for Regulatory & Compliance.",
+      "source": "Obligation register",
+      "systemOfRecord": "Obligation register",
+      "businessOwner": "Risk and Compliance Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Obtain independent validation for high-risk findings",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Regulatory Assessment",
+        "Governance Assessment"
+      ]
+    },
+    {
+      "id": "EVD-16-06",
+      "domain": "regulatory-compliance",
+      "information": "Review frequency",
+      "purpose": "Establish the current-state baseline for Regulatory & Compliance.",
+      "source": "Policies",
+      "systemOfRecord": "Obligation register",
+      "businessOwner": "Risk and Compliance Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Regulatory Assessment",
+        "Governance Assessment"
+      ]
+    },
+    {
+      "id": "EVD-16-07",
+      "domain": "regulatory-compliance",
+      "information": "Gap",
+      "purpose": "Establish the current-state baseline for Regulatory & Compliance.",
+      "source": "Audit reports",
+      "systemOfRecord": "Obligation register",
+      "businessOwner": "Risk and Compliance Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Regulatory Assessment",
+        "Governance Assessment"
+      ]
+    },
+    {
+      "id": "EVD-16-08",
+      "domain": "regulatory-compliance",
+      "information": "Exception",
+      "purpose": "Establish the current-state baseline for Regulatory & Compliance.",
+      "source": "Legal advice",
+      "systemOfRecord": "Obligation register",
+      "businessOwner": "Risk and Compliance Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Regulatory Assessment",
+        "Governance Assessment"
+      ]
+    },
+    {
+      "id": "EVD-17-01",
+      "domain": "financial-baseline",
+      "information": "Cost category",
+      "purpose": "Establish the current-state baseline for Financial Baseline.",
+      "source": "General ledger",
+      "systemOfRecord": "General ledger",
+      "businessOwner": "Finance Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "At stage start and material change",
+      "usedBy": [
+        "Cost Baseline",
+        "Discovery Findings Report"
+      ]
+    },
+    {
+      "id": "EVD-17-02",
+      "domain": "financial-baseline",
+      "information": "Amount/range",
+      "purpose": "Establish the current-state baseline for Financial Baseline.",
+      "source": "Invoices",
+      "systemOfRecord": "General ledger",
+      "businessOwner": "Finance Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Cost Baseline",
+        "Discovery Findings Report"
+      ]
+    },
+    {
+      "id": "EVD-17-03",
+      "domain": "financial-baseline",
+      "information": "Unit",
+      "purpose": "Establish the current-state baseline for Financial Baseline.",
+      "source": "Cloud billing",
+      "systemOfRecord": "General ledger",
+      "businessOwner": "Finance Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Cost Baseline",
+        "Discovery Findings Report"
+      ]
+    },
+    {
+      "id": "EVD-17-04",
+      "domain": "financial-baseline",
+      "information": "Owner",
+      "purpose": "Establish the current-state baseline for Financial Baseline.",
+      "source": "Resource plans",
+      "systemOfRecord": "General ledger",
+      "businessOwner": "Finance Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Record gaps, assumptions and confidence",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Cost Baseline",
+        "Discovery Findings Report"
+      ]
+    },
+    {
+      "id": "EVD-17-05",
+      "domain": "financial-baseline",
+      "information": "Period",
+      "purpose": "Establish the current-state baseline for Financial Baseline.",
+      "source": "General ledger",
+      "systemOfRecord": "General ledger",
+      "businessOwner": "Finance Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Obtain independent validation for high-risk findings",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Cost Baseline",
+        "Discovery Findings Report"
+      ]
+    },
+    {
+      "id": "EVD-17-06",
+      "domain": "financial-baseline",
+      "information": "Allocation",
+      "purpose": "Establish the current-state baseline for Financial Baseline.",
+      "source": "Invoices",
+      "systemOfRecord": "General ledger",
+      "businessOwner": "Finance Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Cost Baseline",
+        "Discovery Findings Report"
+      ]
+    },
+    {
+      "id": "EVD-17-07",
+      "domain": "financial-baseline",
+      "information": "Commitment",
+      "purpose": "Establish the current-state baseline for Financial Baseline.",
+      "source": "Cloud billing",
+      "systemOfRecord": "General ledger",
+      "businessOwner": "Finance Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Cost Baseline",
+        "Discovery Findings Report"
+      ]
+    },
+    {
+      "id": "EVD-17-08",
+      "domain": "financial-baseline",
+      "information": "Confidence",
+      "purpose": "Establish the current-state baseline for Financial Baseline.",
+      "source": "Resource plans",
+      "systemOfRecord": "General ledger",
+      "businessOwner": "Finance Lead",
+      "technicalOwner": "e",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Cost Baseline",
+        "Discovery Findings Report"
+      ]
+    },
+    {
+      "id": "EVD-18-01",
+      "domain": "skills-workforce",
+      "information": "Role",
+      "purpose": "Establish the current-state baseline for Skills & Workforce.",
+      "source": "Skills inventory",
+      "systemOfRecord": "Skills inventory",
+      "businessOwner": "HR/Workforce Lead",
+      "technicalOwner": "u",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "At stage start and material change",
+      "usedBy": [
+        "Skills Assessment",
+        "Opportunity Register"
+      ]
+    },
+    {
+      "id": "EVD-18-02",
+      "domain": "skills-workforce",
+      "information": "Skill",
+      "purpose": "Establish the current-state baseline for Skills & Workforce.",
+      "source": "Role profiles",
+      "systemOfRecord": "Skills inventory",
+      "businessOwner": "HR/Workforce Lead",
+      "technicalOwner": "u",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Skills Assessment",
+        "Opportunity Register"
+      ]
+    },
+    {
+      "id": "EVD-18-03",
+      "domain": "skills-workforce",
+      "information": "Proficiency",
+      "purpose": "Establish the current-state baseline for Skills & Workforce.",
+      "source": "Training records",
+      "systemOfRecord": "Skills inventory",
+      "businessOwner": "HR/Workforce Lead",
+      "technicalOwner": "u",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Skills Assessment",
+        "Opportunity Register"
+      ]
+    },
+    {
+      "id": "EVD-18-04",
+      "domain": "skills-workforce",
+      "information": "Capacity",
+      "purpose": "Establish the current-state baseline for Skills & Workforce.",
+      "source": "Workforce plans",
+      "systemOfRecord": "Skills inventory",
+      "businessOwner": "HR/Workforce Lead",
+      "technicalOwner": "u",
+      "validationMethod": "Record gaps, assumptions and confidence",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Skills Assessment",
+        "Opportunity Register"
+      ]
+    },
+    {
+      "id": "EVD-18-05",
+      "domain": "skills-workforce",
+      "information": "Demand",
+      "purpose": "Establish the current-state baseline for Skills & Workforce.",
+      "source": "Skills inventory",
+      "systemOfRecord": "Skills inventory",
+      "businessOwner": "HR/Workforce Lead",
+      "technicalOwner": "u",
+      "validationMethod": "Obtain independent validation for high-risk findings",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Skills Assessment",
+        "Opportunity Register"
+      ]
+    },
+    {
+      "id": "EVD-18-06",
+      "domain": "skills-workforce",
+      "information": "Gap",
+      "purpose": "Establish the current-state baseline for Skills & Workforce.",
+      "source": "Role profiles",
+      "systemOfRecord": "Skills inventory",
+      "businessOwner": "HR/Workforce Lead",
+      "technicalOwner": "u",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Skills Assessment",
+        "Opportunity Register"
+      ]
+    },
+    {
+      "id": "EVD-18-07",
+      "domain": "skills-workforce",
+      "information": "Location",
+      "purpose": "Establish the current-state baseline for Skills & Workforce.",
+      "source": "Training records",
+      "systemOfRecord": "Skills inventory",
+      "businessOwner": "HR/Workforce Lead",
+      "technicalOwner": "u",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Skills Assessment",
+        "Opportunity Register"
+      ]
+    },
+    {
+      "id": "EVD-18-08",
+      "domain": "skills-workforce",
+      "information": "Learning path",
+      "purpose": "Establish the current-state baseline for Skills & Workforce.",
+      "source": "Workforce plans",
+      "systemOfRecord": "Skills inventory",
+      "businessOwner": "HR/Workforce Lead",
+      "technicalOwner": "u",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Skills Assessment",
+        "Opportunity Register"
+      ]
+    },
+    {
+      "id": "EVD-19-01",
+      "domain": "existing-governance",
+      "information": "Forum",
+      "purpose": "Establish the current-state baseline for Existing Governance.",
+      "source": "Policy library",
+      "systemOfRecord": "Policy library",
+      "businessOwner": "Platform Owner",
+      "technicalOwner": "i",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "At stage start and material change",
+      "usedBy": [
+        "Governance Assessment",
+        "Regulatory Assessment"
+      ]
+    },
+    {
+      "id": "EVD-19-02",
+      "domain": "existing-governance",
+      "information": "Policy",
+      "purpose": "Establish the current-state baseline for Existing Governance.",
+      "source": "Committee terms",
+      "systemOfRecord": "Policy library",
+      "businessOwner": "Platform Owner",
+      "technicalOwner": "i",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Governance Assessment",
+        "Regulatory Assessment"
+      ]
+    },
+    {
+      "id": "EVD-19-03",
+      "domain": "existing-governance",
+      "information": "Control",
+      "purpose": "Establish the current-state baseline for Existing Governance.",
+      "source": "Control library",
+      "systemOfRecord": "Policy library",
+      "businessOwner": "Platform Owner",
+      "technicalOwner": "i",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Governance Assessment",
+        "Regulatory Assessment"
+      ]
+    },
+    {
+      "id": "EVD-19-04",
+      "domain": "existing-governance",
+      "information": "Owner",
+      "purpose": "Establish the current-state baseline for Existing Governance.",
+      "source": "Audit evidence",
+      "systemOfRecord": "Policy library",
+      "businessOwner": "Platform Owner",
+      "technicalOwner": "i",
+      "validationMethod": "Record gaps, assumptions and confidence",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Governance Assessment",
+        "Regulatory Assessment"
+      ]
+    },
+    {
+      "id": "EVD-19-05",
+      "domain": "existing-governance",
+      "information": "Decision right",
+      "purpose": "Establish the current-state baseline for Existing Governance.",
+      "source": "Policy library",
+      "systemOfRecord": "Policy library",
+      "businessOwner": "Platform Owner",
+      "technicalOwner": "i",
+      "validationMethod": "Obtain independent validation for high-risk findings",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Governance Assessment",
+        "Regulatory Assessment"
+      ]
+    },
+    {
+      "id": "EVD-19-06",
+      "domain": "existing-governance",
+      "information": "Evidence",
+      "purpose": "Establish the current-state baseline for Existing Governance.",
+      "source": "Committee terms",
+      "systemOfRecord": "Policy library",
+      "businessOwner": "Platform Owner",
+      "technicalOwner": "i",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Governance Assessment",
+        "Regulatory Assessment"
+      ]
+    },
+    {
+      "id": "EVD-19-07",
+      "domain": "existing-governance",
+      "information": "Review",
+      "purpose": "Establish the current-state baseline for Existing Governance.",
+      "source": "Control library",
+      "systemOfRecord": "Policy library",
+      "businessOwner": "Platform Owner",
+      "technicalOwner": "i",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Governance Assessment",
+        "Regulatory Assessment"
+      ]
+    },
+    {
+      "id": "EVD-19-08",
+      "domain": "existing-governance",
+      "information": "Exception",
+      "purpose": "Establish the current-state baseline for Existing Governance.",
+      "source": "Audit evidence",
+      "systemOfRecord": "Policy library",
+      "businessOwner": "Platform Owner",
+      "technicalOwner": "i",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Governance Assessment",
+        "Regulatory Assessment"
+      ]
+    },
+    {
+      "id": "EVD-20-01",
+      "domain": "shadow-ai",
+      "information": "Tool/use case",
+      "purpose": "Establish the current-state baseline for Shadow AI & Unapproved Technology.",
+      "source": "Expense data",
+      "systemOfRecord": "Expense data",
+      "businessOwner": "Risk Executive",
+      "technicalOwner": "e",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "At stage start and material change",
+      "usedBy": [
+        "Shadow AI Register",
+        "Discovery Findings Report"
+      ]
+    },
+    {
+      "id": "EVD-20-02",
+      "domain": "shadow-ai",
+      "information": "Owner/user group",
+      "purpose": "Establish the current-state baseline for Shadow AI & Unapproved Technology.",
+      "source": "Network telemetry",
+      "systemOfRecord": "Expense data",
+      "businessOwner": "Risk Executive",
+      "technicalOwner": "e",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Shadow AI Register",
+        "Discovery Findings Report"
+      ]
+    },
+    {
+      "id": "EVD-20-03",
+      "domain": "shadow-ai",
+      "information": "Purpose",
+      "purpose": "Establish the current-state baseline for Shadow AI & Unapproved Technology.",
+      "source": "Surveys",
+      "systemOfRecord": "Expense data",
+      "businessOwner": "Risk Executive",
+      "technicalOwner": "e",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Shadow AI Register",
+        "Discovery Findings Report"
+      ]
+    },
+    {
+      "id": "EVD-20-04",
+      "domain": "shadow-ai",
+      "information": "Data",
+      "purpose": "Establish the current-state baseline for Shadow AI & Unapproved Technology.",
+      "source": "Interviews",
+      "systemOfRecord": "Expense data",
+      "businessOwner": "Risk Executive",
+      "technicalOwner": "e",
+      "validationMethod": "Record gaps, assumptions and confidence",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Shadow AI Register",
+        "Discovery Findings Report"
+      ]
+    },
+    {
+      "id": "EVD-20-05",
+      "domain": "shadow-ai",
+      "information": "Access route",
+      "purpose": "Establish the current-state baseline for Shadow AI & Unapproved Technology.",
+      "source": "Incident reports",
+      "systemOfRecord": "Expense data",
+      "businessOwner": "Risk Executive",
+      "technicalOwner": "e",
+      "validationMethod": "Obtain independent validation for high-risk findings",
+      "evidenceType": "Documented record",
+      "confidence": "high",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Shadow AI Register",
+        "Discovery Findings Report"
+      ]
+    },
+    {
+      "id": "EVD-20-06",
+      "domain": "shadow-ai",
+      "information": "Spend",
+      "purpose": "Establish the current-state baseline for Shadow AI & Unapproved Technology.",
+      "source": "Expense data",
+      "systemOfRecord": "Expense data",
+      "businessOwner": "Risk Executive",
+      "technicalOwner": "e",
+      "validationMethod": "Confirm the system of record and extraction date",
+      "evidenceType": "Structured record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Shadow AI Register",
+        "Discovery Findings Report"
+      ]
+    },
+    {
+      "id": "EVD-20-07",
+      "domain": "shadow-ai",
+      "information": "Risk",
+      "purpose": "Establish the current-state baseline for Shadow AI & Unapproved Technology.",
+      "source": "Network telemetry",
+      "systemOfRecord": "Expense data",
+      "businessOwner": "Risk Executive",
+      "technicalOwner": "e",
+      "validationMethod": "Reconcile evidence with accountable owners",
+      "evidenceType": "Documented record",
+      "confidence": "medium",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Shadow AI Register",
+        "Discovery Findings Report"
+      ]
+    },
+    {
+      "id": "EVD-20-08",
+      "domain": "shadow-ai",
+      "information": "Immediate action",
+      "purpose": "Establish the current-state baseline for Shadow AI & Unapproved Technology.",
+      "source": "Surveys",
+      "systemOfRecord": "Expense data",
+      "businessOwner": "Risk Executive",
+      "technicalOwner": "e",
+      "validationMethod": "Sample records against operational reality",
+      "evidenceType": "Structured record",
+      "confidence": "low",
+      "frequency": "Once during Discovery; validate before gate",
+      "usedBy": [
+        "Shadow AI Register",
+        "Discovery Findings Report"
+      ]
+    }
+  ]
+}

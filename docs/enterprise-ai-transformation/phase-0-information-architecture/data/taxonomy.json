@@ -1,0 +1,27 @@
+{
+  "version": "0.1.0",
+  "status": "proposed",
+  "stages": [
+    "overview", "stage-0-mobilise", "stage-1-discover", "stage-2-assess-readiness",
+    "stage-3-define-strategy", "stage-4-establish-governance",
+    "stage-5-prioritise-opportunities", "stage-6-build-business-case",
+    "stage-7-design-target-architecture", "stage-8-plan-implementation",
+    "stage-9-build-integrate", "stage-10-test-validate",
+    "stage-11-deploy-transition", "stage-12-operate-govern-production",
+    "stage-13-improve-scale", "cross-cutting", "knowledge-centre"
+  ],
+  "workstreams": [
+    "strategy-value", "business-process", "data", "architecture-technology",
+    "security-identity", "privacy-legal", "governance-responsible-ai",
+    "delivery-quality", "people-change", "operations-reliability",
+    "finance-procurement", "vendor-risk", "evidence-assurance"
+  ],
+  "pageTypes": [
+    "stage-overview", "guidance", "canonical-concept", "pattern", "standard",
+    "faq", "concern", "decision", "deliverable", "template", "checklist",
+    "tool", "case-study"
+  ],
+  "criticality": ["mandatory", "conditional", "recommended"],
+  "status": ["planned", "draft", "in-review", "approved", "published", "superseded", "archived"],
+  "gateDecisions": ["approved", "approved-with-conditions", "rework-required", "deferred", "rejected"]
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Data Security &amp; Privacy — Architecting Intelligence"><title>Data Security &amp; Privacy | Ratheesh Technology Ltd.</title>
+<link rel="stylesheet" href="../assets/css/legacy-visuals.css?v=20260726-4"><link rel="stylesheet" href="../assets/css/navigation.css?v=20260727-5"><link rel="stylesheet" href="/assets/css/methodology-v10.css?v=20260728-25"><script src="/assets/js/methodology-v10.js?v=20260728-26" defer></script></head>
+<body class="knowledge-theme-page" data-methodology-page="data-security"><a class="skip-link" href="#main-content">Skip to content</a><header id="methodology-header"></header>
+<header class="site-header">
+  <div class="utility-bar"><div class="utility-inner"><span>AI implementation &amp; governance advisory</span><a href="../pages/contact.html">Speak with an advisor <span aria-hidden="true">&#8594;</span></a></div></div>
+  <div class="header-container">
+    <a class="brand" href="../index.html" aria-label="Ratheesh Technology Ltd. home"><img class="company-logo" src="../assets/images/ratheesh-technology-logo-transparent.png?v=20260719-63" alt="Ratheesh Technology Ltd. — AI Implementation and Governance" width="1906" height="825"></a>
+    <button class="mobile-menu-button" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+    <nav id="primary-navigation" class="primary-navigation" aria-label="Primary navigation"></nav>
+  </div>
+</header><main id="main-content" class="inner-page"><div class="legacy-content"><section class="article-hero platform-page-hero"><div class="hero-inner"><div class="pg-tag pg-tag-teal">AI Governance</div>
+    <h1 class="pg-title">Data Security &amp; Privacy</h1>
+    <p class="pg-intro">A practical model for controlling what data an AI system can access, where that data travels, how long it remains, and who can retrieve it.</p></div></section><div class="container-narrow">
+<section class="decision-summary" aria-labelledby="data-decision-title"><h2 id="data-decision-title">Executive decision summary</h2><p class="decision-lead">An AI service should never receive more information than an authorised employee needs for the same task. Trace the complete data flow before approving the design.</p><div class="decision-summary-grid"><div><h3>Business outcome</h3><p>Protect customers, employees, intellectual property, and regulated information.</p></div><div><h3>How it works</h3><p>Classify data, enforce identity-bound access, minimise inputs, inspect outputs, and control retention and vendor use.</p></div><div><h3>Decision rule</h3><p>Do not send sensitive data where access, location, retention, deletion, and audit evidence cannot be demonstrated.</p></div></div><p class="decision-links">Related terms: <a href="ai-technology-glossary.html#personally-identifiable-information">Personally Identifiable Information (PII)</a>, <a href="ai-technology-glossary.html#data-loss-prevention">Data Loss Prevention (DLP)</a>, and <a href="ai-technology-glossary.html#role-based-access-control">Role-Based Access Control (RBAC)</a>.</p></section>
+  
+
+  <div class="concept">
+    <button class="c-trigger" aria-expanded="false"><span class="c-num">C-11</span><div class="c-hd"><div class="c-title">The Bifurcated Architecture: Route Workloads by Data Sensitivity</div><div class="c-preview">Not all AI workloads carry the same risk. One architecture trying to serve all of them either over-engineers low-risk cases or under-protects high-risk ones. Route by risk — automatically and enforced, not by employee judgment.</div></div><span class="c-arrow">▼</span></button>
+    <div class="c-body">
+      <div class="g2">
+        <div class="gcard"><span class="gtag t-tel">Route A — AI Security Gateway</span><div class="gc-title">Standard workloads: chat, code, queries</div><div class="gc-body"><strong>Identity decoupling</strong> strips all user metadata before leaving the network. <strong>Prompt tokenisation</strong> replaces sensitive entities with synthetic placeholders. <strong>Rehydration</strong> restores real values before output reaches the employee. The external provider never sees real data.</div></div>
+        <div class="gcard"><span class="gtag t-pur">Route B — Private Pipeline</span><div class="gc-title">Sensitive documents, regulated data, IP</div><div class="gc-body">Open-weights models on dedicated internal GPU clusters or private cloud VPC. No data traverses the public internet. Document chunking, embedding, and vector search all within the corporate perimeter. Ephemeral processing — all data purged immediately on session termination.</div></div>
+      </div>
+      <div class="callout co-red"><div class="co-lbl">Critical governance requirement</div><div class="co-txt"><strong>Routing must be automatic and enforced — not advisory.</strong> Tier 1 and Tier 2 data routes to the private pipeline automatically with no manual override option. An architecture where employees choose which route to use based on their own judgment is not a security architecture. It is a suggestion.</div></div>
+      <div class="drill"><button class="drill-btn">RBAC at the prompt level: the synthesis problem <span>expand ▾</span></button>
+      <div class="drill-content">
+        <div class="prose"><p>Traditional RBAC controls what a user can open. AI-era access control must govern what a user can know through synthesis. An employee authorised to access Document A and Document B may not be authorised to receive an AI-synthesised output combining insights from both — but without prompt-level controls, nothing prevents it.</p></div>
+        <div class="tw"><table><thead><tr><th>Layer</th><th>What It Controls</th><th>What Genuine Implementation Requires</th></tr></thead><tbody>
+          <tr><td>Layer 1 — Identity</td><td>Authentication before anything</td><td>Every AI interaction authenticated against enterprise identity provider. No anonymous or shared-session access.</td></tr>
+          <tr><td>Layer 2 — Prompt</td><td>Scope enforcement on the request</td><td>Classification engine assesses whether the requested operation is within the user's authorised scope — including aggregate analysis and bulk extraction requests.</td></tr>
+          <tr><td>Layer 3 — Retrieval</td><td>Permission-filtered vector retrieval</td><td>Query inherits user's identity token and filters restricted chunks before they enter the context window. Data that reaches the context window is data the model can use.</td></tr>
+          <tr><td>Layer 4 — Output</td><td>Final scan before delivery</td><td>Output scanned for data classification markers, restricted-source content, and sensitive data patterns. Last line of defence — not the primary control.</td></tr>
+        </tbody></table></div>
+      </div></div>
+    </div>
+  </div>
+
+  <div class="concept">
+    <button class="c-trigger" aria-expanded="false"><span class="c-num">C-12</span><div class="c-hd"><div class="c-title">Hidden Vendor Training: The Risk Nobody Reads the Contract For</div><div class="c-preview">Enterprises consistently discover this after the fact. The data was already flowing before anyone read the terms. The vendor was already permitted to use it before anyone checked the default settings.</div></div><span class="c-arrow">▼</span></button>
+    <div class="c-body">
+      <div class="g2">
+        <div class="gcard"><span class="gtag t-red">Terms of Service Gap</span><div class="gc-title">Default settings are not what you assume</div><div class="gc-body">Most foundation model APIs in their default commercial tier do not prohibit training usage. The opt-out must be actively configured, contractually confirmed, and technically enforced.</div></div>
+        <div class="gcard"><span class="gtag t-amb">The SaaS Product Risk</span><div class="gc-title">Tools adopted without telling procurement</div><div class="gc-body">Writing assistants, document summarisers, meeting tools — all built on foundation models with their own data usage terms. A legal team's document tool may process every upload through a third-party LLM whose terms were never reviewed.</div></div>
+      </div>
+      <div class="drill"><button class="drill-btn">What every vendor contract must include — and what to watch for <span>expand ▾</span></button>
+      <div class="drill-content"><ul class="clist">
+        <li><strong>Zero-training clause — explicit and specific.</strong> Must cover sub-processors. Watch for "improve our services" language — this is a training permission dressed up as a reassurance, not a prohibition.</li>
+        <li><strong>Zero-day retention — technically verified.</strong> API retention settings verified through the vendor portal — screenshots retained as audit evidence.</li>
+        <li><strong>Human review features disabled at subscription level.</strong> Not at the API call level — at the subscription configuration level. Confirmation in writing.</li>
+        <li><strong>Sub-processor disclosure and approval rights.</strong> The vendor must obtain enterprise consent before adding new sub-processors who handle enterprise data.</li>
+        <li><strong>Annual vendor data handling audit.</strong> A zero-training clause signed two years ago may not cover the vendor's current architecture.</li>
+      </ul></div></div>
+    </div>
+  </div>
+</div></div></main><footer><div><img src="../assets/images/ratheesh-technology-logo-transparent.png?v=20260719-63" alt="Ratheesh Technology Ltd." width="1906" height="825"><p>Architecting Intelligence</p></div><p>&copy; 2026 Ratheesh Technology Ltd.</p></footer></body></html>

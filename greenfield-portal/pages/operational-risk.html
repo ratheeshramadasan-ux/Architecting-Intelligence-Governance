@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Operational &amp; Behavioural Risk — Architecting Intelligence"><title>Operational &amp; Behavioural Risk | Ratheesh Technology Ltd.</title>
+<link rel="stylesheet" href="../assets/css/legacy-visuals.css?v=20260726-4"><link rel="stylesheet" href="../assets/css/navigation.css?v=20260726-4"><script src="../assets/js/navigation.js?v=20260727-1" defer></script></head>
+<body><a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+  <div class="utility-bar"><div class="utility-inner"><span>AI implementation &amp; governance advisory</span><a href="../pages/contact.html">Speak with an advisor <span aria-hidden="true">&#8594;</span></a></div></div>
+  <div class="header-container">
+    <a class="brand" href="../index.html" aria-label="Ratheesh Technology Ltd. home"><img class="company-logo" src="../assets/images/ratheesh-technology-logo-transparent.png?v=20260719-63" alt="Ratheesh Technology Ltd. — AI Implementation and Governance" width="1906" height="825"></a>
+    <button class="mobile-menu-button" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+    <nav id="primary-navigation" class="primary-navigation" aria-label="Primary navigation"></nav>
+  </div>
+</header><main id="main-content" class="inner-page"><div class="legacy-content"><section class="article-hero platform-page-hero"><div class="hero-inner"><div class="pg-tag pg-tag-teal">AI Governance</div>
+    <h1 class="pg-title">Operational &amp; Behavioural Risk</h1>
+    <p class="pg-intro">How to identify, contain, and respond when an AI system produces unreliable results, exceeds its authority, or changes after launch.</p></div></section><div class="container-narrow">
+<section class="decision-summary" aria-labelledby="risk-decision-title"><h2 id="risk-decision-title">Executive decision summary</h2><p class="decision-lead">AI operational risk includes quiet quality decline and inappropriate action, not only outages. Controls must therefore cover behaviour, authority, monitoring, and recovery.</p><div class="decision-summary-grid"><div><h3>Business outcome</h3><p>Limit financial loss, customer harm, regulatory breaches, and loss of trust.</p></div><div><h3>How it works</h3><p>Set measurable thresholds, monitor real outcomes, contain incidents, and retain a tested manual or rollback path.</p></div><div><h3>Decision rule</h3><p>Increase oversight as impact and action authority increase; stop operation when evidence falls below the agreed threshold.</p></div></div><p class="decision-links">Related terms: <a href="ai-technology-glossary.html#model-drift">model drift</a>, <a href="ai-technology-glossary.html#human-in-the-loop">Human-in-the-Loop (HITL)</a>, and <a href="ai-technology-glossary.html#evaluation">evaluation</a>.</p></section>
+  
+
+  <div class="concept">
+    <button class="c-trigger" aria-expanded="false"><span class="c-num">C-05</span><div class="c-hd"><div class="c-title">The Domino Effect: How AI Failures Cascade Silently</div><div class="c-preview">Traditional IT failures are loud and traceable. AI failures are the opposite — the system looks healthy on every dashboard while quietly generating flawed decisions that compound for weeks.</div></div><span class="c-arrow">▼</span></button>
+    <div class="c-body">
+      <div class="callout co-red"><div class="co-lbl">The Cascade Pattern</div><div class="co-txt"><strong>Layer 1 — AI Model:</strong> Incorrect or biased output produced &nbsp;→&nbsp; <strong>Layer 2 — Inference:</strong> Flawed decision or risk score generated &nbsp;→&nbsp; <strong>Layer 3 — Business Process:</strong> Automated action triggered &nbsp;→&nbsp; <strong>Layer 4 — Downstream Systems:</strong> Infrastructure executes the action &nbsp;→&nbsp; <strong>Layer 5 — Real World:</strong> Financial loss, regulatory fines, reputational damage</div></div>
+      <div class="tw"><table><thead><tr><th>Risk Category</th><th>What Goes Wrong</th><th>Mitigation</th></tr></thead><tbody>
+        <tr><td>The Confidently Wrong AI</td><td>Inaccurate outputs drive bad decisions — fraudulent claims approved, customers misclassified</td><td>Confidence thresholds calibrated to domain risk; human sign-off above defined stakes</td></tr>
+        <tr><td>Broken Workflows</td><td>Output breaks downstream — wrong fields, wrong formats, mismatched schemas</td><td>Validation gates between AI output and any database write; never allow raw AI output directly into production systems</td></tr>
+        <tr><td>Service Degradation</td><td>LLM provider latency spikes, rate limits hit, endpoint unavailable</td><td>Fallback to rule-based engines; circuit breakers on all AI-dependent workflows</td></tr>
+        <tr><td>The Monkey's Paw</td><td>AI does exactly what instructed with a business-disastrous result</td><td>Hard operational guardrails; cap spending limits; monitor business outcomes not system health</td></tr>
+        <tr><td>Rogue Autonomous Agents</td><td>Systems loop, execute wrong sequences, escalate privileges beyond scope</td><td>Immediate permission revocation; hard stop conditions defined before deployment</td></tr>
+      </tbody></table></div>
+    </div>
+  </div>
+
+  <div class="concept">
+    <button class="c-trigger" aria-expanded="false"><span class="c-num">C-06</span><div class="c-hd"><div class="c-title">Autonomous Agent Governance: The Containment Model</div><div class="c-preview">When AI moves from giving advice to actively taking action, the risk profile changes entirely. Three concentric rings of control must wrap every autonomous agent deployment.</div></div><span class="c-arrow">▼</span></button>
+    <div class="c-body">
+      <div class="g2">
+        <div class="gcard"><span class="gtag t-red">Blast Radius</span><div class="gc-title">Maximum permitted damage if agent fails</div><div class="gc-body">Hard transaction caps. Stop conditions. Immutable decision tree logs. Kill switch with immediate permission revocation — no deployment cycle required.</div></div>
+        <div class="gcard"><span class="gtag t-amb">Boundaries</span><div class="gc-title">Where the agent is permitted to operate</div><div class="gc-body">Sandboxed execution environments. Data tagging that mathematically blocks access to restricted tiers. Whitelisted API calls only.</div></div>
+        <div class="gcard"><span class="gtag t-blu">Permissions</span><div class="gc-title">What the agent is authorised to touch</div><div class="gc-body">Least-privilege service accounts. An agent that initiates an action cannot also approve it. Role-based access reviewed on the same cycle as human accounts.</div></div>
+        <div class="gcard"><span class="gtag t-tel">Key Principle</span><div class="gc-title">Segregation of duties is non-negotiable</div><div class="gc-body">The same agent that submits a payment request must not be the agent that authorises it. Mirrors enterprise finance controls — applied with equal rigour to AI agents.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="concept">
+    <button class="c-trigger" aria-expanded="false"><span class="c-num">C-07</span><div class="c-hd"><div class="c-title">Confidence Thresholds: Domain-Calibrated, Not Universal</div><div class="c-preview">The most common governance mistake is applying a single threshold across all AI use cases. Claims processing requires 98–99%. Marketing copy can live at 70–80%. The difference is the consequence of being wrong.</div></div><span class="c-arrow">▼</span></button>
+    <div class="c-body">
+      <div class="thr"><div class="thr-pct tl1">98–99%</div><div class="thr-body"><div class="thr-title">Regulated · High-stakes · Irreversible</div><div class="thr-desc">Claims processing · AML flagging · Fraud detection · Sanctions screening · Credit decisioning</div><div class="thr-note">Error = regulatory fine, financial loss, or direct harm to an individual</div></div></div>
+      <div class="thr"><div class="thr-pct tl2">95–97%</div><div class="thr-body"><div class="thr-title">High-stakes with human oversight backstop</div><div class="thr-desc">Loan pre-qualification · Contract extraction · Compliance review · Underwriting triage</div><div class="thr-note">Error = material business risk; human review is the required backstop</div></div></div>
+      <div class="thr"><div class="thr-pct tl3">90–94%</div><div class="thr-body"><div class="thr-title">Significant but recoverable operational decisions</div><div class="thr-desc">Churn prediction · Ticket routing · Supplier risk scoring · Inventory reordering</div><div class="thr-note">Error = operational cost or friction; decisions are correctable</div></div></div>
+      <div class="thr"><div class="thr-pct tl4">80–89%</div><div class="thr-body"><div class="thr-title">Informational outputs reviewed before action</div><div class="thr-desc">Report summaries · HR policy Q&amp;A · Customer service drafts · Code review assistance</div><div class="thr-note">Output reviewed by a human before it reaches the end recipient</div></div></div>
+      <div class="thr"><div class="thr-pct tl5">70–80%</div><div class="thr-body"><div class="thr-title">Low-stakes exploratory or creative generation</div><div class="thr-desc">Marketing copy · Brainstorming · Email subject lines · Social content ideation</div><div class="thr-note">Output is a starting point, not a decision</div></div></div>
+    </div>
+  </div>
+
+  <div class="concept">
+    <button class="c-trigger" aria-expanded="false"><span class="c-num">C-08</span><div class="c-hd"><div class="c-title">The Temperature Trap and Response Consistency Failures</div><div class="c-preview">Someone raises the temperature because responses feel "too robotic." What they have actually done is invalidate every test they ran — and created a production consistency risk in a regulated environment.</div></div><span class="c-arrow">▼</span></button>
+    <div class="c-body">
+      <div class="callout co-amb"><div class="co-lbl">Real Example — Financial Services</div><div class="co-txt">A bank's customer service AI was validated at temperature 0.3, producing consistent policy-aligned responses. After go-live, a product manager raised it to 0.7 because responses felt "too stiff." Within two weeks, the model was giving different answers to different customers on fee waiver eligibility. Full re-validation and a formal root cause report to the risk committee followed.</div></div>
+      <div class="callout co-tel"><div class="co-lbl">Governance Rule</div><div class="co-txt"><strong>Temperature and all inference parameters are production configuration settings.</strong> They belong in version control, require change management sign-off, and must be locked in production environments. Any parameter change invalidates previous testing and requires a new validation cycle.</div></div>
+    </div>
+  </div>
+
+  <div class="concept">
+    <button class="c-trigger" aria-expanded="false"><span class="c-num">C-09</span><div class="c-hd"><div class="c-title">Training Sample Misconceptions, Evaluation Gaps &amp; the 5 Whys</div><div class="c-preview">"We gave it 500 examples — it should be fine." Nobody calculated what 500 means for this use case. And user ratings are not training the model — they are generating evaluation data that goes nowhere near the model.</div></div><span class="c-arrow">▼</span></button>
+    <div class="c-body">
+      <div class="callout co-amb"><div class="co-lbl">The Evaluation Misconception</div><div class="co-txt">In most SaaS AI deployments, user feedback does not retrain the model in any meaningful near-term sense. <strong>Three types of evaluation must all be used:</strong> Human evaluation (qualitative, most reliable, does not scale). Automated evaluation (scales but measures what benchmarks measure). Business outcome evaluation (the only one confirming it is working for the business).</div></div>
+      <div class="drill"><button class="drill-btn">The 5 Whys applied to vendor accuracy claims <span>expand ▾</span></button>
+      <div class="drill-content">
+        <div class="why-claim"><strong>Vendor claim</strong>"Our model achieves 94% accuracy on this task."</div>
+        <div class="wr wr1"><span class="wnum wn1">Why 1</span><div class="wq">Accurate on what dataset — the vendor's benchmark or data reflecting your actual production inputs?<div class="wexp">Most benchmarks use curated clean datasets. Your production data is messier and covers edge cases the benchmark never tested.</div></div></div>
+        <div class="wr wr2"><span class="wnum wn2">Why 2</span><div class="wq">What does 6% error mean for your use case — 6% of claims incorrectly processed, 6% of fraud missed?<div class="wexp">Aggregate accuracy hides where errors concentrate. 6% overall may mean 40% error on the cases that matter most.</div></div></div>
+        <div class="wr wr3"><span class="wnum wn3">Why 3</span><div class="wq">Was this measured at the temperature and parameters used in your production environment?<div class="wexp">Benchmarks are often run at optimal settings. Your production configuration may differ significantly.</div></div></div>
+        <div class="wr wr4"><span class="wnum wn4">Why 4</span><div class="wq">How does accuracy change over time as input distributions shift — has drift testing been performed?<div class="wexp">A model accurate today may degrade as language patterns, customer behaviour, and document formats evolve.</div></div></div>
+        <div class="wr wr5"><span class="wnum wn5">Why 5</span><div class="wq">Who owns monitoring in production and what triggers a mandatory review or rollback?<div class="wexp">If no one owns it, accuracy is a launch metric not a governance metric.</div></div></div>
+      </div></div>
+    </div>
+  </div>
+
+  <div class="concept">
+    <button class="c-trigger" aria-expanded="false"><span class="c-num">C-10</span><div class="c-hd"><div class="c-title">Model Drift, True ROI, Version Change &amp; Incident Response</div><div class="c-preview">A model performing well on day one will not necessarily perform well on day 300. And nobody puts governance cost, rollback cost, or failure cost in the business case — here is what the honest calculation looks like.</div></div><span class="c-arrow">▼</span></button>
+    <div class="c-body">
+      <div class="drill"><button class="drill-btn">Three types of model drift <span>expand ▾</span></button>
+      <div class="drill-content"><div class="g3">
+        <div class="gcard"><span class="gtag t-pur">Data Drift</span><div class="gc-title">The inputs change</div><div class="gc-body">Statistical distribution of real-world inputs shifts away from training distribution.</div><div class="gc-eg">Fraud model trained on pre-pandemic patterns begins receiving post-pandemic behaviours. Detection rates quietly drop.</div></div>
+        <div class="gcard"><span class="gtag t-tel">Concept Drift</span><div class="gc-title">The meaning changes</div><div class="gc-body">The relationship between inputs and correct output changes over time even if inputs look similar.</div><div class="gc-eg">Sentiment model trained before a major brand event gives systematically different scores than human reviewers.</div></div>
+        <div class="gcard"><span class="gtag t-red">Performance Drift</span><div class="gc-title">The outcomes degrade</div><div class="gc-body">Measurable business performance declines — the downstream evidence of data or concept drift.</div><div class="gc-eg">Claims triage model routing 91% correctly drops to 84% over eight months. Dashboards stay green throughout.</div></div>
+      </div></div></div>
+      <div class="drill"><button class="drill-btn">The true cost of AI: what every business case leaves out <span>expand ▾</span></button>
+      <div class="drill-content">
+        <div class="callout co-blu"><div class="co-lbl">The Full ROI Formula</div><div class="co-txt"><strong>True ROI = Quantified benefits − Build cost − Run cost − Governance cost − Risk-adjusted failure cost</strong><br/><br/>Most business cases include efficiency benefits minus development cost. Sometimes minus API fees. Risk-adjusted failure cost: never. Governance cost: rarely. Knowledge atrophy cost: never.</div></div>
+        <div class="callout co-red"><div class="co-lbl">The Silent Update Problem</div><div class="co-txt">A BFSI client discovered their AI-assisted underwriting model was returning different risk scores for identical applicant profiles three months after an unannounced provider update. Caught during a routine audit — after several hundred decisions had already been made on the updated model without re-validation.</div></div>
+      </div></div>
+    </div>
+  </div>
+</div></div></main><footer><div><img src="../assets/images/ratheesh-technology-logo-transparent.png?v=20260719-63" alt="Ratheesh Technology Ltd." width="1906" height="825"><p>Architecting Intelligence</p></div><p>&copy; 2026 Ratheesh Technology Ltd.</p></footer></body></html>

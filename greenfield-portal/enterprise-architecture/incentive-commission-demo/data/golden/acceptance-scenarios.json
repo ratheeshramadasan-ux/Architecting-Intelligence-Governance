@@ -1,0 +1,12 @@
+[
+ {"id":"SCN-01","name":"Standard commission calculation","sop":"v2","rag":["4.2","5.4"],"expected":"principal × base rate","controls":"pass","privacy":"name tokenized","hitl":false,"status":"CALCULATED"},
+ {"id":"SCN-02","name":"Volume threshold crossing","sop":"v2","rag":["4.2","7.1"],"expected":"+0.08 accelerator","controls":"pass","privacy":"tokenized","hitl":false,"status":"CALCULATED"},
+ {"id":"SCN-03","name":"Premium + campaign stacking","sop":"v2","rag":["5.4","8.3","8.7"],"expected":"segment then bonus then campaign","controls":"pass","privacy":"tokenized","hitl":false,"status":"CALCULATED"},
+ {"id":"SCN-04","name":"Exact/potential duplicate","sop":"v2","rag":["13"],"expected":"calculation preserved","controls":"duplicate fail","privacy":"tokenized","hitl":true,"status":"BLOCKED"},
+ {"id":"SCN-05","name":"Early cancellation/clawback","sop":"v2","rag":["10.5"],"expected":"100% inside 90 days","controls":"clawback","privacy":"tokenized","hitl":true,"status":"REVIEW"},
+ {"id":"SCN-06","name":"Compliance hold","sop":"v2","rag":["10.1","11.3"],"expected":"calculation preserved","controls":"compliance fail","privacy":"tokenized","hitl":true,"status":"BLOCKED"},
+ {"id":"SCN-07","name":"Split commission / multiple dealers","sop":"v2","rag":["9.2"],"expected":"equal allocation with residue","controls":"allocation pass","privacy":"tokenized","hitl":false,"status":"CALCULATED"},
+ {"id":"SCN-08","name":"SOP version/effective date","sop":"v1","rag":["11.3"],"expected":"v1 rate before 2026-07-01","controls":"version pass","privacy":"tokenized","hitl":false,"status":"CALCULATED"},
+ {"id":"SCN-09","name":"Prior-period correction under new SOP","sop":"v1","rag":["11.3","13"],"expected":"original SOP retained","controls":"date pass","privacy":"tokenized","hitl":true,"status":"REVIEW"},
+ {"id":"SCN-10","name":"Complex end-to-end batch","sop":"mixed","rag":["4.2","5.4","7.1","8.7","11.3","13"],"expected":"per-record deterministic totals","controls":"all controls","privacy":"contract per record","hitl":true,"status":"PARTIAL"}
+]

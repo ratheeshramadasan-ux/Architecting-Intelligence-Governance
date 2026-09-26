@@ -1,0 +1,1683 @@
+{
+  "version": "1.1.0",
+  "records": [
+    {
+      "type": "Assessment",
+      "title": "Enterprise AI Readiness",
+      "summary": "Measure whether the enterprise can adopt AI safely, sustainably and at scale.",
+      "href": "/assessments/enterprise-ai-readiness/",
+      "stage": "Assess Readiness",
+      "capability": "AI",
+      "role": "Executive Sponsor",
+      "technology": "Enterprise",
+      "riskDomain": "Readiness",
+      "keywords": "Readiness AI Enterprise Executive Sponsor Executive Sponsor Enterprise Architect Risk and Compliance Evidence Owners Discover Assess Readiness Define Strategy Establish Governance Build the Business Case Improve and Scale Enterprise AI Readiness Assessment Current-State Discovery Baseline Enterprise AI Strategy Decision Pack What outcomes and decisions must the Enterprise AI Readiness support? Which ai capabilities are in scope, and who is accountable for them? What current controls and practices are documented, implemented and operating effectively? Which source evidence proves each claimed practice or outcome? Where do evidence sources conflict, and who can resolve the conflict? What material risks, dependencies, constraints and exceptions remain? What maturity level is supported by verified evidence rather than aspiration? Which improvements are required before the next methodology decision gate? How will progress, residual risk and benefits be measured over time?"
+    },
+    {
+      "type": "Assessment",
+      "title": "AI Governance Maturity",
+      "summary": "Evaluate decision rights, policies, oversight, assurance and accountability for AI.",
+      "href": "/assessments/ai-governance-maturity/",
+      "stage": "Establish Governance",
+      "capability": "AI Governance",
+      "role": "AI Governance Lead",
+      "technology": "Enterprise",
+      "riskDomain": "Governance",
+      "keywords": "Governance AI Governance Enterprise AI Governance Lead Executive Sponsor Enterprise Architect Risk and Compliance Evidence Owners Discover Establish Governance Define Strategy Build the Business Case Improve and Scale Governance and Control Framework Current-State Discovery Baseline Enterprise AI Strategy Decision Pack What outcomes and decisions must the AI Governance Maturity support? Which ai governance capabilities are in scope, and who is accountable for them? What current controls and practices are documented, implemented and operating effectively? Which source evidence proves each claimed practice or outcome? Where do evidence sources conflict, and who can resolve the conflict? What material risks, dependencies, constraints and exceptions remain? What maturity level is supported by verified evidence rather than aspiration? Which improvements are required before the next methodology decision gate? How will progress, residual risk and benefits be measured over time?"
+    },
+    {
+      "type": "Assessment",
+      "title": "AI Risk Assessment",
+      "summary": "Identify and evaluate harms, uncertainty, autonomy and control exposure across AI use.",
+      "href": "/assessments/ai-risk-assessment/",
+      "stage": "Establish Governance",
+      "capability": "AI Risk",
+      "role": "Risk Executive",
+      "technology": "Enterprise",
+      "riskDomain": "Risk",
+      "keywords": "Risk AI Risk Enterprise Risk Executive Executive Sponsor Enterprise Architect Risk and Compliance Evidence Owners Discover Establish Governance Define Strategy Build the Business Case Improve and Scale AI Risk Register Current-State Discovery Baseline Enterprise AI Strategy Decision Pack What outcomes and decisions must the AI Risk Assessment support? Which ai risk capabilities are in scope, and who is accountable for them? What current controls and practices are documented, implemented and operating effectively? Which source evidence proves each claimed practice or outcome? Where do evidence sources conflict, and who can resolve the conflict? What material risks, dependencies, constraints and exceptions remain? What maturity level is supported by verified evidence rather than aspiration? Which improvements are required before the next methodology decision gate? How will progress, residual risk and benefits be measured over time?"
+    },
+    {
+      "type": "Assessment",
+      "title": "AI Security Assessment",
+      "summary": "Evaluate threats and controls across models, prompts, data, tooling and supply chains.",
+      "href": "/assessments/ai-security-assessment/",
+      "stage": "Test and Validate",
+      "capability": "AI Security",
+      "role": "CISO",
+      "technology": "Technology",
+      "riskDomain": "Security",
+      "keywords": "Security AI Security Technology CISO Executive Sponsor Enterprise Architect Risk and Compliance Evidence Owners Discover Test and Validate Define Strategy Establish Governance Build the Business Case Improve and Scale Security Assessment Current-State Discovery Baseline Enterprise AI Strategy Decision Pack What outcomes and decisions must the AI Security Assessment support? Which ai security capabilities are in scope, and who is accountable for them? What current controls and practices are documented, implemented and operating effectively? Which source evidence proves each claimed practice or outcome? Where do evidence sources conflict, and who can resolve the conflict? What material risks, dependencies, constraints and exceptions remain? What maturity level is supported by verified evidence rather than aspiration? Which improvements are required before the next methodology decision gate? How will progress, residual risk and benefits be measured over time?"
+    },
+    {
+      "type": "Assessment",
+      "title": "Identity & Access Assessment",
+      "summary": "Assess identities, privileges, service accounts and access controls supporting AI.",
+      "href": "/assessments/identity-and-access-assessment/",
+      "stage": "Design the Target Architecture",
+      "capability": "Identity",
+      "role": "IAM Lead",
+      "technology": "Technology",
+      "riskDomain": "Security",
+      "keywords": "Security Identity Technology IAM Lead Executive Sponsor Enterprise Architect Risk and Compliance Evidence Owners Discover Design the Target Architecture Define Strategy Establish Governance Build the Business Case Improve and Scale IAM Assessment Current-State Discovery Baseline Enterprise AI Strategy Decision Pack What outcomes and decisions must the Identity & Access Assessment support? Which identity capabilities are in scope, and who is accountable for them? What current controls and practices are documented, implemented and operating effectively? Which source evidence proves each claimed practice or outcome? Where do evidence sources conflict, and who can resolve the conflict? What material risks, dependencies, constraints and exceptions remain? What maturity level is supported by verified evidence rather than aspiration? Which improvements are required before the next methodology decision gate? How will progress, residual risk and benefits be measured over time?"
+    },
+    {
+      "type": "Assessment",
+      "title": "Data Readiness",
+      "summary": "Measure whether governed, usable and representative data can support priority outcomes.",
+      "href": "/assessments/data-readiness/",
+      "stage": "Assess Readiness",
+      "capability": "Data",
+      "role": "Chief Data Officer",
+      "technology": "Enterprise",
+      "riskDomain": "Readiness",
+      "keywords": "Readiness Data Enterprise Chief Data Officer Executive Sponsor Enterprise Architect Risk and Compliance Evidence Owners Discover Assess Readiness Define Strategy Establish Governance Build the Business Case Improve and Scale Data Inventory Current-State Discovery Baseline Enterprise AI Strategy Decision Pack What outcomes and decisions must the Data Readiness support? Which data capabilities are in scope, and who is accountable for them? What current controls and practices are documented, implemented and operating effectively? Which source evidence proves each claimed practice or outcome? Where do evidence sources conflict, and who can resolve the conflict? What material risks, dependencies, constraints and exceptions remain? What maturity level is supported by verified evidence rather than aspiration? Which improvements are required before the next methodology decision gate? How will progress, residual risk and benefits be measured over time?"
+    },
+    {
+      "type": "Assessment",
+      "title": "Data Governance",
+      "summary": "Evaluate data ownership, quality, lineage, access, retention and assurance.",
+      "href": "/assessments/data-governance/",
+      "stage": "Establish Governance",
+      "capability": "Data & Integration",
+      "role": "Data Governance Lead",
+      "technology": "Enterprise",
+      "riskDomain": "Governance",
+      "keywords": "Governance Data & Integration Enterprise Data Governance Lead Executive Sponsor Enterprise Architect Risk and Compliance Evidence Owners Discover Establish Governance Define Strategy Build the Business Case Improve and Scale Data Governance Framework Current-State Discovery Baseline Enterprise AI Strategy Decision Pack What outcomes and decisions must the Data Governance support? Which data & integration capabilities are in scope, and who is accountable for them? What current controls and practices are documented, implemented and operating effectively? Which source evidence proves each claimed practice or outcome? Where do evidence sources conflict, and who can resolve the conflict? What material risks, dependencies, constraints and exceptions remain? What maturity level is supported by verified evidence rather than aspiration? Which improvements are required before the next methodology decision gate? How will progress, residual risk and benefits be measured over time?"
+    },
+    {
+      "type": "Assessment",
+      "title": "Business Capability Assessment",
+      "summary": "Assess capability performance, strategic importance, constraints and AI enablement potential.",
+      "href": "/assessments/business-capability-assessment/",
+      "stage": "Discover",
+      "capability": "Enterprise Architecture",
+      "role": "Business Architect",
+      "technology": "Business",
+      "riskDomain": "Capability",
+      "keywords": "Capability Enterprise Architecture Business Business Architect Executive Sponsor Enterprise Architect Risk and Compliance Evidence Owners Discover Define Strategy Establish Governance Build the Business Case Improve and Scale Business Capability Catalogue Current-State Discovery Baseline Enterprise AI Strategy Decision Pack What outcomes and decisions must the Business Capability Assessment support? Which enterprise architecture capabilities are in scope, and who is accountable for them? What current controls and practices are documented, implemented and operating effectively? Which source evidence proves each claimed practice or outcome? Where do evidence sources conflict, and who can resolve the conflict? What material risks, dependencies, constraints and exceptions remain? What maturity level is supported by verified evidence rather than aspiration? Which improvements are required before the next methodology decision gate? How will progress, residual risk and benefits be measured over time?"
+    },
+    {
+      "type": "Assessment",
+      "title": "Business Process Assessment",
+      "summary": "Assess process value, variability, controls, pain points and automation suitability.",
+      "href": "/assessments/business-process-assessment/",
+      "stage": "Discover",
+      "capability": "Automation",
+      "role": "Process Owner",
+      "technology": "Business",
+      "riskDomain": "Capability",
+      "keywords": "Capability Automation Business Process Owner Executive Sponsor Enterprise Architect Risk and Compliance Evidence Owners Discover Define Strategy Establish Governance Build the Business Case Improve and Scale Process Inventory Current-State Discovery Baseline Enterprise AI Strategy Decision Pack What outcomes and decisions must the Business Process Assessment support? Which automation capabilities are in scope, and who is accountable for them? What current controls and practices are documented, implemented and operating effectively? Which source evidence proves each claimed practice or outcome? Where do evidence sources conflict, and who can resolve the conflict? What material risks, dependencies, constraints and exceptions remain? What maturity level is supported by verified evidence rather than aspiration? Which improvements are required before the next methodology decision gate? How will progress, residual risk and benefits be measured over time?"
+    },
+    {
+      "type": "Assessment",
+      "title": "Enterprise Architecture Assessment",
+      "summary": "Evaluate architecture governance, coherence, constraints, standards and target-state readiness.",
+      "href": "/assessments/enterprise-architecture-assessment/",
+      "stage": "Assess Readiness",
+      "capability": "AI Architecture",
+      "role": "Enterprise Architect",
+      "technology": "Technology",
+      "riskDomain": "Architecture",
+      "keywords": "Architecture AI Architecture Technology Enterprise Architect Executive Sponsor Enterprise Architect Risk and Compliance Evidence Owners Discover Assess Readiness Define Strategy Establish Governance Build the Business Case Improve and Scale Current-State Assessment Current-State Discovery Baseline Enterprise AI Strategy Decision Pack What outcomes and decisions must the Enterprise Architecture Assessment support? Which ai architecture capabilities are in scope, and who is accountable for them? What current controls and practices are documented, implemented and operating effectively? Which source evidence proves each claimed practice or outcome? Where do evidence sources conflict, and who can resolve the conflict? What material risks, dependencies, constraints and exceptions remain? What maturity level is supported by verified evidence rather than aspiration? Which improvements are required before the next methodology decision gate? How will progress, residual risk and benefits be measured over time?"
+    },
+    {
+      "type": "Assessment",
+      "title": "Application Portfolio Assessment",
+      "summary": "Assess application fitness, ownership, lifecycle, cost, risk and integration readiness.",
+      "href": "/assessments/application-portfolio-assessment/",
+      "stage": "Discover",
+      "capability": "AI Architecture",
+      "role": "Application Portfolio Owner",
+      "technology": "Technology",
+      "riskDomain": "Architecture",
+      "keywords": "Architecture AI Architecture Technology Application Portfolio Owner Executive Sponsor Enterprise Architect Risk and Compliance Evidence Owners Discover Define Strategy Establish Governance Build the Business Case Improve and Scale Application Portfolio Current-State Discovery Baseline Enterprise AI Strategy Decision Pack What outcomes and decisions must the Application Portfolio Assessment support? Which ai architecture capabilities are in scope, and who is accountable for them? What current controls and practices are documented, implemented and operating effectively? Which source evidence proves each claimed practice or outcome? Where do evidence sources conflict, and who can resolve the conflict? What material risks, dependencies, constraints and exceptions remain? What maturity level is supported by verified evidence rather than aspiration? Which improvements are required before the next methodology decision gate? How will progress, residual risk and benefits be measured over time?"
+    },
+    {
+      "type": "Assessment",
+      "title": "Integration Assessment",
+      "summary": "Evaluate API, event, batch and agent integration patterns, reliability and governance.",
+      "href": "/assessments/integration-assessment/",
+      "stage": "Discover",
+      "capability": "Data & Integration",
+      "role": "Integration Architect",
+      "technology": "Technology",
+      "riskDomain": "Architecture",
+      "keywords": "Architecture Data & Integration Technology Integration Architect Executive Sponsor Enterprise Architect Risk and Compliance Evidence Owners Discover Define Strategy Establish Governance Build the Business Case Improve and Scale Integration Catalogue Current-State Discovery Baseline Enterprise AI Strategy Decision Pack What outcomes and decisions must the Integration Assessment support? Which data & integration capabilities are in scope, and who is accountable for them? What current controls and practices are documented, implemented and operating effectively? Which source evidence proves each claimed practice or outcome? Where do evidence sources conflict, and who can resolve the conflict? What material risks, dependencies, constraints and exceptions remain? What maturity level is supported by verified evidence rather than aspiration? Which improvements are required before the next methodology decision gate? How will progress, residual risk and benefits be measured over time?"
+    },
+    {
+      "type": "Assessment",
+      "title": "Infrastructure Assessment",
+      "summary": "Assess compute, network, resilience, observability and capacity for AI workloads.",
+      "href": "/assessments/infrastructure-assessment/",
+      "stage": "Discover",
+      "capability": "Cloud AI",
+      "role": "Infrastructure Lead",
+      "technology": "Technology",
+      "riskDomain": "Architecture",
+      "keywords": "Architecture Cloud AI Technology Infrastructure Lead Executive Sponsor Enterprise Architect Risk and Compliance Evidence Owners Discover Define Strategy Establish Governance Build the Business Case Improve and Scale Infrastructure Assessment Current-State Discovery Baseline Enterprise AI Strategy Decision Pack What outcomes and decisions must the Infrastructure Assessment support? Which cloud ai capabilities are in scope, and who is accountable for them? What current controls and practices are documented, implemented and operating effectively? Which source evidence proves each claimed practice or outcome? Where do evidence sources conflict, and who can resolve the conflict? What material risks, dependencies, constraints and exceptions remain? What maturity level is supported by verified evidence rather than aspiration? Which improvements are required before the next methodology decision gate? How will progress, residual risk and benefits be measured over time?"
+    },
+    {
+      "type": "Assessment",
+      "title": "Cloud Readiness",
+      "summary": "Evaluate cloud foundations, landing zones, controls, economics and operating readiness.",
+      "href": "/assessments/cloud-readiness/",
+      "stage": "Assess Readiness",
+      "capability": "Cloud AI",
+      "role": "Cloud Platform Owner",
+      "technology": "Technology",
+      "riskDomain": "Readiness",
+      "keywords": "Readiness Cloud AI Technology Cloud Platform Owner Executive Sponsor Enterprise Architect Risk and Compliance Evidence Owners Discover Assess Readiness Define Strategy Establish Governance Build the Business Case Improve and Scale Cloud Assessment Current-State Discovery Baseline Enterprise AI Strategy Decision Pack What outcomes and decisions must the Cloud Readiness support? Which cloud ai capabilities are in scope, and who is accountable for them? What current controls and practices are documented, implemented and operating effectively? Which source evidence proves each claimed practice or outcome? Where do evidence sources conflict, and who can resolve the conflict? What material risks, dependencies, constraints and exceptions remain? What maturity level is supported by verified evidence rather than aspiration? Which improvements are required before the next methodology decision gate? How will progress, residual risk and benefits be measured over time?"
+    },
+    {
+      "type": "Assessment",
+      "title": "Automation Maturity",
+      "summary": "Assess automation governance, delivery, reuse, controls and measurable value.",
+      "href": "/assessments/automation-maturity/",
+      "stage": "Assess Readiness",
+      "capability": "Automation",
+      "role": "Automation Lead",
+      "technology": "Business",
+      "riskDomain": "Maturity",
+      "keywords": "Maturity Automation Business Automation Lead Executive Sponsor Enterprise Architect Risk and Compliance Evidence Owners Discover Assess Readiness Define Strategy Establish Governance Build the Business Case Improve and Scale Automation Inventory Current-State Discovery Baseline Enterprise AI Strategy Decision Pack What outcomes and decisions must the Automation Maturity support? Which automation capabilities are in scope, and who is accountable for them? What current controls and practices are documented, implemented and operating effectively? Which source evidence proves each claimed practice or outcome? Where do evidence sources conflict, and who can resolve the conflict? What material risks, dependencies, constraints and exceptions remain? What maturity level is supported by verified evidence rather than aspiration? Which improvements are required before the next methodology decision gate? How will progress, residual risk and benefits be measured over time?"
+    },
+    {
+      "type": "Assessment",
+      "title": "AI Platform Assessment",
+      "summary": "Evaluate platform capabilities for models, agents, RAG, evaluation, operations and governance.",
+      "href": "/assessments/ai-platform-assessment/",
+      "stage": "Design the Target Architecture",
+      "capability": "AI Implementation",
+      "role": "AI Platform Owner",
+      "technology": "Technology",
+      "riskDomain": "Architecture",
+      "keywords": "Architecture AI Implementation Technology AI Platform Owner Executive Sponsor Enterprise Architect Risk and Compliance Evidence Owners Discover Design the Target Architecture Define Strategy Establish Governance Build the Business Case Improve and Scale AI Platform Assessment Current-State Discovery Baseline Enterprise AI Strategy Decision Pack What outcomes and decisions must the AI Platform Assessment support? Which ai implementation capabilities are in scope, and who is accountable for them? What current controls and practices are documented, implemented and operating effectively? Which source evidence proves each claimed practice or outcome? Where do evidence sources conflict, and who can resolve the conflict? What material risks, dependencies, constraints and exceptions remain? What maturity level is supported by verified evidence rather than aspiration? Which improvements are required before the next methodology decision gate? How will progress, residual risk and benefits be measured over time?"
+    },
+    {
+      "type": "Assessment",
+      "title": "Vendor Assessment",
+      "summary": "Evaluate vendor capability, security, resilience, lock-in, data use and contract controls.",
+      "href": "/assessments/vendor-assessment/",
+      "stage": "Discover",
+      "capability": "AI Risk",
+      "role": "Vendor Risk Lead",
+      "technology": "Vendor",
+      "riskDomain": "Risk",
+      "keywords": "Risk AI Risk Vendor Vendor Risk Lead Executive Sponsor Enterprise Architect Risk and Compliance Evidence Owners Discover Define Strategy Establish Governance Build the Business Case Improve and Scale Vendor Landscape Current-State Discovery Baseline Enterprise AI Strategy Decision Pack What outcomes and decisions must the Vendor Assessment support? Which ai risk capabilities are in scope, and who is accountable for them? What current controls and practices are documented, implemented and operating effectively? Which source evidence proves each claimed practice or outcome? Where do evidence sources conflict, and who can resolve the conflict? What material risks, dependencies, constraints and exceptions remain? What maturity level is supported by verified evidence rather than aspiration? Which improvements are required before the next methodology decision gate? How will progress, residual risk and benefits be measured over time?"
+    },
+    {
+      "type": "Assessment",
+      "title": "Regulatory Compliance Assessment",
+      "summary": "Assess obligations, evidence, accountability and control coverage across jurisdictions.",
+      "href": "/assessments/regulatory-compliance-assessment/",
+      "stage": "Establish Governance",
+      "capability": "Compliance",
+      "role": "Compliance Lead",
+      "technology": "Enterprise",
+      "riskDomain": "Compliance",
+      "keywords": "Compliance Compliance Enterprise Compliance Lead Executive Sponsor Enterprise Architect Risk and Compliance Evidence Owners Discover Establish Governance Define Strategy Build the Business Case Improve and Scale Regulatory Assessment Current-State Discovery Baseline Enterprise AI Strategy Decision Pack What outcomes and decisions must the Regulatory Compliance Assessment support? Which compliance capabilities are in scope, and who is accountable for them? What current controls and practices are documented, implemented and operating effectively? Which source evidence proves each claimed practice or outcome? Where do evidence sources conflict, and who can resolve the conflict? What material risks, dependencies, constraints and exceptions remain? What maturity level is supported by verified evidence rather than aspiration? Which improvements are required before the next methodology decision gate? How will progress, residual risk and benefits be measured over time?"
+    },
+    {
+      "type": "Assessment",
+      "title": "Skills & Workforce Assessment",
+      "summary": "Evaluate skills, roles, capacity, learning pathways and workforce impacts.",
+      "href": "/assessments/skills-and-workforce-assessment/",
+      "stage": "Assess Readiness",
+      "capability": "Skills & Workforce",
+      "role": "People and Change Lead",
+      "technology": "People",
+      "riskDomain": "Readiness",
+      "keywords": "Readiness Skills & Workforce People People and Change Lead Executive Sponsor Enterprise Architect Risk and Compliance Evidence Owners Discover Assess Readiness Define Strategy Establish Governance Build the Business Case Improve and Scale Skills Assessment Current-State Discovery Baseline Enterprise AI Strategy Decision Pack What outcomes and decisions must the Skills & Workforce Assessment support? Which skills & workforce capabilities are in scope, and who is accountable for them? What current controls and practices are documented, implemented and operating effectively? Which source evidence proves each claimed practice or outcome? Where do evidence sources conflict, and who can resolve the conflict? What material risks, dependencies, constraints and exceptions remain? What maturity level is supported by verified evidence rather than aspiration? Which improvements are required before the next methodology decision gate? How will progress, residual risk and benefits be measured over time?"
+    },
+    {
+      "type": "Assessment",
+      "title": "Operational Readiness",
+      "summary": "Assess service ownership, support, monitoring, incidents, continuity and operating controls.",
+      "href": "/assessments/operational-readiness/",
+      "stage": "Deploy and Transition",
+      "capability": "AI Operations",
+      "role": "Operations Lead",
+      "technology": "Operations",
+      "riskDomain": "Readiness",
+      "keywords": "Readiness AI Operations Operations Operations Lead Executive Sponsor Enterprise Architect Risk and Compliance Evidence Owners Discover Deploy and Transition Define Strategy Establish Governance Build the Business Case Improve and Scale Operational Readiness Assessment Current-State Discovery Baseline Enterprise AI Strategy Decision Pack What outcomes and decisions must the Operational Readiness support? Which ai operations capabilities are in scope, and who is accountable for them? What current controls and practices are documented, implemented and operating effectively? Which source evidence proves each claimed practice or outcome? Where do evidence sources conflict, and who can resolve the conflict? What material risks, dependencies, constraints and exceptions remain? What maturity level is supported by verified evidence rather than aspiration? Which improvements are required before the next methodology decision gate? How will progress, residual risk and benefits be measured over time?"
+    },
+    {
+      "type": "Assessment",
+      "title": "Financial Readiness",
+      "summary": "Assess funding, cost transparency, value measurement and investment governance.",
+      "href": "/assessments/financial-readiness/",
+      "stage": "Build the Business Case",
+      "capability": "Financial Management",
+      "role": "Finance Lead",
+      "technology": "Enterprise",
+      "riskDomain": "Readiness",
+      "keywords": "Readiness Financial Management Enterprise Finance Lead Executive Sponsor Enterprise Architect Risk and Compliance Evidence Owners Discover Build the Business Case Define Strategy Establish Governance Improve and Scale Financial Readiness Assessment Current-State Discovery Baseline Enterprise AI Strategy Decision Pack What outcomes and decisions must the Financial Readiness support? Which financial management capabilities are in scope, and who is accountable for them? What current controls and practices are documented, implemented and operating effectively? Which source evidence proves each claimed practice or outcome? Where do evidence sources conflict, and who can resolve the conflict? What material risks, dependencies, constraints and exceptions remain? What maturity level is supported by verified evidence rather than aspiration? Which improvements are required before the next methodology decision gate? How will progress, residual risk and benefits be measured over time?"
+    },
+    {
+      "type": "Assessment",
+      "title": "Change Management Readiness",
+      "summary": "Assess stakeholder readiness, adoption barriers, communication, training and reinforcement.",
+      "href": "/assessments/change-management-readiness/",
+      "stage": "Plan Implementation",
+      "capability": "Change Management",
+      "role": "Change Lead",
+      "technology": "People",
+      "riskDomain": "Readiness",
+      "keywords": "Readiness Change Management People Change Lead Executive Sponsor Enterprise Architect Risk and Compliance Evidence Owners Discover Plan Implementation Define Strategy Establish Governance Build the Business Case Improve and Scale Change Readiness Assessment Current-State Discovery Baseline Enterprise AI Strategy Decision Pack What outcomes and decisions must the Change Management Readiness support? Which change management capabilities are in scope, and who is accountable for them? What current controls and practices are documented, implemented and operating effectively? Which source evidence proves each claimed practice or outcome? Where do evidence sources conflict, and who can resolve the conflict? What material risks, dependencies, constraints and exceptions remain? What maturity level is supported by verified evidence rather than aspiration? Which improvements are required before the next methodology decision gate? How will progress, residual risk and benefits be measured over time?"
+    },
+    {
+      "type": "Assessment",
+      "title": "Shadow AI Assessment",
+      "summary": "Identify unapproved AI use, exposure, unmet demand and proportionate remediation paths.",
+      "href": "/assessments/shadow-ai-assessment/",
+      "stage": "Discover",
+      "capability": "Responsible AI",
+      "role": "CISO",
+      "technology": "Enterprise",
+      "riskDomain": "Risk",
+      "keywords": "Risk Responsible AI Enterprise CISO Executive Sponsor Enterprise Architect Risk and Compliance Evidence Owners Discover Define Strategy Establish Governance Build the Business Case Improve and Scale Shadow AI Register Current-State Discovery Baseline Enterprise AI Strategy Decision Pack What outcomes and decisions must the Shadow AI Assessment support? Which responsible ai capabilities are in scope, and who is accountable for them? What current controls and practices are documented, implemented and operating effectively? Which source evidence proves each claimed practice or outcome? Where do evidence sources conflict, and who can resolve the conflict? What material risks, dependencies, constraints and exceptions remain? What maturity level is supported by verified evidence rather than aspiration? Which improvements are required before the next methodology decision gate? How will progress, residual risk and benefits be measured over time?"
+    },
+    {
+      "type": "Assessment",
+      "title": "Production Readiness Assessment",
+      "summary": "Determine whether a release can operate securely, reliably and accountably in production.",
+      "href": "/assessments/production-readiness-assessment/",
+      "stage": "Test and Validate",
+      "capability": "AI Operations",
+      "role": "Service Owner",
+      "technology": "Operations",
+      "riskDomain": "Readiness",
+      "keywords": "Readiness AI Operations Operations Service Owner Executive Sponsor Enterprise Architect Risk and Compliance Evidence Owners Discover Test and Validate Define Strategy Establish Governance Build the Business Case Improve and Scale Production Readiness Evidence Pack Current-State Discovery Baseline Enterprise AI Strategy Decision Pack What outcomes and decisions must the Production Readiness Assessment support? Which ai operations capabilities are in scope, and who is accountable for them? What current controls and practices are documented, implemented and operating effectively? Which source evidence proves each claimed practice or outcome? Where do evidence sources conflict, and who can resolve the conflict? What material risks, dependencies, constraints and exceptions remain? What maturity level is supported by verified evidence rather than aspiration? Which improvements are required before the next methodology decision gate? How will progress, residual risk and benefits be measured over time?"
+    },
+    {
+      "type": "Discovery domain",
+      "title": "Business Strategy & Objectives",
+      "summary": "Understand strategic direction, outcomes, constraints and measures.",
+      "href": "/transformation/stage-1-discover/domains/business-strategy/",
+      "stage": "Discover",
+      "capability": "Business Strategy & Objectives",
+      "role": "Executive Sponsor",
+      "keywords": "Approved strategy Objectives and measures Investment priorities Known constraints Evidence-based content Enterprise traceability Canonical ownership Risk and control mapping"
+    },
+    {
+      "type": "Discovery domain",
+      "title": "Business Capabilities",
+      "summary": "Map what the enterprise must be able to do and who owns each capability.",
+      "href": "/transformation/stage-1-discover/domains/business-capabilities/",
+      "stage": "Discover",
+      "capability": "Business Capabilities",
+      "role": "Business Owner",
+      "keywords": "Capability name and definition Owner Maturity Pain points Measures Dependencies Evidence-based content Enterprise traceability Canonical ownership Risk and control mapping"
+    },
+    {
+      "type": "Discovery domain",
+      "title": "Business Processes",
+      "summary": "Identify how work flows, where friction exists and which controls apply.",
+      "href": "/transformation/stage-1-discover/domains/business-processes/",
+      "stage": "Discover",
+      "capability": "Business Processes",
+      "role": "Process Owner",
+      "keywords": "Process purpose Steps Volumes Cycle time Systems Data Controls Pain points Evidence-based content Enterprise traceability Canonical ownership Risk and control mapping"
+    },
+    {
+      "type": "Discovery domain",
+      "title": "Organisational Structure",
+      "summary": "Understand accountability, capacity, decision paths and organisational boundaries.",
+      "href": "/transformation/stage-1-discover/domains/organisational-structure/",
+      "stage": "Discover",
+      "capability": "Organisational Structure",
+      "role": "HR Executive",
+      "keywords": "Functions Roles Reporting lines Decision rights Capacity Locations Evidence-based content Enterprise traceability Canonical ownership Risk and control mapping"
+    },
+    {
+      "type": "Discovery domain",
+      "title": "Applications & Systems",
+      "summary": "Create an owned view of applications, lifecycle, cost, risk and business use.",
+      "href": "/transformation/stage-1-discover/domains/applications-systems/",
+      "stage": "Discover",
+      "capability": "Applications & Systems",
+      "role": "CIO/CTO",
+      "keywords": "Application Owner Purpose Users Capabilities Interfaces Data Lifecycle Cost Risk Evidence-based content Enterprise traceability Canonical ownership Risk and control mapping"
+    },
+    {
+      "type": "Discovery domain",
+      "title": "Data & Information",
+      "summary": "Identify governed data assets, quality, classification, lineage and constraints.",
+      "href": "/transformation/stage-1-discover/domains/data-information/",
+      "stage": "Discover",
+      "capability": "Data & Information",
+      "role": "Chief Data Officer",
+      "keywords": "Data asset Owner Purpose Classification Quality Lineage Residency Retention Access Evidence-based content Enterprise traceability Canonical ownership Risk and control mapping"
+    },
+    {
+      "type": "Discovery domain",
+      "title": "AI Landscape",
+      "summary": "Inventory approved and emerging AI capabilities, models, use cases and dependencies.",
+      "href": "/transformation/stage-1-discover/domains/ai-landscape/",
+      "stage": "Discover",
+      "capability": "AI Landscape",
+      "role": "Platform Owner",
+      "keywords": "Use case Owner Model/provider Data Users Environment Risk tier Controls Cost Status Evidence-based content Enterprise traceability Canonical ownership Risk and control mapping"
+    },
+    {
+      "type": "Discovery domain",
+      "title": "Automation Landscape",
+      "summary": "Understand workflow, RPA, low-code and document automation already in use.",
+      "href": "/transformation/stage-1-discover/domains/automation-landscape/",
+      "stage": "Discover",
+      "capability": "Automation Landscape",
+      "role": "Automation Lead",
+      "keywords": "Automation Owner Process Platform Volume Failure rate Controls Dependencies Support Evidence-based content Enterprise traceability Canonical ownership Risk and control mapping"
+    },
+    {
+      "type": "Discovery domain",
+      "title": "Infrastructure & Hosting",
+      "summary": "Assess compute, storage, network, hosting, resilience and capacity constraints.",
+      "href": "/transformation/stage-1-discover/domains/infrastructure-hosting/",
+      "stage": "Discover",
+      "capability": "Infrastructure & Hosting",
+      "role": "Infrastructure Lead",
+      "keywords": "Platform Location Capacity Utilisation Availability Network Backup Recovery Cost Evidence-based content Enterprise traceability Canonical ownership Risk and control mapping"
+    },
+    {
+      "type": "Discovery domain",
+      "title": "Cloud Platforms",
+      "summary": "Understand cloud accounts, services, landing zones, controls, cost and sovereignty.",
+      "href": "/transformation/stage-1-discover/domains/cloud-platforms/",
+      "stage": "Discover",
+      "capability": "Cloud Platforms",
+      "role": "Cloud Platform Owner",
+      "keywords": "Provider Account/subscription Region Services Landing zone Controls Cost Owner Commitments Evidence-based content Enterprise traceability Canonical ownership Risk and control mapping"
+    },
+    {
+      "type": "Discovery domain",
+      "title": "Identity & Access Management",
+      "summary": "Assess human, service and agent identities, authentication and authorisation.",
+      "href": "/transformation/stage-1-discover/domains/identity-access/",
+      "stage": "Discover",
+      "capability": "Identity & Access Management",
+      "role": "Identity Lead",
+      "keywords": "Identity type Source Authentication Authorisation Privileged access Lifecycle Review Logging Evidence-based content Enterprise traceability Canonical ownership Risk and control mapping"
+    },
+    {
+      "type": "Discovery domain",
+      "title": "Cybersecurity",
+      "summary": "Establish current threats, controls, incidents, monitoring and assurance.",
+      "href": "/transformation/stage-1-discover/domains/cybersecurity/",
+      "stage": "Discover",
+      "capability": "Cybersecurity",
+      "role": "CISO",
+      "keywords": "Assets Threats Controls Vulnerabilities Incidents Monitoring Testing Exceptions Evidence-based content Enterprise traceability Canonical ownership Risk and control mapping"
+    },
+    {
+      "type": "Discovery domain",
+      "title": "Integration & APIs",
+      "summary": "Catalogue interfaces, ownership, data flows, protocols and failure paths.",
+      "href": "/transformation/stage-1-discover/domains/integration-apis/",
+      "stage": "Discover",
+      "capability": "Integration & APIs",
+      "role": "Integration Owner",
+      "keywords": "Interface Source Target Owner Protocol Data Authentication SLA Failure handling Evidence-based content Enterprise traceability Canonical ownership Risk and control mapping"
+    },
+    {
+      "type": "Discovery domain",
+      "title": "Vendors & Third Parties",
+      "summary": "Understand suppliers, services, contracts, data access, dependencies and assurance.",
+      "href": "/transformation/stage-1-discover/domains/vendors-third-parties/",
+      "stage": "Discover",
+      "capability": "Vendors & Third Parties",
+      "role": "Procurement Lead",
+      "keywords": "Vendor Service Owner Contract Data access Subprocessors SLA Assurance Exit plan Cost Evidence-based content Enterprise traceability Canonical ownership Risk and control mapping"
+    },
+    {
+      "type": "Discovery domain",
+      "title": "Operations & Service Management",
+      "summary": "Assess ownership, service levels, monitoring, incidents, change and continuity.",
+      "href": "/transformation/stage-1-discover/domains/operations-service-management/",
+      "stage": "Discover",
+      "capability": "Operations & Service Management",
+      "role": "Operations Lead",
+      "keywords": "Service Owner SLO/SLA Support Monitoring Incidents Changes Capacity Continuity Evidence-based content Enterprise traceability Canonical ownership Risk and control mapping"
+    },
+    {
+      "type": "Discovery domain",
+      "title": "Regulatory & Compliance",
+      "summary": "Identify applicable obligations, evidence, control owners and gaps.",
+      "href": "/transformation/stage-1-discover/domains/regulatory-compliance/",
+      "stage": "Discover",
+      "capability": "Regulatory & Compliance",
+      "role": "Risk and Compliance Lead",
+      "keywords": "Obligation Applicability Owner Control Evidence Review frequency Gap Exception Evidence-based content Enterprise traceability Canonical ownership Risk and control mapping"
+    },
+    {
+      "type": "Discovery domain",
+      "title": "Financial Baseline",
+      "summary": "Establish transparent current costs and units before value or ROI estimates.",
+      "href": "/transformation/stage-1-discover/domains/financial-baseline/",
+      "stage": "Discover",
+      "capability": "Financial Baseline",
+      "role": "Finance Lead",
+      "keywords": "Cost category Amount/range Unit Owner Period Allocation Commitment Confidence Evidence-based content Enterprise traceability Canonical ownership Risk and control mapping"
+    },
+    {
+      "type": "Discovery domain",
+      "title": "Skills & Workforce",
+      "summary": "Understand roles, skills, capacity, learning needs and workforce constraints.",
+      "href": "/transformation/stage-1-discover/domains/skills-workforce/",
+      "stage": "Discover",
+      "capability": "Skills & Workforce",
+      "role": "HR/Workforce Lead",
+      "keywords": "Role Skill Proficiency Capacity Demand Gap Location Learning path Evidence-based content Enterprise traceability Canonical ownership Risk and control mapping"
+    },
+    {
+      "type": "Discovery domain",
+      "title": "Existing Governance",
+      "summary": "Map policies, forums, controls, decisions, evidence and assurance already in place.",
+      "href": "/transformation/stage-1-discover/domains/existing-governance/",
+      "stage": "Discover",
+      "capability": "Existing Governance",
+      "role": "Platform Owner",
+      "keywords": "Forum Policy Control Owner Decision right Evidence Review Exception Evidence-based content Enterprise traceability Canonical ownership Risk and control mapping"
+    },
+    {
+      "type": "Discovery domain",
+      "title": "Shadow AI & Unapproved Technology",
+      "summary": "Identify unapproved AI use safely, without discouraging disclosure or inventing prevalence.",
+      "href": "/transformation/stage-1-discover/domains/shadow-ai/",
+      "stage": "Discover",
+      "capability": "Shadow AI & Unapproved Technology",
+      "role": "Risk Executive",
+      "keywords": "Tool/use case Owner/user group Purpose Data Access route Spend Risk Immediate action Evidence-based content Enterprise traceability Canonical ownership Risk and control mapping"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Current-State Assessment Report",
+      "summary": "Provide the validated, integrated baseline consumed by Assess Readiness.",
+      "href": "/transformation/stage-1-discover/deliverables/current-state-assessment/",
+      "stage": "Discover",
+      "capability": "Assessment",
+      "role": "Programme Director",
+      "keywords": "Approved Discovery scope Named owners and contributors Dated evidence from documented sources Recorded confidence and unresolved gaps Validated current-state record Evidence and confidence statement Risks, constraints and missing information Downstream traceability links"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Business Capability Catalogue",
+      "summary": "Create a canonical capability view with ownership, maturity and pain points.",
+      "href": "/transformation/stage-1-discover/deliverables/business-capability-catalogue/",
+      "stage": "Discover",
+      "capability": "Catalogue",
+      "role": "Business Owner",
+      "keywords": "Approved Discovery scope Named owners and contributors Dated evidence from documented sources Recorded confidence and unresolved gaps Validated current-state record Evidence and confidence statement Risks, constraints and missing information Downstream traceability links"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Process Inventory",
+      "summary": "Record priority processes, systems, data, controls and performance.",
+      "href": "/transformation/stage-1-discover/deliverables/process-inventory/",
+      "stage": "Discover",
+      "capability": "Inventory",
+      "role": "Process Owner",
+      "keywords": "Approved Discovery scope Named owners and contributors Dated evidence from documented sources Recorded confidence and unresolved gaps Validated current-state record Evidence and confidence statement Risks, constraints and missing information Downstream traceability links"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Application Portfolio",
+      "summary": "Create an owned, lifecycle-aware application baseline.",
+      "href": "/transformation/stage-1-discover/deliverables/application-portfolio/",
+      "stage": "Discover",
+      "capability": "Portfolio",
+      "role": "CIO/CTO",
+      "keywords": "Approved Discovery scope Named owners and contributors Dated evidence from documented sources Recorded confidence and unresolved gaps Validated current-state record Evidence and confidence statement Risks, constraints and missing information Downstream traceability links"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Technology Landscape",
+      "summary": "Connect platforms, infrastructure, cloud and technical constraints.",
+      "href": "/transformation/stage-1-discover/deliverables/technology-landscape/",
+      "stage": "Discover",
+      "capability": "Architecture record",
+      "role": "Enterprise Architect",
+      "keywords": "Approved Discovery scope Named owners and contributors Dated evidence from documented sources Recorded confidence and unresolved gaps Validated current-state record Evidence and confidence statement Risks, constraints and missing information Downstream traceability links"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Data Inventory",
+      "summary": "Record governed data assets, classification, quality and lineage.",
+      "href": "/transformation/stage-1-discover/deliverables/data-inventory/",
+      "stage": "Discover",
+      "capability": "Inventory",
+      "role": "Data Owner",
+      "keywords": "Approved Discovery scope Named owners and contributors Dated evidence from documented sources Recorded confidence and unresolved gaps Validated current-state record Evidence and confidence statement Risks, constraints and missing information Downstream traceability links"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Integration Catalogue",
+      "summary": "Record interfaces, data flows, authentication, service levels and failures.",
+      "href": "/transformation/stage-1-discover/deliverables/integration-catalogue/",
+      "stage": "Discover",
+      "capability": "Catalogue",
+      "role": "Integration Owner",
+      "keywords": "Approved Discovery scope Named owners and contributors Dated evidence from documented sources Recorded confidence and unresolved gaps Validated current-state record Evidence and confidence statement Risks, constraints and missing information Downstream traceability links"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Infrastructure Assessment",
+      "summary": "Assess capacity, resilience, hosting, network and operational constraints.",
+      "href": "/transformation/stage-1-discover/deliverables/infrastructure-assessment/",
+      "stage": "Discover",
+      "capability": "Assessment",
+      "role": "Infrastructure Lead",
+      "keywords": "Approved Discovery scope Named owners and contributors Dated evidence from documented sources Recorded confidence and unresolved gaps Validated current-state record Evidence and confidence statement Risks, constraints and missing information Downstream traceability links"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Cloud Assessment",
+      "summary": "Assess cloud footprint, landing zones, controls, cost and sovereignty.",
+      "href": "/transformation/stage-1-discover/deliverables/cloud-assessment/",
+      "stage": "Discover",
+      "capability": "Assessment",
+      "role": "Cloud Platform Owner",
+      "keywords": "Approved Discovery scope Named owners and contributors Dated evidence from documented sources Recorded confidence and unresolved gaps Validated current-state record Evidence and confidence statement Risks, constraints and missing information Downstream traceability links"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Security Assessment",
+      "summary": "Establish current threats, controls, gaps, incidents and assurance.",
+      "href": "/transformation/stage-1-discover/deliverables/security-assessment/",
+      "stage": "Discover",
+      "capability": "Assessment",
+      "role": "CISO",
+      "keywords": "Approved Discovery scope Named owners and contributors Dated evidence from documented sources Recorded confidence and unresolved gaps Validated current-state record Evidence and confidence statement Risks, constraints and missing information Downstream traceability links"
+    },
+    {
+      "type": "Deliverable",
+      "title": "IAM Assessment",
+      "summary": "Assess identity lifecycle, authentication, authorisation and privilege.",
+      "href": "/transformation/stage-1-discover/deliverables/iam-assessment/",
+      "stage": "Discover",
+      "capability": "Assessment",
+      "role": "Identity Lead",
+      "keywords": "Approved Discovery scope Named owners and contributors Dated evidence from documented sources Recorded confidence and unresolved gaps Validated current-state record Evidence and confidence statement Risks, constraints and missing information Downstream traceability links"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Vendor Landscape",
+      "summary": "Create an owned view of supplier services, contracts, risk and exit constraints.",
+      "href": "/transformation/stage-1-discover/deliverables/vendor-landscape/",
+      "stage": "Discover",
+      "capability": "Register",
+      "role": "Procurement Lead",
+      "keywords": "Approved Discovery scope Named owners and contributors Dated evidence from documented sources Recorded confidence and unresolved gaps Validated current-state record Evidence and confidence statement Risks, constraints and missing information Downstream traceability links"
+    },
+    {
+      "type": "Deliverable",
+      "title": "AI Capability Inventory",
+      "summary": "Record approved AI systems, models, providers, data, controls and status.",
+      "href": "/transformation/stage-1-discover/deliverables/ai-capability-inventory/",
+      "stage": "Discover",
+      "capability": "Inventory",
+      "role": "Platform Owner",
+      "keywords": "Approved Discovery scope Named owners and contributors Dated evidence from documented sources Recorded confidence and unresolved gaps Validated current-state record Evidence and confidence statement Risks, constraints and missing information Downstream traceability links"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Automation Inventory",
+      "summary": "Record automations, platforms, processes, controls, performance and support.",
+      "href": "/transformation/stage-1-discover/deliverables/automation-inventory/",
+      "stage": "Discover",
+      "capability": "Inventory",
+      "role": "Automation Lead",
+      "keywords": "Approved Discovery scope Named owners and contributors Dated evidence from documented sources Recorded confidence and unresolved gaps Validated current-state record Evidence and confidence statement Risks, constraints and missing information Downstream traceability links"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Skills Assessment",
+      "summary": "Assess current skills, capacity, demand and learning gaps.",
+      "href": "/transformation/stage-1-discover/deliverables/skills-assessment/",
+      "stage": "Discover",
+      "capability": "Assessment",
+      "role": "Workforce Lead",
+      "keywords": "Approved Discovery scope Named owners and contributors Dated evidence from documented sources Recorded confidence and unresolved gaps Validated current-state record Evidence and confidence statement Risks, constraints and missing information Downstream traceability links"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Governance Assessment",
+      "summary": "Assess current policies, forums, controls, evidence and decision rights.",
+      "href": "/transformation/stage-1-discover/deliverables/governance-assessment/",
+      "stage": "Discover",
+      "capability": "Assessment",
+      "role": "Platform Owner",
+      "keywords": "Approved Discovery scope Named owners and contributors Dated evidence from documented sources Recorded confidence and unresolved gaps Validated current-state record Evidence and confidence statement Risks, constraints and missing information Downstream traceability links"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Regulatory Assessment",
+      "summary": "Map applicable obligations to owners, controls, evidence and gaps.",
+      "href": "/transformation/stage-1-discover/deliverables/regulatory-assessment/",
+      "stage": "Discover",
+      "capability": "Assessment",
+      "role": "Risk and Compliance Lead",
+      "keywords": "Approved Discovery scope Named owners and contributors Dated evidence from documented sources Recorded confidence and unresolved gaps Validated current-state record Evidence and confidence statement Risks, constraints and missing information Downstream traceability links"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Cost Baseline",
+      "summary": "Establish current costs, units, assumptions and confidence.",
+      "href": "/transformation/stage-1-discover/deliverables/cost-baseline/",
+      "stage": "Discover",
+      "capability": "Financial baseline",
+      "role": "Finance Lead",
+      "keywords": "Approved Discovery scope Named owners and contributors Dated evidence from documented sources Recorded confidence and unresolved gaps Validated current-state record Evidence and confidence statement Risks, constraints and missing information Downstream traceability links"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Technical Debt Register",
+      "summary": "Make architectural, platform, security and operational debt visible.",
+      "href": "/transformation/stage-1-discover/deliverables/technical-debt-register/",
+      "stage": "Discover",
+      "capability": "Register",
+      "role": "Enterprise Architect",
+      "keywords": "Approved Discovery scope Named owners and contributors Dated evidence from documented sources Recorded confidence and unresolved gaps Validated current-state record Evidence and confidence statement Risks, constraints and missing information Downstream traceability links"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Shadow AI Register",
+      "summary": "Record unapproved use, data exposure, business need and response.",
+      "href": "/transformation/stage-1-discover/deliverables/shadow-ai-register/",
+      "stage": "Discover",
+      "capability": "Register",
+      "role": "Risk Executive",
+      "keywords": "Approved Discovery scope Named owners and contributors Dated evidence from documented sources Recorded confidence and unresolved gaps Validated current-state record Evidence and confidence statement Risks, constraints and missing information Downstream traceability links"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Discovery Findings Report",
+      "summary": "Synthesize validated findings, risks, constraints and missing evidence.",
+      "href": "/transformation/stage-1-discover/deliverables/discovery-findings/",
+      "stage": "Discover",
+      "capability": "Report",
+      "role": "Programme Director",
+      "keywords": "Approved Discovery scope Named owners and contributors Dated evidence from documented sources Recorded confidence and unresolved gaps Validated current-state record Evidence and confidence statement Risks, constraints and missing information Downstream traceability links"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Opportunity Register",
+      "summary": "Capture visible opportunities without prematurely prioritising them.",
+      "href": "/transformation/stage-1-discover/deliverables/opportunity-register/",
+      "stage": "Discover",
+      "capability": "Register",
+      "role": "Business Owner",
+      "keywords": "Approved Discovery scope Named owners and contributors Dated evidence from documented sources Recorded confidence and unresolved gaps Validated current-state record Evidence and confidence statement Risks, constraints and missing information Downstream traceability links"
+    },
+    {
+      "type": "Workshop",
+      "title": "Executive Discovery Kick-off",
+      "summary": "Align scope, evidence expectations, owners and discovery decisions.",
+      "href": "/transformation/stage-1-discover/workshops/executive-kick-off/",
+      "stage": "Discover",
+      "role": "Enterprise AI Methodology Lead",
+      "keywords": "What must Discovery prove? Which owners can provide evidence? What decisions depend on this baseline?"
+    },
+    {
+      "type": "Workshop",
+      "title": "Business Capability Workshop",
+      "summary": "Validate capabilities, ownership, maturity and business pain points.",
+      "href": "/transformation/stage-1-discover/workshops/business-capability/",
+      "stage": "Discover",
+      "role": "Enterprise AI Methodology Lead",
+      "keywords": "What must the enterprise be able to do? Who owns each capability? Where is evidence of pain or maturity?"
+    },
+    {
+      "type": "Workshop",
+      "title": "Process Discovery Workshop",
+      "summary": "Map priority processes, systems, data, controls and friction.",
+      "href": "/transformation/stage-1-discover/workshops/process-discovery/",
+      "stage": "Discover",
+      "role": "Enterprise AI Methodology Lead",
+      "keywords": "How does work flow today? Where are delays and failures? Which controls and systems are involved?"
+    },
+    {
+      "type": "Workshop",
+      "title": "Technology Discovery Workshop",
+      "summary": "Reconcile applications, integrations, infrastructure, cloud and debt.",
+      "href": "/transformation/stage-1-discover/workshops/technology-discovery/",
+      "stage": "Discover",
+      "role": "Enterprise AI Methodology Lead",
+      "keywords": "What is actually in use? Who owns it? Which dependencies and lifecycle risks matter?"
+    },
+    {
+      "type": "Workshop",
+      "title": "Data Discovery Workshop",
+      "summary": "Validate data assets, ownership, quality, classification and lineage.",
+      "href": "/transformation/stage-1-discover/workshops/data-discovery/",
+      "stage": "Discover",
+      "role": "Enterprise AI Methodology Lead",
+      "keywords": "Which data supports priority capabilities? Can quality claims be evidenced? What access and residency constraints exist?"
+    },
+    {
+      "type": "Workshop",
+      "title": "Security & Risk Workshop",
+      "summary": "Assess threats, controls, identity, incidents and compliance evidence.",
+      "href": "/transformation/stage-1-discover/workshops/security-risk/",
+      "stage": "Discover",
+      "role": "Enterprise AI Methodology Lead",
+      "keywords": "Which controls operate today? What evidence proves effectiveness? Which risks constrain future AI?"
+    },
+    {
+      "type": "Workshop",
+      "title": "Vendor Review Workshop",
+      "summary": "Validate supplier services, data access, assurance, cost and exit constraints.",
+      "href": "/transformation/stage-1-discover/workshops/vendor-review/",
+      "stage": "Discover",
+      "role": "Enterprise AI Methodology Lead",
+      "keywords": "What is supplied and by whom? Which data and dependencies exist? Can the organisation exit safely?"
+    },
+    {
+      "type": "Workshop",
+      "title": "AI & Automation Landscape Workshop",
+      "summary": "Inventory approved, emerging and unapproved AI and automation.",
+      "href": "/transformation/stage-1-discover/workshops/ai-automation-landscape/",
+      "stage": "Discover",
+      "role": "Enterprise AI Methodology Lead",
+      "keywords": "What is in use? Who owns it? What data and actions are involved? Which use is unapproved?"
+    },
+    {
+      "type": "Workshop",
+      "title": "Discovery Findings Review",
+      "summary": "Reconcile cross-domain findings, gaps, constraints and visible opportunities.",
+      "href": "/transformation/stage-1-discover/workshops/findings-review/",
+      "stage": "Discover",
+      "role": "Enterprise AI Methodology Lead",
+      "keywords": "Which findings are validated? Where does evidence conflict? What remains unknown? Which decisions are required?"
+    },
+    {
+      "type": "Workshop",
+      "title": "Discovery Approval Workshop",
+      "summary": "Decide whether the current-state baseline is sufficient for Assess Readiness.",
+      "href": "/transformation/stage-1-discover/workshops/approval/",
+      "stage": "Discover",
+      "role": "Platform Owner",
+      "keywords": "Is every domain sufficiently evidenced? Are owners and confidence clear? Can readiness use this baseline without recollection?"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Executive Mandate",
+      "summary": "Authorise the transformation and state the business need, intended outcomes, authority and constraints.",
+      "href": "/transformation/stage-0-mobilise/deliverables/executive-mandate/",
+      "stage": "Mobilise",
+      "capability": "Decision record",
+      "role": "Executive Sponsor",
+      "keywords": "Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Business Drivers",
+      "summary": "Create a shared, evidence-based explanation of why enterprise AI matters now.",
+      "href": "/transformation/stage-0-mobilise/deliverables/business-drivers/",
+      "stage": "Mobilise",
+      "capability": "Briefing",
+      "role": "Business Owner",
+      "keywords": "Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Programme Charter",
+      "summary": "Define purpose, measurable objectives, scope, governance and delivery boundaries.",
+      "href": "/transformation/stage-0-mobilise/deliverables/programme-charter/",
+      "stage": "Mobilise",
+      "capability": "Decision pack",
+      "role": "Programme Director",
+      "keywords": "Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Scope Definition",
+      "summary": "Make inclusions, exclusions, boundaries and interfaces explicit.",
+      "href": "/transformation/stage-0-mobilise/deliverables/scope-definition/",
+      "stage": "Mobilise",
+      "capability": "Decision record",
+      "role": "Programme Director",
+      "keywords": "Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Strategic Objectives",
+      "summary": "Translate drivers into specific outcomes that guide later investment and architecture choices.",
+      "href": "/transformation/stage-0-mobilise/deliverables/strategic-objectives/",
+      "stage": "Mobilise",
+      "capability": "Measurement record",
+      "role": "Business Owner",
+      "keywords": "Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Stakeholder Register",
+      "summary": "Identify people affected by, contributing to or accountable for transformation decisions.",
+      "href": "/transformation/stage-0-mobilise/deliverables/stakeholder-register/",
+      "stage": "Mobilise",
+      "capability": "Register",
+      "role": "Programme Director",
+      "keywords": "Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Governance Charter",
+      "summary": "Define governance purpose, principles, authority, membership and evidence expectations.",
+      "href": "/transformation/stage-0-mobilise/deliverables/governance-charter/",
+      "stage": "Mobilise",
+      "capability": "Operating model",
+      "role": "Platform Owner",
+      "keywords": "Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Governance Forums",
+      "summary": "Define each forum’s purpose, membership, cadence, quorum and decisions.",
+      "href": "/transformation/stage-0-mobilise/deliverables/governance-forums/",
+      "stage": "Mobilise",
+      "capability": "Operating model",
+      "role": "Platform Owner",
+      "keywords": "Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Decision Rights",
+      "summary": "Assign unambiguous authority for funding, risk, architecture, data, release and benefits decisions.",
+      "href": "/transformation/stage-0-mobilise/deliverables/decision-rights/",
+      "stage": "Mobilise",
+      "capability": "Decision model",
+      "role": "Platform Owner",
+      "keywords": "Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Enterprise RACI",
+      "summary": "Assign responsibility, accountability, support, consultation and information across mobilisation.",
+      "href": "/transformation/stage-0-mobilise/deliverables/enterprise-raci/",
+      "stage": "Mobilise",
+      "capability": "Responsibility model",
+      "role": "Programme Director",
+      "keywords": "Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Delivery Model",
+      "summary": "Define how the programme organises work, teams, suppliers, increments and decisions.",
+      "href": "/transformation/stage-0-mobilise/deliverables/delivery-model/",
+      "stage": "Mobilise",
+      "capability": "Operating model",
+      "role": "Programme Director",
+      "keywords": "Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Operating Model",
+      "summary": "Define initial ownership across strategy, governance, platforms, delivery and operations.",
+      "href": "/transformation/stage-0-mobilise/deliverables/operating-model/",
+      "stage": "Mobilise",
+      "capability": "Operating model",
+      "role": "Platform Owner",
+      "keywords": "Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Funding Model",
+      "summary": "Define funding sources, approval thresholds, cost categories and investment governance.",
+      "href": "/transformation/stage-0-mobilise/deliverables/funding-model/",
+      "stage": "Mobilise",
+      "capability": "Decision record",
+      "role": "Finance Lead",
+      "keywords": "Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Success Measures",
+      "summary": "Define outcome measures, baselines, target ranges, owners and measurement methods.",
+      "href": "/transformation/stage-0-mobilise/deliverables/success-measures/",
+      "stage": "Mobilise",
+      "capability": "Measurement plan",
+      "role": "Business Owner",
+      "keywords": "Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records"
+    },
+    {
+      "type": "Deliverable",
+      "title": "AI Principles",
+      "summary": "Create actionable principles for later governance, architecture and investment decisions.",
+      "href": "/transformation/stage-0-mobilise/deliverables/ai-principles/",
+      "stage": "Mobilise",
+      "capability": "Principles",
+      "role": "Platform Owner",
+      "keywords": "Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Risk Appetite Statement",
+      "summary": "Set boundaries for impact, autonomy, data use, uncertainty and prohibited activity.",
+      "href": "/transformation/stage-0-mobilise/deliverables/risk-appetite/",
+      "stage": "Mobilise",
+      "capability": "Policy direction",
+      "role": "Risk Executive",
+      "keywords": "Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records"
+    },
+    {
+      "type": "Deliverable",
+      "title": "RAID Register",
+      "summary": "Expose risks, assumptions, issues and dependencies with owners and responses.",
+      "href": "/transformation/stage-0-mobilise/deliverables/raid-register/",
+      "stage": "Mobilise",
+      "capability": "Register",
+      "role": "Programme Director",
+      "keywords": "Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Mobilisation Plan",
+      "summary": "Sequence mobilisation activities, workshops, deliverables, decisions and resources.",
+      "href": "/transformation/stage-0-mobilise/deliverables/mobilisation-plan/",
+      "stage": "Mobilise",
+      "capability": "Plan",
+      "role": "Programme Director",
+      "keywords": "Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Communication Plan",
+      "summary": "Plan transparent communication, consultation, feedback and adoption activity.",
+      "href": "/transformation/stage-0-mobilise/deliverables/communication-plan/",
+      "stage": "Mobilise",
+      "capability": "Plan",
+      "role": "Change Lead",
+      "keywords": "Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Executive Briefing Pack",
+      "summary": "Give decision-makers a concise, evidence-backed view of mandate, choices, risks and next actions.",
+      "href": "/transformation/stage-0-mobilise/deliverables/executive-briefing-pack/",
+      "stage": "Mobilise",
+      "capability": "Briefing",
+      "role": "Programme Director",
+      "keywords": "Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records"
+    },
+    {
+      "type": "Workshop",
+      "title": "Executive Vision Workshop",
+      "summary": "Agree the business need, ambition, outcomes, sponsorship and boundaries.",
+      "href": "/transformation/stage-0-mobilise/workshops/executive-vision/",
+      "stage": "Mobilise",
+      "role": "Enterprise AI Methodology Lead",
+      "keywords": "Why must the organisation act now? Which outcomes matter? What must not happen? Who owns the mandate?"
+    },
+    {
+      "type": "Workshop",
+      "title": "Business Drivers Workshop",
+      "summary": "Create an evidence-based business rationale and initial success measures.",
+      "href": "/transformation/stage-0-mobilise/workshops/business-drivers/",
+      "stage": "Mobilise",
+      "role": "Enterprise AI Methodology Lead",
+      "keywords": "What problem are we solving? What evidence supports urgency? Which measures would prove value?"
+    },
+    {
+      "type": "Workshop",
+      "title": "Governance Workshop",
+      "summary": "Design forums, decision rights, RACI, evidence and escalation.",
+      "href": "/transformation/stage-0-mobilise/workshops/governance/",
+      "stage": "Mobilise",
+      "role": "Enterprise AI Methodology Lead",
+      "keywords": "Which decisions exist? Who approves and accepts risk? What evidence is mandatory? How are exceptions handled?"
+    },
+    {
+      "type": "Workshop",
+      "title": "Stakeholder Workshop",
+      "summary": "Identify impacted stakeholders and plan communication, consultation and feedback.",
+      "href": "/transformation/stage-0-mobilise/workshops/stakeholder/",
+      "stage": "Mobilise",
+      "role": "Enterprise AI Methodology Lead",
+      "keywords": "Who is affected? Whose knowledge is required? Who can block or accelerate progress? How will feedback change decisions?"
+    },
+    {
+      "type": "Workshop",
+      "title": "Programme Kick-off",
+      "summary": "Align the team on mandate, scope, roles, plan, controls and ways of working.",
+      "href": "/transformation/stage-0-mobilise/workshops/programme-kick-off/",
+      "stage": "Mobilise",
+      "role": "Enterprise AI Methodology Lead",
+      "keywords": "What are we delivering? How will decisions be made? How do we raise risk? What happens next?"
+    },
+    {
+      "type": "Workshop",
+      "title": "Mobilisation Review",
+      "summary": "Assess evidence completeness and recommend a Mobilisation Approval decision.",
+      "href": "/transformation/stage-0-mobilise/workshops/mobilisation-review/",
+      "stage": "Mobilise",
+      "role": "Platform Owner",
+      "keywords": "Is the programme authorised and bounded? Are owners and funding clear? Are risk boundaries approved? Can discovery begin safely?"
+    },
+    {
+      "type": "Lifecycle stage",
+      "title": "Mobilise",
+      "summary": "Create the mandate, scope, sponsorship and programme controls.",
+      "href": "/transformation/stage-0-mobilise/",
+      "stage": "Mobilise",
+      "capability": "Enterprise AI Transformation",
+      "keywords": "Programme Charter Mobilisation approved"
+    },
+    {
+      "type": "Lifecycle stage",
+      "title": "Discover",
+      "summary": "Establish an evidence-based current-state baseline.",
+      "href": "/transformation/stage-1-discover/",
+      "stage": "Discover",
+      "capability": "Enterprise AI Transformation",
+      "keywords": "Current-State Discovery Baseline Discovery accepted"
+    },
+    {
+      "type": "Lifecycle stage",
+      "title": "Define Strategy",
+      "summary": "Agree ambition, outcomes, operating model and roadmap.",
+      "href": "/transformation/#stage-3",
+      "stage": "Define Strategy",
+      "capability": "Enterprise AI Transformation",
+      "keywords": "Enterprise AI Strategy Decision Pack Strategy approved"
+    },
+    {
+      "type": "Lifecycle stage",
+      "title": "Establish Governance",
+      "summary": "Put decision rights, policies, controls and assurance in place.",
+      "href": "/transformation/#stage-4",
+      "stage": "Establish Governance",
+      "capability": "Enterprise AI Transformation",
+      "keywords": "Governance and Control Framework Governance approved"
+    },
+    {
+      "type": "Lifecycle stage",
+      "title": "Identify and Prioritise Opportunities",
+      "summary": "Create and balance a governed opportunity portfolio.",
+      "href": "/transformation/#stage-5",
+      "stage": "Identify and Prioritise Opportunities",
+      "capability": "Enterprise AI Transformation",
+      "keywords": "Prioritised Opportunity Portfolio Portfolio approved"
+    },
+    {
+      "type": "Lifecycle stage",
+      "title": "Build the Business Case",
+      "summary": "Make benefits, costs, assumptions and funding transparent.",
+      "href": "/transformation/#stage-6",
+      "stage": "Build the Business Case",
+      "capability": "Enterprise AI Transformation",
+      "keywords": "Enterprise AI Business Case Investment approved"
+    },
+    {
+      "type": "Lifecycle stage",
+      "title": "Design the Target Architecture",
+      "summary": "Turn strategy and controls into an implementable target state.",
+      "href": "/transformation/#stage-7",
+      "stage": "Design the Target Architecture",
+      "capability": "Enterprise AI Transformation",
+      "keywords": "Target Architecture Decision Pack Architecture approved"
+    },
+    {
+      "type": "Lifecycle stage",
+      "title": "Plan Implementation",
+      "summary": "Create the integrated delivery, change, test and transition plan.",
+      "href": "/transformation/#stage-8",
+      "stage": "Plan Implementation",
+      "capability": "Enterprise AI Transformation",
+      "keywords": "Integrated Implementation Plan Plan approved"
+    },
+    {
+      "type": "Lifecycle stage",
+      "title": "Build and Integrate",
+      "summary": "Configure, integrate and document the governed solution.",
+      "href": "/transformation/#stage-9",
+      "stage": "Build and Integrate",
+      "capability": "Enterprise AI Transformation",
+      "keywords": "Build and Configuration Evidence Build completion approved"
+    },
+    {
+      "type": "Lifecycle stage",
+      "title": "Test and Validate",
+      "summary": "Prove functional, AI, security, control and operational quality.",
+      "href": "/transformation/#stage-10",
+      "stage": "Test and Validate",
+      "capability": "Enterprise AI Transformation",
+      "keywords": "Production Readiness Evidence Pack Release candidate accepted"
+    },
+    {
+      "type": "Lifecycle stage",
+      "title": "Deploy and Transition",
+      "summary": "Cut over safely and transfer accountable ownership.",
+      "href": "/transformation/#stage-11",
+      "stage": "Deploy and Transition",
+      "capability": "Enterprise AI Transformation",
+      "keywords": "Transition and Ownership Record Production release approved"
+    },
+    {
+      "type": "Lifecycle stage",
+      "title": "Operate and Govern Production",
+      "summary": "Run, monitor, assure and respond throughout service life.",
+      "href": "/transformation/#stage-12",
+      "stage": "Operate and Govern Production",
+      "capability": "Enterprise AI Transformation",
+      "keywords": "Production Assurance Report Continued operation approved"
+    },
+    {
+      "type": "Lifecycle stage",
+      "title": "Improve and Scale",
+      "summary": "Measure value, improve performance and scale reusable capability.",
+      "href": "/transformation/#stage-13",
+      "stage": "Improve and Scale",
+      "capability": "Enterprise AI Transformation",
+      "keywords": "Benefits and Scale Decision Pack Scale decision approved"
+    },
+    {
+      "type": "Knowledge article",
+      "title": "Retrieval-Augmented Generation (RAG)",
+      "summary": "Knowledge grounding and retrieval patterns for enterprise AI.",
+      "href": "/pages/knowledge-discovery.html",
+      "capability": "RAG",
+      "keywords": "vector database embeddings grounding retrieval"
+    },
+    {
+      "type": "Knowledge article",
+      "title": "Model Context Protocol (MCP)",
+      "summary": "Integration patterns for tools, context and governed AI systems.",
+      "href": "/pages/knowledge-discovery.html",
+      "capability": "MCP",
+      "keywords": "agentic AI tools integration protocol"
+    },
+    {
+      "type": "Knowledge article",
+      "title": "Vector Databases",
+      "summary": "Vector storage, retrieval and enterprise architecture considerations.",
+      "href": "/pages/knowledge-discovery.html",
+      "capability": "Vector Databases",
+      "keywords": "RAG embeddings semantic search"
+    },
+    {
+      "type": "Lifecycle stage",
+      "title": "Assess Readiness",
+      "summary": "Transform discovery evidence and assessments into an Executive Readiness Decision.",
+      "href": "/transformation/stage-2-assess-readiness/",
+      "stage": "Assess Readiness",
+      "keywords": "are we ready gap analysis executive summary roadmaps recommendations heat maps decision framework"
+    },
+    {
+      "type": "Readiness workspace",
+      "title": "Enterprise Readiness",
+      "summary": "Synthesise enterprise capability, risk, investment and change evidence into an overall readiness disposition.",
+      "href": "/transformation/stage-2-assess-readiness/workspaces/enterprise-readiness/",
+      "stage": "Assess Readiness",
+      "role": "Executive Sponsor",
+      "keywords": "Enterprise AI Readiness Financial Readiness Change Management Readiness Business Strategy & Objectives Financial Baseline Existing Governance Contain critical exposure before progression Fund enabling dependencies before downstream delivery Sequence quick wins without displacing structural improvement Carry approved conditions into strategy governance"
+    },
+    {
+      "type": "Readiness workspace",
+      "title": "Business Readiness",
+      "summary": "Determine whether business outcomes, ownership, processes and value measures can support transformation.",
+      "href": "/transformation/stage-2-assess-readiness/workspaces/business-readiness/",
+      "stage": "Assess Readiness",
+      "role": "Business Owner",
+      "keywords": "Business Capability Assessment Business Process Assessment Financial Readiness Business Capabilities Business Processes Organisational Structure Contain critical exposure before progression Fund enabling dependencies before downstream delivery Sequence quick wins without displacing structural improvement Carry approved conditions into strategy governance"
+    },
+    {
+      "type": "Readiness workspace",
+      "title": "Governance Readiness",
+      "summary": "Determine whether decision rights, policy, risk appetite, controls and assurance are sufficient to proceed.",
+      "href": "/transformation/stage-2-assess-readiness/workspaces/governance-readiness/",
+      "stage": "Assess Readiness",
+      "role": "AI Governance Lead",
+      "keywords": "AI Governance Maturity AI Risk Assessment Regulatory Compliance Assessment Existing Governance Regulatory & Compliance Shadow AI & Unapproved Technology Contain critical exposure before progression Fund enabling dependencies before downstream delivery Sequence quick wins without displacing structural improvement Carry approved conditions into strategy governance"
+    },
+    {
+      "type": "Readiness workspace",
+      "title": "Technology Readiness",
+      "summary": "Determine whether the technology estate can support secure, scalable and governable enterprise AI.",
+      "href": "/transformation/stage-2-assess-readiness/workspaces/technology-readiness/",
+      "stage": "Assess Readiness",
+      "role": "Enterprise Architect",
+      "keywords": "Enterprise Architecture Assessment Application Portfolio Assessment Integration Assessment Infrastructure Assessment Cloud Readiness Applications & Systems Integration & APIs Infrastructure & Hosting Cloud Platforms Contain critical exposure before progression Fund enabling dependencies before downstream delivery Sequence quick wins without displacing structural improvement Carry approved conditions into strategy governance"
+    },
+    {
+      "type": "Readiness workspace",
+      "title": "Data Readiness",
+      "summary": "Determine whether priority data is usable, governed, representative, lawful and operationally sustainable.",
+      "href": "/transformation/stage-2-assess-readiness/workspaces/data-readiness/",
+      "stage": "Assess Readiness",
+      "role": "Chief Data Officer",
+      "keywords": "Data Readiness Data Governance Data & Information Regulatory & Compliance Contain critical exposure before progression Fund enabling dependencies before downstream delivery Sequence quick wins without displacing structural improvement Carry approved conditions into strategy governance"
+    },
+    {
+      "type": "Readiness workspace",
+      "title": "Security Readiness",
+      "summary": "Determine whether material threats, access risks and third-party exposures are controlled within appetite.",
+      "href": "/transformation/stage-2-assess-readiness/workspaces/security-readiness/",
+      "stage": "Assess Readiness",
+      "role": "CISO",
+      "keywords": "AI Security Assessment Identity & Access Assessment Vendor Assessment Cybersecurity Identity & Access Management Vendors & Third Parties Contain critical exposure before progression Fund enabling dependencies before downstream delivery Sequence quick wins without displacing structural improvement Carry approved conditions into strategy governance"
+    },
+    {
+      "type": "Readiness workspace",
+      "title": "AI Readiness",
+      "summary": "Determine whether AI platform, evaluation, model, agent and responsible-AI capabilities can support delivery.",
+      "href": "/transformation/stage-2-assess-readiness/workspaces/ai-readiness/",
+      "stage": "Assess Readiness",
+      "role": "AI Platform Owner",
+      "keywords": "Enterprise AI Readiness AI Platform Assessment AI Governance Maturity AI Landscape Data & Information Shadow AI & Unapproved Technology Contain critical exposure before progression Fund enabling dependencies before downstream delivery Sequence quick wins without displacing structural improvement Carry approved conditions into strategy governance"
+    },
+    {
+      "type": "Readiness workspace",
+      "title": "Automation Readiness",
+      "summary": "Determine whether automation demand, delivery, controls, reuse and operations can support scaled change.",
+      "href": "/transformation/stage-2-assess-readiness/workspaces/automation-readiness/",
+      "stage": "Assess Readiness",
+      "role": "Automation Lead",
+      "keywords": "Automation Maturity Business Process Assessment Automation Landscape Business Processes Contain critical exposure before progression Fund enabling dependencies before downstream delivery Sequence quick wins without displacing structural improvement Carry approved conditions into strategy governance"
+    },
+    {
+      "type": "Readiness workspace",
+      "title": "Operational Readiness",
+      "summary": "Determine whether accountable service ownership, support, monitoring, incidents and continuity can sustain AI.",
+      "href": "/transformation/stage-2-assess-readiness/workspaces/operational-readiness/",
+      "stage": "Assess Readiness",
+      "role": "Operations Lead",
+      "keywords": "Operational Readiness Production Readiness Assessment Operations & Service Management Infrastructure & Hosting Skills & Workforce Contain critical exposure before progression Fund enabling dependencies before downstream delivery Sequence quick wins without displacing structural improvement Carry approved conditions into strategy governance"
+    },
+    {
+      "type": "Readiness workspace",
+      "title": "Change Readiness",
+      "summary": "Determine whether stakeholders, skills, capacity, communications and adoption mechanisms can absorb change.",
+      "href": "/transformation/stage-2-assess-readiness/workspaces/change-readiness/",
+      "stage": "Assess Readiness",
+      "role": "Change Lead",
+      "keywords": "Change Management Readiness Skills & Workforce Assessment Skills & Workforce Organisational Structure Business Strategy & Objectives Contain critical exposure before progression Fund enabling dependencies before downstream delivery Sequence quick wins without displacing structural improvement Carry approved conditions into strategy governance"
+    },
+    {
+      "type": "Readiness deliverable",
+      "title": "Enterprise Readiness Report",
+      "summary": "Provide a governed enterprise readiness report that supports the Executive Readiness Decision.",
+      "href": "/transformation/stage-2-assess-readiness/deliverables/enterprise-readiness-report/",
+      "stage": "Assess Readiness",
+      "role": "Methodology Lead",
+      "keywords": "Validated Discover evidence Approved assessment results and confidence Gap and risk records Dependencies, constraints and investment assumptions Enterprise Readiness Report Traceability references Named actions and owners Decision or approval record Enterprise AI Readiness Data Readiness Enterprise Architecture Assessment Cloud Readiness Automation Maturity Skills & Workforce Assessment"
+    },
+    {
+      "type": "Readiness deliverable",
+      "title": "Executive Readiness Summary",
+      "summary": "Provide a governed executive readiness summary that supports the Executive Readiness Decision.",
+      "href": "/transformation/stage-2-assess-readiness/deliverables/executive-readiness-summary/",
+      "stage": "Assess Readiness",
+      "role": "Programme Director",
+      "keywords": "Validated Discover evidence Approved assessment results and confidence Gap and risk records Dependencies, constraints and investment assumptions Executive Readiness Summary Traceability references Named actions and owners Decision or approval record Enterprise AI Readiness Data Readiness Enterprise Architecture Assessment Cloud Readiness Automation Maturity Skills & Workforce Assessment"
+    },
+    {
+      "type": "Readiness deliverable",
+      "title": "Gap Analysis Register",
+      "summary": "Provide a governed gap analysis register that supports the Executive Readiness Decision.",
+      "href": "/transformation/stage-2-assess-readiness/deliverables/gap-analysis-register/",
+      "stage": "Assess Readiness",
+      "role": "Methodology Lead",
+      "keywords": "Validated Discover evidence Approved assessment results and confidence Gap and risk records Dependencies, constraints and investment assumptions Gap Analysis Register Traceability references Named actions and owners Decision or approval record Enterprise AI Readiness Data Readiness Enterprise Architecture Assessment Cloud Readiness Automation Maturity Skills & Workforce Assessment"
+    },
+    {
+      "type": "Readiness deliverable",
+      "title": "Critical Gap Register",
+      "summary": "Provide a governed critical gap register that supports the Executive Readiness Decision.",
+      "href": "/transformation/stage-2-assess-readiness/deliverables/critical-gap-register/",
+      "stage": "Assess Readiness",
+      "role": "Risk Executive",
+      "keywords": "Validated Discover evidence Approved assessment results and confidence Gap and risk records Dependencies, constraints and investment assumptions Critical Gap Register Traceability references Named actions and owners Decision or approval record Enterprise AI Readiness Data Readiness Enterprise Architecture Assessment Cloud Readiness Automation Maturity Skills & Workforce Assessment"
+    },
+    {
+      "type": "Readiness deliverable",
+      "title": "Capability Heat Map",
+      "summary": "Provide a governed capability heat map that supports the Executive Readiness Decision.",
+      "href": "/transformation/stage-2-assess-readiness/deliverables/capability-heat-map/",
+      "stage": "Assess Readiness",
+      "role": "Enterprise Architect",
+      "keywords": "Validated Discover evidence Approved assessment results and confidence Gap and risk records Dependencies, constraints and investment assumptions Capability Heat Map Traceability references Named actions and owners Decision or approval record Enterprise AI Readiness Data Readiness Enterprise Architecture Assessment Cloud Readiness Automation Maturity Skills & Workforce Assessment"
+    },
+    {
+      "type": "Readiness deliverable",
+      "title": "Readiness Dashboard",
+      "summary": "Provide a governed readiness dashboard that supports the Executive Readiness Decision.",
+      "href": "/transformation/stage-2-assess-readiness/deliverables/readiness-dashboard/",
+      "stage": "Assess Readiness",
+      "role": "Programme Director",
+      "keywords": "Validated Discover evidence Approved assessment results and confidence Gap and risk records Dependencies, constraints and investment assumptions Readiness Dashboard Traceability references Named actions and owners Decision or approval record Enterprise AI Readiness Data Readiness Enterprise Architecture Assessment Cloud Readiness Automation Maturity Skills & Workforce Assessment"
+    },
+    {
+      "type": "Readiness deliverable",
+      "title": "Prioritised Improvement Plan",
+      "summary": "Provide a governed prioritised improvement plan that supports the Executive Readiness Decision.",
+      "href": "/transformation/stage-2-assess-readiness/deliverables/prioritised-improvement-plan/",
+      "stage": "Assess Readiness",
+      "role": "Programme Director",
+      "keywords": "Validated Discover evidence Approved assessment results and confidence Gap and risk records Dependencies, constraints and investment assumptions Prioritised Improvement Plan Traceability references Named actions and owners Decision or approval record Enterprise AI Readiness Data Readiness Enterprise Architecture Assessment Cloud Readiness Automation Maturity Skills & Workforce Assessment"
+    },
+    {
+      "type": "Readiness deliverable",
+      "title": "Executive Recommendations",
+      "summary": "Provide a governed executive recommendations that supports the Executive Readiness Decision.",
+      "href": "/transformation/stage-2-assess-readiness/deliverables/executive-recommendations/",
+      "stage": "Assess Readiness",
+      "role": "Methodology Lead",
+      "keywords": "Validated Discover evidence Approved assessment results and confidence Gap and risk records Dependencies, constraints and investment assumptions Executive Recommendations Traceability references Named actions and owners Decision or approval record Enterprise AI Readiness Data Readiness Enterprise Architecture Assessment Cloud Readiness Automation Maturity Skills & Workforce Assessment"
+    },
+    {
+      "type": "Readiness deliverable",
+      "title": "90 Day Roadmap",
+      "summary": "Provide a governed 90 day roadmap that supports the Executive Readiness Decision.",
+      "href": "/transformation/stage-2-assess-readiness/deliverables/90-day-roadmap/",
+      "stage": "Assess Readiness",
+      "role": "Programme Director",
+      "keywords": "Validated Discover evidence Approved assessment results and confidence Gap and risk records Dependencies, constraints and investment assumptions 90 Day Roadmap Traceability references Named actions and owners Decision or approval record Enterprise AI Readiness Data Readiness Enterprise Architecture Assessment Cloud Readiness Automation Maturity Skills & Workforce Assessment"
+    },
+    {
+      "type": "Readiness deliverable",
+      "title": "6 Month Roadmap",
+      "summary": "Provide a governed 6 month roadmap that supports the Executive Readiness Decision.",
+      "href": "/transformation/stage-2-assess-readiness/deliverables/6-month-roadmap/",
+      "stage": "Assess Readiness",
+      "role": "Programme Director",
+      "keywords": "Validated Discover evidence Approved assessment results and confidence Gap and risk records Dependencies, constraints and investment assumptions 6 Month Roadmap Traceability references Named actions and owners Decision or approval record Enterprise AI Readiness Data Readiness Enterprise Architecture Assessment Cloud Readiness Automation Maturity Skills & Workforce Assessment"
+    },
+    {
+      "type": "Readiness deliverable",
+      "title": "12 Month Roadmap",
+      "summary": "Provide a governed 12 month roadmap that supports the Executive Readiness Decision.",
+      "href": "/transformation/stage-2-assess-readiness/deliverables/12-month-roadmap/",
+      "stage": "Assess Readiness",
+      "role": "Programme Director",
+      "keywords": "Validated Discover evidence Approved assessment results and confidence Gap and risk records Dependencies, constraints and investment assumptions 12 Month Roadmap Traceability references Named actions and owners Decision or approval record Enterprise AI Readiness Data Readiness Enterprise Architecture Assessment Cloud Readiness Automation Maturity Skills & Workforce Assessment"
+    },
+    {
+      "type": "Readiness deliverable",
+      "title": "24 Month Roadmap",
+      "summary": "Provide a governed 24 month roadmap that supports the Executive Readiness Decision.",
+      "href": "/transformation/stage-2-assess-readiness/deliverables/24-month-roadmap/",
+      "stage": "Assess Readiness",
+      "role": "Programme Director",
+      "keywords": "Validated Discover evidence Approved assessment results and confidence Gap and risk records Dependencies, constraints and investment assumptions 24 Month Roadmap Traceability references Named actions and owners Decision or approval record Enterprise AI Readiness Data Readiness Enterprise Architecture Assessment Cloud Readiness Automation Maturity Skills & Workforce Assessment"
+    },
+    {
+      "type": "Readiness deliverable",
+      "title": "Investment Considerations",
+      "summary": "Provide a governed investment considerations that supports the Executive Readiness Decision.",
+      "href": "/transformation/stage-2-assess-readiness/deliverables/investment-considerations/",
+      "stage": "Assess Readiness",
+      "role": "Finance Lead",
+      "keywords": "Validated Discover evidence Approved assessment results and confidence Gap and risk records Dependencies, constraints and investment assumptions Investment Considerations Traceability references Named actions and owners Decision or approval record Enterprise AI Readiness Data Readiness Enterprise Architecture Assessment Cloud Readiness Automation Maturity Skills & Workforce Assessment"
+    },
+    {
+      "type": "Readiness deliverable",
+      "title": "Transformation Readiness Scorecard",
+      "summary": "Provide a governed transformation readiness scorecard that supports the Executive Readiness Decision.",
+      "href": "/transformation/stage-2-assess-readiness/deliverables/transformation-readiness-scorecard/",
+      "stage": "Assess Readiness",
+      "role": "Methodology Lead",
+      "keywords": "Validated Discover evidence Approved assessment results and confidence Gap and risk records Dependencies, constraints and investment assumptions Transformation Readiness Scorecard Traceability references Named actions and owners Decision or approval record Enterprise AI Readiness Data Readiness Enterprise Architecture Assessment Cloud Readiness Automation Maturity Skills & Workforce Assessment"
+    },
+    {
+      "type": "Readiness deliverable",
+      "title": "Executive Approval Pack",
+      "summary": "Provide a governed executive approval pack that supports the Executive Readiness Decision.",
+      "href": "/transformation/stage-2-assess-readiness/deliverables/executive-approval-pack/",
+      "stage": "Assess Readiness",
+      "role": "Programme Director",
+      "keywords": "Validated Discover evidence Approved assessment results and confidence Gap and risk records Dependencies, constraints and investment assumptions Executive Approval Pack Traceability references Named actions and owners Decision or approval record Enterprise AI Readiness Data Readiness Enterprise Architecture Assessment Cloud Readiness Automation Maturity Skills & Workforce Assessment"
+    },
+    {
+      "type": "Readiness deliverable",
+      "title": "Decision Pack",
+      "summary": "Provide a governed decision pack that supports the Executive Readiness Decision.",
+      "href": "/transformation/stage-2-assess-readiness/deliverables/decision-pack/",
+      "stage": "Assess Readiness",
+      "role": "Programme Director",
+      "keywords": "Validated Discover evidence Approved assessment results and confidence Gap and risk records Dependencies, constraints and investment assumptions Decision Pack Traceability references Named actions and owners Decision or approval record Enterprise AI Readiness Data Readiness Enterprise Architecture Assessment Cloud Readiness Automation Maturity Skills & Workforce Assessment"
+    },
+    {
+      "type": "Readiness deliverable",
+      "title": "Programme Recommendation",
+      "summary": "Provide a governed programme recommendation that supports the Executive Readiness Decision.",
+      "href": "/transformation/stage-2-assess-readiness/deliverables/programme-recommendation/",
+      "stage": "Assess Readiness",
+      "role": "Programme Director",
+      "keywords": "Validated Discover evidence Approved assessment results and confidence Gap and risk records Dependencies, constraints and investment assumptions Programme Recommendation Traceability references Named actions and owners Decision or approval record Enterprise AI Readiness Data Readiness Enterprise Architecture Assessment Cloud Readiness Automation Maturity Skills & Workforce Assessment"
+    },
+    {
+      "type": "Readiness visualisation",
+      "title": "Capability Heat Map",
+      "summary": "Compare capability readiness and evidence confidence.",
+      "href": "/transformation/stage-2-assess-readiness/visualisations/",
+      "stage": "Assess Readiness",
+      "keywords": "heat map matrix roadmap readiness gap risk impact effort value dependency"
+    },
+    {
+      "type": "Readiness visualisation",
+      "title": "Risk Heat Map",
+      "summary": "Plot likelihood and impact while retaining named risk ownership.",
+      "href": "/transformation/stage-2-assess-readiness/visualisations/",
+      "stage": "Assess Readiness",
+      "keywords": "heat map matrix roadmap readiness gap risk impact effort value dependency"
+    },
+    {
+      "type": "Readiness visualisation",
+      "title": "Readiness Heat Map",
+      "summary": "Compare workstream status without hiding critical blockers.",
+      "href": "/transformation/stage-2-assess-readiness/visualisations/",
+      "stage": "Assess Readiness",
+      "keywords": "heat map matrix roadmap readiness gap risk impact effort value dependency"
+    },
+    {
+      "type": "Readiness visualisation",
+      "title": "Business Impact Matrix",
+      "summary": "Compare business impact and urgency.",
+      "href": "/transformation/stage-2-assess-readiness/visualisations/",
+      "stage": "Assess Readiness",
+      "keywords": "heat map matrix roadmap readiness gap risk impact effort value dependency"
+    },
+    {
+      "type": "Readiness visualisation",
+      "title": "Effort vs Value Matrix",
+      "summary": "Separate quick wins, enabling work and long-term investment.",
+      "href": "/transformation/stage-2-assess-readiness/visualisations/",
+      "stage": "Assess Readiness",
+      "keywords": "heat map matrix roadmap readiness gap risk impact effort value dependency"
+    },
+    {
+      "type": "Readiness visualisation",
+      "title": "Dependency Matrix",
+      "summary": "Expose sequencing and cross-workstream dependencies.",
+      "href": "/transformation/stage-2-assess-readiness/visualisations/",
+      "stage": "Assess Readiness",
+      "keywords": "heat map matrix roadmap readiness gap risk impact effort value dependency"
+    },
+    {
+      "type": "Readiness visualisation",
+      "title": "Roadmap Timeline",
+      "summary": "Sequence 90-day, 6-month, 12-month and 24-month horizons.",
+      "href": "/transformation/stage-2-assess-readiness/visualisations/",
+      "stage": "Assess Readiness",
+      "keywords": "heat map matrix roadmap readiness gap risk impact effort value dependency"
+    },
+    {
+      "type": "Decision framework",
+      "title": "Proceed",
+      "summary": "Evidence supports progression without material readiness conditions.",
+      "href": "/transformation/stage-2-assess-readiness/#decision",
+      "stage": "Assess Readiness",
+      "keywords": "executive decision Business Justification Risk Required Actions Executive Recommendation Next Stage Define Strategy"
+    },
+    {
+      "type": "Decision framework",
+      "title": "Proceed with Conditions",
+      "summary": "Progression is justified if named conditions, owners and deadlines remain under executive oversight.",
+      "href": "/transformation/stage-2-assess-readiness/#decision",
+      "stage": "Assess Readiness",
+      "keywords": "executive decision Business Justification Risk Required Actions Executive Recommendation Next Stage Define Strategy with controlled conditions"
+    },
+    {
+      "type": "Decision framework",
+      "title": "Delay",
+      "summary": "Critical gaps must be resolved before strategy work can proceed reliably.",
+      "href": "/transformation/stage-2-assess-readiness/#decision",
+      "stage": "Assess Readiness",
+      "keywords": "executive decision Business Justification Risk Required Actions Executive Recommendation Next Stage Remain in Assess Readiness"
+    },
+    {
+      "type": "Decision framework",
+      "title": "Do Not Proceed",
+      "summary": "Risk, value, feasibility or strategic alignment does not justify continued transformation.",
+      "href": "/transformation/stage-2-assess-readiness/#decision",
+      "stage": "Assess Readiness",
+      "keywords": "executive decision Business Justification Risk Required Actions Executive Recommendation Next Stage Close or reframe the programme"
+    },
+    {
+      "type": "AI prompt builder",
+      "title": "Generate Gap Analysis",
+      "summary": "Generate Gap Analysis from verified discovery evidence, assessment results, gaps and confidence. Mark assumptions and require human approval.",
+      "href": "/transformation/stage-2-assess-readiness/#ai-guidance",
+      "stage": "Assess Readiness",
+      "keywords": "human reviewed guided assistance"
+    },
+    {
+      "type": "AI prompt builder",
+      "title": "Generate Executive Summary",
+      "summary": "Generate Executive Summary from verified discovery evidence, assessment results, gaps and confidence. Mark assumptions and require human approval.",
+      "href": "/transformation/stage-2-assess-readiness/#ai-guidance",
+      "stage": "Assess Readiness",
+      "keywords": "human reviewed guided assistance"
+    },
+    {
+      "type": "AI prompt builder",
+      "title": "Generate Recommendations",
+      "summary": "Generate Recommendations from verified discovery evidence, assessment results, gaps and confidence. Mark assumptions and require human approval.",
+      "href": "/transformation/stage-2-assess-readiness/#ai-guidance",
+      "stage": "Assess Readiness",
+      "keywords": "human reviewed guided assistance"
+    },
+    {
+      "type": "AI prompt builder",
+      "title": "Generate Improvement Roadmap",
+      "summary": "Generate Improvement Roadmap from verified discovery evidence, assessment results, gaps and confidence. Mark assumptions and require human approval.",
+      "href": "/transformation/stage-2-assess-readiness/#ai-guidance",
+      "stage": "Assess Readiness",
+      "keywords": "human reviewed guided assistance"
+    },
+    {
+      "type": "AI prompt builder",
+      "title": "Generate Executive Decision Paper",
+      "summary": "Generate Executive Decision Paper from verified discovery evidence, assessment results, gaps and confidence. Mark assumptions and require human approval.",
+      "href": "/transformation/stage-2-assess-readiness/#ai-guidance",
+      "stage": "Assess Readiness",
+      "keywords": "human reviewed guided assistance"
+    },
+    {
+      "type": "AI prompt builder",
+      "title": "Generate Investment Justification",
+      "summary": "Generate Investment Justification from verified discovery evidence, assessment results, gaps and confidence. Mark assumptions and require human approval.",
+      "href": "/transformation/stage-2-assess-readiness/#ai-guidance",
+      "stage": "Assess Readiness",
+      "keywords": "human reviewed guided assistance"
+    },
+    {
+      "type": "AI prompt builder",
+      "title": "Generate Readiness Report",
+      "summary": "Generate Readiness Report from verified discovery evidence, assessment results, gaps and confidence. Mark assumptions and require human approval.",
+      "href": "/transformation/stage-2-assess-readiness/#ai-guidance",
+      "stage": "Assess Readiness",
+      "keywords": "human reviewed guided assistance"
+    },
+    {
+      "type": "AI prompt builder",
+      "title": "Generate Executive Presentation",
+      "summary": "Generate Executive Presentation from verified discovery evidence, assessment results, gaps and confidence. Mark assumptions and require human approval.",
+      "href": "/transformation/stage-2-assess-readiness/#ai-guidance",
+      "stage": "Assess Readiness",
+      "keywords": "human reviewed guided assistance"
+    },
+    {
+      "type": "Enterprise governance article",
+      "title": "Governance, Compliance & Oversight",
+      "summary": "Define enterprise AI decision rights, compliance controls, oversight forums, evidence and accountable assurance.",
+      "href": "/pages/ai-governance.html",
+      "stage": "Establish Governance",
+      "capability": "AI Governance",
+      "role": "Governance Lead",
+      "keywords": "AI governance compliance oversight decision rights controls assurance accountability"
+    },
+    {
+      "type": "Enterprise governance operating model",
+      "title": "Integration Governance Model",
+      "summary": "Integrate AI governance requirements with enterprise architecture, delivery controls, security, risk and production operations.",
+      "href": "/pages/governance-integration.html",
+      "stage": "Establish Governance",
+      "capability": "Governance Integration",
+      "role": "Enterprise Architect",
+      "keywords": "integration governance model architecture delivery security risk compliance operating controls"
+    },
+    {
+      "type": "Agentic governance framework",
+      "title": "Agentic AI Governance Framework",
+      "summary": "Govern autonomous AI systems through qualification, permissions, runtime controls, human oversight, assurance and incident response.",
+      "href": "/pages/agentic-ai.html",
+      "stage": "Establish Governance",
+      "capability": "Agentic AI",
+      "role": "AI Governance Lead",
+      "keywords": "agentic AI governance autonomous agents permissions human oversight runtime assurance incident accountability"
+    },
+    {
+      "type": "Enterprise architecture article",
+      "title": "AI Infrastructure Architecture",
+      "summary": "Compare cloud, self-hosted and hybrid AI infrastructure patterns governed through a shared enterprise AI gateway.",
+      "href": "/pages/ai-infrastructure-architecture.html",
+      "stage": "Design Architecture",
+      "capability": "AI Infrastructure",
+      "role": "Enterprise Architect",
+      "keywords": "AI infrastructure architecture cloud self-hosted hybrid deployment gateway resilience observability security"
+    },
+    {
+      "type": "Enterprise implementation blueprint",
+      "title": "Greenfield AI Governance Implementation Blueprint",
+      "summary": "Implement enterprise AI governance from mandate, operating model and risk controls through delivery and production operations.",
+      "href": "/pages/greenfield-implementation.html",
+      "stage": "Implementation",
+      "capability": "AI Implementation",
+      "role": "Transformation Lead",
+      "keywords": "AI implementation blueprint greenfield governance operating model delivery controls production adoption"
+    },
+    {
+      "type": "Intelligent automation article",
+      "title": "Intelligent Automation Framework",
+      "summary": "Govern intelligent automation, RPA and Automation Centres of Excellence through a practical enterprise operating model.",
+      "href": "/pages/automation.html",
+      "stage": "Implementation",
+      "capability": "Intelligent Automation",
+      "role": "Automation Lead",
+      "keywords": "intelligent automation RPA robotic process automation centre of excellence CoE governance operating model"
+    },
+    {
+      "type": "Automation decision framework",
+      "title": "Enterprise AI Automation Spectrum",
+      "summary": "Choose and govern the appropriate automation pattern from fixed rules and workflows through AI agents and multi-agent systems.",
+      "href": "/pages/ai-automation-spectrum.html",
+      "stage": "Design Architecture",
+      "capability": "Automation",
+      "role": "Enterprise Architect",
+      "keywords": "automation spectrum deterministic workflow RPA AI augmented agentic autonomous multi-agent decision framework"
+    },
+    {
+      "type": "Enterprise implementation guide",
+      "title": "Enterprise AI Gateway",
+      "summary": "Design, govern, secure, implement and operate the shared control point between enterprise applications and AI models, retrieval services and tools.",
+      "href": "/pages/ai-gateway.html",
+      "stage": "Design Architecture",
+      "capability": "AI Architecture",
+      "role": "Enterprise Architect",
+      "technology": "AI Gateway",
+      "riskDomain": "Architecture, Security and Governance",
+      "keywords": "AI Gateway control plane model routing policy enforcement identity authorisation authentication LLM vector database RAG MCP tools agents observability evaluation FinOps resilience production readiness"
+    }
+  ]
+}

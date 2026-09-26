@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>RR Bank | Governed Agentic AI Banking Demo</title>
+
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="../demo-guide.css">
+</head>
+
+<body>
+
+<header class="bank-header">
+  <div class="bank-brand">
+    <div class="bank-logo">RR</div>
+
+    <div>
+      <div class="bank-name">RR Bank</div>
+      <div class="bank-subtitle">Personal Banking</div>
+    </div>
+  </div>
+
+  <nav class="bank-nav" aria-label="Bank navigation">
+    <a href="#">My Accounts</a>
+    <a href="#">Products</a>
+    <a href="#">Ways to Bank</a>
+    <a href="#">Learn</a>
+  </nav>
+
+  <div class="bank-user">
+    Ratheesh
+  </div>
+</header>
+
+
+<main class="bank-shell">
+
+  <section class="welcome-row">
+    <div>
+      <div class="eyebrow">Secure Online Banking</div>
+      <h1>Good evening, Ratheesh</h1>
+      <p>
+        Review your accounts or use the governed AI Banking Assistant.
+      </p>
+    </div>
+
+    <a
+      class="architecture-link"
+      href="/case-studies/#banking-agentic-ai"
+    >
+      View Case Study
+    </a>
+  </section>
+
+
+  <section class="dashboard-grid">
+
+    <div class="main-column">
+
+      <section class="panel">
+        <div class="panel-header">
+          <div>
+            <div class="eyebrow">My Accounts</div>
+            <h2>Account overview</h2>
+          </div>
+
+          <button type="button" class="text-button">
+            View all
+          </button>
+        </div>
+
+        <div class="account-list">
+
+          <button
+            class="account-row active"
+            type="button"
+            data-account="ACC200001"
+          >
+            <div>
+              <div class="account-name">Chequing</div>
+              <div class="account-number">•••• 4821</div>
+            </div>
+
+            <div class="account-balance">
+              <strong>$8,420.32</strong>
+              <span>Available balance</span>
+            </div>
+          </button>
+
+          <button
+            class="account-row"
+            type="button"
+            data-account="ACC200002"
+          >
+            <div>
+              <div class="account-name">Savings</div>
+              <div class="account-number">•••• 7714</div>
+            </div>
+
+            <div class="account-balance">
+              <strong>$31,854.18</strong>
+              <span>Available balance</span>
+            </div>
+          </button>
+
+          <button
+            class="account-row"
+            type="button"
+          >
+            <div>
+              <div class="account-name">RR Visa Infinite</div>
+              <div class="account-number">•••• 9912</div>
+            </div>
+
+            <div class="account-balance">
+              <strong>$4,250.00</strong>
+              <span>Current balance</span>
+            </div>
+          </button>
+
+        </div>
+      </section>
+
+
+      <section class="panel">
+        <div class="panel-header">
+          <div>
+            <div class="eyebrow">Chequing •••• 4821</div>
+            <h2>Recent transactions</h2>
+          </div>
+
+          <button type="button" class="text-button">
+            Search transactions
+          </button>
+        </div>
+
+        <div class="transaction-table">
+
+          <div class="transaction-row transaction-heading">
+            <div>Date</div>
+            <div>Description</div>
+            <div>Amount</div>
+          </div>
+
+          <div class="transaction-row">
+            <div>Sep 03</div>
+            <div>Payroll Deposit</div>
+            <div class="credit">+$4,250.00</div>
+          </div>
+
+          <div class="transaction-row">
+            <div>Sep 03</div>
+            <div>Prairie Grocers</div>
+            <div>-$126.47</div>
+          </div>
+
+          <div class="transaction-row">
+            <div>Sep 02</div>
+            <div>Evergreen Utilities</div>
+            <div>-$184.73</div>
+          </div>
+
+          <div class="transaction-row">
+            <div>Sep 01</div>
+            <div>Online Transfer</div>
+            <div>-$250.00</div>
+          </div>
+
+          <div class="transaction-row">
+            <div>Aug 31</div>
+            <div>Riverbend Coffee</div>
+            <div>-$8.75</div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+
+    <aside class="assistant-column">
+
+      <section class="assistant-panel">
+
+        <div class="assistant-header">
+          <div>
+            <div class="assistant-badge">AI</div>
+          </div>
+
+          <div>
+            <div class="eyebrow">Governed Agentic AI</div>
+            <h2>Banking Assistant</h2>
+          </div>
+        </div>
+
+        <div
+          id="chatMessages"
+          class="chat-messages"
+          aria-live="polite"
+        >
+          <div class="message assistant-message">
+            How can I help with your banking today?
+          </div>
+        </div>
+
+        <div class="suggestions">
+          <button
+            type="button"
+            data-prompt="What is my chequing balance and show my last five transactions?"
+          >
+            Balance + last five transactions
+          </button>
+
+          <button
+            type="button"
+            data-prompt="Increase my credit limit to $30,000."
+          >
+            Request $30,000 credit limit
+          </button>
+
+          <button
+            type="button"
+            data-prompt="Show me account ACC200008."
+          >
+            Security test
+          </button>
+        </div>
+
+        <form id="chatForm" class="chat-form">
+          <textarea
+            id="chatInput"
+            rows="3"
+            placeholder="Ask RR Bank..."
+            required
+          ></textarea>
+
+          <button type="submit">
+            Send
+          </button>
+        </form>
+
+      </section>
+
+    </aside>
+
+  </section>
+
+<section
+  id="live-governance"
+  class="governance-panel"
+>
+
+  <!-- =====================================================
+       GOVERNANCE HEADER
+       ===================================================== -->
+
+  <div class="panel-header governance-header">
+
+    <div>
+
+      <div class="eyebrow">
+        Runtime Transparency
+      </div>
+
+      <h2>
+        Live governed execution
+      </h2>
+
+      <div class="stream-control">
+
+        <label
+          class="stream-label"
+          for="streamMode"
+        >
+          Transparency Level
+        </label>
+
+        <select id="streamMode">
+
+          <option value="off">
+            Off
+          </option>
+
+          <option
+            value="summary"
+            selected
+          >
+            Summary
+          </option>
+
+          <option value="detailed">
+            Detailed
+          </option>
+
+        </select>
+
+        <span class="stream-safety">
+          Sanitized telemetry only
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <div class="runtime-status">
+
+      <span class="status-dot"></span>
+
+      Frontend ready
+
+    </div>
+
+  </div>
+
+
+  <!-- =====================================================
+       LIVE EVENT MESSAGE
+       ===================================================== -->
+
+  <div
+    id="runtimeEvent"
+    class="runtime-event"
+  >
+
+    <span class="runtime-event-label">
+      LIVE EVENT
+    </span>
+
+    <strong id="runtimeEventTitle">
+      Waiting for request
+    </strong>
+
+    <span id="runtimeEventMessage">
+      Execution activity will appear here.
+    </span>
+
+  </div>
+
+
+  <!-- =====================================================
+       LIVE EXECUTION FLOW
+       ===================================================== -->
+
+  <div class="execution-flow">
+
+
+    <!-- USER -->
+
+    <div
+      id="flow-user"
+      class="flow-node runtime-node waiting"
+    >
+
+      <span class="flow-number">
+        01
+      </span>
+
+      <strong>
+        User
+      </strong>
+
+      <div class="node-status">
+        WAITING
+      </div>
+
+      <small class="node-message">
+        Authenticated session
+      </small>
+
+    </div>
+
+
+    <div class="flow-arrow">
+      →
+    </div>
+
+
+    <!-- AGENT -->
+
+    <div
+      id="flow-agent"
+      class="flow-node runtime-node waiting"
+    >
+
+      <span class="flow-number">
+        02
+      </span>
+
+      <strong>
+        AI Agent
+      </strong>
+
+      <div class="node-status">
+        WAITING
+      </div>
+
+      <small class="node-message">
+        Intent orchestration
+      </small>
+
+    </div>
+
+
+    <div class="flow-arrow">
+      →
+    </div>
+
+
+    <!-- MODEL -->
+
+    <div
+      id="flow-model"
+      class="flow-node runtime-node waiting"
+    >
+
+      <span class="flow-number">
+        03
+      </span>
+
+      <strong>
+        Gemini
+      </strong>
+
+      <div class="node-status">
+        WAITING
+      </div>
+
+      <small class="node-message">
+        Gemini 2.5 Flash
+      </small>
+
+    </div>
+
+
+    <div class="flow-arrow">
+      →
+    </div>
+
+
+    <!-- MCP -->
+
+    <div
+      id="flow-mcp"
+      class="flow-node runtime-node waiting"
+    >
+
+      <span class="flow-number">
+        04
+      </span>
+
+      <strong>
+        MCP
+      </strong>
+
+      <div class="node-status">
+        WAITING
+      </div>
+
+      <small class="node-message">
+        Governed tool boundary
+      </small>
+
+    </div>
+
+
+    <div class="flow-arrow">
+      →
+    </div>
+
+
+    <!-- BUSINESS API -->
+
+    <div
+      id="flow-api"
+      class="flow-node runtime-node waiting"
+    >
+
+      <span class="flow-number">
+        05
+      </span>
+
+      <strong>
+        Business API
+      </strong>
+
+      <div class="node-status">
+        WAITING
+      </div>
+
+      <small class="node-message">
+        Authorization + business controls
+      </small>
+
+    </div>
+
+
+    <div class="flow-arrow">
+      →
+    </div>
+
+
+    <!-- POLICY -->
+
+    <div
+      id="flow-policy"
+      class="flow-node runtime-node waiting"
+    >
+
+      <span class="flow-number">
+        06
+      </span>
+
+      <strong>
+        Policy
+      </strong>
+
+      <div class="node-status">
+        WAITING
+      </div>
+
+      <small class="node-message">
+        Runtime policy enforcement
+      </small>
+
+    </div>
+
+
+    <div class="flow-arrow">
+      →
+    </div>
+
+
+    <!-- HITL -->
+
+    <div
+      id="flow-hitl"
+      class="flow-node runtime-node waiting"
+    >
+
+      <span class="flow-number">
+        07
+      </span>
+
+      <strong>
+        Human Approval
+      </strong>
+
+      <div class="node-status">
+        WAITING
+      </div>
+
+      <small class="node-message">
+        Human-in-the-loop
+      </small>
+
+    </div>
+
+
+    <div class="flow-arrow">
+      →
+    </div>
+
+
+    <!-- SYSTEM OF RECORD -->
+
+    <div
+      id="flow-sor"
+      class="flow-node runtime-node waiting"
+    >
+
+      <span class="flow-number">
+        08
+      </span>
+
+      <strong>
+        System of Record
+      </strong>
+
+      <div class="node-status">
+        WAITING
+      </div>
+
+      <small class="node-message">
+        Protected banking data
+      </small>
+
+    </div>
+
+  </div>
+
+
+  <!-- =====================================================
+       GOVERNANCE METADATA
+       ===================================================== -->
+
+  <div class="trace-grid">
+
+    <div>
+
+      <span>
+        Identity
+      </span>
+
+      <strong id="governanceIdentity">
+        Authenticated
+      </strong>
+
+    </div>
+
+
+    <div>
+
+      <span>
+        Authorization
+      </span>
+
+      <strong>
+        RBAC + Resource
+      </strong>
+
+    </div>
+
+
+    <div>
+
+      <span>
+        Model
+      </span>
+
+      <strong>
+        Gemini 2.5 Flash
+      </strong>
+
+    </div>
+
+
+    <div>
+
+      <span>
+        Tool Boundary
+      </span>
+
+      <strong>
+        MCP
+      </strong>
+
+    </div>
+
+
+    <div>
+
+      <span>
+        Policy
+      </span>
+
+      <strong>
+        Fail Closed
+      </strong>
+
+    </div>
+
+
+    <div>
+
+      <span>
+        Telemetry
+      </span>
+
+      <strong>
+        Sanitized
+      </strong>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+  <section class="demo-note">
+    <strong>Reference implementation only.</strong>
+    All customer, account and transaction information displayed in this demo
+    is synthetic test data.
+  </section>
+
+</main>
+
+<script src="./config.js"></script>
+<script src="./app.js"></script>
+<script src="../demo-guide.js"></script>
+
+</body>
+</html>

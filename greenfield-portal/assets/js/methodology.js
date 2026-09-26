@@ -1,0 +1,215 @@
+/* Compatibility runtime for generated assessment and Stage 0–2 detail pages.
+   Canonical lifecycle metadata and routes live in /assets/data/methodology.json.
+   Current top-level lifecycle pages use methodology-v10.js. Keep this runtime
+   route-neutral so generation scripts cannot introduce a second stage map. */
+const methodologyState={data:null};
+const escapeMethodology=value=>String(value??"").replace(/[&<>"']/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
+
+document.addEventListener("DOMContentLoaded",async()=>{
+  try{
+    const response=await fetch("/assets/data/methodology.json",{headers:{Accept:"application/json"}});
+    if(!response.ok)throw new Error("Methodology data is unavailable.");
+    methodologyState.data=await response.json();
+    const {loadNavigation}=await import("/assets/js/navigation-model.js");
+    methodologyState.data.navigation=await loadNavigation(methodologyState.data.navigation);
+    if(document.body.dataset.methodologyPage==="mobilise"){
+      const mobiliseResponse=await fetch("/assets/data/mobilise-content.json",{headers:{Accept:"application/json"}});
+      if(!mobiliseResponse.ok)throw new Error("Complete Mobilise content is unavailable.");
+      methodologyState.mobiliseContent=await mobiliseResponse.json();
+    }
+    renderMethodologyShell(methodologyState.data);
+    if(["overview","lifecycle"].includes(document.body.dataset.methodologyPage))renderLifecycle(methodologyState.data.stages);
+    if(document.body.dataset.methodologyPage==="mobilise")renderMobilise(methodologyState.data.mobilise,methodologyState.mobiliseContent);
+    setupMethodologyInteractions();
+    setupPageSubmenu();
+    setupCopyDeterrence();
+  }catch(error){
+    document.querySelector("#main-content")?.insertAdjacentHTML("afterbegin",`<div class="methodology-error" role="alert"><strong>The methodology could not be loaded.</strong><span>${escapeMethodology(error.message)}</span></div>`);
+  }
+});
+
+function renderMethodologyShell(data){
+  const current=location.pathname;
+  const header=document.querySelector("#methodology-header");
+  header.className="methodology-header";
+  header.innerHTML=`<div class="methodology-utility"><div class="methodology-wrap"><span>Enterprise AI Transformation Methodology</span><div class="methodology-account-links"><span>Approved baseline · ${escapeMethodology(data.version)}</span><a href="/admin">Administration</a><a href="/login">Sign in</a></div></div></div>
+  <div class="methodology-header-main methodology-wrap"><a class="methodology-brand" href="/" aria-label="Ratheesh Technology Ltd. — Architecting Intelligence home"><img src="/assets/images/ratheesh-technology-logo-transparent.png?v=20260727-8" alt="Ratheesh Technology Ltd. — AI Implementation and Governance" width="1906" height="825"></a>
+  <button class="methodology-menu-button" type="button" aria-expanded="false" aria-controls="methodology-navigation"><span></span><span></span><span></span><span class="sr-only">Open navigation</span></button>
+  <nav id="methodology-navigation" class="methodology-navigation" aria-label="Primary navigation"><ul>${data.navigation.map(item=>renderMethodologyNavigationItem(item,current)).join("")}</ul></nav></div>`;
+  document.querySelector("#methodology-footer").innerHTML=`<div class="methodology-wrap methodology-footer-inner"><div class="methodology-footer-brand"><img src="/assets/images/ratheesh-technology-logo-transparent.png?v=20260727-8" alt="Ratheesh Technology Ltd." width="1906" height="825"><p><strong>Architecting Intelligence</strong><span>${escapeMethodology(data.identity.statement)}</span></p></div><div><span>Methodology version ${escapeMethodology(data.version)}</span><span>© 2026 Ratheesh Technology Ltd.</span></div></div>`;
+}
+
+function renderMethodologyNavigationItem(item,current){
+  const submenu=item.submenu||[];
+  const active=isCurrentMethodologyLink(current,item.href);
+  if(!submenu.length)return`<li><a href="${escapeMethodology(item.href)}"${active?' aria-current="page"':""}>${escapeMethodology(item.label)}</a></li>`;
+  const submenuId=`submenu-${item.label.toLowerCase().replace(/[^a-z0-9]+/g,"-")}`;
+  return`<li class="methodology-nav-item"><a href="${escapeMethodology(item.href)}"${active?' aria-current="page"':""}>${escapeMethodology(item.label)}</a><button class="methodology-submenu-toggle" type="button" aria-expanded="false" aria-controls="${submenuId}" aria-label="Open ${escapeMethodology(item.label)} submenu"><span aria-hidden="true"></span></button><div id="${submenuId}" class="methodology-submenu">${submenu.map(link=>`<a href="${escapeMethodology(link[1])}">${escapeMethodology(link[0])}</a>`).join("")}</div></li>`;
+}
+
+function isCurrentMethodologyLink(current,href){
+  if(href==="/transformation/")return current==="/transformation/"||current==="/transformation";
+  if(href==="/")return current==="/";
+  return current===href||current===href.replace(/\/$/,"")||current.startsWith(href);
+}
+
+function renderLifecycle(stages){
+  const lifecycleGrid=document.querySelector("#lifecycle-grid");
+  if(!lifecycleGrid)return;
+  queueMicrotask(()=>upgradeLifecycleMap(stages));
+  lifecycleGrid.innerHTML=stages.map(stage=>{
+    const available=stage.status==="available";
+    const content=`<span class="stage-number">Stage ${stage.number}</span><h3>${escapeMethodology(stage.name)}</h3><p>${escapeMethodology(stage.purpose)}</p><dl><div><dt>Primary output</dt><dd>${escapeMethodology(stage.output)}</dd></div><div><dt>Exit decision</dt><dd>${escapeMethodology(stage.gate)}</dd></div></dl><span class="stage-status ${available?"available":"planned"}">${available?"Available now":"Planned"}</span>`;
+    return available?`<a class="lifecycle-card available" href="${escapeMethodology(stage.href)}">${content}<span class="card-action">Open stage →</span></a>`:`<article class="lifecycle-card" aria-label="Stage ${stage.number} ${escapeMethodology(stage.name)}, planned">${content}</article>`;
+  }).join("");
+}
+
+function upgradeLifecycleMap(stages){
+  const lifecycleGrid=document.querySelector("#lifecycle-grid");if(!lifecycleGrid)return;
+  if(!lifecycleGrid.closest(".journey-map-scroll")){
+    const scroll=document.createElement("div"),canvas=document.createElement("div");
+    scroll.className="journey-map-scroll";canvas.className="journey-map-canvas";
+    canvas.innerHTML='<div class="journey-map-phases" aria-label="Transformation phases"><span>Foundation <small>Stages 0-2</small></span><span>Direction <small>Stages 3-6</small></span><span>Design & Delivery <small>Stages 7-11</small></span><span>Operate & Scale <small>Stages 12-13</small></span></div>';
+    lifecycleGrid.parentNode.insertBefore(scroll,lifecycleGrid);scroll.append(canvas);canvas.append(lifecycleGrid);
+  }
+  lifecycleGrid.innerHTML=stages.map(stage=>`<article class="lifecycle-card available" aria-label="Stage ${stage.number} ${escapeMethodology(stage.name)}"><span class="stage-number"><small>Stage</small>${stage.number}</span><h3>${escapeMethodology(stage.name)}</h3><span class="stage-status available">Available</span><button class="lifecycle-info" type="button" data-lifecycle-stage="${stage.number}">View info</button><a class="card-action" href="${escapeMethodology(stage.href)}">Deep dive into this stage →</a></article>`).join("");
+  let dialog=document.querySelector(".lifecycle-map-dialog");
+  if(!dialog){dialog=document.createElement("dialog");dialog.className="lifecycle-map-dialog";dialog.setAttribute("aria-labelledby","lifecycle-map-title");dialog.innerHTML='<button class="lifecycle-map-close" type="button" aria-label="Close stage information">×</button><div class="lifecycle-map-body"></div>';document.body.append(dialog);dialog.querySelector(".lifecycle-map-close").addEventListener("click",()=>dialog.close());dialog.addEventListener("click",event=>{if(event.target===dialog)dialog.close()})}
+  lifecycleGrid.addEventListener("click",event=>{const trigger=event.target.closest(".lifecycle-info");if(!trigger)return;const stage=stages.find(item=>String(item.number)===trigger.dataset.lifecycleStage);if(!stage)return;dialog.querySelector(".lifecycle-map-body").innerHTML=`<span class="content-kicker">Stage ${stage.number} · ${escapeMethodology(stage.status)}</span><h2 id="lifecycle-map-title">${escapeMethodology(stage.name)}</h2><p>${escapeMethodology(stage.purpose)}</p><dl><div><dt>Primary output</dt><dd>${escapeMethodology(stage.output)}</dd></div><div><dt>Exit decision</dt><dd>${escapeMethodology(stage.gate)}</dd></div></dl>${stage.href?`<a class="button primary" href="${escapeMethodology(stage.href)}">Deep dive into this stage →</a>`:'<p class="journey-planned">Detailed workspace content is planned.</p>'}`;dialog.showModal()});
+}
+
+function renderMobilise(stage,content){
+  fillList("#entry-criteria",stage.entryCriteria);
+  fillList("#stage-outcomes",stage.outcomes);
+  fillList("#stage-questions",stage.questions);
+  document.querySelector("#workstream-list").innerHTML=content.workstreams.map((item,index)=>`<article class="workstream-card">
+    <button type="button" aria-expanded="${index===0}" aria-controls="workstream-${escapeMethodology(item.slug)}"><span><small>Workstream ${String(index+1).padStart(2,"0")}</small><strong>${escapeMethodology(item.name)}</strong><em>${escapeMethodology(item.summary)}</em></span><span aria-hidden="true">${index===0?"−":"+"}</span></button>
+    <div id="workstream-${escapeMethodology(item.slug)}" class="workstream-body"${index===0?"":" hidden"}><div><h4>Activities</h4><ul>${item.activities.map(value=>`<li>${escapeMethodology(value)}</li>`).join("")}</ul></div><div><h4>Accountability</h4><dl><dt>Owner</dt><dd>${escapeMethodology(item.owner)}</dd><dt>Validator</dt><dd>${escapeMethodology(item.validator)}</dd></dl></div><div><h4>Produces</h4><ul>${item.outputs.map(value=>`<li>${escapeMethodology(value)}</li>`).join("")}</ul><a class="inline-action" href="/transformation/stage-0-mobilise/workstreams/${escapeMethodology(item.slug)}/">Open complete workspace →</a></div></div>
+  </article>`).join("");
+  renderDeliverables(content.deliverables);
+  document.querySelector("#workshop-list").innerHTML=content.workshops.map(item=>`<a href="/transformation/stage-0-mobilise/workshops/${escapeMethodology(item.slug)}/"><span>${escapeMethodology(item.duration)}</span><h3>${escapeMethodology(item.name)}</h3><p>${escapeMethodology(item.objective)}</p><strong>Open workshop guide →</strong></a>`).join("");
+  renderRaci(stage.raci);
+  renderGate({...stage.gate,mandatoryEvidence:content.deliverables.map(item=>item.id)},content.deliverables);
+  renderChecklist(stage.exitChecklist);
+}
+
+function fillList(selector,items){document.querySelector(selector).innerHTML=items.map(item=>`<li>${escapeMethodology(item)}</li>`).join("")}
+
+function renderDeliverables(deliverables,filter="all"){
+  const visible=filter==="all"?deliverables:deliverables.filter(item=>item.type===filter);
+  document.querySelector("#deliverable-list").innerHTML=visible.map(item=>`<article class="deliverable-card" data-type="${escapeMethodology(item.type)}">
+    <div class="deliverable-heading"><span>${escapeMethodology(item.id)} · ${escapeMethodology(item.type)}</span><span class="criticality">${escapeMethodology(item.criticality)}</span><h3>${escapeMethodology(item.name)}</h3><p>${escapeMethodology(item.purpose)}</p></div>
+    <dl class="deliverable-owners"><div><dt>Owner</dt><dd>${escapeMethodology(item.owner)}</dd></div><div><dt>Approver</dt><dd>${escapeMethodology(item.approver)}</dd></div></dl>
+    <details><summary>Success criteria</summary><ul>${item.success.map(value=>`<li>${escapeMethodology(value)}</li>`).join("")}</ul></details>
+    <details><summary>Reusable template structure</summary><ol>${item.structure.map(value=>`<li>${escapeMethodology(value)}</li>`).join("")}</ol></details>
+    <a class="inline-action" href="/transformation/stage-0-mobilise/deliverables/${escapeMethodology(item.slug)}/">Open complete guidance →</a>
+  </article>`).join("")||'<p class="empty-state">No deliverables match this filter.</p>';
+}
+
+function renderRaci(raci){
+  const table=document.querySelector("#raci-table");
+  table.innerHTML=`<thead><tr><th scope="col">Activity</th>${raci.roles.map(role=>`<th scope="col"><span>${escapeMethodology(role)}</span></th>`).join("")}</tr></thead><tbody>${raci.activities.map(row=>`<tr><th scope="row">${escapeMethodology(row.activity)}</th>${row.assignments.map(value=>`<td${value.includes("A")?' class="accountable"':""}>${escapeMethodology(value)}</td>`).join("")}</tr>`).join("")}</tbody>`;
+}
+
+function renderGate(gate,deliverables){
+  const names=new Map(deliverables.map(item=>[item.id,item.name]));
+  document.querySelector("#gate-panel").innerHTML=`<div class="gate-question"><span>${escapeMethodology(gate.id)} · ${escapeMethodology(gate.forum)}</span><h3>${escapeMethodology(gate.question)}</h3><p><strong>Decision owner:</strong> ${escapeMethodology(gate.decisionOwner)}</p></div><div class="gate-columns"><div><h4>Mandatory evidence</h4><ol>${gate.mandatoryEvidence.map(id=>`<li><span>${escapeMethodology(id)}</span>${escapeMethodology(names.get(id)||id)}</li>`).join("")}</ol></div><div><h4>Permitted decisions</h4><ul>${gate.decisions.map(decision=>`<li>${escapeMethodology(decision)}</li>`).join("")}</ul><p class="gate-rule">Missing mandatory evidence defaults to <strong>Rework required</strong>. Conditions require an owner and due date.</p></div></div>`;
+}
+
+function renderChecklist(items){
+  const saved=readChecklistState();
+  document.querySelector("#exit-checklist").innerHTML=items.map(item=>`<label class="checklist-item"><input type="checkbox" value="${escapeMethodology(item.id)}"${saved.includes(item.id)?" checked":""}><span class="checkmark" aria-hidden="true"></span><span><small>${escapeMethodology(item.id)} · ${escapeMethodology(item.criticality)}</small><strong>${escapeMethodology(item.requirement)}</strong><em>Evidence: ${escapeMethodology(item.evidence)}</em></span></label>`).join("");
+  updateChecklist(items);
+}
+
+function readChecklistState(){
+  try{return JSON.parse(localStorage.getItem("architecting-ai:mobilise-checklist")||"[]")}catch{return[]}
+}
+
+function updateChecklist(items){
+  const checked=[...document.querySelectorAll("#exit-checklist input:checked")].map(input=>input.value);
+  localStorage.setItem("architecting-ai:mobilise-checklist",JSON.stringify(checked));
+  const applicable=items.filter(item=>item.criticality!=="recommended").length;
+  const evidenced=items.filter(item=>item.criticality!=="recommended"&&checked.includes(item.id)).length;
+  const percentage=applicable?Math.round(evidenced/applicable*100):0;
+  document.querySelector("#checklist-count").textContent=`${evidenced} of ${applicable}`;
+  const progress=document.querySelector("#checklist-progress");progress.value=percentage;progress.textContent=`${percentage}%`;
+}
+
+function setupMethodologyInteractions(){
+  const menuButton=document.querySelector(".methodology-menu-button");
+  menuButton?.addEventListener("click",()=>{
+    const open=document.querySelector(".methodology-navigation").classList.toggle("open");
+    menuButton.setAttribute("aria-expanded",String(open));
+    menuButton.querySelector(".sr-only").textContent=open?"Close navigation":"Open navigation";
+  });
+  const closeMethodologySubmenus=except=>document.querySelectorAll(".methodology-nav-item.open").forEach(item=>{if(item===except)return;item.classList.remove("open");const toggle=item.querySelector(".methodology-submenu-toggle");toggle?.setAttribute("aria-expanded","false")});
+  document.querySelectorAll(".methodology-submenu-toggle").forEach(toggle=>toggle.addEventListener("click",event=>{
+    event.stopPropagation();const item=toggle.closest(".methodology-nav-item"),open=!item.classList.contains("open");closeMethodologySubmenus(item);item.classList.toggle("open",open);toggle.setAttribute("aria-expanded",String(open));
+  }));
+  document.addEventListener("click",event=>{if(!event.target.closest(".methodology-nav-item"))closeMethodologySubmenus()});
+  document.addEventListener("keydown",event=>{
+    if(event.key==="Escape"){
+      document.querySelector(".methodology-navigation")?.classList.remove("open");
+      closeMethodologySubmenus();
+      menuButton?.setAttribute("aria-expanded","false");
+      menuButton?.focus();
+    }
+  });
+  const stageToggle=document.querySelector(".stage-nav-toggle");
+  stageToggle?.addEventListener("click",()=>{
+    const open=document.querySelector(".stage-nav").classList.toggle("open");
+    stageToggle.setAttribute("aria-expanded",String(open));
+    stageToggle.lastElementChild.textContent=open?"−":"+";
+  });
+  document.querySelectorAll(".workstream-card>button").forEach(button=>button.addEventListener("click",()=>{
+    const expanded=button.getAttribute("aria-expanded")==="true";
+    button.setAttribute("aria-expanded",String(!expanded));
+    button.lastElementChild.textContent=expanded?"+":"−";
+    document.querySelector(`#${CSS.escape(button.getAttribute("aria-controls"))}`).hidden=expanded;
+  }));
+  document.querySelector("#deliverable-filter")?.addEventListener("change",event=>renderDeliverables(methodologyState.mobiliseContent.deliverables,event.target.value));
+  document.querySelector("#exit-checklist")?.addEventListener("change",()=>updateChecklist(methodologyState.data.mobilise.exitChecklist));
+  document.querySelector("#clear-checklist")?.addEventListener("click",()=>{
+    localStorage.removeItem("architecting-ai:mobilise-checklist");
+    document.querySelectorAll("#exit-checklist input").forEach(input=>input.checked=false);
+    updateChecklist(methodologyState.data.mobilise.exitChecklist);
+  });
+}
+
+function setupPageSubmenu(){
+  if(document.body.dataset.methodologyPage==="home"||document.querySelector(".stage-nav,.page-submenu"))return;
+  const main=document.querySelector("#main-content");
+  if(!main)return;
+  const build=()=>{
+    const headings=[...main.querySelectorAll(".detail-content>section>h2,.assessment-shell>section>h2,.platform-section-shell>section>h2,.dashboard-shell>section>h2,.methodology-section .section-heading>h2")];
+    const unique=[...new Set(headings)].filter(heading=>heading.textContent.trim());
+    if(unique.length<2)return false;
+    unique.forEach((heading,index)=>{
+      if(!heading.id){
+        const slug=heading.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")||`section-${index+1}`;
+        heading.id=`page-${slug}-${index+1}`;
+      }
+      heading.style.scrollMarginTop="64px";
+    });
+    const nav=document.createElement("nav");
+    nav.className="page-submenu";
+    nav.setAttribute("aria-label","On this page");
+    nav.innerHTML=`<div class="methodology-wrap"><strong>On this page</strong><div>${unique.map(heading=>`<a href="#${escapeMethodology(heading.id)}">${escapeMethodology(heading.textContent.trim())}</a>`).join("")}</div></div>`;
+    const hero=main.querySelector(".platform-hero,.methodology-hero,.stage-hero,.detail-hero");
+    if(hero)hero.insertAdjacentElement("afterend",nav);else main.prepend(nav);
+    return true;
+  };
+  if(build())return;
+  const observer=new MutationObserver(()=>{if(build())observer.disconnect()});
+  observer.observe(main,{childList:true,subtree:true});
+}
+
+function setupCopyDeterrence(){
+  const isEditable=target=>target instanceof Element&&Boolean(target.closest("input,textarea,select,[contenteditable='true']"));
+  ["copy","cut","contextmenu"].forEach(type=>document.addEventListener(type,event=>{if(!isEditable(event.target))event.preventDefault()}));
+  document.addEventListener("keydown",event=>{
+    if(isEditable(event.target)||!(event.ctrlKey||event.metaKey))return;
+    if(["c","x","s","p","u"].includes(event.key.toLowerCase()))event.preventDefault();
+  });
+}

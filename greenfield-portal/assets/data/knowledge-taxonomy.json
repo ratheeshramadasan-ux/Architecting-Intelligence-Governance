@@ -1,0 +1,393 @@
+{
+  "version": "1.0.0",
+  "title": "Knowledge Centre Taxonomy",
+  "description": "Metadata-driven article index classifying enterprise AI knowledge articles.",
+  "categories": [
+    {
+      "id": "ai-fundamentals",
+      "title": "AI Fundamentals",
+      "summary": "Core concepts, terminology, paradigm shifts, and enterprise AI literacy."
+    },
+    {
+      "id": "strategy-business-value",
+      "title": "Strategy and Business Value",
+      "summary": "Ambition setting, ROI models, business case formulation, and value realization."
+    },
+    {
+      "id": "governance-accountability",
+      "title": "Governance and Accountability",
+      "summary": "Decision rights, policies, board oversight, RACI models, and compliance."
+    },
+    {
+      "id": "risk-compliance",
+      "title": "Risk and Compliance",
+      "summary": "Harm identification, risk tiering, operational risk, legal exposure, and mitigation."
+    },
+    {
+      "id": "enterprise-architecture",
+      "title": "Enterprise Architecture",
+      "summary": "Target capability maps, technology stack alignment, and enterprise integration."
+    },
+    {
+      "id": "ai-solution-architecture",
+      "title": "AI Solution Architecture",
+      "summary": "Model selection, API gateway design, prompt engineering, and technical patterns."
+    },
+    {
+      "id": "data-rag-knowledge-systems",
+      "title": "Data, RAG and Knowledge Systems",
+      "summary": "Data pipelines, vector databases, retrieval-augmented generation, and privacy."
+    },
+    {
+      "id": "agents-automation",
+      "title": "Agents and Automation",
+      "summary": "Autonomous AI agents, tool invocation, human-in-the-loop, and orchestration."
+    },
+    {
+      "id": "security-privacy",
+      "title": "Security and Privacy",
+      "summary": "Prompt injection, data leakage, model hardening, threat modeling, and encryption."
+    },
+    {
+      "id": "testing-evaluation",
+      "title": "Testing and Evaluation",
+      "summary": "Red-teaming, benchmark evaluation, accuracy validation, and safety testing."
+    },
+    {
+      "id": "operations-observability",
+      "title": "Operations and Observability",
+      "summary": "Runtime monitoring, model drift detection, cost tracking, and incident response."
+    },
+    {
+      "id": "adoption-workforce-change",
+      "title": "Adoption and Workforce Change",
+      "summary": "Change management, upskilling, legacy tool migration, and operational readiness."
+    },
+    {
+      "id": "industry-use-cases",
+      "title": "Industry Use Cases",
+      "summary": "Domain-specific patterns, RPA prioritization, and document processing."
+    },
+    {
+      "id": "patterns-anti-patterns",
+      "title": "Patterns and Anti-Patterns",
+      "summary": "Proven implementation blueprints, greenfield governance, and common pitfalls."
+    },
+    {
+      "id": "glossary",
+      "title": "Glossary",
+      "summary": "Standardized definitions of AI, machine learning, architecture, and governance terms."
+    },
+    {
+      "id": "videos-visual-guides",
+      "title": "Videos and Visual Guides",
+      "summary": "Infographics, visual architecture blueprints, downloadable resources, and guides."
+    }
+  ],
+  "articles": [
+    {
+      "id": "ai-governance",
+      "title": "Governance, Compliance & Oversight Framework",
+      "href": "/pages/ai-governance.html",
+      "summary": "Comprehensive enterprise governance model detailing decision rights, policy alignment, and compliance oversight.",
+      "primaryCategory": "governance-accountability",
+      "secondaryCategories": ["risk-compliance", "patterns-anti-patterns"],
+      "audience": ["Executive Sponsor", "AI Governance Lead", "Risk Executive"],
+      "complexity": "Intermediate",
+      "transformationStages": [5, 13],
+      "lifecycleSteps": [1, 2, 9, 11],
+      "standardsAndFrameworks": ["ISO-42001", "NIST-AI-RMF", "EU-AI-ACT"],
+      "contentType": "Framework",
+      "keywords": ["governance", "compliance", "decision rights", "oversight", "AIMS", "ISO 42001"],
+      "lastReviewed": "2026-07-27"
+    },
+    {
+      "id": "governance-integration",
+      "title": "Integrated Governance Model",
+      "href": "/pages/governance-integration.html",
+      "summary": "How enterprise AI governance integrates into existing corporate, IT, risk, and security governance forums.",
+      "primaryCategory": "governance-accountability",
+      "secondaryCategories": ["enterprise-architecture"],
+      "audience": ["Enterprise Architect", "AI Governance Lead"],
+      "complexity": "Advanced",
+      "transformationStages": [5, 8],
+      "lifecycleSteps": [2, 5, 9],
+      "standardsAndFrameworks": ["ISO-42001", "AIMS-CROSSWALK"],
+      "contentType": "Blueprint",
+      "keywords": ["integration", "RACI", "corporate governance", "operating model"],
+      "lastReviewed": "2026-07-27"
+    },
+    {
+      "id": "agentic-ai",
+      "title": "Agentic AI Governance Framework",
+      "href": "/pages/agentic-ai.html",
+      "summary": "Practical governance, architecture, oversight, runtime assurance, and incident response for autonomous AI agents.",
+      "primaryCategory": "agents-automation",
+      "secondaryCategories": ["governance-accountability", "security-privacy"],
+      "audience": ["Enterprise Architect", "AI Solution Architect", "Risk Executive"],
+      "complexity": "Advanced",
+      "transformationStages": [5, 8, 10, 13],
+      "lifecycleSteps": [5, 6, 7, 11, 13],
+      "standardsAndFrameworks": ["IEEE-7000", "NIST-AI-RMF"],
+      "contentType": "Framework",
+      "keywords": ["agentic AI", "autonomous agents", "human-in-the-loop", "tool execution", "runtime guardrails"],
+      "lastReviewed": "2026-07-28"
+    },
+    {
+      "id": "ai-architecture",
+      "title": "AI Architecture & Runtime Implementation",
+      "href": "/pages/ai-architecture.html",
+      "summary": "End-to-end technical blueprint for enterprise AI solution architecture, model APIs, vector stores, and execution pipelines.",
+      "primaryCategory": "ai-solution-architecture",
+      "secondaryCategories": ["enterprise-architecture", "data-rag-knowledge-systems"],
+      "audience": ["Enterprise Architect", "AI Solution Architect", "Technical Lead"],
+      "complexity": "Advanced",
+      "transformationStages": [8, 10],
+      "lifecycleSteps": [5, 6, 7],
+      "standardsAndFrameworks": ["ISO-27001"],
+      "contentType": "Blueprint",
+      "keywords": ["architecture", "API gateway", "RAG", "LLM pipeline", "runtime"],
+      "lastReviewed": "2026-07-27"
+    },
+    {
+      "id": "ai-infrastructure-architecture",
+      "title": "AI Infrastructure Architecture",
+      "href": "/pages/ai-infrastructure-architecture.html",
+      "summary": "Infrastructure patterns, cloud compute scaling, GPU workloads, network isolation, and hosting choices.",
+      "primaryCategory": "enterprise-architecture",
+      "secondaryCategories": ["ai-solution-architecture", "security-privacy"],
+      "audience": ["Enterprise Architect", "Platform Owner", "Technical Lead"],
+      "complexity": "Advanced",
+      "transformationStages": [8, 10],
+      "lifecycleSteps": [5, 7, 10],
+      "standardsAndFrameworks": ["ISO-27001"],
+      "contentType": "Blueprint",
+      "keywords": ["infrastructure", "cloud", "GPU", "compute", "networking", "hosting"],
+      "lastReviewed": "2026-07-27"
+    },
+    {
+      "id": "architecture",
+      "title": "Enterprise Architecture Alignment",
+      "href": "/pages/architecture.html",
+      "summary": "Aligning AI capability building blocks with TOGAF, enterprise architecture domains, and legacy systems.",
+      "primaryCategory": "enterprise-architecture",
+      "secondaryCategories": ["strategy-business-value"],
+      "audience": ["Enterprise Architect", "Executive Sponsor"],
+      "complexity": "Intermediate",
+      "transformationStages": [4, 8],
+      "lifecycleSteps": [5],
+      "standardsAndFrameworks": ["ISO-42001"],
+      "contentType": "Guide",
+      "keywords": ["enterprise architecture", "TOGAF", "target state", "integration"],
+      "lastReviewed": "2026-07-27"
+    },
+    {
+      "id": "ai-automation-spectrum",
+      "title": "AI Automation & Autonomy Spectrum",
+      "summary": "Classifying AI solutions across manual assistance, copilot, semi-autonomous, and autonomous execution tiers.",
+      "href": "/pages/ai-automation-spectrum.html",
+      "primaryCategory": "agents-automation",
+      "secondaryCategories": ["risk-compliance", "ai-fundamentals"],
+      "audience": ["AI Solution Architect", "Risk Executive", "Business Owner"],
+      "complexity": "Intermediate",
+      "transformationStages": [5, 6, 8],
+      "lifecycleSteps": [2, 5, 6],
+      "standardsAndFrameworks": ["IEEE-7000", "NIST-AI-RMF"],
+      "contentType": "Classification",
+      "keywords": ["automation spectrum", "autonomy tiers", "copilot", "autonomous agents"],
+      "lastReviewed": "2026-07-28"
+    },
+    {
+      "id": "automation",
+      "title": "Intelligent Automation Framework",
+      "href": "/pages/automation.html",
+      "summary": "Combining RPA, OCR, rules engines, and generative AI into an end-to-end intelligent automation capability.",
+      "primaryCategory": "agents-automation",
+      "secondaryCategories": ["industry-use-cases"],
+      "audience": ["Delivery Lead", "AI Solution Architect"],
+      "complexity": "Intermediate",
+      "transformationStages": [6, 8, 10],
+      "lifecycleSteps": [3, 5, 7],
+      "standardsAndFrameworks": [],
+      "contentType": "Framework",
+      "keywords": ["RPA", "intelligent automation", "workflow", "process automation"],
+      "lastReviewed": "2026-07-27"
+    },
+    {
+      "id": "document-processing",
+      "title": "Intelligent Document Processing (IDP)",
+      "href": "/pages/document-processing.html",
+      "summary": "Architecture and governance patterns for unstructured document extraction, parsing, and automated validation.",
+      "primaryCategory": "industry-use-cases",
+      "secondaryCategories": ["agents-automation", "data-rag-knowledge-systems"],
+      "audience": ["AI Solution Architect", "Business Owner"],
+      "complexity": "Intermediate",
+      "transformationStages": [6, 8, 10],
+      "lifecycleSteps": [4, 5, 7],
+      "standardsAndFrameworks": ["UK-GDPR"],
+      "contentType": "Guide",
+      "keywords": ["IDP", "document processing", "OCR", "unstructured data"],
+      "lastReviewed": "2026-07-27"
+    },
+    {
+      "id": "ai-adoption",
+      "title": "Enterprise Platform Migration Strategy",
+      "href": "/pages/ai-adoption.html",
+      "summary": "Strategies for migrating legacy automation tools and disparate AI pilots to an enterprise-governed platform.",
+      "primaryCategory": "adoption-workforce-change",
+      "secondaryCategories": ["strategy-business-value"],
+      "audience": ["Programme Director", "Change Lead", "Executive Sponsor"],
+      "complexity": "Intermediate",
+      "transformationStages": [1, 4, 9, 12],
+      "lifecycleSteps": [10, 12],
+      "standardsAndFrameworks": [],
+      "contentType": "Strategy",
+      "keywords": ["adoption", "migration", "change management", "legacy migration"],
+      "lastReviewed": "2026-07-27"
+    },
+    {
+      "id": "ai-rpa-prioritization",
+      "title": "AI & Automation Opportunity Prioritization",
+      "href": "/pages/ai-rpa-prioritization.html",
+      "summary": "Scoring and prioritizing automation and AI opportunities based on value, effort, risk, and feasibility.",
+      "primaryCategory": "strategy-business-value",
+      "secondaryCategories": ["industry-use-cases"],
+      "audience": ["Business Owner", "Programme Director"],
+      "complexity": "Intermediate",
+      "transformationStages": [6],
+      "lifecycleSteps": [1, 3],
+      "standardsAndFrameworks": [],
+      "contentType": "Guide",
+      "keywords": ["prioritization", "opportunity matrix", "portfolio", "ROI"],
+      "lastReviewed": "2026-07-27"
+    },
+    {
+      "id": "assurance",
+      "title": "Enterprise AI Assurance",
+      "href": "/pages/assurance.html",
+      "summary": "Independent assurance, audit testing, verification of controls, and validation of production readiness.",
+      "primaryCategory": "testing-evaluation",
+      "secondaryCategories": ["governance-accountability", "risk-compliance"],
+      "audience": ["Audit & Assurance Lead", "Risk Executive", "AI Governance Lead"],
+      "complexity": "Advanced",
+      "transformationStages": [11, 13],
+      "lifecycleSteps": [8, 9, 11],
+      "standardsAndFrameworks": ["ISO-42001", "NIST-AI-RMF"],
+      "contentType": "Framework",
+      "keywords": ["assurance", "audit", "verification", "testing", "gate review"],
+      "lastReviewed": "2026-07-27"
+    },
+    {
+      "id": "security-review",
+      "title": "Security & Architecture Review",
+      "href": "/pages/security-review.html",
+      "summary": "Threat modeling, prompt security, data boundaries, supply chain risks, and technical vulnerability reviews.",
+      "primaryCategory": "security-privacy",
+      "secondaryCategories": ["ai-solution-architecture", "testing-evaluation"],
+      "audience": ["CISO", "Security Lead", "AI Solution Architect"],
+      "complexity": "Advanced",
+      "transformationStages": [8, 11],
+      "lifecycleSteps": [5, 7, 8],
+      "standardsAndFrameworks": ["ISO-27001", "NIST-AI-RMF"],
+      "contentType": "Guide",
+      "keywords": ["security", "threat modeling", "prompt injection", "vulnerability"],
+      "lastReviewed": "2026-07-27"
+    },
+    {
+      "id": "operational-risk",
+      "title": "Operational & Behavioural Risk",
+      "summary": "Managing model hallucination, operational dependencies, automated bias, drift, and user over-reliance.",
+      "href": "/pages/operational-risk.html",
+      "primaryCategory": "risk-compliance",
+      "secondaryCategories": ["operations-observability"],
+      "audience": ["Risk Executive", "Operations Lead"],
+      "complexity": "Intermediate",
+      "transformationStages": [5, 13],
+      "lifecycleSteps": [2, 11, 13],
+      "standardsAndFrameworks": ["ISO-31000", "NIST-AI-RMF"],
+      "contentType": "Guide",
+      "keywords": ["operational risk", "behavioural risk", "hallucination", "drift", "over-reliance"],
+      "lastReviewed": "2026-07-27"
+    },
+    {
+      "id": "data-security",
+      "title": "Data Security & Privacy",
+      "href": "/pages/data-security.html",
+      "summary": "Data governance, privacy impact assessments, vector database isolation, encryption, and anonymization.",
+      "primaryCategory": "data-rag-knowledge-systems",
+      "secondaryCategories": ["security-privacy", "risk-compliance"],
+      "audience": ["Privacy Lead", "Data Lead", "CISO"],
+      "complexity": "Intermediate",
+      "transformationStages": [5, 8, 10],
+      "lifecycleSteps": [4, 5, 7],
+      "standardsAndFrameworks": ["UK-GDPR", "ISO-27001"],
+      "contentType": "Guide",
+      "keywords": ["data security", "privacy", "DPIA", "vector DB", "encryption"],
+      "lastReviewed": "2026-07-27"
+    },
+    {
+      "id": "vendor-assurance",
+      "title": "Vendor, Infrastructure & Lifecycle Assurance",
+      "href": "/pages/vendor-assurance.html",
+      "summary": "Third-party AI model vendor risk management, SLA verification, API stability, and supply chain tracking.",
+      "primaryCategory": "operations-observability",
+      "secondaryCategories": ["risk-compliance", "governance-accountability"],
+      "audience": ["Platform Owner", "Risk Executive", "Legal Lead"],
+      "complexity": "Intermediate",
+      "transformationStages": [5, 10, 13],
+      "lifecycleSteps": [6, 11, 14],
+      "standardsAndFrameworks": ["ISO-42001", "EU-AI-ACT"],
+      "contentType": "Guide",
+      "keywords": ["vendor risk", "SLA", "third-party AI", "supply chain"],
+      "lastReviewed": "2026-07-27"
+    },
+    {
+      "id": "greenfield-implementation",
+      "title": "Greenfield AI Governance Blueprint",
+      "href": "/pages/greenfield-implementation.html",
+      "summary": "Step-by-step implementation guide for establishing AI governance from scratch in an organization.",
+      "primaryCategory": "patterns-anti-patterns",
+      "secondaryCategories": ["governance-accountability"],
+      "audience": ["AI Governance Lead", "Programme Director"],
+      "complexity": "Foundational",
+      "transformationStages": [1, 5],
+      "lifecycleSteps": [1, 2],
+      "standardsAndFrameworks": ["ISO-42001"],
+      "contentType": "Blueprint",
+      "keywords": ["greenfield", "blueprint", "implementation", "bootstrap"],
+      "lastReviewed": "2026-07-27"
+    },
+    {
+      "id": "ai-technology-glossary",
+      "title": "AI & Technology Glossary",
+      "href": "/pages/ai-technology-glossary.html",
+      "summary": "Authoritative glossary defining enterprise AI, machine learning, governance, architecture, and risk terms.",
+      "primaryCategory": "glossary",
+      "secondaryCategories": ["ai-fundamentals"],
+      "audience": ["All Roles"],
+      "complexity": "Foundational",
+      "transformationStages": [1],
+      "lifecycleSteps": [1],
+      "standardsAndFrameworks": [],
+      "contentType": "Glossary",
+      "keywords": ["glossary", "definitions", "terminology", "dictionary"],
+      "lastReviewed": "2026-07-27"
+    },
+    {
+      "id": "resources",
+      "title": "Resources & Downloads",
+      "href": "/pages/resources.html",
+      "summary": "Downloadable templates, architecture visual guides, assessment spreadsheets, and policy checklists.",
+      "primaryCategory": "videos-visual-guides",
+      "secondaryCategories": ["strategy-business-value"],
+      "audience": ["All Roles"],
+      "complexity": "Foundational",
+      "transformationStages": [1, 5, 8, 10],
+      "lifecycleSteps": [1, 3, 5, 7],
+      "standardsAndFrameworks": [],
+      "contentType": "Guide",
+      "keywords": ["downloads", "templates", "resources", "tools", "guides"],
+      "lastReviewed": "2026-07-27"
+    }
+  ]
+}

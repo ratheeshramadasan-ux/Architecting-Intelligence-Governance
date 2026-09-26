@@ -1,0 +1,2281 @@
+{
+  "version": "1.0.0",
+  "status": "reusable-platform-structure",
+  "implementationLogic": "design-only",
+  "principles": [
+    "Cross-stage and reusable",
+    "Evidence before scoring",
+    "Maturity and confidence reported separately",
+    "Exactly one accountable owner per conclusion",
+    "Recommendations trace to evidence and decisions",
+    "Human approval required for AI-assisted drafts"
+  ],
+  "entities": [
+    "Assessment Definitions",
+    "Assessment Categories",
+    "Assessment Questions",
+    "Scoring Models",
+    "Evidence Requirements",
+    "Confidence Ratings",
+    "Maturity Levels",
+    "Risk Ratings",
+    "Recommendations",
+    "Improvement Actions",
+    "Executive Summaries",
+    "AI Guidance"
+  ],
+  "maturity": [
+    {
+      "level": 1,
+      "name": "Initial",
+      "definition": "Practices are ad hoc, reactive, dependent on individuals and weakly evidenced."
+    },
+    {
+      "level": 2,
+      "name": "Developing",
+      "definition": "Foundational practices exist but coverage, ownership and consistency remain incomplete."
+    },
+    {
+      "level": 3,
+      "name": "Managed",
+      "definition": "Practices are defined, owned, measured and applied consistently across the agreed scope."
+    },
+    {
+      "level": 4,
+      "name": "Optimised",
+      "definition": "Practices are integrated, automated where appropriate and continuously improved using evidence."
+    },
+    {
+      "level": 5,
+      "name": "Enterprise Leading",
+      "definition": "Practices create measurable enterprise advantage and are governed as reusable organisational capability."
+    }
+  ],
+  "prompts": [
+    {
+      "id": "questions",
+      "name": "Generate Assessment Questions",
+      "instruction": "Generate focused assessment questions mapped to scope, evidence, scoring and accountable owners."
+    },
+    {
+      "id": "findings",
+      "name": "Generate Executive Findings",
+      "instruction": "Summarise verified strengths, gaps, risks, confidence and decisions for executives."
+    },
+    {
+      "id": "improvement",
+      "name": "Generate Improvement Plan",
+      "instruction": "Create sequenced improvement actions with owners, dependencies, evidence and measurable outcomes."
+    },
+    {
+      "id": "gap",
+      "name": "Generate Gap Analysis",
+      "instruction": "Compare current evidence with the target maturity level and identify control and capability gaps."
+    },
+    {
+      "id": "roadmap",
+      "name": "Generate Roadmap",
+      "instruction": "Sequence improvements into practical horizons without inventing dates, cost or capacity."
+    },
+    {
+      "id": "maturity",
+      "name": "Generate Maturity Summary",
+      "instruction": "Explain the evidence-supported maturity rating, uncertainty and conditions for advancement."
+    },
+    {
+      "id": "recommendations",
+      "name": "Generate Recommendations",
+      "instruction": "Generate prioritised, evidence-linked recommendations with rationale, risk reduction and expected value."
+    }
+  ],
+  "confidence": [
+    "Unverified",
+    "Low",
+    "Medium",
+    "High"
+  ],
+  "traceability": [
+    "Discovery Evidence",
+    "Readiness",
+    "Strategy",
+    "Governance",
+    "Architecture",
+    "Business Case",
+    "Implementation",
+    "Operations"
+  ],
+  "assessments": [
+    {
+      "id": "ASM-001",
+      "slug": "enterprise-ai-readiness",
+      "name": "Enterprise AI Readiness",
+      "type": "Readiness",
+      "topic": "AI",
+      "industry": "Enterprise",
+      "owner": "Executive Sponsor",
+      "primaryStage": "Assess Readiness",
+      "stageNumber": 2,
+      "deliverable": "Enterprise AI Readiness Assessment",
+      "purpose": "Measure whether the enterprise can adopt AI safely, sustainably and at scale.",
+      "value": "Provides an evidence-based view of ai strengths, gaps, risks and priorities so accountable leaders can make defensible investment and governance decisions.",
+      "objectives": [
+        "Establish a consistent baseline for ai",
+        "Rate maturity using the shared five-level model",
+        "Identify evidence gaps, risks and improvement priorities",
+        "Connect findings to Assess Readiness decisions and Enterprise AI Readiness Assessment"
+      ],
+      "scope": [
+        "AI capabilities, controls and operating practices",
+        "People, process, technology, data and governance dependencies",
+        "Current evidence, known exceptions and target maturity",
+        "Enterprise and solution-level impacts relevant to Assess Readiness"
+      ],
+      "questions": [
+        "What outcomes and decisions must the Enterprise AI Readiness support?",
+        "Which ai capabilities are in scope, and who is accountable for them?",
+        "What current controls and practices are documented, implemented and operating effectively?",
+        "Which source evidence proves each claimed practice or outcome?",
+        "Where do evidence sources conflict, and who can resolve the conflict?",
+        "What material risks, dependencies, constraints and exceptions remain?",
+        "What maturity level is supported by verified evidence rather than aspiration?",
+        "Which improvements are required before the next methodology decision gate?",
+        "How will progress, residual risk and benefits be measured over time?"
+      ],
+      "evidence": [
+        "Approved policies, standards and decision records",
+        "Current inventories, architecture and operating records",
+        "Control design and operating-effectiveness evidence",
+        "Performance, risk, incident and financial measures",
+        "Interviews and workshops validated by accountable owners"
+      ],
+      "scoring": {
+        "scale": "0–4 per question",
+        "method": "0 = no evidence, 1 = initial, 2 = developing, 3 = managed, 4 = optimised or leading evidence",
+        "aggregation": "Category averages roll up only where minimum evidence thresholds are met.",
+        "confidence": "High, Medium, Low or Unverified; confidence is reported separately and never hidden inside the score."
+      },
+      "risk": [
+        "Critical — immediate decision or control intervention required",
+        "High — material exposure requiring a funded response",
+        "Medium — controlled remediation with named ownership",
+        "Low — monitor through normal improvement governance"
+      ],
+      "recommendations": [
+        "Prioritise gaps by risk, dependency and enterprise value",
+        "Assign one accountable owner and verifiable outcome per action",
+        "Separate immediate containment from structural improvement",
+        "Reassess after evidence is updated or material change occurs"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Assess Readiness",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case",
+        "Improve and Scale"
+      ],
+      "relatedDeliverables": [
+        "Enterprise AI Readiness Assessment",
+        "Current-State Discovery Baseline",
+        "Enterprise AI Strategy Decision Pack"
+      ],
+      "roles": [
+        "Executive Sponsor",
+        "Executive Sponsor",
+        "Enterprise Architect",
+        "Risk and Compliance",
+        "Evidence Owners"
+      ],
+      "prompts": [
+        "questions",
+        "findings",
+        "improvement",
+        "gap",
+        "roadmap",
+        "maturity",
+        "recommendations"
+      ]
+    },
+    {
+      "id": "ASM-002",
+      "slug": "ai-governance-maturity",
+      "name": "AI Governance Maturity",
+      "type": "Governance",
+      "topic": "AI Governance",
+      "industry": "Enterprise",
+      "owner": "AI Governance Lead",
+      "primaryStage": "Establish Governance",
+      "stageNumber": 4,
+      "deliverable": "Governance and Control Framework",
+      "purpose": "Evaluate decision rights, policies, oversight, assurance and accountability for AI.",
+      "value": "Provides an evidence-based view of ai governance strengths, gaps, risks and priorities so accountable leaders can make defensible investment and governance decisions.",
+      "objectives": [
+        "Establish a consistent baseline for ai governance",
+        "Rate maturity using the shared five-level model",
+        "Identify evidence gaps, risks and improvement priorities",
+        "Connect findings to Establish Governance decisions and Governance and Control Framework"
+      ],
+      "scope": [
+        "AI Governance capabilities, controls and operating practices",
+        "People, process, technology, data and governance dependencies",
+        "Current evidence, known exceptions and target maturity",
+        "Enterprise and solution-level impacts relevant to Establish Governance"
+      ],
+      "questions": [
+        "What outcomes and decisions must the AI Governance Maturity support?",
+        "Which ai governance capabilities are in scope, and who is accountable for them?",
+        "What current controls and practices are documented, implemented and operating effectively?",
+        "Which source evidence proves each claimed practice or outcome?",
+        "Where do evidence sources conflict, and who can resolve the conflict?",
+        "What material risks, dependencies, constraints and exceptions remain?",
+        "What maturity level is supported by verified evidence rather than aspiration?",
+        "Which improvements are required before the next methodology decision gate?",
+        "How will progress, residual risk and benefits be measured over time?"
+      ],
+      "evidence": [
+        "Approved policies, standards and decision records",
+        "Current inventories, architecture and operating records",
+        "Control design and operating-effectiveness evidence",
+        "Performance, risk, incident and financial measures",
+        "Interviews and workshops validated by accountable owners"
+      ],
+      "scoring": {
+        "scale": "0–4 per question",
+        "method": "0 = no evidence, 1 = initial, 2 = developing, 3 = managed, 4 = optimised or leading evidence",
+        "aggregation": "Category averages roll up only where minimum evidence thresholds are met.",
+        "confidence": "High, Medium, Low or Unverified; confidence is reported separately and never hidden inside the score."
+      },
+      "risk": [
+        "Critical — immediate decision or control intervention required",
+        "High — material exposure requiring a funded response",
+        "Medium — controlled remediation with named ownership",
+        "Low — monitor through normal improvement governance"
+      ],
+      "recommendations": [
+        "Prioritise gaps by risk, dependency and enterprise value",
+        "Assign one accountable owner and verifiable outcome per action",
+        "Separate immediate containment from structural improvement",
+        "Reassess after evidence is updated or material change occurs"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Establish Governance",
+        "Define Strategy",
+        "Build the Business Case",
+        "Improve and Scale"
+      ],
+      "relatedDeliverables": [
+        "Governance and Control Framework",
+        "Current-State Discovery Baseline",
+        "Enterprise AI Strategy Decision Pack"
+      ],
+      "roles": [
+        "AI Governance Lead",
+        "Executive Sponsor",
+        "Enterprise Architect",
+        "Risk and Compliance",
+        "Evidence Owners"
+      ],
+      "prompts": [
+        "questions",
+        "findings",
+        "improvement",
+        "gap",
+        "roadmap",
+        "maturity",
+        "recommendations"
+      ]
+    },
+    {
+      "id": "ASM-003",
+      "slug": "ai-risk-assessment",
+      "name": "AI Risk Assessment",
+      "type": "Risk",
+      "topic": "AI Risk",
+      "industry": "Enterprise",
+      "owner": "Risk Executive",
+      "primaryStage": "Establish Governance",
+      "stageNumber": 4,
+      "deliverable": "AI Risk Register",
+      "purpose": "Identify and evaluate harms, uncertainty, autonomy and control exposure across AI use.",
+      "value": "Provides an evidence-based view of ai risk strengths, gaps, risks and priorities so accountable leaders can make defensible investment and governance decisions.",
+      "objectives": [
+        "Establish a consistent baseline for ai risk",
+        "Rate maturity using the shared five-level model",
+        "Identify evidence gaps, risks and improvement priorities",
+        "Connect findings to Establish Governance decisions and AI Risk Register"
+      ],
+      "scope": [
+        "AI Risk capabilities, controls and operating practices",
+        "People, process, technology, data and governance dependencies",
+        "Current evidence, known exceptions and target maturity",
+        "Enterprise and solution-level impacts relevant to Establish Governance"
+      ],
+      "questions": [
+        "What outcomes and decisions must the AI Risk Assessment support?",
+        "Which ai risk capabilities are in scope, and who is accountable for them?",
+        "What current controls and practices are documented, implemented and operating effectively?",
+        "Which source evidence proves each claimed practice or outcome?",
+        "Where do evidence sources conflict, and who can resolve the conflict?",
+        "What material risks, dependencies, constraints and exceptions remain?",
+        "What maturity level is supported by verified evidence rather than aspiration?",
+        "Which improvements are required before the next methodology decision gate?",
+        "How will progress, residual risk and benefits be measured over time?"
+      ],
+      "evidence": [
+        "Approved policies, standards and decision records",
+        "Current inventories, architecture and operating records",
+        "Control design and operating-effectiveness evidence",
+        "Performance, risk, incident and financial measures",
+        "Interviews and workshops validated by accountable owners"
+      ],
+      "scoring": {
+        "scale": "0–4 per question",
+        "method": "0 = no evidence, 1 = initial, 2 = developing, 3 = managed, 4 = optimised or leading evidence",
+        "aggregation": "Category averages roll up only where minimum evidence thresholds are met.",
+        "confidence": "High, Medium, Low or Unverified; confidence is reported separately and never hidden inside the score."
+      },
+      "risk": [
+        "Critical — immediate decision or control intervention required",
+        "High — material exposure requiring a funded response",
+        "Medium — controlled remediation with named ownership",
+        "Low — monitor through normal improvement governance"
+      ],
+      "recommendations": [
+        "Prioritise gaps by risk, dependency and enterprise value",
+        "Assign one accountable owner and verifiable outcome per action",
+        "Separate immediate containment from structural improvement",
+        "Reassess after evidence is updated or material change occurs"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Establish Governance",
+        "Define Strategy",
+        "Build the Business Case",
+        "Improve and Scale"
+      ],
+      "relatedDeliverables": [
+        "AI Risk Register",
+        "Current-State Discovery Baseline",
+        "Enterprise AI Strategy Decision Pack"
+      ],
+      "roles": [
+        "Risk Executive",
+        "Executive Sponsor",
+        "Enterprise Architect",
+        "Risk and Compliance",
+        "Evidence Owners"
+      ],
+      "prompts": [
+        "questions",
+        "findings",
+        "improvement",
+        "gap",
+        "roadmap",
+        "maturity",
+        "recommendations"
+      ]
+    },
+    {
+      "id": "ASM-004",
+      "slug": "ai-security-assessment",
+      "name": "AI Security Assessment",
+      "type": "Security",
+      "topic": "AI Security",
+      "industry": "Technology",
+      "owner": "CISO",
+      "primaryStage": "Test and Validate",
+      "stageNumber": 10,
+      "deliverable": "Security Assessment",
+      "purpose": "Evaluate threats and controls across models, prompts, data, tooling and supply chains.",
+      "value": "Provides an evidence-based view of ai security strengths, gaps, risks and priorities so accountable leaders can make defensible investment and governance decisions.",
+      "objectives": [
+        "Establish a consistent baseline for ai security",
+        "Rate maturity using the shared five-level model",
+        "Identify evidence gaps, risks and improvement priorities",
+        "Connect findings to Test and Validate decisions and Security Assessment"
+      ],
+      "scope": [
+        "AI Security capabilities, controls and operating practices",
+        "People, process, technology, data and governance dependencies",
+        "Current evidence, known exceptions and target maturity",
+        "Enterprise and solution-level impacts relevant to Test and Validate"
+      ],
+      "questions": [
+        "What outcomes and decisions must the AI Security Assessment support?",
+        "Which ai security capabilities are in scope, and who is accountable for them?",
+        "What current controls and practices are documented, implemented and operating effectively?",
+        "Which source evidence proves each claimed practice or outcome?",
+        "Where do evidence sources conflict, and who can resolve the conflict?",
+        "What material risks, dependencies, constraints and exceptions remain?",
+        "What maturity level is supported by verified evidence rather than aspiration?",
+        "Which improvements are required before the next methodology decision gate?",
+        "How will progress, residual risk and benefits be measured over time?"
+      ],
+      "evidence": [
+        "Approved policies, standards and decision records",
+        "Current inventories, architecture and operating records",
+        "Control design and operating-effectiveness evidence",
+        "Performance, risk, incident and financial measures",
+        "Interviews and workshops validated by accountable owners"
+      ],
+      "scoring": {
+        "scale": "0–4 per question",
+        "method": "0 = no evidence, 1 = initial, 2 = developing, 3 = managed, 4 = optimised or leading evidence",
+        "aggregation": "Category averages roll up only where minimum evidence thresholds are met.",
+        "confidence": "High, Medium, Low or Unverified; confidence is reported separately and never hidden inside the score."
+      },
+      "risk": [
+        "Critical — immediate decision or control intervention required",
+        "High — material exposure requiring a funded response",
+        "Medium — controlled remediation with named ownership",
+        "Low — monitor through normal improvement governance"
+      ],
+      "recommendations": [
+        "Prioritise gaps by risk, dependency and enterprise value",
+        "Assign one accountable owner and verifiable outcome per action",
+        "Separate immediate containment from structural improvement",
+        "Reassess after evidence is updated or material change occurs"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Test and Validate",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case",
+        "Improve and Scale"
+      ],
+      "relatedDeliverables": [
+        "Security Assessment",
+        "Current-State Discovery Baseline",
+        "Enterprise AI Strategy Decision Pack"
+      ],
+      "roles": [
+        "CISO",
+        "Executive Sponsor",
+        "Enterprise Architect",
+        "Risk and Compliance",
+        "Evidence Owners"
+      ],
+      "prompts": [
+        "questions",
+        "findings",
+        "improvement",
+        "gap",
+        "roadmap",
+        "maturity",
+        "recommendations"
+      ]
+    },
+    {
+      "id": "ASM-005",
+      "slug": "identity-and-access-assessment",
+      "name": "Identity & Access Assessment",
+      "type": "Security",
+      "topic": "Identity",
+      "industry": "Technology",
+      "owner": "IAM Lead",
+      "primaryStage": "Design the Target Architecture",
+      "stageNumber": 7,
+      "deliverable": "IAM Assessment",
+      "purpose": "Assess identities, privileges, service accounts and access controls supporting AI.",
+      "value": "Provides an evidence-based view of identity strengths, gaps, risks and priorities so accountable leaders can make defensible investment and governance decisions.",
+      "objectives": [
+        "Establish a consistent baseline for identity",
+        "Rate maturity using the shared five-level model",
+        "Identify evidence gaps, risks and improvement priorities",
+        "Connect findings to Design the Target Architecture decisions and IAM Assessment"
+      ],
+      "scope": [
+        "Identity capabilities, controls and operating practices",
+        "People, process, technology, data and governance dependencies",
+        "Current evidence, known exceptions and target maturity",
+        "Enterprise and solution-level impacts relevant to Design the Target Architecture"
+      ],
+      "questions": [
+        "What outcomes and decisions must the Identity & Access Assessment support?",
+        "Which identity capabilities are in scope, and who is accountable for them?",
+        "What current controls and practices are documented, implemented and operating effectively?",
+        "Which source evidence proves each claimed practice or outcome?",
+        "Where do evidence sources conflict, and who can resolve the conflict?",
+        "What material risks, dependencies, constraints and exceptions remain?",
+        "What maturity level is supported by verified evidence rather than aspiration?",
+        "Which improvements are required before the next methodology decision gate?",
+        "How will progress, residual risk and benefits be measured over time?"
+      ],
+      "evidence": [
+        "Approved policies, standards and decision records",
+        "Current inventories, architecture and operating records",
+        "Control design and operating-effectiveness evidence",
+        "Performance, risk, incident and financial measures",
+        "Interviews and workshops validated by accountable owners"
+      ],
+      "scoring": {
+        "scale": "0–4 per question",
+        "method": "0 = no evidence, 1 = initial, 2 = developing, 3 = managed, 4 = optimised or leading evidence",
+        "aggregation": "Category averages roll up only where minimum evidence thresholds are met.",
+        "confidence": "High, Medium, Low or Unverified; confidence is reported separately and never hidden inside the score."
+      },
+      "risk": [
+        "Critical — immediate decision or control intervention required",
+        "High — material exposure requiring a funded response",
+        "Medium — controlled remediation with named ownership",
+        "Low — monitor through normal improvement governance"
+      ],
+      "recommendations": [
+        "Prioritise gaps by risk, dependency and enterprise value",
+        "Assign one accountable owner and verifiable outcome per action",
+        "Separate immediate containment from structural improvement",
+        "Reassess after evidence is updated or material change occurs"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Design the Target Architecture",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case",
+        "Improve and Scale"
+      ],
+      "relatedDeliverables": [
+        "IAM Assessment",
+        "Current-State Discovery Baseline",
+        "Enterprise AI Strategy Decision Pack"
+      ],
+      "roles": [
+        "IAM Lead",
+        "Executive Sponsor",
+        "Enterprise Architect",
+        "Risk and Compliance",
+        "Evidence Owners"
+      ],
+      "prompts": [
+        "questions",
+        "findings",
+        "improvement",
+        "gap",
+        "roadmap",
+        "maturity",
+        "recommendations"
+      ]
+    },
+    {
+      "id": "ASM-006",
+      "slug": "data-readiness",
+      "name": "Data Readiness",
+      "type": "Readiness",
+      "topic": "Data",
+      "industry": "Enterprise",
+      "owner": "Chief Data Officer",
+      "primaryStage": "Assess Readiness",
+      "stageNumber": 2,
+      "deliverable": "Data Inventory",
+      "purpose": "Measure whether governed, usable and representative data can support priority outcomes.",
+      "value": "Provides an evidence-based view of data strengths, gaps, risks and priorities so accountable leaders can make defensible investment and governance decisions.",
+      "objectives": [
+        "Establish a consistent baseline for data",
+        "Rate maturity using the shared five-level model",
+        "Identify evidence gaps, risks and improvement priorities",
+        "Connect findings to Assess Readiness decisions and Data Inventory"
+      ],
+      "scope": [
+        "Data capabilities, controls and operating practices",
+        "People, process, technology, data and governance dependencies",
+        "Current evidence, known exceptions and target maturity",
+        "Enterprise and solution-level impacts relevant to Assess Readiness"
+      ],
+      "questions": [
+        "What outcomes and decisions must the Data Readiness support?",
+        "Which data capabilities are in scope, and who is accountable for them?",
+        "What current controls and practices are documented, implemented and operating effectively?",
+        "Which source evidence proves each claimed practice or outcome?",
+        "Where do evidence sources conflict, and who can resolve the conflict?",
+        "What material risks, dependencies, constraints and exceptions remain?",
+        "What maturity level is supported by verified evidence rather than aspiration?",
+        "Which improvements are required before the next methodology decision gate?",
+        "How will progress, residual risk and benefits be measured over time?"
+      ],
+      "evidence": [
+        "Approved policies, standards and decision records",
+        "Current inventories, architecture and operating records",
+        "Control design and operating-effectiveness evidence",
+        "Performance, risk, incident and financial measures",
+        "Interviews and workshops validated by accountable owners"
+      ],
+      "scoring": {
+        "scale": "0–4 per question",
+        "method": "0 = no evidence, 1 = initial, 2 = developing, 3 = managed, 4 = optimised or leading evidence",
+        "aggregation": "Category averages roll up only where minimum evidence thresholds are met.",
+        "confidence": "High, Medium, Low or Unverified; confidence is reported separately and never hidden inside the score."
+      },
+      "risk": [
+        "Critical — immediate decision or control intervention required",
+        "High — material exposure requiring a funded response",
+        "Medium — controlled remediation with named ownership",
+        "Low — monitor through normal improvement governance"
+      ],
+      "recommendations": [
+        "Prioritise gaps by risk, dependency and enterprise value",
+        "Assign one accountable owner and verifiable outcome per action",
+        "Separate immediate containment from structural improvement",
+        "Reassess after evidence is updated or material change occurs"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Assess Readiness",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case",
+        "Improve and Scale"
+      ],
+      "relatedDeliverables": [
+        "Data Inventory",
+        "Current-State Discovery Baseline",
+        "Enterprise AI Strategy Decision Pack"
+      ],
+      "roles": [
+        "Chief Data Officer",
+        "Executive Sponsor",
+        "Enterprise Architect",
+        "Risk and Compliance",
+        "Evidence Owners"
+      ],
+      "prompts": [
+        "questions",
+        "findings",
+        "improvement",
+        "gap",
+        "roadmap",
+        "maturity",
+        "recommendations"
+      ]
+    },
+    {
+      "id": "ASM-007",
+      "slug": "data-governance",
+      "name": "Data Governance",
+      "type": "Governance",
+      "topic": "Data & Integration",
+      "industry": "Enterprise",
+      "owner": "Data Governance Lead",
+      "primaryStage": "Establish Governance",
+      "stageNumber": 4,
+      "deliverable": "Data Governance Framework",
+      "purpose": "Evaluate data ownership, quality, lineage, access, retention and assurance.",
+      "value": "Provides an evidence-based view of data & integration strengths, gaps, risks and priorities so accountable leaders can make defensible investment and governance decisions.",
+      "objectives": [
+        "Establish a consistent baseline for data & integration",
+        "Rate maturity using the shared five-level model",
+        "Identify evidence gaps, risks and improvement priorities",
+        "Connect findings to Establish Governance decisions and Data Governance Framework"
+      ],
+      "scope": [
+        "Data & Integration capabilities, controls and operating practices",
+        "People, process, technology, data and governance dependencies",
+        "Current evidence, known exceptions and target maturity",
+        "Enterprise and solution-level impacts relevant to Establish Governance"
+      ],
+      "questions": [
+        "What outcomes and decisions must the Data Governance support?",
+        "Which data & integration capabilities are in scope, and who is accountable for them?",
+        "What current controls and practices are documented, implemented and operating effectively?",
+        "Which source evidence proves each claimed practice or outcome?",
+        "Where do evidence sources conflict, and who can resolve the conflict?",
+        "What material risks, dependencies, constraints and exceptions remain?",
+        "What maturity level is supported by verified evidence rather than aspiration?",
+        "Which improvements are required before the next methodology decision gate?",
+        "How will progress, residual risk and benefits be measured over time?"
+      ],
+      "evidence": [
+        "Approved policies, standards and decision records",
+        "Current inventories, architecture and operating records",
+        "Control design and operating-effectiveness evidence",
+        "Performance, risk, incident and financial measures",
+        "Interviews and workshops validated by accountable owners"
+      ],
+      "scoring": {
+        "scale": "0–4 per question",
+        "method": "0 = no evidence, 1 = initial, 2 = developing, 3 = managed, 4 = optimised or leading evidence",
+        "aggregation": "Category averages roll up only where minimum evidence thresholds are met.",
+        "confidence": "High, Medium, Low or Unverified; confidence is reported separately and never hidden inside the score."
+      },
+      "risk": [
+        "Critical — immediate decision or control intervention required",
+        "High — material exposure requiring a funded response",
+        "Medium — controlled remediation with named ownership",
+        "Low — monitor through normal improvement governance"
+      ],
+      "recommendations": [
+        "Prioritise gaps by risk, dependency and enterprise value",
+        "Assign one accountable owner and verifiable outcome per action",
+        "Separate immediate containment from structural improvement",
+        "Reassess after evidence is updated or material change occurs"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Establish Governance",
+        "Define Strategy",
+        "Build the Business Case",
+        "Improve and Scale"
+      ],
+      "relatedDeliverables": [
+        "Data Governance Framework",
+        "Current-State Discovery Baseline",
+        "Enterprise AI Strategy Decision Pack"
+      ],
+      "roles": [
+        "Data Governance Lead",
+        "Executive Sponsor",
+        "Enterprise Architect",
+        "Risk and Compliance",
+        "Evidence Owners"
+      ],
+      "prompts": [
+        "questions",
+        "findings",
+        "improvement",
+        "gap",
+        "roadmap",
+        "maturity",
+        "recommendations"
+      ]
+    },
+    {
+      "id": "ASM-008",
+      "slug": "business-capability-assessment",
+      "name": "Business Capability Assessment",
+      "type": "Capability",
+      "topic": "Enterprise Architecture",
+      "industry": "Business",
+      "owner": "Business Architect",
+      "primaryStage": "Discover",
+      "stageNumber": 1,
+      "deliverable": "Business Capability Catalogue",
+      "purpose": "Assess capability performance, strategic importance, constraints and AI enablement potential.",
+      "value": "Provides an evidence-based view of enterprise architecture strengths, gaps, risks and priorities so accountable leaders can make defensible investment and governance decisions.",
+      "objectives": [
+        "Establish a consistent baseline for enterprise architecture",
+        "Rate maturity using the shared five-level model",
+        "Identify evidence gaps, risks and improvement priorities",
+        "Connect findings to Discover decisions and Business Capability Catalogue"
+      ],
+      "scope": [
+        "Enterprise Architecture capabilities, controls and operating practices",
+        "People, process, technology, data and governance dependencies",
+        "Current evidence, known exceptions and target maturity",
+        "Enterprise and solution-level impacts relevant to Discover"
+      ],
+      "questions": [
+        "What outcomes and decisions must the Business Capability Assessment support?",
+        "Which enterprise architecture capabilities are in scope, and who is accountable for them?",
+        "What current controls and practices are documented, implemented and operating effectively?",
+        "Which source evidence proves each claimed practice or outcome?",
+        "Where do evidence sources conflict, and who can resolve the conflict?",
+        "What material risks, dependencies, constraints and exceptions remain?",
+        "What maturity level is supported by verified evidence rather than aspiration?",
+        "Which improvements are required before the next methodology decision gate?",
+        "How will progress, residual risk and benefits be measured over time?"
+      ],
+      "evidence": [
+        "Approved policies, standards and decision records",
+        "Current inventories, architecture and operating records",
+        "Control design and operating-effectiveness evidence",
+        "Performance, risk, incident and financial measures",
+        "Interviews and workshops validated by accountable owners"
+      ],
+      "scoring": {
+        "scale": "0–4 per question",
+        "method": "0 = no evidence, 1 = initial, 2 = developing, 3 = managed, 4 = optimised or leading evidence",
+        "aggregation": "Category averages roll up only where minimum evidence thresholds are met.",
+        "confidence": "High, Medium, Low or Unverified; confidence is reported separately and never hidden inside the score."
+      },
+      "risk": [
+        "Critical — immediate decision or control intervention required",
+        "High — material exposure requiring a funded response",
+        "Medium — controlled remediation with named ownership",
+        "Low — monitor through normal improvement governance"
+      ],
+      "recommendations": [
+        "Prioritise gaps by risk, dependency and enterprise value",
+        "Assign one accountable owner and verifiable outcome per action",
+        "Separate immediate containment from structural improvement",
+        "Reassess after evidence is updated or material change occurs"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case",
+        "Improve and Scale"
+      ],
+      "relatedDeliverables": [
+        "Business Capability Catalogue",
+        "Current-State Discovery Baseline",
+        "Enterprise AI Strategy Decision Pack"
+      ],
+      "roles": [
+        "Business Architect",
+        "Executive Sponsor",
+        "Enterprise Architect",
+        "Risk and Compliance",
+        "Evidence Owners"
+      ],
+      "prompts": [
+        "questions",
+        "findings",
+        "improvement",
+        "gap",
+        "roadmap",
+        "maturity",
+        "recommendations"
+      ]
+    },
+    {
+      "id": "ASM-009",
+      "slug": "business-process-assessment",
+      "name": "Business Process Assessment",
+      "type": "Capability",
+      "topic": "Automation",
+      "industry": "Business",
+      "owner": "Process Owner",
+      "primaryStage": "Discover",
+      "stageNumber": 1,
+      "deliverable": "Process Inventory",
+      "purpose": "Assess process value, variability, controls, pain points and automation suitability.",
+      "value": "Provides an evidence-based view of automation strengths, gaps, risks and priorities so accountable leaders can make defensible investment and governance decisions.",
+      "objectives": [
+        "Establish a consistent baseline for automation",
+        "Rate maturity using the shared five-level model",
+        "Identify evidence gaps, risks and improvement priorities",
+        "Connect findings to Discover decisions and Process Inventory"
+      ],
+      "scope": [
+        "Automation capabilities, controls and operating practices",
+        "People, process, technology, data and governance dependencies",
+        "Current evidence, known exceptions and target maturity",
+        "Enterprise and solution-level impacts relevant to Discover"
+      ],
+      "questions": [
+        "What outcomes and decisions must the Business Process Assessment support?",
+        "Which automation capabilities are in scope, and who is accountable for them?",
+        "What current controls and practices are documented, implemented and operating effectively?",
+        "Which source evidence proves each claimed practice or outcome?",
+        "Where do evidence sources conflict, and who can resolve the conflict?",
+        "What material risks, dependencies, constraints and exceptions remain?",
+        "What maturity level is supported by verified evidence rather than aspiration?",
+        "Which improvements are required before the next methodology decision gate?",
+        "How will progress, residual risk and benefits be measured over time?"
+      ],
+      "evidence": [
+        "Approved policies, standards and decision records",
+        "Current inventories, architecture and operating records",
+        "Control design and operating-effectiveness evidence",
+        "Performance, risk, incident and financial measures",
+        "Interviews and workshops validated by accountable owners"
+      ],
+      "scoring": {
+        "scale": "0–4 per question",
+        "method": "0 = no evidence, 1 = initial, 2 = developing, 3 = managed, 4 = optimised or leading evidence",
+        "aggregation": "Category averages roll up only where minimum evidence thresholds are met.",
+        "confidence": "High, Medium, Low or Unverified; confidence is reported separately and never hidden inside the score."
+      },
+      "risk": [
+        "Critical — immediate decision or control intervention required",
+        "High — material exposure requiring a funded response",
+        "Medium — controlled remediation with named ownership",
+        "Low — monitor through normal improvement governance"
+      ],
+      "recommendations": [
+        "Prioritise gaps by risk, dependency and enterprise value",
+        "Assign one accountable owner and verifiable outcome per action",
+        "Separate immediate containment from structural improvement",
+        "Reassess after evidence is updated or material change occurs"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case",
+        "Improve and Scale"
+      ],
+      "relatedDeliverables": [
+        "Process Inventory",
+        "Current-State Discovery Baseline",
+        "Enterprise AI Strategy Decision Pack"
+      ],
+      "roles": [
+        "Process Owner",
+        "Executive Sponsor",
+        "Enterprise Architect",
+        "Risk and Compliance",
+        "Evidence Owners"
+      ],
+      "prompts": [
+        "questions",
+        "findings",
+        "improvement",
+        "gap",
+        "roadmap",
+        "maturity",
+        "recommendations"
+      ]
+    },
+    {
+      "id": "ASM-010",
+      "slug": "enterprise-architecture-assessment",
+      "name": "Enterprise Architecture Assessment",
+      "type": "Architecture",
+      "topic": "AI Architecture",
+      "industry": "Technology",
+      "owner": "Enterprise Architect",
+      "primaryStage": "Assess Readiness",
+      "stageNumber": 2,
+      "deliverable": "Current-State Assessment",
+      "purpose": "Evaluate architecture governance, coherence, constraints, standards and target-state readiness.",
+      "value": "Provides an evidence-based view of ai architecture strengths, gaps, risks and priorities so accountable leaders can make defensible investment and governance decisions.",
+      "objectives": [
+        "Establish a consistent baseline for ai architecture",
+        "Rate maturity using the shared five-level model",
+        "Identify evidence gaps, risks and improvement priorities",
+        "Connect findings to Assess Readiness decisions and Current-State Assessment"
+      ],
+      "scope": [
+        "AI Architecture capabilities, controls and operating practices",
+        "People, process, technology, data and governance dependencies",
+        "Current evidence, known exceptions and target maturity",
+        "Enterprise and solution-level impacts relevant to Assess Readiness"
+      ],
+      "questions": [
+        "What outcomes and decisions must the Enterprise Architecture Assessment support?",
+        "Which ai architecture capabilities are in scope, and who is accountable for them?",
+        "What current controls and practices are documented, implemented and operating effectively?",
+        "Which source evidence proves each claimed practice or outcome?",
+        "Where do evidence sources conflict, and who can resolve the conflict?",
+        "What material risks, dependencies, constraints and exceptions remain?",
+        "What maturity level is supported by verified evidence rather than aspiration?",
+        "Which improvements are required before the next methodology decision gate?",
+        "How will progress, residual risk and benefits be measured over time?"
+      ],
+      "evidence": [
+        "Approved policies, standards and decision records",
+        "Current inventories, architecture and operating records",
+        "Control design and operating-effectiveness evidence",
+        "Performance, risk, incident and financial measures",
+        "Interviews and workshops validated by accountable owners"
+      ],
+      "scoring": {
+        "scale": "0–4 per question",
+        "method": "0 = no evidence, 1 = initial, 2 = developing, 3 = managed, 4 = optimised or leading evidence",
+        "aggregation": "Category averages roll up only where minimum evidence thresholds are met.",
+        "confidence": "High, Medium, Low or Unverified; confidence is reported separately and never hidden inside the score."
+      },
+      "risk": [
+        "Critical — immediate decision or control intervention required",
+        "High — material exposure requiring a funded response",
+        "Medium — controlled remediation with named ownership",
+        "Low — monitor through normal improvement governance"
+      ],
+      "recommendations": [
+        "Prioritise gaps by risk, dependency and enterprise value",
+        "Assign one accountable owner and verifiable outcome per action",
+        "Separate immediate containment from structural improvement",
+        "Reassess after evidence is updated or material change occurs"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Assess Readiness",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case",
+        "Improve and Scale"
+      ],
+      "relatedDeliverables": [
+        "Current-State Assessment",
+        "Current-State Discovery Baseline",
+        "Enterprise AI Strategy Decision Pack"
+      ],
+      "roles": [
+        "Enterprise Architect",
+        "Executive Sponsor",
+        "Enterprise Architect",
+        "Risk and Compliance",
+        "Evidence Owners"
+      ],
+      "prompts": [
+        "questions",
+        "findings",
+        "improvement",
+        "gap",
+        "roadmap",
+        "maturity",
+        "recommendations"
+      ]
+    },
+    {
+      "id": "ASM-011",
+      "slug": "application-portfolio-assessment",
+      "name": "Application Portfolio Assessment",
+      "type": "Architecture",
+      "topic": "AI Architecture",
+      "industry": "Technology",
+      "owner": "Application Portfolio Owner",
+      "primaryStage": "Discover",
+      "stageNumber": 1,
+      "deliverable": "Application Portfolio",
+      "purpose": "Assess application fitness, ownership, lifecycle, cost, risk and integration readiness.",
+      "value": "Provides an evidence-based view of ai architecture strengths, gaps, risks and priorities so accountable leaders can make defensible investment and governance decisions.",
+      "objectives": [
+        "Establish a consistent baseline for ai architecture",
+        "Rate maturity using the shared five-level model",
+        "Identify evidence gaps, risks and improvement priorities",
+        "Connect findings to Discover decisions and Application Portfolio"
+      ],
+      "scope": [
+        "AI Architecture capabilities, controls and operating practices",
+        "People, process, technology, data and governance dependencies",
+        "Current evidence, known exceptions and target maturity",
+        "Enterprise and solution-level impacts relevant to Discover"
+      ],
+      "questions": [
+        "What outcomes and decisions must the Application Portfolio Assessment support?",
+        "Which ai architecture capabilities are in scope, and who is accountable for them?",
+        "What current controls and practices are documented, implemented and operating effectively?",
+        "Which source evidence proves each claimed practice or outcome?",
+        "Where do evidence sources conflict, and who can resolve the conflict?",
+        "What material risks, dependencies, constraints and exceptions remain?",
+        "What maturity level is supported by verified evidence rather than aspiration?",
+        "Which improvements are required before the next methodology decision gate?",
+        "How will progress, residual risk and benefits be measured over time?"
+      ],
+      "evidence": [
+        "Approved policies, standards and decision records",
+        "Current inventories, architecture and operating records",
+        "Control design and operating-effectiveness evidence",
+        "Performance, risk, incident and financial measures",
+        "Interviews and workshops validated by accountable owners"
+      ],
+      "scoring": {
+        "scale": "0–4 per question",
+        "method": "0 = no evidence, 1 = initial, 2 = developing, 3 = managed, 4 = optimised or leading evidence",
+        "aggregation": "Category averages roll up only where minimum evidence thresholds are met.",
+        "confidence": "High, Medium, Low or Unverified; confidence is reported separately and never hidden inside the score."
+      },
+      "risk": [
+        "Critical — immediate decision or control intervention required",
+        "High — material exposure requiring a funded response",
+        "Medium — controlled remediation with named ownership",
+        "Low — monitor through normal improvement governance"
+      ],
+      "recommendations": [
+        "Prioritise gaps by risk, dependency and enterprise value",
+        "Assign one accountable owner and verifiable outcome per action",
+        "Separate immediate containment from structural improvement",
+        "Reassess after evidence is updated or material change occurs"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case",
+        "Improve and Scale"
+      ],
+      "relatedDeliverables": [
+        "Application Portfolio",
+        "Current-State Discovery Baseline",
+        "Enterprise AI Strategy Decision Pack"
+      ],
+      "roles": [
+        "Application Portfolio Owner",
+        "Executive Sponsor",
+        "Enterprise Architect",
+        "Risk and Compliance",
+        "Evidence Owners"
+      ],
+      "prompts": [
+        "questions",
+        "findings",
+        "improvement",
+        "gap",
+        "roadmap",
+        "maturity",
+        "recommendations"
+      ]
+    },
+    {
+      "id": "ASM-012",
+      "slug": "integration-assessment",
+      "name": "Integration Assessment",
+      "type": "Architecture",
+      "topic": "Data & Integration",
+      "industry": "Technology",
+      "owner": "Integration Architect",
+      "primaryStage": "Discover",
+      "stageNumber": 1,
+      "deliverable": "Integration Catalogue",
+      "purpose": "Evaluate API, event, batch and agent integration patterns, reliability and governance.",
+      "value": "Provides an evidence-based view of data & integration strengths, gaps, risks and priorities so accountable leaders can make defensible investment and governance decisions.",
+      "objectives": [
+        "Establish a consistent baseline for data & integration",
+        "Rate maturity using the shared five-level model",
+        "Identify evidence gaps, risks and improvement priorities",
+        "Connect findings to Discover decisions and Integration Catalogue"
+      ],
+      "scope": [
+        "Data & Integration capabilities, controls and operating practices",
+        "People, process, technology, data and governance dependencies",
+        "Current evidence, known exceptions and target maturity",
+        "Enterprise and solution-level impacts relevant to Discover"
+      ],
+      "questions": [
+        "What outcomes and decisions must the Integration Assessment support?",
+        "Which data & integration capabilities are in scope, and who is accountable for them?",
+        "What current controls and practices are documented, implemented and operating effectively?",
+        "Which source evidence proves each claimed practice or outcome?",
+        "Where do evidence sources conflict, and who can resolve the conflict?",
+        "What material risks, dependencies, constraints and exceptions remain?",
+        "What maturity level is supported by verified evidence rather than aspiration?",
+        "Which improvements are required before the next methodology decision gate?",
+        "How will progress, residual risk and benefits be measured over time?"
+      ],
+      "evidence": [
+        "Approved policies, standards and decision records",
+        "Current inventories, architecture and operating records",
+        "Control design and operating-effectiveness evidence",
+        "Performance, risk, incident and financial measures",
+        "Interviews and workshops validated by accountable owners"
+      ],
+      "scoring": {
+        "scale": "0–4 per question",
+        "method": "0 = no evidence, 1 = initial, 2 = developing, 3 = managed, 4 = optimised or leading evidence",
+        "aggregation": "Category averages roll up only where minimum evidence thresholds are met.",
+        "confidence": "High, Medium, Low or Unverified; confidence is reported separately and never hidden inside the score."
+      },
+      "risk": [
+        "Critical — immediate decision or control intervention required",
+        "High — material exposure requiring a funded response",
+        "Medium — controlled remediation with named ownership",
+        "Low — monitor through normal improvement governance"
+      ],
+      "recommendations": [
+        "Prioritise gaps by risk, dependency and enterprise value",
+        "Assign one accountable owner and verifiable outcome per action",
+        "Separate immediate containment from structural improvement",
+        "Reassess after evidence is updated or material change occurs"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case",
+        "Improve and Scale"
+      ],
+      "relatedDeliverables": [
+        "Integration Catalogue",
+        "Current-State Discovery Baseline",
+        "Enterprise AI Strategy Decision Pack"
+      ],
+      "roles": [
+        "Integration Architect",
+        "Executive Sponsor",
+        "Enterprise Architect",
+        "Risk and Compliance",
+        "Evidence Owners"
+      ],
+      "prompts": [
+        "questions",
+        "findings",
+        "improvement",
+        "gap",
+        "roadmap",
+        "maturity",
+        "recommendations"
+      ]
+    },
+    {
+      "id": "ASM-013",
+      "slug": "infrastructure-assessment",
+      "name": "Infrastructure Assessment",
+      "type": "Architecture",
+      "topic": "Cloud AI",
+      "industry": "Technology",
+      "owner": "Infrastructure Lead",
+      "primaryStage": "Discover",
+      "stageNumber": 1,
+      "deliverable": "Infrastructure Assessment",
+      "purpose": "Assess compute, network, resilience, observability and capacity for AI workloads.",
+      "value": "Provides an evidence-based view of cloud ai strengths, gaps, risks and priorities so accountable leaders can make defensible investment and governance decisions.",
+      "objectives": [
+        "Establish a consistent baseline for cloud ai",
+        "Rate maturity using the shared five-level model",
+        "Identify evidence gaps, risks and improvement priorities",
+        "Connect findings to Discover decisions and Infrastructure Assessment"
+      ],
+      "scope": [
+        "Cloud AI capabilities, controls and operating practices",
+        "People, process, technology, data and governance dependencies",
+        "Current evidence, known exceptions and target maturity",
+        "Enterprise and solution-level impacts relevant to Discover"
+      ],
+      "questions": [
+        "What outcomes and decisions must the Infrastructure Assessment support?",
+        "Which cloud ai capabilities are in scope, and who is accountable for them?",
+        "What current controls and practices are documented, implemented and operating effectively?",
+        "Which source evidence proves each claimed practice or outcome?",
+        "Where do evidence sources conflict, and who can resolve the conflict?",
+        "What material risks, dependencies, constraints and exceptions remain?",
+        "What maturity level is supported by verified evidence rather than aspiration?",
+        "Which improvements are required before the next methodology decision gate?",
+        "How will progress, residual risk and benefits be measured over time?"
+      ],
+      "evidence": [
+        "Approved policies, standards and decision records",
+        "Current inventories, architecture and operating records",
+        "Control design and operating-effectiveness evidence",
+        "Performance, risk, incident and financial measures",
+        "Interviews and workshops validated by accountable owners"
+      ],
+      "scoring": {
+        "scale": "0–4 per question",
+        "method": "0 = no evidence, 1 = initial, 2 = developing, 3 = managed, 4 = optimised or leading evidence",
+        "aggregation": "Category averages roll up only where minimum evidence thresholds are met.",
+        "confidence": "High, Medium, Low or Unverified; confidence is reported separately and never hidden inside the score."
+      },
+      "risk": [
+        "Critical — immediate decision or control intervention required",
+        "High — material exposure requiring a funded response",
+        "Medium — controlled remediation with named ownership",
+        "Low — monitor through normal improvement governance"
+      ],
+      "recommendations": [
+        "Prioritise gaps by risk, dependency and enterprise value",
+        "Assign one accountable owner and verifiable outcome per action",
+        "Separate immediate containment from structural improvement",
+        "Reassess after evidence is updated or material change occurs"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case",
+        "Improve and Scale"
+      ],
+      "relatedDeliverables": [
+        "Infrastructure Assessment",
+        "Current-State Discovery Baseline",
+        "Enterprise AI Strategy Decision Pack"
+      ],
+      "roles": [
+        "Infrastructure Lead",
+        "Executive Sponsor",
+        "Enterprise Architect",
+        "Risk and Compliance",
+        "Evidence Owners"
+      ],
+      "prompts": [
+        "questions",
+        "findings",
+        "improvement",
+        "gap",
+        "roadmap",
+        "maturity",
+        "recommendations"
+      ]
+    },
+    {
+      "id": "ASM-014",
+      "slug": "cloud-readiness",
+      "name": "Cloud Readiness",
+      "type": "Readiness",
+      "topic": "Cloud AI",
+      "industry": "Technology",
+      "owner": "Cloud Platform Owner",
+      "primaryStage": "Assess Readiness",
+      "stageNumber": 2,
+      "deliverable": "Cloud Assessment",
+      "purpose": "Evaluate cloud foundations, landing zones, controls, economics and operating readiness.",
+      "value": "Provides an evidence-based view of cloud ai strengths, gaps, risks and priorities so accountable leaders can make defensible investment and governance decisions.",
+      "objectives": [
+        "Establish a consistent baseline for cloud ai",
+        "Rate maturity using the shared five-level model",
+        "Identify evidence gaps, risks and improvement priorities",
+        "Connect findings to Assess Readiness decisions and Cloud Assessment"
+      ],
+      "scope": [
+        "Cloud AI capabilities, controls and operating practices",
+        "People, process, technology, data and governance dependencies",
+        "Current evidence, known exceptions and target maturity",
+        "Enterprise and solution-level impacts relevant to Assess Readiness"
+      ],
+      "questions": [
+        "What outcomes and decisions must the Cloud Readiness support?",
+        "Which cloud ai capabilities are in scope, and who is accountable for them?",
+        "What current controls and practices are documented, implemented and operating effectively?",
+        "Which source evidence proves each claimed practice or outcome?",
+        "Where do evidence sources conflict, and who can resolve the conflict?",
+        "What material risks, dependencies, constraints and exceptions remain?",
+        "What maturity level is supported by verified evidence rather than aspiration?",
+        "Which improvements are required before the next methodology decision gate?",
+        "How will progress, residual risk and benefits be measured over time?"
+      ],
+      "evidence": [
+        "Approved policies, standards and decision records",
+        "Current inventories, architecture and operating records",
+        "Control design and operating-effectiveness evidence",
+        "Performance, risk, incident and financial measures",
+        "Interviews and workshops validated by accountable owners"
+      ],
+      "scoring": {
+        "scale": "0–4 per question",
+        "method": "0 = no evidence, 1 = initial, 2 = developing, 3 = managed, 4 = optimised or leading evidence",
+        "aggregation": "Category averages roll up only where minimum evidence thresholds are met.",
+        "confidence": "High, Medium, Low or Unverified; confidence is reported separately and never hidden inside the score."
+      },
+      "risk": [
+        "Critical — immediate decision or control intervention required",
+        "High — material exposure requiring a funded response",
+        "Medium — controlled remediation with named ownership",
+        "Low — monitor through normal improvement governance"
+      ],
+      "recommendations": [
+        "Prioritise gaps by risk, dependency and enterprise value",
+        "Assign one accountable owner and verifiable outcome per action",
+        "Separate immediate containment from structural improvement",
+        "Reassess after evidence is updated or material change occurs"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Assess Readiness",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case",
+        "Improve and Scale"
+      ],
+      "relatedDeliverables": [
+        "Cloud Assessment",
+        "Current-State Discovery Baseline",
+        "Enterprise AI Strategy Decision Pack"
+      ],
+      "roles": [
+        "Cloud Platform Owner",
+        "Executive Sponsor",
+        "Enterprise Architect",
+        "Risk and Compliance",
+        "Evidence Owners"
+      ],
+      "prompts": [
+        "questions",
+        "findings",
+        "improvement",
+        "gap",
+        "roadmap",
+        "maturity",
+        "recommendations"
+      ]
+    },
+    {
+      "id": "ASM-015",
+      "slug": "automation-maturity",
+      "name": "Automation Maturity",
+      "type": "Maturity",
+      "topic": "Automation",
+      "industry": "Business",
+      "owner": "Automation Lead",
+      "primaryStage": "Assess Readiness",
+      "stageNumber": 2,
+      "deliverable": "Automation Inventory",
+      "purpose": "Assess automation governance, delivery, reuse, controls and measurable value.",
+      "value": "Provides an evidence-based view of automation strengths, gaps, risks and priorities so accountable leaders can make defensible investment and governance decisions.",
+      "objectives": [
+        "Establish a consistent baseline for automation",
+        "Rate maturity using the shared five-level model",
+        "Identify evidence gaps, risks and improvement priorities",
+        "Connect findings to Assess Readiness decisions and Automation Inventory"
+      ],
+      "scope": [
+        "Automation capabilities, controls and operating practices",
+        "People, process, technology, data and governance dependencies",
+        "Current evidence, known exceptions and target maturity",
+        "Enterprise and solution-level impacts relevant to Assess Readiness"
+      ],
+      "questions": [
+        "What outcomes and decisions must the Automation Maturity support?",
+        "Which automation capabilities are in scope, and who is accountable for them?",
+        "What current controls and practices are documented, implemented and operating effectively?",
+        "Which source evidence proves each claimed practice or outcome?",
+        "Where do evidence sources conflict, and who can resolve the conflict?",
+        "What material risks, dependencies, constraints and exceptions remain?",
+        "What maturity level is supported by verified evidence rather than aspiration?",
+        "Which improvements are required before the next methodology decision gate?",
+        "How will progress, residual risk and benefits be measured over time?"
+      ],
+      "evidence": [
+        "Approved policies, standards and decision records",
+        "Current inventories, architecture and operating records",
+        "Control design and operating-effectiveness evidence",
+        "Performance, risk, incident and financial measures",
+        "Interviews and workshops validated by accountable owners"
+      ],
+      "scoring": {
+        "scale": "0–4 per question",
+        "method": "0 = no evidence, 1 = initial, 2 = developing, 3 = managed, 4 = optimised or leading evidence",
+        "aggregation": "Category averages roll up only where minimum evidence thresholds are met.",
+        "confidence": "High, Medium, Low or Unverified; confidence is reported separately and never hidden inside the score."
+      },
+      "risk": [
+        "Critical — immediate decision or control intervention required",
+        "High — material exposure requiring a funded response",
+        "Medium — controlled remediation with named ownership",
+        "Low — monitor through normal improvement governance"
+      ],
+      "recommendations": [
+        "Prioritise gaps by risk, dependency and enterprise value",
+        "Assign one accountable owner and verifiable outcome per action",
+        "Separate immediate containment from structural improvement",
+        "Reassess after evidence is updated or material change occurs"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Assess Readiness",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case",
+        "Improve and Scale"
+      ],
+      "relatedDeliverables": [
+        "Automation Inventory",
+        "Current-State Discovery Baseline",
+        "Enterprise AI Strategy Decision Pack"
+      ],
+      "roles": [
+        "Automation Lead",
+        "Executive Sponsor",
+        "Enterprise Architect",
+        "Risk and Compliance",
+        "Evidence Owners"
+      ],
+      "prompts": [
+        "questions",
+        "findings",
+        "improvement",
+        "gap",
+        "roadmap",
+        "maturity",
+        "recommendations"
+      ]
+    },
+    {
+      "id": "ASM-016",
+      "slug": "ai-platform-assessment",
+      "name": "AI Platform Assessment",
+      "type": "Architecture",
+      "topic": "AI Implementation",
+      "industry": "Technology",
+      "owner": "AI Platform Owner",
+      "primaryStage": "Design the Target Architecture",
+      "stageNumber": 7,
+      "deliverable": "AI Platform Assessment",
+      "purpose": "Evaluate platform capabilities for models, agents, RAG, evaluation, operations and governance.",
+      "value": "Provides an evidence-based view of ai implementation strengths, gaps, risks and priorities so accountable leaders can make defensible investment and governance decisions.",
+      "objectives": [
+        "Establish a consistent baseline for ai implementation",
+        "Rate maturity using the shared five-level model",
+        "Identify evidence gaps, risks and improvement priorities",
+        "Connect findings to Design the Target Architecture decisions and AI Platform Assessment"
+      ],
+      "scope": [
+        "AI Implementation capabilities, controls and operating practices",
+        "People, process, technology, data and governance dependencies",
+        "Current evidence, known exceptions and target maturity",
+        "Enterprise and solution-level impacts relevant to Design the Target Architecture"
+      ],
+      "questions": [
+        "What outcomes and decisions must the AI Platform Assessment support?",
+        "Which ai implementation capabilities are in scope, and who is accountable for them?",
+        "What current controls and practices are documented, implemented and operating effectively?",
+        "Which source evidence proves each claimed practice or outcome?",
+        "Where do evidence sources conflict, and who can resolve the conflict?",
+        "What material risks, dependencies, constraints and exceptions remain?",
+        "What maturity level is supported by verified evidence rather than aspiration?",
+        "Which improvements are required before the next methodology decision gate?",
+        "How will progress, residual risk and benefits be measured over time?"
+      ],
+      "evidence": [
+        "Approved policies, standards and decision records",
+        "Current inventories, architecture and operating records",
+        "Control design and operating-effectiveness evidence",
+        "Performance, risk, incident and financial measures",
+        "Interviews and workshops validated by accountable owners"
+      ],
+      "scoring": {
+        "scale": "0–4 per question",
+        "method": "0 = no evidence, 1 = initial, 2 = developing, 3 = managed, 4 = optimised or leading evidence",
+        "aggregation": "Category averages roll up only where minimum evidence thresholds are met.",
+        "confidence": "High, Medium, Low or Unverified; confidence is reported separately and never hidden inside the score."
+      },
+      "risk": [
+        "Critical — immediate decision or control intervention required",
+        "High — material exposure requiring a funded response",
+        "Medium — controlled remediation with named ownership",
+        "Low — monitor through normal improvement governance"
+      ],
+      "recommendations": [
+        "Prioritise gaps by risk, dependency and enterprise value",
+        "Assign one accountable owner and verifiable outcome per action",
+        "Separate immediate containment from structural improvement",
+        "Reassess after evidence is updated or material change occurs"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Design the Target Architecture",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case",
+        "Improve and Scale"
+      ],
+      "relatedDeliverables": [
+        "AI Platform Assessment",
+        "Current-State Discovery Baseline",
+        "Enterprise AI Strategy Decision Pack"
+      ],
+      "roles": [
+        "AI Platform Owner",
+        "Executive Sponsor",
+        "Enterprise Architect",
+        "Risk and Compliance",
+        "Evidence Owners"
+      ],
+      "prompts": [
+        "questions",
+        "findings",
+        "improvement",
+        "gap",
+        "roadmap",
+        "maturity",
+        "recommendations"
+      ]
+    },
+    {
+      "id": "ASM-017",
+      "slug": "vendor-assessment",
+      "name": "Vendor Assessment",
+      "type": "Risk",
+      "topic": "AI Risk",
+      "industry": "Vendor",
+      "owner": "Vendor Risk Lead",
+      "primaryStage": "Discover",
+      "stageNumber": 1,
+      "deliverable": "Vendor Landscape",
+      "purpose": "Evaluate vendor capability, security, resilience, lock-in, data use and contract controls.",
+      "value": "Provides an evidence-based view of ai risk strengths, gaps, risks and priorities so accountable leaders can make defensible investment and governance decisions.",
+      "objectives": [
+        "Establish a consistent baseline for ai risk",
+        "Rate maturity using the shared five-level model",
+        "Identify evidence gaps, risks and improvement priorities",
+        "Connect findings to Discover decisions and Vendor Landscape"
+      ],
+      "scope": [
+        "AI Risk capabilities, controls and operating practices",
+        "People, process, technology, data and governance dependencies",
+        "Current evidence, known exceptions and target maturity",
+        "Enterprise and solution-level impacts relevant to Discover"
+      ],
+      "questions": [
+        "What outcomes and decisions must the Vendor Assessment support?",
+        "Which ai risk capabilities are in scope, and who is accountable for them?",
+        "What current controls and practices are documented, implemented and operating effectively?",
+        "Which source evidence proves each claimed practice or outcome?",
+        "Where do evidence sources conflict, and who can resolve the conflict?",
+        "What material risks, dependencies, constraints and exceptions remain?",
+        "What maturity level is supported by verified evidence rather than aspiration?",
+        "Which improvements are required before the next methodology decision gate?",
+        "How will progress, residual risk and benefits be measured over time?"
+      ],
+      "evidence": [
+        "Approved policies, standards and decision records",
+        "Current inventories, architecture and operating records",
+        "Control design and operating-effectiveness evidence",
+        "Performance, risk, incident and financial measures",
+        "Interviews and workshops validated by accountable owners"
+      ],
+      "scoring": {
+        "scale": "0–4 per question",
+        "method": "0 = no evidence, 1 = initial, 2 = developing, 3 = managed, 4 = optimised or leading evidence",
+        "aggregation": "Category averages roll up only where minimum evidence thresholds are met.",
+        "confidence": "High, Medium, Low or Unverified; confidence is reported separately and never hidden inside the score."
+      },
+      "risk": [
+        "Critical — immediate decision or control intervention required",
+        "High — material exposure requiring a funded response",
+        "Medium — controlled remediation with named ownership",
+        "Low — monitor through normal improvement governance"
+      ],
+      "recommendations": [
+        "Prioritise gaps by risk, dependency and enterprise value",
+        "Assign one accountable owner and verifiable outcome per action",
+        "Separate immediate containment from structural improvement",
+        "Reassess after evidence is updated or material change occurs"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case",
+        "Improve and Scale"
+      ],
+      "relatedDeliverables": [
+        "Vendor Landscape",
+        "Current-State Discovery Baseline",
+        "Enterprise AI Strategy Decision Pack"
+      ],
+      "roles": [
+        "Vendor Risk Lead",
+        "Executive Sponsor",
+        "Enterprise Architect",
+        "Risk and Compliance",
+        "Evidence Owners"
+      ],
+      "prompts": [
+        "questions",
+        "findings",
+        "improvement",
+        "gap",
+        "roadmap",
+        "maturity",
+        "recommendations"
+      ]
+    },
+    {
+      "id": "ASM-018",
+      "slug": "regulatory-compliance-assessment",
+      "name": "Regulatory Compliance Assessment",
+      "type": "Compliance",
+      "topic": "Compliance",
+      "industry": "Enterprise",
+      "owner": "Compliance Lead",
+      "primaryStage": "Establish Governance",
+      "stageNumber": 4,
+      "deliverable": "Regulatory Assessment",
+      "purpose": "Assess obligations, evidence, accountability and control coverage across jurisdictions.",
+      "value": "Provides an evidence-based view of compliance strengths, gaps, risks and priorities so accountable leaders can make defensible investment and governance decisions.",
+      "objectives": [
+        "Establish a consistent baseline for compliance",
+        "Rate maturity using the shared five-level model",
+        "Identify evidence gaps, risks and improvement priorities",
+        "Connect findings to Establish Governance decisions and Regulatory Assessment"
+      ],
+      "scope": [
+        "Compliance capabilities, controls and operating practices",
+        "People, process, technology, data and governance dependencies",
+        "Current evidence, known exceptions and target maturity",
+        "Enterprise and solution-level impacts relevant to Establish Governance"
+      ],
+      "questions": [
+        "What outcomes and decisions must the Regulatory Compliance Assessment support?",
+        "Which compliance capabilities are in scope, and who is accountable for them?",
+        "What current controls and practices are documented, implemented and operating effectively?",
+        "Which source evidence proves each claimed practice or outcome?",
+        "Where do evidence sources conflict, and who can resolve the conflict?",
+        "What material risks, dependencies, constraints and exceptions remain?",
+        "What maturity level is supported by verified evidence rather than aspiration?",
+        "Which improvements are required before the next methodology decision gate?",
+        "How will progress, residual risk and benefits be measured over time?"
+      ],
+      "evidence": [
+        "Approved policies, standards and decision records",
+        "Current inventories, architecture and operating records",
+        "Control design and operating-effectiveness evidence",
+        "Performance, risk, incident and financial measures",
+        "Interviews and workshops validated by accountable owners"
+      ],
+      "scoring": {
+        "scale": "0–4 per question",
+        "method": "0 = no evidence, 1 = initial, 2 = developing, 3 = managed, 4 = optimised or leading evidence",
+        "aggregation": "Category averages roll up only where minimum evidence thresholds are met.",
+        "confidence": "High, Medium, Low or Unverified; confidence is reported separately and never hidden inside the score."
+      },
+      "risk": [
+        "Critical — immediate decision or control intervention required",
+        "High — material exposure requiring a funded response",
+        "Medium — controlled remediation with named ownership",
+        "Low — monitor through normal improvement governance"
+      ],
+      "recommendations": [
+        "Prioritise gaps by risk, dependency and enterprise value",
+        "Assign one accountable owner and verifiable outcome per action",
+        "Separate immediate containment from structural improvement",
+        "Reassess after evidence is updated or material change occurs"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Establish Governance",
+        "Define Strategy",
+        "Build the Business Case",
+        "Improve and Scale"
+      ],
+      "relatedDeliverables": [
+        "Regulatory Assessment",
+        "Current-State Discovery Baseline",
+        "Enterprise AI Strategy Decision Pack"
+      ],
+      "roles": [
+        "Compliance Lead",
+        "Executive Sponsor",
+        "Enterprise Architect",
+        "Risk and Compliance",
+        "Evidence Owners"
+      ],
+      "prompts": [
+        "questions",
+        "findings",
+        "improvement",
+        "gap",
+        "roadmap",
+        "maturity",
+        "recommendations"
+      ]
+    },
+    {
+      "id": "ASM-019",
+      "slug": "skills-and-workforce-assessment",
+      "name": "Skills & Workforce Assessment",
+      "type": "Readiness",
+      "topic": "Skills & Workforce",
+      "industry": "People",
+      "owner": "People and Change Lead",
+      "primaryStage": "Assess Readiness",
+      "stageNumber": 2,
+      "deliverable": "Skills Assessment",
+      "purpose": "Evaluate skills, roles, capacity, learning pathways and workforce impacts.",
+      "value": "Provides an evidence-based view of skills & workforce strengths, gaps, risks and priorities so accountable leaders can make defensible investment and governance decisions.",
+      "objectives": [
+        "Establish a consistent baseline for skills & workforce",
+        "Rate maturity using the shared five-level model",
+        "Identify evidence gaps, risks and improvement priorities",
+        "Connect findings to Assess Readiness decisions and Skills Assessment"
+      ],
+      "scope": [
+        "Skills & Workforce capabilities, controls and operating practices",
+        "People, process, technology, data and governance dependencies",
+        "Current evidence, known exceptions and target maturity",
+        "Enterprise and solution-level impacts relevant to Assess Readiness"
+      ],
+      "questions": [
+        "What outcomes and decisions must the Skills & Workforce Assessment support?",
+        "Which skills & workforce capabilities are in scope, and who is accountable for them?",
+        "What current controls and practices are documented, implemented and operating effectively?",
+        "Which source evidence proves each claimed practice or outcome?",
+        "Where do evidence sources conflict, and who can resolve the conflict?",
+        "What material risks, dependencies, constraints and exceptions remain?",
+        "What maturity level is supported by verified evidence rather than aspiration?",
+        "Which improvements are required before the next methodology decision gate?",
+        "How will progress, residual risk and benefits be measured over time?"
+      ],
+      "evidence": [
+        "Approved policies, standards and decision records",
+        "Current inventories, architecture and operating records",
+        "Control design and operating-effectiveness evidence",
+        "Performance, risk, incident and financial measures",
+        "Interviews and workshops validated by accountable owners"
+      ],
+      "scoring": {
+        "scale": "0–4 per question",
+        "method": "0 = no evidence, 1 = initial, 2 = developing, 3 = managed, 4 = optimised or leading evidence",
+        "aggregation": "Category averages roll up only where minimum evidence thresholds are met.",
+        "confidence": "High, Medium, Low or Unverified; confidence is reported separately and never hidden inside the score."
+      },
+      "risk": [
+        "Critical — immediate decision or control intervention required",
+        "High — material exposure requiring a funded response",
+        "Medium — controlled remediation with named ownership",
+        "Low — monitor through normal improvement governance"
+      ],
+      "recommendations": [
+        "Prioritise gaps by risk, dependency and enterprise value",
+        "Assign one accountable owner and verifiable outcome per action",
+        "Separate immediate containment from structural improvement",
+        "Reassess after evidence is updated or material change occurs"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Assess Readiness",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case",
+        "Improve and Scale"
+      ],
+      "relatedDeliverables": [
+        "Skills Assessment",
+        "Current-State Discovery Baseline",
+        "Enterprise AI Strategy Decision Pack"
+      ],
+      "roles": [
+        "People and Change Lead",
+        "Executive Sponsor",
+        "Enterprise Architect",
+        "Risk and Compliance",
+        "Evidence Owners"
+      ],
+      "prompts": [
+        "questions",
+        "findings",
+        "improvement",
+        "gap",
+        "roadmap",
+        "maturity",
+        "recommendations"
+      ]
+    },
+    {
+      "id": "ASM-020",
+      "slug": "operational-readiness",
+      "name": "Operational Readiness",
+      "type": "Readiness",
+      "topic": "AI Operations",
+      "industry": "Operations",
+      "owner": "Operations Lead",
+      "primaryStage": "Deploy and Transition",
+      "stageNumber": 11,
+      "deliverable": "Operational Readiness Assessment",
+      "purpose": "Assess service ownership, support, monitoring, incidents, continuity and operating controls.",
+      "value": "Provides an evidence-based view of ai operations strengths, gaps, risks and priorities so accountable leaders can make defensible investment and governance decisions.",
+      "objectives": [
+        "Establish a consistent baseline for ai operations",
+        "Rate maturity using the shared five-level model",
+        "Identify evidence gaps, risks and improvement priorities",
+        "Connect findings to Deploy and Transition decisions and Operational Readiness Assessment"
+      ],
+      "scope": [
+        "AI Operations capabilities, controls and operating practices",
+        "People, process, technology, data and governance dependencies",
+        "Current evidence, known exceptions and target maturity",
+        "Enterprise and solution-level impacts relevant to Deploy and Transition"
+      ],
+      "questions": [
+        "What outcomes and decisions must the Operational Readiness support?",
+        "Which ai operations capabilities are in scope, and who is accountable for them?",
+        "What current controls and practices are documented, implemented and operating effectively?",
+        "Which source evidence proves each claimed practice or outcome?",
+        "Where do evidence sources conflict, and who can resolve the conflict?",
+        "What material risks, dependencies, constraints and exceptions remain?",
+        "What maturity level is supported by verified evidence rather than aspiration?",
+        "Which improvements are required before the next methodology decision gate?",
+        "How will progress, residual risk and benefits be measured over time?"
+      ],
+      "evidence": [
+        "Approved policies, standards and decision records",
+        "Current inventories, architecture and operating records",
+        "Control design and operating-effectiveness evidence",
+        "Performance, risk, incident and financial measures",
+        "Interviews and workshops validated by accountable owners"
+      ],
+      "scoring": {
+        "scale": "0–4 per question",
+        "method": "0 = no evidence, 1 = initial, 2 = developing, 3 = managed, 4 = optimised or leading evidence",
+        "aggregation": "Category averages roll up only where minimum evidence thresholds are met.",
+        "confidence": "High, Medium, Low or Unverified; confidence is reported separately and never hidden inside the score."
+      },
+      "risk": [
+        "Critical — immediate decision or control intervention required",
+        "High — material exposure requiring a funded response",
+        "Medium — controlled remediation with named ownership",
+        "Low — monitor through normal improvement governance"
+      ],
+      "recommendations": [
+        "Prioritise gaps by risk, dependency and enterprise value",
+        "Assign one accountable owner and verifiable outcome per action",
+        "Separate immediate containment from structural improvement",
+        "Reassess after evidence is updated or material change occurs"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Deploy and Transition",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case",
+        "Improve and Scale"
+      ],
+      "relatedDeliverables": [
+        "Operational Readiness Assessment",
+        "Current-State Discovery Baseline",
+        "Enterprise AI Strategy Decision Pack"
+      ],
+      "roles": [
+        "Operations Lead",
+        "Executive Sponsor",
+        "Enterprise Architect",
+        "Risk and Compliance",
+        "Evidence Owners"
+      ],
+      "prompts": [
+        "questions",
+        "findings",
+        "improvement",
+        "gap",
+        "roadmap",
+        "maturity",
+        "recommendations"
+      ]
+    },
+    {
+      "id": "ASM-021",
+      "slug": "financial-readiness",
+      "name": "Financial Readiness",
+      "type": "Readiness",
+      "topic": "Financial Management",
+      "industry": "Enterprise",
+      "owner": "Finance Lead",
+      "primaryStage": "Build the Business Case",
+      "stageNumber": 6,
+      "deliverable": "Financial Readiness Assessment",
+      "purpose": "Assess funding, cost transparency, value measurement and investment governance.",
+      "value": "Provides an evidence-based view of financial management strengths, gaps, risks and priorities so accountable leaders can make defensible investment and governance decisions.",
+      "objectives": [
+        "Establish a consistent baseline for financial management",
+        "Rate maturity using the shared five-level model",
+        "Identify evidence gaps, risks and improvement priorities",
+        "Connect findings to Build the Business Case decisions and Financial Readiness Assessment"
+      ],
+      "scope": [
+        "Financial Management capabilities, controls and operating practices",
+        "People, process, technology, data and governance dependencies",
+        "Current evidence, known exceptions and target maturity",
+        "Enterprise and solution-level impacts relevant to Build the Business Case"
+      ],
+      "questions": [
+        "What outcomes and decisions must the Financial Readiness support?",
+        "Which financial management capabilities are in scope, and who is accountable for them?",
+        "What current controls and practices are documented, implemented and operating effectively?",
+        "Which source evidence proves each claimed practice or outcome?",
+        "Where do evidence sources conflict, and who can resolve the conflict?",
+        "What material risks, dependencies, constraints and exceptions remain?",
+        "What maturity level is supported by verified evidence rather than aspiration?",
+        "Which improvements are required before the next methodology decision gate?",
+        "How will progress, residual risk and benefits be measured over time?"
+      ],
+      "evidence": [
+        "Approved policies, standards and decision records",
+        "Current inventories, architecture and operating records",
+        "Control design and operating-effectiveness evidence",
+        "Performance, risk, incident and financial measures",
+        "Interviews and workshops validated by accountable owners"
+      ],
+      "scoring": {
+        "scale": "0–4 per question",
+        "method": "0 = no evidence, 1 = initial, 2 = developing, 3 = managed, 4 = optimised or leading evidence",
+        "aggregation": "Category averages roll up only where minimum evidence thresholds are met.",
+        "confidence": "High, Medium, Low or Unverified; confidence is reported separately and never hidden inside the score."
+      },
+      "risk": [
+        "Critical — immediate decision or control intervention required",
+        "High — material exposure requiring a funded response",
+        "Medium — controlled remediation with named ownership",
+        "Low — monitor through normal improvement governance"
+      ],
+      "recommendations": [
+        "Prioritise gaps by risk, dependency and enterprise value",
+        "Assign one accountable owner and verifiable outcome per action",
+        "Separate immediate containment from structural improvement",
+        "Reassess after evidence is updated or material change occurs"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Build the Business Case",
+        "Define Strategy",
+        "Establish Governance",
+        "Improve and Scale"
+      ],
+      "relatedDeliverables": [
+        "Financial Readiness Assessment",
+        "Current-State Discovery Baseline",
+        "Enterprise AI Strategy Decision Pack"
+      ],
+      "roles": [
+        "Finance Lead",
+        "Executive Sponsor",
+        "Enterprise Architect",
+        "Risk and Compliance",
+        "Evidence Owners"
+      ],
+      "prompts": [
+        "questions",
+        "findings",
+        "improvement",
+        "gap",
+        "roadmap",
+        "maturity",
+        "recommendations"
+      ]
+    },
+    {
+      "id": "ASM-022",
+      "slug": "change-management-readiness",
+      "name": "Change Management Readiness",
+      "type": "Readiness",
+      "topic": "Change Management",
+      "industry": "People",
+      "owner": "Change Lead",
+      "primaryStage": "Plan Implementation",
+      "stageNumber": 8,
+      "deliverable": "Change Readiness Assessment",
+      "purpose": "Assess stakeholder readiness, adoption barriers, communication, training and reinforcement.",
+      "value": "Provides an evidence-based view of change management strengths, gaps, risks and priorities so accountable leaders can make defensible investment and governance decisions.",
+      "objectives": [
+        "Establish a consistent baseline for change management",
+        "Rate maturity using the shared five-level model",
+        "Identify evidence gaps, risks and improvement priorities",
+        "Connect findings to Plan Implementation decisions and Change Readiness Assessment"
+      ],
+      "scope": [
+        "Change Management capabilities, controls and operating practices",
+        "People, process, technology, data and governance dependencies",
+        "Current evidence, known exceptions and target maturity",
+        "Enterprise and solution-level impacts relevant to Plan Implementation"
+      ],
+      "questions": [
+        "What outcomes and decisions must the Change Management Readiness support?",
+        "Which change management capabilities are in scope, and who is accountable for them?",
+        "What current controls and practices are documented, implemented and operating effectively?",
+        "Which source evidence proves each claimed practice or outcome?",
+        "Where do evidence sources conflict, and who can resolve the conflict?",
+        "What material risks, dependencies, constraints and exceptions remain?",
+        "What maturity level is supported by verified evidence rather than aspiration?",
+        "Which improvements are required before the next methodology decision gate?",
+        "How will progress, residual risk and benefits be measured over time?"
+      ],
+      "evidence": [
+        "Approved policies, standards and decision records",
+        "Current inventories, architecture and operating records",
+        "Control design and operating-effectiveness evidence",
+        "Performance, risk, incident and financial measures",
+        "Interviews and workshops validated by accountable owners"
+      ],
+      "scoring": {
+        "scale": "0–4 per question",
+        "method": "0 = no evidence, 1 = initial, 2 = developing, 3 = managed, 4 = optimised or leading evidence",
+        "aggregation": "Category averages roll up only where minimum evidence thresholds are met.",
+        "confidence": "High, Medium, Low or Unverified; confidence is reported separately and never hidden inside the score."
+      },
+      "risk": [
+        "Critical — immediate decision or control intervention required",
+        "High — material exposure requiring a funded response",
+        "Medium — controlled remediation with named ownership",
+        "Low — monitor through normal improvement governance"
+      ],
+      "recommendations": [
+        "Prioritise gaps by risk, dependency and enterprise value",
+        "Assign one accountable owner and verifiable outcome per action",
+        "Separate immediate containment from structural improvement",
+        "Reassess after evidence is updated or material change occurs"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Plan Implementation",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case",
+        "Improve and Scale"
+      ],
+      "relatedDeliverables": [
+        "Change Readiness Assessment",
+        "Current-State Discovery Baseline",
+        "Enterprise AI Strategy Decision Pack"
+      ],
+      "roles": [
+        "Change Lead",
+        "Executive Sponsor",
+        "Enterprise Architect",
+        "Risk and Compliance",
+        "Evidence Owners"
+      ],
+      "prompts": [
+        "questions",
+        "findings",
+        "improvement",
+        "gap",
+        "roadmap",
+        "maturity",
+        "recommendations"
+      ]
+    },
+    {
+      "id": "ASM-023",
+      "slug": "shadow-ai-assessment",
+      "name": "Shadow AI Assessment",
+      "type": "Risk",
+      "topic": "Responsible AI",
+      "industry": "Enterprise",
+      "owner": "CISO",
+      "primaryStage": "Discover",
+      "stageNumber": 1,
+      "deliverable": "Shadow AI Register",
+      "purpose": "Identify unapproved AI use, exposure, unmet demand and proportionate remediation paths.",
+      "value": "Provides an evidence-based view of responsible ai strengths, gaps, risks and priorities so accountable leaders can make defensible investment and governance decisions.",
+      "objectives": [
+        "Establish a consistent baseline for responsible ai",
+        "Rate maturity using the shared five-level model",
+        "Identify evidence gaps, risks and improvement priorities",
+        "Connect findings to Discover decisions and Shadow AI Register"
+      ],
+      "scope": [
+        "Responsible AI capabilities, controls and operating practices",
+        "People, process, technology, data and governance dependencies",
+        "Current evidence, known exceptions and target maturity",
+        "Enterprise and solution-level impacts relevant to Discover"
+      ],
+      "questions": [
+        "What outcomes and decisions must the Shadow AI Assessment support?",
+        "Which responsible ai capabilities are in scope, and who is accountable for them?",
+        "What current controls and practices are documented, implemented and operating effectively?",
+        "Which source evidence proves each claimed practice or outcome?",
+        "Where do evidence sources conflict, and who can resolve the conflict?",
+        "What material risks, dependencies, constraints and exceptions remain?",
+        "What maturity level is supported by verified evidence rather than aspiration?",
+        "Which improvements are required before the next methodology decision gate?",
+        "How will progress, residual risk and benefits be measured over time?"
+      ],
+      "evidence": [
+        "Approved policies, standards and decision records",
+        "Current inventories, architecture and operating records",
+        "Control design and operating-effectiveness evidence",
+        "Performance, risk, incident and financial measures",
+        "Interviews and workshops validated by accountable owners"
+      ],
+      "scoring": {
+        "scale": "0–4 per question",
+        "method": "0 = no evidence, 1 = initial, 2 = developing, 3 = managed, 4 = optimised or leading evidence",
+        "aggregation": "Category averages roll up only where minimum evidence thresholds are met.",
+        "confidence": "High, Medium, Low or Unverified; confidence is reported separately and never hidden inside the score."
+      },
+      "risk": [
+        "Critical — immediate decision or control intervention required",
+        "High — material exposure requiring a funded response",
+        "Medium — controlled remediation with named ownership",
+        "Low — monitor through normal improvement governance"
+      ],
+      "recommendations": [
+        "Prioritise gaps by risk, dependency and enterprise value",
+        "Assign one accountable owner and verifiable outcome per action",
+        "Separate immediate containment from structural improvement",
+        "Reassess after evidence is updated or material change occurs"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case",
+        "Improve and Scale"
+      ],
+      "relatedDeliverables": [
+        "Shadow AI Register",
+        "Current-State Discovery Baseline",
+        "Enterprise AI Strategy Decision Pack"
+      ],
+      "roles": [
+        "CISO",
+        "Executive Sponsor",
+        "Enterprise Architect",
+        "Risk and Compliance",
+        "Evidence Owners"
+      ],
+      "prompts": [
+        "questions",
+        "findings",
+        "improvement",
+        "gap",
+        "roadmap",
+        "maturity",
+        "recommendations"
+      ]
+    },
+    {
+      "id": "ASM-024",
+      "slug": "production-readiness-assessment",
+      "name": "Production Readiness Assessment",
+      "type": "Readiness",
+      "topic": "AI Operations",
+      "industry": "Operations",
+      "owner": "Service Owner",
+      "primaryStage": "Test and Validate",
+      "stageNumber": 10,
+      "deliverable": "Production Readiness Evidence Pack",
+      "purpose": "Determine whether a release can operate securely, reliably and accountably in production.",
+      "value": "Provides an evidence-based view of ai operations strengths, gaps, risks and priorities so accountable leaders can make defensible investment and governance decisions.",
+      "objectives": [
+        "Establish a consistent baseline for ai operations",
+        "Rate maturity using the shared five-level model",
+        "Identify evidence gaps, risks and improvement priorities",
+        "Connect findings to Test and Validate decisions and Production Readiness Evidence Pack"
+      ],
+      "scope": [
+        "AI Operations capabilities, controls and operating practices",
+        "People, process, technology, data and governance dependencies",
+        "Current evidence, known exceptions and target maturity",
+        "Enterprise and solution-level impacts relevant to Test and Validate"
+      ],
+      "questions": [
+        "What outcomes and decisions must the Production Readiness Assessment support?",
+        "Which ai operations capabilities are in scope, and who is accountable for them?",
+        "What current controls and practices are documented, implemented and operating effectively?",
+        "Which source evidence proves each claimed practice or outcome?",
+        "Where do evidence sources conflict, and who can resolve the conflict?",
+        "What material risks, dependencies, constraints and exceptions remain?",
+        "What maturity level is supported by verified evidence rather than aspiration?",
+        "Which improvements are required before the next methodology decision gate?",
+        "How will progress, residual risk and benefits be measured over time?"
+      ],
+      "evidence": [
+        "Approved policies, standards and decision records",
+        "Current inventories, architecture and operating records",
+        "Control design and operating-effectiveness evidence",
+        "Performance, risk, incident and financial measures",
+        "Interviews and workshops validated by accountable owners"
+      ],
+      "scoring": {
+        "scale": "0–4 per question",
+        "method": "0 = no evidence, 1 = initial, 2 = developing, 3 = managed, 4 = optimised or leading evidence",
+        "aggregation": "Category averages roll up only where minimum evidence thresholds are met.",
+        "confidence": "High, Medium, Low or Unverified; confidence is reported separately and never hidden inside the score."
+      },
+      "risk": [
+        "Critical — immediate decision or control intervention required",
+        "High — material exposure requiring a funded response",
+        "Medium — controlled remediation with named ownership",
+        "Low — monitor through normal improvement governance"
+      ],
+      "recommendations": [
+        "Prioritise gaps by risk, dependency and enterprise value",
+        "Assign one accountable owner and verifiable outcome per action",
+        "Separate immediate containment from structural improvement",
+        "Reassess after evidence is updated or material change occurs"
+      ],
+      "relatedStages": [
+        "Discover",
+        "Test and Validate",
+        "Define Strategy",
+        "Establish Governance",
+        "Build the Business Case",
+        "Improve and Scale"
+      ],
+      "relatedDeliverables": [
+        "Production Readiness Evidence Pack",
+        "Current-State Discovery Baseline",
+        "Enterprise AI Strategy Decision Pack"
+      ],
+      "roles": [
+        "Service Owner",
+        "Executive Sponsor",
+        "Enterprise Architect",
+        "Risk and Compliance",
+        "Evidence Owners"
+      ],
+      "prompts": [
+        "questions",
+        "findings",
+        "improvement",
+        "gap",
+        "roadmap",
+        "maturity",
+        "recommendations"
+      ]
+    }
+  ]
+}

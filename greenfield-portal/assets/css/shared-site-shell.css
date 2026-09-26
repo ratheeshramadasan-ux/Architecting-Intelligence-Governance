@@ -1,0 +1,81 @@
+:root{
+  --footer-background:#d9d5ca;
+  --footer-surface:#f7f3e9;
+  --footer-text:#0f2a4a;
+  --footer-muted-text:#29445c;
+  --footer-link:#08264a;
+  --footer-link-hover:#765515;
+  --footer-border:#bbb4a5;
+  --footer-accent:#b8862c;
+  --footer-deep:#061d38;
+}
+html{width:100%;height:100%;overflow:hidden}
+body.application-shell{
+  width:100%;
+  height:100vh;
+  height:100dvh;
+  min-height:0;
+  margin:0;
+  padding:0;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+  overscroll-behavior:none;
+}
+body.application-shell>[data-shell-region="header"],
+body.application-shell>[data-shell-region="footer"]{position:relative;flex:0 0 auto}
+body.application-shell>[data-shell-region="main"]{
+  position:relative;
+  flex:1 1 auto;
+  width:100%;
+  min-width:0;
+  min-height:0;
+  overflow-x:hidden;
+  overflow-y:auto;
+  overscroll-behavior-y:contain;
+  scrollbar-gutter:stable;
+  -webkit-overflow-scrolling:touch;
+}
+body.application-shell>[data-shell-region="main"]::after{
+  content:"";
+  position:fixed;
+  z-index:35;
+  top:50%;
+  left:50%;
+  width:min(34vw,420px);
+  aspect-ratio:1906/825;
+  background:url("/assets/images/ratheesh-technology-logo-transparent.png?v=20260727-8") center/contain no-repeat;
+  opacity:.075;
+  pointer-events:none;
+  transform:translate(-50%,-50%) rotate(-12deg);
+  user-select:none;
+}
+.shared-enterprise-footer{position:static;display:block;width:100%;min-height:0;margin:0;padding:0;border:0;border-top:1px solid var(--footer-border);background:var(--footer-background);color:var(--footer-text);box-shadow:none;font-family:"DM Mono","Courier New",monospace;font-size:1rem;letter-spacing:normal;text-transform:none}
+.shared-enterprise-footer *{box-sizing:border-box}
+.shared-footer-inner{display:flex;width:min(1240px,calc(100% - 40px));min-height:66px;margin-inline:auto;align-items:center;justify-content:space-between;gap:32px;padding:8px 0}
+.shared-footer-identity{display:flex;min-width:0;align-items:center;gap:18px}
+.shared-footer-identity img{display:block;width:80px;height:38px;margin:0;padding:0;border:0;border-radius:0;background:transparent;object-fit:contain;object-position:left center}
+.shared-footer-identity strong,.shared-footer-inner>p{margin:0;color:var(--footer-text);font-size:.72rem;font-weight:800;letter-spacing:.055em;line-height:1.3}
+.shared-footer-inner>p{display:block;flex:0 0 auto}
+.shared-footer-inner>nav{display:flex;gap:10px}.shared-footer-inner>nav a{color:inherit;font-size:.68rem;text-decoration:none}.shared-footer-inner>nav a+a::before{content:"·";margin-right:10px;color:var(--footer-accent)}
+@media(min-width:821px){
+  .methodology-navigation .methodology-nav-item:nth-last-child(-n+2) .methodology-submenu{right:0;left:auto}
+}
+@media(max-width:680px){
+  body.application-shell>[data-shell-region="main"]::after{width:min(62vw,300px);opacity:.08}
+  .shared-footer-inner{display:grid;width:calc(100% - 32px);min-height:0;justify-content:start;gap:8px;padding:14px 0 max(14px,env(safe-area-inset-bottom))}
+  .shared-footer-identity{gap:12px}
+  .shared-footer-identity img{width:72px;height:34px}
+  .shared-footer-identity strong,.shared-footer-inner>p{font-size:.66rem}
+}
+@media print{
+  html,body.application-shell{height:auto;overflow:visible}
+  body.application-shell>[data-shell-region="main"]{overflow:visible}
+  body.application-shell>[data-shell-region="main"]::after{
+    position:fixed;
+    width:55mm;
+    opacity:.1;
+    -webkit-print-color-adjust:exact;
+    print-color-adjust:exact;
+  }
+}

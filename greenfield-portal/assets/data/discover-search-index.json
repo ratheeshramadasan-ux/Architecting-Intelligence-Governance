@@ -1,0 +1,390 @@
+{
+  "version": "1.0.0",
+  "records": [
+    {
+      "type": "Domain",
+      "title": "Business Strategy & Objectives",
+      "summary": "Understand strategic direction, outcomes, constraints and measures.",
+      "href": "/transformation/stage-1-discover/domains/business-strategy/",
+      "keywords": "Executive Sponsor S t r a t e g y   a n d   B u s i n e s s   O w n e r s Approved strategy Objectives and measures Investment priorities Known constraints Strategy documents Executive decisions Performance reports"
+    },
+    {
+      "type": "Domain",
+      "title": "Business Capabilities",
+      "summary": "Map what the enterprise must be able to do and who owns each capability.",
+      "href": "/transformation/stage-1-discover/domains/business-capabilities/",
+      "keywords": "Business Owner E n t e r p r i s e   A r c h i t e c t u r e   a n d   C a p a b i l i t y   O w n e r s Capability name and definition Owner Maturity Pain points Measures Dependencies Capability maps Operating-model records Performance evidence"
+    },
+    {
+      "type": "Domain",
+      "title": "Business Processes",
+      "summary": "Identify how work flows, where friction exists and which controls apply.",
+      "href": "/transformation/stage-1-discover/domains/business-processes/",
+      "keywords": "Process Owner B u s i n e s s   A n a l y s t s   a n d   O p e r a t i o n s Process purpose Steps Volumes Cycle time Systems Data Controls Pain points Process repository Procedures Operational measures"
+    },
+    {
+      "type": "Domain",
+      "title": "Organisational Structure",
+      "summary": "Understand accountability, capacity, decision paths and organisational boundaries.",
+      "href": "/transformation/stage-1-discover/domains/organisational-structure/",
+      "keywords": "HR Executive H R ,   B u s i n e s s   O w n e r s   a n d   P r o g r a m m e Functions Roles Reporting lines Decision rights Capacity Locations Organisation charts Role profiles Workforce plans"
+    },
+    {
+      "type": "Domain",
+      "title": "Applications & Systems",
+      "summary": "Create an owned view of applications, lifecycle, cost, risk and business use.",
+      "href": "/transformation/stage-1-discover/domains/applications-systems/",
+      "keywords": "CIO/CTO A p p l i c a t i o n   O w n e r s   a n d   E n t e r p r i s e   A r c h i t e c t u r e Application Owner Purpose Users Capabilities Interfaces Data Lifecycle Cost Risk CMDB Application portfolio Architecture repository Contracts"
+    },
+    {
+      "type": "Domain",
+      "title": "Data & Information",
+      "summary": "Identify governed data assets, quality, classification, lineage and constraints.",
+      "href": "/transformation/stage-1-discover/domains/data-information/",
+      "keywords": "Chief Data Officer D a t a   O w n e r s ,   S t e w a r d s ,   P r i v a c y   a n d   S e c u r i t y Data asset Owner Purpose Classification Quality Lineage Residency Retention Access Data catalogue Quality reports Privacy records Schemas"
+    },
+    {
+      "type": "Domain",
+      "title": "AI Landscape",
+      "summary": "Inventory approved and emerging AI capabilities, models, use cases and dependencies.",
+      "href": "/transformation/stage-1-discover/domains/ai-landscape/",
+      "keywords": "Platform Owner A I / M L   L e a d s ,   B u s i n e s s   O w n e r s   a n d   R i s k Use case Owner Model/provider Data Users Environment Risk tier Controls Cost Status AI inventory Model registry Vendor records Usage telemetry"
+    },
+    {
+      "type": "Domain",
+      "title": "Automation Landscape",
+      "summary": "Understand workflow, RPA, low-code and document automation already in use.",
+      "href": "/transformation/stage-1-discover/domains/automation-landscape/",
+      "keywords": "Automation Lead P r o c e s s   O w n e r s ,   P l a t f o r m   T e a m s   a n d   O p e r a t i o n s Automation Owner Process Platform Volume Failure rate Controls Dependencies Support Automation repository Orchestrator logs Process maps"
+    },
+    {
+      "type": "Domain",
+      "title": "Infrastructure & Hosting",
+      "summary": "Assess compute, storage, network, hosting, resilience and capacity constraints.",
+      "href": "/transformation/stage-1-discover/domains/infrastructure-hosting/",
+      "keywords": "Infrastructure Lead C l o u d ,   N e t w o r k ,   P l a t f o r m   a n d   O p e r a t i o n s Platform Location Capacity Utilisation Availability Network Backup Recovery Cost CMDB Monitoring Capacity reports DR tests"
+    },
+    {
+      "type": "Domain",
+      "title": "Cloud Platforms",
+      "summary": "Understand cloud accounts, services, landing zones, controls, cost and sovereignty.",
+      "href": "/transformation/stage-1-discover/domains/cloud-platforms/",
+      "keywords": "Cloud Platform Owner C l o u d   E n g i n e e r i n g ,   S e c u r i t y ,   F i n a n c e   a n d   P r o c u r e m e n t Provider Account/subscription Region Services Landing zone Controls Cost Owner Commitments Cloud inventory Billing Policy Architecture records"
+    },
+    {
+      "type": "Domain",
+      "title": "Identity & Access Management",
+      "summary": "Assess human, service and agent identities, authentication and authorisation.",
+      "href": "/transformation/stage-1-discover/domains/identity-access/",
+      "keywords": "Identity Lead S e c u r i t y ,   A p p l i c a t i o n   O w n e r s   a n d   H R Identity type Source Authentication Authorisation Privileged access Lifecycle Review Logging Identity provider PAM Access reviews Application roles"
+    },
+    {
+      "type": "Domain",
+      "title": "Cybersecurity",
+      "summary": "Establish current threats, controls, incidents, monitoring and assurance.",
+      "href": "/transformation/stage-1-discover/domains/cybersecurity/",
+      "keywords": "CISO S e c u r i t y   A r c h i t e c t u r e ,   O p e r a t i o n s ,   R i s k   a n d   A u d i t Assets Threats Controls Vulnerabilities Incidents Monitoring Testing Exceptions Security tools Risk register Incident records Audit reports"
+    },
+    {
+      "type": "Domain",
+      "title": "Integration & APIs",
+      "summary": "Catalogue interfaces, ownership, data flows, protocols and failure paths.",
+      "href": "/transformation/stage-1-discover/domains/integration-apis/",
+      "keywords": "Integration Owner A p p l i c a t i o n   T e a m s ,   A r c h i t e c t u r e   a n d   S e c u r i t y Interface Source Target Owner Protocol Data Authentication SLA Failure handling API gateway Integration platform Architecture diagrams Logs"
+    },
+    {
+      "type": "Domain",
+      "title": "Vendors & Third Parties",
+      "summary": "Understand suppliers, services, contracts, data access, dependencies and assurance.",
+      "href": "/transformation/stage-1-discover/domains/vendors-third-parties/",
+      "keywords": "Procurement Lead V e n d o r   O w n e r s ,   L e g a l ,   S e c u r i t y   a n d   F i n a n c e Vendor Service Owner Contract Data access Subprocessors SLA Assurance Exit plan Cost Contracts Vendor register Assessments Invoices"
+    },
+    {
+      "type": "Domain",
+      "title": "Operations & Service Management",
+      "summary": "Assess ownership, service levels, monitoring, incidents, change and continuity.",
+      "href": "/transformation/stage-1-discover/domains/operations-service-management/",
+      "keywords": "Operations Lead S e r v i c e   O w n e r s ,   S u p p o r t   a n d   E n g i n e e r i n g Service Owner SLO/SLA Support Monitoring Incidents Changes Capacity Continuity Service catalogue ITSM Monitoring Runbooks"
+    },
+    {
+      "type": "Domain",
+      "title": "Regulatory & Compliance",
+      "summary": "Identify applicable obligations, evidence, control owners and gaps.",
+      "href": "/transformation/stage-1-discover/domains/regulatory-compliance/",
+      "keywords": "Risk and Compliance Lead L e g a l ,   P r i v a c y ,   S e c u r i t y   a n d   A u d i t Obligation Applicability Owner Control Evidence Review frequency Gap Exception Obligation register Policies Audit reports Legal advice"
+    },
+    {
+      "type": "Domain",
+      "title": "Financial Baseline",
+      "summary": "Establish transparent current costs and units before value or ROI estimates.",
+      "href": "/transformation/stage-1-discover/domains/financial-baseline/",
+      "keywords": "Finance Lead T e c h n o l o g y   F i n a n c e ,   P r o c u r e m e n t   a n d   S e r v i c e   O w n e r s Cost category Amount/range Unit Owner Period Allocation Commitment Confidence General ledger Invoices Cloud billing Resource plans"
+    },
+    {
+      "type": "Domain",
+      "title": "Skills & Workforce",
+      "summary": "Understand roles, skills, capacity, learning needs and workforce constraints.",
+      "href": "/transformation/stage-1-discover/domains/skills-workforce/",
+      "keywords": "HR/Workforce Lead B u s i n e s s ,   T e c h n o l o g y ,   C h a n g e   a n d   L e a r n i n g Role Skill Proficiency Capacity Demand Gap Location Learning path Skills inventory Role profiles Training records Workforce plans"
+    },
+    {
+      "type": "Domain",
+      "title": "Existing Governance",
+      "summary": "Map policies, forums, controls, decisions, evidence and assurance already in place.",
+      "href": "/transformation/stage-1-discover/domains/existing-governance/",
+      "keywords": "Platform Owner R i s k ,   D a t a ,   S e c u r i t y ,   P r i v a c y ,   L e g a l   a n d   A u d i t Forum Policy Control Owner Decision right Evidence Review Exception Policy library Committee terms Control library Audit evidence"
+    },
+    {
+      "type": "Domain",
+      "title": "Shadow AI & Unapproved Technology",
+      "summary": "Identify unapproved AI use safely, without discouraging disclosure or inventing prevalence.",
+      "href": "/transformation/stage-1-discover/domains/shadow-ai/",
+      "keywords": "Risk Executive S e c u r i t y ,   P r i v a c y ,   H R ,   P r o c u r e m e n t   a n d   B u s i n e s s   O w n e r s Tool/use case Owner/user group Purpose Data Access route Spend Risk Immediate action Expense data Network telemetry Surveys Interviews Incident reports"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Current-State Assessment Report",
+      "summary": "Provide the validated, integrated baseline consumed by Assess Readiness.",
+      "href": "/transformation/stage-1-discover/deliverables/current-state-assessment/",
+      "keywords": "Assessment Programme Director Platform Owner Executive summary Scope and method Domain findings Evidence confidence Risks and constraints Missing information Decisions Approval business-strategy organisational-structure operations-service-management"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Business Capability Catalogue",
+      "summary": "Create a canonical capability view with ownership, maturity and pain points.",
+      "href": "/transformation/stage-1-discover/deliverables/business-capability-catalogue/",
+      "keywords": "Catalogue Business Owner Enterprise Architect Capability Definition Owner Maturity Measures Pain points Dependencies Evidence business-capabilities"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Process Inventory",
+      "summary": "Record priority processes, systems, data, controls and performance.",
+      "href": "/transformation/stage-1-discover/deliverables/process-inventory/",
+      "keywords": "Inventory Process Owner Business Owner Process Owner Purpose Steps Volume Systems Data Controls Pain points business-processes"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Application Portfolio",
+      "summary": "Create an owned, lifecycle-aware application baseline.",
+      "href": "/transformation/stage-1-discover/deliverables/application-portfolio/",
+      "keywords": "Portfolio CIO/CTO Enterprise Architect Application Owner Purpose Capabilities Interfaces Data Lifecycle Cost Risk Disposition applications-systems"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Technology Landscape",
+      "summary": "Connect platforms, infrastructure, cloud and technical constraints.",
+      "href": "/transformation/stage-1-discover/deliverables/technology-landscape/",
+      "keywords": "Architecture record Enterprise Architect CTO Domain Technology Owner Version Hosting Dependencies Lifecycle Standards Constraints applications-systems infrastructure-hosting integration-apis"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Data Inventory",
+      "summary": "Record governed data assets, classification, quality and lineage.",
+      "href": "/transformation/stage-1-discover/deliverables/data-inventory/",
+      "keywords": "Inventory Data Owner Chief Data Officer Data asset Owner Purpose Classification Quality Lineage Residency Retention Access data-information"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Integration Catalogue",
+      "summary": "Record interfaces, data flows, authentication, service levels and failures.",
+      "href": "/transformation/stage-1-discover/deliverables/integration-catalogue/",
+      "keywords": "Catalogue Integration Owner Enterprise Architect Interface Source Target Owner Protocol Data Authentication SLA Failure path integration-apis"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Infrastructure Assessment",
+      "summary": "Assess capacity, resilience, hosting, network and operational constraints.",
+      "href": "/transformation/stage-1-discover/deliverables/infrastructure-assessment/",
+      "keywords": "Assessment Infrastructure Lead CTO Platform Location Capacity Utilisation Availability Network Backup Recovery Constraint infrastructure-hosting"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Cloud Assessment",
+      "summary": "Assess cloud footprint, landing zones, controls, cost and sovereignty.",
+      "href": "/transformation/stage-1-discover/deliverables/cloud-assessment/",
+      "keywords": "Assessment Cloud Platform Owner CTO Provider Account Region Service Owner Control posture Cost Commitment Constraint cloud-platforms"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Security Assessment",
+      "summary": "Establish current threats, controls, gaps, incidents and assurance.",
+      "href": "/transformation/stage-1-discover/deliverables/security-assessment/",
+      "keywords": "Assessment CISO Risk Executive Asset/domain Threat Control Effectiveness Evidence Gap Owner Remediation identity-access cybersecurity"
+    },
+    {
+      "type": "Deliverable",
+      "title": "IAM Assessment",
+      "summary": "Assess identity lifecycle, authentication, authorisation and privilege.",
+      "href": "/transformation/stage-1-discover/deliverables/iam-assessment/",
+      "keywords": "Assessment Identity Lead CISO Identity type Source Authentication Authorisation Privilege Lifecycle Review Logging Gap identity-access"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Vendor Landscape",
+      "summary": "Create an owned view of supplier services, contracts, risk and exit constraints.",
+      "href": "/transformation/stage-1-discover/deliverables/vendor-landscape/",
+      "keywords": "Register Procurement Lead CIO/CTO Vendor Service Owner Contract Data access Assurance SLA Cost Exit plan vendors-third-parties"
+    },
+    {
+      "type": "Deliverable",
+      "title": "AI Capability Inventory",
+      "summary": "Record approved AI systems, models, providers, data, controls and status.",
+      "href": "/transformation/stage-1-discover/deliverables/ai-capability-inventory/",
+      "keywords": "Inventory Platform Owner Risk Executive Use case Owner Model/provider Data Users Environment Risk Controls Cost Status ai-landscape"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Automation Inventory",
+      "summary": "Record automations, platforms, processes, controls, performance and support.",
+      "href": "/transformation/stage-1-discover/deliverables/automation-inventory/",
+      "keywords": "Inventory Automation Lead Operations Lead Automation Owner Process Platform Volume Performance Controls Dependencies Support automation-landscape"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Skills Assessment",
+      "summary": "Assess current skills, capacity, demand and learning gaps.",
+      "href": "/transformation/stage-1-discover/deliverables/skills-assessment/",
+      "keywords": "Assessment Workforce Lead Business Owner Role Skill Current proficiency Required proficiency Capacity Gap Evidence Action organisational-structure skills-workforce"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Governance Assessment",
+      "summary": "Assess current policies, forums, controls, evidence and decision rights.",
+      "href": "/transformation/stage-1-discover/deliverables/governance-assessment/",
+      "keywords": "Assessment Platform Owner Risk Executive Governance object Owner Purpose Coverage Evidence Effectiveness Gap Action regulatory-compliance existing-governance"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Regulatory Assessment",
+      "summary": "Map applicable obligations to owners, controls, evidence and gaps.",
+      "href": "/transformation/stage-1-discover/deliverables/regulatory-assessment/",
+      "keywords": "Assessment Risk and Compliance Lead Risk Executive Obligation Applicability Owner Control Evidence Frequency Gap Action vendors-third-parties regulatory-compliance existing-governance"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Cost Baseline",
+      "summary": "Establish current costs, units, assumptions and confidence.",
+      "href": "/transformation/stage-1-discover/deliverables/cost-baseline/",
+      "keywords": "Financial baseline Finance Lead Executive Sponsor Cost category Value/range Unit Period Owner Source Allocation Confidence cloud-platforms financial-baseline"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Technical Debt Register",
+      "summary": "Make architectural, platform, security and operational debt visible.",
+      "href": "/transformation/stage-1-discover/deliverables/technical-debt-register/",
+      "keywords": "Register Enterprise Architect CTO Debt item Domain Cause Impact Risk Owner Dependency Remediation Priority applications-systems cybersecurity operations-service-management"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Shadow AI Register",
+      "summary": "Record unapproved use, data exposure, business need and response.",
+      "href": "/transformation/stage-1-discover/deliverables/shadow-ai-register/",
+      "keywords": "Register Risk Executive Platform Owner Tool/use Owner/group Purpose Data Access Spend Risk Containment Disposition ai-landscape shadow-ai"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Discovery Findings Report",
+      "summary": "Synthesize validated findings, risks, constraints and missing evidence.",
+      "href": "/transformation/stage-1-discover/deliverables/discovery-findings/",
+      "keywords": "Report Programme Director Platform Owner Executive summary Method Cross-domain themes Risks Constraints Evidence gaps Decisions Recommendations business-strategy data-information financial-baseline shadow-ai"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Opportunity Register",
+      "summary": "Capture visible opportunities without prematurely prioritising them.",
+      "href": "/transformation/stage-1-discover/deliverables/opportunity-register/",
+      "keywords": "Register Business Owner Programme Director Opportunity Problem Capability Process Owner Evidence Value hypothesis Dependencies Risks Next stage business-capabilities business-processes automation-landscape skills-workforce"
+    },
+    {
+      "type": "Workshop",
+      "title": "Executive Discovery Kick-off",
+      "summary": "Align scope, evidence expectations, owners and discovery decisions.",
+      "href": "/transformation/stage-1-discover/workshops/executive-kick-off/",
+      "keywords": "2 hours Executive Sponsor Platform Owner Programme Director Business Owners What must Discovery prove? Which owners can provide evidence? What decisions depend on this baseline? Discovery plan Confirmed domain owners"
+    },
+    {
+      "type": "Workshop",
+      "title": "Business Capability Workshop",
+      "summary": "Validate capabilities, ownership, maturity and business pain points.",
+      "href": "/transformation/stage-1-discover/workshops/business-capability/",
+      "keywords": "4 hours Business Owners Enterprise Architecture Process Owners What must the enterprise be able to do? Who owns each capability? Where is evidence of pain or maturity? Business Capability Catalogue"
+    },
+    {
+      "type": "Workshop",
+      "title": "Process Discovery Workshop",
+      "summary": "Map priority processes, systems, data, controls and friction.",
+      "href": "/transformation/stage-1-discover/workshops/process-discovery/",
+      "keywords": "4 hours Process Owners Business Analysts Operations Risk How does work flow today? Where are delays and failures? Which controls and systems are involved? Process Inventory Opportunity candidates"
+    },
+    {
+      "type": "Workshop",
+      "title": "Technology Discovery Workshop",
+      "summary": "Reconcile applications, integrations, infrastructure, cloud and debt.",
+      "href": "/transformation/stage-1-discover/workshops/technology-discovery/",
+      "keywords": "1 day Enterprise Architecture Application Integration Cloud Infrastructure Operations What is actually in use? Who owns it? Which dependencies and lifecycle risks matter? Application Portfolio Technology Landscape Technical Debt Register"
+    },
+    {
+      "type": "Workshop",
+      "title": "Data Discovery Workshop",
+      "summary": "Validate data assets, ownership, quality, classification and lineage.",
+      "href": "/transformation/stage-1-discover/workshops/data-discovery/",
+      "keywords": "4 hours Data Owners Stewards Privacy Security Architecture Which data supports priority capabilities? Can quality claims be evidenced? What access and residency constraints exist? Data Inventory"
+    },
+    {
+      "type": "Workshop",
+      "title": "Security & Risk Workshop",
+      "summary": "Assess threats, controls, identity, incidents and compliance evidence.",
+      "href": "/transformation/stage-1-discover/workshops/security-risk/",
+      "keywords": "1 day Security Identity Risk Privacy Legal Audit Which controls operate today? What evidence proves effectiveness? Which risks constrain future AI? Security Assessment IAM Assessment Regulatory Assessment"
+    },
+    {
+      "type": "Workshop",
+      "title": "Vendor Review Workshop",
+      "summary": "Validate supplier services, data access, assurance, cost and exit constraints.",
+      "href": "/transformation/stage-1-discover/workshops/vendor-review/",
+      "keywords": "3 hours Procurement Vendor Owners Legal Security Finance What is supplied and by whom? Which data and dependencies exist? Can the organisation exit safely? Vendor Landscape"
+    },
+    {
+      "type": "Workshop",
+      "title": "AI & Automation Landscape Workshop",
+      "summary": "Inventory approved, emerging and unapproved AI and automation.",
+      "href": "/transformation/stage-1-discover/workshops/ai-automation-landscape/",
+      "keywords": "4 hours AI/ML Automation Business Owners Security Risk Operations What is in use? Who owns it? What data and actions are involved? Which use is unapproved? AI Capability Inventory Automation Inventory Shadow AI Register"
+    },
+    {
+      "type": "Workshop",
+      "title": "Discovery Findings Review",
+      "summary": "Reconcile cross-domain findings, gaps, constraints and visible opportunities.",
+      "href": "/transformation/stage-1-discover/workshops/findings-review/",
+      "keywords": "4 hours All Domain Owners Programme Architecture Risk Finance Which findings are validated? Where does evidence conflict? What remains unknown? Which decisions are required? Discovery Findings Report Opportunity Register"
+    },
+    {
+      "type": "Workshop",
+      "title": "Discovery Approval Workshop",
+      "summary": "Decide whether the current-state baseline is sufficient for Assess Readiness.",
+      "href": "/transformation/stage-1-discover/workshops/approval/",
+      "keywords": "4 hours Platform Owner Programme Board Domain Owners Risk Audit Is every domain sufficiently evidenced? Are owners and confidence clear? Can readiness use this baseline without recollection? Current-State Assessment Report Gate decision"
+    },
+    {
+      "type": "Dashboard",
+      "title": "Executive Dashboard",
+      "summary": "Discover executive dashboard.",
+      "href": "/transformation/stage-1-discover/dashboards/executive/",
+      "keywords": "progress evidence risks decisions readiness"
+    },
+    {
+      "type": "Dashboard",
+      "title": "Programme Dashboard",
+      "summary": "Discover programme dashboard.",
+      "href": "/transformation/stage-1-discover/dashboards/programme/",
+      "keywords": "workstream deliverable workshop evidence dependency risk"
+    },
+    {
+      "type": "Dashboard",
+      "title": "Architecture Dashboard",
+      "summary": "Discover architecture dashboard.",
+      "href": "/transformation/stage-1-discover/dashboards/architecture/",
+      "keywords": "application integration data infrastructure AI automation technical debt"
+    }
+  ]
+}

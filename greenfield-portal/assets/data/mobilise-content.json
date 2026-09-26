@@ -1,0 +1,1862 @@
+{
+  "version": "1.0.0",
+  "stage": "stage-0-mobilise",
+  "references": [
+    "Approved Enterprise AI Transformation Blueprint v1.0",
+    "Phase 0 Information Architecture and content taxonomy",
+    "Organisation strategy, policies and delegation-of-authority records",
+    "Applicable sector regulation and public-sector directives",
+    "Canonical Knowledge Centre concepts and governance guidance"
+  ],
+  "common": {
+    "publicSector": "Account for public value, statutory authority, accessibility, transparency, records management, procurement rules and citizen impact.",
+    "privateSector": "Connect the work to competitive value, customer outcomes, shareholder accountability, commercial risk, workforce impact and investment governance.",
+    "pitfalls": [
+      "Starting with a technology product instead of a business need",
+      "Using vague ownership such as “the AI team”",
+      "Treating consultation as communication after decisions are made",
+      "Approving optimistic exact numbers without evidence",
+      "Allowing deliverables to exist without a decision or downstream use"
+    ],
+    "success": [
+      "The output is specific enough to guide a decision",
+      "An accountable owner and approver are named",
+      "Evidence sources and assumptions are visible",
+      "Dependencies and downstream uses are linked",
+      "Open conditions have owners and dates"
+    ]
+  },
+  "workstreams": [
+    {
+      "slug": "executive-sponsorship",
+      "name": "Executive Sponsorship",
+      "summary": "Secure visible, accountable sponsorship and authority for enterprise participation.",
+      "activities": [
+        "Confirm the business need and sponsor",
+        "Draft and approve the executive mandate",
+        "Agree executive decision cadence",
+        "Prepare the executive briefing"
+      ],
+      "inputs": [
+        "Existing strategy",
+        "Board or executive priorities",
+        "Known regulatory and market pressures"
+      ],
+      "outputs": [
+        "Executive Mandate",
+        "Executive Briefing Pack"
+      ],
+      "deliverables": [
+        "executive-mandate",
+        "executive-briefing-pack"
+      ],
+      "owner": "Executive Sponsor",
+      "validator": "Programme Director",
+      "assistant": "Generate a sponsor-ready mandate and briefing narrative",
+      "raci": [
+        [
+          "Set direction",
+          "Executive Sponsor",
+          "Programme Director",
+          "Business, Architecture and Control Leads"
+        ],
+        [
+          "Collect evidence",
+          "Executive Sponsor",
+          "Assigned Workstream Lead",
+          "Programme Director"
+        ],
+        [
+          "Validate output",
+          "Programme Director",
+          "Subject-Matter Reviewers",
+          "Audit and Assurance"
+        ],
+        [
+          "Approve deliverables",
+          "Executive Sponsor",
+          "Named Deliverable Approver",
+          "Programme Board"
+        ]
+      ],
+      "relatedStages": [
+        "Stage 0 — Mobilise",
+        "Stage 1 — Discover",
+        "Stage 3 — Define Strategy",
+        "Stage 4 — Establish Governance"
+      ]
+    },
+    {
+      "slug": "business-drivers",
+      "name": "Business Drivers",
+      "summary": "Create a shared business rationale and measurable strategic objectives.",
+      "activities": [
+        "Collect internal and external evidence",
+        "Distinguish problems from technology ideas",
+        "Prioritise drivers",
+        "Define strategic objectives and success measures"
+      ],
+      "inputs": [
+        "Performance evidence",
+        "Customer and workforce needs",
+        "Risk and compliance pressures",
+        "Strategic plans"
+      ],
+      "outputs": [
+        "Business Drivers",
+        "Strategic Objectives",
+        "Success Measures"
+      ],
+      "deliverables": [
+        "business-drivers",
+        "strategic-objectives",
+        "success-measures"
+      ],
+      "owner": "Business Owner",
+      "validator": "Finance Lead",
+      "assistant": "Generate evidence-led business drivers and outcome measures",
+      "raci": [
+        [
+          "Set direction",
+          "Business Owner",
+          "Programme Director",
+          "Business, Architecture and Control Leads"
+        ],
+        [
+          "Collect evidence",
+          "Business Owner",
+          "Assigned Workstream Lead",
+          "Finance Lead"
+        ],
+        [
+          "Validate output",
+          "Finance Lead",
+          "Subject-Matter Reviewers",
+          "Audit and Assurance"
+        ],
+        [
+          "Approve deliverables",
+          "Business Owner",
+          "Named Deliverable Approver",
+          "Programme Board"
+        ]
+      ],
+      "relatedStages": [
+        "Stage 0 — Mobilise",
+        "Stage 1 — Discover",
+        "Stage 3 — Define Strategy",
+        "Stage 4 — Establish Governance"
+      ]
+    },
+    {
+      "slug": "programme-governance",
+      "name": "Programme Governance",
+      "summary": "Establish forums, decision rights, accountability and escalation.",
+      "activities": [
+        "Draft governance charter",
+        "Design forums and quorum",
+        "Assign decision rights",
+        "Validate enterprise RACI"
+      ],
+      "inputs": [
+        "Mandate",
+        "Organisation model",
+        "Existing governance bodies",
+        "Risk appetite"
+      ],
+      "outputs": [
+        "Governance Charter",
+        "Governance Forums",
+        "Decision Rights",
+        "Enterprise RACI"
+      ],
+      "deliverables": [
+        "governance-charter",
+        "governance-forums",
+        "decision-rights",
+        "enterprise-raci"
+      ],
+      "owner": "Platform Owner",
+      "validator": "Risk and Compliance Lead",
+      "assistant": "Generate governance charter, forum and decision-right proposals",
+      "raci": [
+        [
+          "Set direction",
+          "Platform Owner",
+          "Programme Director",
+          "Business, Architecture and Control Leads"
+        ],
+        [
+          "Collect evidence",
+          "Platform Owner",
+          "Assigned Workstream Lead",
+          "Risk and Compliance Lead"
+        ],
+        [
+          "Validate output",
+          "Risk and Compliance Lead",
+          "Subject-Matter Reviewers",
+          "Audit and Assurance"
+        ],
+        [
+          "Approve deliverables",
+          "Platform Owner",
+          "Named Deliverable Approver",
+          "Programme Board"
+        ]
+      ],
+      "relatedStages": [
+        "Stage 0 — Mobilise",
+        "Stage 1 — Discover",
+        "Stage 3 — Define Strategy",
+        "Stage 4 — Establish Governance"
+      ]
+    },
+    {
+      "slug": "funding-business-ownership",
+      "name": "Funding & Business Ownership",
+      "summary": "Establish accountable outcome ownership and a controlled funding path.",
+      "activities": [
+        "Name business owners",
+        "Define funding sources and thresholds",
+        "Agree stage-based investment",
+        "Record benefit ownership"
+      ],
+      "inputs": [
+        "Strategic objectives",
+        "Finance policies",
+        "Initial cost categories",
+        "Approval authorities"
+      ],
+      "outputs": [
+        "Funding Model",
+        "Success Measures"
+      ],
+      "deliverables": [
+        "funding-model",
+        "success-measures"
+      ],
+      "owner": "Executive Sponsor",
+      "validator": "Finance Lead",
+      "assistant": "Generate a funding model with explicit assumptions and decision thresholds",
+      "raci": [
+        [
+          "Set direction",
+          "Executive Sponsor",
+          "Programme Director",
+          "Business, Architecture and Control Leads"
+        ],
+        [
+          "Collect evidence",
+          "Executive Sponsor",
+          "Assigned Workstream Lead",
+          "Finance Lead"
+        ],
+        [
+          "Validate output",
+          "Finance Lead",
+          "Subject-Matter Reviewers",
+          "Audit and Assurance"
+        ],
+        [
+          "Approve deliverables",
+          "Executive Sponsor",
+          "Named Deliverable Approver",
+          "Programme Board"
+        ]
+      ],
+      "relatedStages": [
+        "Stage 0 — Mobilise",
+        "Stage 1 — Discover",
+        "Stage 3 — Define Strategy",
+        "Stage 4 — Establish Governance"
+      ]
+    },
+    {
+      "slug": "stakeholder-engagement",
+      "name": "Stakeholder Engagement",
+      "summary": "Identify affected groups and plan meaningful communication and consultation.",
+      "activities": [
+        "Identify stakeholders",
+        "Assess influence and impact",
+        "Plan engagement",
+        "Create feedback and escalation routes"
+      ],
+      "inputs": [
+        "Scope",
+        "Organisation charts",
+        "Change obligations",
+        "Consultation requirements"
+      ],
+      "outputs": [
+        "Stakeholder Register",
+        "Communication Plan"
+      ],
+      "deliverables": [
+        "stakeholder-register",
+        "communication-plan"
+      ],
+      "owner": "Programme Director",
+      "validator": "Change Lead",
+      "assistant": "Generate a stakeholder register and communication plan",
+      "raci": [
+        [
+          "Set direction",
+          "Programme Director",
+          "Programme Director",
+          "Business, Architecture and Control Leads"
+        ],
+        [
+          "Collect evidence",
+          "Programme Director",
+          "Assigned Workstream Lead",
+          "Change Lead"
+        ],
+        [
+          "Validate output",
+          "Change Lead",
+          "Subject-Matter Reviewers",
+          "Audit and Assurance"
+        ],
+        [
+          "Approve deliverables",
+          "Programme Director",
+          "Named Deliverable Approver",
+          "Programme Board"
+        ]
+      ],
+      "relatedStages": [
+        "Stage 0 — Mobilise",
+        "Stage 1 — Discover",
+        "Stage 3 — Define Strategy",
+        "Stage 4 — Establish Governance"
+      ]
+    },
+    {
+      "slug": "operating-model",
+      "name": "Operating Model",
+      "summary": "Define initial delivery, sourcing, capability and service ownership.",
+      "activities": [
+        "Choose delivery approach",
+        "Define team and supplier structure",
+        "Assign capability ownership",
+        "Identify initial service owner"
+      ],
+      "inputs": [
+        "Scope",
+        "Governance model",
+        "Current organisation",
+        "Sourcing constraints"
+      ],
+      "outputs": [
+        "Delivery Model",
+        "Operating Model"
+      ],
+      "deliverables": [
+        "delivery-model",
+        "operating-model"
+      ],
+      "owner": "Platform Owner",
+      "validator": "Enterprise Architect",
+      "assistant": "Generate delivery and operating model options with trade-offs",
+      "raci": [
+        [
+          "Set direction",
+          "Platform Owner",
+          "Programme Director",
+          "Business, Architecture and Control Leads"
+        ],
+        [
+          "Collect evidence",
+          "Platform Owner",
+          "Assigned Workstream Lead",
+          "Enterprise Architect"
+        ],
+        [
+          "Validate output",
+          "Enterprise Architect",
+          "Subject-Matter Reviewers",
+          "Audit and Assurance"
+        ],
+        [
+          "Approve deliverables",
+          "Platform Owner",
+          "Named Deliverable Approver",
+          "Programme Board"
+        ]
+      ],
+      "relatedStages": [
+        "Stage 0 — Mobilise",
+        "Stage 1 — Discover",
+        "Stage 3 — Define Strategy",
+        "Stage 4 — Establish Governance"
+      ]
+    },
+    {
+      "slug": "risk-compliance",
+      "name": "Risk & Compliance",
+      "summary": "Set risk, compliance, privacy, security and human-oversight boundaries.",
+      "activities": [
+        "Collect obligations",
+        "Define risk appetite",
+        "Set prohibited uses",
+        "Draft actionable AI principles",
+        "Define exception authority"
+      ],
+      "inputs": [
+        "Enterprise risk appetite",
+        "Regulatory obligations",
+        "Security and privacy policies",
+        "Legal constraints"
+      ],
+      "outputs": [
+        "AI Principles",
+        "Risk Appetite Statement"
+      ],
+      "deliverables": [
+        "ai-principles",
+        "risk-appetite"
+      ],
+      "owner": "Risk Executive",
+      "validator": "Audit and Assurance Lead",
+      "assistant": "Generate risk-appetite and AI-principle drafts for control-owner review",
+      "raci": [
+        [
+          "Set direction",
+          "Risk Executive",
+          "Programme Director",
+          "Business, Architecture and Control Leads"
+        ],
+        [
+          "Collect evidence",
+          "Risk Executive",
+          "Assigned Workstream Lead",
+          "Audit and Assurance Lead"
+        ],
+        [
+          "Validate output",
+          "Audit and Assurance Lead",
+          "Subject-Matter Reviewers",
+          "Audit and Assurance"
+        ],
+        [
+          "Approve deliverables",
+          "Risk Executive",
+          "Named Deliverable Approver",
+          "Programme Board"
+        ]
+      ],
+      "relatedStages": [
+        "Stage 0 — Mobilise",
+        "Stage 1 — Discover",
+        "Stage 3 — Define Strategy",
+        "Stage 4 — Establish Governance"
+      ]
+    },
+    {
+      "slug": "mobilisation-planning",
+      "name": "Mobilisation Planning",
+      "summary": "Coordinate activities, workshops, deliverables, dependencies, RAID and gate readiness.",
+      "activities": [
+        "Build mobilisation schedule",
+        "Sequence workshops",
+        "Maintain RAID",
+        "Track deliverables and decisions",
+        "Prepare gate evidence"
+      ],
+      "inputs": [
+        "All workstream plans",
+        "Resource availability",
+        "Decision calendar",
+        "Dependencies"
+      ],
+      "outputs": [
+        "Programme Charter",
+        "Scope Definition",
+        "RAID Register",
+        "Mobilisation Plan",
+        "Executive Briefing Pack"
+      ],
+      "deliverables": [
+        "programme-charter",
+        "scope-definition",
+        "raid-register",
+        "mobilisation-plan",
+        "executive-briefing-pack"
+      ],
+      "owner": "Programme Director",
+      "validator": "Platform Owner",
+      "assistant": "Generate an integrated mobilisation plan and gate-readiness summary",
+      "raci": [
+        [
+          "Set direction",
+          "Programme Director",
+          "Programme Director",
+          "Business, Architecture and Control Leads"
+        ],
+        [
+          "Collect evidence",
+          "Programme Director",
+          "Assigned Workstream Lead",
+          "Platform Owner"
+        ],
+        [
+          "Validate output",
+          "Platform Owner",
+          "Subject-Matter Reviewers",
+          "Audit and Assurance"
+        ],
+        [
+          "Approve deliverables",
+          "Programme Director",
+          "Named Deliverable Approver",
+          "Programme Board"
+        ]
+      ],
+      "relatedStages": [
+        "Stage 0 — Mobilise",
+        "Stage 1 — Discover",
+        "Stage 3 — Define Strategy",
+        "Stage 4 — Establish Governance"
+      ]
+    }
+  ],
+  "deliverables": [
+    {
+      "slug": "executive-mandate",
+      "id": "MOB-001",
+      "name": "Executive Mandate",
+      "type": "Decision record",
+      "criticality": "mandatory",
+      "owner": "Executive Sponsor",
+      "approver": "Executive Sponsor",
+      "purpose": "Authorise the transformation and state the business need, intended outcomes, authority and constraints.",
+      "when": "When leadership is prepared to sponsor an enterprise transformation, before discovery requests are issued.",
+      "structure": [
+        "Business need",
+        "Enterprise drivers",
+        "Intended outcomes",
+        "Authority and sponsor",
+        "Constraints and exclusions",
+        "Approval record"
+      ],
+      "why": "Without a reliable Executive Mandate, later stages may act on unclear authority, incomplete evidence or unowned decisions.",
+      "inputs": [
+        "Approved upstream Mobilise evidence",
+        "Named enterprise owners and reviewers",
+        "Applicable policies, obligations and organisational records"
+      ],
+      "mistakes": [
+        "Starting with a technology product instead of a business need",
+        "Using vague ownership such as “the AI team”",
+        "Treating consultation as communication after decisions are made",
+        "Approving optimistic exact numbers without evidence",
+        "Allowing deliverables to exist without a decision or downstream use"
+      ],
+      "ai": "Draft a Executive Mandate using only the supplied enterprise context. Identify missing evidence, label assumptions, avoid invented facts and exact unsupported figures, show alternatives where a decision is required, and end with named review and approval actions.",
+      "related": [
+        "business-drivers",
+        "programme-charter",
+        "scope-definition",
+        "strategic-objectives"
+      ],
+      "approval": "Executive Sponsor approves the record after Executive Sponsor confirms completeness and required reviewers validate the evidence.",
+      "publicSector": "Account for public value, statutory authority, accessibility, transparency, records management, procurement rules and citizen impact.",
+      "privateSector": "Connect the work to competitive value, customer outcomes, shareholder accountability, commercial risk, workforce impact and investment governance.",
+      "success": [
+        "The output is specific enough to guide a decision",
+        "An accountable owner and approver are named",
+        "Evidence sources and assumptions are visible",
+        "Dependencies and downstream uses are linked",
+        "Open conditions have owners and dates"
+      ],
+      "template": "/downloads/mobilise/executive-mandate-template.md"
+    },
+    {
+      "slug": "business-drivers",
+      "id": "MOB-002",
+      "name": "Business Drivers",
+      "type": "Briefing",
+      "criticality": "mandatory",
+      "owner": "Business Owner",
+      "approver": "Executive Sponsor",
+      "purpose": "Create a shared, evidence-based explanation of why enterprise AI matters now.",
+      "when": "During mobilisation, before objectives, scope and investment assumptions are finalised.",
+      "structure": [
+        "Driver",
+        "Evidence",
+        "Business consequence",
+        "Urgency",
+        "Affected capability",
+        "Owner"
+      ],
+      "why": "Without a reliable Business Drivers, later stages may act on unclear authority, incomplete evidence or unowned decisions.",
+      "inputs": [
+        "Approved upstream Mobilise evidence",
+        "Named enterprise owners and reviewers",
+        "Applicable policies, obligations and organisational records"
+      ],
+      "mistakes": [
+        "Starting with a technology product instead of a business need",
+        "Using vague ownership such as “the AI team”",
+        "Treating consultation as communication after decisions are made",
+        "Approving optimistic exact numbers without evidence",
+        "Allowing deliverables to exist without a decision or downstream use"
+      ],
+      "ai": "Draft a Business Drivers using only the supplied enterprise context. Identify missing evidence, label assumptions, avoid invented facts and exact unsupported figures, show alternatives where a decision is required, and end with named review and approval actions.",
+      "related": [
+        "executive-mandate",
+        "programme-charter",
+        "scope-definition",
+        "strategic-objectives"
+      ],
+      "approval": "Executive Sponsor approves the record after Business Owner confirms completeness and required reviewers validate the evidence.",
+      "publicSector": "Account for public value, statutory authority, accessibility, transparency, records management, procurement rules and citizen impact.",
+      "privateSector": "Connect the work to competitive value, customer outcomes, shareholder accountability, commercial risk, workforce impact and investment governance.",
+      "success": [
+        "The output is specific enough to guide a decision",
+        "An accountable owner and approver are named",
+        "Evidence sources and assumptions are visible",
+        "Dependencies and downstream uses are linked",
+        "Open conditions have owners and dates"
+      ],
+      "template": "/downloads/mobilise/business-drivers-template.md"
+    },
+    {
+      "slug": "programme-charter",
+      "id": "MOB-003",
+      "name": "Programme Charter",
+      "type": "Decision pack",
+      "criticality": "mandatory",
+      "owner": "Programme Director",
+      "approver": "Executive Sponsor",
+      "purpose": "Define purpose, measurable objectives, scope, governance and delivery boundaries.",
+      "when": "After mandate approval and before programme work begins.",
+      "structure": [
+        "Purpose",
+        "Objectives",
+        "Scope",
+        "Out of scope",
+        "Roles",
+        "Governance",
+        "Milestones",
+        "Assumptions",
+        "Approval"
+      ],
+      "why": "Without a reliable Programme Charter, later stages may act on unclear authority, incomplete evidence or unowned decisions.",
+      "inputs": [
+        "Approved upstream Mobilise evidence",
+        "Named enterprise owners and reviewers",
+        "Applicable policies, obligations and organisational records"
+      ],
+      "mistakes": [
+        "Starting with a technology product instead of a business need",
+        "Using vague ownership such as “the AI team”",
+        "Treating consultation as communication after decisions are made",
+        "Approving optimistic exact numbers without evidence",
+        "Allowing deliverables to exist without a decision or downstream use"
+      ],
+      "ai": "Draft a Programme Charter using only the supplied enterprise context. Identify missing evidence, label assumptions, avoid invented facts and exact unsupported figures, show alternatives where a decision is required, and end with named review and approval actions.",
+      "related": [
+        "executive-mandate",
+        "business-drivers",
+        "scope-definition",
+        "strategic-objectives"
+      ],
+      "approval": "Executive Sponsor approves the record after Programme Director confirms completeness and required reviewers validate the evidence.",
+      "publicSector": "Account for public value, statutory authority, accessibility, transparency, records management, procurement rules and citizen impact.",
+      "privateSector": "Connect the work to competitive value, customer outcomes, shareholder accountability, commercial risk, workforce impact and investment governance.",
+      "success": [
+        "The output is specific enough to guide a decision",
+        "An accountable owner and approver are named",
+        "Evidence sources and assumptions are visible",
+        "Dependencies and downstream uses are linked",
+        "Open conditions have owners and dates"
+      ],
+      "template": "/downloads/mobilise/programme-charter-template.md"
+    },
+    {
+      "slug": "scope-definition",
+      "id": "MOB-004",
+      "name": "Scope Definition",
+      "type": "Decision record",
+      "criticality": "mandatory",
+      "owner": "Programme Director",
+      "approver": "Executive Sponsor",
+      "purpose": "Make inclusions, exclusions, boundaries and interfaces explicit.",
+      "when": "While creating the programme charter and before discovery planning.",
+      "structure": [
+        "In scope",
+        "Out of scope",
+        "Organisational boundary",
+        "Technology boundary",
+        "Data boundary",
+        "Dependencies",
+        "Change control"
+      ],
+      "why": "Without a reliable Scope Definition, later stages may act on unclear authority, incomplete evidence or unowned decisions.",
+      "inputs": [
+        "Approved upstream Mobilise evidence",
+        "Named enterprise owners and reviewers",
+        "Applicable policies, obligations and organisational records"
+      ],
+      "mistakes": [
+        "Starting with a technology product instead of a business need",
+        "Using vague ownership such as “the AI team”",
+        "Treating consultation as communication after decisions are made",
+        "Approving optimistic exact numbers without evidence",
+        "Allowing deliverables to exist without a decision or downstream use"
+      ],
+      "ai": "Draft a Scope Definition using only the supplied enterprise context. Identify missing evidence, label assumptions, avoid invented facts and exact unsupported figures, show alternatives where a decision is required, and end with named review and approval actions.",
+      "related": [
+        "business-drivers",
+        "programme-charter",
+        "strategic-objectives",
+        "stakeholder-register"
+      ],
+      "approval": "Executive Sponsor approves the record after Programme Director confirms completeness and required reviewers validate the evidence.",
+      "publicSector": "Account for public value, statutory authority, accessibility, transparency, records management, procurement rules and citizen impact.",
+      "privateSector": "Connect the work to competitive value, customer outcomes, shareholder accountability, commercial risk, workforce impact and investment governance.",
+      "success": [
+        "The output is specific enough to guide a decision",
+        "An accountable owner and approver are named",
+        "Evidence sources and assumptions are visible",
+        "Dependencies and downstream uses are linked",
+        "Open conditions have owners and dates"
+      ],
+      "template": "/downloads/mobilise/scope-definition-template.md"
+    },
+    {
+      "slug": "strategic-objectives",
+      "id": "MOB-005",
+      "name": "Strategic Objectives",
+      "type": "Measurement record",
+      "criticality": "mandatory",
+      "owner": "Business Owner",
+      "approver": "Executive Sponsor",
+      "purpose": "Translate drivers into specific outcomes that guide later investment and architecture choices.",
+      "when": "After drivers are validated and before success measures are approved.",
+      "structure": [
+        "Objective",
+        "Business outcome",
+        "Capability affected",
+        "Measure",
+        "Time horizon",
+        "Owner",
+        "Constraints"
+      ],
+      "why": "Without a reliable Strategic Objectives, later stages may act on unclear authority, incomplete evidence or unowned decisions.",
+      "inputs": [
+        "Approved upstream Mobilise evidence",
+        "Named enterprise owners and reviewers",
+        "Applicable policies, obligations and organisational records"
+      ],
+      "mistakes": [
+        "Starting with a technology product instead of a business need",
+        "Using vague ownership such as “the AI team”",
+        "Treating consultation as communication after decisions are made",
+        "Approving optimistic exact numbers without evidence",
+        "Allowing deliverables to exist without a decision or downstream use"
+      ],
+      "ai": "Draft a Strategic Objectives using only the supplied enterprise context. Identify missing evidence, label assumptions, avoid invented facts and exact unsupported figures, show alternatives where a decision is required, and end with named review and approval actions.",
+      "related": [
+        "programme-charter",
+        "scope-definition",
+        "stakeholder-register",
+        "governance-charter"
+      ],
+      "approval": "Executive Sponsor approves the record after Business Owner confirms completeness and required reviewers validate the evidence.",
+      "publicSector": "Account for public value, statutory authority, accessibility, transparency, records management, procurement rules and citizen impact.",
+      "privateSector": "Connect the work to competitive value, customer outcomes, shareholder accountability, commercial risk, workforce impact and investment governance.",
+      "success": [
+        "The output is specific enough to guide a decision",
+        "An accountable owner and approver are named",
+        "Evidence sources and assumptions are visible",
+        "Dependencies and downstream uses are linked",
+        "Open conditions have owners and dates"
+      ],
+      "template": "/downloads/mobilise/strategic-objectives-template.md"
+    },
+    {
+      "slug": "stakeholder-register",
+      "id": "MOB-006",
+      "name": "Stakeholder Register",
+      "type": "Register",
+      "criticality": "mandatory",
+      "owner": "Programme Director",
+      "approver": "Business Owner",
+      "purpose": "Identify people affected by, contributing to or accountable for transformation decisions.",
+      "when": "As soon as mandate and preliminary scope exist; reviewed throughout mobilisation.",
+      "structure": [
+        "Stakeholder",
+        "Role",
+        "Impact",
+        "Influence",
+        "Interest",
+        "Engagement owner",
+        "Cadence"
+      ],
+      "why": "Without a reliable Stakeholder Register, later stages may act on unclear authority, incomplete evidence or unowned decisions.",
+      "inputs": [
+        "Approved upstream Mobilise evidence",
+        "Named enterprise owners and reviewers",
+        "Applicable policies, obligations and organisational records"
+      ],
+      "mistakes": [
+        "Starting with a technology product instead of a business need",
+        "Using vague ownership such as “the AI team”",
+        "Treating consultation as communication after decisions are made",
+        "Approving optimistic exact numbers without evidence",
+        "Allowing deliverables to exist without a decision or downstream use"
+      ],
+      "ai": "Draft a Stakeholder Register using only the supplied enterprise context. Identify missing evidence, label assumptions, avoid invented facts and exact unsupported figures, show alternatives where a decision is required, and end with named review and approval actions.",
+      "related": [
+        "scope-definition",
+        "strategic-objectives",
+        "governance-charter",
+        "governance-forums"
+      ],
+      "approval": "Business Owner approves the record after Programme Director confirms completeness and required reviewers validate the evidence.",
+      "publicSector": "Account for public value, statutory authority, accessibility, transparency, records management, procurement rules and citizen impact.",
+      "privateSector": "Connect the work to competitive value, customer outcomes, shareholder accountability, commercial risk, workforce impact and investment governance.",
+      "success": [
+        "The output is specific enough to guide a decision",
+        "An accountable owner and approver are named",
+        "Evidence sources and assumptions are visible",
+        "Dependencies and downstream uses are linked",
+        "Open conditions have owners and dates"
+      ],
+      "template": "/downloads/mobilise/stakeholder-register-template.md"
+    },
+    {
+      "slug": "governance-charter",
+      "id": "MOB-007",
+      "name": "Governance Charter",
+      "type": "Operating model",
+      "criticality": "mandatory",
+      "owner": "Platform Owner",
+      "approver": "Executive Sponsor",
+      "purpose": "Define governance purpose, principles, authority, membership and evidence expectations.",
+      "when": "Before governance forums begin making programme decisions.",
+      "structure": [
+        "Purpose",
+        "Authority",
+        "Principles",
+        "Scope",
+        "Forums",
+        "Decision rights",
+        "Escalation",
+        "Evidence",
+        "Review"
+      ],
+      "why": "Without a reliable Governance Charter, later stages may act on unclear authority, incomplete evidence or unowned decisions.",
+      "inputs": [
+        "Approved upstream Mobilise evidence",
+        "Named enterprise owners and reviewers",
+        "Applicable policies, obligations and organisational records"
+      ],
+      "mistakes": [
+        "Starting with a technology product instead of a business need",
+        "Using vague ownership such as “the AI team”",
+        "Treating consultation as communication after decisions are made",
+        "Approving optimistic exact numbers without evidence",
+        "Allowing deliverables to exist without a decision or downstream use"
+      ],
+      "ai": "Draft a Governance Charter using only the supplied enterprise context. Identify missing evidence, label assumptions, avoid invented facts and exact unsupported figures, show alternatives where a decision is required, and end with named review and approval actions.",
+      "related": [
+        "strategic-objectives",
+        "stakeholder-register",
+        "governance-forums",
+        "decision-rights"
+      ],
+      "approval": "Executive Sponsor approves the record after Platform Owner confirms completeness and required reviewers validate the evidence.",
+      "publicSector": "Account for public value, statutory authority, accessibility, transparency, records management, procurement rules and citizen impact.",
+      "privateSector": "Connect the work to competitive value, customer outcomes, shareholder accountability, commercial risk, workforce impact and investment governance.",
+      "success": [
+        "The output is specific enough to guide a decision",
+        "An accountable owner and approver are named",
+        "Evidence sources and assumptions are visible",
+        "Dependencies and downstream uses are linked",
+        "Open conditions have owners and dates"
+      ],
+      "template": "/downloads/mobilise/governance-charter-template.md"
+    },
+    {
+      "slug": "governance-forums",
+      "id": "MOB-008",
+      "name": "Governance Forums",
+      "type": "Operating model",
+      "criticality": "mandatory",
+      "owner": "Platform Owner",
+      "approver": "Executive Sponsor",
+      "purpose": "Define each forum’s purpose, membership, cadence, quorum and decisions.",
+      "when": "After the governance charter is drafted and before programme kick-off.",
+      "structure": [
+        "Forum",
+        "Purpose",
+        "Chair",
+        "Members",
+        "Cadence",
+        "Quorum",
+        "Decisions",
+        "Inputs",
+        "Outputs"
+      ],
+      "why": "Without a reliable Governance Forums, later stages may act on unclear authority, incomplete evidence or unowned decisions.",
+      "inputs": [
+        "Approved upstream Mobilise evidence",
+        "Named enterprise owners and reviewers",
+        "Applicable policies, obligations and organisational records"
+      ],
+      "mistakes": [
+        "Starting with a technology product instead of a business need",
+        "Using vague ownership such as “the AI team”",
+        "Treating consultation as communication after decisions are made",
+        "Approving optimistic exact numbers without evidence",
+        "Allowing deliverables to exist without a decision or downstream use"
+      ],
+      "ai": "Draft a Governance Forums using only the supplied enterprise context. Identify missing evidence, label assumptions, avoid invented facts and exact unsupported figures, show alternatives where a decision is required, and end with named review and approval actions.",
+      "related": [
+        "stakeholder-register",
+        "governance-charter",
+        "decision-rights",
+        "enterprise-raci"
+      ],
+      "approval": "Executive Sponsor approves the record after Platform Owner confirms completeness and required reviewers validate the evidence.",
+      "publicSector": "Account for public value, statutory authority, accessibility, transparency, records management, procurement rules and citizen impact.",
+      "privateSector": "Connect the work to competitive value, customer outcomes, shareholder accountability, commercial risk, workforce impact and investment governance.",
+      "success": [
+        "The output is specific enough to guide a decision",
+        "An accountable owner and approver are named",
+        "Evidence sources and assumptions are visible",
+        "Dependencies and downstream uses are linked",
+        "Open conditions have owners and dates"
+      ],
+      "template": "/downloads/mobilise/governance-forums-template.md"
+    },
+    {
+      "slug": "decision-rights",
+      "id": "MOB-009",
+      "name": "Decision Rights",
+      "type": "Decision model",
+      "criticality": "mandatory",
+      "owner": "Platform Owner",
+      "approver": "Executive Sponsor",
+      "purpose": "Assign unambiguous authority for funding, risk, architecture, data, release and benefits decisions.",
+      "when": "Alongside governance forums and the enterprise RACI.",
+      "structure": [
+        "Decision",
+        "Recommender",
+        "Reviewers",
+        "Approver",
+        "Risk acceptor",
+        "Recorder",
+        "Escalation",
+        "Evidence"
+      ],
+      "why": "Without a reliable Decision Rights, later stages may act on unclear authority, incomplete evidence or unowned decisions.",
+      "inputs": [
+        "Approved upstream Mobilise evidence",
+        "Named enterprise owners and reviewers",
+        "Applicable policies, obligations and organisational records"
+      ],
+      "mistakes": [
+        "Starting with a technology product instead of a business need",
+        "Using vague ownership such as “the AI team”",
+        "Treating consultation as communication after decisions are made",
+        "Approving optimistic exact numbers without evidence",
+        "Allowing deliverables to exist without a decision or downstream use"
+      ],
+      "ai": "Draft a Decision Rights using only the supplied enterprise context. Identify missing evidence, label assumptions, avoid invented facts and exact unsupported figures, show alternatives where a decision is required, and end with named review and approval actions.",
+      "related": [
+        "governance-charter",
+        "governance-forums",
+        "enterprise-raci",
+        "delivery-model"
+      ],
+      "approval": "Executive Sponsor approves the record after Platform Owner confirms completeness and required reviewers validate the evidence.",
+      "publicSector": "Account for public value, statutory authority, accessibility, transparency, records management, procurement rules and citizen impact.",
+      "privateSector": "Connect the work to competitive value, customer outcomes, shareholder accountability, commercial risk, workforce impact and investment governance.",
+      "success": [
+        "The output is specific enough to guide a decision",
+        "An accountable owner and approver are named",
+        "Evidence sources and assumptions are visible",
+        "Dependencies and downstream uses are linked",
+        "Open conditions have owners and dates"
+      ],
+      "template": "/downloads/mobilise/decision-rights-template.md"
+    },
+    {
+      "slug": "enterprise-raci",
+      "id": "MOB-010",
+      "name": "Enterprise RACI",
+      "type": "Responsibility model",
+      "criticality": "mandatory",
+      "owner": "Programme Director",
+      "approver": "Platform Owner",
+      "purpose": "Assign responsibility, accountability, support, consultation and information across mobilisation.",
+      "when": "After roles and governance forums are known and before programme kick-off.",
+      "structure": [
+        "Activity",
+        "Accountable",
+        "Responsible",
+        "Supporting",
+        "Consulted",
+        "Informed",
+        "Evidence"
+      ],
+      "why": "Without a reliable Enterprise RACI, later stages may act on unclear authority, incomplete evidence or unowned decisions.",
+      "inputs": [
+        "Approved upstream Mobilise evidence",
+        "Named enterprise owners and reviewers",
+        "Applicable policies, obligations and organisational records"
+      ],
+      "mistakes": [
+        "Starting with a technology product instead of a business need",
+        "Using vague ownership such as “the AI team”",
+        "Treating consultation as communication after decisions are made",
+        "Approving optimistic exact numbers without evidence",
+        "Allowing deliverables to exist without a decision or downstream use"
+      ],
+      "ai": "Draft a Enterprise RACI using only the supplied enterprise context. Identify missing evidence, label assumptions, avoid invented facts and exact unsupported figures, show alternatives where a decision is required, and end with named review and approval actions.",
+      "related": [
+        "governance-forums",
+        "decision-rights",
+        "delivery-model",
+        "operating-model"
+      ],
+      "approval": "Platform Owner approves the record after Programme Director confirms completeness and required reviewers validate the evidence.",
+      "publicSector": "Account for public value, statutory authority, accessibility, transparency, records management, procurement rules and citizen impact.",
+      "privateSector": "Connect the work to competitive value, customer outcomes, shareholder accountability, commercial risk, workforce impact and investment governance.",
+      "success": [
+        "The output is specific enough to guide a decision",
+        "An accountable owner and approver are named",
+        "Evidence sources and assumptions are visible",
+        "Dependencies and downstream uses are linked",
+        "Open conditions have owners and dates"
+      ],
+      "template": "/downloads/mobilise/enterprise-raci-template.md"
+    },
+    {
+      "slug": "delivery-model",
+      "id": "MOB-011",
+      "name": "Delivery Model",
+      "type": "Operating model",
+      "criticality": "mandatory",
+      "owner": "Programme Director",
+      "approver": "Platform Owner",
+      "purpose": "Define how the programme organises work, teams, suppliers, increments and decisions.",
+      "when": "Before detailed mobilisation planning and resourcing.",
+      "structure": [
+        "Delivery approach",
+        "Workstreams",
+        "Team structure",
+        "Sourcing",
+        "Cadence",
+        "Quality controls",
+        "Dependencies",
+        "Escalation"
+      ],
+      "why": "Without a reliable Delivery Model, later stages may act on unclear authority, incomplete evidence or unowned decisions.",
+      "inputs": [
+        "Approved upstream Mobilise evidence",
+        "Named enterprise owners and reviewers",
+        "Applicable policies, obligations and organisational records"
+      ],
+      "mistakes": [
+        "Starting with a technology product instead of a business need",
+        "Using vague ownership such as “the AI team”",
+        "Treating consultation as communication after decisions are made",
+        "Approving optimistic exact numbers without evidence",
+        "Allowing deliverables to exist without a decision or downstream use"
+      ],
+      "ai": "Draft a Delivery Model using only the supplied enterprise context. Identify missing evidence, label assumptions, avoid invented facts and exact unsupported figures, show alternatives where a decision is required, and end with named review and approval actions.",
+      "related": [
+        "decision-rights",
+        "enterprise-raci",
+        "operating-model",
+        "funding-model"
+      ],
+      "approval": "Platform Owner approves the record after Programme Director confirms completeness and required reviewers validate the evidence.",
+      "publicSector": "Account for public value, statutory authority, accessibility, transparency, records management, procurement rules and citizen impact.",
+      "privateSector": "Connect the work to competitive value, customer outcomes, shareholder accountability, commercial risk, workforce impact and investment governance.",
+      "success": [
+        "The output is specific enough to guide a decision",
+        "An accountable owner and approver are named",
+        "Evidence sources and assumptions are visible",
+        "Dependencies and downstream uses are linked",
+        "Open conditions have owners and dates"
+      ],
+      "template": "/downloads/mobilise/delivery-model-template.md"
+    },
+    {
+      "slug": "operating-model",
+      "id": "MOB-012",
+      "name": "Operating Model",
+      "type": "Operating model",
+      "criticality": "mandatory",
+      "owner": "Platform Owner",
+      "approver": "Executive Sponsor",
+      "purpose": "Define initial ownership across strategy, governance, platforms, delivery and operations.",
+      "when": "During mobilisation, refined during strategy and implementation planning.",
+      "structure": [
+        "Capabilities",
+        "Accountabilities",
+        "Organisation",
+        "Forums",
+        "Processes",
+        "Technology enablement",
+        "Service ownership",
+        "Maturity assumptions"
+      ],
+      "why": "Without a reliable Operating Model, later stages may act on unclear authority, incomplete evidence or unowned decisions.",
+      "inputs": [
+        "Approved upstream Mobilise evidence",
+        "Named enterprise owners and reviewers",
+        "Applicable policies, obligations and organisational records"
+      ],
+      "mistakes": [
+        "Starting with a technology product instead of a business need",
+        "Using vague ownership such as “the AI team”",
+        "Treating consultation as communication after decisions are made",
+        "Approving optimistic exact numbers without evidence",
+        "Allowing deliverables to exist without a decision or downstream use"
+      ],
+      "ai": "Draft a Operating Model using only the supplied enterprise context. Identify missing evidence, label assumptions, avoid invented facts and exact unsupported figures, show alternatives where a decision is required, and end with named review and approval actions.",
+      "related": [
+        "enterprise-raci",
+        "delivery-model",
+        "funding-model",
+        "success-measures"
+      ],
+      "approval": "Executive Sponsor approves the record after Platform Owner confirms completeness and required reviewers validate the evidence.",
+      "publicSector": "Account for public value, statutory authority, accessibility, transparency, records management, procurement rules and citizen impact.",
+      "privateSector": "Connect the work to competitive value, customer outcomes, shareholder accountability, commercial risk, workforce impact and investment governance.",
+      "success": [
+        "The output is specific enough to guide a decision",
+        "An accountable owner and approver are named",
+        "Evidence sources and assumptions are visible",
+        "Dependencies and downstream uses are linked",
+        "Open conditions have owners and dates"
+      ],
+      "template": "/downloads/mobilise/operating-model-template.md"
+    },
+    {
+      "slug": "funding-model",
+      "id": "MOB-013",
+      "name": "Funding Model",
+      "type": "Decision record",
+      "criticality": "mandatory",
+      "owner": "Finance Lead",
+      "approver": "Executive Sponsor",
+      "purpose": "Define funding sources, approval thresholds, cost categories and investment governance.",
+      "when": "Before resources are committed and before the business case stage.",
+      "structure": [
+        "Funding source",
+        "Cost categories",
+        "Approval thresholds",
+        "Stage funding",
+        "Contingency",
+        "Assumptions",
+        "Review cadence"
+      ],
+      "why": "Without a reliable Funding Model, later stages may act on unclear authority, incomplete evidence or unowned decisions.",
+      "inputs": [
+        "Approved upstream Mobilise evidence",
+        "Named enterprise owners and reviewers",
+        "Applicable policies, obligations and organisational records"
+      ],
+      "mistakes": [
+        "Starting with a technology product instead of a business need",
+        "Using vague ownership such as “the AI team”",
+        "Treating consultation as communication after decisions are made",
+        "Approving optimistic exact numbers without evidence",
+        "Allowing deliverables to exist without a decision or downstream use"
+      ],
+      "ai": "Draft a Funding Model using only the supplied enterprise context. Identify missing evidence, label assumptions, avoid invented facts and exact unsupported figures, show alternatives where a decision is required, and end with named review and approval actions.",
+      "related": [
+        "delivery-model",
+        "operating-model",
+        "success-measures",
+        "ai-principles"
+      ],
+      "approval": "Executive Sponsor approves the record after Finance Lead confirms completeness and required reviewers validate the evidence.",
+      "publicSector": "Account for public value, statutory authority, accessibility, transparency, records management, procurement rules and citizen impact.",
+      "privateSector": "Connect the work to competitive value, customer outcomes, shareholder accountability, commercial risk, workforce impact and investment governance.",
+      "success": [
+        "The output is specific enough to guide a decision",
+        "An accountable owner and approver are named",
+        "Evidence sources and assumptions are visible",
+        "Dependencies and downstream uses are linked",
+        "Open conditions have owners and dates"
+      ],
+      "template": "/downloads/mobilise/funding-model-template.md"
+    },
+    {
+      "slug": "success-measures",
+      "id": "MOB-014",
+      "name": "Success Measures",
+      "type": "Measurement plan",
+      "criticality": "mandatory",
+      "owner": "Business Owner",
+      "approver": "Executive Sponsor",
+      "purpose": "Define outcome measures, baselines, target ranges, owners and measurement methods.",
+      "when": "After strategic objectives are agreed and before mobilisation approval.",
+      "structure": [
+        "Objective",
+        "Measure",
+        "Definition",
+        "Baseline",
+        "Target range",
+        "Data source",
+        "Owner",
+        "Cadence"
+      ],
+      "why": "Without a reliable Success Measures, later stages may act on unclear authority, incomplete evidence or unowned decisions.",
+      "inputs": [
+        "Approved upstream Mobilise evidence",
+        "Named enterprise owners and reviewers",
+        "Applicable policies, obligations and organisational records"
+      ],
+      "mistakes": [
+        "Starting with a technology product instead of a business need",
+        "Using vague ownership such as “the AI team”",
+        "Treating consultation as communication after decisions are made",
+        "Approving optimistic exact numbers without evidence",
+        "Allowing deliverables to exist without a decision or downstream use"
+      ],
+      "ai": "Draft a Success Measures using only the supplied enterprise context. Identify missing evidence, label assumptions, avoid invented facts and exact unsupported figures, show alternatives where a decision is required, and end with named review and approval actions.",
+      "related": [
+        "operating-model",
+        "funding-model",
+        "ai-principles",
+        "risk-appetite"
+      ],
+      "approval": "Executive Sponsor approves the record after Business Owner confirms completeness and required reviewers validate the evidence.",
+      "publicSector": "Account for public value, statutory authority, accessibility, transparency, records management, procurement rules and citizen impact.",
+      "privateSector": "Connect the work to competitive value, customer outcomes, shareholder accountability, commercial risk, workforce impact and investment governance.",
+      "success": [
+        "The output is specific enough to guide a decision",
+        "An accountable owner and approver are named",
+        "Evidence sources and assumptions are visible",
+        "Dependencies and downstream uses are linked",
+        "Open conditions have owners and dates"
+      ],
+      "template": "/downloads/mobilise/success-measures-template.md"
+    },
+    {
+      "slug": "ai-principles",
+      "id": "MOB-015",
+      "name": "AI Principles",
+      "type": "Principles",
+      "criticality": "mandatory",
+      "owner": "Platform Owner",
+      "approver": "Executive Sponsor",
+      "purpose": "Create actionable principles for later governance, architecture and investment decisions.",
+      "when": "During mobilisation, before discovery and strategy choices.",
+      "structure": [
+        "Principle",
+        "Why it matters",
+        "Required behaviour",
+        "Decision test",
+        "Owner",
+        "Exception route"
+      ],
+      "why": "Without a reliable AI Principles, later stages may act on unclear authority, incomplete evidence or unowned decisions.",
+      "inputs": [
+        "Approved upstream Mobilise evidence",
+        "Named enterprise owners and reviewers",
+        "Applicable policies, obligations and organisational records"
+      ],
+      "mistakes": [
+        "Starting with a technology product instead of a business need",
+        "Using vague ownership such as “the AI team”",
+        "Treating consultation as communication after decisions are made",
+        "Approving optimistic exact numbers without evidence",
+        "Allowing deliverables to exist without a decision or downstream use"
+      ],
+      "ai": "Draft a AI Principles using only the supplied enterprise context. Identify missing evidence, label assumptions, avoid invented facts and exact unsupported figures, show alternatives where a decision is required, and end with named review and approval actions.",
+      "related": [
+        "funding-model",
+        "success-measures",
+        "risk-appetite",
+        "raid-register"
+      ],
+      "approval": "Executive Sponsor approves the record after Platform Owner confirms completeness and required reviewers validate the evidence.",
+      "publicSector": "Account for public value, statutory authority, accessibility, transparency, records management, procurement rules and citizen impact.",
+      "privateSector": "Connect the work to competitive value, customer outcomes, shareholder accountability, commercial risk, workforce impact and investment governance.",
+      "success": [
+        "The output is specific enough to guide a decision",
+        "An accountable owner and approver are named",
+        "Evidence sources and assumptions are visible",
+        "Dependencies and downstream uses are linked",
+        "Open conditions have owners and dates"
+      ],
+      "template": "/downloads/mobilise/ai-principles-template.md"
+    },
+    {
+      "slug": "risk-appetite",
+      "id": "MOB-016",
+      "name": "Risk Appetite Statement",
+      "type": "Policy direction",
+      "criticality": "mandatory",
+      "owner": "Risk Executive",
+      "approver": "Risk Executive",
+      "purpose": "Set boundaries for impact, autonomy, data use, uncertainty and prohibited activity.",
+      "when": "Before opportunity assessment and before governance controls are designed.",
+      "structure": [
+        "Risk domain",
+        "Appetite",
+        "Boundary",
+        "Prohibited activity",
+        "Required oversight",
+        "Approval authority",
+        "Exception route"
+      ],
+      "why": "Without a reliable Risk Appetite Statement, later stages may act on unclear authority, incomplete evidence or unowned decisions.",
+      "inputs": [
+        "Approved upstream Mobilise evidence",
+        "Named enterprise owners and reviewers",
+        "Applicable policies, obligations and organisational records"
+      ],
+      "mistakes": [
+        "Starting with a technology product instead of a business need",
+        "Using vague ownership such as “the AI team”",
+        "Treating consultation as communication after decisions are made",
+        "Approving optimistic exact numbers without evidence",
+        "Allowing deliverables to exist without a decision or downstream use"
+      ],
+      "ai": "Draft a Risk Appetite Statement using only the supplied enterprise context. Identify missing evidence, label assumptions, avoid invented facts and exact unsupported figures, show alternatives where a decision is required, and end with named review and approval actions.",
+      "related": [
+        "success-measures",
+        "ai-principles",
+        "raid-register",
+        "mobilisation-plan"
+      ],
+      "approval": "Risk Executive approves the record after Risk Executive confirms completeness and required reviewers validate the evidence.",
+      "publicSector": "Account for public value, statutory authority, accessibility, transparency, records management, procurement rules and citizen impact.",
+      "privateSector": "Connect the work to competitive value, customer outcomes, shareholder accountability, commercial risk, workforce impact and investment governance.",
+      "success": [
+        "The output is specific enough to guide a decision",
+        "An accountable owner and approver are named",
+        "Evidence sources and assumptions are visible",
+        "Dependencies and downstream uses are linked",
+        "Open conditions have owners and dates"
+      ],
+      "template": "/downloads/mobilise/risk-appetite-template.md"
+    },
+    {
+      "slug": "raid-register",
+      "id": "MOB-017",
+      "name": "RAID Register",
+      "type": "Register",
+      "criticality": "mandatory",
+      "owner": "Programme Director",
+      "approver": "Platform Owner",
+      "purpose": "Expose risks, assumptions, issues and dependencies with owners and responses.",
+      "when": "Created at mobilisation and maintained throughout the programme.",
+      "structure": [
+        "Type",
+        "Description",
+        "Cause",
+        "Impact",
+        "Likelihood",
+        "Owner",
+        "Response",
+        "Due date",
+        "Status"
+      ],
+      "why": "Without a reliable RAID Register, later stages may act on unclear authority, incomplete evidence or unowned decisions.",
+      "inputs": [
+        "Approved upstream Mobilise evidence",
+        "Named enterprise owners and reviewers",
+        "Applicable policies, obligations and organisational records"
+      ],
+      "mistakes": [
+        "Starting with a technology product instead of a business need",
+        "Using vague ownership such as “the AI team”",
+        "Treating consultation as communication after decisions are made",
+        "Approving optimistic exact numbers without evidence",
+        "Allowing deliverables to exist without a decision or downstream use"
+      ],
+      "ai": "Draft a RAID Register using only the supplied enterprise context. Identify missing evidence, label assumptions, avoid invented facts and exact unsupported figures, show alternatives where a decision is required, and end with named review and approval actions.",
+      "related": [
+        "ai-principles",
+        "risk-appetite",
+        "mobilisation-plan",
+        "communication-plan"
+      ],
+      "approval": "Platform Owner approves the record after Programme Director confirms completeness and required reviewers validate the evidence.",
+      "publicSector": "Account for public value, statutory authority, accessibility, transparency, records management, procurement rules and citizen impact.",
+      "privateSector": "Connect the work to competitive value, customer outcomes, shareholder accountability, commercial risk, workforce impact and investment governance.",
+      "success": [
+        "The output is specific enough to guide a decision",
+        "An accountable owner and approver are named",
+        "Evidence sources and assumptions are visible",
+        "Dependencies and downstream uses are linked",
+        "Open conditions have owners and dates"
+      ],
+      "template": "/downloads/mobilise/raid-register-template.md"
+    },
+    {
+      "slug": "mobilisation-plan",
+      "id": "MOB-018",
+      "name": "Mobilisation Plan",
+      "type": "Plan",
+      "criticality": "mandatory",
+      "owner": "Programme Director",
+      "approver": "Platform Owner",
+      "purpose": "Sequence mobilisation activities, workshops, deliverables, decisions and resources.",
+      "when": "After workstreams and owners are defined and before programme kick-off.",
+      "structure": [
+        "Activity",
+        "Outcome",
+        "Owner",
+        "Start",
+        "Finish",
+        "Dependency",
+        "Deliverable",
+        "Decision",
+        "Status"
+      ],
+      "why": "Without a reliable Mobilisation Plan, later stages may act on unclear authority, incomplete evidence or unowned decisions.",
+      "inputs": [
+        "Approved upstream Mobilise evidence",
+        "Named enterprise owners and reviewers",
+        "Applicable policies, obligations and organisational records"
+      ],
+      "mistakes": [
+        "Starting with a technology product instead of a business need",
+        "Using vague ownership such as “the AI team”",
+        "Treating consultation as communication after decisions are made",
+        "Approving optimistic exact numbers without evidence",
+        "Allowing deliverables to exist without a decision or downstream use"
+      ],
+      "ai": "Draft a Mobilisation Plan using only the supplied enterprise context. Identify missing evidence, label assumptions, avoid invented facts and exact unsupported figures, show alternatives where a decision is required, and end with named review and approval actions.",
+      "related": [
+        "risk-appetite",
+        "raid-register",
+        "communication-plan",
+        "executive-briefing-pack"
+      ],
+      "approval": "Platform Owner approves the record after Programme Director confirms completeness and required reviewers validate the evidence.",
+      "publicSector": "Account for public value, statutory authority, accessibility, transparency, records management, procurement rules and citizen impact.",
+      "privateSector": "Connect the work to competitive value, customer outcomes, shareholder accountability, commercial risk, workforce impact and investment governance.",
+      "success": [
+        "The output is specific enough to guide a decision",
+        "An accountable owner and approver are named",
+        "Evidence sources and assumptions are visible",
+        "Dependencies and downstream uses are linked",
+        "Open conditions have owners and dates"
+      ],
+      "template": "/downloads/mobilise/mobilisation-plan-template.md"
+    },
+    {
+      "slug": "communication-plan",
+      "id": "MOB-019",
+      "name": "Communication Plan",
+      "type": "Plan",
+      "criticality": "mandatory",
+      "owner": "Change Lead",
+      "approver": "Programme Director",
+      "purpose": "Plan transparent communication, consultation, feedback and adoption activity.",
+      "when": "After the stakeholder register and before programme kick-off.",
+      "structure": [
+        "Audience",
+        "Objective",
+        "Message",
+        "Channel",
+        "Timing",
+        "Owner",
+        "Feedback route",
+        "Measure"
+      ],
+      "why": "Without a reliable Communication Plan, later stages may act on unclear authority, incomplete evidence or unowned decisions.",
+      "inputs": [
+        "Approved upstream Mobilise evidence",
+        "Named enterprise owners and reviewers",
+        "Applicable policies, obligations and organisational records"
+      ],
+      "mistakes": [
+        "Starting with a technology product instead of a business need",
+        "Using vague ownership such as “the AI team”",
+        "Treating consultation as communication after decisions are made",
+        "Approving optimistic exact numbers without evidence",
+        "Allowing deliverables to exist without a decision or downstream use"
+      ],
+      "ai": "Draft a Communication Plan using only the supplied enterprise context. Identify missing evidence, label assumptions, avoid invented facts and exact unsupported figures, show alternatives where a decision is required, and end with named review and approval actions.",
+      "related": [
+        "raid-register",
+        "mobilisation-plan",
+        "executive-briefing-pack"
+      ],
+      "approval": "Programme Director approves the record after Change Lead confirms completeness and required reviewers validate the evidence.",
+      "publicSector": "Account for public value, statutory authority, accessibility, transparency, records management, procurement rules and citizen impact.",
+      "privateSector": "Connect the work to competitive value, customer outcomes, shareholder accountability, commercial risk, workforce impact and investment governance.",
+      "success": [
+        "The output is specific enough to guide a decision",
+        "An accountable owner and approver are named",
+        "Evidence sources and assumptions are visible",
+        "Dependencies and downstream uses are linked",
+        "Open conditions have owners and dates"
+      ],
+      "template": "/downloads/mobilise/communication-plan-template.md"
+    },
+    {
+      "slug": "executive-briefing-pack",
+      "id": "MOB-020",
+      "name": "Executive Briefing Pack",
+      "type": "Briefing",
+      "criticality": "mandatory",
+      "owner": "Programme Director",
+      "approver": "Executive Sponsor",
+      "purpose": "Give decision-makers a concise, evidence-backed view of mandate, choices, risks and next actions.",
+      "when": "For mobilisation review and gate approval.",
+      "structure": [
+        "Decision required",
+        "Executive summary",
+        "Drivers",
+        "Scope",
+        "Governance",
+        "Funding",
+        "Risk appetite",
+        "Progress",
+        "Risks",
+        "Recommendation"
+      ],
+      "why": "Without a reliable Executive Briefing Pack, later stages may act on unclear authority, incomplete evidence or unowned decisions.",
+      "inputs": [
+        "Approved upstream Mobilise evidence",
+        "Named enterprise owners and reviewers",
+        "Applicable policies, obligations and organisational records"
+      ],
+      "mistakes": [
+        "Starting with a technology product instead of a business need",
+        "Using vague ownership such as “the AI team”",
+        "Treating consultation as communication after decisions are made",
+        "Approving optimistic exact numbers without evidence",
+        "Allowing deliverables to exist without a decision or downstream use"
+      ],
+      "ai": "Draft a Executive Briefing Pack using only the supplied enterprise context. Identify missing evidence, label assumptions, avoid invented facts and exact unsupported figures, show alternatives where a decision is required, and end with named review and approval actions.",
+      "related": [
+        "mobilisation-plan",
+        "communication-plan"
+      ],
+      "approval": "Executive Sponsor approves the record after Programme Director confirms completeness and required reviewers validate the evidence.",
+      "publicSector": "Account for public value, statutory authority, accessibility, transparency, records management, procurement rules and citizen impact.",
+      "privateSector": "Connect the work to competitive value, customer outcomes, shareholder accountability, commercial risk, workforce impact and investment governance.",
+      "success": [
+        "The output is specific enough to guide a decision",
+        "An accountable owner and approver are named",
+        "Evidence sources and assumptions are visible",
+        "Dependencies and downstream uses are linked",
+        "Open conditions have owners and dates"
+      ],
+      "template": "/downloads/mobilise/executive-briefing-pack-template.md"
+    }
+  ],
+  "workshops": [
+    {
+      "slug": "executive-vision",
+      "name": "Executive Vision Workshop",
+      "objective": "Agree the business need, ambition, outcomes, sponsorship and boundaries.",
+      "duration": "3 hours",
+      "participants": [
+        "Executive Sponsor",
+        "CIO/CTO",
+        "Business Owners",
+        "Platform Owner",
+        "Risk Executive"
+      ],
+      "preparation": [
+        "Current strategy",
+        "Known drivers and constraints",
+        "Initial AI ambition"
+      ],
+      "questions": [
+        "Why must the organisation act now?",
+        "Which outcomes matter?",
+        "What must not happen?",
+        "Who owns the mandate?"
+      ],
+      "outputs": [
+        "Executive Mandate",
+        "Strategic Objectives"
+      ],
+      "decisions": [
+        "Approve ambition and sponsor",
+        "Confirm scope direction"
+      ],
+      "facilitator": "Enterprise AI Methodology Lead",
+      "agenda": [
+        "Welcome, purpose and decision context",
+        "Review evidence and assumptions",
+        "Facilitated discussion",
+        "Confirm outputs, owners and open questions",
+        "Record decisions and next actions"
+      ],
+      "assistant": "Create a time-boxed agenda for the Executive Vision Workshop. Use the stated objective, participants, preparation, questions, outputs and decisions. Include facilitator notes, evidence gaps, decision checkpoints and a closing action log."
+    },
+    {
+      "slug": "business-drivers",
+      "name": "Business Drivers Workshop",
+      "objective": "Create an evidence-based business rationale and initial success measures.",
+      "duration": "3 hours",
+      "participants": [
+        "Business Owners",
+        "Finance",
+        "Strategy",
+        "Customer/Service Leads",
+        "Programme Director"
+      ],
+      "preparation": [
+        "Performance evidence",
+        "Customer and workforce needs",
+        "Strategic plans"
+      ],
+      "questions": [
+        "What problem are we solving?",
+        "What evidence supports urgency?",
+        "Which measures would prove value?"
+      ],
+      "outputs": [
+        "Business Drivers",
+        "Success Measures"
+      ],
+      "decisions": [
+        "Validate drivers",
+        "Assign outcome owners"
+      ],
+      "facilitator": "Enterprise AI Methodology Lead",
+      "agenda": [
+        "Welcome, purpose and decision context",
+        "Review evidence and assumptions",
+        "Facilitated discussion",
+        "Confirm outputs, owners and open questions",
+        "Record decisions and next actions"
+      ],
+      "assistant": "Create a time-boxed agenda for the Business Drivers Workshop. Use the stated objective, participants, preparation, questions, outputs and decisions. Include facilitator notes, evidence gaps, decision checkpoints and a closing action log."
+    },
+    {
+      "slug": "governance",
+      "name": "Governance Workshop",
+      "objective": "Design forums, decision rights, RACI, evidence and escalation.",
+      "duration": "4 hours",
+      "participants": [
+        "Platform Owner",
+        "Risk",
+        "Security",
+        "Privacy",
+        "Legal",
+        "Architecture",
+        "Audit",
+        "Programme Director"
+      ],
+      "preparation": [
+        "Draft mandate",
+        "Existing governance map",
+        "Risk policies"
+      ],
+      "questions": [
+        "Which decisions exist?",
+        "Who approves and accepts risk?",
+        "What evidence is mandatory?",
+        "How are exceptions handled?"
+      ],
+      "outputs": [
+        "Governance Charter",
+        "Governance Forums",
+        "Decision Rights",
+        "Enterprise RACI"
+      ],
+      "decisions": [
+        "Approve governance design",
+        "Confirm gate forum"
+      ],
+      "facilitator": "Enterprise AI Methodology Lead",
+      "agenda": [
+        "Welcome, purpose and decision context",
+        "Review evidence and assumptions",
+        "Facilitated discussion",
+        "Confirm outputs, owners and open questions",
+        "Record decisions and next actions"
+      ],
+      "assistant": "Create a time-boxed agenda for the Governance Workshop. Use the stated objective, participants, preparation, questions, outputs and decisions. Include facilitator notes, evidence gaps, decision checkpoints and a closing action log."
+    },
+    {
+      "slug": "stakeholder",
+      "name": "Stakeholder Workshop",
+      "objective": "Identify impacted stakeholders and plan communication, consultation and feedback.",
+      "duration": "3 hours",
+      "participants": [
+        "Programme",
+        "Business Owners",
+        "Change Lead",
+        "HR",
+        "Communications",
+        "Control Functions"
+      ],
+      "preparation": [
+        "Draft scope",
+        "Organisation map",
+        "Change obligations"
+      ],
+      "questions": [
+        "Who is affected?",
+        "Whose knowledge is required?",
+        "Who can block or accelerate progress?",
+        "How will feedback change decisions?"
+      ],
+      "outputs": [
+        "Stakeholder Register",
+        "Communication Plan"
+      ],
+      "decisions": [
+        "Approve engagement priorities"
+      ],
+      "facilitator": "Enterprise AI Methodology Lead",
+      "agenda": [
+        "Welcome, purpose and decision context",
+        "Review evidence and assumptions",
+        "Facilitated discussion",
+        "Confirm outputs, owners and open questions",
+        "Record decisions and next actions"
+      ],
+      "assistant": "Create a time-boxed agenda for the Stakeholder Workshop. Use the stated objective, participants, preparation, questions, outputs and decisions. Include facilitator notes, evidence gaps, decision checkpoints and a closing action log."
+    },
+    {
+      "slug": "programme-kick-off",
+      "name": "Programme Kick-off",
+      "objective": "Align the team on mandate, scope, roles, plan, controls and ways of working.",
+      "duration": "2 hours",
+      "participants": [
+        "Core Programme Team",
+        "Workstream Leads",
+        "Control Functions",
+        "Business Owners",
+        "Service Owner"
+      ],
+      "preparation": [
+        "Approved charter",
+        "RACI",
+        "Mobilisation plan",
+        "RAID register"
+      ],
+      "questions": [
+        "What are we delivering?",
+        "How will decisions be made?",
+        "How do we raise risk?",
+        "What happens next?"
+      ],
+      "outputs": [
+        "Confirmed Mobilisation Plan",
+        "Updated RAID Register"
+      ],
+      "decisions": [
+        "Accept working agreements",
+        "Confirm immediate actions"
+      ],
+      "facilitator": "Enterprise AI Methodology Lead",
+      "agenda": [
+        "Welcome, purpose and decision context",
+        "Review evidence and assumptions",
+        "Facilitated discussion",
+        "Confirm outputs, owners and open questions",
+        "Record decisions and next actions"
+      ],
+      "assistant": "Create a time-boxed agenda for the Programme Kick-off. Use the stated objective, participants, preparation, questions, outputs and decisions. Include facilitator notes, evidence gaps, decision checkpoints and a closing action log."
+    },
+    {
+      "slug": "mobilisation-review",
+      "name": "Mobilisation Review",
+      "objective": "Assess evidence completeness and recommend a Mobilisation Approval decision.",
+      "duration": "4 hours",
+      "participants": [
+        "Executive Sponsor",
+        "Platform Owner",
+        "Programme Director",
+        "Business Owner",
+        "Risk",
+        "Finance",
+        "Audit"
+      ],
+      "preparation": [
+        "All mandatory deliverables",
+        "Exit checklist",
+        "Open conditions and risks"
+      ],
+      "questions": [
+        "Is the programme authorised and bounded?",
+        "Are owners and funding clear?",
+        "Are risk boundaries approved?",
+        "Can discovery begin safely?"
+      ],
+      "outputs": [
+        "Executive Briefing Pack",
+        "Gate decision record"
+      ],
+      "decisions": [
+        "Mobilisation gate decision"
+      ],
+      "facilitator": "Platform Owner",
+      "agenda": [
+        "Welcome, purpose and decision context",
+        "Review evidence and assumptions",
+        "Facilitated discussion",
+        "Confirm outputs, owners and open questions",
+        "Record decisions and next actions"
+      ],
+      "assistant": "Create a time-boxed agenda for the Mobilisation Review. Use the stated objective, participants, preparation, questions, outputs and decisions. Include facilitator notes, evidence gaps, decision checkpoints and a closing action log."
+    }
+  ],
+  "assistants": [
+    {
+      "id": "generate-programme-charter",
+      "label": "Generate Programme Charter",
+      "deliverable": "programme-charter",
+      "prompt": "Help me draft Programme Charter. Use only the context I provide. Identify missing evidence and assumptions. Return a structured draft aligned with the approved Mobilise methodology. Do not approve it or invent enterprise facts."
+    },
+    {
+      "id": "generate-stakeholder-register",
+      "label": "Generate Stakeholder Register",
+      "deliverable": "stakeholder-register",
+      "prompt": "Help me draft Stakeholder Register. Use only the context I provide. Identify missing evidence and assumptions. Return a structured draft aligned with the approved Mobilise methodology. Do not approve it or invent enterprise facts."
+    },
+    {
+      "id": "generate-executive-summary",
+      "label": "Generate Executive Summary",
+      "deliverable": "executive-briefing-pack",
+      "prompt": "Help me draft Executive Briefing Pack. Use only the context I provide. Identify missing evidence and assumptions. Return a structured draft aligned with the approved Mobilise methodology. Do not approve it or invent enterprise facts."
+    },
+    {
+      "id": "generate-governance-charter",
+      "label": "Generate Governance Charter",
+      "deliverable": "governance-charter",
+      "prompt": "Help me draft Governance Charter. Use only the context I provide. Identify missing evidence and assumptions. Return a structured draft aligned with the approved Mobilise methodology. Do not approve it or invent enterprise facts."
+    },
+    {
+      "id": "generate-business-drivers",
+      "label": "Generate Business Drivers",
+      "deliverable": "business-drivers",
+      "prompt": "Help me draft Business Drivers. Use only the context I provide. Identify missing evidence and assumptions. Return a structured draft aligned with the approved Mobilise methodology. Do not approve it or invent enterprise facts."
+    },
+    {
+      "id": "generate-success-measures",
+      "label": "Generate Success Measures",
+      "deliverable": "success-measures",
+      "prompt": "Help me draft Success Measures. Use only the context I provide. Identify missing evidence and assumptions. Return a structured draft aligned with the approved Mobilise methodology. Do not approve it or invent enterprise facts."
+    },
+    {
+      "id": "generate-risk-appetite",
+      "label": "Generate Risk Appetite",
+      "deliverable": "risk-appetite",
+      "prompt": "Help me draft Risk Appetite Statement. Use only the context I provide. Identify missing evidence and assumptions. Return a structured draft aligned with the approved Mobilise methodology. Do not approve it or invent enterprise facts."
+    },
+    {
+      "id": "generate-communication-plan",
+      "label": "Generate Communication Plan",
+      "deliverable": "communication-plan",
+      "prompt": "Help me draft Communication Plan. Use only the context I provide. Identify missing evidence and assumptions. Return a structured draft aligned with the approved Mobilise methodology. Do not approve it or invent enterprise facts."
+    }
+  ]
+}

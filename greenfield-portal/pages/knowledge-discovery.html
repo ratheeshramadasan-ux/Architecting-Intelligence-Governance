@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Search and browse connected enterprise AI architecture, governance, security, implementation and operations knowledge.">
+  <title>Knowledge Centre | Architecting Intelligence</title>
+  <link rel="stylesheet" href="/assets/css/methodology-v10.css?v=20260728-25">
+  <link rel="stylesheet" href="/assets/css/platform-sections.css?v=20260727-6">
+  <script src="/assets/js/methodology-v10.js?v=20260728-26" defer></script>
+  <script src="/assets/js/knowledge-discovery.js?v=20260727-6" defer></script>
+</head>
+<body data-methodology-page="knowledge">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header id="methodology-header"></header>
+  <main id="main-content">
+    <section class="detail-hero">
+      <div class="methodology-wrap">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="/">Home</a><span>/</span>
+          <span>Knowledge Centre</span>
+        </nav>
+        <span class="eyebrow">Enterprise AI Knowledge & Taxonomy Engine</span>
+        <h1>Knowledge Centre</h1>
+        <p class="hero-lead">Search architecture, governance, security, implementation, operations, and responsible-AI guidance from one consistent metadata-driven platform.</p>
+      </div>
+    </section>
+
+    <section class="methodology-wrap platform-section-shell">
+      <div class="knowledge-standard-grid">
+        <div>
+          <span class="content-kicker">Knowledge Search</span>
+          <h2>What do you need to understand or decide?</h2>
+          <form id="knowledge-search-form" class="standard-search" role="search">
+            <label for="knowledge-query">Search published guidance</label>
+            <div>
+              <input id="knowledge-query" name="q" type="search" minlength="2" maxlength="240" autocomplete="off" placeholder="For example: How do I secure AI agents?" required>
+              <button class="button primary" type="submit">Search knowledge</button>
+            </div>
+            <label for="knowledge-audience">Explain for 
+              <select id="knowledge-audience" name="audience">
+                <option value="executive">Executive</option>
+                <option value="practitioner" selected>Practitioner</option>
+                <option value="technical">Technical</option>
+              </select>
+            </label>
+          </form>
+        </div>
+        <aside class="platform-trust">
+          <span>Evidence Boundary</span>
+          <h2>Published Guidance Only.</h2>
+          <p>This release retrieves canonical portal content classified by domain, audience, stage, and standards. Generative synthesis remains inactive.</p>
+        </aside>
+      </div>
+
+      <p id="knowledge-status" class="knowledge-status" role="status" aria-live="polite">Try "RAG", "human approval", "AI Gateway", "agentic AI", or "ISO 42001".</p>
+      <section id="knowledge-results" class="knowledge-results" aria-label="Search results"></section>
+
+      <div class="section-divider" style="margin-top: 3rem;">
+        <span class="content-kicker">Topic Taxonomy</span>
+        <h2>Browse Guidance by Topic Category</h2>
+        <div id="knowledge-categories" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1rem; margin-top: 1.5rem;">
+          <!-- Category cards generated dynamically from knowledge-taxonomy.json -->
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="methodology-footer"></footer>
+</body>
+</html>

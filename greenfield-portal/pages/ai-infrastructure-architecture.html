@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="AI Infrastructure Architecture — cloud, self-hosted and hybrid deployment patterns governed through a single enterprise AI gateway."><title>AI Infrastructure Architecture | Ratheesh Technology Ltd.</title>
+<link rel="stylesheet" href="../assets/css/legacy-visuals.css?v=20260726-4"><link rel="stylesheet" href="../assets/css/navigation.css?v=20260727-5"><link rel="stylesheet" href="/assets/css/methodology-v10.css?v=20260728-25"><script src="/assets/js/methodology-v10.js?v=20260728-26" defer></script></head>
+<body class="knowledge-theme-page" data-methodology-page="ai-infrastructure"><a class="skip-link" href="#main-content">Skip to content</a><header id="methodology-header"></header>
+<header class="site-header">
+  <div class="utility-bar"><div class="utility-inner"><span>AI implementation &amp; governance advisory</span><a href="../pages/contact.html">Speak with an advisor <span aria-hidden="true">&#8594;</span></a></div></div>
+  <div class="header-container">
+    <a class="brand" href="../index.html" aria-label="Ratheesh Technology Ltd. home"><img class="company-logo" src="../assets/images/ratheesh-technology-logo-transparent.png?v=20260719-63" alt="Ratheesh Technology Ltd. — AI Implementation and Governance" width="1906" height="825"></a>
+    <button class="mobile-menu-button" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+    <nav id="primary-navigation" class="primary-navigation" aria-label="Primary navigation"></nav>
+  </div>
+</header>
+<main id="main-content" class="inner-page"><div class="legacy-content">
+<section class="article-hero platform-page-hero"><div class="hero-inner">
+<div class="hero-eyebrow">Enterprise Architecture · AI Infrastructure</div>
+<h1>AI Infrastructure Architecture</h1>
+<p>A deployment-topology reference architecture for routing, serving, securing, and operating AI workloads across third-party cloud providers, self-hosted infrastructure, and governed hybrid combinations.</p>
+</div></section>
+<div class="article-body">
+<section class="decision-summary" aria-labelledby="infrastructure-decision-title"><h2 id="infrastructure-decision-title">Executive decision summary</h2><p class="decision-lead">Choose where AI runs by balancing data sovereignty, security, resilience, performance, skills, and full lifecycle cost—not by treating cloud or self-hosting as universally better.</p><div class="decision-summary-grid"><div><h3>Business outcome</h3><p>Operate AI at the required service level while protecting sensitive data and avoiding fragile dependencies.</p></div><div><h3>How it works</h3><p>Separate policy and routing controls from execution, then select cloud, self-hosted, or hybrid capacity for each workload.</p></div><div><h3>Decision rule</h3><p>Use the simplest topology that satisfies measured requirements and has accountable support, monitoring, recovery, and capacity plans.</p></div></div><p class="decision-links">Related terms: <a href="ai-technology-glossary.html#model-runtime">model runtime</a>, <a href="ai-technology-glossary.html#control-plane">control plane</a>, and <a href="ai-technology-glossary.html#service-level-agreement">Service-Level Agreement (SLA)</a>.</p></section>
+
+<section class="panel">
+<h2>Governance framework versus infrastructure architecture</h2>
+<div class="grid">
+<div class="content-block"><span class="tag t-blue">Control Plane</span><h3>AI Architecture Framework</h3><p>Governs the request. It determines how each AI request is intercepted, identified, classified, validated against policy, approved, routed, monitored, and audited.</p><div class="arrow"><a href="./ai-architecture.html">Open AI Architecture Framework →</a></div></div>
+<div class="content-block"><span class="tag t-teal">Execution Plane</span><h3>AI Infrastructure Architecture</h3><p>Governs execution. It defines where an approved request runs and how cloud, self-hosted, and hybrid deployment choices change sovereignty, security, resilience, latency, and cost.</p></div>
+</div>
+<div class="callout"><div class="co-lbl">In one line</div><div class="co-txt">The AI Architecture Framework dictates what happens to a request. This page dictates where it runs and which infrastructure controls apply.</div></div>
+</section>
+
+<section class="visual">
+<h2 class="visual-title">Enterprise AI Infrastructure — Cloud, Self-Hosted &amp; Hybrid Deployment Blueprint</h2>
+<div class="infographic-tools" role="toolbar" aria-label="Infographic controls">
+<span>Explore infographic</span>
+<button type="button" data-infographic-action="out" aria-label="Zoom out">−</button>
+<output aria-live="polite">100%</output>
+<button type="button" data-infographic-action="in" aria-label="Zoom in">+</button>
+<button type="button" data-infographic-action="reset">Reset</button>
+</div>
+<div class="infographic-viewport" tabindex="0" aria-label="Interactive AI infrastructure architecture infographic. Zoom, then drag to pan.">
+<div class="infographic-canvas"><img src="../public/assets/ai-infrastructure-architecture.png" alt="Enterprise AI infrastructure architecture showing a single enterprise AI gateway, shared governance controls, cloud-hosted AI services, local self-hosted AI infrastructure, observability, disaster recovery, purge workflows, and hybrid routing."></div>
+</div>
+<p class="infographic-help">Use +/− or the mouse wheel to zoom. Drag the infographic to inspect detailed controls and execution layers.</p>
+<div class="callout"><div class="co-lbl">How to read the blueprint</div><div class="co-txt">Every request enters through one logical enterprise gateway. Risk, identity, data classification, residency, cost, performance, and latency signals determine whether execution is routed to a cloud provider, a local GPU environment, or an approved hybrid pattern.</div></div>
+</section>
+
+<section class="panel">
+<h2>Cross-cutting governance plane</h2>
+<p>The following domains apply consistently to both cloud and self-hosted execution. They are represented once because they form a shared enterprise control plane rather than duplicated controls.</p>
+<div class="grid">
+<div class="content-block"><span class="tag t-blue">Security</span><h3>Security &amp; Governance</h3><p>DLP, classification, PII detection and masking, content safety, policy enforcement, compliance evidence, retention, legal hold, AI review, and human sign-off.</p></div>
+<div class="content-block"><span class="tag t-red">Egress</span><h3>Outbound &amp; Egress Controls</h3><p>Inspection gateways, allow and block lists, DNS and URL filtering, telemetry controls, DLP, shadow-AI detection, and optional air-gap enforcement.</p></div>
+<div class="content-block"><span class="tag t-amber">Secrets</span><h3>Secrets &amp; Key Management</h3><p>Vault integration, API keys, tokens, certificates, HSM-backed keys, rotation, just-in-time access, and encryption in transit and at rest.</p></div>
+<div class="content-block"><span class="tag t-teal">Governance</span><h3>Central Governance Services</h3><p>Policy repository, model and vendor registry, use-case registry, risk tiering, approval workflows, change management, training, and steering oversight.</p></div>
+<div class="content-block"><span class="tag t-purple">Operations</span><h3>Global Observability &amp; Response</h3><p>Centralized logs and traces, SIEM/SOAR integration, alerts, incident response, kill switch, audit forensics, and threat-intelligence feeds.</p></div>
+</div>
+</section>
+
+<section class="panel">
+<h2>Single Enterprise AI Gateway</h2>
+<p>The gateway is a single logical control point, not a single physical server. Clients, applications, APIs, copilots, and autonomous agents must not call a model directly.</p>
+<div class="tw"><table><thead><tr><th>Gateway responsibility</th><th>Enterprise implementation requirement</th></tr></thead><tbody>
+<tr><td>Unified entry point</td><td>Expose a common governed endpoint while deploying the gateway as a horizontally scalable active-active cluster.</td></tr>
+<tr><td>Identity and entitlement</td><td>Resolve user, workload, agent, tenant, environment, device, role, and attribute context before routing.</td></tr>
+<tr><td>Prompt and response controls</td><td>Apply DLP, prompt-injection detection, content controls, masking, policy evaluation, and output inspection.</td></tr>
+<tr><td>Risk and use-case context</td><td>Retrieve approved scenario, risk tier, data classification, residency, model eligibility, and approval requirements.</td></tr>
+<tr><td>Dynamic routing</td><td>Select cloud, local, or hybrid execution based on policy, risk, sovereignty, cost, latency, capacity, and health signals.</td></tr>
+<tr><td>Resilience</td><td>Use multi-zone or multi-region deployment, load balancing, circuit breakers, throttling, health checks, and automated failover.</td></tr>
+</tbody></table></div>
+<div class="callout"><div class="co-lbl">Gateway-to-routing handoff</div><div class="co-txt">The central gateway decides where an approved request will execute. Stack-level routing controls then enforce how that decision is applied to the selected cloud or local backend, preventing split-brain policy enforcement.</div></div>
+</section>
+
+<section class="panel">
+<h2>Cloud-hosted AI execution stack</h2>
+<p>The cloud stack uses managed foundation models and AI services for approved lower-risk workloads where enterprise policy permits third-party processing.</p>
+<div class="grid">
+<div class="content-block"><span class="tag t-blue">Serving</span><h3>Managed model endpoints</h3><p>Approved services may include managed model APIs, provider-hosted embeddings, managed safety layers, and regional endpoints subject to vendor assurance.</p></div>
+<div class="content-block"><span class="tag t-teal">Data</span><h3>Governed enterprise retrieval</h3><p>Internal sources remain access-controlled. Retrieval filters enforce tenant, user, role, attribute, document, and purpose-based authorization before chunks are returned.</p></div>
+<div class="content-block"><span class="tag t-amber">Assurance</span><h3>Contractual dependency</h3><p>Retention, deletion, no-training, regional processing, logging, incident notification, model isolation, and subprocessors must be verified contractually.</p></div>
+<div class="content-block"><span class="tag t-purple">Operations</span><h3>Cloud-specific telemetry</h3><p>Monitor token consumption, API cost, latency, rate limits, quota exhaustion, provider errors, model-version changes, and regional availability.</p></div>
+</div>
+</section>
+
+<section class="panel">
+<h2>Local and self-hosted AI execution stack</h2>
+<p>The local stack supports workloads that require enterprise custody, stronger sovereignty, specialized model control, private networking, or configurable air-gapped operation.</p>
+<div class="grid">
+<div class="content-block"><span class="tag t-blue">Compute</span><h3>GPU cluster and scheduler</h3><p>Operate GPU nodes, workload queues, VRAM allocation, model sharding, autoscaling, node health, capacity reservations, and workload isolation.</p></div>
+<div class="content-block"><span class="tag t-teal">Model Serving</span><h3>Private inference layer</h3><p>Host approved models behind internal serving endpoints with signed artifacts, model registry controls, version pinning, rollback, and runtime policy enforcement.</p></div>
+<div class="content-block"><span class="tag t-amber">Data</span><h3>Self-hosted RAG services</h3><p>Keep embeddings, vector stores, semantic caches, source repositories, metadata, and retrieval authorization inside the controlled environment.</p></div>
+<div class="content-block"><span class="tag t-red">Security</span><h3>Hardware-backed protection</h3><p>Integrate HSM-backed keys, confidential-compute options, private networking, workload identity, secure boot, image scanning, and hardened administrative access.</p></div>
+</div>
+<div class="callout"><div class="co-lbl">Air-gap clarification</div><div class="co-txt">Self-hosted does not automatically mean air-gapped. Full network isolation is a configurable enforcement pattern for organizations whose regulatory or threat model requires it.</div></div>
+</section>
+
+<section class="panel">
+<h2>Layer-by-layer topology mapping</h2>
+<div class="tw"><table><thead><tr><th>Layers</th><th>Cloud execution</th><th>Local execution</th></tr></thead><tbody>
+<tr><td><strong>1–3</strong><br>Clients, identity and gateway</td><td>Common enterprise identity, ABAC/RBAC, policy checks and governed routing before provider access.</td><td>The same controls, with on-premises directory, private-network and local workload identity integration where required.</td></tr>
+<tr><td><strong>4–5</strong><br>Orchestration and evaluation</td><td>May use managed orchestration and evaluation services; assurance partly depends on provider guarantees.</td><td>Runs on owned infrastructure and requires internal orchestration, evaluation, GPU scheduling and capacity management.</td></tr>
+<tr><td><strong>6–8</strong><br>RAG, data and model serving</td><td>Enterprise sources may be retrieved through governed connectors and provider services, subject to residency and contractual controls.</td><td>Vector stores, embeddings, caches, data sources and model serving remain within the enterprise environment.</td></tr>
+<tr><td><strong>9–11</strong><br>Observability, resilience and purge</td><td>Tracks API cost and latency; purge depends on verified provider deletion interfaces and contractual evidence.</td><td>Tracks GPU utilization, queue depth and node health; purge directly removes vector chunks, caches and owned storage artifacts.</td></tr>
+</tbody></table></div>
+<div class="callout"><div class="co-lbl">Machine-unlearning boundary</div><div class="co-txt">Deleting vector records, cache entries, prompts, logs, and retrieval artifacts does not guarantee removal of information memorized in fine-tuned model weights. That requires retraining or a certified unlearning process and must be handled through a governed exception workflow.</div></div>
+</section>
+
+<section class="panel">
+<h2>Infrastructure-specific controls</h2>
+<div class="grid">
+<div class="content-block"><span class="tag t-blue">Residency</span><h3>Data residency routing</h3><p>Classified or regulated requests can be forced to approved regions or the local stack before any payload reaches a model.</p></div>
+<div class="content-block"><span class="tag t-teal">Retrieval</span><h3>Zero-trust vector access</h3><p>ABAC and RBAC controls are enforced at the retrieval layer so the vector database returns only content the requesting identity may access.</p></div>
+<div class="content-block"><span class="tag t-purple">Confidentiality</span><h3>Secrets and hardware security</h3><p>Use vaults, HSMs, workload identity, confidential computing, certificate rotation, and controlled administrative pathways.</p></div>
+<div class="content-block"><span class="tag t-amber">Economics</span><h3>Hybrid cost orchestration</h3><p>Compare cloud API cost with local GPU capacity and utilization, but optimize only within the routes permitted by risk and sovereignty policy.</p></div>
+<div class="content-block"><span class="tag t-red">Deletion</span><h3>Asynchronous purge orchestration</h3><p>Define purge synchronization SLAs across vector stores, semantic caches, prompt stores, telemetry, legal holds, backups, and immutable audit evidence.</p></div>
+<div class="content-block"><span class="tag t-blue">Continuity</span><h3>Deterministic fallback</h3><p>Provide approved degraded modes, alternate models, queueing, circuit breakers, or deterministic automation paths when AI infrastructure is unavailable.</p></div>
+</div>
+</section>
+
+<section class="panel">
+<h2>Risk tiering drives routing and guardrail depth</h2>
+<div class="tw"><table><thead><tr><th>Risk tier</th><th>Representative use cases</th><th>Routing and review posture</th></tr></thead><tbody>
+<tr><td><strong>Low</strong></td><td>Public-information Q&amp;A and non-sensitive drafting.</td><td>Approved cloud or local route; automated response with baseline controls.</td></tr>
+<tr><td><strong>Medium</strong></td><td>Internal knowledge, policy support and non-material recommendations.</td><td>Approved route with grounding, access controls, monitoring, and optional human review.</td></tr>
+<tr><td><strong>High</strong></td><td>PII, sensitive data, financial or legal impact, and tool execution.</td><td>Restricted model and region, enhanced validation, stronger evidence, and required human review.</td></tr>
+<tr><td><strong>Critical</strong></td><td>Regulated decisions, safety impact, material financial exposure or irreversible actions.</td><td>Local or specifically approved sovereign route, mandatory approval, release gate, kill switch, and enhanced audit.</td></tr>
+</tbody></table></div>
+</section>
+
+<section class="panel">
+<h2>Architectural principles</h2>
+<div class="mini">
+<div><strong>Zero Trust Everywhere</strong><span>Authenticate, authorize and inspect every identity, workload, request, retrieval and response.</span></div>
+<div><strong>Defense in Depth</strong><span>Use independent controls across gateway, network, data, model, output, human review and audit layers.</span></div>
+<div><strong>Least Privilege</strong><span>Grant only the models, tools, data, actions and environments required for the approved use case.</span></div>
+<div><strong>Privacy by Design</strong><span>Minimize, classify, mask and route data before model processing.</span></div>
+<div><strong>Observability by Default</strong><span>Capture decisions, versions, routes, latency, cost, quality, incidents and evidence.</span></div>
+<div><strong>Resilience &amp; Continuity</strong><span>Design active-active services, failover, fallback, recovery, capacity and operational runbooks.</span></div>
+</div>
+</section>
+
+<section class="cta"><h2>Complementary architecture framework</h2><p>This physical deployment architecture assumes the request governance, evidence gates, validation, human approval, vendor controls, and immutable audit defined in the <a href="./ai-architecture.html">AI Architecture &amp; Implementation Framework</a>.</p></section>
+</div></div></main>
+<footer><div><img src="../assets/images/ratheesh-technology-logo-transparent.png?v=20260719-63" alt="Ratheesh Technology Ltd." width="1906" height="825"><p>Architecting Intelligence</p></div><p>&copy; 2026 Ratheesh Technology Ltd.</p></footer></body></html>

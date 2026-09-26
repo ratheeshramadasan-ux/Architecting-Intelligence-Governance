@@ -1,0 +1,17 @@
+{"kind":"region","sheet":"Dashboard","address":"A4:D12","rows":9,"cols":4,"nonEmpty":36,"text":36,"maxTextLength":29,"preview":[["Metric","Current","Target","Status"],["Single-A compliance","1","0.98","On target"],["Responsible-role coverage","1","0.98","On target"],["Lifecycle A coverage","1","1","On target"],["Decision SLA attainment","1","0.9","On target"]],"previewAddress":"A4:D8","previewRows":5,"previewCols":4}
+{"kind":"formula","sheet":"Dashboard","address":"B5","formula":"=IFERROR(COUNTIF('Decision RACI'!$AE$5:$AE$64,\"Healthy\")/COUNTIF('Decision RACI'!$B$5:$B$64,\"<>\"),0)"}
+{"kind":"formula","sheet":"Dashboard","address":"D5","formula":"=IF(B5>=C5,\"On target\",\"Attention\")"}
+{"kind":"formula","sheet":"Dashboard","address":"B6","formula":"=IFERROR(COUNTIF('Decision RACI'!$AB$5:$AB$64,\">=1\")/COUNTIF('Decision RACI'!$B$5:$B$64,\"<>\"),0)"}
+{"kind":"formula","sheet":"Dashboard","address":"D6","formula":"=IF(B6>=C6,\"On target\",\"Attention\")"}
+{"kind":"formula","sheet":"Dashboard","address":"B7","formula":"=IFERROR(MIN(1,COUNTIF('Lifecycle RACI'!$H$5:$V$64,\"A\")/COUNTIF('Lifecycle RACI'!$C$5:$C$64,\"<>\")),0)"}
+{"kind":"formula","sheet":"Dashboard","address":"D7","formula":"=IF(B7>=C7,\"On target\",\"Attention\")"}
+{"kind":"formula","sheet":"Dashboard","address":"B8","formula":"=IFERROR(COUNTIF('Decision Log'!$K$5:$K$104,\"Yes\")/COUNTIF('Decision Log'!$G$5:$G$104,\"<>\"),0)"}
+{"kind":"formula","sheet":"Dashboard","address":"D8","formula":"=IF(B8>=C8,\"On target\",\"Attention\")"}
+{"kind":"formula","sheet":"Dashboard","address":"B9","formula":"=IFERROR(COUNTIF('Decision Log'!$L$5:$L$104,\"Yes\")/COUNTIF('Decision Log'!$G$5:$G$104,\"<>\"),0)"}
+{"kind":"formula","sheet":"Dashboard","address":"D9","formula":"=IF(B9<=C9,\"On target\",\"Attention\")"}
+{"kind":"formula","sheet":"Dashboard","address":"B10","formula":"=IFERROR((COUNTIF('Decision Log'!$M$5:$M$104,\"Complete\")+COUNTIF('Decision Log'!$M$5:$M$104,\"Verified\"))/COUNTIF('Decision Log'!$G$5:$G$104,\"<>\"),0)"}
+{"kind":"formula","sheet":"Dashboard","address":"D10","formula":"=IF(B10>=C10,\"On target\",\"Attention\")"}
+{"kind":"formula","sheet":"Dashboard","address":"B11","formula":"=COUNTIF('Role Directory'!$I$5:$I$104,\"Vacant\")+COUNTIFS('Role Directory'!$I$5:$I$104,\"Active\",'Role Directory'!$D$5:$D$104,\"\")"}
+{"kind":"formula","sheet":"Dashboard","address":"D11","formula":"=IF(B11=C11,\"On target\",\"Attention\")"}
+{"kind":"formula","sheet":"Dashboard","address":"B12","formula":"=COUNTIF('Decision Log'!$P$5:$P$104,\"Open\")+COUNTIF('Decision Log'!$P$5:$P$104,\"In Progress\")+COUNTIF('Decision Log'!$P$5:$P$104,\"Blocked\")"}
+{"kind":"formula","sheet":"Dashboard","address":"D12","formula":"=IF(B12=C12,\"On target\",\"Attention\")"}

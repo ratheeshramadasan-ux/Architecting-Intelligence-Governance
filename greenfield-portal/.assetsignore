@@ -1,0 +1,23 @@
+# Recovery, generation, and captured-site material is preserved locally but is
+# not part of the public portal.
+work/
+index_files/
+.wrangler/
+
+# Backups, experiments, fragments, and local runtime state.
+*.bak
+temp_body.html
+withHero.html
+withStyle.html
+pages/solutions_test.html
+*.pid
+*.log
+~$*
+AI_Governance_Qualification_Framework.xlsx
+downloads/~$*
+
+# Local Python runtimes and caches must never become public static assets.
+**/.venv/**
+**/__pycache__/**
+**/*.pyc
+**/.pytest_cache/**

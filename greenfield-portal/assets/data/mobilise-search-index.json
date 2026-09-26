@@ -1,0 +1,257 @@
+{
+  "version": "1.0.0",
+  "records": [
+    {
+      "type": "Workstream",
+      "title": "Executive Sponsorship",
+      "summary": "Secure visible, accountable sponsorship and authority for enterprise participation.",
+      "href": "/transformation/stage-0-mobilise/workstreams/executive-sponsorship/",
+      "keywords": "Confirm the business need and sponsor Draft and approve the executive mandate Agree executive decision cadence Prepare the executive briefing Existing strategy Board or executive priorities Known regulatory and market pressures Executive Mandate Executive Briefing Pack Executive Sponsor Programme Director"
+    },
+    {
+      "type": "Workstream",
+      "title": "Business Drivers",
+      "summary": "Create a shared business rationale and measurable strategic objectives.",
+      "href": "/transformation/stage-0-mobilise/workstreams/business-drivers/",
+      "keywords": "Collect internal and external evidence Distinguish problems from technology ideas Prioritise drivers Define strategic objectives and success measures Performance evidence Customer and workforce needs Risk and compliance pressures Strategic plans Business Drivers Strategic Objectives Success Measures Business Owner Finance Lead"
+    },
+    {
+      "type": "Workstream",
+      "title": "Programme Governance",
+      "summary": "Establish forums, decision rights, accountability and escalation.",
+      "href": "/transformation/stage-0-mobilise/workstreams/programme-governance/",
+      "keywords": "Draft governance charter Design forums and quorum Assign decision rights Validate enterprise RACI Mandate Organisation model Existing governance bodies Risk appetite Governance Charter Governance Forums Decision Rights Enterprise RACI Platform Owner Risk and Compliance Lead"
+    },
+    {
+      "type": "Workstream",
+      "title": "Funding & Business Ownership",
+      "summary": "Establish accountable outcome ownership and a controlled funding path.",
+      "href": "/transformation/stage-0-mobilise/workstreams/funding-business-ownership/",
+      "keywords": "Name business owners Define funding sources and thresholds Agree stage-based investment Record benefit ownership Strategic objectives Finance policies Initial cost categories Approval authorities Funding Model Success Measures Executive Sponsor Finance Lead"
+    },
+    {
+      "type": "Workstream",
+      "title": "Stakeholder Engagement",
+      "summary": "Identify affected groups and plan meaningful communication and consultation.",
+      "href": "/transformation/stage-0-mobilise/workstreams/stakeholder-engagement/",
+      "keywords": "Identify stakeholders Assess influence and impact Plan engagement Create feedback and escalation routes Scope Organisation charts Change obligations Consultation requirements Stakeholder Register Communication Plan Programme Director Change Lead"
+    },
+    {
+      "type": "Workstream",
+      "title": "Operating Model",
+      "summary": "Define initial delivery, sourcing, capability and service ownership.",
+      "href": "/transformation/stage-0-mobilise/workstreams/operating-model/",
+      "keywords": "Choose delivery approach Define team and supplier structure Assign capability ownership Identify initial service owner Scope Governance model Current organisation Sourcing constraints Delivery Model Operating Model Platform Owner Enterprise Architect"
+    },
+    {
+      "type": "Workstream",
+      "title": "Risk & Compliance",
+      "summary": "Set risk, compliance, privacy, security and human-oversight boundaries.",
+      "href": "/transformation/stage-0-mobilise/workstreams/risk-compliance/",
+      "keywords": "Collect obligations Define risk appetite Set prohibited uses Draft actionable AI principles Define exception authority Enterprise risk appetite Regulatory obligations Security and privacy policies Legal constraints AI Principles Risk Appetite Statement Risk Executive Audit and Assurance Lead"
+    },
+    {
+      "type": "Workstream",
+      "title": "Mobilisation Planning",
+      "summary": "Coordinate activities, workshops, deliverables, dependencies, RAID and gate readiness.",
+      "href": "/transformation/stage-0-mobilise/workstreams/mobilisation-planning/",
+      "keywords": "Build mobilisation schedule Sequence workshops Maintain RAID Track deliverables and decisions Prepare gate evidence All workstream plans Resource availability Decision calendar Dependencies Programme Charter Scope Definition RAID Register Mobilisation Plan Executive Briefing Pack Programme Director Platform Owner"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Executive Mandate",
+      "summary": "Authorise the transformation and state the business need, intended outcomes, authority and constraints.",
+      "href": "/transformation/stage-0-mobilise/deliverables/executive-mandate/",
+      "keywords": "Decision record Executive Sponsor Executive Sponsor Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records Business need Enterprise drivers Intended outcomes Authority and sponsor Constraints and exclusions Approval record"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Business Drivers",
+      "summary": "Create a shared, evidence-based explanation of why enterprise AI matters now.",
+      "href": "/transformation/stage-0-mobilise/deliverables/business-drivers/",
+      "keywords": "Briefing Business Owner Executive Sponsor Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records Driver Evidence Business consequence Urgency Affected capability Owner"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Programme Charter",
+      "summary": "Define purpose, measurable objectives, scope, governance and delivery boundaries.",
+      "href": "/transformation/stage-0-mobilise/deliverables/programme-charter/",
+      "keywords": "Decision pack Programme Director Executive Sponsor Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records Purpose Objectives Scope Out of scope Roles Governance Milestones Assumptions Approval"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Scope Definition",
+      "summary": "Make inclusions, exclusions, boundaries and interfaces explicit.",
+      "href": "/transformation/stage-0-mobilise/deliverables/scope-definition/",
+      "keywords": "Decision record Programme Director Executive Sponsor Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records In scope Out of scope Organisational boundary Technology boundary Data boundary Dependencies Change control"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Strategic Objectives",
+      "summary": "Translate drivers into specific outcomes that guide later investment and architecture choices.",
+      "href": "/transformation/stage-0-mobilise/deliverables/strategic-objectives/",
+      "keywords": "Measurement record Business Owner Executive Sponsor Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records Objective Business outcome Capability affected Measure Time horizon Owner Constraints"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Stakeholder Register",
+      "summary": "Identify people affected by, contributing to or accountable for transformation decisions.",
+      "href": "/transformation/stage-0-mobilise/deliverables/stakeholder-register/",
+      "keywords": "Register Programme Director Business Owner Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records Stakeholder Role Impact Influence Interest Engagement owner Cadence"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Governance Charter",
+      "summary": "Define governance purpose, principles, authority, membership and evidence expectations.",
+      "href": "/transformation/stage-0-mobilise/deliverables/governance-charter/",
+      "keywords": "Operating model Platform Owner Executive Sponsor Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records Purpose Authority Principles Scope Forums Decision rights Escalation Evidence Review"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Governance Forums",
+      "summary": "Define each forum’s purpose, membership, cadence, quorum and decisions.",
+      "href": "/transformation/stage-0-mobilise/deliverables/governance-forums/",
+      "keywords": "Operating model Platform Owner Executive Sponsor Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records Forum Purpose Chair Members Cadence Quorum Decisions Inputs Outputs"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Decision Rights",
+      "summary": "Assign unambiguous authority for funding, risk, architecture, data, release and benefits decisions.",
+      "href": "/transformation/stage-0-mobilise/deliverables/decision-rights/",
+      "keywords": "Decision model Platform Owner Executive Sponsor Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records Decision Recommender Reviewers Approver Risk acceptor Recorder Escalation Evidence"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Enterprise RACI",
+      "summary": "Assign responsibility, accountability, support, consultation and information across mobilisation.",
+      "href": "/transformation/stage-0-mobilise/deliverables/enterprise-raci/",
+      "keywords": "Responsibility model Programme Director Platform Owner Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records Activity Accountable Responsible Supporting Consulted Informed Evidence"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Delivery Model",
+      "summary": "Define how the programme organises work, teams, suppliers, increments and decisions.",
+      "href": "/transformation/stage-0-mobilise/deliverables/delivery-model/",
+      "keywords": "Operating model Programme Director Platform Owner Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records Delivery approach Workstreams Team structure Sourcing Cadence Quality controls Dependencies Escalation"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Operating Model",
+      "summary": "Define initial ownership across strategy, governance, platforms, delivery and operations.",
+      "href": "/transformation/stage-0-mobilise/deliverables/operating-model/",
+      "keywords": "Operating model Platform Owner Executive Sponsor Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records Capabilities Accountabilities Organisation Forums Processes Technology enablement Service ownership Maturity assumptions"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Funding Model",
+      "summary": "Define funding sources, approval thresholds, cost categories and investment governance.",
+      "href": "/transformation/stage-0-mobilise/deliverables/funding-model/",
+      "keywords": "Decision record Finance Lead Executive Sponsor Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records Funding source Cost categories Approval thresholds Stage funding Contingency Assumptions Review cadence"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Success Measures",
+      "summary": "Define outcome measures, baselines, target ranges, owners and measurement methods.",
+      "href": "/transformation/stage-0-mobilise/deliverables/success-measures/",
+      "keywords": "Measurement plan Business Owner Executive Sponsor Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records Objective Measure Definition Baseline Target range Data source Owner Cadence"
+    },
+    {
+      "type": "Deliverable",
+      "title": "AI Principles",
+      "summary": "Create actionable principles for later governance, architecture and investment decisions.",
+      "href": "/transformation/stage-0-mobilise/deliverables/ai-principles/",
+      "keywords": "Principles Platform Owner Executive Sponsor Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records Principle Why it matters Required behaviour Decision test Owner Exception route"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Risk Appetite Statement",
+      "summary": "Set boundaries for impact, autonomy, data use, uncertainty and prohibited activity.",
+      "href": "/transformation/stage-0-mobilise/deliverables/risk-appetite/",
+      "keywords": "Policy direction Risk Executive Risk Executive Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records Risk domain Appetite Boundary Prohibited activity Required oversight Approval authority Exception route"
+    },
+    {
+      "type": "Deliverable",
+      "title": "RAID Register",
+      "summary": "Expose risks, assumptions, issues and dependencies with owners and responses.",
+      "href": "/transformation/stage-0-mobilise/deliverables/raid-register/",
+      "keywords": "Register Programme Director Platform Owner Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records Type Description Cause Impact Likelihood Owner Response Due date Status"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Mobilisation Plan",
+      "summary": "Sequence mobilisation activities, workshops, deliverables, decisions and resources.",
+      "href": "/transformation/stage-0-mobilise/deliverables/mobilisation-plan/",
+      "keywords": "Plan Programme Director Platform Owner Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records Activity Outcome Owner Start Finish Dependency Deliverable Decision Status"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Communication Plan",
+      "summary": "Plan transparent communication, consultation, feedback and adoption activity.",
+      "href": "/transformation/stage-0-mobilise/deliverables/communication-plan/",
+      "keywords": "Plan Change Lead Programme Director Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records Audience Objective Message Channel Timing Owner Feedback route Measure"
+    },
+    {
+      "type": "Deliverable",
+      "title": "Executive Briefing Pack",
+      "summary": "Give decision-makers a concise, evidence-backed view of mandate, choices, risks and next actions.",
+      "href": "/transformation/stage-0-mobilise/deliverables/executive-briefing-pack/",
+      "keywords": "Briefing Programme Director Executive Sponsor Approved upstream Mobilise evidence Named enterprise owners and reviewers Applicable policies, obligations and organisational records Decision required Executive summary Drivers Scope Governance Funding Risk appetite Progress Risks Recommendation"
+    },
+    {
+      "type": "Workshop",
+      "title": "Executive Vision Workshop",
+      "summary": "Agree the business need, ambition, outcomes, sponsorship and boundaries.",
+      "href": "/transformation/stage-0-mobilise/workshops/executive-vision/",
+      "keywords": "3 hours Executive Sponsor CIO/CTO Business Owners Platform Owner Risk Executive Why must the organisation act now? Which outcomes matter? What must not happen? Who owns the mandate? Executive Mandate Strategic Objectives"
+    },
+    {
+      "type": "Workshop",
+      "title": "Business Drivers Workshop",
+      "summary": "Create an evidence-based business rationale and initial success measures.",
+      "href": "/transformation/stage-0-mobilise/workshops/business-drivers/",
+      "keywords": "3 hours Business Owners Finance Strategy Customer/Service Leads Programme Director What problem are we solving? What evidence supports urgency? Which measures would prove value? Business Drivers Success Measures"
+    },
+    {
+      "type": "Workshop",
+      "title": "Governance Workshop",
+      "summary": "Design forums, decision rights, RACI, evidence and escalation.",
+      "href": "/transformation/stage-0-mobilise/workshops/governance/",
+      "keywords": "4 hours Platform Owner Risk Security Privacy Legal Architecture Audit Programme Director Which decisions exist? Who approves and accepts risk? What evidence is mandatory? How are exceptions handled? Governance Charter Governance Forums Decision Rights Enterprise RACI"
+    },
+    {
+      "type": "Workshop",
+      "title": "Stakeholder Workshop",
+      "summary": "Identify impacted stakeholders and plan communication, consultation and feedback.",
+      "href": "/transformation/stage-0-mobilise/workshops/stakeholder/",
+      "keywords": "3 hours Programme Business Owners Change Lead HR Communications Control Functions Who is affected? Whose knowledge is required? Who can block or accelerate progress? How will feedback change decisions? Stakeholder Register Communication Plan"
+    },
+    {
+      "type": "Workshop",
+      "title": "Programme Kick-off",
+      "summary": "Align the team on mandate, scope, roles, plan, controls and ways of working.",
+      "href": "/transformation/stage-0-mobilise/workshops/programme-kick-off/",
+      "keywords": "2 hours Core Programme Team Workstream Leads Control Functions Business Owners Service Owner What are we delivering? How will decisions be made? How do we raise risk? What happens next? Confirmed Mobilisation Plan Updated RAID Register"
+    },
+    {
+      "type": "Workshop",
+      "title": "Mobilisation Review",
+      "summary": "Assess evidence completeness and recommend a Mobilisation Approval decision.",
+      "href": "/transformation/stage-0-mobilise/workshops/mobilisation-review/",
+      "keywords": "4 hours Executive Sponsor Platform Owner Programme Director Business Owner Risk Finance Audit Is the programme authorised and bounded? Are owners and funding clear? Are risk boundaries approved? Can discovery begin safely? Executive Briefing Pack Gate decision record"
+    },
+    {
+      "type": "Dashboard",
+      "title": "Mobilise Executive Dashboard",
+      "summary": "Executive progress, approvals, risks, decisions and readiness.",
+      "href": "/transformation/stage-0-mobilise/dashboards/executive/",
+      "keywords": "executive progress approvals risks decisions readiness milestone"
+    },
+    {
+      "type": "Dashboard",
+      "title": "Mobilise Programme Manager Workspace",
+      "summary": "Activities, deliverables, RACI, workshops, decisions, RAID and approval status.",
+      "href": "/transformation/stage-0-mobilise/dashboards/programme-manager/",
+      "keywords": "programme manager activity tracker deliverable workshop decision RAID approval"
+    }
+  ]
+}

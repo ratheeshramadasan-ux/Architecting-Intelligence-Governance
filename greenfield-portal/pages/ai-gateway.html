@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Enterprise AI Gateway implementation guide covering business value, architecture, security, governance, operations, cost, scalability and production readiness.">
+  <title>Enterprise AI Gateway Implementation Guide | Architecting Intelligence</title>
+  <link rel="stylesheet" href="/assets/css/methodology-v10.css?v=20260728-25">
+  <link rel="stylesheet" href="/assets/css/ai-gateway.css?v=20260802-1">
+  <script src="/assets/js/methodology-v10.js?v=20260728-26" defer></script>
+</head>
+<body class="knowledge-theme-page ai-gateway-page" data-methodology-page="ai-gateway">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header id="methodology-header"></header>
+  <main id="main-content" class="inner-page">
+    <div class="legacy-content">
+      <section class="article-hero platform-page-hero">
+        <div class="hero-inner">
+          <div class="hero-eyebrow">Enterprise AI Architecture · Control Plane</div>
+          <h1>Enterprise AI Gateway</h1>
+          <p>A governed control point between enterprise applications and AI services that applies identity, policy, routing, safety, cost and evidence controls to every request and response.</p>
+        </div>
+      </section>
+
+      <div class="article-body">
+        <section class="decision-summary" aria-labelledby="gateway-executive-summary">
+          <h2 id="gateway-executive-summary">1. Executive Summary</h2>
+          <p class="decision-lead">An AI Gateway solves the enterprise problem of uncontrolled, inconsistent and untraceable access to models. Applications use one governed interface while the gateway selects approved providers, enforces policy, protects data, records evidence and manages service quality.</p>
+          <div class="decision-summary-grid">
+            <div><h3>What it is</h3><p>A logical control plane deployed as a resilient service, not a single appliance or network proxy.</p></div>
+            <div><h3>Why it matters</h3><p>It turns AI policy into enforceable runtime behaviour across applications, models and providers.</p></div>
+            <div><h3>Decision rule</h3><p>Use it when several teams, models or risk levels require consistent control. Avoid it when it would add a redundant hop without meaningful policy or operational value.</p></div>
+          </div>
+          <p class="decision-links">Related: <a href="./ai-architecture.html">AI control plane</a>, <a href="./ai-infrastructure-architecture.html">AI infrastructure</a>, <a href="./data-security.html">data security</a>, <a href="./agentic-ai.html">Agentic AI</a>, and <a href="./ai-technology-glossary.html#control-plane">control plane definition</a>.</p>
+        </section>
+
+        <section class="panel">
+          <h2>2. Business Value</h2>
+          <div class="mini">
+            <div><strong>Faster adoption</strong><span>Give product teams one approved route to models instead of repeating provider, security and legal integration.</span></div>
+            <div><strong>Risk reduction</strong><span>Apply data classification, content controls, provider restrictions and audit rules consistently.</span></div>
+            <div><strong>Cost control</strong><span>Measure consumption by application, business unit, model, provider and outcome before invoices arrive.</span></div>
+            <div><strong>Operational resilience</strong><span>Use tested fallback, rate limiting and circuit breaking without modifying every consuming application.</span></div>
+          </div>
+          <div class="callout"><div class="co-lbl">Measurable outcomes</div><div class="co-txt">Track time to onboard a new AI use case, percentage of traffic through approved routes, policy violation rate, cost per successful outcome, provider failover success, response quality and audit evidence completeness.</div></div>
+        </section>
+
+        <section class="panel">
+          <h2>3. Enterprise Use Cases</h2>
+          <div class="tw"><table>
+            <thead><tr><th>Sector</th><th>Practical scenario</th><th>Gateway value</th></tr></thead>
+            <tbody>
+              <tr><td>Insurance</td><td>Claims summarisation and underwriting assistance</td><td>Redacts sensitive fields, restricts models by data class and records human-review evidence.</td></tr>
+              <tr><td>Banking</td><td>Employee copilots and customer-service assistance</td><td>Enforces jurisdiction, approved knowledge sources, entitlements and communication retention.</td></tr>
+              <tr><td>Government</td><td>Citizen correspondence and policy research</td><td>Routes protected workloads to approved environments and preserves public-record evidence.</td></tr>
+              <tr><td>Healthcare</td><td>Clinical-document support without autonomous diagnosis</td><td>Protects health information, constrains use cases and requires authorised review.</td></tr>
+              <tr><td>Retail</td><td>Product content, search and service personalisation</td><td>Balances cost, latency, brand safety and seasonal scale across providers.</td></tr>
+              <tr><td>Manufacturing</td><td>Maintenance assistance and engineering knowledge search</td><td>Separates operational technology data from public endpoints and applies site-specific routing.</td></tr>
+              <tr><td>Utilities</td><td>Field support and outage communication</td><td>Prioritises resilient routes, protects critical-infrastructure information and records incidents.</td></tr>
+              <tr><td>Telecommunications</td><td>Network operations and customer-care copilots</td><td>Controls high-volume traffic, tenant boundaries, latency and model fallback.</td></tr>
+            </tbody>
+          </table></div>
+        </section>
+
+        <section class="visual">
+          <h2 class="visual-title">4. Architecture Placement</h2>
+          <div class="journey-flow" aria-label="AI Gateway request and response architecture">
+            <div class="journey-title">Enterprise request path</div>
+            <div class="journey-steps">
+              <div class="journey-step"><span>01</span><strong>Applications</strong><small>Copilots, APIs, agents</small></div>
+              <div class="journey-step"><span>02</span><strong>Identity</strong><small>User and workload context</small></div>
+              <div class="journey-step"><span>03</span><strong>AI Gateway</strong><small>Policy and routing</small></div>
+              <div class="journey-step"><span>04</span><strong>Models &amp; Data</strong><small>Approved execution</small></div>
+              <div class="journey-step"><span>05</span><strong>Validation</strong><small>Output and evidence</small></div>
+              <div class="journey-step"><span>06</span><strong>Monitoring</strong><small>Quality, cost and risk</small></div>
+            </div>
+          </div>
+          <div class="arch-grid">
+            <div class="arch-card arch-p1"><div class="arch-pattern-num">Control plane</div><div class="arch-card-title">Gateway services</div><div class="arch-card-def">Authentication, authorisation, policy, routing, quotas, safety filters, caching, evidence and administration.</div></div>
+            <div class="arch-card arch-p2"><div class="arch-pattern-num">Execution plane</div><div class="arch-card-title">Models and retrieval</div><div class="arch-card-def">Hosted or self-managed LLMs, embedding models, vector databases, RAG services and approved tools.</div></div>
+            <div class="arch-card arch-p3"><div class="arch-pattern-num">Governance plane</div><div class="arch-card-title">Decisions and standards</div><div class="arch-card-def">Use-case approval, model catalogue, data policy, exception management, accountable ownership and evidence retention.</div></div>
+            <div class="arch-card arch-p4"><div class="arch-pattern-num">Operations plane</div><div class="arch-card-title">Observability and response</div><div class="arch-card-def">Metrics, logs, traces, evaluations, incident response, cost analysis, capacity and service management.</div></div>
+          </div>
+          <div class="callout"><div class="co-lbl">Architecture boundary</div><div class="co-txt">The gateway governs access to AI services. It does not replace enterprise identity, API management, data-loss prevention, model evaluation, vector databases or workflow engines; it integrates their decisions into the AI request path.</div></div>
+        </section>
+
+        <section class="panel">
+          <h2>5. Implementation Approach</h2>
+          <details>
+            <summary><strong>▶ Walk Through This Process</strong></summary>
+            <ol>
+              <li><strong>Discover:</strong> identify every application, model endpoint, provider credential, data class and direct connection that must be governed.</li>
+              <li><strong>Define:</strong> agree service ownership, risk tiers, permitted models, routing rules, evidence requirements and measurable service objectives.</li>
+              <li><strong>Build:</strong> connect identity, secrets, policy, providers, observability and evaluation before onboarding production traffic.</li>
+              <li><strong>Pilot:</strong> route representative low-risk requests through the gateway and compare quality, latency, cost and control evidence with the current path.</li>
+              <li><strong>Migrate:</strong> move consumers in controlled waves, revoke direct provider credentials and keep a tested rollback route.</li>
+              <li><strong>Operate:</strong> monitor service health, policy effectiveness, quality, cost, incidents and business outcomes; improve controls using evidence.</li>
+            </ol>
+          </details>
+          <div class="journey-flow" aria-label="AI Gateway implementation process">
+            <div class="journey-title">Controlled rollout</div>
+            <div class="journey-steps">
+              <div class="journey-step"><span>01</span><strong>Discover</strong><small>Traffic, use cases, providers</small></div>
+              <div class="journey-step"><span>02</span><strong>Define</strong><small>Policies and service levels</small></div>
+              <div class="journey-step"><span>03</span><strong>Build</strong><small>Identity, routing, evidence</small></div>
+              <div class="journey-step"><span>04</span><strong>Pilot</strong><small>Low-risk workloads</small></div>
+              <div class="journey-step"><span>05</span><strong>Migrate</strong><small>Wave-based cutover</small></div>
+              <div class="journey-step"><span>06</span><strong>Operate</strong><small>Measure and improve</small></div>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="content-block"><span class="tag">Prerequisites</span><h3>Decisions before technology</h3><p>Approved use-case classes, enterprise identity, model catalogue, data classification, accountable service owner, logging destination and support model.</p></div>
+            <div class="content-block"><span class="tag t-blue">Dependencies</span><h3>Services the gateway relies on</h3><p>Identity provider, secrets manager, policy engine, provider endpoints, network controls, observability platform, evaluation service and configuration pipeline.</p></div>
+            <div class="content-block"><span class="tag t-amb">Migration</span><h3>Move without breaking consumers</h3><p>Offer a compatible API, dual-run selected traffic, compare quality and latency, preserve correlation IDs, test rollback and retire direct credentials.</p></div>
+            <div class="content-block"><span class="tag t-grn">Rollout</span><h3>Expand by risk and capability</h3><p>Start with observable low-risk traffic, then enable sensitive data, tools, agents and high-impact use cases only after controls are proven.</p></div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2>6. Integration Points</h2>
+          <div class="tw"><table>
+            <thead><tr><th>Integration</th><th>Purpose</th><th>Required contract</th></tr></thead>
+            <tbody>
+              <tr><td>APIs and SDKs</td><td>Stable application access</td><td>Versioned request, response, error, timeout and streaming schemas.</td></tr>
+              <tr><td>Event streams</td><td>Asynchronous evaluation, billing and audit</td><td>Correlation ID, tenant, use case, policy result and event version.</td></tr>
+              <tr><td>MCP</td><td>Governed agent access to tools and context</td><td>Tool identity, schema, permissions, input validation and evidence.</td></tr>
+              <tr><td>Vector databases</td><td>Retrieval for grounded responses</td><td>Collection entitlement, tenant boundary, metadata filters and citation return.</td></tr>
+              <tr><td>Identity</td><td>User and workload trust</td><td>Short-lived tokens, audience, scopes, roles, attributes and service identity.</td></tr>
+              <tr><td>LLMs</td><td>Inference and embedding</td><td>Pinned models, regions, quotas, safety settings and provider error mapping.</td></tr>
+              <tr><td>Business systems</td><td>Context and controlled actions</td><td>Least privilege, transaction boundary, idempotency and approval requirements.</td></tr>
+              <tr><td>Workflow engines</td><td>Long-running and human-approved processes</td><td>State, retries, compensation, escalation and immutable decision record.</td></tr>
+            </tbody>
+          </table></div>
+        </section>
+
+        <section class="panel">
+          <h2>7. Security</h2>
+          <div class="mini">
+            <div><strong>Authentication</strong><span>Validate user and workload identities; reject anonymous production access.</span></div>
+            <div><strong>Authorisation</strong><span>Evaluate use case, model, tool, data class, tenant, region and action scope.</span></div>
+            <div><strong>Encryption</strong><span>Use TLS in transit, managed encryption at rest and controlled key ownership.</span></div>
+            <div><strong>Secrets</strong><span>Use a secrets manager, short-lived provider credentials and automated rotation.</span></div>
+            <div><strong>Network</strong><span>Private connectivity where justified, controlled egress and explicit provider allowlists.</span></div>
+            <div><strong>Isolation</strong><span>Separate tenants, environments, logs, caches and high-risk execution paths.</span></div>
+            <div><strong>Threats</strong><span>Address prompt injection, data exfiltration, tool abuse, model endpoint spoofing and denial of wallet.</span></div>
+            <div><strong>Response</strong><span>Provide route disablement, credential revocation, evidence preservation and tested containment.</span></div>
+          </div>
+          <p class="decision-links">See <a href="./data-security.html">Data Security &amp; Privacy</a> and <a href="./security-review.html">Security &amp; Architecture Review</a>.</p>
+        </section>
+
+        <section class="panel">
+          <h2>8. Governance</h2>
+          <div class="tw"><table>
+            <thead><tr><th>Governance concern</th><th>Enterprise requirement</th><th>Accountable role</th></tr></thead>
+            <tbody>
+              <tr><td>Policies</td><td>Machine-enforceable rules for use case, data, model, tools, output and evidence.</td><td>AI governance owner</td></tr>
+              <tr><td>Decision rights</td><td>Define who approves routes, models, exceptions, emergency changes and risk acceptance.</td><td>AI steering authority</td></tr>
+              <tr><td>Ownership</td><td>Name platform, application, model, data and operational owners.</td><td>Executive sponsor</td></tr>
+              <tr><td>Compliance</td><td>Map gateway controls and retained evidence to applicable obligations.</td><td>Compliance and legal</td></tr>
+              <tr><td>Lifecycle</td><td>Approve, version, validate, monitor and retire policies, routes and providers.</td><td>Platform owner</td></tr>
+              <tr><td>Monitoring</td><td>Review control effectiveness, exceptions, drift, incidents and value.</td><td>Risk and operations</td></tr>
+            </tbody>
+          </table></div>
+          <p class="decision-links">See <a href="./ai-governance.html">Enterprise AI Governance</a> and <a href="./assurance.html">Enterprise AI Assurance</a>.</p>
+        </section>
+
+        <section class="panel">
+          <h2>9. Operational Considerations</h2>
+          <div class="grid">
+            <div class="content-block"><h3>Availability</h3><p>Deploy active-active across failure domains, remove local state, test dependency failure and publish service objectives.</p></div>
+            <div class="content-block"><h3>Scaling</h3><p>Scale on requests, tokens, concurrency, streaming connections, policy latency and provider quotas—not CPU alone.</p></div>
+            <div class="content-block"><h3>Backup and DR</h3><p>Back up policy, routing and audit configuration; rebuild ephemeral runtime; rehearse region and provider failover.</p></div>
+            <div class="content-block"><h3>Support</h3><p>Operate with service ownership, runbooks, escalation, on-call coverage, vendor contacts and business communications.</p></div>
+            <div class="content-block"><h3>Versioning</h3><p>Version APIs, policies, routes, model aliases and safety configurations independently with compatibility rules.</p></div>
+            <div class="content-block"><h3>Maintenance</h3><p>Patch dependencies, rotate secrets, remove deprecated models and test policy changes before promotion.</p></div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2>10. Failure Modes</h2>
+          <div class="tw"><table>
+            <thead><tr><th>Failure</th><th>Why it happens</th><th>Recovery</th></tr></thead>
+            <tbody>
+              <tr><td>Gateway outage blocks every AI service</td><td>Centralised logic without resilient deployment</td><td>Active-active runtime, health-based routing, tested bypass only for explicitly approved emergency cases.</td></tr>
+              <tr><td>Policy allows prohibited traffic</td><td>Incorrect rule, missing context or unsafe default</td><td>Fail closed for material controls, roll back policy, identify affected requests and reassess evidence.</td></tr>
+              <tr><td>Provider degradation causes latency</td><td>Quota, regional incident or model overload</td><td>Circuit break, route to approved fallback and communicate quality or feature differences.</td></tr>
+              <tr><td>Costs increase unexpectedly</td><td>Retry storms, verbose prompts, abuse or unsuitable routing</td><td>Apply quotas, token limits, caching, anomaly alerts and route optimisation.</td></tr>
+              <tr><td>Responses lose quality after failover</td><td>Fallback model is not equivalent</td><td>Use task-specific evaluation gates and disclose degraded-mode behaviour.</td></tr>
+              <tr><td>Audit evidence is incomplete</td><td>Asynchronous log loss or inconsistent identifiers</td><td>Use durable event delivery, reconciliation and request-to-decision correlation.</td></tr>
+            </tbody>
+          </table></div>
+        </section>
+
+        <section class="panel">
+          <h2>11. Monitoring &amp; Observability</h2>
+          <div class="mini">
+            <div><strong>Health</strong><span>Availability, dependency status, saturation, queue depth and configuration freshness.</span></div>
+            <div><strong>Performance</strong><span>Time to first token, total latency, throughput, retries, timeouts and streaming failures.</span></div>
+            <div><strong>Quality</strong><span>Evaluation score, groundedness, citation validity, refusal and human-override rate.</span></div>
+            <div><strong>Security</strong><span>Denied requests, injection indicators, data-control triggers, anomalous tools and credential failures.</span></div>
+            <div><strong>Cost</strong><span>Input/output tokens, provider charge, cache effectiveness and cost per business outcome.</span></div>
+            <div><strong>Governance</strong><span>Policy decisions, exceptions, unapproved models, evidence gaps and overdue reviews.</span></div>
+            <div><strong>Tracing</strong><span>One correlation ID across application, gateway, retrieval, model, tools and validation.</span></div>
+            <div><strong>Alerts</strong><span>Actionable thresholds mapped to owners, runbooks, severity and service-level objectives.</span></div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2>12. Cost Considerations</h2>
+          <div class="tw"><table>
+            <thead><tr><th>Cost area</th><th>What to include</th><th>Common hidden cost</th></tr></thead>
+            <tbody>
+              <tr><td>Licensing</td><td>Gateway, policy, observability and security products</td><td>Per-request or token markups layered over provider charges.</td></tr>
+              <tr><td>Infrastructure</td><td>Compute, network, load balancing, storage and multi-region capacity</td><td>Idle resilience capacity and cross-region egress.</td></tr>
+              <tr><td>Tokens</td><td>Prompt, completion, embedding, evaluation and retry consumption</td><td>Duplicated context and uncontrolled agent loops.</td></tr>
+              <tr><td>Storage</td><td>Logs, traces, evidence, cache and retained payloads</td><td>Long retention of high-cardinality or sensitive telemetry.</td></tr>
+              <tr><td>Operations</td><td>Platform engineering, support, incident management and FinOps</td><td>Manual policy onboarding and exception processing.</td></tr>
+              <tr><td>Maintenance</td><td>Provider changes, model migrations, testing and compliance updates</td><td>Revalidating every route after model or policy change.</td></tr>
+            </tbody>
+          </table></div>
+        </section>
+
+        <section class="panel">
+          <h2>13. Scalability</h2>
+          <div class="tw"><table>
+            <thead><tr><th>Scale</th><th>Recommended pattern</th><th>Primary concern</th></tr></thead>
+            <tbody>
+              <tr><td>Small</td><td>Managed gateway or thin internal service with one region and clear limits</td><td>Avoid platform complexity that exceeds the portfolio.</td></tr>
+              <tr><td>Medium</td><td>Shared service with tenant quotas, policy service and central observability</td><td>Standardise onboarding and ownership.</td></tr>
+              <tr><td>Enterprise</td><td>Active-active clusters, delegated policies and multiple providers</td><td>Prevent fragmentation while supporting business-unit needs.</td></tr>
+              <tr><td>Global</td><td>Regional gateways with common control definitions and local execution</td><td>Residency, latency, regulatory variation and evidence consistency.</td></tr>
+              <tr><td>Hybrid</td><td>Common logical gateway routing to cloud and self-hosted execution</td><td>Equivalent policy and telemetry across environments.</td></tr>
+              <tr><td>Multi-region</td><td>Health-based routing with tested state, configuration and provider failover</td><td>Prevent split-brain policy and unapproved geographic routing.</td></tr>
+            </tbody>
+          </table></div>
+        </section>
+
+        <section class="panel">
+          <h2>14. Production Readiness</h2>
+          <div class="mini">
+            <div><strong>Service</strong><span>Owner, SLOs, capacity, dependencies and support coverage approved.</span></div>
+            <div><strong>Security</strong><span>Threat model, least privilege, secrets, network and testing complete.</span></div>
+            <div><strong>Governance</strong><span>Policies, decision rights, evidence, exceptions and reviews operational.</span></div>
+            <div><strong>Resilience</strong><span>Failover, rollback, provider outage and configuration recovery tested.</span></div>
+            <div><strong>Observability</strong><span>Metrics, logs, traces, quality, cost and alert ownership verified.</span></div>
+            <div><strong>Change</strong><span>Versioning, promotion, validation and emergency-change controls tested.</span></div>
+            <div><strong>Data</strong><span>Classification, redaction, retention, residency and deletion proven.</span></div>
+            <div><strong>Consumers</strong><span>Contracts, errors, quotas, migration and degraded modes documented.</span></div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2>15. Common Anti-Patterns</h2>
+          <div class="grid">
+            <div class="content-block"><h3>Gateway as a pass-through proxy</h3><p>Adds latency and cost without applying policy, evidence, routing or operational value.</p></div>
+            <div class="content-block"><h3>One policy for every use case</h3><p>Ignores differences in data sensitivity, autonomy, customer impact and regulatory exposure.</p></div>
+            <div class="content-block"><h3>Provider keys in applications</h3><p>Allows direct access that bypasses central controls and makes revocation difficult.</p></div>
+            <div class="content-block"><h3>Logging every payload</h3><p>Creates a sensitive-data store without clear purpose, access or retention controls.</p></div>
+            <div class="content-block"><h3>Unvalidated fallback</h3><p>Routes to a cheaper or available model whose quality and safety are not equivalent.</p></div>
+            <div class="content-block"><h3>Gateway replaces governance</h3><p>Technology cannot decide business ownership, acceptable risk or lawful purpose.</p></div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2>16. Decision Matrix</h2>
+          <div class="tw"><table>
+            <thead><tr><th>Use an enterprise AI Gateway when…</th><th>Avoid or defer when…</th><th>Consider alternatives when…</th></tr></thead>
+            <tbody>
+              <tr><td>Several applications or teams use AI services.</td><td>There is one isolated, low-risk experiment with no production commitment.</td><td>Existing API management can enforce the complete required AI control set.</td></tr>
+              <tr><td>Models or providers must change without application rewrites.</td><td>The organisation has no accountable platform owner or operating capacity.</td><td>A managed platform provides equivalent controls with acceptable lock-in.</td></tr>
+              <tr><td>Policy, data, cost and audit controls must be consistent.</td><td>The gateway would become an unresilient mandatory dependency.</td><td>Workloads must remain fully isolated by regulation or criticality.</td></tr>
+              <tr><td>Agents require governed tool and model access.</td><td>Required identity and classification context cannot be supplied.</td><td>Local sidecars are necessary for disconnected or edge operation.</td></tr>
+            </tbody>
+          </table></div>
+        </section>
+
+        <section class="panel">
+          <h2>17. Implementation Checklist</h2>
+          <div class="tw"><table>
+            <thead><tr><th>Step</th><th>Enterprise action</th><th>Evidence</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td>Inventory current AI consumers, providers, credentials, data classes and direct endpoints.</td><td>Current-state register</td></tr>
+              <tr><td>2</td><td>Define gateway scope, accountable owner, consumers, exclusions and success measures.</td><td>Service charter</td></tr>
+              <tr><td>3</td><td>Define risk-tiered identity, data, model, tool, output and evidence policies.</td><td>Approved policy set</td></tr>
+              <tr><td>4</td><td>Design logical, deployment, security, integration and resilience architecture.</td><td>Architecture decision record</td></tr>
+              <tr><td>5</td><td>Implement identity, secrets, policy, routing, quotas, logging and evaluations.</td><td>Tested configuration</td></tr>
+              <tr><td>6</td><td>Pilot representative low-risk traffic and compare direct versus gateway outcomes.</td><td>Pilot evaluation report</td></tr>
+              <tr><td>7</td><td>Test misuse, provider failure, rollback, scale, evidence loss and incident response.</td><td>Assurance results</td></tr>
+              <tr><td>8</td><td>Migrate by wave, remove direct keys and monitor quality, latency and cost.</td><td>Migration sign-off</td></tr>
+              <tr><td>9</td><td>Establish operational reviews for SLOs, policy effectiveness, value and exceptions.</td><td>Service review record</td></tr>
+            </tbody>
+          </table></div>
+        </section>
+
+        <section class="visual">
+          <h2 class="visual-title">18. Reference Architecture</h2>
+          <div class="arch-grid">
+            <div class="arch-card arch-p1"><div class="arch-pattern-num">Northbound</div><div class="arch-card-title">Enterprise consumers</div><div class="arch-card-def">Web and mobile applications, business APIs, copilots, workflow engines, agents and approved development tools.</div></div>
+            <div class="arch-card arch-p2"><div class="arch-pattern-num">Gateway core</div><div class="arch-card-title">Runtime controls</div><div class="arch-card-def">Identity context, policy decision, prompt controls, provider routing, quotas, cache, response validation and evidence emission.</div></div>
+            <div class="arch-card arch-p3"><div class="arch-pattern-num">Southbound</div><div class="arch-card-title">AI and enterprise services</div><div class="arch-card-def">LLMs, embedding models, vector databases, retrieval services, MCP servers, tools and business systems.</div></div>
+            <div class="arch-card arch-p4"><div class="arch-pattern-num">Cross-cutting</div><div class="arch-card-title">Governance and operations</div><div class="arch-card-def">Model registry, policy administration, evaluation, observability, audit, FinOps, incident response and service management.</div></div>
+          </div>
+          <div class="callout"><div class="co-lbl">Governance placement</div><div class="co-txt">Governance approves the permitted use case and control intent. The gateway enforces those decisions at runtime. Assurance independently tests whether enforcement and evidence remain effective.</div></div>
+        </section>
+
+        <section class="panel">
+          <h2>19. Production Checklist</h2>
+          <div class="tw"><table>
+            <thead><tr><th>Domain</th><th>Production gate</th></tr></thead>
+            <tbody>
+              <tr><td>Deployment</td><td>Immutable build, signed artefact, separated environments, tested promotion and rollback.</td></tr>
+              <tr><td>Security</td><td>Threat model closed, penetration testing complete, credentials rotated and egress constrained.</td></tr>
+              <tr><td>Governance</td><td>Approved policies, owners, exceptions, audit access and review cadence active.</td></tr>
+              <tr><td>Operations</td><td>SLOs, dashboards, alerts, on-call, runbooks and vendor escalation tested.</td></tr>
+              <tr><td>Support</td><td>Consumer documentation, status communication and incident ownership published.</td></tr>
+              <tr><td>Monitoring</td><td>Health, latency, quality, safety, cost and policy metrics reconciled end to end.</td></tr>
+              <tr><td>Backup</td><td>Configuration, policy and evidence backup restoration proven.</td></tr>
+              <tr><td>Disaster recovery</td><td>Region, provider and control-plane recovery exercised against approved objectives.</td></tr>
+            </tbody>
+          </table></div>
+        </section>
+
+        <section class="panel">
+          <h2>20. Downloads</h2>
+          <div class="grid">
+            <a class="content-block" href="/deliverables/"><span class="tag">Templates</span><h3>Gateway implementation pack</h3><p>Use the approved deliverable library for service charters, registers, decision records, implementation plans and operational artefacts.</p><div class="arrow">Browse deliverables →</div></a>
+            <a class="content-block" href="/assessments/"><span class="tag t-blue">Assessment</span><h3>Enterprise readiness assessment</h3><p>Assess governance, architecture, security, data, operations and delivery readiness before committing to a shared gateway.</p><div class="arrow">Open assessments →</div></a>
+            <a class="content-block" href="./resources.html"><span class="tag t-amb">Checklists</span><h3>Resources and downloads</h3><p>Find reusable policy, assurance, planning and implementation resources already governed by the platform.</p><div class="arrow">Open resources →</div></a>
+            <a class="content-block" href="./ai-infrastructure-architecture.html"><span class="tag t-grn">Architecture</span><h3>Deployment blueprint</h3><p>Use the cloud, self-hosted and hybrid infrastructure blueprint to decide where approved gateway traffic executes.</p><div class="arrow">Open blueprint →</div></a>
+          </div>
+        </section>
+
+        <section class="decision-summary" aria-labelledby="gateway-adoption-decision">
+          <h2 id="gateway-adoption-decision">Should my organisation implement this?</h2>
+          <div class="decision-summary-grid">
+            <div><h3>Strong candidate</h3><p>Medium-to-large portfolio, multiple providers, regulated or sensitive use cases, growing AI maturity and need for shared controls.</p></div>
+            <div><h3>Adopt carefully</h3><p>Moderate maturity, limited platform skills or uncertain demand. Start with a managed capability and a narrow service scope.</p></div>
+            <div><h3>Defer</h3><p>Single non-production experiment, low organisational readiness, no service owner or no ability to operate a critical shared dependency.</p></div>
+          </div>
+          <div class="tw"><table>
+            <thead><tr><th>Factor</th><th>Low</th><th>Medium</th><th>High</th></tr></thead>
+            <tbody>
+              <tr><td>Business size</td><td>Often unnecessary</td><td>Shared managed service</td><td>Enterprise platform capability</td></tr>
+              <tr><td>AI maturity</td><td>Defer until repeatable use exists</td><td>Pilot common controls</td><td>Standardise and federate</td></tr>
+              <tr><td>Risk level</td><td>Lightweight controls</td><td>Risk-tiered gateway</td><td>Independent assurance and fail-closed controls</td></tr>
+              <tr><td>Complexity</td><td>One provider and use case</td><td>Several applications</td><td>Global, hybrid, multi-provider and agentic</td></tr>
+              <tr><td>Investment</td><td>Low</td><td>Moderate platform investment</td><td>Strategic product and operating model</td></tr>
+              <tr><td>Business value</td><td>Limited consolidation value</td><td>Faster onboarding and control reuse</td><td>Portfolio-wide risk, cost and resilience benefits</td></tr>
+              <tr><td>Adoption stage</td><td>Discover</td><td>Assess readiness and define strategy</td><td>Establish governance through operate and scale</td></tr>
+            </tbody>
+          </table></div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer id="methodology-footer"></footer>
+</body>
+</html>

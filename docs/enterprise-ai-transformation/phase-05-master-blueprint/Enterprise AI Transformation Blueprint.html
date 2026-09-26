@@ -1,0 +1,852 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Enterprise AI Transformation Blueprint</title>
+<style>
+@page{size:Letter;margin:18mm 16mm 18mm}@page:first{margin-top:14mm}
+:root{--navy:#08264a;--gold:#c3912f;--teal:#2b6f72;--ink:#1d2e3d;--muted:#526779;--line:#d5dfe7;--pale:#f4f7fa}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font:15px/1.62 Arial,sans-serif;color:var(--ink);background:#eef3f7}
+main{max-width:1100px;margin:auto;padding:56px 68px 100px;background:#fff;box-shadow:0 12px 50px rgba(8,38,74,.12)}
+h1,h2,h3{color:var(--navy);line-height:1.18;break-after:avoid}h1{margin:0 0 22px;font:700 42px/1.08 Georgia,serif;border-bottom:5px solid var(--gold);padding-bottom:18px}h2{margin-top:56px;font:700 29px/1.15 Georgia,serif;border-bottom:1px solid var(--line);padding-bottom:8px}h3{font-size:19px}
+p,li{orphans:3;widows:3}blockquote{margin:25px 0;padding:18px 22px;border-left:5px solid var(--teal);background:#eaf4f3;color:#244f52}
+table{width:100%;border-collapse:collapse;margin:20px 0 28px;font-size:12px;break-inside:auto}thead{display:table-header-group}tr{break-inside:avoid}th{background:var(--navy);color:#fff;text-align:left}th,td{padding:9px 10px;border:1px solid var(--line);vertical-align:top}tbody tr:nth-child(even){background:var(--pale)}
+img{display:block;width:100%;height:auto;margin:25px auto 34px;break-inside:avoid;border:1px solid var(--line)}code{background:var(--pale);padding:2px 4px}a{color:#145f80}
+body>header{display:none}.cover{min-height:88vh;display:flex;flex-direction:column;justify-content:center}.meta{color:var(--muted)}
+@media print{body{background:#fff}main{max-width:none;padding:0;box-shadow:none}main>h1:not(:first-child){break-before:page}h1{font-size:34px}h2{break-before:auto;margin-top:36px}a{text-decoration:none;color:inherit}img{max-height:620px}table{font-size:9px}p,li{font-size:10.5px}blockquote{font-size:11px}}
+@media(max-width:760px){main{padding:30px 18px}h1{font-size:34px}table{display:block;overflow:auto}}
+</style></head><body><main><h1>Enterprise AI Transformation Blueprint</h1>
+<blockquote>
+<p><strong>Governing purpose:</strong> explain how an organisation moves from AI ambition to governed, secure, measurable enterprise value. This blueprint integrates the Phase 0 information architecture; it does not redesign it.</p>
+</blockquote>
+<p><strong>Document owner:</strong> Platform Owner<br><strong>Methodology owner:</strong> Enterprise AI Methodology Lead<br><strong>Change control:</strong> no future structure, menu, deliverable or workflow may conflict with this blueprint without an approved change record.<br><strong>Production status:</strong> non-production design artifact; no deployment or route change is authorised.</p>
+<h2>How to read this blueprint</h2>
+<p>The lifecycle is the primary journey. Capabilities supply expertise. Information becomes governed deliverables. Deliverables support decisions. Decisions release the next stage. Knowledge articles explain reusable concepts without replacing the methodology. AI assistance accelerates drafting and analysis but never assumes authority.</p>
+<p><img src="diagrams/01-lifecycle.svg" alt="Enterprise transformation lifecycle"></p>
+<h1>Part 1 — Executive Vision</h1>
+<p>Architecting AI is a complete Enterprise AI Transformation Methodology. It helps leaders and delivery teams turn an initial business need into an operated capability with accountable decisions, evidence, controls and measurable benefits.</p>
+<p>The problem is rarely a lack of AI ideas. Organisations struggle because strategy, governance, data, security, architecture, delivery, operations and value measurement are treated as separate projects. The platform connects them through one lifecycle and one language.</p>
+<p>It serves executives, business owners, programme leaders, architects, data and engineering teams, security, privacy, legal, risk, procurement, finance, operations, change, audit and learners. Its differentiator is traceability: a stated objective must remain connected to capability, process, data, opportunity, investment, architecture, implementation, control evidence and realised benefit.</p>
+<h1>Part 2 — Transformation Story</h1>
+<p>A transformation begins with a business need: improve service, manage risk, grow capacity, reduce friction or create a new capability. Stage 0 converts that need into mandate and accountable scope. Stage 1 collects the current-state evidence. Stage 2 determines whether the organisation is ready and what must be remediated. Stage 3 turns ambition into choices and a roadmap.</p>
+<p>Stage 4 establishes the rules and decision rights before opportunity selection becomes investment pressure. Stage 5 chooses problems worth solving. Stage 6 tests whether the expected value justifies cost and risk. Stage 7 designs the target state. Stage 8 builds an executable plan. Stage 9 implements it. Stage 10 proves it.</p>
+<p>Stage 11 releases and transfers ownership. Stage 12 operates and governs the live service. Stage 13 compares actual results with the approved case, then improves, scales or retires the capability. Its evidence becomes new discovery input, making transformation a managed learning cycle.</p>
+<h1>Part 3 — Complete Enterprise Lifecycle</h1>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Why it exists</th>
+<th>Primary output</th>
+<th>Gate</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0 — Mobilise</td>
+<td>Create the mandate, scope, sponsorship and programme controls.</td>
+<td>Programme Charter</td>
+<td>Mobilisation approved</td>
+</tr>
+<tr>
+<td>1 — Discover</td>
+<td>Establish an evidence-based current-state baseline.</td>
+<td>Current-State Discovery Baseline</td>
+<td>Discovery accepted</td>
+</tr>
+<tr>
+<td>2 — Assess Readiness</td>
+<td>Measure capability, evidence gaps and remediation priorities.</td>
+<td>Enterprise AI Readiness Assessment</td>
+<td>Readiness disposition approved</td>
+</tr>
+<tr>
+<td>3 — Define Strategy</td>
+<td>Agree ambition, outcomes, operating model and roadmap.</td>
+<td>Enterprise AI Strategy Decision Pack</td>
+<td>Strategy approved</td>
+</tr>
+<tr>
+<td>4 — Establish Governance</td>
+<td>Put decision rights, policies, controls and assurance in place.</td>
+<td>Governance and Control Framework</td>
+<td>Governance approved</td>
+</tr>
+<tr>
+<td>5 — Identify and Prioritise Opportunities</td>
+<td>Create and balance a governed opportunity portfolio.</td>
+<td>Prioritised Opportunity Portfolio</td>
+<td>Portfolio approved</td>
+</tr>
+<tr>
+<td>6 — Build the Business Case</td>
+<td>Make benefits, costs, assumptions and funding transparent.</td>
+<td>Enterprise AI Business Case</td>
+<td>Investment approved</td>
+</tr>
+<tr>
+<td>7 — Design the Target Architecture</td>
+<td>Turn strategy and controls into an implementable target state.</td>
+<td>Target Architecture Decision Pack</td>
+<td>Architecture approved</td>
+</tr>
+<tr>
+<td>8 — Plan Implementation</td>
+<td>Create the integrated delivery, change, test and transition plan.</td>
+<td>Integrated Implementation Plan</td>
+<td>Plan approved</td>
+</tr>
+<tr>
+<td>9 — Build and Integrate</td>
+<td>Configure, integrate and document the governed solution.</td>
+<td>Build and Configuration Evidence</td>
+<td>Build completion approved</td>
+</tr>
+<tr>
+<td>10 — Test and Validate</td>
+<td>Prove functional, AI, security, control and operational quality.</td>
+<td>Production Readiness Evidence Pack</td>
+<td>Release candidate accepted</td>
+</tr>
+<tr>
+<td>11 — Deploy and Transition</td>
+<td>Cut over safely and transfer accountable ownership.</td>
+<td>Transition and Ownership Record</td>
+<td>Production release approved</td>
+</tr>
+<tr>
+<td>12 — Operate and Govern Production</td>
+<td>Run, monitor, assure and respond throughout service life.</td>
+<td>Production Assurance Report</td>
+<td>Continued operation approved</td>
+</tr>
+<tr>
+<td>13 — Improve and Scale</td>
+<td>Measure value, improve performance and scale reusable capability.</td>
+<td>Benefits and Scale Decision Pack</td>
+<td>Scale decision approved</td>
+</tr>
+</tbody></table>
+<p><strong>Dependency rule:</strong> each gate accepts the previous stage’s evidence and authorises the next commitment. A stage may iterate backward when evidence changes; it may not silently bypass a mandatory gate.</p>
+<h1>Part 4 — Enterprise Capability Model</h1>
+<p><img src="diagrams/02-capability-map.svg" alt="Enterprise capability map"></p>
+<ol>
+<li><strong>Executive Leadership.</strong> Owns a coherent set of skills, decisions, pages and deliverables; it participates across stages rather than becoming a competing lifecycle.</li>
+<li><strong>Business and Process.</strong> Owns a coherent set of skills, decisions, pages and deliverables; it participates across stages rather than becoming a competing lifecycle.</li>
+<li><strong>Programme Delivery.</strong> Owns a coherent set of skills, decisions, pages and deliverables; it participates across stages rather than becoming a competing lifecycle.</li>
+<li><strong>Governance and Responsible AI.</strong> Owns a coherent set of skills, decisions, pages and deliverables; it participates across stages rather than becoming a competing lifecycle.</li>
+<li><strong>Risk and Compliance.</strong> Owns a coherent set of skills, decisions, pages and deliverables; it participates across stages rather than becoming a competing lifecycle.</li>
+<li><strong>Security.</strong> Owns a coherent set of skills, decisions, pages and deliverables; it participates across stages rather than becoming a competing lifecycle.</li>
+<li><strong>Identity.</strong> Owns a coherent set of skills, decisions, pages and deliverables; it participates across stages rather than becoming a competing lifecycle.</li>
+<li><strong>Privacy and Legal.</strong> Owns a coherent set of skills, decisions, pages and deliverables; it participates across stages rather than becoming a competing lifecycle.</li>
+<li><strong>Enterprise Architecture.</strong> Owns a coherent set of skills, decisions, pages and deliverables; it participates across stages rather than becoming a competing lifecycle.</li>
+<li><strong>Infrastructure and Cloud.</strong> Owns a coherent set of skills, decisions, pages and deliverables; it participates across stages rather than becoming a competing lifecycle.</li>
+<li><strong>AI Platforms and Models.</strong> Owns a coherent set of skills, decisions, pages and deliverables; it participates across stages rather than becoming a competing lifecycle.</li>
+<li><strong>Automation.</strong> Owns a coherent set of skills, decisions, pages and deliverables; it participates across stages rather than becoming a competing lifecycle.</li>
+<li><strong>Data and Knowledge.</strong> Owns a coherent set of skills, decisions, pages and deliverables; it participates across stages rather than becoming a competing lifecycle.</li>
+<li><strong>Integration.</strong> Owns a coherent set of skills, decisions, pages and deliverables; it participates across stages rather than becoming a competing lifecycle.</li>
+<li><strong>Operations and Reliability.</strong> Owns a coherent set of skills, decisions, pages and deliverables; it participates across stages rather than becoming a competing lifecycle.</li>
+<li><strong>People, Change and Training.</strong> Owns a coherent set of skills, decisions, pages and deliverables; it participates across stages rather than becoming a competing lifecycle.</li>
+<li><strong>Finance and Procurement.</strong> Owns a coherent set of skills, decisions, pages and deliverables; it participates across stages rather than becoming a competing lifecycle.</li>
+<li><strong>Vendor Management.</strong> Owns a coherent set of skills, decisions, pages and deliverables; it participates across stages rather than becoming a competing lifecycle.</li>
+<li><strong>Audit and Assurance.</strong> Owns a coherent set of skills, decisions, pages and deliverables; it participates across stages rather than becoming a competing lifecycle.</li>
+<li><strong>Benefits and Value.</strong> Owns a coherent set of skills, decisions, pages and deliverables; it participates across stages rather than becoming a competing lifecycle.</li>
+</ol>
+<p>Every future article has one primary capability, one primary lifecycle location or Knowledge Centre classification, and typed relationships to other capabilities. Capability ownership does not duplicate lifecycle content.</p>
+<h1>Part 5 — Enterprise Knowledge Graph</h1>
+<p><img src="diagrams/03-knowledge-graph.svg" alt="Enterprise knowledge graph"></p>
+<p>The graph uses stable objects and directional relationships: objectives <strong>drive</strong> capabilities; deliverables <strong>provide evidence to</strong> gates; controls are <strong>implemented by</strong> mechanisms and <strong>verified by</strong> tests; architecture decisions <strong>constrain</strong> implementation; operational measures <strong>validate</strong> benefits.</p>
+<p>Minimum object types are stage, capability, page, concept, role, information element, workshop, deliverable, template, decision, gate, checklist item, architecture component, control, test, evidence, measure and benefit.</p>
+<p>No published object may be orphaned. Canonical concepts have one definition. Lifecycle pages reference them. Relationships are versioned, reviewed and validated before publication.</p>
+<h1>Part 6 — Business Capability Traceability</h1>
+<p><img src="diagrams/04-business-traceability.svg" alt="Business-to-value traceability"></p>
+<p>The traceability record begins with a uniquely identified objective and ends with a measured benefit. Each link records owner, source, version and confidence. A proposed AI opportunity without a capability and process is incomplete. A benefit without a baseline and owner is not measurable. An implementation without approved architecture and controls is not production-ready.</p>
+<h1>Part 7 — Information Collection Blueprint</h1>
+<table>
+<thead>
+<tr>
+<th>Information</th>
+<th>Purpose</th>
+<th>Owner</th>
+<th>Collector</th>
+<th>Validator</th>
+<th>Approver</th>
+<th>Evidence</th>
+<th>Stage</th>
+<th>Used by</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Business drivers and objectives</td>
+<td>Explain why change is required</td>
+<td>Executive Sponsor</td>
+<td>Programme Lead</td>
+<td>Business Owner</td>
+<td>Executive Sponsor</td>
+<td>Mandate and strategy</td>
+<td>0</td>
+<td>Charter; strategy; benefits</td>
+</tr>
+<tr>
+<td>Stakeholders and decision rights</td>
+<td>Establish ownership and engagement</td>
+<td>Programme Director</td>
+<td>Programme Office</td>
+<td>Methodology Lead</td>
+<td>Executive Sponsor</td>
+<td>Approved register and RACI</td>
+<td>0</td>
+<td>All stage gates</td>
+</tr>
+<tr>
+<td>Business capabilities and processes</td>
+<td>Locate value and operational impact</td>
+<td>Business Owner</td>
+<td>Business Analysts</td>
+<td>Enterprise Architect</td>
+<td>Business Owner</td>
+<td>Capability/process maps</td>
+<td>1</td>
+<td>Opportunities; architecture; change</td>
+</tr>
+<tr>
+<td>Applications, integrations and technology</td>
+<td>Identify constraints and dependencies</td>
+<td>CIO/CTO</td>
+<td>Architecture Team</td>
+<td>Enterprise Architect</td>
+<td>CTO</td>
+<td>Current-state repository</td>
+<td>1</td>
+<td>Readiness; architecture; cost</td>
+</tr>
+<tr>
+<td>Data inventory, quality and classification</td>
+<td>Determine lawful, reliable AI inputs</td>
+<td>Data Owner</td>
+<td>Data Stewards</td>
+<td>Security/Privacy</td>
+<td>Data Owner</td>
+<td>Data catalogue evidence</td>
+<td>1</td>
+<td>Readiness; design; testing; operations</td>
+</tr>
+<tr>
+<td>AI and automation use cases</td>
+<td>Expose current adoption and shadow AI</td>
+<td>Business Owners</td>
+<td>Discovery Team</td>
+<td>Risk Lead</td>
+<td>Programme Director</td>
+<td>Use-case inventory</td>
+<td>1</td>
+<td>Governance; opportunity portfolio</td>
+</tr>
+<tr>
+<td>Readiness scores and gaps</td>
+<td>Make remediation evidence-based</td>
+<td>Capability Owners</td>
+<td>Assessment Team</td>
+<td>Assurance Lead</td>
+<td>Programme Board</td>
+<td>Assessment evidence</td>
+<td>2</td>
+<td>Strategy; roadmap; business case</td>
+</tr>
+<tr>
+<td>Risk appetite and control requirements</td>
+<td>Set automation and risk boundaries</td>
+<td>Risk Executive</td>
+<td>Risk Team</td>
+<td>Legal/Security</td>
+<td>Risk Executive</td>
+<td>Approved policy and controls</td>
+<td>0-4</td>
+<td>Architecture; testing; operations</td>
+</tr>
+<tr>
+<td>Benefit baseline and cost assumptions</td>
+<td>Make value measurable</td>
+<td>Finance/Business Owner</td>
+<td>Finance Analysts</td>
+<td>Finance Lead</td>
+<td>Executive Sponsor</td>
+<td>Approved baseline</td>
+<td>6</td>
+<td>Funding; operations; scaling</td>
+</tr>
+<tr>
+<td>Architecture decisions</td>
+<td>Preserve rationale and consequences</td>
+<td>Enterprise Architect</td>
+<td>Architecture Team</td>
+<td>Security/Data/Ops</td>
+<td>Architecture Review Board</td>
+<td>ADRs and models</td>
+<td>7</td>
+<td>Build; test; operations</td>
+</tr>
+<tr>
+<td>Test and evaluation evidence</td>
+<td>Prove quality and control operation</td>
+<td>Engineering Lead</td>
+<td>Test Teams</td>
+<td>Independent Validators</td>
+<td>Release Authority</td>
+<td>Signed evidence pack</td>
+<td>10</td>
+<td>Deployment; assurance</td>
+</tr>
+<tr>
+<td>Operational measures and incidents</td>
+<td>Control live service and improve it</td>
+<td>Service Owner</td>
+<td>Operations</td>
+<td>Assurance Lead</td>
+<td>Platform Owner</td>
+<td>Logs, reports, incident records</td>
+<td>12</td>
+<td>Benefits; improvement; scaling</td>
+</tr>
+</tbody></table>
+<p>Information is collected once from the best available source, assigned an owner and reused by reference. A later stage may validate or enrich it; it must not create an independent conflicting copy. Sensitive information carries classification, access, retention and lawful-use metadata.</p>
+<h1>Part 8 — Workshop Blueprint</h1>
+<table>
+<thead>
+<tr>
+<th>Workshop</th>
+<th>Purpose</th>
+<th>Participants</th>
+<th>Facilitator</th>
+<th>Preparation</th>
+<th>Key question</th>
+<th>Output</th>
+<th>Approval</th>
+<th>Duration</th>
+<th>Related</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Executive ambition and mandate</td>
+<td>Agree need, outcomes, sponsorship and boundaries</td>
+<td>Executive Sponsor; CIO/CTO; Business Owners</td>
+<td>Methodology Lead</td>
+<td>Business context and constraints</td>
+<td>Drivers; outcomes; scope; appetite</td>
+<td>Mandate and draft charter</td>
+<td>Yes</td>
+<td>3 hours</td>
+<td>Charter; principles</td>
+</tr>
+<tr>
+<td>Stakeholder and governance design</td>
+<td>Assign forums, rights and evidence responsibilities</td>
+<td>Programme; Risk; Security; Data; Legal; Audit</td>
+<td>Programme Director</td>
+<td>Draft charter and organisation model</td>
+<td>Who decides, validates, approves and accepts risk?</td>
+<td>Stakeholder register; RACI; forum map</td>
+<td>Yes</td>
+<td>4 hours</td>
+<td>Charter; RACI</td>
+</tr>
+<tr>
+<td>Enterprise discovery</td>
+<td>Create the current-state evidence plan</td>
+<td>Business; Architecture; Data; Security; Operations</td>
+<td>Enterprise Architect</td>
+<td>Inventory sources and prior assessments</td>
+<td>What exists, who owns it, how reliable is it?</td>
+<td>Discovery plan and evidence requests</td>
+<td>No</td>
+<td>1 day</td>
+<td>Discovery baseline</td>
+</tr>
+<tr>
+<td>Readiness calibration</td>
+<td>Validate scores, gaps and remediation</td>
+<td>Capability owners; Assurance; Programme</td>
+<td>Methodology Lead</td>
+<td>Draft readiness scores</td>
+<td>What evidence supports each score?</td>
+<td>Approved readiness assessment</td>
+<td>Yes</td>
+<td>4 hours</td>
+<td>Readiness assessment</td>
+</tr>
+<tr>
+<td>Strategy choices</td>
+<td>Select ambition, operating model and roadmap</td>
+<td>Executives; Business; Architecture; Finance; Risk</td>
+<td>Methodology Lead</td>
+<td>Discovery and readiness outputs</td>
+<td>What will we do, not do, and fund?</td>
+<td>Strategy decision pack</td>
+<td>Yes</td>
+<td>1 day</td>
+<td>Strategy; roadmap</td>
+</tr>
+<tr>
+<td>Governance and risk design</td>
+<td>Define policies, controls and approval thresholds</td>
+<td>Risk; Legal; Privacy; Security; Data; Audit</td>
+<td>Governance Lead</td>
+<td>Strategy and risk appetite</td>
+<td>Which decisions require which evidence and authority?</td>
+<td>Governance framework</td>
+<td>Yes</td>
+<td>1 day</td>
+<td>Policies; controls; gates</td>
+</tr>
+<tr>
+<td>Opportunity portfolio</td>
+<td>Compare problems, feasibility, risk, value and dependencies</td>
+<td>Business Owners; Data; Technology; Finance; Risk</td>
+<td>Portfolio Lead</td>
+<td>Use-case inventory and criteria</td>
+<td>Which problems deserve investment now?</td>
+<td>Prioritised portfolio</td>
+<td>Yes</td>
+<td>1 day</td>
+<td>Intake; scoring; roadmap</td>
+</tr>
+<tr>
+<td>Architecture decisions</td>
+<td>Agree target state, alternatives and exceptions</td>
+<td>Architecture; Engineering; Security; Data; Operations</td>
+<td>Enterprise Architect</td>
+<td>Approved requirements and controls</td>
+<td>How will the system meet outcomes and controls?</td>
+<td>Architecture decision pack</td>
+<td>Yes</td>
+<td>1-2 days</td>
+<td>Architecture; ADRs</td>
+</tr>
+<tr>
+<td>Production readiness</td>
+<td>Review tests, controls, support and rollback</td>
+<td>Release Authority; Engineering; Security; Operations; Business</td>
+<td>Service Owner</td>
+<td>Completed evidence pack</td>
+<td>Can the service operate safely and recover?</td>
+<td>Gate decision and conditions</td>
+<td>Yes</td>
+<td>4 hours</td>
+<td>Readiness pack; cutover</td>
+</tr>
+<tr>
+<td>Benefits and scale review</td>
+<td>Compare outcomes with the approved case</td>
+<td>Sponsor; Business; Finance; Operations; Risk</td>
+<td>Business Owner</td>
+<td>Operational and benefits data</td>
+<td>What value was realised and what should scale?</td>
+<td>Benefits and scale decision</td>
+<td>Yes</td>
+<td>4 hours</td>
+<td>Benefits review</td>
+</tr>
+</tbody></table>
+<p>Workshops are decision and evidence mechanisms, not calendar events. A workshop is complete only when outputs, open questions, owners and approval requirements are recorded.</p>
+<p><img src="diagrams/05-workshop-map.svg" alt="Workshop map"></p>
+<h1>Part 9 — Enterprise Deliverable Graph</h1>
+<p><img src="diagrams/06-deliverable-graph.svg" alt="Deliverable dependency graph"></p>
+<p>Every deliverable has a stable ID, purpose, stage, workstream, owner, author, validator, approver, inputs, acceptance criteria, evidence, classification, status, review date and gate. A file attachment is not the deliverable record.</p>
+<p>The critical chain is Charter → Discovery Baseline → Readiness Assessment → Strategy → Governance Framework → Opportunity Portfolio → Business Case → Target Architecture → Implementation Plan → Build Evidence → Readiness Evidence → Transition Record → Production Assurance → Benefits and Scale Decision.</p>
+<h1>Part 10 — Role Blueprint</h1>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Accountability and decision rights</th>
+<th>Lifecycle participation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Executive Sponsor</td>
+<td>Mandate, investment and executive risk acceptance</td>
+<td>0, 3, 6, 11, 13</td>
+</tr>
+<tr>
+<td>Platform Owner</td>
+<td>Methodology, platform roadmap and final acceptance</td>
+<td>All stages</td>
+</tr>
+<tr>
+<td>Programme Director</td>
+<td>Integrated transformation delivery</td>
+<td>0-11</td>
+</tr>
+<tr>
+<td>Business Owner</td>
+<td>Outcomes, adoption and benefits</td>
+<td>0, 1, 3, 5, 6, 10-13</td>
+</tr>
+<tr>
+<td>Enterprise Architect</td>
+<td>Target state and enterprise alignment</td>
+<td>1-10, 12-13</td>
+</tr>
+<tr>
+<td>Data Owner</td>
+<td>Data purpose, quality, access and lifecycle</td>
+<td>1-13</td>
+</tr>
+<tr>
+<td>Security Lead</td>
+<td>Security risk, architecture and control validation</td>
+<td>1-12</td>
+</tr>
+<tr>
+<td>Privacy and Legal Leads</td>
+<td>Lawful use, rights, contracts and obligations</td>
+<td>1-12</td>
+</tr>
+<tr>
+<td>Engineering Lead</td>
+<td>Build, integration and technical quality</td>
+<td>7-11</td>
+</tr>
+<tr>
+<td>Service Owner</td>
+<td>Production readiness, service levels and lifecycle</td>
+<td>8-13</td>
+</tr>
+<tr>
+<td>Audit and Assurance Lead</td>
+<td>Independent evidence and control assurance</td>
+<td>4, 10, 12-13</td>
+</tr>
+</tbody></table>
+<p>Each activity has exactly one accountable role and at least one responsible role. Authors do not approve their own high-risk evidence. Role pages show responsibilities, approvals, deliverables, workshops, stage participation, decision rights and related guidance.</p>
+<p><img src="diagrams/07-role-map.svg" alt="Role interaction map"></p>
+<h1>Part 11 — Decision Blueprint</h1>
+<table>
+<thead>
+<tr>
+<th>Decision</th>
+<th>Recommends</th>
+<th>Reviews</th>
+<th>Approves</th>
+<th>Accepts risk</th>
+<th>Records</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mandate and scope</td>
+<td>Methodology Lead</td>
+<td>Programme Board</td>
+<td>Executive Sponsor</td>
+<td>Executive Sponsor</td>
+<td>Programme Office</td>
+</tr>
+<tr>
+<td>Funding</td>
+<td>Business Owner and Finance</td>
+<td>Architecture, Risk, Procurement</td>
+<td>Executive Sponsor</td>
+<td>Executive Sponsor</td>
+<td>Finance</td>
+</tr>
+<tr>
+<td>Risk appetite and exceptions</td>
+<td>Risk Lead</td>
+<td>Security, Privacy, Legal, Business</td>
+<td>Risk Executive</td>
+<td>Risk Executive</td>
+<td>Risk Office</td>
+</tr>
+<tr>
+<td>Architecture</td>
+<td>Enterprise Architect</td>
+<td>Security, Data, Engineering, Operations</td>
+<td>Architecture Review Board</td>
+<td>Business/Risk authority for exceptions</td>
+<td>Architecture Repository</td>
+</tr>
+<tr>
+<td>Technology and vendor</td>
+<td>Architecture and Procurement</td>
+<td>Security, Legal, Finance, Data</td>
+<td>CTO/CIO authority</td>
+<td>Business/Risk authority</td>
+<td>Procurement</td>
+</tr>
+<tr>
+<td>Data use</td>
+<td>Data Owner</td>
+<td>Privacy, Security, Legal</td>
+<td>Data Owner</td>
+<td>Risk/Privacy authority</td>
+<td>Data Governance</td>
+</tr>
+<tr>
+<td>Production release</td>
+<td>Service Owner</td>
+<td>Engineering, Security, Business, Operations</td>
+<td>Release Authority</td>
+<td>Business/Risk authority</td>
+<td>Change Management</td>
+</tr>
+<tr>
+<td>Continued operation</td>
+<td>Service Owner</td>
+<td>Assurance, Risk, Business, Vendor</td>
+<td>Platform Owner</td>
+<td>Risk Executive</td>
+<td>Service Management</td>
+</tr>
+<tr>
+<td>Scale or retire</td>
+<td>Business Owner</td>
+<td>Finance, Operations, Risk, Architecture</td>
+<td>Executive Sponsor</td>
+<td>Executive Sponsor</td>
+<td>Portfolio Office</td>
+</tr>
+</tbody></table>
+<p>Every decision records question, options, recommendation, evidence, assumptions, risks, conditions, rationale, signatories, expiry and next action. Allowed gate outcomes are Approved, Approved with conditions, Rework required, Deferred and Rejected.</p>
+<h1>Part 12 — Enterprise Dashboard Blueprint</h1>
+<table>
+<thead>
+<tr>
+<th>Dashboard</th>
+<th>KPIs and status</th>
+<th>Approvals and risks</th>
+<th>Primary views</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Executive</td>
+<td>Outcome progress; investment; realised value; top risks</td>
+<td>Gate decisions; funding; risk acceptance</td>
+<td>Stage progress; benefits; critical exceptions</td>
+</tr>
+<tr>
+<td>Programme</td>
+<td>Milestones; dependencies; RAID; resource demand</td>
+<td>Stage gates; overdue evidence</td>
+<td>Deliverable completion; schedule; blockers</td>
+</tr>
+<tr>
+<td>Architecture</td>
+<td>Decision status; standards; technical debt; exceptions</td>
+<td>ADRs; architecture approvals</td>
+<td>Coverage; exceptions; resilience readiness</td>
+</tr>
+<tr>
+<td>Governance</td>
+<td>Control coverage; reviews; exceptions; incidents</td>
+<td>Policy and risk decisions</td>
+<td>Control effectiveness; overdue reviews</td>
+</tr>
+<tr>
+<td>Operations</td>
+<td>Availability; latency; quality; drift; cost; incidents</td>
+<td>Change and continued-operation approvals</td>
+<td>SLOs; evaluation trends; capacity</td>
+</tr>
+<tr>
+<td>Benefits</td>
+<td>Baseline; target; realised benefit; adoption; unit economics</td>
+<td>Scale, optimise or retire</td>
+<td>Benefit variance; adoption; TCO</td>
+</tr>
+</tbody></table>
+<p>Dashboards report from canonical deliverable, gate, control, operational and benefits records. They do not create a second status system. Every metric shows definition, owner, source, cadence, threshold, last refresh and confidence.</p>
+<p><img src="diagrams/08-dashboard-wireframes.svg" alt="Dashboard wireframes"></p>
+<h1>Part 13 — Persona Blueprint</h1>
+<table>
+<thead>
+<tr>
+<th>Persona</th>
+<th>Relevant stages</th>
+<th>Pages and guidance</th>
+<th>Templates and deliverables</th>
+<th>Dashboards</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Executive Sponsor</td>
+<td>0, 3, 6, 11, 13</td>
+<td>Mandate, strategy, business case, gate summaries</td>
+<td>Charter; decision packs</td>
+<td>Executive and Benefits</td>
+</tr>
+<tr>
+<td>Programme Manager</td>
+<td>All</td>
+<td>Stage plans, dependencies, RACI, checklists</td>
+<td>Plans; RAID; gate packs</td>
+<td>Programme</td>
+</tr>
+<tr>
+<td>Business Owner</td>
+<td>0-6, 10-13</td>
+<td>Capabilities, opportunities, outcomes, adoption</td>
+<td>Intake; business case; benefits</td>
+<td>Executive; Benefits</td>
+</tr>
+<tr>
+<td>Enterprise Architect</td>
+<td>1-10, 12-13</td>
+<td>Current state, requirements, target state, ADRs</td>
+<td>Architecture pack; review checklist</td>
+<td>Architecture</td>
+</tr>
+<tr>
+<td>Security Lead</td>
+<td>1-12</td>
+<td>Threats, controls, evidence, incidents</td>
+<td>Security review; test evidence</td>
+<td>Governance; Operations</td>
+</tr>
+<tr>
+<td>Data Lead</td>
+<td>1-13</td>
+<td>Inventory, quality, classification, lineage, monitoring</td>
+<td>Data assessment; design; controls</td>
+<td>Architecture; Governance</td>
+</tr>
+<tr>
+<td>Operations Lead</td>
+<td>7-13</td>
+<td>SLOs, telemetry, resilience, support, incidents</td>
+<td>Runbooks; readiness; assurance</td>
+<td>Operations</td>
+</tr>
+<tr>
+<td>Audit and Assurance</td>
+<td>2, 4, 10, 12-13</td>
+<td>Control design, evidence, exceptions, independent results</td>
+<td>Assurance reports</td>
+<td>Governance</td>
+</tr>
+</tbody></table>
+<p>Persona views filter the same canonical objects. They never fork content. A user can move from persona view to lifecycle or capability view without losing object identity.</p>
+<h1>Part 14 — Navigation Blueprint</h1>
+<p><img src="diagrams/09-navigation-map.svg" alt="Navigation map"></p>
+<p>Primary navigation is Home, Enterprise AI Transformation, Lifecycle, Knowledge Centre, Deliverables, Tools and About. Desktop uses a lifecycle panel; tablet and mobile use an accessible stage accordion. Stage pages include breadcrumbs, persistent lifecycle position, stage-local navigation, related deliverables and previous/next controls.</p>
+<p>Role, capability, knowledge, template and deliverable views are alternate indexes over canonical objects. They do not become parallel taxonomies. Navigation supports keyboard operation, screen readers, visible focus, clear current stage/page, reduced motion and touch targets.</p>
+<h1>Part 15 — Search Blueprint</h1>
+<p><img src="diagrams/10-search-map.svg" alt="Intent-aware search map"></p>
+<p>Search understands journey intent before ranking content. “I want to start AI” resolves to the Mobilise stage, charter, business drivers, stakeholder model and workshops. “Can this go live?” resolves to validation evidence, production readiness, cutover, rollback and release authority.</p>
+<p>The pipeline is query → intent and persona → lifecycle stage → capability and object filters → access/version filters → hybrid retrieval → evidence reranking → grounded response → related next actions. Answers disclose evidence, source date, confidence and gaps. When evidence is insufficient, search says so.</p>
+<h1>Part 16 — Knowledge Centre Blueprint</h1>
+<p>The Knowledge Centre contains canonical concepts, patterns, standards, FAQs, concerns, decisions, sources and progressive explanations. It supports the methodology by answering “what is this?” and “how does it work?” Lifecycle guidance answers “why now?”, “what must we do?”, “who decides?” and “what evidence unlocks the next stage?”</p>
+<p>Canonical knowledge is reusable across stages through typed links. Glossary aliases, acronyms and deprecated terms resolve to one definition. Vendor claims and time-sensitive facts carry sources and review dates.</p>
+<h1>Part 17 — Deliverable Repository Blueprint</h1>
+<p>Deliverables are browsable by stage, role, capability, audience, type, criticality, status and gate. Each record has one canonical source and controlled attachments. Templates instantiate deliverables but remain independently versioned.</p>
+<p>Repository views expose dependencies, missing evidence, approvers, exceptions, review dates and downstream impact. Access controls apply to metadata and files. Approved records are immutable; revisions create new versions.</p>
+<h1>Part 18 — Implementation Blueprint</h1>
+<ol>
+<li><strong>Phase 1 — Methodology foundation.</strong> Implement metadata, lifecycle navigation, canonical routes, reusable page structures and Stage 0 vertical slice. Success: accessible preview, no current-route removal, approved taxonomy validation.</li>
+<li><strong>Phase 2 — Evidence and deliverables.</strong> Build deliverable repository, templates, RACI, gates, checklists and Stage 1-4 content. Success: traceable evidence flow and reviewable gates.</li>
+<li><strong>Phase 3 — Investment to implementation.</strong> Build Stage 5-11, workshops, architecture repository, assessment tools and dashboards. Success: one opportunity traced through release.</li>
+<li><strong>Phase 4 — Production intelligence.</strong> Build Stage 12-13, operational measures, benefits, assurance, knowledge graph validation and intent-aware hybrid search. Success: live-service evidence supports continue/improve/retire decisions.</li>
+<li><strong>Phase 5 — Governed AI assistance and scale.</strong> Add generation workflows, progressive visuals, integrations and governance automation. Success: assistance is grounded, access-controlled, auditable and human-approved where required.</li>
+</ol>
+<p>Each phase uses preview resources, migration rehearsal, accessibility and security testing, route compatibility and a documented rollback. Production requires separate approval.</p>
+<h1>Part 19 — Enterprise AI Assistant Blueprint</h1>
+<table>
+<thead>
+<tr>
+<th>Assistant</th>
+<th>Stage</th>
+<th>Purpose</th>
+<th>Required context</th>
+<th>Guardrail</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Charter assistant</td>
+<td>0</td>
+<td>Draft a charter from approved mandate inputs</td>
+<td>Mandate, scope, outcomes, roles</td>
+<td>Draft only; sponsor approval required</td>
+</tr>
+<tr>
+<td>Stakeholder and RACI assistant</td>
+<td>0</td>
+<td>Suggest stakeholders and responsibility assignments</td>
+<td>Organisation, decisions, deliverables</td>
+<td>Owner validation; exactly one accountable role</td>
+</tr>
+<tr>
+<td>Discovery question assistant</td>
+<td>1</td>
+<td>Tailor evidence questions by capability</td>
+<td>Scope, sector, current systems</td>
+<td>No invented current-state facts</td>
+</tr>
+<tr>
+<td>Readiness assessment assistant</td>
+<td>2</td>
+<td>Explain scores and missing evidence</td>
+<td>Assessment responses and evidence</td>
+<td>Cannot approve its own score</td>
+</tr>
+<tr>
+<td>Strategy assistant</td>
+<td>3</td>
+<td>Compare options and draft decision narrative</td>
+<td>Discovery, readiness, ambition</td>
+<td>Label assumptions and alternatives</td>
+</tr>
+<tr>
+<td>Governance assistant</td>
+<td>4</td>
+<td>Map risks to controls, owners and evidence</td>
+<td>Risk classification and policy</td>
+<td>Human approval for policy and risk acceptance</td>
+</tr>
+<tr>
+<td>Opportunity assistant</td>
+<td>5</td>
+<td>Structure problems and compare opportunities</td>
+<td>Intake and evidence</td>
+<td>No false precision in scores or value</td>
+</tr>
+<tr>
+<td>Business-case assistant</td>
+<td>6</td>
+<td>Build scenarios and sensitivity analysis</td>
+<td>Baselines, assumptions, costs</td>
+<td>Ranges and confidence required</td>
+</tr>
+<tr>
+<td>Architecture review assistant</td>
+<td>7</td>
+<td>Check traceability and missing controls</td>
+<td>Requirements, decisions, diagrams</td>
+<td>Architect and control-owner review</td>
+</tr>
+<tr>
+<td>Implementation assistant</td>
+<td>8-9</td>
+<td>Draft plans, work packages and evidence lists</td>
+<td>Approved architecture and controls</td>
+<td>No production changes</td>
+</tr>
+<tr>
+<td>Validation assistant</td>
+<td>10</td>
+<td>Generate test cases and evidence summaries</td>
+<td>Requirements, controls, build version</td>
+<td>Independent validation retained</td>
+</tr>
+<tr>
+<td>Operations assistant</td>
+<td>11-13</td>
+<td>Explain telemetry, incidents and improvement options</td>
+<td>Approved operational data</td>
+<td>No autonomous high-impact action</td>
+</tr>
+</tbody></table>
+<p>Every assistant action displays purpose, inputs, sources, assumptions, missing evidence, generated status and required human decision. Generated artifacts begin as drafts. The assistant cannot approve its own output, accept risk, release production or fabricate unavailable enterprise facts.</p>
+<h1>Part 20 — Future Platform Vision</h1>
+<p><strong>One year:</strong> lifecycle foundation, Stage 0-11 vertical path, canonical deliverables, preview dashboards, grounded search and controlled templates.</p>
+<p><strong>Three years:</strong> complete operating lifecycle, evidence automation, knowledge graph, enterprise integrations, interactive assessments, progressive visual learning, benefits analytics and governed copilots.</p>
+<p><strong>Five years:</strong> federated enterprise architecture and governance repository, continuous control evidence, workflow orchestration, scenario intelligence, cross-sector overlays and measurable learning across transformations.</p>
+<p>The long-term platform remains anchored to the same rule: business outcomes, decisions, architecture, controls, implementation evidence, operations and benefits stay connected.</p>
+<h1>Governance of this blueprint</h1>
+<p>Proposed status remains <strong>Rework required pending Platform Owner approval</strong>, consistent with the Phase 0 gate. Changes require a change record containing reason, affected objects, traceability impact, migration impact, owner, reviewers, decision and effective version.</p>
+<h2>Source pack</h2>
+<p>This blueprint integrates the Phase 0 inventory, information architecture, menu hierarchy, migration matrix, taxonomy, overlap and gap registers, naming register, page standards, deliverable/RACI/gate/checklist schemas, cross-link model, URL strategy, navigation behavior and implementation plan located in <code>../phase-0-information-architecture/</code>.</p>
+</main></body></html>
